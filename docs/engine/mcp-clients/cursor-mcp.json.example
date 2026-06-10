@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "iron-cannon-local": {
-      "comment": "npm run ironcannon:serve — see CURSOR_MCP_SETUP.md",
+      "comment": "Pro tier (T01–T08). Start: npm run ironcannon:serve. Setup: see README Quick start + /mcp-config.example.json at repo root.",
       "url": "http://127.0.0.1:8787/mcp",
       "headers": {
         "x-ironcannon-tier": "pro",
@@ -10,7 +10,7 @@
       }
     },
     "iron-cannon-local-armor": {
-      "comment": "Infrastructure + security tools T09-T11",
+      "comment": "Armor tier (T09–T11). Same server URL; tier via x-ironcannon-tier header.",
       "url": "http://127.0.0.1:8787/mcp",
       "headers": {
         "x-ironcannon-tier": "armor",
@@ -18,21 +18,12 @@
       }
     },
     "iron-cannon-ironclad": {
-      "comment": "Legal obligations T12-T14",
+      "comment": "IronClad tier (T12–T14). Dev keys are fake fixtures — see SECURITY.md.",
       "url": "http://127.0.0.1:8787/mcp",
       "headers": {
         "x-ironcannon-tier": "ironclad",
         "x-ironcannon-client": "cursor-ironclad",
         "x-ironcannon-api-key": "ic_dev_ironclad_legaltest12345678"
-      }
-    },
-    "iron-cannon-staging": {
-      "comment": "Uncomment when api.ironcannon.ai is deployed",
-      "url": "https://api.ironcannon.ai/mcp",
-      "headers": {
-        "x-ironcannon-tier": "pro",
-        "x-ironcannon-client": "cursor-staging",
-        "x-ironcannon-api-key": "ic_dev_pro_REPLACE_ME"
       }
     }
   }
