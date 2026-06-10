@@ -2,10 +2,10 @@
   "name": "iron-cannon-workspace",
   "version": "0.3.0",
   "description": "MCP compliance copilot for Cloudflare + Stripe SaaS stacks — local Worker server and CLI.",
-  "license": "MIT",
+  "license": "AGPL-3.0-only",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DillonRich/iron-cannon.git"
+    "url": "https://github.com/DillonRich/Iron_Cannon.git"
   },
   "workspaces": [
     "packages/*",

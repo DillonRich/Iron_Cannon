@@ -16,3 +16,7 @@ Example MCP config (`mcp-config.example.json`) references these dev tokens so Cu
 ## Reporting
 
 If you believe a real secret was committed, rotate the credential immediately and open an issue (or contact the maintainer privately).
+
+## License note
+
+This project is licensed under AGPL-3.0. Security research and responsible disclosure are welcome; redistribution must comply with the license.

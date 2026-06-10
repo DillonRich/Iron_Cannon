@@ -166,7 +166,7 @@ See [SECURITY.md](SECURITY.md). Dev-only API keys in `docs/engine/phase1/fixture
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+GNU AGPL v3 — see [LICENSE](LICENSE). You may run this locally for audits and contribute improvements; if you offer this software as a network service, AGPL copyleft applies.
 
 ---
 
