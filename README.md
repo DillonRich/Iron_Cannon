@@ -56,8 +56,8 @@ Iron Cannon gives AI agents (and humans) a structured audit workflow: detect the
 ### 1. Install & build
 
 ```bash
-git clone <your-repo-url>
-cd iron-cannon-workspace
+git clone https://github.com/DillonRich/Iron_Cannon.git
+cd Iron_Cannon
 npm install
 npm run build:worker-bundle
 ```
