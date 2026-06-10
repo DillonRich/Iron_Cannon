@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-emails-attachments",
+  "sourceUrl": "https://resend.com/docs/dashboard/emails/attachments.md",
+  "lastVerified": "2026-06-03",
+  "title": "Attachments",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Attachments > Send emails with attachments. There are two ways to send attachments: 1. [From a remote file](#send-attachments-from-a-remote-file) 2. [From a local file](#send-attachments-from-a-local-file) We currently do not support sending attachments [when using our batch endpoint](/api-reference/emails/send-batch-emails). ## Send attachments from a remote file Include the `path` parameter to send attachments from a remote file. This parameter accepts a URL to the file you want to attach. Define the file name that will be attached using the `filename` parameter.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

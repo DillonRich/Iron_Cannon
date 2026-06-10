@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-observability-dev-tools-cpu-usage-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/observability/dev-tools/cpu-usage/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Profiling CPU usage",
+  "excerpt": "description: Learn how to profile CPU usage and ensure CPU-time per request stays under Workers limits image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. If a Worker spends too much time performing CPU-intensive tasks, responses may be slow or the Worker might fail to startup due to [time limits](https://developers.cloudflare.com/workers/platform/limits/#worker-startup-time). Profiling in DevTools can help you identify and fix code that uses too much CPU.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "refId": "legal/arbitration-jurisdiction",
+  "sourceUrl": "https://ironcannon.dev/planning/W65/ref/legal-arbitration-jurisdiction",
+  "lastVerified": "2026-06-06",
+  "title": "arbitration jurisdiction",
+  "provider": "legal",
+  "excerpt": "Disclose arbitration clause and governing jurisdiction in terms of service.",
+  "embeddingHint": "legal/arbitration-jurisdiction wave65 obligation-source legal",
+  "tags": [
+    "wave65",
+    "obligation-source",
+    "legal"
+  ]
+}

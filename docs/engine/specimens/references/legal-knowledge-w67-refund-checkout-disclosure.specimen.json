@@ -1,0 +1,15 @@
+{
+  "refId": "legal/knowledge-w67-refund-checkout-disclosure",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w67/refund-checkout-disclosure",
+  "lastVerified": "2026-06-06",
+  "title": "W67 refund-checkout-disclosure",
+  "provider": "legal",
+  "excerpt": "Show refund policy link on checkout review step before pay",
+  "embeddingHint": "legal refund-checkout-disclosure wave67 phase3 production",
+  "tags": [
+    "wave67",
+    "knowledge",
+    "legal",
+    "phase3"
+  ]
+}

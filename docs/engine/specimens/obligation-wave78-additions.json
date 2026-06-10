@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W78-001",
+      "category": "operations",
+      "title": "Pages build output dir configured in dedicated wrangler.pages.toml",
+      "sourceRefId": "cloudflare/knowledge-w78-pages-build-output-dir",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W78-002",
+      "category": "operations",
+      "title": "Worker API CORS allows Pages static origin",
+      "sourceRefId": "cloudflare/knowledge-w78-pages-functions-cors",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W78-003",
+      "category": "operations",
+      "title": "NEXT_PUBLIC_API_URL set for browser-to-Worker bridge",
+      "sourceRefId": "nextjs/knowledge-w78-public-api-url",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W78-004",
+      "category": "operations",
+      "title": "nodejs_compat enabled for OpenNext Pages assets",
+      "sourceRefId": "cloudflare/knowledge-w78-open-next-assets",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W78-005",
+      "category": "security",
+      "title": "Preview Pages env vars exclude production webhook secrets",
+      "sourceRefId": "cloudflare/knowledge-w78-pages-preview-env",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W78-006",
+      "category": "security",
+      "title": "Session cookies scoped to shared parent domain on split hosts",
+      "sourceRefId": "ironcannon/knowledge-w78-middleware-pages-split",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W78-007",
+      "category": "operations",
+      "title": "SD-06 wiremap includes M60 then M61 before golden core",
+      "sourceRefId": "ironcannon/knowledge-w78-sd-06-wiremap",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W78-008",
+      "category": "operations",
+      "title": "Stack detector pages-worker-split does not flag external-api-surface",
+      "sourceRefId": "ironcannon/knowledge-w78-pages-worker-split-detect",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W78-009",
+      "category": "operations",
+      "title": "SVC-001 harvest gate green in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w78-svc001-harvest-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W78-010",
+      "category": "privacy",
+      "title": "Cookie domain policy documented for split Pages and Worker hosts",
+      "sourceRefId": "legal/knowledge-w78-pages-cookie-domain",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

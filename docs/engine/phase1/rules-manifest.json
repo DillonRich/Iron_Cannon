@@ -1,0 +1,206 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rules-manifest/v1",
+  "rulesetVersion": "2026.05.31",
+  "publishedAt": "2026-05-31T00:00:00Z",
+  "flows": {
+    "auth-lifecycle": {
+      "wiremapFragmentId": "layer1/auth-lifecycle/wiremap",
+      "unhappyPathBundle": "phase1/fixtures/unhappy-paths/auth-lifecycle.json"
+    },
+    "billing-subscription": {
+      "wiremapFragmentId": "layer1/billing-subscription/wiremap",
+      "unhappyPathBundle": "phase1/fixtures/unhappy-paths/billing-subscription.json"
+    },
+    "password-reset": {
+      "unhappyPathBundle": "phase1/fixtures/unhappy-paths/password-reset.json"
+    }
+  },
+  "modules": {
+    "M01-auth-d1-schema": {
+      "flowId": "auth-lifecycle",
+      "layer": 2,
+      "fragmentIds": ["layer1/auth-lifecycle/d1-schema"],
+      "specimenPath": "specimens/m01-auth-d1-schema.specimen.json"
+    },
+    "M02-auth-worker-routes": {
+      "flowId": "auth-lifecycle",
+      "layer": 2,
+      "fragmentIds": ["layer1/auth-lifecycle/worker-routes"],
+      "specimenPath": "specimens/m02-auth-worker-routes.specimen.json"
+    },
+    "M03-auth-resend-emails": {
+      "flowId": "auth-lifecycle",
+      "layer": 2,
+      "fragmentIds": ["layer1/auth-lifecycle/resend-emails"],
+      "specimenPath": "specimens/m03-auth-resend-emails.specimen.json"
+    },
+    "M04-auth-ui-routes": {
+      "flowId": "auth-lifecycle",
+      "layer": 2,
+      "fragmentIds": ["layer1/auth-lifecycle/ui-routes"],
+      "specimenPath": "specimens/m04-auth-ui-routes.specimen.json"
+    },
+    "M05-auth-session-middleware": {
+      "flowId": "auth-lifecycle",
+      "layer": 2,
+      "fragmentIds": ["layer1/auth-lifecycle/session-middleware"],
+      "specimenPath": "specimens/m05-auth-session-middleware.specimen.json"
+    },
+    "M10-billing-d1-schema": {
+      "flowId": "billing-subscription",
+      "layer": 2,
+      "fragmentIds": ["layer1/billing-subscription/d1-schema"],
+      "specimenPath": "specimens/m10-billing-d1-schema.specimen.json"
+    },
+    "M11-stripe-checkout-route": {
+      "flowId": "billing-subscription",
+      "layer": 2,
+      "fragmentIds": ["layer1/billing-subscription/checkout-route"],
+      "specimenPath": "specimens/m11-stripe-checkout-route.specimen.json"
+    },
+    "M12-stripe-webhook": {
+      "flowId": "billing-subscription",
+      "layer": 2,
+      "fragmentIds": ["stripe/webhook-handler"],
+      "specimenPath": "specimens/stripe-webhook-handler.specimen.json"
+    },
+    "M13-provisioning-kv": {
+      "flowId": "billing-race-shield",
+      "layer": 2,
+      "fragmentIds": ["layer1/billing-race-shield/provisioning-kv"],
+      "specimenPath": "specimens/m13-provisioning-kv.specimen.json"
+    },
+    "M14-billing-success-ui": {
+      "flowId": "billing-race-shield",
+      "layer": 2,
+      "fragmentIds": ["layer1/billing-race-shield/success-ui"],
+      "specimenPath": "specimens/m14-billing-success-ui.specimen.json"
+    },
+    "M15-billing-dashboard-ui": {
+      "flowId": "billing-subscription",
+      "layer": 2,
+      "fragmentIds": ["layer1/billing-subscription/dashboard-ui"],
+      "specimenPath": "specimens/m15-billing-dashboard-ui.specimen.json"
+    },
+    "M16-billing-emails": {
+      "flowId": "email-lifecycle",
+      "layer": 2,
+      "fragmentIds": ["layer1/email-lifecycle/billing-emails"],
+      "specimenPath": "specimens/m16-billing-emails.specimen.json"
+    },
+    "M20-reset-token-schema": {
+      "flowId": "password-reset",
+      "layer": 2,
+      "fragmentIds": ["layer1/password-reset/token-schema"],
+      "specimenPath": "specimens/m20-reset-token-schema.specimen.json"
+    },
+    "M21-reset-api": {
+      "flowId": "password-reset",
+      "layer": 2,
+      "fragmentIds": ["layer1/password-reset/api"],
+      "specimenPath": "specimens/m21-reset-api.specimen.json"
+    },
+    "M22-reset-ui": {
+      "flowId": "password-reset",
+      "layer": 2,
+      "fragmentIds": ["layer1/password-reset/ui"],
+      "specimenPath": "specimens/m22-reset-ui.specimen.json"
+    },
+    "M23-reset-email": {
+      "flowId": "password-reset",
+      "layer": 2,
+      "fragmentIds": ["layer1/password-reset/email"],
+      "specimenPath": "specimens/m23-reset-email.specimen.json"
+    },
+    "M30-onboarding-schema": {
+      "flowId": "onboarding",
+      "layer": 2,
+      "fragmentIds": ["layer1/onboarding/schema"],
+      "specimenPath": "specimens/m30-onboarding-schema.specimen.json"
+    },
+    "M31-onboarding-api": {
+      "flowId": "onboarding",
+      "layer": 2,
+      "fragmentIds": ["layer1/onboarding/api"],
+      "specimenPath": "specimens/m31-onboarding-api.specimen.json"
+    },
+    "M32-onboarding-ui": {
+      "flowId": "onboarding",
+      "layer": 2,
+      "fragmentIds": ["layer1/onboarding/ui"],
+      "specimenPath": "specimens/m32-onboarding-ui.specimen.json"
+    },
+    "M40-deletion-api": {
+      "flowId": "account-deletion",
+      "layer": 2,
+      "fragmentIds": ["layer1/account-deletion/api"],
+      "specimenPath": "specimens/m40-deletion-api.specimen.json"
+    },
+    "M41-deletion-scheduler": {
+      "flowId": "account-deletion",
+      "layer": 2,
+      "fragmentIds": ["layer1/account-deletion/scheduler"],
+      "specimenPath": "specimens/m41-deletion-scheduler.specimen.json"
+    },
+    "M42-deletion-ui": {
+      "flowId": "account-deletion",
+      "layer": 2,
+      "fragmentIds": ["layer1/account-deletion/ui"],
+      "specimenPath": "specimens/m42-deletion-ui.specimen.json"
+    },
+    "M50-export-api": {
+      "flowId": "data-export",
+      "layer": 2,
+      "fragmentIds": ["layer1/data-export/api"],
+      "specimenPath": "specimens/m50-export-api.specimen.json"
+    },
+    "M51-export-worker": {
+      "flowId": "data-export",
+      "layer": 2,
+      "fragmentIds": ["layer1/data-export/worker"],
+      "specimenPath": "specimens/m51-export-worker.specimen.json"
+    },
+    "M52-export-ui": {
+      "flowId": "data-export",
+      "layer": 2,
+      "fragmentIds": ["layer1/data-export/ui"],
+      "specimenPath": "specimens/m52-export-ui.specimen.json"
+    },
+    "M55-terms-reaccept-api": {
+      "flowId": "terms-reaccept",
+      "layer": 2,
+      "fragmentIds": ["layer1/terms-reaccept/api"],
+      "specimenPath": "specimens/m55-terms-reaccept-api.specimen.json"
+    },
+    "M56-terms-reaccept-ui": {
+      "flowId": "terms-reaccept",
+      "layer": 2,
+      "fragmentIds": ["layer1/terms-reaccept/ui"],
+      "specimenPath": "specimens/m56-terms-reaccept-ui.specimen.json"
+    },
+    "M60-pages-wrangler-config": {
+      "flowId": "auth-lifecycle",
+      "layer": 2,
+      "fragmentIds": ["layer2/pages/wrangler-config"],
+      "specimenPath": "specimens/m60-pages-wrangler-config.specimen.json"
+    },
+    "M61-pages-env-bridge": {
+      "flowId": "auth-lifecycle",
+      "layer": 2,
+      "fragmentIds": ["layer2/pages/env-bridge"],
+      "specimenPath": "specimens/m61-pages-env-bridge.specimen.json"
+    },
+    "M70-supabase-auth-config": {
+      "flowId": "auth-lifecycle",
+      "layer": 2,
+      "fragmentIds": ["layer2/supabase/auth-config"],
+      "specimenPath": "specimens/m70-supabase-auth-config.specimen.json"
+    },
+    "M71-supabase-middleware-ssr": {
+      "flowId": "auth-lifecycle",
+      "layer": 2,
+      "fragmentIds": ["layer2/supabase/middleware-ssr"],
+      "specimenPath": "specimens/m71-supabase-middleware-ssr.specimen.json"
+    }
+  }
+}

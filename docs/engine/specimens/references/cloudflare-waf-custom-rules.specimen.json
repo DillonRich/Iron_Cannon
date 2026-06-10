@@ -1,0 +1,14 @@
+{
+  "refId": "cloudflare/waf-custom-rules",
+  "sourceUrl": "https://ironcannon.dev/planning/W65/ref/cloudflare-waf-custom-rules",
+  "lastVerified": "2026-06-06",
+  "title": "waf custom rules",
+  "provider": "cloudflare",
+  "excerpt": "Deploy WAF custom rules for auth abuse and credential stuffing patterns.",
+  "embeddingHint": "cloudflare/waf-custom-rules wave65 obligation-source legal",
+  "tags": [
+    "wave65",
+    "obligation-source",
+    "cloudflare"
+  ]
+}

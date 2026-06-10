@@ -1,0 +1,14 @@
+{
+  "refId": "cloudflare/do-alarms",
+  "sourceUrl": "https://ironcannon.dev/planning/W65/ref/cloudflare-do-alarms",
+  "lastVerified": "2026-06-06",
+  "title": "do alarms",
+  "provider": "cloudflare",
+  "excerpt": "Use Durable Object alarms for scheduled session cleanup and token expiry.",
+  "embeddingHint": "cloudflare/do-alarms wave65 obligation-source legal",
+  "tags": [
+    "wave65",
+    "obligation-source",
+    "cloudflare"
+  ]
+}

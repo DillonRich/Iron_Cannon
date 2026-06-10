@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer3/webhook-hardening/pass",
+  "layer": 3,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "armor-overlay",
+  "moduleId": "A03-webhook-hardening-pass",
+  "adapterId": "stripe",
+  "section": "webhook-hardening",
+  "content": {
+    "requirement": "Armor-tier webhook hardening for SURF-WH-001 — extends M12 Pro baseline",
+    "surfaceId": "SURF-WH-001",
+    "requiredSteps": [
+      "Verify constructEvent with raw body (M12 STWH-001 — non-negotiable)",
+      "KV idempotency with 24h TTL minimum (E02 billing-race-shield)",
+      "Reject events older than Stripe tolerance window (replay protection)",
+      "Log webhook failures without leaking secrets",
+      "Return 200 only after durable side-effects queued or committed"
+    ],
+    "replayWindowSeconds": 300,
+    "extendsModule": "M12-stripe-webhook"
+  },
+  "references": ["stripe/security-guide", "owasp/api-security", "owasp/error-handling", "owasp/logging"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "ARM-WH-001", "type": "required_string", "value": "constructEvent", "fileGlob": "**/webhooks/**", "tier": "armor" },
+      { "id": "ARM-WH-002", "type": "required_string", "value": "stripe_evt:", "fileGlob": "**/webhooks/**", "tier": "armor" },
+      { "id": "ARM-WH-003", "type": "required_string", "value": "event.created", "fileGlob": "**/webhooks/**", "tier": "armor" }
+    ],
+    "forbidden": [
+      { "id": "ARM-WH-F01", "type": "forbidden_string", "value": "JSON.parse(body)", "fileGlob": "**/webhooks/stripe/**", "tier": "armor" },
+      { "id": "ARM-WH-F02", "type": "forbidden_string", "value": "STRIPE_WEBHOOK_SECRET", "fileGlob": "**/*.{ts,tsx,js}", "tier": "armor" }
+    ]
+  },
+  "metadata": { "minTier": "armor", "category": "webhook-hardening", "mcpTool": "T10" }
+}

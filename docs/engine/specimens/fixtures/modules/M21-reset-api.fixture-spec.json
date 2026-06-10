@@ -1,0 +1,18 @@
+{
+  "fixtureId": "M21",
+  "moduleId": "M21-reset-api",
+  "patternsUnderTest": [
+    "PW-API-001",
+    "PW-API-002",
+    "PW-A01",
+    "AUTH-P49-M21-",
+    "AUTH-P49-SESSION"
+  ],
+  "passSnippet": "export async function forgotPassword() { /* POST /api/auth/forgot-password */ }\nexport async function resetPassword() { await invalidateAllSessions(env, userId); }",
+  "failSnippet": "export async function signupOnly() { return Response.json({ ok: true }); }",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "PW-API-001"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-send-with-auth0",
+  "sourceUrl": "https://resend.com/docs/send-with-auth0.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send Auth0 transactional emails with Resend",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send Auth0 transactional emails with Resend > Learn how to send Auth0 transactional emails through Resend using the official integration. export const YouTube = ({id}) => { return ; }; [Auth0](https://auth0.com) supports Resend as a built-in email provider. Authentication flows depend on reliable delivery for verification codes, password resets, and other crucial emails. ## Prerequisites Before connecting Auth0 to Resend, you'll need: 1. A [verified domain](https://resend.com/domains) in your Resend dashboard. Auth0 will send from this domain. 2.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

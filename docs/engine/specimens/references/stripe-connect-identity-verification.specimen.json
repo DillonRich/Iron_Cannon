@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-identity-verification",
+  "sourceUrl": "https://docs.stripe.com/connect/identity-verification.md",
+  "lastVerified": "2026-06-03",
+  "title": "Identity verification for connected accounts",
+  "excerpt": "Use identity verification to reduce risk on your platform when using Connect. Every country has its own requirements that accounts must meet so that Stripe can pay out funds to individuals and companies. These are typically known as [Know Your Customer](https://support.stripe.com/questions/know-your-customer-obligations) (KYC) requirements. Regardless of the country, broadly speaking, the requirements Stripe must meet are: - Collecting information about the individual or company receiving funds - Verifying information to establish that we know who our customers are *Connect* (Connect is Stripe's solution for multi-party businesses, such as marketplace or software platforms, to route payments between sellers, customers, and other recipients) platforms collect the required information from u…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

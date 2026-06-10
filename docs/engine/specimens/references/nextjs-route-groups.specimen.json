@@ -1,0 +1,13 @@
+{
+  "refId": "nextjs/route-groups",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/routing/route-groups",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js Route groups",
+  "excerpt": "Organize routes with (group) folders without affecting URL. Use for separating marketing vs app layouts.",
+  "appliesTo": [
+    "nextjs-app-router"
+  ],
+  "tags": [
+    "nextjs"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/authorization",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Authorization",
+  "excerpt": "Check authorization on every request—default deny. Validate resource ownership (IDOR prevention). Separate admin routes with role checks. Do not expose internal IDs without access control. Server-side enforcement only.",
+  "appliesTo": ["layer3", "auth-lifecycle"],
+  "tags": ["owasp", "authorization", "idor"]
+}

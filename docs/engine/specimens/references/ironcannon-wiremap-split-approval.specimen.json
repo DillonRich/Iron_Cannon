@@ -1,0 +1,10 @@
+{
+  "refId": "ironcannon/wiremap-split-approval",
+  "sourceUrl": "https://ironcannon.dev/patterns/wiremap-split-approval",
+  "lastVerified": "2026-05-31",
+  "title": "IC wiremap split user approval",
+  "excerpt": "APPEND_SPLIT returns core + extended wiremaps. User must approve BOTH or deselect optional flows. extendedUnlocked false until all core modules T05-pass.",
+  "appliesTo": ["T03", "WIREMAP_OPTIONAL_FLOW_COMPOSITION"],
+  "tags": ["ironcannon", "pattern", "wiremap"],
+  "authorship": "iron-cannon-pattern"
+}

@@ -1,0 +1,13 @@
+{
+  "refId": "nextjs/partial-prerendering",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/rendering/partial-prerendering",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js Partial Prerendering",
+  "excerpt": "PPR combines static shell with dynamic holes. Optional optimization for marketing pages—not required for auth/billing V1.",
+  "appliesTo": [
+    "P1"
+  ],
+  "tags": [
+    "nextjs"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/csrf-prevention",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP CSRF prevention",
+  "excerpt": "Use synchronizer token pattern or SameSite cookies for state-changing requests. Validate CSRF token on POST/PUT/DELETE. Do not rely on GET for mutations. Double-submit cookie acceptable with SameSite=Strict/Lax constraints.",
+  "appliesTo": ["input-validation", "layer3"],
+  "tags": ["owasp", "csrf", "security"]
+}

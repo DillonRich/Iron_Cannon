@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-data-import-error-handling",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/data-import/error-handling.md",
+  "lastVerified": "2026-06-03",
+  "title": "Error handling for data import",
+  "excerpt": "Learn how to handle and recover from errors received when importing revenue recognition data. You might encounter errors when importing revenue recognition data. The following list describes data import errors and how to resolve them. In most cases, you need to reimport the data to recover from the error. The following list contains errors you might encounter with general imports and how you can resolve them.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

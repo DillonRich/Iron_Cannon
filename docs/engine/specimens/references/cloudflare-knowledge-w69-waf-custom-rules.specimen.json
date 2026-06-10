@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/knowledge-w69-waf-custom-rules",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w69/waf-custom-rules",
+  "lastVerified": "2026-06-06",
+  "title": "W69 waf-custom-rules",
+  "provider": "cloudflare",
+  "excerpt": "WAF custom rules block known exploit paths",
+  "embeddingHint": "cloudflare waf-custom-rules wave69 deploy-readiness",
+  "tags": [
+    "wave69",
+    "knowledge",
+    "cloudflare",
+    "deploy-readiness"
+  ]
+}

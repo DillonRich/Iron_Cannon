@@ -1,0 +1,19 @@
+{
+  "fixtureId": "T06-02",
+  "description": "File changed since last verify hash",
+  "input": {
+    "session": { "validatedStackHash": "stack-abc", "wiremapHash": "wm-abc" },
+    "stackSignals": { "frontend": "nextjs" },
+    "stateLogMarkdown": "### M12-stripe-webhook\n\n| status | complete |\n\n**fileHashes:**\n- src/app/api/webhooks/stripe/route.ts: sha256:deadbeef0000\n",
+    "diskFiles": {
+      "src/app/api/webhooks/stripe/route.ts": "new implementation without constructEvent"
+    }
+  },
+  "expected": {
+    "driftDetected": true,
+    "code": "DIFF_DRIFT_DETECTED",
+    "changedPathsCount": 1,
+    "reasons": ["file_hash_mismatch"],
+    "moduleId": "M12-stripe-webhook"
+  }
+}

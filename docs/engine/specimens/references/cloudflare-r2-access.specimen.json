@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/r2-access",
+  "sourceUrl": "https://developers.cloudflare.com/r2/buckets/public-buckets/",
+  "lastVerified": "2026-05-31",
+  "title": "R2 bucket access patterns",
+  "excerpt": "Iron Cannon rules bucket must remain private—no public R2 URL. Use Worker binding for read/write. If user apps use R2 for uploads, presigned URLs or Worker-proxied upload with auth check required.",
+  "appliesTo": ["RULE_STORE", "layer3"],
+  "tags": ["cloudflare", "r2", "security"]
+}

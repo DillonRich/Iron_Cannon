@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/insecure-direct-object-reference",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP IDOR prevention",
+  "excerpt": "Every resource access checks ownership: WHERE user_id = session.userId. Do not expose sequential ids without auth. Use UUIDs. Test API routes with another user's id—must 403.",
+  "appliesTo": ["owasp/authorization", "layer3"],
+  "tags": ["owasp", "idor", "authorization"]
+}

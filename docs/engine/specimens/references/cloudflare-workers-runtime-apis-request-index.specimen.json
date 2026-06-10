@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-runtime-apis-request-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/runtime-apis/request/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Request",
+  "excerpt": "description: Interface that represents an HTTP request. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. The [Request ↗](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request) interface represents an HTTP request and is part of the [Fetch API](https://developers.cloudflare.com/workers/runtime-apis/fetch/). The most common way you will encounter a `Request` object is as a property of an incoming request:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

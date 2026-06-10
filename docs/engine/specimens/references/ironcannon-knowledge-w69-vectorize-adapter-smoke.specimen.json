@@ -1,0 +1,14 @@
+{
+  "refId": "ironcannon/knowledge-w69-vectorize-adapter-smoke",
+  "sourceUrl": "https://ironcannon.dev/planning/W69/ironcannon-knowledge-w69-vectorize-adapter-smoke",
+  "lastVerified": "2026-06-06",
+  "title": "Vectorize adapter smoke passes in g2:audit",
+  "provider": "ironcannon",
+  "excerpt": "LEG-W69-005: Vectorize adapter smoke passes in g2:audit",
+  "embeddingHint": "LEG-W69-005 operations wave69",
+  "tags": [
+    "planning",
+    "wave69",
+    "obligation-source"
+  ]
+}

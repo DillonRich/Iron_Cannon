@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w71-t05-all-modules",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w71/t05-all-modules",
+  "lastVerified": "2026-06-06",
+  "title": "W71 t05-all-modules",
+  "provider": "ironcannon",
+  "excerpt": "All 12 modules pass T05 harness individually",
+  "embeddingHint": "ironcannon t05-all-modules wave71 production-mcp-bar",
+  "tags": [
+    "wave71",
+    "knowledge",
+    "ironcannon",
+    "production-mcp-bar"
+  ]
+}

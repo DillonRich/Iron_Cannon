@@ -1,0 +1,11 @@
+{
+  "refId": "legal/wcag-status-messages",
+  "sourceUrl": "https://www.w3.org/WAI/WCAG21/Understanding/status-messages.html",
+  "lastVerified": "2026-06-03",
+  "title": "Status messages",
+  "excerpt": "Loading and success states use role=status or aria-live polite.",
+  "tags": [
+    "legal",
+    "a11y"
+  ]
+}

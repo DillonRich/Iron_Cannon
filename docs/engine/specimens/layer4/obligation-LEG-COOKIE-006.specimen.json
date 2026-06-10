@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-cookie-006",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-cookie-006",
+  "content": {
+    "requirement": "Cookie policy page linked from banner",
+    "obligations": [
+      "LEG-COOKIE-006"
+    ],
+    "compareSteps": [
+      "Run detect.type=route_link",
+      "Map result to obligation LEG-COOKIE-006",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-COOKIE-006: Cookie policy page linked from banner"
+  },
+  "references": [
+    "legal/cookie-policy"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-COOKIE-006",
+        "type": "route_link",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "cookies",
+    "disclaimerRequired": true
+  }
+}

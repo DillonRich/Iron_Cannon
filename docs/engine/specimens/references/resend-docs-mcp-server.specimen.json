@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-mcp-server",
+  "sourceUrl": "https://resend.com/docs/mcp-server.md",
+  "lastVerified": "2026-06-03",
+  "title": "MCP Server",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # MCP Server > Learn how to use the MCP Server to send emails. ## What is an MCP Server? MCP is an open protocol that standardizes how applications provide context to LLMs. Among other benefits, it provides LLMs tools to act on your behalf. ## What can Resend's MCP Server do? Resend's [MCP Server](https://github.com/resend/resend-mcp) gives your AI agent native access to the full Resend platform through a single integration. You can manage all aspects of your email infrastructure using natural language. * **Emails**: Send, list, get, cancel, update, and batch send emails.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

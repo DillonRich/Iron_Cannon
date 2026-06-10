@@ -1,0 +1,13 @@
+{
+  "refId": "resend/inbound-email",
+  "sourceUrl": "https://resend.com/docs/dashboard/receiving/introduction",
+  "lastVerified": "2026-05-31",
+  "title": "Resend Inbound email",
+  "excerpt": "Receive emails via webhook to app endpoint. Out of V1 golden path unless support flow added.",
+  "appliesTo": [
+    "P2"
+  ],
+  "tags": [
+    "resend"
+  ]
+}

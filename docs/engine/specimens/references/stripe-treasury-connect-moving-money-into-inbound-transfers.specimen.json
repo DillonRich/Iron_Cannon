@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-moving-money-into-inbound-transfers",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/moving-money/into/inbound-transfers.md",
+  "lastVerified": "2026-06-03",
+  "title": "Moving money with using InboundTransfer objects",
+  "excerpt": "Learn how to transfer money from another account you own into a financial account. Inbound transfers move money from an external US bank account into a financial account using the ACH network. These transfers are initiated with [InboundTransfer](https://docs.stripe.com/api/treasury/inbound_transfers.md) objects. Inbound transfers take 2-4 business days to complete unless you’re using the same-day ACH capability. For more information, see the [Money movement timelines](https://docs.stripe.com/treasury/connect/money-movement/timelines.md#inboundtransfer-transactions) guide. > You can use inbound transfers to move funds from a financial account owner’s bank account. Inbound transfers don’t support moving funds from a third-party external account.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-data-reconciliation",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/data-reconciliation.md",
+  "lastVerified": "2026-06-03",
+  "title": "Data reconciliation with Stripe reports",
+  "excerpt": "Learn how to reconcile revenue recognition data with other financial reports. You can reconcile the cash account from Stripe Revenue Recognition and the **Balance Summary** report’s balance change from the activity section within the same month. Because revenue recognition focuses on revenue-generating activities, you must exclude fees, network costs, contributions, and financing paydowns from the **Balance Summary** report’s balance change from the activity section before reconciling. To get the cash amount in Stripe Revenue Recognition, download the balance sheet report in the summary format. The balance sheet report doesn’t take corrections into account.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

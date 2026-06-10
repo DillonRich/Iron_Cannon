@@ -1,0 +1,15 @@
+{
+  "fixtureId": "LEG-EMAIL-008",
+  "obligationId": "LEG-EMAIL-008",
+  "detectType": "template_scan",
+  "detect": {
+    "type": "template_scan",
+    "forbidden": [
+      "bcc:"
+    ]
+  },
+  "passSnippet": "To: user@example.com\nSubject: Newsletter",
+  "failSnippet": "bcc: everyone@list.com",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

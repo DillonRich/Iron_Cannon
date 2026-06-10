@@ -1,0 +1,14 @@
+{
+  "refId": "cloudflare/knowledge-w63-bot-fight-mode",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w63/bot-fight-mode",
+  "lastVerified": "2026-06-06",
+  "title": "W63 bot-fight-mode",
+  "provider": "cloudflare",
+  "excerpt": "Enable Bot Fight Mode or Super Bot Fight on auth routes only after false-positive review",
+  "embeddingHint": "cloudflare bot-fight-mode wave63 legal security",
+  "tags": [
+    "wave63",
+    "knowledge",
+    "cloudflare"
+  ]
+}

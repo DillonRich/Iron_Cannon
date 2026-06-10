@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-runtime-apis-webassembly-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/runtime-apis/webassembly/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "WebAssembly (Wasm)",
+  "excerpt": "description: Execute code written in a language other than JavaScript or write an entire Cloudflare Worker in Rust. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. [WebAssembly ↗](https://webassembly.org/) (abbreviated Wasm) allows you to compile languages like [Rust](https://developers.cloudflare.com/workers/languages/rust/), Go, or C to a binary format that can run in a wide variety of environments, including [web browsers ↗](https://developer.mozilla.org/en-US/docs/WebAssembly#browser%5Fcompatibility), Cloudflare Workers, and other WebAssembly runtimes.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

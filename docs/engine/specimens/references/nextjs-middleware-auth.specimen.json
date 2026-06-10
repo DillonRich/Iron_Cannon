@@ -1,0 +1,15 @@
+{
+  "refId": "nextjs/middleware-auth",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/routing/middleware",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js middleware auth",
+  "excerpt": "Edge middleware session checks before protected routes.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "nextjs",
+    "middleware-auth"
+  ]
+}

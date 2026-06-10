@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-payouts-connected-accounts",
+  "sourceUrl": "https://docs.stripe.com/connect/payouts-connected-accounts.md",
+  "lastVerified": "2026-06-03",
+  "title": "Payouts to connected accounts",
+  "excerpt": "Manage payouts and external accounts for your platform's connected accounts. > This page is for developers building platforms with Stripe Connect. If you’re a business or individual receiving payouts through a platform, contact that platform directly for help with your payout settings and status. By default, any [charge](https://docs.stripe.com/connect/charges.md) you make on behalf of a connected account accumulates in the connected account’s [balance](https://docs.stripe.com/connect/account-balances.md) and is paid out on a daily rolling basis.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

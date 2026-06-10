@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w78-007",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "SD-06 wiremap includes M60 then M61 before golden core",
+    "obligations": [
+      "LEG-W78-007"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "SD-06 wiremap includes M60 then M61 before golden core"
+  },
+  "references": [
+    "ironcannon/knowledge-w78-sd-06-wiremap"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W78-007",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

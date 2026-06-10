@@ -1,0 +1,6 @@
+{
+  "fixtureId": "T09-02",
+  "description": "Pro tier cannot call T09",
+  "input": { "tier": "pro", "surfaceHints": [] },
+  "expected": { "code": "TIER_INSUFFICIENT" }
+}

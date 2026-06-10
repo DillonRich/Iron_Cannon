@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-elements-contact-details-element",
+  "sourceUrl": "https://docs.stripe.com/payments/elements/contact-details-element.md",
+  "lastVerified": "2026-06-03",
+  "title": "Contact Details Element",
+  "excerpt": "Use the Contact Details Element to integrate Link. [Link](https://stripe.com/payments/link) saves and autofills customer payment and shipping information. Customers can use different funding sources to pay with Link, including credit cards, debit cards, and US bank accounts. Learn more at [link.com](https://www.link.com). Use the [Contact Details Element](https://docs.stripe.com/js/element/contact_details_element) (previously known as the Link Authentication Element) to create a single email input field for both email collection and Link authentication.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

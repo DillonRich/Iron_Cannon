@@ -1,0 +1,40 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/stripe/checkout-route",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "billing-subscription",
+  "moduleId": "M11-stripe-checkout-route",
+  "adapterId": "stripe",
+  "section": "checkout-route",
+  "content": {
+    "requirement": "Create Stripe Checkout Session for subscription mode",
+    "route": "POST /api/billing/checkout",
+    "requiredSteps": [
+      "stripe.checkout.sessions.create mode subscription",
+      "metadata or client_reference_id userId",
+      "success_url with CHECKOUT_SESSION_ID placeholder",
+      "customer create-or-reuse by user_id"
+    ],
+    "manualConfigSteps": [
+      {
+        "order": 1,
+        "platform": "stripe",
+        "action": "Create Product and Price in Stripe Dashboard; set STRIPE_PRICE_ID env",
+        "userApprovalRequired": true
+      }
+    ]
+  },
+  "references": ["stripe/checkout-subscription", "stripe/checkout-success-page", "stripe/customer-portal"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "BILL-CK-001", "type": "required_string", "value": "checkout.sessions.create", "fileGlob": "**/*.{ts,js}", "tier": "pro" },
+      { "id": "BILL-CK-002", "type": "required_string", "value": "subscription", "fileGlob": "**/billing/**", "tier": "pro" },
+      { "id": "BILL-CK-003", "type": "required_string", "value": "userId", "fileGlob": "**/billing/**", "tier": "pro" }
+    ],
+    "forbidden": [
+      { "id": "BILL-CK-F01", "type": "forbidden_string", "value": "mode: 'payment'", "fileGlob": "**/checkout/**", "tier": "pro" }
+    ]
+  },
+  "metadata": { "minTier": "pro", "category": "billing-checkout" }
+}

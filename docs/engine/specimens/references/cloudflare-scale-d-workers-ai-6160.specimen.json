@@ -1,0 +1,13 @@
+{
+  "refId": "cloudflare/scale-d-workers-ai-6160",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/cloudflare/scale-d-workers-ai-6160",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-D workers-ai 6160",
+  "excerpt": "Workers AI bindings for embed and inference at edge. Scale-D planning reference for Iron Cannon MCP agents at 10k corpus depth.",
+  "tags": [
+    "cloudflare",
+    "workers-ai",
+    "scale-d"
+  ],
+  "embeddingHint": "cloudflare workers-ai Workers AI bindings for embed and inference at edge scale-d compliance security"
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/r2-platform-event-subscriptions-index",
+  "sourceUrl": "https://developers.cloudflare.com/r2/platform/event-subscriptions/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Event subscriptions",
+  "excerpt": "description: Subscribe to R2 bucket events and Super Slurper events using Cloudflare Queues. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/r2/llms.txt > Use this file to discover all available pages before exploring further. [Event subscriptions](https://developers.cloudflare.com/queues/event-subscriptions/) allow you to receive messages when events occur across your Cloudflare account.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

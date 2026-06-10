@@ -1,0 +1,12 @@
+{
+  "fixtureId": "LEG-W68-007",
+  "obligationId": "LEG-W68-007",
+  "detectType": "config",
+  "detect": {
+    "type": "config"
+  },
+  "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+  "failSnippet": "gap",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

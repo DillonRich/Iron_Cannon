@@ -1,0 +1,2038 @@
+{
+  "version": "1.91.0",
+  "phase": 3,
+  "minPassRate": 0.95,
+  "categories": [
+    "out-of-scope",
+    "tier-churn",
+    "adversarial",
+    "deploy-smoke"
+  ],
+  "scenarios": [
+    {
+      "id": "PC-001",
+      "name": "Firebase-primary stack rejected",
+      "category": "out-of-scope",
+      "harness": "integration-error",
+      "trigger": {
+        "deps": {
+          "firebase": "10"
+        }
+      },
+      "expect": "STACK_UNSUPPORTED"
+    },
+    {
+      "id": "PC-002",
+      "name": "Desktop-only scope rejected",
+      "category": "out-of-scope",
+      "harness": "integration-error",
+      "trigger": {
+        "scope": "desktop-only"
+      },
+      "expect": "SCOPE_OUT_OF_BOUNDS"
+    },
+    {
+      "id": "PC-003",
+      "name": "Stack recommendation out of scope",
+      "category": "out-of-scope",
+      "harness": "integration-error",
+      "trigger": {
+        "scope": "recommend-stack"
+      },
+      "expect": "SCOPE_NOT_SUPPORTED"
+    },
+    {
+      "id": "PC-004",
+      "name": "Custom flow not in catalog",
+      "category": "out-of-scope",
+      "harness": "integration-error",
+      "trigger": {
+        "flowId": "custom-xyz"
+      },
+      "expect": "FLOW_NOT_IN_CATALOG"
+    },
+    {
+      "id": "PC-005",
+      "name": "Hybrid Vercel+D1 warning fixture",
+      "category": "out-of-scope",
+      "harness": "stack-fixture",
+      "fixture": "SD-02"
+    },
+    {
+      "id": "PC-006",
+      "name": "Firebase unsupported fixture SD-04",
+      "category": "out-of-scope",
+      "harness": "stack-fixture",
+      "fixture": "SD-04"
+    },
+    {
+      "id": "PC-007",
+      "name": "Pro tier insufficient for armor tool",
+      "category": "tier-churn",
+      "harness": "integration-error",
+      "trigger": {
+        "tier": "pro",
+        "tool": "map_vulnerability_surfaces"
+      },
+      "expect": "TIER_INSUFFICIENT"
+    },
+    {
+      "id": "PC-008",
+      "name": "Subscription inactive gate script",
+      "category": "tier-churn",
+      "harness": "g2-script",
+      "script": "g2-subscription-inactive.mjs"
+    },
+    {
+      "id": "PC-009",
+      "name": "Revoked API key error mapping",
+      "category": "tier-churn",
+      "harness": "integration-error",
+      "trigger": {
+        "apiKey": "bad"
+      },
+      "expect": "AUTH_INVALID"
+    },
+    {
+      "id": "PC-010",
+      "name": "Throttle loop detected",
+      "category": "adversarial",
+      "harness": "integration-error",
+      "trigger": {
+        "sameModuleCalls": 6
+      },
+      "expect": "THROTTLE_LOOP_DETECTED"
+    },
+    {
+      "id": "PC-011",
+      "name": "False compliance suspected",
+      "category": "adversarial",
+      "harness": "integration-error",
+      "trigger": {
+        "emptyFile": true
+      },
+      "expect": "FALSE_COMPLIANCE_SUSPECTED"
+    },
+    {
+      "id": "PC-012",
+      "name": "Agent directive templates floor",
+      "category": "adversarial",
+      "harness": "agent-directives",
+      "minTemplates": 12
+    },
+    {
+      "id": "PC-013",
+      "name": "Compose empty rejected",
+      "category": "adversarial",
+      "harness": "integration-error",
+      "trigger": {
+        "fragments": []
+      },
+      "expect": "COMPOSE_EMPTY_REJECTED"
+    },
+    {
+      "id": "PC-014",
+      "name": "MCP E2E golden path",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "simulate-mcp-e2e-golden.mjs"
+    },
+    {
+      "id": "PC-015",
+      "name": "HTTP smoke script present",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-http-smoke.mjs"
+    },
+    {
+      "id": "PC-016",
+      "name": "Golden full tier path",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-golden-full.mjs"
+    },
+    {
+      "id": "PC-017",
+      "name": "Stripe webhook handler smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-stripe-platform-webhook.mjs"
+    },
+    {
+      "id": "PC-018",
+      "name": "Scope boundaries doc complete",
+      "category": "out-of-scope",
+      "harness": "scope-doc"
+    },
+    {
+      "id": "PC-019",
+      "name": "Obligation floor 140+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-020",
+      "name": "Imagination extended 1100+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-021",
+      "name": "Context insufficient without wiremap",
+      "category": "adversarial",
+      "harness": "integration-error",
+      "trigger": {
+        "wiremapContext": null
+      },
+      "expect": "CONTEXT_INSUFFICIENT"
+    },
+    {
+      "id": "PC-022",
+      "name": "Compliance failed zero patterns",
+      "category": "adversarial",
+      "harness": "integration-error",
+      "trigger": {
+        "patternsMatched": 0
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "PC-023",
+      "name": "Diff drift detected",
+      "category": "adversarial",
+      "harness": "integration-error",
+      "trigger": {
+        "hashDrift": true
+      },
+      "expect": "DIFF_DRIFT_DETECTED"
+    },
+    {
+      "id": "PC-024",
+      "name": "Remote unavailable",
+      "category": "adversarial",
+      "harness": "integration-error",
+      "trigger": {
+        "network": "down"
+      },
+      "expect": "REMOTE_UNAVAILABLE"
+    },
+    {
+      "id": "PC-025",
+      "name": "Ruleset deprecated",
+      "category": "adversarial",
+      "harness": "integration-error",
+      "trigger": {
+        "rulesetVersion": "2020.01.01"
+      },
+      "expect": "RULESET_DEPRECATED"
+    },
+    {
+      "id": "PC-026",
+      "name": "Stack incomplete missing config",
+      "category": "adversarial",
+      "harness": "integration-error",
+      "trigger": {
+        "missingConfig": [
+          "stripe_webhook_secret"
+        ]
+      },
+      "expect": "STACK_INCOMPLETE"
+    },
+    {
+      "id": "PC-027",
+      "name": "Auth missing API key",
+      "category": "tier-churn",
+      "harness": "integration-error",
+      "trigger": {
+        "apiKey": ""
+      },
+      "expect": "AUTH_MISSING"
+    },
+    {
+      "id": "PC-028",
+      "name": "Security protocols 750+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-029",
+      "name": "Retrieval baseline 120+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-030",
+      "name": "Obligation floor 150+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-031",
+      "name": "Golden stack SD-01 fixture",
+      "category": "deploy-smoke",
+      "harness": "stack-fixture",
+      "fixture": "SD-01"
+    },
+    {
+      "id": "PC-032",
+      "name": "Incomplete Stripe SD-05 fixture",
+      "category": "adversarial",
+      "harness": "stack-fixture",
+      "fixture": "SD-05"
+    },
+    {
+      "id": "PC-033",
+      "name": "Wiremap W01 fixture present",
+      "category": "deploy-smoke",
+      "harness": "wiremap-fixture",
+      "fixture": "W01"
+    },
+    {
+      "id": "PC-034",
+      "name": "Integration matrix registry floor",
+      "category": "adversarial",
+      "harness": "integration-matrix-floor",
+      "minRows": 47
+    },
+    {
+      "id": "PC-035",
+      "name": "Gap register zero open for core-mcp stage",
+      "category": "adversarial",
+      "harness": "gap-register-closed",
+      "stage": "core-mcp"
+    },
+    {
+      "id": "PC-036",
+      "name": "Security protocols 800+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-037",
+      "name": "Retrieval baseline 130+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-038",
+      "name": "Obligation floor 160+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-039",
+      "name": "Imagination extended 1200+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-040",
+      "name": "IronClad smoke script present",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-ironclad-smoke.mjs"
+    },
+    {
+      "id": "PC-041",
+      "name": "Golden protocol smoke script",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-golden-protocol.mjs"
+    },
+    {
+      "id": "PC-042",
+      "name": "Recovery fixtures script",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-recovery-fixtures.mjs"
+    },
+    {
+      "id": "PC-043",
+      "name": "Wiremap gate script",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-wiremap-gate.mjs"
+    },
+    {
+      "id": "PC-044",
+      "name": "Hybrid CF Pages SD-03 fixture",
+      "category": "out-of-scope",
+      "harness": "stack-fixture",
+      "fixture": "SD-03"
+    },
+    {
+      "id": "PC-045",
+      "name": "Wiremap W02 fixture present",
+      "category": "deploy-smoke",
+      "harness": "wiremap-fixture",
+      "fixture": "W02"
+    },
+    {
+      "id": "PC-046",
+      "name": "Corpus depth lint script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "validate-corpus-depth.mjs"
+    },
+    {
+      "id": "PC-047",
+      "name": "Security protocols 850+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-048",
+      "name": "Retrieval baseline 140+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-049",
+      "name": "Obligation floor 170+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-050",
+      "name": "Imagination extended 1300+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-051",
+      "name": "G2 golden integration smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-golden-integration.mjs"
+    },
+    {
+      "id": "PC-052",
+      "name": "MCP surface audit script",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-mcp-surface-audit.mjs"
+    },
+    {
+      "id": "PC-053",
+      "name": "Production-confidence harness script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "simulate-production-confidence.mjs"
+    },
+    {
+      "id": "PC-054",
+      "name": "Rate limit gate script",
+      "category": "tier-churn",
+      "harness": "g2-script",
+      "script": "g2-rate-limit.mjs"
+    },
+    {
+      "id": "PC-055",
+      "name": "Armor smoke script",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-armor-smoke.mjs"
+    },
+    {
+      "id": "PC-056",
+      "name": "Outbound chain script",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-outbound-chain.mjs"
+    },
+    {
+      "id": "PC-057",
+      "name": "Security protocols 900+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-058",
+      "name": "Retrieval baseline 150+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-059",
+      "name": "Obligation floor 180+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-060",
+      "name": "PC scenario registry 60+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-061",
+      "name": "Adversarial agent registry 10+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-062",
+      "name": "Adversarial agent g2 script",
+      "category": "adversarial",
+      "harness": "g2-script",
+      "script": "g2-adversarial-agent.mjs"
+    },
+    {
+      "id": "PC-063",
+      "name": "Wiremap armor overlay smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-wiremap-armor-overlay.mjs"
+    },
+    {
+      "id": "PC-064",
+      "name": "Observability smoke script",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-observability.mjs"
+    },
+    {
+      "id": "PC-065",
+      "name": "MCP protocol smoke script",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-mcp-protocol-smoke.mjs"
+    },
+    {
+      "id": "PC-066",
+      "name": "Security protocols 950+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-067",
+      "name": "Retrieval baseline 160+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-068",
+      "name": "Obligation floor 190+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-069",
+      "name": "Imagination extended 1400+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-070",
+      "name": "PC scenario registry 70+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-071",
+      "name": "g2-api-keys smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-api-keys.mjs"
+    },
+    {
+      "id": "PC-072",
+      "name": "g2-session-kv smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-session-kv.mjs"
+    },
+    {
+      "id": "PC-073",
+      "name": "g2-rate-limit smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-rate-limit.mjs"
+    },
+    {
+      "id": "PC-074",
+      "name": "Security protocols 1000+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-075",
+      "name": "Retrieval baseline 170+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-076",
+      "name": "Obligation floor 200+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-077",
+      "name": "Imagination extended 1450+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-078",
+      "name": "Adversarial agent 12+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-079",
+      "name": "PC scenario registry 80+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-080",
+      "name": "Wave 69 deploy-readiness planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-081",
+      "name": "g2-usage-telemetry smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-usage-telemetry.mjs"
+    },
+    {
+      "id": "PC-082",
+      "name": "g2-usage-flush smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-usage-flush.mjs"
+    },
+    {
+      "id": "PC-083",
+      "name": "g2-obligation-verify smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-obligation-verify.mjs"
+    },
+    {
+      "id": "PC-084",
+      "name": "Security protocols 1050+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-085",
+      "name": "Retrieval baseline 180+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-086",
+      "name": "Obligation floor 210+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-087",
+      "name": "Imagination extended 1500+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-088",
+      "name": "Adversarial agent 14+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-089",
+      "name": "PC scenario registry 90+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-090",
+      "name": "Wave 70 resilience-telemetry planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-091",
+      "name": "g2-t05-golden smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-t05-golden.mjs"
+    },
+    {
+      "id": "PC-092",
+      "name": "g2-t05-all-modules smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-t05-all-modules.mjs"
+    },
+    {
+      "id": "PC-093",
+      "name": "g2-e2e-packages smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-e2e-packages.mjs"
+    },
+    {
+      "id": "PC-094",
+      "name": "Security protocols 1100+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-095",
+      "name": "Retrieval baseline 190+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-096",
+      "name": "Obligation floor 220+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-097",
+      "name": "Imagination extended 1550+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-098",
+      "name": "Adversarial agent 16+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-099",
+      "name": "PC scenario registry 100+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-100",
+      "name": "Wave 71 production-mcp-bar planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-101",
+      "name": "g2-obligation-calibration smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-obligation-calibration.mjs"
+    },
+    {
+      "id": "PC-102",
+      "name": "g2-obligation-coverage smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-obligation-coverage.mjs"
+    },
+    {
+      "id": "PC-103",
+      "name": "g2-session-attestation smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-session-attestation.mjs"
+    },
+    {
+      "id": "PC-104",
+      "name": "Security protocols 1150+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-105",
+      "name": "Retrieval baseline 200+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-106",
+      "name": "Obligation floor 230+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-107",
+      "name": "Imagination extended 1600+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-108",
+      "name": "Adversarial agent 18+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-109",
+      "name": "PC scenario registry 110+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-110",
+      "name": "Wave 72 legal-markets planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-111",
+      "name": "g2-armor-smoke smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-armor-smoke.mjs"
+    },
+    {
+      "id": "PC-112",
+      "name": "g2-throttle-loop smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-throttle-loop.mjs"
+    },
+    {
+      "id": "PC-113",
+      "name": "g2-retrieval-stub smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-retrieval-stub.mjs"
+    },
+    {
+      "id": "PC-114",
+      "name": "Security protocols 1200+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-115",
+      "name": "Retrieval baseline 210+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-116",
+      "name": "Obligation floor 240+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-117",
+      "name": "Imagination extended 1650+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-118",
+      "name": "Adversarial agent 20+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-119",
+      "name": "PC scenario registry 120+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-120",
+      "name": "Wave 73 armor-hardening planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-121",
+      "name": "g2-golden-integration smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-golden-integration.mjs"
+    },
+    {
+      "id": "PC-122",
+      "name": "g2-openapi-lint smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-openapi-lint.mjs"
+    },
+    {
+      "id": "PC-123",
+      "name": "g2-vectorize-adapter smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-vectorize-adapter.mjs"
+    },
+    {
+      "id": "PC-124",
+      "name": "Security protocols 1250+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-125",
+      "name": "Retrieval baseline 220+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-126",
+      "name": "Obligation floor 250+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-127",
+      "name": "Imagination extended 1700+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-128",
+      "name": "Adversarial agent 22+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-129",
+      "name": "PC scenario registry 130+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-130",
+      "name": "Wave 74 stripe-resend-depth planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-131",
+      "name": "g2-module-sequence smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-module-sequence.mjs"
+    },
+    {
+      "id": "PC-132",
+      "name": "g2-error-catalog smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-error-catalog.mjs"
+    },
+    {
+      "id": "PC-133",
+      "name": "g2-tools-list smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-tools-list.mjs"
+    },
+    {
+      "id": "PC-134",
+      "name": "Security protocols 1300+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-135",
+      "name": "Retrieval baseline 230+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-136",
+      "name": "Obligation floor 260+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-137",
+      "name": "Imagination extended 1750+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-138",
+      "name": "Adversarial agent 24+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-139",
+      "name": "PC scenario registry 143+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-140",
+      "name": "Wave 75 phase3-exit planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-141",
+      "name": "User-journey behavioral 64+ journeys",
+      "category": "adversarial",
+      "harness": "user-journey-floor",
+      "minScenarios": 64
+    },
+    {
+      "id": "PC-142",
+      "name": "User-journey behavioral harness script",
+      "category": "adversarial",
+      "harness": "user-journey-harness"
+    },
+    {
+      "id": "PC-143",
+      "name": "g2-user-journey-behavioral smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-user-journey-behavioral.mjs"
+    },
+    {
+      "id": "PC-161",
+      "name": "g2-t05-all-modules smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-t05-all-modules.mjs"
+    },
+    {
+      "id": "PC-162",
+      "name": "simulate-chunk4-discovery smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-chunk4-discovery.mjs"
+    },
+    {
+      "id": "PC-163",
+      "name": "validate-svc001-wave78 smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-svc001-wave78.mjs"
+    },
+    {
+      "id": "PC-164",
+      "name": "Security protocols 1450+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-165",
+      "name": "Retrieval baseline 260+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-166",
+      "name": "Obligation floor 290+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-167",
+      "name": "Imagination extended 1900+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-168",
+      "name": "Adversarial agent 30+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-169",
+      "name": "PC scenario registry 170+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-170",
+      "name": "Wave 78 svc-001-pages-harvest planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-171",
+      "name": "validate-svc001-signoff smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-svc001-signoff.mjs"
+    },
+    {
+      "id": "PC-172",
+      "name": "simulate-chunk5a-wiremap smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-chunk5a-wiremap.mjs"
+    },
+    {
+      "id": "PC-173",
+      "name": "g2-outbound-chain smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-outbound-chain.mjs"
+    },
+    {
+      "id": "PC-174",
+      "name": "Security protocols 1500+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-175",
+      "name": "Retrieval baseline 270+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-176",
+      "name": "Obligation floor 300+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-177",
+      "name": "Imagination extended 1950+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-178",
+      "name": "Adversarial agent 32+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-179",
+      "name": "PC scenario registry 180+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-180",
+      "name": "Wave 79 svc-001-exit planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-181",
+      "name": "g2-t05-all-modules smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-t05-all-modules.mjs"
+    },
+    {
+      "id": "PC-182",
+      "name": "simulate-chunk4-discovery smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-chunk4-discovery.mjs"
+    },
+    {
+      "id": "PC-183",
+      "name": "validate-svc002-wave80 smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-svc002-wave80.mjs"
+    },
+    {
+      "id": "PC-184",
+      "name": "Security protocols 1550+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-185",
+      "name": "Retrieval baseline 280+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-186",
+      "name": "Obligation floor 310+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-187",
+      "name": "Imagination extended 2000+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-188",
+      "name": "Adversarial agent 34+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-189",
+      "name": "PC scenario registry 190+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-190",
+      "name": "Wave 80 svc-002-supabase-harvest planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-191",
+      "name": "validate-svc002-signoff smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-svc002-signoff.mjs"
+    },
+    {
+      "id": "PC-192",
+      "name": "simulate-chunk5a-wiremap smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-chunk5a-wiremap.mjs"
+    },
+    {
+      "id": "PC-193",
+      "name": "g2-outbound-chain smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-outbound-chain.mjs"
+    },
+    {
+      "id": "PC-194",
+      "name": "Security protocols 1600+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-195",
+      "name": "Retrieval baseline 290+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-196",
+      "name": "Obligation floor 320+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-197",
+      "name": "Imagination extended 2050+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-198",
+      "name": "Adversarial agent 36+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-199",
+      "name": "PC scenario registry 200+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-200",
+      "name": "Wave 81 svc-002-exit planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-201",
+      "name": "validate-service-expansion-cycle smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-service-expansion-cycle.mjs"
+    },
+    {
+      "id": "PC-202",
+      "name": "simulate-imagination-50 smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-imagination-50.mjs"
+    },
+    {
+      "id": "PC-203",
+      "name": "g2-outbound-chain smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-outbound-chain.mjs"
+    },
+    {
+      "id": "PC-204",
+      "name": "Security protocols 1650+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-205",
+      "name": "Retrieval baseline 300+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-206",
+      "name": "Obligation floor 330+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-207",
+      "name": "Imagination extended 2100+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-208",
+      "name": "Adversarial agent 38+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-209",
+      "name": "PC scenario registry 210+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-210",
+      "name": "Wave 82 service-expansion-cycle-exit planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-211",
+      "name": "validate-g34-session-harvest smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-g34-session-harvest.mjs"
+    },
+    {
+      "id": "PC-212",
+      "name": "simulate-reference-app-golden-path smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-reference-app-golden-path.mjs"
+    },
+    {
+      "id": "PC-213",
+      "name": "simulate-user-journey-behavioral smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-user-journey-behavioral.mjs"
+    },
+    {
+      "id": "PC-214",
+      "name": "Security protocols 1700+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-215",
+      "name": "Retrieval baseline 310+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-216",
+      "name": "Obligation floor 340+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-217",
+      "name": "Imagination extended 2150+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-218",
+      "name": "Adversarial agent 40+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-219",
+      "name": "PC scenario registry 220+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-220",
+      "name": "Wave 83 session-harvest-g34 planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-221",
+      "name": "validate-operator-deploy-readiness smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-operator-deploy-readiness.mjs"
+    },
+    {
+      "id": "PC-222",
+      "name": "vectorize-preflight smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "vectorize-preflight.mjs"
+    },
+    {
+      "id": "PC-223",
+      "name": "g2-http-smoke smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "g2-http-smoke.mjs"
+    },
+    {
+      "id": "PC-224",
+      "name": "Security protocols 1750+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-225",
+      "name": "Retrieval baseline 320+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-226",
+      "name": "Obligation floor 350+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-227",
+      "name": "Imagination extended 2200+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-228",
+      "name": "Adversarial agent 42+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-229",
+      "name": "PC scenario registry 230+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-230",
+      "name": "Wave 84 operator-deploy-readiness-g35 planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-231",
+      "name": "validate-g37-wave85-harvest smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-g37-wave85-harvest.mjs"
+    },
+    {
+      "id": "PC-232",
+      "name": "validate-operator-deploy-readiness smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-operator-deploy-readiness.mjs"
+    },
+    {
+      "id": "PC-233",
+      "name": "simulate-user-journey-behavioral smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-user-journey-behavioral.mjs"
+    },
+    {
+      "id": "PC-234",
+      "name": "Security protocols 1800+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-235",
+      "name": "Retrieval baseline 330+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-236",
+      "name": "Obligation floor 360+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-237",
+      "name": "Imagination extended 2250+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-238",
+      "name": "Adversarial agent 44+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-239",
+      "name": "PC scenario registry 240+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-240",
+      "name": "Wave 85 g35-harvest-g37 planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-241",
+      "name": "validate-business-infra-plan smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-business-infra-plan.mjs"
+    },
+    {
+      "id": "PC-242",
+      "name": "validate-operator-deploy-readiness smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-operator-deploy-readiness.mjs"
+    },
+    {
+      "id": "PC-243",
+      "name": "Security protocols 1850+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-244",
+      "name": "Retrieval baseline 340+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-245",
+      "name": "Obligation floor 370+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-246",
+      "name": "Imagination extended 2300+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-247",
+      "name": "Adversarial agent 46+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-248",
+      "name": "PC scenario registry 250+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-249",
+      "name": "Wave 86 business-infra-dogfood-g38 planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-251",
+      "name": "validate-g42-wave87-harvest smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-g42-wave87-harvest.mjs"
+    },
+    {
+      "id": "PC-252",
+      "name": "validate-business-infra-plan smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-business-infra-plan.mjs"
+    },
+    {
+      "id": "PC-253",
+      "name": "simulate-user-journey-behavioral smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-user-journey-behavioral.mjs"
+    },
+    {
+      "id": "PC-254",
+      "name": "Security protocols 1900+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-255",
+      "name": "Retrieval baseline 350+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-256",
+      "name": "Obligation floor 380+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-257",
+      "name": "Imagination extended 2350+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-258",
+      "name": "Adversarial agent 48+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-259",
+      "name": "PC scenario registry 260+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-260",
+      "name": "Wave 87 business-infra-harvest-g42 planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-261",
+      "name": "simulate-dogfood-prep smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-dogfood-prep.mjs"
+    },
+    {
+      "id": "PC-262",
+      "name": "validate-g43-wave88-dogfood-prep smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-g43-wave88-dogfood-prep.mjs"
+    },
+    {
+      "id": "PC-263",
+      "name": "simulate-user-journey-behavioral smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-user-journey-behavioral.mjs"
+    },
+    {
+      "id": "PC-264",
+      "name": "Security protocols 1950+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-265",
+      "name": "Retrieval baseline 360+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-266",
+      "name": "Obligation floor 390+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-267",
+      "name": "Imagination extended 2400+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-268",
+      "name": "Adversarial agent 50+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-269",
+      "name": "PC scenario registry 270+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-270",
+      "name": "Wave 88 dogfood-prep-g43 planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-271",
+      "name": "simulate-stripe-prep smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-stripe-prep.mjs"
+    },
+    {
+      "id": "PC-272",
+      "name": "validate-g44-wave89-stripe-prep smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-g44-wave89-stripe-prep.mjs"
+    },
+    {
+      "id": "PC-273",
+      "name": "simulate-user-journey-behavioral smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-user-journey-behavioral.mjs"
+    },
+    {
+      "id": "PC-274",
+      "name": "Security protocols 2000+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-275",
+      "name": "Retrieval baseline 370+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-276",
+      "name": "Obligation floor 400+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-277",
+      "name": "Imagination extended 2450+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-278",
+      "name": "Adversarial agent 52+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-279",
+      "name": "PC scenario registry 280+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-280",
+      "name": "Wave 89 stripe-prep-g44 planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-281",
+      "name": "simulate-affiliates-prep smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-affiliates-prep.mjs"
+    },
+    {
+      "id": "PC-282",
+      "name": "validate-operator-preflight-bundle smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-operator-preflight-bundle.mjs"
+    },
+    {
+      "id": "PC-283",
+      "name": "simulate-user-journey-behavioral smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-user-journey-behavioral.mjs"
+    },
+    {
+      "id": "PC-284",
+      "name": "Security protocols 2050+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-285",
+      "name": "Retrieval baseline 380+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-286",
+      "name": "Obligation floor 410+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-287",
+      "name": "Imagination extended 2500+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-288",
+      "name": "Adversarial agent 54+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-289",
+      "name": "PC scenario registry 290+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-290",
+      "name": "Wave 90 affiliates-prep-g45 planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    },
+    {
+      "id": "PC-291",
+      "name": "validate-g46-wave91-polish-arc smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-g46-wave91-polish-arc.mjs"
+    },
+    {
+      "id": "PC-292",
+      "name": "validate-operator-preflight-bundle smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "validate-operator-preflight-bundle.mjs"
+    },
+    {
+      "id": "PC-293",
+      "name": "simulate-user-journey-behavioral smoke",
+      "category": "deploy-smoke",
+      "harness": "g2-script",
+      "script": "simulate-user-journey-behavioral.mjs"
+    },
+    {
+      "id": "PC-294",
+      "name": "Security protocols 2100+ active",
+      "category": "adversarial",
+      "harness": "security-protocols-floor",
+      "minActive": 2100
+    },
+    {
+      "id": "PC-295",
+      "name": "Retrieval baseline 390+ queries",
+      "category": "adversarial",
+      "harness": "retrieval-floor",
+      "minQueries": 390
+    },
+    {
+      "id": "PC-296",
+      "name": "Obligation floor 420+",
+      "category": "adversarial",
+      "harness": "obligations-floor",
+      "minObligations": 420
+    },
+    {
+      "id": "PC-297",
+      "name": "Imagination extended 2550+",
+      "category": "adversarial",
+      "harness": "imagination-floor",
+      "minScenarios": 2550
+    },
+    {
+      "id": "PC-298",
+      "name": "Adversarial agent 56+",
+      "category": "adversarial",
+      "harness": "adversarial-agent-floor",
+      "minScenarios": 56
+    },
+    {
+      "id": "PC-299",
+      "name": "PC scenario registry 300+",
+      "category": "adversarial",
+      "harness": "pc-scenario-floor",
+      "minScenarios": 300
+    },
+    {
+      "id": "PC-300",
+      "name": "Wave 91 polish-arc-signoff-g46 planning script",
+      "category": "adversarial",
+      "harness": "planning-script",
+      "script": "run-knowledge-wave.mjs"
+    }
+  ]
+}

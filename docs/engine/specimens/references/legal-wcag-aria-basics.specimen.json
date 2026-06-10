@@ -1,0 +1,9 @@
+{
+  "refId": "legal/wcag-aria-basics",
+  "sourceUrl": "https://www.w3.org/WAI/tutorials/forms/labels/",
+  "lastVerified": "2026-05-31",
+  "title": "WCAG ARIA basics for controls",
+  "excerpt": "Interactive controls without visible text need aria-label or aria-labelledby. Icon buttons, menu toggles, and close buttons are common failures. Prefer native elements with visible labels; use ARIA to supplement, not replace, accessible names.",
+  "appliesTo": ["LEG-A11Y-003", "accessibility-wcag"],
+  "tags": ["legal", "wcag", "aria", "a11y"]
+}

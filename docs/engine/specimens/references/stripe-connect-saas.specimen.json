@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-saas",
+  "sourceUrl": "https://docs.stripe.com/connect/saas.md",
+  "lastVerified": "2026-06-03",
+  "title": "Build a SaaS platform",
+  "excerpt": "Provide a platform where merchants accept payments directly from their customers through your integration. > This guide uses Accounts v2 to create and manage connected accounts. For a guide that uses Accounts v1, see [Build a SaaS platform with Accounts v1](https://docs.stripe.com/connect/end-to-end-saas-platform.md). If you’re a subscription-based [SaaS business](https://docs.stripe.com/saas.md), but don’t extend Stripe products or payment processing to your merchants, you don’t need Connect. As a software as a service (SaaS) platform, you extend your integration of Stripe products to your merchant connected accounts.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

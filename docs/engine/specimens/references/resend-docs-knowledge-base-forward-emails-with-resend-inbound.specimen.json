@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-forward-emails-with-resend-inbound",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/forward-emails-with-resend-inbound.md",
+  "lastVerified": "2026-06-03",
+  "title": "Forward emails with Resend Inbound",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Forward emails with Resend Inbound > Learn how to forward receiving emails to another email address with Resend Inbound. Inbound enables you to receive emails with Resend. This guide demonstrates how to forward received emails using [NextJS](https://nextjs.org/), although you can use any framework you prefer. [Verify a domain](https://resend.com/domains) and enable receiving emails for that domain. We strongly recommend verifying a subdomain (`subdomain.example.com`) instead of the root domain (`example.com`). Add the records in your DNS provider and wait for verification to finish in Resend.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

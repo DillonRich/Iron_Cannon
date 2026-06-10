@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/use-stripe-apps-netsuite-custom-payment-application",
+  "sourceUrl": "https://docs.stripe.com/use-stripe-apps/netsuite/custom-payment-application.md",
+  "lastVerified": "2026-06-03",
+  "title": "Custom payment application",
+  "excerpt": "Learn how to customize the way payments are recorded and applied using the Stripe Connector for NetSuite. To learn more and get a demo of the Stripe Connector for NetSuite, go to the [Stripe App Marketplace](https://marketplace.stripe.com/apps/netsuite-connector) and click **Install app**. The Stripe Connector for NetSuite provides a way for you to reconcile Stripe payment activity from your custom or prebuilt, third-party integration to NetSuite.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

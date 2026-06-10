@@ -1,0 +1,16 @@
+{
+  "fixtureId": "T09-01",
+  "description": "Armor tier maps webhook + session from wiremap hints",
+  "input": {
+    "tier": "armor",
+    "surfaceHints": [
+      { "type": "webhook", "path": "src/app/api/webhooks/stripe/route.ts" },
+      { "type": "session_cookie", "path": "src/lib/session.ts" }
+    ]
+  },
+  "expected": {
+    "surfaceCount": 2,
+    "surfaceIds": ["SURF-WH-001", "SURF-SESSION-001"],
+    "minCritical": 1
+  }
+}

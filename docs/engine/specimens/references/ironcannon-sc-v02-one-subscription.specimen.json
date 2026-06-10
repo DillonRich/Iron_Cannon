@@ -1,0 +1,17 @@
+{
+  "refId": "ironcannon/sc-v02-one-subscription",
+  "sourceUrl": "https://ironcannon.dev/patterns/sc-v02",
+  "lastVerified": "2026-05-31",
+  "title": "IC SC-V02 one subscription per user",
+  "excerpt": "Checkout limit one active subscription per customer or guard in app before creating new Checkout Session. Prevents duplicate billing rows.",
+  "appliesTo": [
+    "billing-subscription",
+    "SC-V02",
+    "M11"
+  ],
+  "tags": [
+    "ironcannon",
+    "stripe-variant"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

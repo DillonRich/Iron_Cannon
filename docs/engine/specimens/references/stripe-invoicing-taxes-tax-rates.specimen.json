@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-taxes-tax-rates",
+  "sourceUrl": "https://docs.stripe.com/invoicing/taxes/tax-rates.md",
+  "lastVerified": "2026-06-03",
+  "title": "Tax rates and IDs",
+  "excerpt": "Assign tax rates to draft invoices for tax calculation. If you’re looking for automated tax calculation where you don’t need to define the rates, use [Stripe Tax](https://docs.stripe.com/tax.md). After you [create a tax rate](https://docs.stripe.com/tax/tax-rates.md), you can assign it: - On individual *invoice* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice) items. - On the entire subtotal of the invoice. > Stripe recommends that you assign a tax rate on individual invoice items.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-RECORD-002",
+  "obligationId": "LEG-RECORD-002",
+  "detectType": "schema_table",
+  "detect": {
+    "type": "schema_table",
+    "table": "email_unsubscribe_log"
+  },
+  "passSnippet": "CREATE TABLE email_unsubscribe_log (id INT)",
+  "failSnippet": "gap LEG-RECORD-002",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

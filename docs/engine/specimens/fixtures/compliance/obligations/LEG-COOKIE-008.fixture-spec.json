@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-COOKIE-008",
+  "obligationId": "LEG-COOKIE-008",
+  "detectType": "ui_pattern",
+  "detect": {
+    "type": "ui_pattern",
+    "pattern": "cookie settings reopen"
+  },
+  "passSnippet": "/* cookie settings reopen */",
+  "failSnippet": "defaultChecked={true}",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

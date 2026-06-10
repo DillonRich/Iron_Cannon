@@ -1,0 +1,16 @@
+{
+  "refId": "owasp/cheatsheets-authorization-cheat-sheet-html",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+  "lastVerified": "2026-06-05",
+  "title": "Authorization Cheat Sheet",
+  "excerpt": "Authorization - OWASP Cheat Sheet Series Skip to content OWASP Cheat Sheet Series Authorization Initializing search OWASP/CheatSheetSeries OWASP Cheat Sheet Series OWASP/CheatSheetSeries Introduction Index Alphabetical Index ASVS Index MASVS Index Proactive Controls Index Top 10 Cheatsheets Cheatsheets AI Agent Security AJAX Security AML Sanctions AI Agent Payments Abuse Case Access Control Attack Surface Analysis Authentication Authorization Authorization Table of contents Introduction Recommendations Enforce Least Privileges Deny by Default Validate the Permissions on Every Request Thoroughly Review the Authorization Logic of Chosen Tools and Technologies, Implementing Custom Logic if Necessary Prefer Attribute and Relationship Based Access Control over RBAC Ensure Lookup IDs are Not Acc…",
+  "appliesTo": [
+    "security",
+    "auth",
+    "billing"
+  ],
+  "tags": [
+    "owasp",
+    "p0"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "fixtureId": "T10-02",
+  "description": "Pro tier cannot call get_security_directives",
+  "input": { "tier": "pro", "surfaceId": "SURF-WH-001" },
+  "expected": { "code": "TIER_INSUFFICIENT" }
+}

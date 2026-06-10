@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/d1-overview",
+  "sourceUrl": "https://developers.cloudflare.com/d1/",
+  "lastVerified": "2026-05-31",
+  "title": "Cloudflare D1 overview",
+  "excerpt": "D1 is serverless SQLite at the edge. Access via Workers binding with env.DB.prepare(). Supports SQL, transactions, migrations via wrangler d1 migrations. Writes go to primary; reads can use read replicas with Sessions API for consistency.",
+  "appliesTo": ["layer2/cloudflare", "auth-lifecycle", "billing-subscription"],
+  "tags": ["cloudflare", "d1"]
+}

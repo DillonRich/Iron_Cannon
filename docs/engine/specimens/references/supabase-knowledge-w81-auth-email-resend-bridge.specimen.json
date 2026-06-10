@@ -1,0 +1,15 @@
+{
+  "refId": "supabase/knowledge-w81-auth-email-resend-bridge",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w81/auth-email-resend-bridge",
+  "lastVerified": "2026-06-06",
+  "title": "W81 auth-email-resend-bridge",
+  "provider": "supabase",
+  "excerpt": "Custom SMTP via Resend for Supabase Auth when default mail insufficient",
+  "embeddingHint": "supabase auth-email-resend-bridge wave81 svc-002-exit",
+  "tags": [
+    "wave81",
+    "knowledge",
+    "supabase",
+    "svc-002-exit"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-cards-replacements",
+  "sourceUrl": "https://docs.stripe.com/issuing/cards/replacements.md",
+  "lastVerified": "2026-06-03",
+  "title": "Replacement cards",
+  "excerpt": "Learn how to replace cards that are expired, damaged, lost, or stolen. You can replace cards that are expired, damaged, lost, or stolen. The process differs slightly for each kind of card replacement. - **Card expired**: The card has reached its expiration date and is no longer valid. - **Card damaged**: The cardholder requests a new card for a reason other than lost or stolen (for example, a physical card’s chip no longer reads properly). - **Card lost/stolen**: The card is reported lost or stolen and a new card number, expiry, security code are issued. Depending on the scenario, the replacement card might have a different card number, expiry, or security code from the original:",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

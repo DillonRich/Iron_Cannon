@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-connect-destination-charges",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/connect/destination-charges.md",
+  "lastVerified": "2026-06-03",
+  "title": "Revenue Recognition for destination charges",
+  "excerpt": "Learn how revenue recognition works with destination charges. Revenue recognition for destination charges tracks how platform fees are recognized as revenue when using the destination charge model for Stripe Connect. With destination charges, the platform account receives the full charge amount and then transfers a portion to the connected account, keeping the platform fees as revenue. Here, we explain how revenue recognition works for both fee collection methods: - **Application fees** (`application_fee_amount`): Platform fees are collected separately and transferred back to the platform. - **Transfer amount** (`transfer_data[amount]`): Platform fees are deducted from the transfer amount to the connected account.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

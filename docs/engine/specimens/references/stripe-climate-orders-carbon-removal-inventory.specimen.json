@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/climate-orders-carbon-removal-inventory",
+  "sourceUrl": "https://docs.stripe.com/climate/orders/carbon-removal-inventory.md",
+  "lastVerified": "2026-06-03",
+  "title": "Carbon removal inventory",
+  "excerpt": "Learn about available carbon removal inventory. *Products* (Products represent the different types of carbon removal units that are available for purchase) represent the carbon removal inventory available for purchase. All products come from *offtake agreements* (A contractual agreement to purchase carbon removal at a certain price if and when tons of carbon removal are delivered and verified) with carbon removal suppliers in [Frontier’s portfolio](https://frontierclimate.com/portfolio?track=offtake). Avoiding the worst impacts of climate change requires a portfolio of technologies.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

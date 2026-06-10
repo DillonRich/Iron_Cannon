@@ -1,0 +1,15 @@
+{
+  "refId": "resend/docs-dashboard-webhooks-introduction",
+  "sourceUrl": "https://resend.com/docs/dashboard/webhooks/introduction",
+  "lastVerified": "2026-06-03",
+  "title": "webhooks",
+  "excerpt": "Managing Webhooks - Resend Skip to main content Resend home page Documentation API Reference Knowledge Base Sign In Get Started Get Started Search... Navigation Webhooks Managing Webhooks Search... ⌘ K Get started Introduction Create an API key Quick setup Node.js Serverless PHP Ruby Python Go Rust Elixir Java .NET SMTP CLI Learn Sending Receiving Broadcasts Automations Templates Audience Domains Logs API Keys Webhooks Introduction Event Types Retries and Replays Verify Webhooks Requests Webhook Ingester Storing Webhooks Data Webhook events reference Settings Build with AI AI Onboarding AI Tools Agent Skills Chat SDK AI Builder Guides Resources Examples SDKs CLI Security Integrations On this page What is a webhook? Why use webhooks? How to receive webhooks 1.…",
+  "appliesTo": [
+    "security",
+    "compliance"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

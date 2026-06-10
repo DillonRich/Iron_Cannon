@@ -1,0 +1,14 @@
+{
+  "refId": "legal/list-unsubscribe-post",
+  "sourceUrl": "https://ironcannon.dev/planning/W65/ref/legal-list-unsubscribe-post",
+  "lastVerified": "2026-06-06",
+  "title": "list unsubscribe post",
+  "provider": "legal",
+  "excerpt": "Support List-Unsubscribe-Post one-click unsubscribe per RFC 8058.",
+  "embeddingHint": "legal/list-unsubscribe-post wave65 obligation-source legal",
+  "tags": [
+    "wave65",
+    "obligation-source",
+    "legal"
+  ]
+}

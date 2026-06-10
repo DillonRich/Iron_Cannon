@@ -1,0 +1,16 @@
+{
+  "refId": "owasp/cheatsheets-aml-sanctions-ai-agent-payments-cheat-sheet-html",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/AML_Sanctions_AI_Agent_Payments_Cheat_Sheet.html",
+  "lastVerified": "2026-06-05",
+  "title": "AML Sanctions AI Agent Payments Cheat Sheet",
+  "excerpt": "AML Sanctions AI Agent Payments - OWASP Cheat Sheet Series Skip to content OWASP Cheat Sheet Series AML Sanctions AI Agent Payments Initializing search OWASP/CheatSheetSeries OWASP Cheat Sheet Series OWASP/CheatSheetSeries Introduction Index Alphabetical Index ASVS Index MASVS Index Proactive Controls Index Top 10 Cheatsheets Cheatsheets AI Agent Security AJAX Security AML Sanctions AI Agent Payments AML Sanctions AI Agent Payments Table of contents Introduction Regulatory Context Key Principle Section 1: Agent Identity Before Screening Do Don't Section 2: Entity Screening Do Don't Section 3: Agent Operator Screening Do Don't Section 4: Signed Audit Trail Do Don't Section 5: Fail-Closed Enforcement Do Don't Section 6: Trust-Tiered Rate Limiting Do Don't Section 7: Self-Hosted vs Hosted Scr…",
+  "appliesTo": [
+    "security",
+    "auth",
+    "billing"
+  ],
+  "tags": [
+    "owasp",
+    "p0"
+  ]
+}

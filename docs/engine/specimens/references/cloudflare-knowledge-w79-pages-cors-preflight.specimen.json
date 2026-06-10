@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/knowledge-w79-pages-cors-preflight",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w79/pages-cors-preflight",
+  "lastVerified": "2026-06-06",
+  "title": "W79 pages-cors-preflight",
+  "provider": "cloudflare",
+  "excerpt": "Worker API returns Access-Control-Allow-Origin for Pages UI origin",
+  "embeddingHint": "cloudflare pages-cors-preflight wave79 svc-001-exit",
+  "tags": [
+    "wave79",
+    "knowledge",
+    "cloudflare",
+    "svc-001-exit"
+  ]
+}

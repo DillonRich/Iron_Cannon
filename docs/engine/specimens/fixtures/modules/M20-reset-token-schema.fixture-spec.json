@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M20",
+  "moduleId": "M20-reset-token-schema",
+  "patternsUnderTest": [
+    "PW-SC-001",
+    "PW-R01",
+    "AUTH-P49-M20-",
+    "AUTH-P49-SESSION"
+  ],
+  "passSnippet": "CREATE TABLE password_reset_tokens (id TEXT PRIMARY KEY, user_id TEXT, token_hash TEXT NOT NULL, expires_at INTEGER);",
+  "failSnippet": "CREATE TABLE password_reset_tokens (token TEXT NOT NULL UNIQUE, user_id TEXT);",
+  "expectedPass": true,
+  "expectedFail": false,
+  "forbiddenOnFail": [
+    "PW-SC-F01"
+  ]
+}

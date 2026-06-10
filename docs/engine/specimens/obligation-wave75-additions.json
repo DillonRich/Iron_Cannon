@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W75-001",
+      "category": "operations",
+      "title": "Production MCP signoff checklist complete",
+      "sourceRefId": "ironcannon/knowledge-w75-production-mcp-signoff",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-002",
+      "category": "operations",
+      "title": "Phase 4 adapters blocked until MCP signoff",
+      "sourceRefId": "ironcannon/knowledge-w75-phase4-adapter-blocked",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-003",
+      "category": "operations",
+      "title": "Production-confidence at 140 plus scenarios",
+      "sourceRefId": "ironcannon/knowledge-w75-pc-140-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-004",
+      "category": "operations",
+      "title": "Adversarial harness at 24 plus scenarios",
+      "sourceRefId": "ironcannon/knowledge-w75-adversarial-24-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-005",
+      "category": "operations",
+      "title": "Obligations at 260 with layer4 parity",
+      "sourceRefId": "ironcannon/knowledge-w75-obligation-260-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-006",
+      "category": "operations",
+      "title": "Imagination extended at 1750 scenarios",
+      "sourceRefId": "ironcannon/knowledge-w75-imagination-1750-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-007",
+      "category": "operations",
+      "title": "Security protocols at 1300 active",
+      "sourceRefId": "ironcannon/knowledge-w75-protocol-1300-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-008",
+      "category": "operations",
+      "title": "Retrieval baseline at 230 queries",
+      "sourceRefId": "ironcannon/knowledge-w75-retrieval-230-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-009",
+      "category": "operations",
+      "title": "Corpus at 11000 plus cards with harvest quality green",
+      "sourceRefId": "ironcannon/knowledge-w75-corpus-11k-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-010",
+      "category": "operations",
+      "title": "Vectorize manifest synced after every wave",
+      "sourceRefId": "ironcannon/knowledge-w75-vectorize-sync-gate",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

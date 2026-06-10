@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/api-resources-vectorize-subresources-indexes-methods-list-index",
+  "sourceUrl": "https://developers.cloudflare.com/api/resources/vectorize/subresources/indexes/methods/list/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Vectorize REST API",
+  "excerpt": "**get** `/accounts/{account_id}/vectorize/v2/indexes` - `config: optional IndexDimensionConfiguration` Specifies the number of dimensions for the index - `metric: \"cosine\" or \"euclidean\" or \"dot-product\"` Specifies the type of metric to use calculating distance. Specifies the timestamp the resource was created as an ISO8601 string.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "fixtureId": "DT-11",
+  "detectType": "component_scan",
+  "passSnippet": "components/CookieConsentBanner.tsx",
+  "failSnippet": "layout.tsx header nav only",
+  "expectedPass": "met",
+  "expectedFail": "advisory"
+}

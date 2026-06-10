@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w68-003",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "AI-assisted code changes pass secure-coding review gate",
+    "obligations": [
+      "LEG-W68-003"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "AI-assisted code changes pass secure-coding review gate"
+  },
+  "references": [
+    "owasp/cheatsheets-secure-coding-with-ai-cheat-sheet-html"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W68-003",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

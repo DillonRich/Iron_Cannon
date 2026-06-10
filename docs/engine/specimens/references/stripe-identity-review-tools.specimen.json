@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/identity-review-tools",
+  "sourceUrl": "https://docs.stripe.com/identity/review-tools.md",
+  "lastVerified": "2026-06-03",
+  "title": "Review tools",
+  "excerpt": "Learn how to use manual reviews to supplement programmatic systems with human expertise. While Stripe’s programmatic systems work to detect fraudulent verifications, you can perform manual reviews to provide an extra layer of fraud protection. For example, you might want to review verifications when: - Your customer submits a document from an unexpected country - Your customer contacts you about a potential mistake in their verification - Your business requirements differ from Stripe Identity’s default risk thresholds",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

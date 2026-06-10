@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/dashboard-mobile",
+  "sourceUrl": "https://docs.stripe.com/dashboard/mobile.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe Dashboard mobile app",
+  "excerpt": "Learn how to use the mobile app version of the Stripe Dashboard. Stripe offers a mobile application to access the Dashboard for both iOS and Android devices. Use the app to view business metrics, track and manage payments and customers, and initiate payouts. You can also accept in-person payments (such as Tap to Pay) and create payment links, basic invoices, and subscriptions. Download the appropriate app for your device: [iOS on App Store](https://apps.apple.com/app/apple-store/id978516833?pt=91215812&ct=stripe-docs-mobile&mt=8) [Android on Google Play](https://play.google.com/store/apps/details?id=com.stripe.android.dashboard&pli=1) When you’re ready to use the mobile app, you must [create a Stripe account](https://dashboard.stripe.com/register) or log into your existing account.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/knowledge-w67-rag-chunk-validate",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w67/rag-chunk-validate",
+  "lastVerified": "2026-06-06",
+  "title": "W67 rag-chunk-validate",
+  "provider": "owasp",
+  "excerpt": "Validate retrieved RAG chunks for injection markers before compose",
+  "embeddingHint": "owasp rag-chunk-validate wave67 phase3 production",
+  "tags": [
+    "wave67",
+    "knowledge",
+    "owasp",
+    "phase3"
+  ]
+}

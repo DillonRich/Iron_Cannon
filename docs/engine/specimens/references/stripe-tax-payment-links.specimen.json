@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-payment-links",
+  "sourceUrl": "https://docs.stripe.com/tax/payment-links.md",
+  "lastVerified": "2026-06-03",
+  "title": "Automatically collect tax on Payment Links",
+  "excerpt": "Learn how to calculate and collect tax on a payment page without writing any code. > [Log in](https://dashboard.stripe.com/settings/tax) or [sign up](https://dashboard.stripe.com/register) for Stripe to enable Stripe Tax. You can use Stripe Tax with [Payment Links](https://stripe.com/payments/payment-links) to automatically calculate and collect tax on a payment page and share a link to it with your customers, without writing any code. [Watch on YouTube](https://www.youtube.com/watch?v=aotUFvYtmys) > If you sell digital products, [Managed Payments](https://docs.stripe.com/payments/managed-payments/tax-compliance.md) allows you to offload tax liability to Stripe so we’re directly responsible for handling sales tax, VAT, or GST globally.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

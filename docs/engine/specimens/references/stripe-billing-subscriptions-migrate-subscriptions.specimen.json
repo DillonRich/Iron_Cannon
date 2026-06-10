@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-subscriptions-migrate-subscriptions",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/migrate-subscriptions.md",
+  "lastVerified": "2026-06-03",
+  "title": "Migrate subscriptions to Stripe Billing",
+  "excerpt": "Learn about migrating subscriptions from other sources to Stripe. You can import existing *subscriptions* (A Subscription represents the product details associated with the plan that your customer subscribes to. Allows you to charge the customer on a recurring basis) from third-party billing systems (such as Zuora, Recurly, Chargify, or Chargebee) into Stripe Billing. You can also migrate subscriptions from an in-house billing system or from a different Stripe account. Use the [Billing migration toolkit](https://docs.stripe.com/billing/subscriptions/import-subscriptions-toolkit.md) to migrate your subscriptions without writing code.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

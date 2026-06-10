@@ -1,0 +1,11 @@
+{
+  "refId": "owasp/reset-token",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html",
+  "lastVerified": "2026-06-03",
+  "title": "Password reset token",
+  "excerpt": "Tokens must be single-use, hashed at rest, expire within 1 hour, sent only to verified email.",
+  "tags": [
+    "owasp",
+    "security"
+  ]
+}

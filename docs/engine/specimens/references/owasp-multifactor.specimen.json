@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/multifactor",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Multifactor authentication",
+  "excerpt": "Prefer TOTP/WebAuthn over SMS. Enforce MFA for admin and billing actions. Backup codes stored hashed. Do not bypass MFA via alternate API paths.",
+  "appliesTo": [
+    "auth-lifecycle",
+    "layer3"
+  ],
+  "tags": [
+    "owasp",
+    "mfa"
+  ]
+}

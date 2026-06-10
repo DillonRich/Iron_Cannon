@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/sql-injection",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP SQL injection prevention",
+  "excerpt": "Use parameterized queries exclusively (D1 .bind()). Never concatenate user input into SQL. ORM/query builders with bound parameters. Least privilege DB credentials. Log query errors server-side only.",
+  "appliesTo": ["layer3", "cloudflare/d1-bindings"],
+  "tags": ["owasp", "sql-injection", "d1"]
+}

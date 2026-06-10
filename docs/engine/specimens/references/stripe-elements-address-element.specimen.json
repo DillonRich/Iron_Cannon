@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/elements-address-element",
+  "sourceUrl": "https://docs.stripe.com/elements/address-element.md",
+  "lastVerified": "2026-06-03",
+  "title": "Address Element",
+  "excerpt": "Use the Address Element to collect complete billing and shipping addresses. The Address Element is an embeddable UI component for accepting complete addresses. Use it to collect shipping addresses, or when you need a complete billing address, such as for tax purposes. | Option | Description | | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | | **Theme** | Use the dropdown to choose a theme or customize the theme with the [Elements Appearance API](https://docs.stripe.com/…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

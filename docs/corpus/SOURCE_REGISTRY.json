@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-05-31",
+  "etags": {
+    "cloudflare": "W/\"ca4e2ed51941217fa0626e64d4e75844\"",
+    "nextjs": "W/\"4c4d24226b37fb7811a401faab45bad0\""
+  },
+  "providers": {
+    "stripe": {
+      "llmsTxt": "https://docs.stripe.com/llms.txt",
+      "fetchMode": "markdown",
+      "rateLimitMs": 1000
+    },
+    "cloudflare": {
+      "llmsTxt": "https://developers.cloudflare.com/llms.txt",
+      "subRegistries": [
+        "https://developers.cloudflare.com/workers/llms.txt",
+        "https://developers.cloudflare.com/d1/llms.txt",
+        "https://developers.cloudflare.com/kv/llms.txt",
+        "https://developers.cloudflare.com/pages/llms.txt",
+        "https://developers.cloudflare.com/r2/llms.txt",
+        "https://developers.cloudflare.com/vectorize/llms.txt"
+      ],
+      "fetchMode": "cloudflare-markdown",
+      "rateLimitMs": 500
+    },
+    "resend": {
+      "llmsTxt": "https://resend.com/docs/llms.txt",
+      "llmsTxtFallback": "https://resend.com/docs/llms-full.txt",
+      "fetchMode": "html",
+      "rateLimitMs": 1000
+    },
+    "nextjs": {
+      "llmsTxt": "https://nextjs.org/docs/llms.txt",
+      "fetchMode": "html",
+      "rateLimitMs": 1000
+    },
+    "owasp": {
+      "fetchMode": "html",
+      "rateLimitMs": 800
+    },
+    "legal": {
+      "fetchMode": "html",
+      "rateLimitMs": 1000
+    },
+    "ironcannon": {
+      "fetchMode": "html",
+      "rateLimitMs": 500
+    }
+  },
+  "allowlistHosts": [
+    "docs.stripe.com",
+    "developers.cloudflare.com",
+    "resend.com",
+    "nextjs.org",
+    "cheatsheetseries.owasp.org",
+    "www.w3.org",
+    "www.ftc.gov",
+    "ico.org.uk"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "refId": "owasp/scale-d-llm-5056",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/owasp/scale-d-llm-5056",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-D llm 5056",
+  "excerpt": "LLM prompt injection guards for agent-facing tools. Scale-D planning reference for Iron Cannon MCP agents at 10k corpus depth.",
+  "tags": [
+    "owasp",
+    "llm",
+    "scale-d"
+  ],
+  "embeddingHint": "owasp llm LLM prompt injection guards for agent-facing tools scale-d compliance security"
+}

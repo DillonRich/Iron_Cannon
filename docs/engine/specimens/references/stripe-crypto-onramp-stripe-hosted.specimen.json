@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/crypto-onramp-stripe-hosted",
+  "sourceUrl": "https://docs.stripe.com/crypto/onramp/stripe-hosted.md",
+  "lastVerified": "2026-06-03",
+  "title": "Use the Stripe-hosted onramp",
+  "excerpt": "Generate a redirect URL and mint a session for the standalone onramp. The Stripe-hosted, standalone onramp is a prebuilt frontend integration of the crypto onramp hosted at <https://crypto.link.com>. Platforms can integrate the crypto onramp by redirecting their users to the standalone onramp, rather than hosting an embedded version of the onramp within their application. To access the Stripe onramp, including testing environments, you must follow these steps to submit your application: 1. [Create or sign in to your Stripe account](https://dashboard.stripe.com/register). 1. If you haven’t already, [set up your Stripe account](https://dashboard.stripe.com/account/onboarding). 1. [Submit your onramp application](https://dashboard.stripe.com/crypto-onramp/get-started).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

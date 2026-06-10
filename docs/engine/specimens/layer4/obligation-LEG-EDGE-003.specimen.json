@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-edge-003",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-edge-003",
+  "content": {
+    "requirement": "Rate limit UX on auth (no stack trace)",
+    "obligations": [
+      "LEG-EDGE-003"
+    ],
+    "compareSteps": [
+      "Run detect.type=pattern",
+      "Map result to obligation LEG-EDGE-003",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-EDGE-003: Rate limit UX on auth (no stack trace)"
+  },
+  "references": [
+    "owasp/auth-rate-limit"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-EDGE-003",
+        "type": "pattern",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "edge",
+    "disclaimerRequired": true
+  }
+}

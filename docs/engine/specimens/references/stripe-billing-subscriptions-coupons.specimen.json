@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-subscriptions-coupons",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/coupons.md",
+  "lastVerified": "2026-06-03",
+  "title": "Coupons and promotion codes",
+  "excerpt": "Add discounts to subscriptions and subscription items using coupons and promotion codes. Redeem coupons to apply discounts to the subscriptions you offer. You can also use coupons to create promotion codes to share with your customers. Customers can redeem these promotion codes to apply discounts to their subscriptions. - [Coupons](https://docs.stripe.com/billing/subscriptions/coupons.md#coupons): You create and manage coupons to define discounts, such as a percentage or amount off from the subscription price. - [Promotion codes](https://docs.stripe.com/billing/subscriptions/coupons.md#promotion-codes): You create customer-facing codes that map to your coupons. For example, FALLPROMO and SPRINGPROMO can both map to a single 25% off coupon.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

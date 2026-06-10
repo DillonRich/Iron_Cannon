@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-subscriptions-designing-integration",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/designing-integration.md",
+  "lastVerified": "2026-06-03",
+  "title": "plan your integration",
+  "excerpt": "Learn about the configuration options for a subscriptions integration. Use this guide to learn the different ways to build your subscriptions integration, and follow the links to in-depth, step-by-step guides. You’ll need to consider the following: - [How you want to charge customers](https://docs.stripe.com/billing/subscriptions/design-an-integration.md#pricing-model) - [How you want your customers to check out and provide their payment information](https://docs.stripe.com/billing/subscriptions/design-an-integration.md#checkout-options) - [When you want customers to pay for the subscription](https://docs.stripe.com/billing/subscriptions/design-an-integration.md#select-billing-model) Compare the following pricing models and determine how you want to charge your customers for the subscripti…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-data-import-manage-imported-data",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/data-import/manage-imported-data.md",
+  "lastVerified": "2026-06-03",
+  "title": "Manage imported data",
+  "excerpt": "Search for and manage existing imported data. After you import data, you can manage it through the [Dashboard](https://dashboard.stripe.com/revenue-recognition/data-import). After you upload a CSV, you can refresh the page to see the status of the import in the **Imported files** preview on the top right. ![Data import landing page](https://b.stripecdn.com/docs-statics-srv/assets/data-import-landing-page.8b30b5093e9353bc36730662b1958102.png) Click **View all** to see a list of all imported files. ![Data import imported files csv list](https://b.stripecdn.com/docs-statics-srv/assets/data-import-imported-files-csv-list.c6d02c2774ef8aaf9c6a775a6ccad023.png)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

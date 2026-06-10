@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/knowledge-w73-deserialization-safe",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w73/deserialization-safe",
+  "lastVerified": "2026-06-06",
+  "title": "W73 deserialization-safe",
+  "provider": "owasp",
+  "excerpt": "No unsafe deserialization of user input",
+  "embeddingHint": "owasp deserialization-safe wave73 armor-hardening",
+  "tags": [
+    "wave73",
+    "knowledge",
+    "owasp",
+    "armor-hardening"
+  ]
+}

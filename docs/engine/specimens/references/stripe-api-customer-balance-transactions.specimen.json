@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-customer-balance-transactions",
+  "sourceUrl": "https://docs.stripe.com/api/customer_balance_transactions.md",
+  "lastVerified": "2026-06-03",
+  "title": "Customer Balance Transaction",
+  "excerpt": "Each customer has a [Balance](https://docs.stripe.com/docs/api/customers/object.md#customer_object-balance) value, which denotes a debit or credit that’s automatically applied to their next invoice upon finalization. You may modify the value directly by using the [update customer API](https://docs.stripe.com/docs/api/customers/update.md), or by creating a Customer Balance Transaction, which increments or decrements the customer’s `balance` by the specified `amount`.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

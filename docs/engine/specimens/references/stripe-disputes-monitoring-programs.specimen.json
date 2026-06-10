@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/disputes-monitoring-programs",
+  "sourceUrl": "https://docs.stripe.com/disputes/monitoring-programs.md",
+  "lastVerified": "2026-06-03",
+  "title": "Dispute and fraud card monitoring programs",
+  "excerpt": "Learn about the monitoring programs operated by the card networks, and what to do if you're placed into one. To learn more about the steps you can take to prevent disputes and fraud, refer to our [prevention guide](https://docs.stripe.com/disputes/prevention.md). As part of your financial obligations to the *card networks* (A network that processes the transactions of a particular card brand. It might be an intermediary in front of an issuing bank as with Visa or Mastercard, or a standalone entity as with American Express), you must keep [disputes](https://docs.stripe.com/disputes.md) (also called chargebacks) and fraud at acceptable levels.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

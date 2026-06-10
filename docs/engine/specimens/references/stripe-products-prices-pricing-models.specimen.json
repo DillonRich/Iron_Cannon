@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/products-prices-pricing-models",
+  "sourceUrl": "https://docs.stripe.com/products-prices/pricing-models.md",
+  "lastVerified": "2026-06-03",
+  "title": "Recurring pricing models",
+  "excerpt": "Learn about the pricing models you can use with subscriptions. Pricing models are patterns that represent your business on Stripe and consists of the products or services you sell, how much they cost, what currency you accept for payments, and the service period for subscriptions. To build the pricing model, you use [products](https://docs.stripe.com/api/products.md) (what you sell) and [prices](https://docs.stripe.com/api/prices.md) (how much and how often to charge for your products).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

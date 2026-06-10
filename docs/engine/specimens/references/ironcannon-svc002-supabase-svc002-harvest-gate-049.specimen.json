@@ -1,0 +1,16 @@
+{
+  "refId": "ironcannon/svc002-supabase-svc002-harvest-gate-049",
+  "sourceUrl": "https://ironcannon.dev/svc002/supabase/svc002-harvest-gate-49",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-002 svc002-harvest-gate 49",
+  "provider": "ironcannon",
+  "excerpt": "SVC-002 Phase B harvest cards and obligations before runtime signoff.",
+  "embeddingHint": "ironcannon svc002-harvest-gate svc002 supabase sd-07 rls ssr",
+  "tags": [
+    "svc002",
+    "supabase",
+    "sd-07",
+    "ironcannon",
+    "svc002-harvest-gate"
+  ]
+}

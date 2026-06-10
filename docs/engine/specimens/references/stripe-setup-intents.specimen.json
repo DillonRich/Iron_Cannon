@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/setup-intents",
+  "sourceUrl": "https://docs.stripe.com/payments/setup-intents.md",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe SetupIntents",
+  "excerpt": "SetupIntent saves payment method for future charges without immediate payment. Use for trial start or update payment method flows. Confirm client-side with Elements; handle requires_action 3DS. Store payment_method ID on Customer—not raw card data.",
+  "appliesTo": ["billing-subscription", "auth-lifecycle"],
+  "tags": ["stripe", "payments"]
+}

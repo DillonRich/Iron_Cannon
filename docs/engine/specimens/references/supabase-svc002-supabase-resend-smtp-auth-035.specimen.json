@@ -1,0 +1,16 @@
+{
+  "refId": "supabase/svc002-supabase-resend-smtp-auth-035",
+  "sourceUrl": "https://ironcannon.dev/svc002/supabase/resend-smtp-auth-35",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-002 resend-smtp-auth 35",
+  "provider": "supabase",
+  "excerpt": "Supabase Auth SMTP can use Resend; document SPF/DKIM when replacing default Supabase mail.",
+  "embeddingHint": "supabase resend-smtp-auth svc002 supabase sd-07 rls ssr",
+  "tags": [
+    "svc002",
+    "supabase",
+    "sd-07",
+    "supabase",
+    "resend-smtp-auth"
+  ]
+}

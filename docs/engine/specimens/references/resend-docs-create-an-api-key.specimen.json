@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-create-an-api-key",
+  "sourceUrl": "https://resend.com/docs/create-an-api-key.md",
+  "lastVerified": "2026-06-03",
+  "title": "Create an API key",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Create an API key > Get started sending emails by creating an API key ## What is an API Key? API Keys are secret tokens used to authenticate your requests. They are unique to your account and should be kept confidential. You must create at least one API key to use the Resend platform through code (e.g., SDKs, API, command-line interface (CLI), or AI tools).…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

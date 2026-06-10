@@ -1,0 +1,14 @@
+{
+  "refId": "cloudflare/email-routing",
+  "sourceUrl": "https://developers.cloudflare.com/email-routing/",
+  "lastVerified": "2026-05-31",
+  "title": "Cloudflare Email Routing",
+  "excerpt": "Forward inbound email at edge. Iron Cannon uses Resend for outbound transactional; inbound optional for support addresses.",
+  "appliesTo": [
+    "P2"
+  ],
+  "tags": [
+    "cloudflare",
+    "email"
+  ]
+}

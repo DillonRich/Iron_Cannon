@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/get-started-account-teams",
+  "sourceUrl": "https://docs.stripe.com/get-started/account/teams.md",
+  "lastVerified": "2026-06-03",
+  "title": "Start a team",
+  "excerpt": "Learn how to invite and interact with team members. Stripe logs the account activity of team members during the past 180 days. To review account activity information, go to [Security history](https://dashboard.stripe.com/settings/security_history) in the Dashboard. 1. Go to the [Team](https://dashboard.stripe.com/settings/team) tab in the Dashboard. 1. Add one or more email addresses, separated by a space or comma. Adding users together allows you to assign them all the same roles and access simultaneously. 1. Select which roles to assign. Users can hold multiple roles within the same account. Review the [list of actions](https://docs.stripe.com/get-started/account/teams/roles.md) that each role can and can’t perform before assigning the role to a team member.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

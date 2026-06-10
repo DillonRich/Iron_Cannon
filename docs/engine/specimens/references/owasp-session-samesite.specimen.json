@@ -1,0 +1,14 @@
+{
+  "refId": "owasp/session-samesite",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/owasp-session-samesite",
+  "lastVerified": "2026-06-04",
+  "title": "Session cookie SameSite=Lax or Strict in production",
+  "provider": "owasp",
+  "excerpt": "LEG-W53-018: Session cookie SameSite=Lax or Strict in production",
+  "embeddingHint": "LEG-W53-018 security config",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

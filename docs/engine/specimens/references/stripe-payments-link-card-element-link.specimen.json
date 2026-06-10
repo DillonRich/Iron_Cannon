@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-link-card-element-link",
+  "sourceUrl": "https://docs.stripe.com/payments/link/card-element-link.md",
+  "lastVerified": "2026-06-03",
+  "title": "Link in the Card Element",
+  "excerpt": "Enable checkout using Link with the Card Element. > Stripe no longer recommends using the Card Element as part of your Web Elements integration. To integrate Link, use one of our preferred Elements: the [Contact Details Element](https://docs.stripe.com/payments/link/contact-details-element.md), [Express Checkout Element](https://docs.stripe.com/payments/link/express-checkout-element-link.md), or [Payment Element](https://docs.stripe.com/payments/link/payment-element-link.md). Use [Link](https://docs.stripe.com/payments/link.md) in the Card Element to save and autofill payment information for your customers, so they don’t need to enter their payment details manually.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

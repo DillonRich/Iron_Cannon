@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/ssrf",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP SSRF prevention",
+  "excerpt": "Block internal IP ranges and metadata endpoints in outbound fetch. Allowlist external domains. Do not pass user-supplied URLs directly to fetch. Validate scheme (https only). Relevant for Workers webhook callbacks and image proxies.",
+  "appliesTo": ["cloudflare/workers-fetch", "layer3"],
+  "tags": ["owasp", "ssrf"]
+}

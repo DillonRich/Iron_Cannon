@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/privacy/account-deletion-flow",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "account-deletion",
+  "adapterId": null,
+  "section": "deletion-flow",
+  "content": {
+    "requirement": "Self-service account deletion flow must exist for data subject rights",
+    "obligations": ["LEG-PRIV-004", "LEG-PRIV-003", "LEG-PRIV-002"],
+    "compareSteps": [
+      "Verify flow_ref account-deletion maps to M40–M42 modules in wiremap",
+      "Check /settings/danger or equivalent route exists",
+      "Recommended: data-export flow_ref for GDPR portability"
+    ],
+    "remediationDirective": "Implement account-deletion flow per M40–M42; link privacy policy in settings."
+  },
+  "references": ["legal/gdpr-data-subject-rights", "legal/privacy-policy-link"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "LEG-PRIV-004", "type": "flow_ref", "flowId": "account-deletion", "tier": "ironclad" }
+    ],
+    "advisory": [
+      { "id": "LEG-PRIV-003", "type": "flow_ref", "flowId": "data-export", "tier": "ironclad" },
+      { "id": "LEG-PRIV-002", "type": "route_link", "path": "/settings", "hrefContains": "privacy", "tier": "ironclad" }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "privacy", "disclaimerRequired": true }
+}

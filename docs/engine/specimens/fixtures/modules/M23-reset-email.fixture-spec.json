@@ -1,0 +1,1 @@
+{"fixtureId":"M23","moduleId":"M23-reset-email","patternsUnderTest":["PW-EM-001","PW-EM-002"],"passSnippet":"await resend.send({ template_id: 'auth.password_reset', headers: { 'Idempotency-Key': 'pw:1' } });","failSnippet":"await resend.send({ body: 'Your new password is abc123' });","expectedPass":true,"expectedFail":false,"forbiddenOnFail":["PW-EM-F01"]}

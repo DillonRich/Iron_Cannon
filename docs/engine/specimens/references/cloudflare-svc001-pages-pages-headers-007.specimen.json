@@ -1,0 +1,16 @@
+{
+  "refId": "cloudflare/svc001-pages-pages-headers-007",
+  "sourceUrl": "https://ironcannon.dev/svc001/pages/pages-headers-7",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-001 pages-headers 7",
+  "provider": "cloudflare",
+  "excerpt": "Set security headers (_headers) on Pages static responses: CSP, X-Frame-Options, HSTS for auth surfaces.",
+  "embeddingHint": "cloudflare pages-headers svc001 pages worker split sd-06",
+  "tags": [
+    "svc001",
+    "pages",
+    "sd-06",
+    "cloudflare",
+    "pages-headers"
+  ]
+}

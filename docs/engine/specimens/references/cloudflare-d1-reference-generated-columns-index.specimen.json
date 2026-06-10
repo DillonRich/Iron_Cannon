@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/d1-reference-generated-columns-index",
+  "sourceUrl": "https://developers.cloudflare.com/d1/reference/generated-columns/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Generated columns",
+  "excerpt": "description: Define virtual or stored generated columns in D1 to automatically compute values from other columns, SQL functions, or JSON data. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/d1/llms.txt > Use this file to discover all available pages before exploring further. D1 allows you to define generated columns based on the values of one or more other columns, SQL functions, or even [extracted JSON values](https://developers.cloudflare.com/d1/sql-api/query-json/). This allows you to normalize your data as you write to it or read it from a table, making it easier to query and reducing the need for complex application logic.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

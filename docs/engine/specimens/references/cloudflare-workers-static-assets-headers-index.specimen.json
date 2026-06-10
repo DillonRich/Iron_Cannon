@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-static-assets-headers-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/static-assets/headers/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Headers",
+  "excerpt": "description: Learn about default and custom headers for Workers static assets, including Cache-Control, ETag, and Content-Type behavior. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. When serving static assets, Workers will attach some headers to the response by default. These are: A `Content-Type` header is attached to the response if one is provided during [the asset upload process](https://developers.cloudflare.com/workers/static-assets/direct-upload/).…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

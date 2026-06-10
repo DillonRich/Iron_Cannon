@@ -1,0 +1,9 @@
+{
+  "refId": "legal/can-spam-physical-address",
+  "sourceUrl": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business",
+  "lastVerified": "2026-05-31",
+  "title": "CAN-SPAM physical address requirement",
+  "excerpt": "Marketing emails must include valid physical postal address of sender. Typically in email footer template. P.O. Box acceptable if valid. Iron Cannon scans marketing templates for address block pattern.",
+  "appliesTo": ["LEG-EMAIL-002", "email-can-spam"],
+  "tags": ["legal", "can-spam"]
+}

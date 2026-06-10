@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-settings-billing",
+  "sourceUrl": "https://resend.com/docs/dashboard/settings/billing.md",
+  "lastVerified": "2026-06-03",
+  "title": "Managing Billing",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Managing Billing > Manage your account subscription and billing information The [Billing](https://resend.com/settings/billing) page in the Settings section provides a clear view of your subscription details, billing email, payment method, and account invoices. From here, you can: * View and manage your subscription - Upgrade, downgrade, or modify your current plan. * Manage billing contacts - Ensure the right people receive billing-related notifications. * Update payment information - Add or change your credit card or billing details. * Add billing address - Provide your billing address for invoices.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "refId": "ironcannon/legal-disclaimer-l4",
+  "sourceUrl": "https://ironcannon.dev/patterns/l4-disclaimer",
+  "lastVerified": "2026-05-31",
+  "title": "IC Layer 4 disclaimer",
+  "excerpt": "Every T12-T14 response and L4 compare result includes legalDisclaimer. Never output legal_compliant verdict—only met/gap/advisory/na.",
+  "appliesTo": [
+    "layer4",
+    "T12",
+    "T14",
+    "L08"
+  ],
+  "tags": [
+    "ironcannon",
+    "legal"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

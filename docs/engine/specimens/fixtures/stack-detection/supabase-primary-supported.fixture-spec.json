@@ -1,0 +1,21 @@
+{
+  "fixtureId": "SD-07",
+  "description": "Supabase-primary Next.js — supported auth+DB SSOT (SVC-002)",
+  "projectFiles": [
+    {
+      "path": "package.json",
+      "content": "{\"dependencies\":{\"next\":\"14\",\"@supabase/supabase-js\":\"^2\",\"@supabase/ssr\":\"^0.5\",\"stripe\":\"^16\",\"resend\":\"^3\"}}"
+    },
+    {
+      "path": ".env.example",
+      "content": "NEXT_PUBLIC_SUPABASE_URL=\nNEXT_PUBLIC_SUPABASE_ANON_KEY=\nSUPABASE_SERVICE_ROLE_KEY=\nSTRIPE_SECRET_KEY=\nSTRIPE_WEBHOOK_SECRET=\nRESEND_API_KEY="
+    }
+  ],
+  "expectedT01": {
+    "supported": true,
+    "warnings": ["SUPABASE_PRIMARY"]
+  },
+  "expectedT02": {
+    "complete": true
+  }
+}

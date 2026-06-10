@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W88-001",
+      "category": "operations",
+      "title": "iron-cannon-repo.mjs REPO_ROOT export",
+      "sourceRefId": "ironcannon/knowledge-w88-iron-cannon-repo-module",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-002",
+      "category": "operations",
+      "title": "simulate-dogfood-prep.mjs green",
+      "sourceRefId": "ironcannon/knowledge-w88-dogfood-prep-sim",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-003",
+      "category": "operations",
+      "title": "Dogfood prep journeys UJ-091–095",
+      "sourceRefId": "ironcannon/knowledge-w88-uj-091-095-prep",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-004",
+      "category": "operations",
+      "title": "PRE_LAUNCH_DOGFOOD_SIGNOFF scaffold",
+      "sourceRefId": "ironcannon/knowledge-w88-dogfood-signoff-scaffold",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-005",
+      "category": "operations",
+      "title": "G-43 validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w88-g43-validator-stretch",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-006",
+      "category": "operations",
+      "title": "planning:dogfood-prep npm script",
+      "sourceRefId": "ironcannon/knowledge-w88-planning-dogfood-prep-npm",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-007",
+      "category": "operations",
+      "title": "MCP worker subpath T01 journey",
+      "sourceRefId": "ironcannon/knowledge-w88-mcp-worker-subpath-t01",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-008",
+      "category": "operations",
+      "title": "G-39 planned until live session",
+      "sourceRefId": "ironcannon/knowledge-w88-g39-still-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-009",
+      "category": "operations",
+      "title": "Golden app contrast UJ-094",
+      "sourceRefId": "ironcannon/knowledge-w88-golden-app-contrast-uj094",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-010",
+      "category": "privacy",
+      "title": "G-43 prep not launch approval",
+      "sourceRefId": "legal/knowledge-w88-prep-not-launch-approval",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

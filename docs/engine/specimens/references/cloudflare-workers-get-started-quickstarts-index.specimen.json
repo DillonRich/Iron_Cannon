@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-get-started-quickstarts-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/get-started/quickstarts/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Templates",
+  "excerpt": "description: GitHub repositories that are designed to be a starting point for building a new Cloudflare Workers project. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Templates are GitHub repositories that are designed to be a starting point for building a new Cloudflare Workers project. To start any of the projects below, run: [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/astro-blog-starter-template)",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

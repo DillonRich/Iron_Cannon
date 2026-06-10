@@ -1,0 +1,23 @@
+{
+  "fixtureId": "SL-01",
+  "description": "module_directive under 16k — no truncation",
+  "input": {
+    "profile": "module_directive",
+    "scaleProfile": {
+      "tool": "T04",
+      "sliceProfile": "module_directive",
+      "maxRuleFragments": 20,
+      "maxMapTokens": 4000,
+      "maxExplicitCards": 10,
+      "ragTopK": 5,
+      "maxOutboundTokens": 16000
+    },
+    "payload": {
+      "moduleId": "M01-auth-d1-schema",
+      "acceptanceCriteria": ["users table", "sessions table"],
+      "content": { "steps": ["step1", "step2"] },
+      "references": [{ "refId": "cloudflare/d1-overview" }]
+    }
+  },
+  "expected": { "truncated": false, "warningFlags": [] }
+}

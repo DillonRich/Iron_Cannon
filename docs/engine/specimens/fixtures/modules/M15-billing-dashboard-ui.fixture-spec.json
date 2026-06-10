@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M15",
+  "moduleId": "M15-billing-dashboard-ui",
+  "patternsUnderTest": [
+    "BILL-DASH-001",
+    "BILL-DASH-002",
+    "BILL-P49-M15-",
+    "STWH-P49-VERIFY"
+  ],
+  "passSnippet": "const sub = await db.prepare('SELECT status FROM subscriptions WHERE user_id = ?'); const portal = await stripe.billingPortal.sessions.create({ customer });",
+  "failSnippet": "export default function Dashboard() { return <h1>Dashboard</h1>; }",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "BILL-DASH-001"
+  ]
+}

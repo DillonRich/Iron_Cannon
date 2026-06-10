@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/get-started-checklist-go-live",
+  "sourceUrl": "https://docs.stripe.com/get-started/checklist/go-live.md",
+  "lastVerified": "2026-06-03",
+  "title": "Go Live Checklist",
+  "excerpt": "Use this checklist when taking your integration live. > [Become a Stripe Partner](https://stripe.com/partners/become-a-partner) to access additional best practices and receive relevant news and updates from Stripe. As you complete each item and check it off, the state of each checkbox is stored within your browser’s cache. You can refer back to this page at any time to see what you’ve completed so far. You can [log in](https://dashboard.stripe.com) to see some of your current settings. Stripe has designed its live and *sandbox* (A sandbox is an isolated test environment that allows you to test Stripe functionality in your account without affecting your live integration.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

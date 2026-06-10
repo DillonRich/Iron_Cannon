@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-testing-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/testing/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Testing",
+  "excerpt": "description: Compare testing options for Cloudflare Workers, including Vitest integration, Miniflare, and unstable_startWorker. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. The Workers platform has a variety of ways to test your applications, depending on your requirements. We recommend using the [Vitest integration](https://developers.cloudflare.com/workers/testing/vitest-integration), which allows you to run tests _inside_ the Workers runtime, and unit test individual functions within your Worker.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

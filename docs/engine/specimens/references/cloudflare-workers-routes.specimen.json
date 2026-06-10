@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/workers-routes",
+  "sourceUrl": "https://developers.cloudflare.com/workers/configuration/routing/",
+  "lastVerified": "2026-05-31",
+  "title": "Workers routes and triggers",
+  "excerpt": "Map URL patterns to Worker via wrangler routes or workers.dev subdomain. Custom domains via DNS. Route specificity matters—webhook route /api/webhooks/stripe must not be shadowed by catch-all. Separate routes for Pages Functions vs Worker if hybrid.",
+  "appliesTo": ["layer2/cloudflare", "M12-stripe-webhook"],
+  "tags": ["cloudflare", "workers", "routing"]
+}

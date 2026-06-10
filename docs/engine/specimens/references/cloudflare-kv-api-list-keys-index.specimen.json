@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/kv-api-list-keys-index",
+  "sourceUrl": "https://developers.cloudflare.com/kv/api/list-keys/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "List keys",
+  "excerpt": "description: Enumerate all keys in a Workers KV namespace using the list() method, with support for pagination and filtering by prefix. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/kv/llms.txt > Use this file to discover all available pages before exploring further. To list all the keys in your KV namespace, call the `list()` method of the [KV binding](https://developers.cloudflare.com/kv/concepts/kv-bindings/) on any [KV namespace](https://developers.cloudflare.com/kv/concepts/kv-namespaces/) you have bound to your Worker code: The `list()` method returns a promise you can `await` on to get the value.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

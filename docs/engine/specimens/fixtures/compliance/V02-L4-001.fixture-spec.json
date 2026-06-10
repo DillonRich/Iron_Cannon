@@ -1,0 +1,11 @@
+{
+  "fixtureId": "V02-L4-001",
+  "obligationId": "LEG-EMAIL-001",
+  "detectType": "pattern",
+  "passFile": "pass-leg-email-unsubscribe.tsx",
+  "passSnippet": "export function MarketingFooter() { return <a href=\"/unsubscribe\">Unsubscribe</a>; }",
+  "failFile": "fail-leg-email-no-unsubscribe.tsx",
+  "failSnippet": "export function MarketingFooter() { return <p>Thanks for subscribing</p>; }",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

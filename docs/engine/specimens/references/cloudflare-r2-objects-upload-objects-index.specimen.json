@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/r2-objects-upload-objects-index",
+  "sourceUrl": "https://developers.cloudflare.com/r2/objects/upload-objects/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Upload objects",
+  "excerpt": "description: Upload objects to R2 using single-part or multipart uploads via the dashboard, Workers API, or S3 API. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/r2/llms.txt > Use this file to discover all available pages before exploring further. There are several ways to upload objects to R2\\. Which approach you choose depends on the size of your objects and your performance requirements. | Single upload (PUT) | Multipart upload | |",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

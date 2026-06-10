@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-onboarding",
+  "sourceUrl": "https://docs.stripe.com/connect/onboarding.md",
+  "lastVerified": "2026-06-03",
+  "title": "Choose your onboarding configuration",
+  "excerpt": "Learn about the different options for onboarding your connected accounts. Stripe offers several different onboarding options: - **Stripe-hosted onboarding**: Your connected accounts go through the onboarding flow in a Stripe-hosted web form. - **Embedded onboarding**: You embed the Account onboarding component directly in your application and your connected accounts go through the onboarding flow without leaving your application. - **API onboarding**: You use the Stripe API to build your own customized onboarding UI. Choose the onboarding option that best fits your business. We recommend using Stripe-hosted onboarding or Embedded onboarding. These options automatically update to handle changing requirements when they apply to a connected account.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-wrangler-migration-update-v3-to-v4-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/wrangler/migration/update-v3-to-v4/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Migrate from Wrangler v3 to v4",
+  "excerpt": "description: Upgrade Wrangler from v3 to v4, including breaking changes, updated Node.js requirements, and new defaults. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Wrangler v4 is a major release focused on updates to underlying systems and dependencies, along with improvements to keep Wrangler commands consistent and clear. Unlike previous major versions of Wrangler, which were [foundational rewrites ↗](https://blog.cloudflare.com/wrangler-v2-beta/) and [rearchitectures ↗](https://blog.cloudflare.com/wrangler3/) — Version 4 of Wrangler includes a much smaller set of changes.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

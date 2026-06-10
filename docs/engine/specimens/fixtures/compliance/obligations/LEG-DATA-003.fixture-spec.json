@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-DATA-003",
+  "obligationId": "LEG-DATA-003",
+  "detectType": "ui_pattern",
+  "detect": {
+    "type": "ui_pattern",
+    "pattern": "days until deletion"
+  },
+  "passSnippet": "/* days until deletion */",
+  "failSnippet": "defaultChecked={true}",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

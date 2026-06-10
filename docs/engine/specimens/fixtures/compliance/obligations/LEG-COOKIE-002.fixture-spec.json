@@ -1,0 +1,16 @@
+{
+  "fixtureId": "LEG-COOKIE-002",
+  "obligationId": "LEG-COOKIE-002",
+  "detectType": "component_scan",
+  "detect": {
+    "type": "component_scan",
+    "patterns": [
+      "cookie",
+      "consent"
+    ]
+  },
+  "passSnippet": "pass LEG-COOKIE-002",
+  "failSnippet": "no banner here",
+  "expectedPass": "met",
+  "expectedFail": "advisory"
+}

@@ -1,0 +1,18 @@
+{
+  "fixtureId": "M05",
+  "moduleId": "M05-auth-session-middleware",
+  "patternsUnderTest": [
+    "AUTH-MW-001",
+    "AUTH-MW-002",
+    "AUTH-MW-003",
+    "AUTH-P49-M05-",
+    "AUTH-P49-SESSION"
+  ],
+  "passSnippet": "export function middleware(req) { if (req.nextUrl.pathname.startsWith('/dashboard')) return NextResponse.redirect(new URL('/login', req.url)); }",
+  "failSnippet": "export function middleware(req) { return NextResponse.next(); }",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "AUTH-MW-002"
+  ]
+}

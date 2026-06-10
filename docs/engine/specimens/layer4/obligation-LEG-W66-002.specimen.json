@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w66-002",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Server Actions validate and sanitize all inputs",
+    "obligations": [
+      "LEG-W66-002"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Server Actions validate and sanitize all inputs"
+  },
+  "references": [
+    "nextjs/server-actions"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W66-002",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

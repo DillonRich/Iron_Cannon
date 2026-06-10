@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-accept-a-payment",
+  "sourceUrl": "https://docs.stripe.com/payments/accept-a-payment.md",
+  "lastVerified": "2026-06-03",
+  "title": "Accept a payment",
+  "excerpt": "This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [Stripe-hosted page](https://docs.stripe.com/payments/accept-a-payment.md?payment-ui=checkout&ui=stripe-hosted) - [Full embedded page](https://docs.stripe.com/payments/accept-a-payment.md?payment-ui=checkout&ui=embedded-page) - [Checkout Sessions API](https://docs.stripe.com/payments/accept-a-payment.md?payment-ui=elements&api-integration=checkout) - [Payment Intents API](https://docs.stripe.com/payments/accept-a-payment.md?payment-ui=elements&api-integration=paymentintents) - [iOS](https://docs.stripe.com/payments/accept-a-payment.md?payment-ui=mobile&platform=ios)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

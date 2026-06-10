@@ -1,0 +1,10 @@
+{
+  "refId": "ironcannon/verify-mandate",
+  "sourceUrl": "https://ironcannon.dev/patterns/verify-mandate",
+  "lastVerified": "2026-05-31",
+  "title": "IC verify mandate (T04→T05 gate)",
+  "excerpt": "T04 for module N+1 blocked until T05 passes on module N. verifyBeforeProceed on every directive. FALSE_COMPLIANCE blocks next get_module_directives.",
+  "appliesTo": ["T04", "T05", "AGENT_VERIFY_MANDATE"],
+  "tags": ["ironcannon", "pattern", "verify"],
+  "authorship": "iron-cannon-pattern"
+}

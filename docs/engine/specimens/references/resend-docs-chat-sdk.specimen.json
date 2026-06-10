@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-chat-sdk",
+  "sourceUrl": "https://resend.com/docs/chat-sdk.md",
+  "lastVerified": "2026-06-03",
+  "title": "Chat SDK",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Chat SDK > Build conversational email experiences using the Vercel Chat SDK and Resend. # Resend Chat SDK Adapter **Purpose:** Instructions for building bidirectional email bots using the `@resend/chat-sdk-adapter` package with the Vercel Chat SDK.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

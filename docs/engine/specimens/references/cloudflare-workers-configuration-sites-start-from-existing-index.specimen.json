@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-configuration-sites-start-from-existing-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/configuration/sites/start-from-existing/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Start from existing",
+  "excerpt": "description: Deploy an existing static site project to Cloudflare using Workers Sites. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. You should use [Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/) to host full-stack applications instead of Workers Sites. It has been deprecated in Wrangler v4, and the [Cloudflare Vite plugin](https://developers.cloudflare.com/workers/vite-plugin/) does not support Workers Sites. Do not use Workers Sites for new projects.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

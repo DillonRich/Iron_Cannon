@@ -1,0 +1,14 @@
+{
+  "refId": "stripe/customers-overview",
+  "sourceUrl": "https://docs.stripe.com/invoicing/customer",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe Customers",
+  "excerpt": "Create Customer per app user; store stripeCustomerId in D1. Reuse customer on repeat checkout. Metadata.userId links Stripe to app tenant.",
+  "appliesTo": [
+    "billing-subscription",
+    "M10-billing-d1-schema"
+  ],
+  "tags": [
+    "stripe"
+  ]
+}

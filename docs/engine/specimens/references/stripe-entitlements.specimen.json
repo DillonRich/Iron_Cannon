@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/entitlements",
+  "sourceUrl": "https://docs.stripe.com/billing/entitlements",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe entitlements",
+  "excerpt": "Feature entitlements tied to subscription items.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "stripe",
+    "entitlements"
+  ]
+}

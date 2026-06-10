@@ -1,0 +1,16 @@
+{
+  "fixtureId": "LEG-COOKIE-007",
+  "obligationId": "LEG-COOKIE-007",
+  "detectType": "script_before_consent",
+  "detect": {
+    "type": "script_before_consent",
+    "blocked": [
+      "analytics",
+      "ads"
+    ]
+  },
+  "passSnippet": "CookieConsent before analytics",
+  "failSnippet": "analytics.load() without consent",
+  "expectedPass": "met",
+  "expectedFail": "advisory"
+}

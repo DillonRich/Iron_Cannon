@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/identity-verify-identity-documents",
+  "sourceUrl": "https://docs.stripe.com/identity/verify-identity-documents.md",
+  "lastVerified": "2026-06-03",
+  "title": "Verify your users’ identity documents",
+  "excerpt": "Create sessions and collect identity documents. This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [Modal](https://docs.stripe.com/identity/verify-identity-documents.md?platform=web&type=modal) - [Redirect](https://docs.stripe.com/identity/verify-identity-documents.md?platform=web&type=redirect) - [New Integration](https://docs.stripe.com/identity/verify-identity-documents.md?platform=ios&type=new-integration) - [Migrate from web](https://docs.stripe.com/identity/verify-identity-documents.md?platform=ios&type=migrate-from-web)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

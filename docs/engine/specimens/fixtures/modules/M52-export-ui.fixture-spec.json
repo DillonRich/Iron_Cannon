@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M52",
+  "moduleId": "M52-export-ui",
+  "patternsUnderTest": [
+    "EXP-UI-001",
+    "EXP-UI-002",
+    "AUTH-P50-M52-",
+    "AUTH-P50-LIFECYCLE"
+  ],
+  "passSnippet": "export default function Page() { return <main>/settings/privacy<button>Download my data</button></main>; }",
+  "failSnippet": "export default function Page() { return <main>settings</main>; }",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "EXP-UI-001"
+  ]
+}

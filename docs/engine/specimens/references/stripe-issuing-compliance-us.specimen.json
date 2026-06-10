@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-compliance-us",
+  "sourceUrl": "https://docs.stripe.com/issuing/compliance-us.md",
+  "lastVerified": "2026-06-03",
+  "title": "Issuing and Treasury product marketing, design, and compliance guidelines",
+  "excerpt": "Learn how to launch and maintain compliant Issuing and Treasury programs. > Don’t consider any of the information in this guide as legal advice. If you use Stripe Treasury for platforms and Stripe Issuing, consult your own legal counsel for advice about product branding and using Stripe products to offer financial services. This information applies to both Treasury for platforms and Issuing integrations. To offer and promote Treasury for platforms and Issuing products to your customers and connected accounts, your marketing and user interfaces must adhere to the guidelines that we outline here. These guidelines help you navigate the financial regulations that apply to Stripe products.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

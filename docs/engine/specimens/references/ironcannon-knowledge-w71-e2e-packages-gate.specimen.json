@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w71-e2e-packages-gate",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w71/e2e-packages-gate",
+  "lastVerified": "2026-06-06",
+  "title": "W71 e2e-packages-gate",
+  "provider": "ironcannon",
+  "excerpt": "E2E package smoke passes g2:e2e",
+  "embeddingHint": "ironcannon e2e-packages-gate wave71 production-mcp-bar",
+  "tags": [
+    "wave71",
+    "knowledge",
+    "ironcannon",
+    "production-mcp-bar"
+  ]
+}

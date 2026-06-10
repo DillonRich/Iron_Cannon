@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-wallets",
+  "sourceUrl": "https://docs.stripe.com/payments/wallets.md",
+  "lastVerified": "2026-06-03",
+  "title": "Wallets",
+  "excerpt": "Learn about wallet payments with Stripe. Wallets let your customers pay online or in person, using either of the following: - A saved payment credential (a tokenized card or bank account stored in the wallet). - A stored wallet balance (funds held in an account with the wallet provider). At checkout, the wallet typically authenticates your customer and passes payment details or a payment token to you or your payment processor. You don’t have to directly handle your customer’s sensitive data. > Interested in using MoMo and GCash for one-time and recurring payments for customers in Vietnam and the Philippines?",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

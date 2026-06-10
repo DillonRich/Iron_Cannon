@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-configuration-compatibility-dates-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/configuration/compatibility-dates/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Compatibility dates",
+  "excerpt": "description: Opt into a specific version of the Workers runtime for your Workers project. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Cloudflare regularly updates the Workers runtime. These updates apply to all Workers globally and should never cause a Worker that is already deployed to stop functioning. Sometimes, though, some changes may be backwards-incompatible. In particular, there might be bugs in the runtime API that existing Workers may inadvertently depend upon.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

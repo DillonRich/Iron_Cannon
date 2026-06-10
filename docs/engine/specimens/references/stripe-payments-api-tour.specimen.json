@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-api-tour",
+  "sourceUrl": "https://docs.stripe.com/payments-api/tour.md",
+  "lastVerified": "2026-06-03",
+  "title": "API Tour",
+  "excerpt": "See how Stripe API objects fit together and learn best practices for combining them. The Stripe APIs are powerful and flexible if you know how to use them. This tour of the API covers key information to help you understand the APIs more deeply: - The core concepts we use across the APIs - The objects that play a role and how to determine when they’re needed - Common patterns and best practices for using those objects together Understanding these patterns helps you move beyond the pre-written code in Stripe tutorials. You can migrate old integrations to use more modern patterns, combine simple patterns in novel ways, and plan for future growth.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

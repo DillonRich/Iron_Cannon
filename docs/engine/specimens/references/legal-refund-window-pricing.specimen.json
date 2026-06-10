@@ -1,0 +1,14 @@
+{
+  "refId": "legal/refund-window-pricing",
+  "sourceUrl": "https://ironcannon.dev/planning/W65/ref/legal-refund-window-pricing",
+  "lastVerified": "2026-06-06",
+  "title": "refund window pricing",
+  "provider": "legal",
+  "excerpt": "Display refund window and pricing terms before checkout confirmation.",
+  "embeddingHint": "legal/refund-window-pricing wave65 obligation-source legal",
+  "tags": [
+    "wave65",
+    "obligation-source",
+    "legal"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "refId": "resend/transactional-vs-broadcast",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/what-sending-feature-to-use",
+  "lastVerified": "2026-05-31",
+  "title": "Transactional vs broadcast email",
+  "excerpt": "Transactional: triggered by user action (reset, receipt)—POST /emails. Broadcast/marketing: campaigns to audiences—separate compliance rules apply. Never send marketing via transactional pipeline to bypass unsubscribe. Tag templates by type in codebase.",
+  "appliesTo": ["layer4/email", "email-lifecycle"],
+  "tags": ["resend", "legal", "email"]
+}

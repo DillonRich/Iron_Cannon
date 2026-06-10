@@ -1,0 +1,4042 @@
+{
+  "version": "2026.05.31",
+  "disclaimerRef": "legal/disclaimer",
+  "marketBundles": {
+    "us": [
+      "LEG-EMAIL-*",
+      "LEG-A11Y-*",
+      "LEG-TERMS-*",
+      "LEG-PRIV-001",
+      "LEG-PRIV-005"
+    ],
+    "eu": [
+      "LEG-PRIV-*",
+      "LEG-COOKIE-*",
+      "LEG-A11Y-*",
+      "LEG-TERMS-*"
+    ],
+    "uk": [
+      "LEG-PRIV-*",
+      "LEG-COOKIE-*",
+      "LEG-A11Y-*",
+      "LEG-TERMS-*"
+    ],
+    "global": [
+      "LEG-A11Y-001",
+      "LEG-A11Y-002",
+      "LEG-A11Y-003",
+      "LEG-PRIV-001",
+      "LEG-TERMS-003"
+    ],
+    "ca": [
+      "LEG-PRIV-*",
+      "LEG-A11Y-*"
+    ],
+    "au": [
+      "LEG-PRIV-*",
+      "LEG-A11Y-*"
+    ],
+    "br": [
+      "LEG-PRIV-*"
+    ],
+    "in": [
+      "LEG-PRIV-*"
+    ]
+  },
+  "obligations": [
+    {
+      "id": "LEG-A11Y-001",
+      "title": "Images have alt text on key routes",
+      "category": "accessibility",
+      "sourceRefId": "legal/wcag-alt-text",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "required_attribute",
+        "selector": "img",
+        "attr": "alt",
+        "scope": "auth_routes"
+      }
+    },
+    {
+      "id": "LEG-A11Y-002",
+      "title": "Form inputs have associated labels",
+      "category": "accessibility",
+      "sourceRefId": "legal/wcag-form-labels",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "label_association",
+        "scope": "auth_routes"
+      }
+    },
+    {
+      "id": "LEG-A11Y-003",
+      "title": "Icon-only buttons have aria-label",
+      "category": "accessibility",
+      "sourceRefId": "legal/wcag-aria-basics",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "required_attribute",
+        "selector": "button:not(:has(*))",
+        "attr": "aria-label"
+      }
+    },
+    {
+      "id": "LEG-A11Y-004",
+      "title": "Modal focus trap and restore",
+      "category": "accessibility",
+      "sourceRefId": "legal/wcag-focus-visible",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "component_scan",
+        "patterns": [
+          "focus-trap",
+          "FocusTrap"
+        ]
+      }
+    },
+    {
+      "id": "LEG-A11Y-005",
+      "title": "Skip navigation link on main layout",
+      "category": "accessibility",
+      "sourceRefId": "legal/wcag-skip-nav",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "pattern",
+        "patterns": [
+          "skip to content",
+          "skip-nav",
+          "#main"
+        ]
+      }
+    },
+    {
+      "id": "LEG-A11Y-006",
+      "title": "Color contrast WCAG AA",
+      "category": "accessibility",
+      "sourceRefId": "legal/wcag-contrast-min",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "manual",
+        "note": "Agent may run axe; not auto-gated at launch"
+      }
+    },
+    {
+      "id": "LEG-A11Y-007",
+      "title": "Document lang attribute set",
+      "category": "accessibility",
+      "sourceRefId": "legal/wcag-overview",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "required_attribute",
+        "selector": "html",
+        "attr": "lang"
+      }
+    },
+    {
+      "id": "LEG-A11Y-008",
+      "title": "Page title present on key routes",
+      "category": "accessibility",
+      "sourceRefId": "legal/wcag-overview",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "pattern",
+        "patterns": [
+          "<title>",
+          "metadata.title"
+        ],
+        "scope": "auth_routes"
+      }
+    },
+    {
+      "id": "LEG-A11Y-009",
+      "title": "Form errors associated with inputs",
+      "category": "accessibility",
+      "sourceRefId": "legal/wcag-form-labels",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "pattern",
+        "patterns": [
+          "aria-describedby",
+          "aria-invalid"
+        ]
+      }
+    },
+    {
+      "id": "LEG-A11Y-010",
+      "title": "Video captions for hosted media",
+      "category": "accessibility",
+      "sourceRefId": "legal/wcag-overview",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "manual",
+        "note": "If product includes video marketing"
+      }
+    },
+    {
+      "id": "LEG-EMAIL-001",
+      "title": "Marketing emails include unsubscribe",
+      "category": "email",
+      "sourceRefId": "legal/can-spam-unsubscribe",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "pattern",
+        "patterns": [
+          "unsubscribe",
+          "List-Unsubscribe"
+        ]
+      }
+    },
+    {
+      "id": "LEG-EMAIL-002",
+      "title": "Marketing emails include physical address",
+      "category": "email",
+      "sourceRefId": "legal/can-spam-physical-address",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "template_scan",
+        "field": "physicalAddress"
+      }
+    },
+    {
+      "id": "LEG-EMAIL-003",
+      "title": "List-Unsubscribe header on marketing",
+      "category": "email",
+      "sourceRefId": "legal/list-unsubscribe-rfc",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "detect": {
+        "type": "header",
+        "name": "List-Unsubscribe"
+      }
+    },
+    {
+      "id": "LEG-EMAIL-004",
+      "title": "Transactional email contains marketing CTA",
+      "category": "email",
+      "sourceRefId": "legal/transactional-vs-marketing",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "template_scan",
+        "field": "promotionalContentInTransactional"
+      }
+    },
+    {
+      "id": "LEG-EMAIL-005",
+      "title": "Outbound email uses verified sender domain",
+      "category": "email",
+      "sourceRefId": "resend/from-domain",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "verified_sender_domain",
+        "configField": "resend.verifiedDomain",
+        "templateScope": "email_templates"
+      }
+    },
+    {
+      "id": "LEG-EMAIL-006",
+      "title": "Bounce and complaint webhooks configured",
+      "category": "email",
+      "sourceRefId": "resend/webhooks",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "detect": {
+        "type": "config",
+        "field": "resend.webhooks.deliveryEvents"
+      }
+    },
+    {
+      "id": "LEG-PRIV-001",
+      "title": "Privacy policy linked on signup",
+      "category": "privacy",
+      "sourceRefId": "legal/privacy-policy-link",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "route_link",
+        "path": "/signup",
+        "hrefContains": "privacy"
+      }
+    },
+    {
+      "id": "LEG-PRIV-002",
+      "title": "Privacy policy linked in account settings",
+      "category": "privacy",
+      "sourceRefId": "legal/privacy-policy-link",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "detect": {
+        "type": "route_link",
+        "path": "/settings",
+        "hrefContains": "privacy"
+      }
+    },
+    {
+      "id": "LEG-PRIV-003",
+      "title": "Data export flow exists",
+      "category": "privacy",
+      "sourceRefId": "legal/gdpr-data-subject-rights",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "detect": {
+        "type": "flow_ref",
+        "flowId": "data-export"
+      }
+    },
+    {
+      "id": "LEG-PRIV-004",
+      "title": "Account deletion flow implemented",
+      "category": "privacy",
+      "sourceRefId": "legal/gdpr-data-subject-rights",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "flow_ref",
+        "flowId": "account-deletion"
+      }
+    },
+    {
+      "id": "LEG-PRIV-005",
+      "title": "CCPA do-not-sell link",
+      "category": "privacy",
+      "sourceRefId": "legal/ccpa-do-not-sell",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "markets": [
+        "us-ca"
+      ],
+      "detect": {
+        "type": "pattern",
+        "patterns": [
+          "do not sell",
+          "Do Not Sell"
+        ]
+      }
+    },
+    {
+      "id": "LEG-PRIV-006",
+      "title": "Consent timestamp stored on signup",
+      "category": "privacy",
+      "sourceRefId": "legal/gdpr-consent-basics",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "markets": [
+        "eu",
+        "uk"
+      ],
+      "detect": {
+        "type": "schema_column",
+        "table": "users",
+        "column": "consent_at"
+      }
+    },
+    {
+      "id": "LEG-PRIV-007",
+      "title": "Cookie policy link for EU markets",
+      "category": "privacy",
+      "sourceRefId": "legal/cookie-consent-eu",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "markets": [
+        "eu",
+        "uk"
+      ],
+      "detect": {
+        "type": "route_link",
+        "path": "/privacy",
+        "hrefContains": "cookie"
+      }
+    },
+    {
+      "id": "LEG-PRIV-008",
+      "title": "Subprocessors listed in privacy policy",
+      "category": "privacy",
+      "sourceRefId": "legal/gdpr-privacy-notice",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "manual",
+        "note": "Stripe, Resend, Cloudflare mentions"
+      }
+    },
+    {
+      "id": "LEG-PRIV-009",
+      "title": "Privacy contact email in policy",
+      "category": "privacy",
+      "sourceRefId": "legal/gdpr-privacy-notice",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "pattern",
+        "patterns": [
+          "privacy@",
+          "dpo@",
+          "data protection"
+        ]
+      }
+    },
+    {
+      "id": "LEG-PRIV-010",
+      "title": "Age gate for minors if applicable",
+      "category": "privacy",
+      "sourceRefId": "legal/age-gate-minor",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "manual",
+        "note": "Only if product targets minors"
+      }
+    },
+    {
+      "id": "LEG-COOKIE-001",
+      "title": "Analytics scripts load before consent",
+      "category": "cookies",
+      "sourceRefId": "legal/cookie-consent-eu",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "markets": [
+        "eu",
+        "uk"
+      ],
+      "detect": {
+        "type": "script_before_consent",
+        "patterns": [
+          "gtag",
+          "analytics",
+          "fbq"
+        ]
+      }
+    },
+    {
+      "id": "LEG-COOKIE-002",
+      "title": "Cookie consent gate exists",
+      "category": "cookies",
+      "sourceRefId": "legal/cookie-consent-eu",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "markets": [
+        "eu",
+        "uk"
+      ],
+      "detect": {
+        "type": "component_scan",
+        "patterns": [
+          "cookie",
+          "consent"
+        ]
+      }
+    },
+    {
+      "id": "LEG-COOKIE-003",
+      "title": "Essential auth cookies documented",
+      "category": "cookies",
+      "sourceRefId": "legal/cookie-consent-eu",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "detect": {
+        "type": "pattern",
+        "patterns": [
+          "essential cookies",
+          "strictly necessary"
+        ]
+      }
+    },
+    {
+      "id": "LEG-COOKIE-004",
+      "title": "Dedicated cookie policy page",
+      "category": "cookies",
+      "sourceRefId": "legal/cookie-consent-eu",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "markets": [
+        "eu",
+        "uk"
+      ],
+      "detect": {
+        "type": "route_exists",
+        "path": "/cookies"
+      }
+    },
+    {
+      "id": "LEG-TERMS-001",
+      "title": "Terms acceptance timestamp stored",
+      "category": "terms",
+      "sourceRefId": "legal/tos-acceptance-record",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "schema_column",
+        "table": "users",
+        "column": "terms_accepted_at"
+      }
+    },
+    {
+      "id": "LEG-TERMS-002",
+      "title": "Terms version identifier stored",
+      "category": "terms",
+      "sourceRefId": "legal/tos-acceptance-record",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "detect": {
+        "type": "schema_column",
+        "table": "users",
+        "column": "terms_version"
+      }
+    },
+    {
+      "id": "LEG-TERMS-003",
+      "title": "Terms of service linked on signup",
+      "category": "terms",
+      "sourceRefId": "legal/tos-acceptance-record",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "route_link",
+        "path": "/signup",
+        "hrefContains": "terms"
+      }
+    },
+    {
+      "id": "LEG-TERMS-004",
+      "title": "Explicit terms accept not pre-checked",
+      "category": "terms",
+      "sourceRefId": "legal/tos-acceptance-record",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "ui_pattern",
+        "pattern": "terms checkbox default unchecked"
+      }
+    },
+    {
+      "id": "LEG-TERMS-005",
+      "title": "Re-accept flow on material terms change",
+      "category": "terms",
+      "sourceRefId": "legal/tos-acceptance-record",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "flow_ref",
+        "flowId": "terms-reaccept"
+      }
+    },
+    {
+      "id": "LEG-RECORD-001",
+      "title": "Consent audit log exists",
+      "category": "records",
+      "sourceRefId": "legal/consent-audit-log",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "detect": {
+        "type": "schema_table",
+        "table": "consent_audit_log"
+      }
+    },
+    {
+      "id": "LEG-RECORD-002",
+      "title": "Unsubscribe request audit trail",
+      "category": "records",
+      "sourceRefId": "legal/can-spam-unsubscribe",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "detect": {
+        "type": "schema_table",
+        "table": "email_unsubscribe_log"
+      }
+    },
+    {
+      "id": "LEG-GLOBAL-001",
+      "title": "Privacy policy route accessible without auth",
+      "category": "privacy",
+      "sourceRefId": "legal/privacy-policy-link",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "route_exists",
+        "path": "/privacy",
+        "public": true
+      }
+    },
+    {
+      "id": "LEG-GLOBAL-002",
+      "title": "Terms route accessible without auth",
+      "category": "terms",
+      "sourceRefId": "legal/tos-acceptance-record",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "route_exists",
+        "path": "/terms",
+        "public": true
+      }
+    },
+    {
+      "id": "LEG-GLOBAL-003",
+      "title": "Accessibility statement page",
+      "category": "accessibility",
+      "sourceRefId": "legal/ada-title-iii-web",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "markets": [
+        "us"
+      ],
+      "detect": {
+        "type": "route_exists",
+        "path": "/accessibility"
+      }
+    },
+    {
+      "id": "LEG-EMAIL-007",
+      "title": "Preheader not deceptive",
+      "category": "email",
+      "sourceRefId": "legal/can-spam-compliance-guide",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "template_scan",
+        "field": "preheader"
+      }
+    },
+    {
+      "id": "LEG-EMAIL-008",
+      "title": "BCC avoided on marketing sends",
+      "category": "email",
+      "sourceRefId": "legal/can-spam-unsubscribe",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "detect": {
+        "type": "template_scan",
+        "forbidden": [
+          "bcc:"
+        ]
+      }
+    },
+    {
+      "id": "LEG-EMAIL-009",
+      "title": "Transactional emails omit marketing modules",
+      "category": "email",
+      "sourceRefId": "legal/transactional-vs-marketing",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "template_scan",
+        "templateIdPrefix": "txn_"
+      }
+    },
+    {
+      "id": "LEG-EMAIL-010",
+      "title": "Resend webhook processes bounces",
+      "category": "email",
+      "sourceRefId": "resend/docs-webhooks-emails-bounced",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "route_exists",
+        "path": "/api/webhooks/resend"
+      }
+    },
+    {
+      "id": "LEG-PRIV-011",
+      "title": "Do Not Sell link for CPRA",
+      "category": "privacy",
+      "sourceRefId": "legal/ccpa-do-not-sell",
+      "severity": "required",
+      "tier": "ironclad",
+      "markets": [
+        "us"
+      ],
+      "detect": {
+        "type": "route_link",
+        "path": "/settings/privacy",
+        "hrefContains": "do-not-sell"
+      }
+    },
+    {
+      "id": "LEG-PRIV-012",
+      "title": "Data retention period stated",
+      "category": "privacy",
+      "sourceRefId": "legal/privacy-policy-link",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "pattern",
+        "patterns": [
+          "retention",
+          "delete after"
+        ]
+      }
+    },
+    {
+      "id": "LEG-PRIV-013",
+      "title": "Children under 13 not targeted without parental flow",
+      "category": "privacy",
+      "sourceRefId": "legal/coppa-overview",
+      "severity": "required",
+      "tier": "ironclad",
+      "markets": [
+        "us"
+      ],
+      "detect": {
+        "type": "manual",
+        "note": "Signup age gate or no child-directed service"
+      }
+    },
+    {
+      "id": "LEG-PRIV-014",
+      "title": "DPA link for EU B2B",
+      "category": "privacy",
+      "sourceRefId": "legal/gdpr-privacy-notice",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "markets": [
+        "eu"
+      ],
+      "detect": {
+        "type": "route_link",
+        "path": "/privacy",
+        "hrefContains": "dpa"
+      }
+    },
+    {
+      "id": "LEG-PRIV-015",
+      "title": "Subprocessor list published",
+      "category": "privacy",
+      "sourceRefId": "legal/gdpr-privacy-notice",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "markets": [
+        "eu",
+        "uk"
+      ],
+      "detect": {
+        "type": "route_exists",
+        "path": "/privacy/subprocessors"
+      }
+    },
+    {
+      "id": "LEG-COOKIE-006",
+      "title": "Cookie policy page linked from banner",
+      "category": "cookies",
+      "sourceRefId": "legal/cookie-policy-template",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "route_link",
+        "path": "/",
+        "hrefContains": "/privacy#cookies"
+      }
+    },
+    {
+      "id": "LEG-COOKIE-007",
+      "title": "Non-essential scripts blocked until consent",
+      "category": "cookies",
+      "sourceRefId": "legal/cookie-consent-eu",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "script_before_consent",
+        "blocked": [
+          "analytics",
+          "ads"
+        ]
+      }
+    },
+    {
+      "id": "LEG-COOKIE-008",
+      "title": "Consent withdrawal as easy as grant",
+      "category": "cookies",
+      "sourceRefId": "legal/gdpr-consent-basics",
+      "severity": "required",
+      "tier": "ironclad",
+      "markets": [
+        "eu"
+      ],
+      "detect": {
+        "type": "ui_pattern",
+        "pattern": "cookie settings reopen"
+      }
+    },
+    {
+      "id": "LEG-STRIPE-001",
+      "title": "Refund policy linked near checkout",
+      "category": "billing",
+      "sourceRefId": "legal/tos-acceptance-record",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "route_link",
+        "path": "/settings/billing",
+        "hrefContains": "refund"
+      }
+    },
+    {
+      "id": "LEG-STRIPE-002",
+      "title": "Subscription cancel path documented",
+      "category": "billing",
+      "sourceRefId": "legal/tos-acceptance-record",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "ui_pattern",
+        "pattern": "cancel subscription"
+      }
+    },
+    {
+      "id": "LEG-STRIPE-003",
+      "title": "Price and billing interval shown pre-pay",
+      "category": "billing",
+      "sourceRefId": "stripe/api-checkout-sessions",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "ui_pattern",
+        "pattern": "per month|per year"
+      }
+    },
+    {
+      "id": "LEG-STRIPE-004",
+      "title": "Tax ID collection when required",
+      "category": "billing",
+      "sourceRefId": "stripe/api-checkout-sessions",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "config",
+        "key": "automatic_tax"
+      }
+    },
+    {
+      "id": "LEG-STRIPE-005",
+      "title": "Failed payment user messaging",
+      "category": "billing",
+      "sourceRefId": "stripe/api-events-types",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "template_scan",
+        "event": "invoice.payment_failed"
+      }
+    },
+    {
+      "id": "LEG-STRIPE-006",
+      "title": "Trial terms disclosed before card capture",
+      "category": "billing",
+      "sourceRefId": "legal/tos-acceptance-record",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "ui_pattern",
+        "pattern": "trial ends"
+      }
+    },
+    {
+      "id": "LEG-STRIPE-007",
+      "title": "Stripe Customer Portal linked from settings",
+      "category": "billing",
+      "sourceRefId": "stripe/api-customers",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "detect": {
+        "type": "route_link",
+        "path": "/settings/billing",
+        "hrefContains": "portal"
+      }
+    },
+    {
+      "id": "LEG-STRIPE-008",
+      "title": "No stored PAN — Stripe Elements only",
+      "category": "billing",
+      "sourceRefId": "legal/disclaimer",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "pattern",
+        "patterns": [
+          "StripeElements",
+          "PaymentElement"
+        ],
+        "forbidden": [
+          "card number input"
+        ]
+      }
+    },
+    {
+      "id": "LEG-DATA-001",
+      "title": "Account deletion confirms irreversibility",
+      "category": "data-rights",
+      "sourceRefId": "legal/gdpr-erasure",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "ui_pattern",
+        "pattern": "permanently delete"
+      }
+    },
+    {
+      "id": "LEG-DATA-002",
+      "title": "Export provides machine-readable format",
+      "category": "data-rights",
+      "sourceRefId": "legal/gdpr-data-subject-rights",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "route_exists",
+        "path": "/api/account/export"
+      }
+    },
+    {
+      "id": "LEG-DATA-003",
+      "title": "Deletion grace period disclosed",
+      "category": "data-rights",
+      "sourceRefId": "legal/gdpr-erasure",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "ui_pattern",
+        "pattern": "days until deletion"
+      }
+    },
+    {
+      "id": "LEG-DATA-004",
+      "title": "Export download expires",
+      "category": "data-rights",
+      "sourceRefId": "legal/gdpr-access",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "detect": {
+        "type": "config",
+        "key": "exportTtlHours"
+      }
+    },
+    {
+      "id": "LEG-DATA-005",
+      "title": "Stripe customer deleted on account deletion",
+      "category": "data-rights",
+      "sourceRefId": "stripe/api-customers",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "flow_ref",
+        "flowId": "account-deletion"
+      }
+    },
+    {
+      "id": "LEG-DATA-006",
+      "title": "Email suppression on deletion",
+      "category": "data-rights",
+      "sourceRefId": "legal/can-spam-unsubscribe",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "flow_ref",
+        "flowId": "account-deletion"
+      }
+    },
+    {
+      "id": "LEG-EDGE-001",
+      "title": "Webhook duplicate events idempotent",
+      "category": "edge",
+      "sourceRefId": "stripe/webhooks",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "config",
+        "key": "webhookIdempotencyKv"
+      }
+    },
+    {
+      "id": "LEG-EDGE-002",
+      "title": "past_due subscription UX messaging",
+      "category": "edge",
+      "sourceRefId": "stripe/api-invoices",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "ui_pattern",
+        "pattern": "payment failed|update payment"
+      }
+    },
+    {
+      "id": "LEG-EDGE-003",
+      "title": "Rate limit UX on auth (no stack trace)",
+      "category": "edge",
+      "sourceRefId": "owasp/authentication",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "pattern",
+        "patterns": [
+          "Too many attempts"
+        ],
+        "forbidden": [
+          "stack trace"
+        ]
+      }
+    },
+    {
+      "id": "LEG-EDGE-004",
+      "title": "Password reset token single-use",
+      "category": "edge",
+      "sourceRefId": "owasp/authentication",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "schema_column",
+        "table": "reset_tokens",
+        "column": "used_at"
+      }
+    },
+    {
+      "id": "LEG-EDGE-005",
+      "title": "Email verification before sensitive actions",
+      "category": "edge",
+      "sourceRefId": "legal/privacy-policy-link",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "schema_column",
+        "table": "users",
+        "column": "email_verified_at"
+      }
+    },
+    {
+      "id": "LEG-EDGE-006",
+      "title": "Checkout success validates session server-side",
+      "category": "edge",
+      "sourceRefId": "stripe/api-checkout-sessions",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "flow_ref",
+        "flowId": "billing-race-shield"
+      }
+    },
+    {
+      "id": "LEG-EDGE-007",
+      "title": "Hybrid stack warning surfaced to agent",
+      "category": "edge",
+      "sourceRefId": "ironcannon/hybrid-stack-detection",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "manual",
+        "note": "T02 surfaces HYBRID_STACK_DETECTED"
+      }
+    },
+    {
+      "id": "LEG-EDGE-008",
+      "title": "Preview deploy blocks live Stripe keys",
+      "category": "edge",
+      "sourceRefId": "stripe/api",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "config",
+        "key": "STRIPE_SECRET_KEY",
+        "prefix": "sk_test_"
+      }
+    },
+    {
+      "id": "LEG-EDGE-009",
+      "title": "Session fixation on tier upgrade blocked",
+      "category": "edge",
+      "sourceRefId": "ironcannon/verify-mandate",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "manual",
+        "note": "R14 RESUME_TIER_CHANGED"
+      }
+    },
+    {
+      "id": "LEG-EDGE-010",
+      "title": "Iron Clad disclaimer on compliance tools",
+      "category": "edge",
+      "sourceRefId": "legal/disclaimer",
+      "severity": "required",
+      "tier": "ironclad",
+      "detect": {
+        "type": "header",
+        "name": "X-Iron-Cannon-Legal-Disclaimer"
+      }
+    },
+    {
+      "id": "LEG-SEC-001",
+      "title": "Security.txt or contact for disclosures",
+      "category": "security-disclosure",
+      "sourceRefId": "legal/disclaimer",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "route_exists",
+        "path": "/.well-known/security.txt"
+      }
+    },
+    {
+      "id": "LEG-SEC-002",
+      "title": "Incident response runbook linked internally",
+      "category": "security-disclosure",
+      "sourceRefId": "owasp/authentication",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "manual",
+        "note": "Agent documents IR contact in README internal"
+      }
+    },
+    {
+      "id": "LEG-BILL-001",
+      "title": "Sales tax displayed when Stripe Tax enabled",
+      "category": "billing",
+      "sourceRefId": "stripe/tax-collection",
+      "severity": "advisory",
+      "tier": "ironclad",
+      "detect": {
+        "type": "config",
+        "key": "automatic_tax"
+      }
+    },
+    {
+      "id": "LEG-BILL-002",
+      "title": "Invoice history accessible to subscriber",
+      "category": "billing",
+      "sourceRefId": "stripe/api-invoices",
+      "severity": "recommended",
+      "tier": "ironclad",
+      "detect": {
+        "type": "ui_pattern",
+        "pattern": "invoice history"
+      }
+    },
+    {
+      "id": "LEG-W53-001",
+      "category": "privacy",
+      "title": "RoPA entry for new processing after feature launch",
+      "sourceRefId": "legal/gdpr-ropa",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W53-002",
+      "category": "privacy",
+      "title": "Subprocessor list updated within 30 days of vendor change",
+      "sourceRefId": "legal/subprocessor-list",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W53-003",
+      "category": "cookie",
+      "title": "Consent banner blocks non-essential scripts until accept",
+      "sourceRefId": "legal/cookie-consent-gate",
+      "detect": {
+        "type": "script_before_consent"
+      }
+    },
+    {
+      "id": "LEG-W53-004",
+      "category": "email",
+      "title": "Marketing email includes List-Unsubscribe header",
+      "sourceRefId": "legal/list-unsubscribe-header",
+      "detect": {
+        "type": "header"
+      }
+    },
+    {
+      "id": "LEG-W53-005",
+      "category": "billing",
+      "title": "Failed payment retry shows grace period in UI",
+      "sourceRefId": "legal/billing-grace-ui",
+      "detect": {
+        "type": "ui_pattern",
+        "pattern": "grace period"
+      }
+    },
+    {
+      "id": "LEG-W53-006",
+      "category": "stripe",
+      "title": "Stripe Customer Portal link uses live mode in production only",
+      "sourceRefId": "stripe/customer-portal",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W53-007",
+      "category": "data",
+      "title": "Export download requires re-authentication within 15 minutes",
+      "sourceRefId": "legal/export-reauth",
+      "detect": {
+        "type": "flow_ref",
+        "flow": "data-export"
+      }
+    },
+    {
+      "id": "LEG-W53-008",
+      "category": "terms",
+      "title": "Material terms change triggers reaccept before next charge",
+      "sourceRefId": "legal/terms-reaccept-charge",
+      "detect": {
+        "type": "route_exists",
+        "path": "/legal/reaccept"
+      }
+    },
+    {
+      "id": "LEG-W53-009",
+      "category": "a11y",
+      "title": "Focus visible on all interactive checkout controls",
+      "sourceRefId": "legal/focus-visible-checkout",
+      "detect": {
+        "type": "required_attribute",
+        "attr": "className",
+        "value": "focus-visible"
+      }
+    },
+    {
+      "id": "LEG-W53-010",
+      "category": "security",
+      "title": "Webhook endpoint rejects missing signature with 400",
+      "sourceRefId": "owasp/webhook-signature",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W53-011",
+      "category": "privacy",
+      "title": "Privacy policy lists DPO contact when EU establishment",
+      "sourceRefId": "legal/dpo-contact",
+      "detect": {
+        "type": "pattern",
+        "pattern": "data protection officer"
+      }
+    },
+    {
+      "id": "LEG-W53-012",
+      "category": "cookie",
+      "title": "Cookie policy lists retention per category",
+      "sourceRefId": "legal/cookie-retention-table",
+      "detect": {
+        "type": "schema_table",
+        "table": "cookie_categories"
+      }
+    },
+    {
+      "id": "LEG-W53-013",
+      "category": "email",
+      "title": "Bounce webhook updates suppression within one hour",
+      "sourceRefId": "resend/bounce-suppression",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W53-014",
+      "category": "billing",
+      "title": "Proration disclosure on plan upgrade checkout",
+      "sourceRefId": "stripe/proration-disclosure",
+      "detect": {
+        "type": "ui_pattern",
+        "pattern": "prorat"
+      }
+    },
+    {
+      "id": "LEG-W53-015",
+      "category": "global",
+      "title": "Children under 16 blocked at signup",
+      "sourceRefId": "legal/children-block",
+      "detect": {
+        "type": "ui_pattern",
+        "pattern": "16"
+      }
+    },
+    {
+      "id": "LEG-W53-016",
+      "category": "record",
+      "title": "Consent timestamp stored with version id",
+      "sourceRefId": "legal/consent-version-record",
+      "detect": {
+        "type": "schema_column",
+        "column": "consent_version"
+      }
+    },
+    {
+      "id": "LEG-W53-017",
+      "category": "edge",
+      "title": "Account deletion cancels Stripe subscription",
+      "sourceRefId": "legal/deletion-stripe-cancel",
+      "detect": {
+        "type": "flow_ref",
+        "flow": "account-deletion"
+      }
+    },
+    {
+      "id": "LEG-W53-018",
+      "category": "security",
+      "title": "Session cookie SameSite=Lax or Strict in production",
+      "sourceRefId": "owasp/session-samesite",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W53-019",
+      "category": "privacy",
+      "title": "DSAR intake form accessible without login",
+      "sourceRefId": "legal/dsar-public-form",
+      "detect": {
+        "type": "route_exists",
+        "path": "/privacy/request"
+      }
+    },
+    {
+      "id": "LEG-W53-020",
+      "category": "billing",
+      "title": "Trial end email sent 3 days before charge",
+      "sourceRefId": "legal/trial-end-notice",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W61-001",
+      "category": "privacy",
+      "title": "AI feature disclosure in privacy policy when user data sent to models",
+      "sourceRefId": "legal/ai-disclosure",
+      "detect": {
+        "type": "pattern",
+        "pattern": "artificial intelligence"
+      }
+    },
+    {
+      "id": "LEG-W61-002",
+      "category": "billing",
+      "title": "Usage-based billing shows metered unit and cap in UI",
+      "sourceRefId": "stripe/usage-based-billing",
+      "detect": {
+        "type": "ui_pattern",
+        "pattern": "usage"
+      }
+    },
+    {
+      "id": "LEG-W61-003",
+      "category": "security",
+      "title": "CSP report-uri or report-to configured for production",
+      "sourceRefId": "owasp/csp-reporting",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W61-004",
+      "category": "email",
+      "title": "Transactional email from verified domain only",
+      "sourceRefId": "resend/verified-domain",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W61-005",
+      "category": "edge",
+      "title": "Workers rate limit binding on public auth routes",
+      "sourceRefId": "cloudflare/rate-limit-binding",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W61-006",
+      "category": "a11y",
+      "title": "Form errors announced to screen readers via aria-live",
+      "sourceRefId": "legal/aria-live-errors",
+      "detect": {
+        "type": "required_attribute",
+        "attr": "aria-live",
+        "value": "polite"
+      }
+    },
+    {
+      "id": "LEG-W61-007",
+      "category": "cookie",
+      "title": "Reject-all cookies does not block essential auth cookies",
+      "sourceRefId": "legal/cookie-reject-essential",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W61-008",
+      "category": "data",
+      "title": "Backup retention period documented in privacy policy",
+      "sourceRefId": "legal/backup-retention",
+      "detect": {
+        "type": "pattern",
+        "pattern": "backup"
+      }
+    },
+    {
+      "id": "LEG-W61-009",
+      "category": "billing",
+      "title": "Invoice PDF includes legal entity name and tax ID when applicable",
+      "sourceRefId": "stripe/invoice-legal-entity",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W61-010",
+      "category": "security",
+      "title": "Secrets never logged in Workers console.log paths",
+      "sourceRefId": "cloudflare/secrets-logging",
+      "detect": {
+        "type": "pattern",
+        "pattern": "redact"
+      }
+    },
+    {
+      "id": "LEG-W61-011",
+      "category": "terms",
+      "title": "Arbitration clause jurisdiction matches primary market",
+      "sourceRefId": "legal/arbitration-jurisdiction",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W61-012",
+      "category": "email",
+      "title": "Unsubscribe processes within 10 business days per CAN-SPAM",
+      "sourceRefId": "legal/unsubscribe-sla",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W61-013",
+      "category": "privacy",
+      "title": "Cross-border transfer mechanism named for EU users",
+      "sourceRefId": "legal/eu-transfer-mechanism",
+      "detect": {
+        "type": "pattern",
+        "pattern": "Standard Contractual Clauses"
+      }
+    },
+    {
+      "id": "LEG-W61-014",
+      "category": "stripe",
+      "title": "Radar rules enabled for high-risk signup velocity",
+      "sourceRefId": "stripe/radar-rules",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W61-015",
+      "category": "global",
+      "title": "Status page linked from app footer during incidents",
+      "sourceRefId": "legal/status-page-link",
+      "detect": {
+        "type": "route_exists",
+        "path": "/status"
+      }
+    },
+    {
+      "id": "LEG-W61-016",
+      "category": "security",
+      "title": "Turnstile or CAPTCHA on public signup when bot traffic detected",
+      "sourceRefId": "cloudflare/turnstile-signup",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W61-017",
+      "category": "billing",
+      "title": "Refund window stated on pricing page",
+      "sourceRefId": "legal/refund-window-pricing",
+      "detect": {
+        "type": "ui_pattern",
+        "pattern": "refund"
+      }
+    },
+    {
+      "id": "LEG-W61-018",
+      "category": "data",
+      "title": "PII fields encrypted at rest in D1 via application layer",
+      "sourceRefId": "cloudflare/d1-encryption",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W61-019",
+      "category": "email",
+      "title": "DMARC policy at least p=none before p=reject rollout",
+      "sourceRefId": "resend/dmarc-rollout",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W61-020",
+      "category": "a11y",
+      "title": "Skip navigation link as first focusable element",
+      "sourceRefId": "legal/skip-nav-link",
+      "detect": {
+        "type": "ui_pattern",
+        "pattern": "skip to"
+      }
+    },
+    {
+      "id": "LEG-W62-001",
+      "category": "security",
+      "title": "Password reset tokens hashed with bcrypt or argon2",
+      "sourceRefId": "owasp/password-storage",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W62-002",
+      "category": "security",
+      "title": "CSRF token on all state-changing forms",
+      "sourceRefId": "owasp/csrf-prevention",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W62-003",
+      "category": "stripe",
+      "title": "Stripe Connect not used unless marketplace scope declared",
+      "sourceRefId": "stripe/connect-scope",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W62-004",
+      "category": "edge",
+      "title": "Durable Object alarm for subscription renewal sweep",
+      "sourceRefId": "cloudflare/do-alarms",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W62-005",
+      "category": "email",
+      "title": "One-click unsubscribe in List-Unsubscribe-Post header",
+      "sourceRefId": "legal/list-unsubscribe-post",
+      "detect": {
+        "type": "header"
+      }
+    },
+    {
+      "id": "LEG-W62-006",
+      "category": "privacy",
+      "title": "Privacy policy updated within 30 days of new data category",
+      "sourceRefId": "legal/privacy-update-sla",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W62-007",
+      "category": "billing",
+      "title": "Stripe test mode keys blocked in production Worker env",
+      "sourceRefId": "stripe/test-mode-block",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W62-008",
+      "category": "a11y",
+      "title": "Color contrast 4.5:1 on primary CTA buttons",
+      "sourceRefId": "legal/wcag-contrast-cta",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W62-009",
+      "category": "security",
+      "title": "Security.txt present at /.well-known/security.txt",
+      "sourceRefId": "owasp/security-txt",
+      "detect": {
+        "type": "route_exists",
+        "path": "/.well-known/security.txt"
+      }
+    },
+    {
+      "id": "LEG-W62-010",
+      "category": "edge",
+      "title": "Cloudflare WAF custom rule blocks known exploit paths",
+      "sourceRefId": "cloudflare/waf-custom-rules",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W63-001",
+      "category": "security",
+      "title": "MCP tool calls require wiremap attestation on gated tools",
+      "sourceRefId": "owasp/cheatsheets-mcp-security-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W63-002",
+      "category": "security",
+      "title": "LLM prompt inputs sanitized before tool argument pass-through",
+      "sourceRefId": "owasp/cheatsheets-llm-prompt-injection-prevention-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W63-003",
+      "category": "security",
+      "title": "GraphQL introspection disabled in production",
+      "sourceRefId": "owasp/cheatsheets-graphql-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W63-004",
+      "category": "security",
+      "title": "WebSocket origin validated on connect",
+      "sourceRefId": "owasp/cheatsheets-websocket-security-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W63-005",
+      "category": "privacy",
+      "title": "User privacy notice before cross-border analytics",
+      "sourceRefId": "owasp/cheatsheets-user-privacy-protection-cheat-sheet-html",
+      "detect": {
+        "type": "pattern",
+        "pattern": "privacy"
+      }
+    },
+    {
+      "id": "LEG-W63-006",
+      "category": "billing",
+      "title": "Third-party payment fields use hosted Elements only",
+      "sourceRefId": "owasp/cheatsheets-third-party-payment-gateway-integration-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W63-007",
+      "category": "security",
+      "title": "SSRF blocked on outbound fetch from Workers",
+      "sourceRefId": "owasp/cheatsheets-server-side-request-forgery-prevention-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W63-008",
+      "category": "security",
+      "title": "Secrets loaded from env bindings not inline in repo",
+      "sourceRefId": "owasp/cheatsheets-secrets-management-cheat-sheet-html",
+      "detect": {
+        "type": "pattern",
+        "pattern": "process.env"
+      }
+    },
+    {
+      "id": "LEG-W63-009",
+      "category": "email",
+      "title": "Email validation rejects disposable domains at signup",
+      "sourceRefId": "owasp/cheatsheets-email-validation-and-verification-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W63-010",
+      "category": "security",
+      "title": "OAuth state parameter required on social login",
+      "sourceRefId": "owasp/cheatsheets-oauth2-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W64-001",
+      "category": "billing",
+      "title": "Stripe webhook signatures verified before event processing",
+      "sourceRefId": "stripe/webhook-signature",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W64-002",
+      "category": "security",
+      "title": "Cloudflare Turnstile protects login and signup forms",
+      "sourceRefId": "cloudflare/turnstile",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W64-003",
+      "category": "security",
+      "title": "WAF rules block common auth abuse on public routes",
+      "sourceRefId": "cloudflare/waf-overview",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W64-004",
+      "category": "billing",
+      "title": "Stripe Radar enabled for high-risk payment flows",
+      "sourceRefId": "stripe/radar-fraud",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W64-005",
+      "category": "security",
+      "title": "Workers rate limiting on authenticated API routes",
+      "sourceRefId": "cloudflare/workers-runtime-apis-bindings-rate-limit-index",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W64-006",
+      "category": "billing",
+      "title": "Idempotency keys on Stripe POST mutations",
+      "sourceRefId": "stripe/idempotency",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W64-007",
+      "category": "security",
+      "title": "Logs redact PAN and CVV per OWASP logging guidance",
+      "sourceRefId": "owasp/cheatsheets-logging-cheat-sheet-html",
+      "detect": {
+        "type": "pattern",
+        "pattern": "redact"
+      }
+    },
+    {
+      "id": "LEG-W64-008",
+      "category": "privacy",
+      "title": "GDPR data portability export available on request",
+      "sourceRefId": "legal/gdpr-data-subject-rights",
+      "detect": {
+        "type": "route_exists",
+        "path": "/account/export"
+      }
+    },
+    {
+      "id": "LEG-W64-009",
+      "category": "billing",
+      "title": "Stripe test mode keys blocked in production deploy",
+      "sourceRefId": "stripe/test-mode-block",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W64-010",
+      "category": "security",
+      "title": "D1 schema migrations versioned and applied before deploy",
+      "sourceRefId": "cloudflare/d1-migrations",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W65-001",
+      "category": "privacy",
+      "title": "Non-essential cookies blocked until explicit consent",
+      "sourceRefId": "legal/cookie-consent-eu",
+      "detect": {
+        "type": "script_before_consent"
+      }
+    },
+    {
+      "id": "LEG-W65-002",
+      "category": "privacy",
+      "title": "Privacy policy link visible on every page footer",
+      "sourceRefId": "legal/privacy-policy-link",
+      "detect": {
+        "type": "pattern",
+        "pattern": "privacy"
+      }
+    },
+    {
+      "id": "LEG-W65-003",
+      "category": "email",
+      "title": "Marketing unsubscribe honored within 10 business days",
+      "sourceRefId": "legal/can-spam-unsubscribe",
+      "detect": {
+        "type": "header"
+      }
+    },
+    {
+      "id": "LEG-W65-004",
+      "category": "privacy",
+      "title": "CCPA notice at or before data collection",
+      "sourceRefId": "legal/ccpa-overview",
+      "detect": {
+        "type": "pattern",
+        "pattern": "California"
+      }
+    },
+    {
+      "id": "LEG-W65-005",
+      "category": "privacy",
+      "title": "COPPA age gate blocks account creation for minors",
+      "sourceRefId": "legal/coppa-overview",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W65-006",
+      "category": "privacy",
+      "title": "AI-assisted features disclose automated decisioning",
+      "sourceRefId": "legal/ai-disclosure",
+      "detect": {
+        "type": "pattern",
+        "pattern": "AI"
+      }
+    },
+    {
+      "id": "LEG-W65-007",
+      "category": "privacy",
+      "title": "EU cross-border transfer mechanism documented",
+      "sourceRefId": "legal/eu-transfer-mechanism",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W65-008",
+      "category": "operations",
+      "title": "Public status page linked in incident communications",
+      "sourceRefId": "legal/status-page-link",
+      "detect": {
+        "type": "pattern",
+        "pattern": "status"
+      }
+    },
+    {
+      "id": "LEG-W65-009",
+      "category": "security",
+      "title": "CSP report-uri or report-to configured for violations",
+      "sourceRefId": "owasp/cheatsheets-content-security-policy-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W65-010",
+      "category": "email",
+      "title": "Resend sending domain verified before production mail",
+      "sourceRefId": "resend/domains-verify",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W66-001",
+      "category": "security",
+      "title": "Next.js middleware protects authenticated route segments",
+      "sourceRefId": "nextjs/middleware",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W66-002",
+      "category": "security",
+      "title": "Server Actions validate and sanitize all inputs",
+      "sourceRefId": "nextjs/server-actions",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W66-003",
+      "category": "security",
+      "title": "Output encoding prevents reflected XSS in user content",
+      "sourceRefId": "owasp/cheatsheets-cross-site-scripting-prevention-cheat-sheet-html",
+      "detect": {
+        "type": "pattern",
+        "pattern": "encode"
+      }
+    },
+    {
+      "id": "LEG-W66-004",
+      "category": "security",
+      "title": "Insecure deserialization blocked on untrusted payloads",
+      "sourceRefId": "owasp/cheatsheets-deserialization-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W66-005",
+      "category": "operations",
+      "title": "T05 verify runs before advancing to next module",
+      "sourceRefId": "ironcannon/knowledge-w61-t05-before-t04-next",
+      "detect": {
+        "type": "flow_ref",
+        "flow": "module-loop"
+      }
+    },
+    {
+      "id": "LEG-W66-006",
+      "category": "security",
+      "title": "HSTS header enabled with preload on production apex",
+      "sourceRefId": "owasp/cheatsheets-http-headers-cheat-sheet-html",
+      "detect": {
+        "type": "header"
+      }
+    },
+    {
+      "id": "LEG-W66-007",
+      "category": "security",
+      "title": "Session cookies use HttpOnly Secure SameSite",
+      "sourceRefId": "owasp/cheatsheets-session-management-cheat-sheet-html",
+      "detect": {
+        "type": "pattern",
+        "pattern": "HttpOnly"
+      }
+    },
+    {
+      "id": "LEG-W66-008",
+      "category": "security",
+      "title": "REST API rate limited per authenticated user",
+      "sourceRefId": "owasp/cheatsheets-rest-security-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W66-009",
+      "category": "security",
+      "title": "Production error responses hide stack traces",
+      "sourceRefId": "owasp/cheatsheets-error-handling-cheat-sheet-html",
+      "detect": {
+        "type": "pattern",
+        "pattern": "generic"
+      }
+    },
+    {
+      "id": "LEG-W66-010",
+      "category": "compliance",
+      "title": "IronClad layer4 compare includes required disclaimer",
+      "sourceRefId": "ironcannon/compare-engine",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W67-001",
+      "category": "security",
+      "title": "MCP tools enforce per-tool authorization and scope",
+      "sourceRefId": "owasp/cheatsheets-mcp-security-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W67-002",
+      "category": "security",
+      "title": "RAG retrieval validates corpus chunks before prompt injection",
+      "sourceRefId": "owasp/cheatsheets-rag-security-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W67-003",
+      "category": "security",
+      "title": "AI agent tool policies block shell and env exfiltration",
+      "sourceRefId": "owasp/cheatsheets-ai-agent-security-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W67-004",
+      "category": "security",
+      "title": "Workers secrets loaded from bindings not wrangler.toml plaintext",
+      "sourceRefId": "cloudflare/workers-secrets",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W67-005",
+      "category": "billing",
+      "title": "Stripe dispute evidence submitted within network deadlines",
+      "sourceRefId": "stripe/disputes-prevention-best-practices",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W67-006",
+      "category": "email",
+      "title": "Resend webhook signatures verified on inbound events",
+      "sourceRefId": "resend/webhooks",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W67-007",
+      "category": "security",
+      "title": "Next.js data security patterns for server/client boundary",
+      "sourceRefId": "nextjs/docs-app-guides-data-security",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W67-008",
+      "category": "billing",
+      "title": "Refund policy disclosed before checkout confirmation",
+      "sourceRefId": "legal/refund-policy-disclosure",
+      "detect": {
+        "type": "pattern",
+        "pattern": "refund"
+      }
+    },
+    {
+      "id": "LEG-W67-009",
+      "category": "operations",
+      "title": "T10 security directives run before T11 production audit",
+      "sourceRefId": "ironcannon/knowledge-w63-t10-before-t11",
+      "detect": {
+        "type": "flow_ref",
+        "flow": "security-audit"
+      }
+    },
+    {
+      "id": "LEG-W67-010",
+      "category": "operations",
+      "title": "Production-confidence harness passes before release tag",
+      "sourceRefId": "ironcannon/knowledge-w67-production-confidence-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W68-001",
+      "category": "security",
+      "title": "Auth flows documented with OWASP abuse-case catalog",
+      "sourceRefId": "owasp/cheatsheets-abuse-case-cheat-sheet-html",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W68-002",
+      "category": "security",
+      "title": "Clickjacking defenses on sensitive account actions",
+      "sourceRefId": "owasp/cheatsheets-clickjacking-defense-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W68-003",
+      "category": "security",
+      "title": "AI-assisted code changes pass secure-coding review gate",
+      "sourceRefId": "owasp/cheatsheets-secure-coding-with-ai-cheat-sheet-html",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W68-004",
+      "category": "security",
+      "title": "LLM inputs sanitized against prompt injection before tools",
+      "sourceRefId": "owasp/cheatsheets-llm-prompt-injection-prevention-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W68-005",
+      "category": "security",
+      "title": "Next.js authentication follows App Router session patterns",
+      "sourceRefId": "nextjs/docs-app-guides-authentication",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W68-006",
+      "category": "billing",
+      "title": "Stripe Customer Portal enabled for self-service billing",
+      "sourceRefId": "stripe/customer-portal",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W68-007",
+      "category": "operations",
+      "title": "Agent responses include agentGuidance block on every tool",
+      "sourceRefId": "ironcannon/agent-guidance-block",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W68-008",
+      "category": "operations",
+      "title": "Adversarial agent harness passes before production release",
+      "sourceRefId": "ironcannon/knowledge-w68-adversarial-agent-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W68-009",
+      "category": "security",
+      "title": "CSRF tokens on state-changing browser forms and APIs",
+      "sourceRefId": "owasp/cheatsheets-cross-site-request-forgery-prevention-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W68-010",
+      "category": "operations",
+      "title": "MCP tool surface matches tier entitlement matrix",
+      "sourceRefId": "ironcannon/knowledge-w68-tier-tool-parity",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W69-001",
+      "category": "security",
+      "title": "Rate limits enforced on MCP HTTP surface",
+      "sourceRefId": "cloudflare/workers-rate-limits",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W69-002",
+      "category": "security",
+      "title": "Session KV bindings use encrypted namespaces",
+      "sourceRefId": "cloudflare/kv-encryption",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W69-003",
+      "category": "operations",
+      "title": "API key lifecycle documented with rotation runbook",
+      "sourceRefId": "ironcannon/api-key-lifecycle",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W69-004",
+      "category": "operations",
+      "title": "OpenAPI export linted before each release",
+      "sourceRefId": "ironcannon/openapi-export-spec",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W69-005",
+      "category": "operations",
+      "title": "Vectorize adapter smoke passes in g2:audit",
+      "sourceRefId": "ironcannon/knowledge-w69-vectorize-adapter-smoke",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W69-006",
+      "category": "security",
+      "title": "D1 schema migrations previewed in staging",
+      "sourceRefId": "cloudflare/d1-migrations",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W69-007",
+      "category": "security",
+      "title": "Turnstile protects high-risk auth endpoints",
+      "sourceRefId": "cloudflare/turnstile",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W69-008",
+      "category": "security",
+      "title": "WAF rulesets active on production zone",
+      "sourceRefId": "cloudflare/waf",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W69-009",
+      "category": "operations",
+      "title": "Audit logs retained per compliance schedule",
+      "sourceRefId": "ironcannon/knowledge-w69-audit-log-immutable",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W69-010",
+      "category": "billing",
+      "title": "PCI scope limited to Stripe Elements/Checkout",
+      "sourceRefId": "stripe/pci-compliance",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W70-001",
+      "category": "operations",
+      "title": "Usage telemetry flushed on session boundary",
+      "sourceRefId": "ironcannon/knowledge-w70-usage-telemetry-flush",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W70-002",
+      "category": "operations",
+      "title": "Obligation verify harness green before release",
+      "sourceRefId": "ironcannon/knowledge-w70-obligation-verify-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W70-003",
+      "category": "operations",
+      "title": "Module sequence guard enforced in CI",
+      "sourceRefId": "ironcannon/knowledge-w70-module-sequence-guard",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W70-004",
+      "category": "operations",
+      "title": "Error catalog parity with MCP responses",
+      "sourceRefId": "ironcannon/knowledge-w70-error-catalog-parity",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W70-005",
+      "category": "operations",
+      "title": "Tools list parity with tier entitlements",
+      "sourceRefId": "ironcannon/knowledge-w70-tools-list-parity",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W70-006",
+      "category": "operations",
+      "title": "Bundle mode smoke passes in g2:audit",
+      "sourceRefId": "ironcannon/knowledge-w70-bundle-mode-smoke",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W70-007",
+      "category": "operations",
+      "title": "Infrastructure smoke passes before deploy",
+      "sourceRefId": "ironcannon/knowledge-w70-infrastructure-smoke",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W70-008",
+      "category": "operations",
+      "title": "Outbound chain validated end-to-end",
+      "sourceRefId": "ironcannon/knowledge-w70-outbound-chain-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W70-009",
+      "category": "billing",
+      "title": "Stripe webhooks idempotent with event dedup",
+      "sourceRefId": "stripe/webhooks-idempotency",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W70-010",
+      "category": "email",
+      "title": "Resend bounce suppression list maintained",
+      "sourceRefId": "resend/bounces",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W71-001",
+      "category": "operations",
+      "title": "T05 golden harness passes before MCP signoff",
+      "sourceRefId": "ironcannon/knowledge-w71-t05-golden-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W71-002",
+      "category": "operations",
+      "title": "All golden modules pass T05 individually",
+      "sourceRefId": "ironcannon/knowledge-w71-t05-all-modules",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W71-003",
+      "category": "operations",
+      "title": "E2E packages smoke passes in g2:audit",
+      "sourceRefId": "ironcannon/knowledge-w71-e2e-packages-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W71-004",
+      "category": "operations",
+      "title": "Obligation calibration matches fixture bundle",
+      "sourceRefId": "ironcannon/knowledge-w71-obligation-calibration-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W71-005",
+      "category": "operations",
+      "title": "Obligation coverage at 100 percent index layer4",
+      "sourceRefId": "ironcannon/knowledge-w71-obligation-coverage-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W71-006",
+      "category": "security",
+      "title": "Session attestation on remote MCP connections",
+      "sourceRefId": "ironcannon/knowledge-w71-session-attestation",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W71-007",
+      "category": "operations",
+      "title": "Production readiness checklist signed off",
+      "sourceRefId": "ironcannon/knowledge-w71-production-readiness-doc",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W71-008",
+      "category": "operations",
+      "title": "Phase 3 exit criteria documented and met",
+      "sourceRefId": "ironcannon/knowledge-w71-phase3-exit-signal",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W71-009",
+      "category": "security",
+      "title": "MCP tool poisoning defenses in tool registry",
+      "sourceRefId": "owasp/cheatsheets-mcp-security-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W71-010",
+      "category": "security",
+      "title": "Supply chain audit before armor publish",
+      "sourceRefId": "owasp/cheatsheets-software-supply-chain-security-cheat-sheet-html",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W72-001",
+      "category": "legal",
+      "title": "GDPR DSAR export within statutory deadline",
+      "sourceRefId": "legal/gdpr-dsar-export",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W72-002",
+      "category": "legal",
+      "title": "CCPA do-not-sell honored for California users",
+      "sourceRefId": "legal/ccpa-opt-out-sale",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W72-003",
+      "category": "legal",
+      "title": "Granular cookie consent before tracking scripts",
+      "sourceRefId": "legal/cookie-consent-granular",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W72-004",
+      "category": "legal",
+      "title": "Terms version pinned at subscription creation",
+      "sourceRefId": "legal/terms-version-pin",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W72-005",
+      "category": "legal",
+      "title": "Privacy policy changes trigger user notice",
+      "sourceRefId": "legal/privacy-policy-changelog",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W72-006",
+      "category": "billing",
+      "title": "Stripe Tax automatic where nexus requires",
+      "sourceRefId": "stripe/tax-automatic",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W72-007",
+      "category": "billing",
+      "title": "Invoices include statutory business identifiers",
+      "sourceRefId": "stripe/invoices-compliance",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W72-008",
+      "category": "email",
+      "title": "Marketing emails one-click unsubscribe",
+      "sourceRefId": "resend/unsubscribe",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W72-009",
+      "category": "security",
+      "title": "Next.js middleware guards authenticated routes",
+      "sourceRefId": "nextjs/docs-app-building-your-application-routing-middleware",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W72-010",
+      "category": "security",
+      "title": "Idle session timeout on sensitive dashboards",
+      "sourceRefId": "owasp/cheatsheets-session-management-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-001",
+      "category": "security",
+      "title": "Strict CSP with nonces in production",
+      "sourceRefId": "owasp/cheatsheets-content-security-policy-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-002",
+      "category": "security",
+      "title": "HSTS configured for preload eligibility",
+      "sourceRefId": "owasp/cheatsheets-transport-layer-protection-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-003",
+      "category": "security",
+      "title": "SSRF outbound fetches allowlisted only",
+      "sourceRefId": "owasp/cheatsheets-server-side-request-forgery-prevention-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-004",
+      "category": "security",
+      "title": "XML parsers disable external entities",
+      "sourceRefId": "owasp/cheatsheets-xml-security-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-005",
+      "category": "security",
+      "title": "No unsafe deserialization of user payloads",
+      "sourceRefId": "owasp/cheatsheets-deserialization-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-006",
+      "category": "security",
+      "title": "Bot Management on authentication endpoints",
+      "sourceRefId": "cloudflare/bot-management",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-007",
+      "category": "security",
+      "title": "Zero Trust Access on admin dashboards",
+      "sourceRefId": "cloudflare/zero-trust-access",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-008",
+      "category": "operations",
+      "title": "Armor smoke passes before armor tier release",
+      "sourceRefId": "ironcannon/knowledge-w73-armor-smoke-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W73-009",
+      "category": "operations",
+      "title": "Throttle loop guard active in production",
+      "sourceRefId": "ironcannon/knowledge-w73-throttle-loop-guard",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-010",
+      "category": "operations",
+      "title": "Retrieval stub passes before RAG live",
+      "sourceRefId": "ironcannon/knowledge-w73-retrieval-stub-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W74-001",
+      "category": "billing",
+      "title": "Connect onboarding collects required KYC",
+      "sourceRefId": "stripe/connect-onboarding",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W74-002",
+      "category": "security",
+      "title": "Stripe Radar custom rules for fraud patterns",
+      "sourceRefId": "stripe/radar",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W74-003",
+      "category": "billing",
+      "title": "Portal proration documented for plan changes",
+      "sourceRefId": "stripe/billing-portal-proration",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W74-004",
+      "category": "billing",
+      "title": "Checkout branding matches published terms",
+      "sourceRefId": "stripe/checkout-customization",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W74-005",
+      "category": "email",
+      "title": "DKIM keys rotated on documented schedule",
+      "sourceRefId": "resend/dkim-rotation",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W74-006",
+      "category": "email",
+      "title": "Resend webhook replay rejected after TTL",
+      "sourceRefId": "resend/webhook-replay",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W74-007",
+      "category": "email",
+      "title": "Deliverability metrics reviewed weekly",
+      "sourceRefId": "resend/deliverability",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W74-008",
+      "category": "security",
+      "title": "Next.js Server Actions origin-validated",
+      "sourceRefId": "nextjs/docs-app-building-your-application-data-fetching-server-actions",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W74-009",
+      "category": "security",
+      "title": "Cache purge requires scoped API token",
+      "sourceRefId": "cloudflare/cache-purge",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W74-010",
+      "category": "operations",
+      "title": "Golden integration smoke before major release",
+      "sourceRefId": "ironcannon/knowledge-w74-golden-integration-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-001",
+      "category": "operations",
+      "title": "Production MCP signoff checklist complete",
+      "sourceRefId": "ironcannon/knowledge-w75-production-mcp-signoff",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-002",
+      "category": "operations",
+      "title": "Phase 4 adapters blocked until MCP signoff",
+      "sourceRefId": "ironcannon/knowledge-w75-phase4-adapter-blocked",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-003",
+      "category": "operations",
+      "title": "Production-confidence at 140 plus scenarios",
+      "sourceRefId": "ironcannon/knowledge-w75-pc-140-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-004",
+      "category": "operations",
+      "title": "Adversarial harness at 24 plus scenarios",
+      "sourceRefId": "ironcannon/knowledge-w75-adversarial-24-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-005",
+      "category": "operations",
+      "title": "Obligations at 260 with layer4 parity",
+      "sourceRefId": "ironcannon/knowledge-w75-obligation-260-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-006",
+      "category": "operations",
+      "title": "Imagination extended at 1750 scenarios",
+      "sourceRefId": "ironcannon/knowledge-w75-imagination-1750-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-007",
+      "category": "operations",
+      "title": "Security protocols at 1300 active",
+      "sourceRefId": "ironcannon/knowledge-w75-protocol-1300-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-008",
+      "category": "operations",
+      "title": "Retrieval baseline at 230 queries",
+      "sourceRefId": "ironcannon/knowledge-w75-retrieval-230-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-009",
+      "category": "operations",
+      "title": "Corpus at 11000 plus cards with harvest quality green",
+      "sourceRefId": "ironcannon/knowledge-w75-corpus-11k-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W75-010",
+      "category": "operations",
+      "title": "Vectorize manifest synced after every wave",
+      "sourceRefId": "ironcannon/knowledge-w75-vectorize-sync-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W78-001",
+      "category": "operations",
+      "title": "Pages build output dir configured in dedicated wrangler.pages.toml",
+      "sourceRefId": "cloudflare/knowledge-w78-pages-build-output-dir",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W78-002",
+      "category": "operations",
+      "title": "Worker API CORS allows Pages static origin",
+      "sourceRefId": "cloudflare/knowledge-w78-pages-functions-cors",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W78-003",
+      "category": "operations",
+      "title": "NEXT_PUBLIC_API_URL set for browser-to-Worker bridge",
+      "sourceRefId": "nextjs/knowledge-w78-public-api-url",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W78-004",
+      "category": "operations",
+      "title": "nodejs_compat enabled for OpenNext Pages assets",
+      "sourceRefId": "cloudflare/knowledge-w78-open-next-assets",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W78-005",
+      "category": "security",
+      "title": "Preview Pages env vars exclude production webhook secrets",
+      "sourceRefId": "cloudflare/knowledge-w78-pages-preview-env",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W78-006",
+      "category": "security",
+      "title": "Session cookies scoped to shared parent domain on split hosts",
+      "sourceRefId": "ironcannon/knowledge-w78-middleware-pages-split",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W78-007",
+      "category": "operations",
+      "title": "SD-06 wiremap includes M60 then M61 before golden core",
+      "sourceRefId": "ironcannon/knowledge-w78-sd-06-wiremap",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W78-008",
+      "category": "operations",
+      "title": "Stack detector pages-worker-split does not flag external-api-surface",
+      "sourceRefId": "ironcannon/knowledge-w78-pages-worker-split-detect",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W78-009",
+      "category": "operations",
+      "title": "SVC-001 harvest gate green in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w78-svc001-harvest-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W78-010",
+      "category": "privacy",
+      "title": "Cookie domain policy documented for split Pages and Worker hosts",
+      "sourceRefId": "legal/knowledge-w78-pages-cookie-domain",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W79-001",
+      "category": "operations",
+      "title": "SVC-001 mini signoff document complete",
+      "sourceRefId": "ironcannon/knowledge-w79-svc001-signoff-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W79-002",
+      "category": "operations",
+      "title": "Per-flow-scope SD-06 profile in matrix",
+      "sourceRefId": "ironcannon/knowledge-w79-sd06-per-flow-scope",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W79-003",
+      "category": "operations",
+      "title": "Pages-split outbound bundle present and valid",
+      "sourceRefId": "ironcannon/knowledge-w79-pages-split-e2e-bundle",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W79-004",
+      "category": "security",
+      "title": "Worker CORS allows Pages static origin only",
+      "sourceRefId": "cloudflare/knowledge-w79-pages-cors-preflight",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W79-005",
+      "category": "security",
+      "title": "Auth routes never cached on Pages CDN",
+      "sourceRefId": "cloudflare/knowledge-w79-pages-cache-auth-never",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W79-006",
+      "category": "operations",
+      "title": "OpenNext env bridge documented for SD-06",
+      "sourceRefId": "nextjs/knowledge-w79-open-next-env-bridge",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W79-007",
+      "category": "operations",
+      "title": "Imagination includes SD-06 and W06 harness rows",
+      "sourceRefId": "ironcannon/knowledge-w79-sd06-imagination-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W79-008",
+      "category": "operations",
+      "title": "Adversarial SD-03 vs SD-06 scenarios pass",
+      "sourceRefId": "ironcannon/knowledge-w79-svc001-adversarial-depth",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W79-009",
+      "category": "privacy",
+      "title": "Split-host cookie policy in privacy notice",
+      "sourceRefId": "legal/knowledge-w79-split-host-cookie-policy",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W79-010",
+      "category": "operations",
+      "title": "SVC-002 blocked until SVC-001 witness approved",
+      "sourceRefId": "ironcannon/knowledge-w79-svc002-queue-blocked",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W80-001",
+      "category": "security",
+      "title": "Browser Supabase client uses anon key only",
+      "sourceRefId": "supabase/knowledge-w80-anon-client-browser",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W80-002",
+      "category": "security",
+      "title": "Middleware refreshes session via @supabase/ssr",
+      "sourceRefId": "supabase/knowledge-w80-ssr-middleware-session",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W80-003",
+      "category": "security",
+      "title": "RLS enabled on user-linked Postgres tables",
+      "sourceRefId": "supabase/knowledge-w80-rls-enable-policies",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W80-004",
+      "category": "operations",
+      "title": "Auth callback route handles OAuth code exchange",
+      "sourceRefId": "supabase/knowledge-w80-auth-callback-route",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W80-005",
+      "category": "billing",
+      "title": "Stripe customer id stored server-side in Supabase profiles",
+      "sourceRefId": "supabase/knowledge-w80-stripe-customer-metadata",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W80-006",
+      "category": "operations",
+      "title": "SD-08 dual-database stacks blocked at discovery",
+      "sourceRefId": "supabase/knowledge-w80-dual-database-blocked",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W80-007",
+      "category": "operations",
+      "title": "SD-07 wiremap order documented in W07 fixture",
+      "sourceRefId": "supabase/knowledge-w80-sd07-wiremap-order",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W80-008",
+      "category": "security",
+      "title": "No localStorage session persistence for Supabase auth",
+      "sourceRefId": "nextjs/knowledge-w80-middleware-cookie-bridge",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W80-009",
+      "category": "operations",
+      "title": "SVC-002 harvest gate green in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w80-svc002-harvest-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W80-010",
+      "category": "privacy",
+      "title": "Supabase subprocessor disclosed in privacy notice",
+      "sourceRefId": "legal/knowledge-w80-supabase-dpa-notice",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W81-001",
+      "category": "operations",
+      "title": "SVC-002 mini signoff document complete",
+      "sourceRefId": "ironcannon/knowledge-w81-svc002-signoff-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W81-002",
+      "category": "operations",
+      "title": "Per-flow-scope SD-07 profile in matrix",
+      "sourceRefId": "ironcannon/knowledge-w81-sd07-per-flow-scope",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W81-003",
+      "category": "operations",
+      "title": "Supabase-primary outbound bundle present and valid",
+      "sourceRefId": "ironcannon/knowledge-w81-supabase-primary-e2e-bundle",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W81-004",
+      "category": "security",
+      "title": "Billing tier RLS policies restrict client reads",
+      "sourceRefId": "supabase/knowledge-w81-rls-billing-profiles",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W81-005",
+      "category": "email",
+      "title": "Resend SMTP bridge documented for Supabase Auth",
+      "sourceRefId": "supabase/knowledge-w81-auth-email-resend-bridge",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W81-006",
+      "category": "operations",
+      "title": "Server Actions use server Supabase client only",
+      "sourceRefId": "nextjs/knowledge-w81-server-actions-supabase",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W81-007",
+      "category": "operations",
+      "title": "Imagination includes SD-07 and W07 harness rows",
+      "sourceRefId": "ironcannon/knowledge-w81-sd07-imagination-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W81-008",
+      "category": "operations",
+      "title": "Adversarial SD-07 vs SD-08 scenarios pass",
+      "sourceRefId": "ironcannon/knowledge-w81-svc002-adversarial-depth",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W81-009",
+      "category": "privacy",
+      "title": "Auth email policy in terms when Resend SMTP used",
+      "sourceRefId": "legal/knowledge-w81-supabase-auth-email-policy",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W81-010",
+      "category": "operations",
+      "title": "SVC-003 deferred until SVC-002 witness approved",
+      "sourceRefId": "ironcannon/knowledge-w81-svc003-queue-blocked",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-001",
+      "category": "operations",
+      "title": "Service expansion cycle signoff document complete",
+      "sourceRefId": "ironcannon/knowledge-w82-expansion-cycle-signoff",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-002",
+      "category": "operations",
+      "title": "Gap register stage continuous-improvement after expansion",
+      "sourceRefId": "ironcannon/knowledge-w82-continuous-improvement-stage",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-003",
+      "category": "operations",
+      "title": "Stack surface SD-01..08 documented in scope boundaries",
+      "sourceRefId": "ironcannon/knowledge-w82-stack-surface-sd01-08",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-004",
+      "category": "operations",
+      "title": "Dual outbound bundles merged in T04 compose",
+      "sourceRefId": "ironcannon/knowledge-w82-dual-outbound-bundles",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-005",
+      "category": "operations",
+      "title": "Imagination-50 includes SD-07 and W07 scenarios",
+      "sourceRefId": "ironcannon/knowledge-w82-imagination-sd07-w07",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-006",
+      "category": "operations",
+      "title": "SVC-003 deferred until demand signal",
+      "sourceRefId": "ironcannon/knowledge-w82-svc003-demand-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-007",
+      "category": "operations",
+      "title": "Operator deploy gaps remain deferred not blocking",
+      "sourceRefId": "ironcannon/knowledge-w82-operator-deploy-deferred",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-008",
+      "category": "operations",
+      "title": "Stretch suite includes expansion cycle validator",
+      "sourceRefId": "ironcannon/knowledge-w82-stretch-suite-30",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-009",
+      "category": "privacy",
+      "title": "Multi-stack privacy notice when Supabase selected",
+      "sourceRefId": "legal/knowledge-w82-multi-stack-privacy",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-010",
+      "category": "operations",
+      "title": "PLANNING_AZ_SIGNOFF updated for expansion complete",
+      "sourceRefId": "ironcannon/knowledge-w82-az-signoff-v7",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-001",
+      "category": "operations",
+      "title": "Session index maintained in sessions/README.md",
+      "sourceRefId": "ironcannon/knowledge-w83-session-index-readme",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-002",
+      "category": "operations",
+      "title": "ref_app_att chain available in user journey harness",
+      "sourceRefId": "ironcannon/knowledge-w83-ref-app-att-chain",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-003",
+      "category": "operations",
+      "title": "Multi-stack regression session documented",
+      "sourceRefId": "ironcannon/knowledge-w83-multi-stack-regression-session",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-004",
+      "category": "operations",
+      "title": "G-34 harvest journeys UJ-076–080 present",
+      "sourceRefId": "ironcannon/knowledge-w83-uj-076-080-harvest",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-005",
+      "category": "operations",
+      "title": "G-34 validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w83-g34-validator-stretch",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-006",
+      "category": "operations",
+      "title": "starter:golden-path unchanged after expansion",
+      "sourceRefId": "ironcannon/knowledge-w83-starter-golden-path-unchanged",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-007",
+      "category": "operations",
+      "title": "Service expansion session log published",
+      "sourceRefId": "ironcannon/knowledge-w83-session-expansion-cycle-log",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-008",
+      "category": "operations",
+      "title": "G-35 operator deploy planned not blocking",
+      "sourceRefId": "ironcannon/knowledge-w83-operator-deploy-g35-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-009",
+      "category": "privacy",
+      "title": "Session logs redact secrets and API keys",
+      "sourceRefId": "legal/knowledge-w83-session-pii-redaction",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-010",
+      "category": "operations",
+      "title": "Behavioral journey count ≥80 after G-34",
+      "sourceRefId": "ironcannon/knowledge-w83-continuous-improvement-80uj",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W84-001",
+      "category": "operations",
+      "title": "Operator deploy readiness document complete",
+      "sourceRefId": "ironcannon/knowledge-w84-operator-deploy-readiness-doc",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W84-002",
+      "category": "operations",
+      "title": "operator:readiness npm script in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w84-operator-readiness-npm",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W84-003",
+      "category": "operations",
+      "title": "deploy-check documents credential vs artifact checks",
+      "sourceRefId": "ironcannon/knowledge-w84-deploy-check-ironcannon",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W84-004",
+      "category": "operations",
+      "title": "wrangler.toml scaffold documents manual uncomment map",
+      "sourceRefId": "ironcannon/knowledge-w84-wrangler-toml-scaffold",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W84-005",
+      "category": "operations",
+      "title": "Production readiness signoff reflects current journey count",
+      "sourceRefId": "ironcannon/knowledge-w84-production-readiness-v12",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W84-006",
+      "category": "operations",
+      "title": "G-36 planned for live deploy witness",
+      "sourceRefId": "ironcannon/knowledge-w84-g36-live-deploy-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W84-007",
+      "category": "operations",
+      "title": "Onboarding checklist links readiness pack",
+      "sourceRefId": "cloudflare/knowledge-w84-onboarding-checklist-link",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W84-008",
+      "category": "operations",
+      "title": "Vectorize manifest ≥11k vectors before upsert",
+      "sourceRefId": "ironcannon/knowledge-w84-vectorize-manifest-11k",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W84-009",
+      "category": "operations",
+      "title": "Manual blockers doc references G-35 pack",
+      "sourceRefId": "ironcannon/knowledge-w84-manual-blockers-g35",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W84-010",
+      "category": "privacy",
+      "title": "Production witness table for deploy attestation",
+      "sourceRefId": "legal/knowledge-w84-production-witness-table",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-001",
+      "category": "operations",
+      "title": "G-37 harvest journeys UJ-081–085 present",
+      "sourceRefId": "ironcannon/knowledge-w85-g37-uj-081-085-harvest",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-002",
+      "category": "operations",
+      "title": "Wave 84 operator gates verified before G-37",
+      "sourceRefId": "ironcannon/knowledge-w85-wave84-gates-verified",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-003",
+      "category": "operations",
+      "title": "G-37 validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w85-g37-validator-stretch",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-004",
+      "category": "operations",
+      "title": "Operator session doc indexed",
+      "sourceRefId": "ironcannon/knowledge-w85-operator-session-indexed",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-005",
+      "category": "operations",
+      "title": "Stretch suite count ≥33 after G-37",
+      "sourceRefId": "ironcannon/knowledge-w85-stretch-suite-33",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-006",
+      "category": "operations",
+      "title": "SD-06 deploy regression journey UJ-081",
+      "sourceRefId": "ironcannon/knowledge-w85-sd06-deploy-regression",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-007",
+      "category": "operations",
+      "title": "SD-07 parallel regression journey UJ-082",
+      "sourceRefId": "ironcannon/knowledge-w85-sd07-parallel-regression",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-008",
+      "category": "operations",
+      "title": "Reference app deploy regression UJ-085",
+      "sourceRefId": "ironcannon/knowledge-w85-ref-app-deploy-regression",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-009",
+      "category": "operations",
+      "title": "G-36 planned until live deploy",
+      "sourceRefId": "ironcannon/knowledge-w85-g36-still-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-010",
+      "category": "privacy",
+      "title": "G-37 witness is CI regression not deploy approval",
+      "sourceRefId": "legal/knowledge-w85-ci-witness-not-deploy",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-001",
+      "category": "operations",
+      "title": "Business infrastructure plan published",
+      "sourceRefId": "ironcannon/knowledge-w86-business-infra-plan-ssot",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-002",
+      "category": "operations",
+      "title": "Pre-launch dogfood plan published",
+      "sourceRefId": "ironcannon/knowledge-w86-pre-launch-dogfood-plan",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-003",
+      "category": "operations",
+      "title": "Cheap Cloudflare stack documented",
+      "sourceRefId": "ironcannon/knowledge-w86-stakeholder-cheap-cloudflare",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-004",
+      "category": "billing",
+      "title": "Stripe transcript input noted for G-40",
+      "sourceRefId": "ironcannon/knowledge-w86-stripe-transcript-input",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-005",
+      "category": "billing",
+      "title": "Affiliates G-41 planned after subscriptions",
+      "sourceRefId": "ironcannon/knowledge-w86-affiliates-g41-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-006",
+      "category": "operations",
+      "title": "Workspace email before Cloudflare signup",
+      "sourceRefId": "google/knowledge-w86-workspace-business-email",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-007",
+      "category": "operations",
+      "title": "G-38..G-41 in gap register",
+      "sourceRefId": "ironcannon/knowledge-w86-g38-g41-gap-register",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-008",
+      "category": "operations",
+      "title": "Dogfood scope is monorepo root",
+      "sourceRefId": "ironcannon/knowledge-w86-dogfood-not-golden-app",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-009",
+      "category": "operations",
+      "title": "Business infra validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w86-validate-business-infra-plan",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-010",
+      "category": "privacy",
+      "title": "Launch after dogfood witness",
+      "sourceRefId": "legal/knowledge-w86-launch-after-dogfood",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-001",
+      "category": "operations",
+      "title": "G-42 harvest journeys UJ-086–090 present",
+      "sourceRefId": "ironcannon/knowledge-w87-g42-uj-086-090-harvest",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-002",
+      "category": "billing",
+      "title": "UJ-087 Stripe checkout SD-07 regression",
+      "sourceRefId": "ironcannon/knowledge-w87-uj-087-stripe-checkout-sd07",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-003",
+      "category": "operations",
+      "title": "UJ-088 Pages wrangler SD-06 regression",
+      "sourceRefId": "ironcannon/knowledge-w87-uj-088-pages-wrangler-sd06",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-004",
+      "category": "operations",
+      "title": "G-42 validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w87-g42-validator-stretch",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-005",
+      "category": "operations",
+      "title": "Stretch suite count ≥35 after G-42",
+      "sourceRefId": "ironcannon/knowledge-w87-stretch-suite-35",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-006",
+      "category": "operations",
+      "title": "SD-01 golden unchanged UJ-086",
+      "sourceRefId": "ironcannon/knowledge-w87-sd01-golden-unchanged-uj086",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-007",
+      "category": "operations",
+      "title": "SD-01 wiremap 12 modules UJ-089",
+      "sourceRefId": "ironcannon/knowledge-w87-sd01-wiremap-12-uj089",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-008",
+      "category": "operations",
+      "title": "Dual stack SD-06 SD-07 UJ-090",
+      "sourceRefId": "ironcannon/knowledge-w87-dual-stack-uj090",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-009",
+      "category": "operations",
+      "title": "G-38..G-41 still planned",
+      "sourceRefId": "ironcannon/knowledge-w87-g38-g41-still-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-010",
+      "category": "privacy",
+      "title": "G-42 CI harvest not Stripe live",
+      "sourceRefId": "legal/knowledge-w87-ci-harvest-not-stripe-live",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-001",
+      "category": "operations",
+      "title": "iron-cannon-repo.mjs REPO_ROOT export",
+      "sourceRefId": "ironcannon/knowledge-w88-iron-cannon-repo-module",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-002",
+      "category": "operations",
+      "title": "simulate-dogfood-prep.mjs green",
+      "sourceRefId": "ironcannon/knowledge-w88-dogfood-prep-sim",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-003",
+      "category": "operations",
+      "title": "Dogfood prep journeys UJ-091–095",
+      "sourceRefId": "ironcannon/knowledge-w88-uj-091-095-prep",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-004",
+      "category": "operations",
+      "title": "PRE_LAUNCH_DOGFOOD_SIGNOFF scaffold",
+      "sourceRefId": "ironcannon/knowledge-w88-dogfood-signoff-scaffold",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-005",
+      "category": "operations",
+      "title": "G-43 validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w88-g43-validator-stretch",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-006",
+      "category": "operations",
+      "title": "planning:dogfood-prep npm script",
+      "sourceRefId": "ironcannon/knowledge-w88-planning-dogfood-prep-npm",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-007",
+      "category": "operations",
+      "title": "MCP worker subpath T01 journey",
+      "sourceRefId": "ironcannon/knowledge-w88-mcp-worker-subpath-t01",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-008",
+      "category": "operations",
+      "title": "G-39 planned until live session",
+      "sourceRefId": "ironcannon/knowledge-w88-g39-still-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-009",
+      "category": "operations",
+      "title": "Golden app contrast UJ-094",
+      "sourceRefId": "ironcannon/knowledge-w88-golden-app-contrast-uj094",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W88-010",
+      "category": "privacy",
+      "title": "G-43 prep not launch approval",
+      "sourceRefId": "legal/knowledge-w88-prep-not-launch-approval",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W89-001",
+      "category": "billing",
+      "title": "STRIPE_SETUP_PREP published",
+      "sourceRefId": "ironcannon/knowledge-w89-stripe-setup-prep-doc",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W89-002",
+      "category": "operations",
+      "title": "simulate-stripe-prep.mjs green",
+      "sourceRefId": "ironcannon/knowledge-w89-stripe-prep-sim",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W89-003",
+      "category": "billing",
+      "title": "Stripe prep journeys UJ-096–100",
+      "sourceRefId": "ironcannon/knowledge-w89-uj-096-100-stripe",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W89-004",
+      "category": "operations",
+      "title": "G-44 validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w89-g44-validator-stretch",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W89-005",
+      "category": "operations",
+      "title": "planning:stripe-prep npm script",
+      "sourceRefId": "ironcannon/knowledge-w89-planning-stripe-prep-npm",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W89-006",
+      "category": "billing",
+      "title": "Platform webhook route documented",
+      "sourceRefId": "ironcannon/knowledge-w89-platform-webhook-route",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W89-007",
+      "category": "billing",
+      "title": "G-40 planned until transcript",
+      "sourceRefId": "ironcannon/knowledge-w89-g40-still-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W89-008",
+      "category": "billing",
+      "title": "G-41 after G-40 sequencing",
+      "sourceRefId": "ironcannon/knowledge-w89-g41-after-g40",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W89-009",
+      "category": "billing",
+      "title": "D1 stripe_customer_id columns",
+      "sourceRefId": "stripe/knowledge-w89-d1-stripe-columns",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W89-010",
+      "category": "privacy",
+      "title": "No Stripe keys in repo for G-44",
+      "sourceRefId": "legal/knowledge-w89-prep-not-live-keys",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-001",
+      "category": "billing",
+      "title": "AFFILIATES_SETUP_PREP published",
+      "sourceRefId": "ironcannon/knowledge-w90-affiliates-setup-prep-doc",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-002",
+      "category": "operations",
+      "title": "simulate-affiliates-prep.mjs green",
+      "sourceRefId": "ironcannon/knowledge-w90-affiliates-prep-sim",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-003",
+      "category": "billing",
+      "title": "Affiliates prep journeys UJ-101–105",
+      "sourceRefId": "ironcannon/knowledge-w90-uj-101-105-affiliates",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-004",
+      "category": "operations",
+      "title": "G-45 validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w90-g45-validator-stretch",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-005",
+      "category": "operations",
+      "title": "Operator preflight bundle validator",
+      "sourceRefId": "ironcannon/knowledge-w90-operator-preflight-bundle",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-006",
+      "category": "operations",
+      "title": "planning:affiliates-prep npm script",
+      "sourceRefId": "ironcannon/knowledge-w90-planning-affiliates-prep-npm",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-007",
+      "category": "billing",
+      "title": "G-41 planned until G-40 complete",
+      "sourceRefId": "ironcannon/knowledge-w90-g41-still-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-008",
+      "category": "billing",
+      "title": "M13 provisioning before affiliate tiers",
+      "sourceRefId": "ironcannon/knowledge-w90-m13-before-affiliate-payout",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-009",
+      "category": "billing",
+      "title": "Referral attribution options documented",
+      "sourceRefId": "stripe/knowledge-w90-referral-attribution-options",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-010",
+      "category": "privacy",
+      "title": "G-45 prep not live affiliate payouts",
+      "sourceRefId": "legal/knowledge-w90-affiliates-prep-not-payout-live",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-001",
+      "category": "operations",
+      "title": "Polish arc signoff published",
+      "sourceRefId": "ironcannon/knowledge-w91-polish-arc-signoff-doc",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-002",
+      "category": "operations",
+      "title": "Next main session checklist published",
+      "sourceRefId": "ironcannon/knowledge-w91-next-main-session-doc",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-003",
+      "category": "operations",
+      "title": "Arc cap journeys UJ-106–110",
+      "sourceRefId": "ironcannon/knowledge-w91-uj-106-110-capstone",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-004",
+      "category": "operations",
+      "title": "G-46 validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w91-g46-validator-stretch",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-005",
+      "category": "operations",
+      "title": "Operator gaps remain planned post G-46",
+      "sourceRefId": "ironcannon/knowledge-w91-operator-gaps-still-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-006",
+      "category": "operations",
+      "title": "Preflight green at arc close",
+      "sourceRefId": "ironcannon/knowledge-w91-preflight-green-at-close",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-007",
+      "category": "operations",
+      "title": "Session handoff marked complete",
+      "sourceRefId": "ironcannon/knowledge-w91-session-handoff-complete",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-008",
+      "category": "operations",
+      "title": "110 behavioral journeys at close",
+      "sourceRefId": "ironcannon/knowledge-w91-110-journeys-milestone",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-009",
+      "category": "operations",
+      "title": "Stretch suite ≥40 at G-46",
+      "sourceRefId": "ironcannon/knowledge-w91-stretch-suite-40",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-010",
+      "category": "privacy",
+      "title": "G-46 not production deploy approval",
+      "sourceRefId": "legal/knowledge-w91-arc-signoff-not-deploy",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

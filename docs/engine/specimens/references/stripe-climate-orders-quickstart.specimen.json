@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/climate-orders-quickstart",
+  "sourceUrl": "https://docs.stripe.com/climate/orders/quickstart.md",
+  "lastVerified": "2026-06-03",
+  "title": "Accept carbon removal payments",
+  "excerpt": "Enable your customers to buy carbon removal using the Climate API with your payments integration. Enable your customers to buy carbon removal using the [Climate Orders API](https://docs.stripe.com/api/climate/order.md) with your payments integration. Install the package and import it in your code. Alternatively, if you’re starting from scratch and need a package.json file, download the project files using the Download link in the code editor. Or download the stripe-node library source code directly [from GitHub](https://github.com/stripe/stripe-node). Install the Stripe ruby gem and require it in your code. Alternatively, if you’re starting from scratch and need a Gemfile, download the project files using the link in the code editor.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

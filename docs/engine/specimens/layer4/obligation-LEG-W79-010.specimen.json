@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w79-010",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "SVC-002 blocked until SVC-001 witness approved",
+    "obligations": [
+      "LEG-W79-010"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "SVC-002 blocked until SVC-001 witness approved"
+  },
+  "references": [
+    "ironcannon/knowledge-w79-svc002-queue-blocked"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W79-010",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/d1-platform-alpha-migration-index",
+  "sourceUrl": "https://developers.cloudflare.com/d1/platform/alpha-migration/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Alpha database migration guide",
+  "excerpt": "description: Migrate D1 alpha databases to the production-ready storage backend. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/d1/llms.txt > Use this file to discover all available pages before exploring further. D1 alpha databases stopped accepting live SQL queries on August 22, 2024. D1's open beta launched in October 2023, and newly created databases use a different underlying architecture that is significantly more reliable and performant, with increased database sizes, improved query throughput, and reduced latency.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

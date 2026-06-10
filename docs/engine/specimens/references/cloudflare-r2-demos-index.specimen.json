@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/r2-demos-index",
+  "sourceUrl": "https://developers.cloudflare.com/r2/demos/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Demos and architectures",
+  "excerpt": "description: Explore Cloudflare R2 demos and reference architectures for fullstack applications, storage, and AI, with examples and use cases. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/r2/llms.txt > Use this file to discover all available pages before exploring further. Learn how you can use R2 within your existing application and architecture. Explore the following reference architectures that use R2:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

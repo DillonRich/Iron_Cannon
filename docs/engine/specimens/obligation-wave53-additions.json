@@ -1,0 +1,24 @@
+{
+  "obligations": [
+    { "id": "LEG-W53-001", "category": "privacy", "title": "RoPA entry for new processing after feature launch", "sourceRefId": "legal/gdpr-ropa", "detect": { "type": "manual" } },
+    { "id": "LEG-W53-002", "category": "privacy", "title": "Subprocessor list updated within 30 days of vendor change", "sourceRefId": "legal/subprocessor-list", "detect": { "type": "config" } },
+    { "id": "LEG-W53-003", "category": "cookie", "title": "Consent banner blocks non-essential scripts until accept", "sourceRefId": "legal/cookie-consent-gate", "detect": { "type": "script_before_consent" } },
+    { "id": "LEG-W53-004", "category": "email", "title": "Marketing email includes List-Unsubscribe header", "sourceRefId": "legal/list-unsubscribe-header", "detect": { "type": "header" } },
+    { "id": "LEG-W53-005", "category": "billing", "title": "Failed payment retry shows grace period in UI", "sourceRefId": "legal/billing-grace-ui", "detect": { "type": "ui_pattern", "pattern": "grace period" } },
+    { "id": "LEG-W53-006", "category": "stripe", "title": "Stripe Customer Portal link uses live mode in production only", "sourceRefId": "stripe/customer-portal", "detect": { "type": "config" } },
+    { "id": "LEG-W53-007", "category": "data", "title": "Export download requires re-authentication within 15 minutes", "sourceRefId": "legal/export-reauth", "detect": { "type": "flow_ref", "flow": "data-export" } },
+    { "id": "LEG-W53-008", "category": "terms", "title": "Material terms change triggers reaccept before next charge", "sourceRefId": "legal/terms-reaccept-charge", "detect": { "type": "route_exists", "path": "/legal/reaccept" } },
+    { "id": "LEG-W53-009", "category": "a11y", "title": "Focus visible on all interactive checkout controls", "sourceRefId": "legal/focus-visible-checkout", "detect": { "type": "required_attribute", "attr": "className", "value": "focus-visible" } },
+    { "id": "LEG-W53-010", "category": "security", "title": "Webhook endpoint rejects missing signature with 400", "sourceRefId": "owasp/webhook-signature", "detect": { "type": "config" } },
+    { "id": "LEG-W53-011", "category": "privacy", "title": "Privacy policy lists DPO contact when EU establishment", "sourceRefId": "legal/dpo-contact", "detect": { "type": "pattern", "pattern": "data protection officer" } },
+    { "id": "LEG-W53-012", "category": "cookie", "title": "Cookie policy lists retention per category", "sourceRefId": "legal/cookie-retention-table", "detect": { "type": "schema_table", "table": "cookie_categories" } },
+    { "id": "LEG-W53-013", "category": "email", "title": "Bounce webhook updates suppression within one hour", "sourceRefId": "resend/bounce-suppression", "detect": { "type": "config" } },
+    { "id": "LEG-W53-014", "category": "billing", "title": "Proration disclosure on plan upgrade checkout", "sourceRefId": "stripe/proration-disclosure", "detect": { "type": "ui_pattern", "pattern": "prorat" } },
+    { "id": "LEG-W53-015", "category": "global", "title": "Children under 16 blocked at signup", "sourceRefId": "legal/children-block", "detect": { "type": "ui_pattern", "pattern": "16" } },
+    { "id": "LEG-W53-016", "category": "record", "title": "Consent timestamp stored with version id", "sourceRefId": "legal/consent-version-record", "detect": { "type": "schema_column", "column": "consent_version" } },
+    { "id": "LEG-W53-017", "category": "edge", "title": "Account deletion cancels Stripe subscription", "sourceRefId": "legal/deletion-stripe-cancel", "detect": { "type": "flow_ref", "flow": "account-deletion" } },
+    { "id": "LEG-W53-018", "category": "security", "title": "Session cookie SameSite=Lax or Strict in production", "sourceRefId": "owasp/session-samesite", "detect": { "type": "config" } },
+    { "id": "LEG-W53-019", "category": "privacy", "title": "DSAR intake form accessible without login", "sourceRefId": "legal/dsar-public-form", "detect": { "type": "route_exists", "path": "/privacy/request" } },
+    { "id": "LEG-W53-020", "category": "billing", "title": "Trial end email sent 3 days before charge", "sourceRefId": "legal/trial-end-notice", "detect": { "type": "manual" } }
+  ]
+}

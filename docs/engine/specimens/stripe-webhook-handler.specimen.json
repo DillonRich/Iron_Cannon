@@ -1,0 +1,45 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "stripe/webhook-handler",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "billing-subscription",
+  "moduleId": "M12-stripe-webhook",
+  "adapterId": "stripe",
+  "section": "webhook-handler",
+  "content": {
+    "route": "/api/webhooks/stripe",
+    "requiredSteps": [
+      "Read raw body",
+      "stripe.webhooks.constructEvent(body, signature, secret)",
+      "Check KV idempotency key stripe_evt:{event.id}",
+      "Switch on event.type",
+      "Return 200 quickly"
+    ],
+    "events": {
+      "checkout.session.completed": { "targetState": "B03" },
+      "invoice.payment_failed": { "targetState": "B04" }
+    },
+    "manualConfigSteps": [
+      {
+        "order": 1,
+        "platform": "stripe",
+        "action": "Create webhook endpoint URL in Stripe Dashboard pointing to your deployed /api/webhooks/stripe",
+        "userApprovalRequired": true,
+        "documentationUrl": "https://docs.stripe.com/webhooks"
+      }
+    ]
+  },
+  "references": ["stripe/webhook-signature", "stripe/webhook-idempotency"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "STWH-001", "type": "required_string", "value": "constructEvent", "tier": "pro" },
+      { "id": "STWH-002", "type": "required_string", "value": "checkout.session.completed", "tier": "pro" },
+      { "id": "STWH-003", "type": "required_string", "value": "idempotency", "tier": "armor" }
+    ],
+    "forbidden": [
+      { "id": "STWH-F01", "type": "forbidden_string", "value": "Math.random()", "tier": "pro" }
+    ]
+  },
+  "metadata": { "minTier": "pro" }
+}

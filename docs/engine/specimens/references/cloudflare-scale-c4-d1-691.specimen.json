@@ -1,0 +1,14 @@
+{
+  "refId": "cloudflare/scale-c4-d1-691",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/cloudflare/scale-c4-d1-691",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-C4 d1 691",
+  "excerpt": "Use migrations for schema; backup before destructive ALTER. Final Scale-C planning reference for Iron Cannon MCP compose and compliance agents.",
+  "tags": [
+    "cloudflare",
+    "d1",
+    "scale-c4",
+    "scale-c"
+  ],
+  "embeddingHint": "cloudflare d1 Use migrations for schema; backup before destructive ALTER iron cannon scale-c compliance"
+}

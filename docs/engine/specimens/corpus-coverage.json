@@ -1,0 +1,31 @@
+{
+  "updated": "2026-05-31",
+  "round": "G1-signed-phase1-next",
+  "gateP": {
+    "percentComplete": 100,
+    "moduleSpecs": 30,
+    "referenceCards": 180,
+    "referenceCardsD13MinPct": 100,
+    "imaginationScoreR9": 9.0,
+    "planningSectionComplete": true
+  },
+  "gateG1": {
+    "signed": true,
+    "stakeholder": "Dillon",
+    "signedAt": "2026-05-31",
+    "phase1Kickoff": "docs/PHASE1_KICKOFF.md"
+  },
+  "published": {
+    "referenceCards": 180,
+    "byProvider": {
+      "stripe": 32,
+      "cloudflare": 30,
+      "resend": 19,
+      "owasp": 32,
+      "legal": 28,
+      "nextjs": 19,
+      "ironcannon": 20
+    }
+  },
+  "nextPhase": "Phase 1 Session 1 — monorepo + packages/schemas + validate-schemas"
+}

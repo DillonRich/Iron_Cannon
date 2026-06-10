@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/d1-sql-api-foreign-keys-index",
+  "sourceUrl": "https://developers.cloudflare.com/d1/sql-api/foreign-keys/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Define foreign keys",
+  "excerpt": "description: Enforce relational integrity across D1 tables by defining and deferring foreign key constraints. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/d1/llms.txt > Use this file to discover all available pages before exploring further. D1 supports defining and enforcing foreign key constraints across tables in a database. Foreign key constraints allow you to enforce relationships across tables. For example, you can use foreign keys to create a strict binding between a `user_id` in a `users` table and the `user_id` in an `orders` table, so that no order can be created against a user that does not exist.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

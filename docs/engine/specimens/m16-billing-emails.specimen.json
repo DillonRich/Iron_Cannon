@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/resend/billing-emails",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "email-lifecycle",
+  "moduleId": "M16-billing-emails",
+  "adapterId": "resend",
+  "section": "billing-emails",
+  "content": {
+    "requirement": "Billing transactional emails on state transitions",
+    "templates": [
+      { "id": "billing.subscription_active", "trigger": "B03" },
+      { "id": "billing.payment_failed", "trigger": "B04" },
+      { "id": "billing.canceled", "trigger": "B06" }
+    ],
+    "requiredSteps": [
+      "Send from M12 webhook handlers — never block webhook response",
+      "Use waitUntil or queue for async send",
+      "Iron Clad: marketing footers only on marketing templates — these are transactional"
+    ]
+  },
+  "references": ["resend/send-api", "resend/transactional-vs-broadcast", "legal/transactional-vs-marketing"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "BILL-EM-001", "type": "required_string", "value": "billing.subscription_active", "fileGlob": "**/*.{ts,js}", "tier": "pro" },
+      { "id": "BILL-EM-002", "type": "required_string", "value": "billing.payment_failed", "fileGlob": "**/*.{ts,js}", "tier": "pro" },
+      { "id": "BILL-EM-003", "type": "required_string", "value": "api.resend.com", "fileGlob": "**/*.{ts,js}", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "email-billing" }
+}

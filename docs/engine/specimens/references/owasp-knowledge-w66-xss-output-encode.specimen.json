@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/knowledge-w66-xss-output-encode",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w66/xss-output-encode",
+  "lastVerified": "2026-06-06",
+  "title": "W66 xss-output-encode",
+  "provider": "owasp",
+  "excerpt": "Encode dynamic HTML output to prevent reflected XSS",
+  "embeddingHint": "owasp xss-output-encode wave66 tgs-v2",
+  "tags": [
+    "wave66",
+    "knowledge",
+    "owasp",
+    "tgs-v2"
+  ]
+}

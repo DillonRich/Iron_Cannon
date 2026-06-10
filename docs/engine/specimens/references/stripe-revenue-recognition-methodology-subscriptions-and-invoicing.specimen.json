@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-methodology-subscriptions-and-invoicing",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/methodology/subscriptions-and-invoicing.md",
+  "lastVerified": "2026-06-03",
+  "title": "Revenue Recognition with subscriptions and invoicing",
+  "excerpt": "Learn how revenue recognition works with subscriptions and invoices. Because of the detailed information available on subscriptions and *invoices* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice), Stripe Revenue Recognition can accurately defer and recognize revenue for these resources. Revenue recognition treats each invoice line item and subscription item as its own performance obligation. Revenue recognition operates on finalized invoices, not on the status of the subscription itself. Revenue recognition amortizes revenue by the second, but our example uses a daily interval.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

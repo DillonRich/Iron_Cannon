@@ -1,0 +1,18 @@
+{
+  "fixtureId": "A03",
+  "moduleId": "A03-webhook-hardening-pass",
+  "patternsUnderTest": [
+    "ARM-WH-001",
+    "ARM-WH-002",
+    "ARM-WH-003",
+    "ARM-P52-A03",
+    "ARM-P52-HARDENING"
+  ],
+  "passSnippet": "const event = stripe.webhooks.constructEvent(body, sig, secret);\nif (now - event.created > 300) throw new Error('stale');\nawait env.KV.put(`stripe_evt:${event.id}`, '1');",
+  "failSnippet": "const event = JSON.parse(body); console.log(STRIPE_WEBHOOK_SECRET);",
+  "expectedPass": true,
+  "expectedFail": false,
+  "forbiddenOnFail": [
+    "ARM-WH-F01"
+  ]
+}

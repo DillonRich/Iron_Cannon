@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-api",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/api.md",
+  "lastVerified": "2026-06-03",
+  "title": "Revenue Recognition API",
+  "excerpt": "Access Stripe Revenue Recognition reports programmatically to automate your accrual accounting. For accrual accounting, Stripe Revenue Recognition provides [downloadable reports](https://docs.stripe.com/revenue-recognition/reports.md), such as a [period summary](https://docs.stripe.com/revenue-recognition/reports/period-summary.md) and a [revenue waterfall](https://docs.stripe.com/revenue-recognition/reports/waterfall.md). You can download these reports in CSV format through the [Dashboard](https://dashboard.stripe.com/revenue-recognition) or you can programmatically access them through the API.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

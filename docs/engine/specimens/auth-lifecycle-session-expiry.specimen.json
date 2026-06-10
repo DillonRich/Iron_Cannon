@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "auth-lifecycle/session-expiry",
+  "layer": 1,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": null,
+  "section": "session-expiry",
+  "content": {
+    "requirement": "Idle and hard session timeout with graceful UX",
+    "steps": [
+      "Track lastActivity on session row",
+      "S02 → S03 at idle threshold; warn user",
+      "S03 → S04 at hard timeout; invalidate session",
+      "S04 → S00 redirect login with message",
+      "API returns 401 when session expired"
+    ],
+    "uxFindingTemplate": {
+      "category": "session_timeout",
+      "systemRequirement": "User warned before hard logout; no silent data loss on forms",
+      "designOwnership": "agent"
+    }
+  },
+  "references": ["owasp/session-invalidation", "owasp/cookie-theft"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "AUTH-SE-001", "type": "required_string", "value": "expires_at", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "session-lifecycle" }
+}

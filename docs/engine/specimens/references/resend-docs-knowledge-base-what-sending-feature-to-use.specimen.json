@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-what-sending-feature-to-use",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/what-sending-feature-to-use.md",
+  "lastVerified": "2026-06-03",
+  "title": "What sending feature should I be using?",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # What sending feature should I be using? > How to pick between our different sending features depending on your number of recipients and the nature of the message. Resend allows you to send both **Transactional** and **Marketing** emails. ## What's the difference between Transactional and Marketing emails? ### What is a Transactional email? A **Transactional email** is a message triggered by a user action or required for legal compliance. These emails are essential communications that users **cannot unsubscribe** from.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

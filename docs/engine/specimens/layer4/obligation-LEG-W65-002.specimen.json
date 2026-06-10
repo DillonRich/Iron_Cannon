@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w65-002",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Privacy policy link visible on every page footer",
+    "obligations": [
+      "LEG-W65-002"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Privacy policy link visible on every page footer"
+  },
+  "references": [
+    "legal/privacy-policy-link"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W65-002",
+        "type": "pattern",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "privacy",
+    "disclaimerRequired": true
+  }
+}

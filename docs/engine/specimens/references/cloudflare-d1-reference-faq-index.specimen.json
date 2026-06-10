@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/d1-reference-faq-index",
+  "sourceUrl": "https://developers.cloudflare.com/d1/reference/faq/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "FAQs",
+  "excerpt": "description: Frequently asked questions about D1 pricing, limits, and usage. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/d1/llms.txt > Use this file to discover all available pages before exploring further. Yes, the [Workers Free plan](https://developers.cloudflare.com/workers/platform/pricing/#workers) will always include the ability to prototype and experiment with D1 for free. When your account hits the daily read and/or write limits, you will not be able to run queries against D1\\. D1 API will return errors to your client indicating that your daily limits have been exceeded.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

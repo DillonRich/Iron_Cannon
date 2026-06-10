@@ -1,0 +1,17 @@
+{
+  "refId": "ironcannon/edge-e02-idempotency",
+  "sourceUrl": "https://ironcannon.dev/patterns/edge-e02",
+  "lastVerified": "2026-05-31",
+  "title": "IC edge E02 webhook idempotency",
+  "excerpt": "Duplicate Stripe event.id must not double-apply subscription state. KV key stripe_evt:{id} with TTL. Return 200 on replay.",
+  "appliesTo": [
+    "webhook-idempotency",
+    "E02",
+    "M12"
+  ],
+  "tags": [
+    "ironcannon",
+    "edge"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

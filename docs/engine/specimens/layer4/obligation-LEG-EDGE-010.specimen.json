@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-edge-010",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-edge-010",
+  "content": {
+    "requirement": "Iron Clad disclaimer on compliance tools",
+    "obligations": [
+      "LEG-EDGE-010"
+    ],
+    "compareSteps": [
+      "Run detect.type=header",
+      "Map result to obligation LEG-EDGE-010",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-EDGE-010: Iron Clad disclaimer on compliance tools"
+  },
+  "references": [
+    "legal/disclaimer"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-EDGE-010",
+        "type": "header",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "edge",
+    "disclaimerRequired": true
+  }
+}

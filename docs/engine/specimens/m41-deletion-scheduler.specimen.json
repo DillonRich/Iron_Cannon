@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/account-deletion/scheduler",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "account-deletion",
+  "moduleId": "M41-deletion-scheduler",
+  "adapterId": "cloudflare-workers",
+  "section": "deletion-scheduler",
+  "content": {
+    "requirement": "Cron/worker job purges accounts after grace period (D02→D03)",
+    "requiredSteps": [
+      "Query users where grace_ends_at < now AND deletion_status = scheduled",
+      "Revoke all sessions (D1 + KV)",
+      "Anonymize email to deleted+{id}@void.local",
+      "Cancel Stripe subscription via API",
+      "Anonymize or delete related rows per retention policy",
+      "Retry partial failures with exponential backoff",
+      "Idempotent — safe to re-run on same user"
+    ],
+    "cron": "0 3 * * *"
+  },
+  "references": ["cloudflare/workers-cron", "cloudflare/d1-bindings", "stripe/subscriptions-overview", "stripe/customer-portal", "owasp/logging"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "DEL-SCH-001", "type": "required_string", "value": "deleted+", "fileGlob": "**/*.{ts,js}", "tier": "pro" },
+      { "id": "DEL-SCH-002", "type": "required_string", "value": "subscriptions.cancel", "fileGlob": "**/*.{ts,js}", "tier": "pro" },
+      { "id": "DEL-SCH-003", "type": "required_string", "value": "grace_ends_at", "fileGlob": "**/*.{ts,js}", "tier": "pro" }
+    ],
+    "forbidden": [
+      { "id": "DEL-SCH-F01", "type": "forbidden_string", "value": "DELETE FROM users WHERE", "fileGlob": "**/*.{ts,js}", "tier": "pro" }
+    ]
+  },
+  "metadata": { "minTier": "pro", "category": "account-deletion-scheduler" }
+}

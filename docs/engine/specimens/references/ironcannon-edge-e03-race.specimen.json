@@ -1,0 +1,17 @@
+{
+  "refId": "ironcannon/edge-e03-race",
+  "sourceUrl": "https://ironcannon.dev/patterns/edge-e03",
+  "lastVerified": "2026-05-31",
+  "title": "IC edge E03 checkout race",
+  "excerpt": "User may hit success URL before webhook. provisioning KV + polling UI branch until webhook clears or TTL expires.",
+  "appliesTo": [
+    "billing-race-shield",
+    "E03",
+    "M14"
+  ],
+  "tags": [
+    "ironcannon",
+    "edge"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

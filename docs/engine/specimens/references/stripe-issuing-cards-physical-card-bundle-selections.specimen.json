@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-cards-physical-card-bundle-selections",
+  "sourceUrl": "https://docs.stripe.com/issuing/cards/physical/card-bundle-selections.md",
+  "lastVerified": "2026-06-03",
+  "title": "Customize card bundle",
+  "excerpt": "During the design phase, Stripe provides a design form where you can choose from the following standard options. Additionally, there are many innovative products in the physical cards market, such as LED-powered cards that light up in point-of-sale terminals, wooden cards, and recycled ocean plastic cards. These options are outside our standard offerings, but we can arrange expert-driven sessions to help you learn more about them. The following table displays the available card body options. We can also ship you generic samples of these materials. “Core color options” refers to the color on the edge of the card.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

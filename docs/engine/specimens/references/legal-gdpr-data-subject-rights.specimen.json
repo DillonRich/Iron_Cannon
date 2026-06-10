@@ -1,0 +1,9 @@
+{
+  "refId": "legal/gdpr-data-subject-rights",
+  "sourceUrl": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/",
+  "lastVerified": "2026-05-31",
+  "title": "GDPR data subject rights (web-detectable hooks)",
+  "excerpt": "Individuals may request access, rectification, erasure, restriction, portability. Iron Cannon checks for implemented web flows: account deletion, data export request—not legal adequacy of process. Document contact method in privacy policy.",
+  "appliesTo": ["LEG-PRIV-003", "LEG-PRIV-004", "privacy-gdpr-ccpa"],
+  "tags": ["legal", "gdpr", "privacy", "advisory"]
+}

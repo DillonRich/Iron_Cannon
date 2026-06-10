@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-get-started",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/get-started.md",
+  "lastVerified": "2026-06-03",
+  "title": "Recognize revenue with Stripe",
+  "excerpt": "Learn how to use Stripe for your revenue recognition. You can import your transaction data, set up rules to automate your revenue recognition, generate and customize revenue reports, and test your transaction model before going live. All Stripe Revenue Recognition features are available from the [Dashboard](https://dashboard.stripe.com/revenue-recognition). > Stripe offers a 30-day free trial for Revenue Recognition if you want to preview it. When you [sign up](https://dashboard.stripe.com), use a *sandbox* (A sandbox is an isolated test environment that allows you to test Stripe functionality in your account without affecting your live integration. Use sandboxes to safely experiment with new features and changes) to explore all the features for free.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

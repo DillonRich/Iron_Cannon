@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-ci-cd-builds-build-image-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/ci-cd/builds/build-image/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Build image",
+  "excerpt": "description: Understand the build image used in Workers Builds. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Workers Builds uses a build image with support for a variety of languages and tools such as Node.js, Python, PHP, Ruby, and Go. Workers Builds supports a variety of runtimes, languages, and tools. Builds will use the default versions listed below unless a custom version is detected or specified. You can [override the default versions](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/#overriding-default-versions) using environment variables or version files.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

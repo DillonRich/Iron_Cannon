@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/development-dashboard-request-logs",
+  "sourceUrl": "https://docs.stripe.com/development/dashboard/request-logs.md",
+  "lastVerified": "2026-06-03",
+  "title": "View API request logs",
+  "excerpt": "Filter API request logs and view log entries in the Developers Dashboard. > [Workbench](https://docs.stripe.com/workbench.md) replaces the Developers Dashboard, and we automatically enable it for all new Stripe accounts by default. Configure this setting from the [Developers](https://dashboard.stripe.com/settings/developers) settings in the Dashboard. > Read about how to [view API request logs](https://docs.stripe.com/workbench/overview.md#request-logs) in Workbench. > Use [Workbench](https://docs.stripe.com/workbench/overview.md#request-logs) to view v2 API request logs, which don’t appear in the Developers Dashboard. When you send an API request, Stripe creates an object and logs the request for your account.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

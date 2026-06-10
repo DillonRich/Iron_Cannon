@@ -1,0 +1,12 @@
+{
+  "refId": "nextjs/scale-c2-security-162",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/nextjs/scale-c2-security-162",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-C2 security 162",
+  "excerpt": "Server Actions must validate session on every mutation. Planning reference card 162 for Iron Cannon compose and compliance agents. Cross-ref obligations and EM-3 touchpoints.",
+  "tags": [
+    "nextjs",
+    "security",
+    "scale-c2"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-environments",
+  "sourceUrl": "https://developers.cloudflare.com/workers/wrangler/environments/",
+  "lastVerified": "2026-05-31",
+  "title": "Workers environments",
+  "excerpt": "Staging vs production wrangler env deploy.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "cloudflare",
+    "workers-environments"
+  ]
+}

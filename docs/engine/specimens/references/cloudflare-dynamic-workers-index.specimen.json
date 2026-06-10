@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/dynamic-workers-index",
+  "sourceUrl": "https://developers.cloudflare.com/dynamic-workers/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Dynamic Worker Loaders",
+  "excerpt": "description: Spin up isolated Workers on demand to execute code. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/dynamic-workers/llms.txt > Use this file to discover all available pages before exploring further. Spin up Workers at runtime to execute code on-demand in a secure, sandboxed environment. Dynamic Workers let you spin up an unlimited number of Workers to execute arbitrary code specified at runtime. Dynamic Workers can be used as a lightweight alternative to containers for securely sandboxing code you don't trust.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p1"
+  ]
+}

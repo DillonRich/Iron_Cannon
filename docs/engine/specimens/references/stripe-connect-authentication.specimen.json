@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-authentication",
+  "sourceUrl": "https://docs.stripe.com/connect/authentication.md",
+  "lastVerified": "2026-06-03",
+  "title": "Making API calls for connected accounts",
+  "excerpt": "Learn how to add the right information to your API calls so you can make calls for your connected accounts. You can make API calls for your connected accounts: - Server-side with the [Stripe-Account header](https://docs.stripe.com/connect/authentication.md#stripe-account-header) and the connected account ID, per request - Client-side by passing the connected account ID as an argument to the client library To help with performance and reliability, Stripe has established [rate limits and allocations](https://docs.stripe.com/rate-limits.md) for API endpoints. To make server-side API calls for connected accounts, use the `Stripe-Account` header with the account identifier, which begins with the prefix `acct_`.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

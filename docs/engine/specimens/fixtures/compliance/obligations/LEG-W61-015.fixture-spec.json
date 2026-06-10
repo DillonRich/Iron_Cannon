@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W61-015",
+  "obligationId": "LEG-W61-015",
+  "detectType": "route_exists",
+  "detect": {
+    "type": "route_exists",
+    "path": "/status"
+  },
+  "passSnippet": "export default function P(){return <main>/status</main>}",
+  "failSnippet": "<main>/missing</main>",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

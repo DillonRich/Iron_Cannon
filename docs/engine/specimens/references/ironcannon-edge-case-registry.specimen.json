@@ -1,0 +1,11 @@
+{
+  "refId": "ironcannon/edge-case-registry",
+  "sourceUrl": "https://ironcannon.dev/planning/edge-case-registry",
+  "lastVerified": "2026-06-03",
+  "title": "Edge case registry",
+  "excerpt": "T02/T07 signals map to EC-* rows with obligation and protocol mitigations for agent directives.",
+  "tags": [
+    "ironcannon",
+    "planning"
+  ]
+}

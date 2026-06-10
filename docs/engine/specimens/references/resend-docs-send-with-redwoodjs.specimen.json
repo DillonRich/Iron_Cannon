@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-send-with-redwoodjs",
+  "sourceUrl": "https://resend.com/docs/send-with-redwoodjs.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send emails with RedwoodJS",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send emails with RedwoodJS > Learn how to send your first email using Redwood.js and the Resend Node.js SDK. # Send Email with Resend Node.js SDK **Purpose:** Enforce only the **current** and **correct** instructions for sending emails using the [Resend](https://resend.com/) Node.js SDK. **Scope:** All AI-generated advice or code related to sending email with Resend must follow these guardrails. *** ## **1. Official Resend Node.js Setup** ### **Prerequisites** Human must first create an API key and verify their domain at [https://resend.com/domains](https://resend.com/domains).…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

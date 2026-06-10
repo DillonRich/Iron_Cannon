@@ -1,0 +1,14 @@
+{
+  "refId": "legal/deletion-stripe-cancel",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/legal-deletion-stripe-cancel",
+  "lastVerified": "2026-06-04",
+  "title": "Account deletion cancels Stripe subscription",
+  "provider": "legal",
+  "excerpt": "LEG-W53-017: Account deletion cancels Stripe subscription",
+  "embeddingHint": "LEG-W53-017 edge flow_ref",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

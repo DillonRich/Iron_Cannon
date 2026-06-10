@@ -1,0 +1,31 @@
+{
+  "fixtureId": "SL-02",
+  "description": "Oversized payload — strip URLs then minimal fallback",
+  "input": {
+    "profile": "module_directive",
+    "scaleProfile": {
+      "tool": "T04",
+      "sliceProfile": "module_directive",
+      "maxRuleFragments": 20,
+      "maxMapTokens": 4000,
+      "maxExplicitCards": 10,
+      "ragTopK": 5,
+      "maxOutboundTokens": 16000
+    },
+    "payload": {
+      "moduleId": "M12-stripe-webhook",
+      "acceptanceCriteria": ["constructEvent", "idempotency"],
+      "implementationConstraints": ["never skip signature"],
+      "content": {
+        "steps": ["x"],
+        "codeExamples": [{ "body": "LONG_PLACEHOLDER_REPEAT_50000_CHARS" }]
+      },
+      "references": [{ "refId": "stripe/webhooks-overview", "url": "https://stripe.com/docs/webhooks" }]
+    }
+  },
+  "expected": {
+    "truncated": true,
+    "warningFlags": ["SLICE_TRUNCATED"],
+    "mustRetain": ["acceptanceCriteria", "implementationConstraints", "moduleId"]
+  }
+}

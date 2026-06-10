@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/accessibility/advisory-patterns",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": null,
+  "section": "a11y-advisory",
+  "content": {
+    "requirement": "Advisory accessibility checks — manual or agent-assisted",
+    "obligations": ["LEG-A11Y-004", "LEG-A11Y-006", "LEG-A11Y-010", "LEG-PRIV-008", "LEG-PRIV-010"],
+    "compareSteps": [
+      "Modal focus trap patterns (component_scan)",
+      "Color contrast — manual / axe advisory only",
+      "Video captions — manual if media present",
+      "Subprocessors in privacy policy — manual review",
+      "Age gate — manual if minors targeted"
+    ],
+    "remediationDirective": "Agent may run axe or document manual attestation; results are advisory unless user confirms."
+  },
+  "references": ["legal/wcag-focus-visible", "legal/wcag-contrast-min", "legal/wcag-overview", "legal/gdpr-privacy-notice", "legal/age-gate-minor"],
+  "compliancePatterns": {
+    "advisory": [
+      { "id": "LEG-A11Y-004", "type": "component_scan", "patterns": ["FocusTrap", "focus-trap"], "tier": "ironclad" },
+      { "id": "LEG-A11Y-006", "type": "manual", "note": "WCAG AA contrast", "tier": "ironclad" },
+      { "id": "LEG-A11Y-010", "type": "manual", "note": "Video captions", "tier": "ironclad" },
+      { "id": "LEG-PRIV-008", "type": "manual", "note": "Subprocessors list", "tier": "ironclad" },
+      { "id": "LEG-PRIV-010", "type": "manual", "note": "Age gate", "tier": "ironclad" }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "accessibility", "disclaimerRequired": true }
+}

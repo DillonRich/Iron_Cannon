@@ -1,0 +1,126 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/infrastructure-catalog/v1",
+  "rulesetVersion": "2026.06.05",
+  "stackScope": ["cloudflare-workers", "cloudflare-d1", "cloudflare-kv", "cloudflare-vectorize", "nextjs-app-router"],
+  "domains": [
+    {
+      "domainId": "INFRA-CACHE",
+      "title": "Edge caching & CDN",
+      "surfaceType": "cache",
+      "riskIfIgnored": "critical",
+      "checklist": [
+        { "id": "cache-rules-explicit", "label": "Cache Rules / CDN cache behavior defined per route class (static vs dynamic vs API)" },
+        { "id": "no-cache-auth", "label": "Authenticated and webhook routes bypass shared cache" },
+        { "id": "stale-while-revalidate", "label": "Public assets use SWR or versioned URLs — not unbounded stale HTML" },
+        { "id": "purge-strategy", "label": "Documented purge/on-deploy invalidation for marketing pages" }
+      ],
+      "directives": [
+        "Separate cache policies: static (long TTL), API (no-store), personalized (private, no-store).",
+        "Never cache Stripe webhook bodies or session cookies at the edge.",
+        "Use Cache API / Cache Rules only with explicit cache keys — avoid poisoning via query strings."
+      ],
+      "retrievalQueries": ["cloudflare cache rules CDN stale purge"],
+      "relatedModules": ["M02-auth-worker-routes", "M05-auth-session-middleware"]
+    },
+    {
+      "domainId": "INFRA-RATE-LIMIT",
+      "title": "Rate limiting & abuse shaping",
+      "surfaceType": "rate_limit",
+      "riskIfIgnored": "critical",
+      "checklist": [
+        { "id": "per-ip-limits", "label": "Per-IP or per-fingerprint limits on auth and public POST routes" },
+        { "id": "per-user-limits", "label": "Per-account limits on expensive operations (checkout, password reset)" },
+        { "id": "webhook-isolation", "label": "Webhooks validated + idempotent — not counted only by IP" },
+        { "id": "429-contract", "label": "429 responses include Retry-After; clients must backoff" }
+      ],
+      "directives": [
+        "Layer limits: edge (Cloudflare WAF/rate limit) + Worker (KV/Durable Object counters) + app semantics.",
+        "Auth endpoints: stricter than static assets; billing endpoints: tier-aware.",
+        "Plan for burst traffic — fixed in-memory counters fail across isolates."
+      ],
+      "retrievalQueries": ["cloudflare rate limit worker WAF abuse"],
+      "relatedModules": ["M02-auth-worker-routes", "M12-stripe-webhook"]
+    },
+    {
+      "domainId": "INFRA-LOAD-BALANCE",
+      "title": "Load distribution & origin protection",
+      "surfaceType": "load_balance",
+      "riskIfIgnored": "high",
+      "checklist": [
+        { "id": "worker-first-api", "label": "API traffic terminates at Workers — not unprotected origin" },
+        { "id": "health-probes", "label": "Health checks exclude dependency cold-start false negatives" },
+        { "id": "regional-failover", "label": "Document single-region vs multi-region expectations for D1/KV" },
+        { "id": "queue-backpressure", "label": "Heavy work offloaded to Queues/Workflows — not synchronous request thread" }
+      ],
+      "directives": [
+        "Cloudflare already load-balances Workers globally — design for stateless handlers.",
+        "Protect D1: batch writes, avoid hot rows, use read replicas pattern via caching where safe.",
+        "Use Queues for email fan-out, webhook side effects, and corpus reindex — never block MCP/tool paths."
+      ],
+      "retrievalQueries": ["cloudflare workers load queue backpressure"],
+      "relatedModules": ["M02-auth-worker-routes", "M13-provisioning-kv"]
+    },
+    {
+      "domainId": "INFRA-CAPACITY",
+      "title": "Load capacity & quotas",
+      "surfaceType": "capacity",
+      "riskIfIgnored": "critical",
+      "checklist": [
+        { "id": "rps-budget", "label": "Documented expected RPS/peak and Worker CPU time budget per route" },
+        { "id": "d1-limits", "label": "D1 query patterns reviewed for N+1 and table scans at scale" },
+        { "id": "kv-size-ttl", "label": "KV value size limits and TTLs defined; no unbounded session blobs" },
+        { "id": "stripe-rate", "label": "Stripe API call rate aligned with checkout/webhook volume" },
+        { "id": "resend-quota", "label": "Email send quota and batching for signup spikes" }
+      ],
+      "directives": [
+        "Define SLOs: p95 latency, error rate, and max concurrent checkouts before throttling.",
+        "Model 10× spike: auth signup, webhook replay, and marketing traffic hitting same Worker.",
+        "Subscribe tier limits (Workers paid, D1 rows, Vectorize queries) in runbook — not discovered in prod."
+      ],
+      "retrievalQueries": ["cloudflare D1 limits KV size workers CPU quota"],
+      "relatedModules": ["M01-auth-d1-schema", "M10-billing-d1-schema", "M13-provisioning-kv"]
+    },
+    {
+      "domainId": "INFRA-STRESS",
+      "title": "Stress & load testing",
+      "surfaceType": "stress_test",
+      "riskIfIgnored": "high",
+      "checklist": [
+        { "id": "baseline-load-test", "label": "k6/Artillery/Locust baseline against staging with production-like bindings" },
+        { "id": "webhook-replay", "label": "Stripe webhook burst + idempotency verified under parallel delivery" },
+        { "id": "cold-start", "label": "Cold-start and cache-miss path measured — not only warm happy path" },
+        { "id": "failure-injection", "label": "D1 timeout / KV miss / Resend 429 scenarios exercised" }
+      ],
+      "directives": [
+        "Test auth + checkout + webhook paths separately — combined test hides bottlenecks.",
+        "Include 1M-user *growth* scenario: gradual ramp + thundering herd on launch day.",
+        "Store last stress report artifact in repo or CI — Iron Cannon flags missing INFRA-STRESS items in T11."
+      ],
+      "retrievalQueries": ["load test k6 workers staging webhook burst"],
+      "relatedModules": ["M12-stripe-webhook", "M11-stripe-checkout-route"]
+    },
+    {
+      "domainId": "INFRA-OBSERVE",
+      "title": "Observability under load",
+      "surfaceType": "observability",
+      "riskIfIgnored": "high",
+      "checklist": [
+        { "id": "request-id", "label": "requestId on all API responses and structured logs" },
+        { "id": "golden-signals", "label": "Latency, traffic, errors, saturation dashboards (Workers Analytics + custom)" },
+        { "id": "alerting", "label": "Alerts on 5xx rate, queue depth, D1 errors, Stripe webhook failures" },
+        { "id": "runbook", "label": "Incident runbook linked from README — not only in chat history" }
+      ],
+      "directives": [
+        "Log fields: requestId, route, tier, durationMs, outcome code — never secrets or full PII.",
+        "Trace cross-service: Worker → D1 → Stripe → Resend with same correlation id.",
+        "Pre-define load-shedding: what degrades first (RAG off, non-critical emails) before hard outage."
+      ],
+      "retrievalQueries": ["cloudflare workers analytics observability alerts"],
+      "relatedModules": ["M02-auth-worker-routes"]
+    }
+  ],
+  "productionGate": {
+    "requiredDomains": ["INFRA-CACHE", "INFRA-RATE-LIMIT", "INFRA-CAPACITY", "INFRA-STRESS"],
+    "recommendedDomains": ["INFRA-LOAD-BALANCE", "INFRA-OBSERVE"]
+  }
+}

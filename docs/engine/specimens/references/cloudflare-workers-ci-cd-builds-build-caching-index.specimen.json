@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-ci-cd-builds-build-caching-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/ci-cd/builds/build-caching/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Build caching",
+  "excerpt": "description: Improve build times by caching build outputs and dependencies image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Improve Workers build times by caching dependencies and build output between builds with a project-wide shared cache. The first build to occur after enabling build caching on your Workers project will save relevant artifacts to cache. Every subsequent build will restore from cache unless configured otherwise.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

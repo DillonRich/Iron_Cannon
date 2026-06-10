@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-tax-reporting",
+  "sourceUrl": "https://docs.stripe.com/connect/tax-reporting.md",
+  "lastVerified": "2026-06-03",
+  "title": "US tax reporting for Connect platforms",
+  "excerpt": "Learn how to report the annual payments for your US-based connected accounts. Stripe [Connect](https://stripe.com/connect) allows platforms to provide a seamless, end-to-end payment service for their connected accounts. This service might come with certain responsibilities, including tax information reporting. > If you work for a platform that pays you through Stripe and want to learn about your 1099 forms and how to get them, see [1099 tax forms](https://support.stripe.com/express/topics/1099-tax-forms) on the Stripe Support site. Stripe issues 1099-K forms for connected accounts where Stripe controls the pricing or for transactions where the connected account pays fees directly to Stripe.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

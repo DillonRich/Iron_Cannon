@@ -1,0 +1,14 @@
+{
+  "refId": "cloudflare/hyperdrive",
+  "sourceUrl": "https://developers.cloudflare.com/hyperdrive/",
+  "lastVerified": "2026-05-31",
+  "title": "Cloudflare Hyperdrive",
+  "excerpt": "Connection pooler for Postgres. Relevant if Supabase/Postgres adapter in Phase 4—not golden D1 path.",
+  "appliesTo": [
+    "P2",
+    "supabase-adapter"
+  ],
+  "tags": [
+    "cloudflare"
+  ]
+}

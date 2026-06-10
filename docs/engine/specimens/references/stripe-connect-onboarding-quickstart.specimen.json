@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-onboarding-quickstart",
+  "sourceUrl": "https://docs.stripe.com/connect/onboarding/quickstart.md",
+  "lastVerified": "2026-06-03",
+  "title": "Build a Connect integration",
+  "excerpt": "Create a connected account and collect information from it to enable payments. We recommend selecting properties before downloading a sample app, because your integration will change significantly. // This is a placeholder - it should be replaced with your secret API key. // Sign in to see your own test API key embedded in code samples. // Don't submit any personally identifiable information in requests made with this key. // This is a placeholder - it should be replaced with your secret API key. // Sign in to see your own test API key embedded in code samples.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

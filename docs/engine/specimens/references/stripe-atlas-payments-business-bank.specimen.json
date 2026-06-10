@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/atlas-payments-business-bank",
+  "sourceUrl": "https://docs.stripe.com/atlas/payments-business-bank.md",
+  "lastVerified": "2026-06-03",
+  "title": "Business bank accounts",
+  "excerpt": "Apply to open a business bank account with our partners. Immediately after incorporation or upon receiving your EIN, Stripe Atlas founders can apply to open a financial account with Stripe or our partners. Find banking options in your [Atlas Dashboard](https://dashboard.stripe.com/atlas) or our [support article](https://support.stripe.com/questions/stripe-atlas-perks-partners). Our partners determine account eligibility and might not support all Atlas businesses. You can also apply to any bank of your choice. You can find the latest list of Atlas banking partners and which ones support pre-EIN signup in the [Perks page](https://dashboard.stripe.com/atlas/perks) of your Atlas Dashboard. - Available immediately after incorporation before you receive your EIN.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

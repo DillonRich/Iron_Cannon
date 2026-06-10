@@ -1,0 +1,8 @@
+{
+  "provider": "cloudflare",
+  "priority": "P0",
+  "includePatterns": ["/workers/", "/d1/", "/kv/", "/pages/", "/r2/", "/vectorize/", "/webhooks", "/cron", "/secrets", "/bindings", "/wrangler", "/queues", "/durable-objects", "/turnstile", "/waf", "/ssl", "/analytics/", "/bots/", "/workers-ai/", "/email-routing/", "/spectrum/", "/cache/", "/ruleset-engine/", "/stream/"],
+  "excludePatterns": ["/spectrum/", "/magic-wan/", "/stream/", "/images/transform/", "/workers/examples/", "llms.txt"],
+  "maxPerRun": 100,
+  "appliesToDefault": ["cloudflare-golden-stack", "layer2/cloudflare"]
+}

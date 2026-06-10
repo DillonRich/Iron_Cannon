@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-methodology-multi-currency",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/methodology/multi-currency.md",
+  "lastVerified": "2026-06-03",
+  "title": "Revenue Recognition with multiple currencies",
+  "excerpt": "Understand the roles of presentment and settlement currencies in Stripe Revenue Recognition. Two types of currencies are important to recognize revenue: - Presentment currencies: The currencies that your customers use to pay. - Settlement currencies: The currencies that you receive payment. Additionally, you can [choose a functional currency](https://docs.stripe.com/revenue-recognition/revenue-settings.md#functional-currency) in your settings. A functional currency translates all transactions beginning on or after your selected start date to a single currency. For all transactions with presentment currencies matching one of your settlement currencies, Stripe Revenue Recognition processes journal entries in that currency directly.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

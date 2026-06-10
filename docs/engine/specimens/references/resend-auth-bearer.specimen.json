@@ -1,0 +1,9 @@
+{
+  "refId": "resend/auth-bearer",
+  "sourceUrl": "https://resend.com/docs/api-reference/introduction",
+  "lastVerified": "2026-05-31",
+  "title": "Resend API authentication",
+  "excerpt": "Authorization: Bearer re_xxx on all requests. 401 if missing, 403 if invalid. Store key in Workers secrets (RESEND_API_KEY). Never commit to repo or expose to client. Rotate via Resend Dashboard if leaked.",
+  "appliesTo": ["layer2/resend", "layer3"],
+  "tags": ["resend", "security"]
+}

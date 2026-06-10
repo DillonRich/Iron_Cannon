@@ -1,0 +1,9 @@
+{
+  "refId": "legal/eprivacy-directive",
+  "sourceUrl": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/",
+  "lastVerified": "2026-05-31",
+  "title": "ePrivacy / PECR context (EU/UK)",
+  "excerpt": "Cookie and electronic marketing rules complement GDPR. Non-essential cookies require consent before setting (EU/UK markets). Iron Cannon flags script_before_consent and cookie banner patterns as advisory compare—not legal determination.",
+  "appliesTo": ["layer4", "cookies", "eu", "uk"],
+  "tags": ["legal", "cookies", "eprivacy"]
+}

@@ -1,0 +1,14 @@
+{
+  "refId": "legal/subprocessor-list",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/legal-subprocessor-list",
+  "lastVerified": "2026-06-04",
+  "title": "Subprocessor list updated within 30 days of vendor change",
+  "provider": "legal",
+  "excerpt": "LEG-W53-002: Subprocessor list updated within 30 days of vendor change",
+  "embeddingHint": "LEG-W53-002 privacy config",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

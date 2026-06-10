@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-sec-002",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Incident response runbook linked internally",
+    "obligations": [
+      "LEG-SEC-002"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Incident response runbook linked internally"
+  },
+  "references": [
+    "owasp/authentication"
+  ],
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security-disclosure",
+    "disclaimerRequired": true
+  },
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-SEC-002",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  }
+}

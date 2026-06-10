@@ -1,0 +1,9 @@
+{
+  "refId": "legal/age-gate-minor",
+  "sourceUrl": "https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa",
+  "lastVerified": "2026-05-31",
+  "title": "COPPA age gate awareness (advisory)",
+  "excerpt": "If product targets or knowingly collects data from children under 13, COPPA applies with parental consent requirements. Iron Cannon flags missing age attestation on signup only when user marks product as minor-directed—not legal determination of COPPA scope.",
+  "appliesTo": ["LEG-PRIV-010"],
+  "tags": ["legal", "coppa", "privacy", "advisory"]
+}

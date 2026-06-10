@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/knowledge-w68-abuse-case-auth",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w68/abuse-case-auth",
+  "lastVerified": "2026-06-06",
+  "title": "W68 abuse-case-auth",
+  "provider": "owasp",
+  "excerpt": "Document abuse cases for login, reset, and billing before ship",
+  "embeddingHint": "owasp abuse-case-auth wave68 adversarial",
+  "tags": [
+    "wave68",
+    "knowledge",
+    "owasp",
+    "adversarial"
+  ]
+}

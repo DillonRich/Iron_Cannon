@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/kv-ttl",
+  "sourceUrl": "https://developers.cloudflare.com/kv/api/write-key-value-pairs/",
+  "lastVerified": "2026-05-31",
+  "title": "KV expiration TTL",
+  "excerpt": "Set expirationTtl (seconds) or expiration on put for auto-expiring keys. Use for session TTL, idempotency key retention, rate limit counters. Idempotency keys should TTL after Stripe retry window (e.g. 72h+).",
+  "appliesTo": ["webhook-idempotency", "session-hardening"],
+  "tags": ["cloudflare", "kv", "ttl"]
+}

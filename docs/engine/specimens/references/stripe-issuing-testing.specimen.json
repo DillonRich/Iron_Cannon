@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-testing",
+  "sourceUrl": "https://docs.stripe.com/issuing/testing.md",
+  "lastVerified": "2026-06-03",
+  "title": "Test your Issuing integration",
+  "excerpt": "Learn how to test your integration and simulate purchases. This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [Without code](https://docs.stripe.com/issuing/testing.md?testing-method=without-code) - [With code](https://docs.stripe.com/issuing/testing.md?testing-method=with-code)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

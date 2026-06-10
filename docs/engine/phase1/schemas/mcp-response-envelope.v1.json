@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ironcannon.dev/schemas/mcp-response-envelope/v1",
+  "type": "object",
+  "required": ["agentGuidance", "presentationHints"],
+  "additionalProperties": true,
+  "properties": {
+    "ok": { "type": "boolean" },
+    "agentGuidance": {
+      "type": "object",
+      "required": ["phase"],
+      "additionalProperties": true,
+      "properties": {
+        "phase": { "type": "string" },
+        "instruction": { "type": "string" },
+        "phaseGate": { "type": "string" }
+      }
+    },
+    "presentationHints": {
+      "type": "object",
+      "required": ["category"],
+      "additionalProperties": true,
+      "properties": {
+        "category": {
+          "type": "string",
+          "enum": [
+            "discovery",
+            "validation",
+            "wiremap",
+            "build",
+            "verify",
+            "recovery",
+            "security",
+            "legal",
+            "manual_config",
+            "complete",
+            "error"
+          ]
+        },
+        "headline": { "type": "string" },
+        "sections": { "type": "array" },
+        "tables": { "type": "array" }
+      }
+    },
+    "legalDisclaimer": { "type": "string" },
+    "meta": { "type": "object", "additionalProperties": true }
+  }
+}

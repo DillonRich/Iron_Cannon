@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-why-are-my-emails-landing-on-the-suppression-list",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/why-are-my-emails-landing-on-the-suppression-list.md",
+  "lastVerified": "2026-06-03",
+  "title": "Why are my emails landing on the Suppression List?",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Why are my emails landing on the Suppression List? > Learn why your emails land on the Suppression List and how to remove them. When sending to an email address results in a hard bounce or spam complaint, Resend places this address on the Suppression List. Future emails to addresses on the list will be marked as `suppressed` and won't be delivered until the address is removed. We place emails on the Suppression List to protect domain reputation, both yours and ours. Sending an email to a known hard bounce recipient can damage domain reputation and affect email deliverability.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

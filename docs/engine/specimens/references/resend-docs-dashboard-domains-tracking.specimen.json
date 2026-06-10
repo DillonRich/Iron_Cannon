@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-domains-tracking",
+  "sourceUrl": "https://resend.com/docs/dashboard/domains/tracking.md",
+  "lastVerified": "2026-06-03",
+  "title": "Open and Click Tracking",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Open and Click Tracking > Track open and click rates of your emails. Open and click tracking is disabled by default for all domains. You can enable it manually or programmatically. Once verified, all tracked links in your emails will use your tracking subdomain (e.g., `links.emails.example.com`). Go to the [**Domains** page](https://resend.com/domains) and click on the domain you want to configure. In the **Configuration** tab, click **Configure** under **Enable tracking metrics**. Provide a name for your tracking subdomain, enable open and/or click tracking, and click **+Add domain**.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

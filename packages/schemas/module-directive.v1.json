@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ironcannon.dev/schemas/module-directive/v1",
+  "type": "object",
+  "required": ["moduleId", "agentGuidance", "compliancePatterns", "presentationHints"],
+  "properties": {
+    "moduleId": { "type": "string" },
+    "directives": { "type": "array" },
+    "compliancePatterns": { "type": "object" },
+    "agentGuidance": { "type": "object" },
+    "presentationHints": { "type": "object" },
+    "manualConfigSteps": { "type": "array" },
+    "nextModuleId": { "type": ["string", "null"] }
+  }
+}

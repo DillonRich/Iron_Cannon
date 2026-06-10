@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-emails-introduction",
+  "sourceUrl": "https://resend.com/docs/dashboard/emails/introduction.md",
+  "lastVerified": "2026-06-03",
+  "title": "Managing Emails",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Managing Emails > Learn how to view and manage all sent emails on the Resend Dashboard. ## View email details See all the metadata associated with an email, including the sender address, recipient address, subject, and more from the [Emails](https://resend.com/emails) page. Select any email to view its details. Each email contains a **Preview**, **Plain Text**, and **HTML** version to visualize the content of your sent email in its various formats. ## Understand email events Here are all the events that can be associated with an email: * `bounced` - The recipient's mail server rejected the email.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

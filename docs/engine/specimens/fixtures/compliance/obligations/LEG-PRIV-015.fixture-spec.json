@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-PRIV-015",
+  "obligationId": "LEG-PRIV-015",
+  "detectType": "route_exists",
+  "detect": {
+    "type": "route_exists",
+    "path": "/privacy/subprocessors"
+  },
+  "passSnippet": "export default function P(){return <main>/privacy/subprocessors</main>}",
+  "failSnippet": "export default function P(){return null}",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

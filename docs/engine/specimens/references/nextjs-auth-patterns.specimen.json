@@ -1,0 +1,9 @@
+{
+  "refId": "nextjs/auth-patterns",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/authentication",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js authentication patterns",
+  "excerpt": "Official auth guide: session in cookie + server validation per request. Iron Cannon extends with D1/KV session store, Resend magic links, middleware protection. Do not store JWT in localStorage for session.",
+  "appliesTo": ["auth-lifecycle"],
+  "tags": ["nextjs", "auth", "session"]
+}

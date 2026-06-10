@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-framework-guides-deploy-a-brunch-site-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/framework-guides/deploy-a-brunch-site/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Brunch",
+  "excerpt": "description: Deploy a Brunch site to Cloudflare Pages. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. [Brunch ↗](https://brunch.io/) is a fast front-end web application build tool with simple declarative configuration and seamless incremental compilation for rapid development. Brunch maintains a library of community-provided [skeletons ↗](https://brunch.io/skeletons) to offer you a boilerplate for your project. Run Brunch's recommended `es6` skeleton with the `brunch new` command:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

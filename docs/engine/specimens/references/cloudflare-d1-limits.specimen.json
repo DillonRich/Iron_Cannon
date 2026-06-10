@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/d1-limits",
+  "sourceUrl": "https://developers.cloudflare.com/d1/platform/limits/",
+  "lastVerified": "2026-05-31",
+  "title": "D1 platform limits",
+  "excerpt": "Max database size 10GB per DB. Row read/write quotas on free/paid tiers. Max 50k databases for horizontal scale. Design schema for tenant_id indexing. Avoid unbounded table growth—archive or shard before limit.",
+  "appliesTo": ["layer2/cloudflare"],
+  "tags": ["cloudflare", "d1", "limits"]
+}

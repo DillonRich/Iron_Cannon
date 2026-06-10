@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-webhooks-introduction",
+  "sourceUrl": "https://resend.com/docs/webhooks/introduction.md",
+  "lastVerified": "2026-06-03",
+  "title": "Managing Webhooks",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Managing Webhooks > Use webhooks to notify your application about events from Resend. export const YouTube = ({id}) => { return ; }; ## What is a webhook? Resend uses webhooks, which are real-time HTTPS requests that tell your application an event occurred, such as an email delivery notification or subscription status update. ## Why use webhooks? All webhooks use HTTPS and deliver a JSON payload that can be used by your application.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

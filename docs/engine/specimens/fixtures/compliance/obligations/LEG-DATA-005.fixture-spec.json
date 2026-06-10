@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-DATA-005",
+  "obligationId": "LEG-DATA-005",
+  "detectType": "flow_ref",
+  "detect": {
+    "type": "flow_ref",
+    "flowId": "account-deletion"
+  },
+  "passSnippet": "flowId:account-deletion delete-account data-export",
+  "failSnippet": "unrelated flow",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

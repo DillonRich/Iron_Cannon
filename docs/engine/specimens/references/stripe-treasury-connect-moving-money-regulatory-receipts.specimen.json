@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-moving-money-regulatory-receipts",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/moving-money/regulatory-receipts.md",
+  "lastVerified": "2026-06-03",
+  "title": "Regulatory receipts",
+  "excerpt": "Learn about hosted transaction receipts. All changes to a balance have a corresponding [Transaction object](https://docs.stripe.com/api/treasury/transactions/object.md) that provides a summary of money movements. Some transaction types are considered *regulated* under Stripe’s money transmission licenses and require special treatment. You, the platform, must offer a transaction receipt and present disclosures to the customers of the sellers and service providers (connected accounts) on the platform taking part in regulated transactions. Stripe provides hosted regulatory transaction receipts on all of our money movement resources, recording the URL as the value for the `hosted_regulatory_receipt_url` attribute.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

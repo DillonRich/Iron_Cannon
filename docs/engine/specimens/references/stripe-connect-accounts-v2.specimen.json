@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-accounts-v2",
+  "sourceUrl": "https://docs.stripe.com/connect/accounts-v2.md",
+  "lastVerified": "2026-06-03",
+  "title": "Connect and the Accounts v2 API",
+  "excerpt": "Create connected accounts with a unified identity across Stripe. As a Connect platform, you enable your connected accounts to accept payments. You can also accept payments from your connected accounts when they purchase products or subscribe to your services. In the Accounts v1 API, associating these purchases and subscriptions with your connected account requires a separate `Customer` object that you manually associate with the connected account’s `Account` object. The Accounts v2 API allows you to create one `Account` object that supports all interactions with your connected account, so you don’t need to create and track separate `Customer` objects.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

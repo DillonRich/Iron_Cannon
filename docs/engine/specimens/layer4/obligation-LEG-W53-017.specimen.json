@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w53-017",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Account deletion cancels Stripe subscription",
+    "obligations": [
+      "LEG-W53-017"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Account deletion cancels Stripe subscription"
+  },
+  "references": [
+    "legal/deletion-stripe-cancel"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W53-017",
+        "type": "flow_ref",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "edge",
+    "disclaimerRequired": true
+  }
+}

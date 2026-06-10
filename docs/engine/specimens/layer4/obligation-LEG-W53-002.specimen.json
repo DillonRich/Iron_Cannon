@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w53-002",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Subprocessor list updated within 30 days of vendor change",
+    "obligations": [
+      "LEG-W53-002"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Subprocessor list updated within 30 days of vendor change"
+  },
+  "references": [
+    "legal/subprocessor-list"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W53-002",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "privacy",
+    "disclaimerRequired": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fixtureId": "LEG-PRIV-009",
+  "obligationId": "LEG-PRIV-009",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "patterns": [
+      "privacy@",
+      "dpo@",
+      "data protection"
+    ]
+  },
+  "passSnippet": "privacy@ dpo@ data protection",
+  "failSnippet": "gap LEG-PRIV-009",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

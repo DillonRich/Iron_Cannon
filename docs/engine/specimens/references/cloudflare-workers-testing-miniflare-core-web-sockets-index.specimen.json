@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-testing-miniflare-core-web-sockets-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/testing/miniflare/core/web-sockets/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "WebSockets",
+  "excerpt": "description: Miniflare will always upgrade Web Socket connections. The Worker must respond with a status 101 Switching Protocols response including a webSocket. For example, the Worker below implements an echo WebSocket server: image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

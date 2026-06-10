@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-domains-regions",
+  "sourceUrl": "https://resend.com/docs/dashboard/domains/regions.md",
+  "lastVerified": "2026-06-03",
+  "title": "Choosing a Region",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Choosing a Region > Resend offers sending from multiple regions Resend users have the option to send transactional and marketing emails from four different regions: * North Virginia (us-east-1) * Ireland (eu-west-1) * São Paulo (sa-east-1) * Tokyo (ap-northeast-1) No matter where your users are, you can ensure that they receive your emails in a timely and efficient manner. You can visualize the different regions in the Resend dashboard: ## Data Residency Region selection controls where your emails are **routed and sent from**. It does not control where customer data is stored.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

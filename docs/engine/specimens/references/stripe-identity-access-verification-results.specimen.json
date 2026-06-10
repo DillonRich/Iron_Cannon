@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/identity-access-verification-results",
+  "sourceUrl": "https://docs.stripe.com/identity/access-verification-results.md",
+  "lastVerified": "2026-06-03",
+  "title": "Access verification results",
+  "excerpt": "Learn how to access sensitive verification results. You can write code to [display a modal to collect identity documents](https://docs.stripe.com/identity/verify-identity-documents.md) and [handle verification outcomes](https://docs.stripe.com/identity/handle-verification-outcomes.md). You might need to access the sensitive verification results, such as your user’s date of birth or pictures of the collected document, at a later date. You have several options for doing so. First, consider using the [Identity Dashboard](https://dashboard.stripe.com/identity) to access sensitive verification results. If needed, [give team members controlled access](https://docs.stripe.com/get-started/account/teams.md) to your Stripe account.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

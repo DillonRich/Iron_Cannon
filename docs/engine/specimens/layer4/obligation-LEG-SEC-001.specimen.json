@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-sec-001",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Security.txt or contact for disclosures",
+    "obligations": [
+      "LEG-SEC-001"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Security.txt or contact for disclosures"
+  },
+  "references": [
+    "legal/disclaimer"
+  ],
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security-disclosure",
+    "disclaimerRequired": true
+  },
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-SEC-001",
+        "type": "route_exists",
+        "tier": "ironclad"
+      }
+    ]
+  }
+}

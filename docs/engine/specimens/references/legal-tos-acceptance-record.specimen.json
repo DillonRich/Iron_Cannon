@@ -1,0 +1,10 @@
+{
+  "refId": "legal/tos-acceptance-record",
+  "authorship": "iron-cannon-pattern",
+  "sourceUrl": "https://ironcannon.dev/patterns/tos-acceptance-record",
+  "lastVerified": "2026-05-31",
+  "title": "Terms acceptance record pattern",
+  "excerpt": "Store termsAcceptedAt timestamp and termsVersion on user record at signup. Explicit accept action required—no pre-checked box. Link to current terms document. Enables audit trail; not legal advice on enforceability.",
+  "appliesTo": ["LEG-TERMS-001", "LEG-TERMS-002", "terms-acceptance"],
+  "tags": ["legal", "terms", "pattern"]
+}

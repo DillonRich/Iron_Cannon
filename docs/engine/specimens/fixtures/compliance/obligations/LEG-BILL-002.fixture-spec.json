@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-BILL-002",
+  "obligationId": "LEG-BILL-002",
+  "detectType": "ui_pattern",
+  "detect": {
+    "type": "ui_pattern",
+    "pattern": "invoice history"
+  },
+  "passSnippet": "/* invoice history */",
+  "failSnippet": "defaultChecked={true}",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

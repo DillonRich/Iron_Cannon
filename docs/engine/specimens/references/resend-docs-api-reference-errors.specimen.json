@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-api-reference-errors",
+  "sourceUrl": "https://resend.com/docs/api-reference/errors.md",
+  "lastVerified": "2026-06-03",
+  "title": "Errors",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Errors > Troubleshoot problems with this comprehensive breakdown of all error codes. ## Error schema We use standard HTTP response codes for success and failure notifications, and our errors are further classified by type. ### `invalid_idempotency_key` * **Status:** 400 * **Message:** The key must be between 1-256 chars. * **Suggested action:** Retry with a valid idempotency key. ### `validation_error` * **Status:** 400 * **Message:** We found an error with one or more fields in the request. * **Suggested action:** The message will contain more details about what field and error were found.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

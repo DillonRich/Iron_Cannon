@@ -1,0 +1,16 @@
+{
+  "refId": "ironcannon/presentation-hints",
+  "sourceUrl": "https://ironcannon.dev/patterns/presentation-hints",
+  "lastVerified": "2026-05-31",
+  "title": "IC presentationHints",
+  "excerpt": "Structured UI hints for IDE: tables, mermaid, approval callouts. Distinct from agentGuidance. Schema enforced in Phase 1 CI.",
+  "appliesTo": [
+    "MCP",
+    "RESPONSE_PRESENTATION_PROTOCOL"
+  ],
+  "tags": [
+    "ironcannon",
+    "pattern"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/cookie-theft",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Cookie_Theft_Mitigation_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Cookie theft mitigation",
+  "excerpt": "HttpOnly + Secure + SameSite on session cookies. Short session TTL with sliding renewal. Bind session to user-agent hash optionally (Armor). Rotate session id on privilege change.",
+  "appliesTo": ["owasp/session-httponly-secure", "layer3"],
+  "tags": ["owasp", "cookies", "session"]
+}

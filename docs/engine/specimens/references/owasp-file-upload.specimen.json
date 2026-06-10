@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/file-upload",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP File upload",
+  "excerpt": "Validate MIME and extension server-side. Store outside web root. Scan if accepting user uploads. SaaS V1 default: no arbitrary uploads unless product requires.",
+  "appliesTo": [
+    "layer3",
+    "P1"
+  ],
+  "tags": [
+    "owasp",
+    "upload"
+  ]
+}

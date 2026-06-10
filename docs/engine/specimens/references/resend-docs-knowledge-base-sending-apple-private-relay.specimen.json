@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-sending-apple-private-relay",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/sending-apple-private-relay.md",
+  "lastVerified": "2026-06-03",
+  "title": "How to prevent bounces with @privaterelay.appleid.com recipients?",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # How to prevent bounces with @privaterelay.appleid.com recipients? > Sending to Apple Private Email Relay requires specific configuration steps to ensure your emails get delivered If your website or application supports Sign In with Apple, your customers have the option to receive emails from you via Apple’s Private Email Relay service. This feature allows users to keep their actual email addresses private when they sign up or log in.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

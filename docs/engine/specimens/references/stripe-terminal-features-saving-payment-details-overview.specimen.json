@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/terminal-features-saving-payment-details-overview",
+  "sourceUrl": "https://docs.stripe.com/terminal/features/saving-payment-details/overview.md",
+  "lastVerified": "2026-06-03",
+  "title": "Collect and save payment details for future use",
+  "excerpt": "Use your Stripe Terminal integration to collect and save payment methods for returning customers. Use Stripe Terminal to collect and save *payment methods* (PaymentMethods represent your customer's payment instruments, used with the Payment Intents or Setup Intents APIs) (including NFC-based [mobile wallets](https://docs.stripe.com/payments/wallets.md)) for online reuse. Use an in-person payment to initiate an online *subscription* (A Subscription represents the product details associated with the plan that your customer subscribes to. Allows you to charge the customer on a recurring basis) using [Billing](https://docs.stripe.com/billing.md), save payment details to a customer’s online account, or defer payment.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

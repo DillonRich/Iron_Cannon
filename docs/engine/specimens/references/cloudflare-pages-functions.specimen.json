@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/pages-functions",
+  "sourceUrl": "https://developers.cloudflare.com/pages/functions/",
+  "lastVerified": "2026-05-31",
+  "title": "Cloudflare Pages Functions",
+  "excerpt": "Pages Functions are Workers on Pages routing. functions/ directory maps to routes. Share bindings with wrangler.toml. Use for Next.js hybrid or API routes on Pages. Same secrets and D1/KV bindings as Workers.",
+  "appliesTo": ["layer2/cloudflare", "nextjs-app-router"],
+  "tags": ["cloudflare", "pages"]
+}

@@ -1,0 +1,16 @@
+{
+  "refId": "supabase/svc002-supabase-dual-database-blocked-036",
+  "sourceUrl": "https://ironcannon.dev/svc002/supabase/dual-database-blocked-36",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-002 dual-database-blocked 36",
+  "provider": "supabase",
+  "excerpt": "SD-08: Supabase Postgres + Cloudflare D1 is SSOT conflict — pick one primary database.",
+  "embeddingHint": "supabase dual-database-blocked svc002 supabase sd-07 rls ssr",
+  "tags": [
+    "svc002",
+    "supabase",
+    "sd-07",
+    "supabase",
+    "dual-database-blocked"
+  ]
+}

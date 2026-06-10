@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-configuration-cron-triggers-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/configuration/cron-triggers/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Cron Triggers",
+  "excerpt": "description: Enable your Worker to be executed on a schedule. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Cron Triggers allow users to map a cron expression to a Worker using a [scheduled() handler](https://developers.cloudflare.com/workers/runtime-apis/handlers/scheduled/) that enables Workers to be executed on a schedule. Cron Triggers are ideal for running periodic jobs, such as for maintenance or calling third-party APIs to collect up-to-date data. Workers scheduled by Cron Triggers will run on underutilized machines to make the best use of Cloudflare's capacity and route traffic efficiently.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

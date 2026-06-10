@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-checkout-custom-domains",
+  "sourceUrl": "https://docs.stripe.com/payments/checkout/custom-domains.md",
+  "lastVerified": "2026-06-03",
+  "title": "Use your custom domain",
+  "excerpt": "Learn how to bring your own custom domain to Stripe Checkout, Payment Links, and customer portal. This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [Stripe-hosted page](https://docs.stripe.com/payments/checkout/custom-domains.md?payment-ui=stripe-hosted) - [Full embedded page](https://docs.stripe.com/payments/checkout/custom-domains.md?payment-ui=embedded-page)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

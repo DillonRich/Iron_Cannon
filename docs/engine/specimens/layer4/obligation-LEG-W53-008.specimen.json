@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w53-008",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Material terms change triggers reaccept before next charge",
+    "obligations": [
+      "LEG-W53-008"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Material terms change triggers reaccept before next charge"
+  },
+  "references": [
+    "legal/terms-reaccept-charge"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W53-008",
+        "type": "route_exists",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "terms",
+    "disclaimerRequired": true
+  }
+}

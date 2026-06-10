@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w70-007",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Infrastructure smoke passes before deploy",
+    "obligations": [
+      "LEG-W70-007"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Infrastructure smoke passes before deploy"
+  },
+  "references": [
+    "ironcannon/knowledge-w70-infrastructure-smoke"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W70-007",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

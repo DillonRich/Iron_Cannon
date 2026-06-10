@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-EDGE-004",
+  "obligationId": "LEG-EDGE-004",
+  "detectType": "schema_column",
+  "detect": {
+    "type": "schema_column",
+    "table": "reset_tokens",
+    "column": "used_at"
+  },
+  "passSnippet": "ALTER TABLE reset_tokens ADD used_at TEXT",
+  "failSnippet": "gap LEG-EDGE-004",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

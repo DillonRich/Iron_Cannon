@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-wrangler-migration-v1-to-v2-wrangler-legacy-webpack-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/wrangler/migration/v1-to-v2/wrangler-legacy/webpack/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Webpack",
+  "excerpt": "description: Learn how to migrate from Wrangler v1 to v2 using webpack. This guide covers configuration, custom builds, and compatibility for Cloudflare Workers. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. This page is for Wrangler v1, which has been deprecated.[Learn how to update to the latest version of Wrangler](https://developers.cloudflare.com/workers/wrangler/migration/v1-to-v2/). Wrangler allows you to develop modern ES6 applications with support for modules. This support is possible because of Wrangler's [webpack ↗](https://webpack.js.org/) integration.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "fixtureId": "W04",
+  "description": "Account-deletion optional without billing flow — warn and include M10",
+  "input": {
+    "flowIds": ["auth-lifecycle", "account-deletion"],
+    "wiremapProfile": "default"
+  },
+  "expected": {
+    "split": true,
+    "warnings": ["account-deletion-without-billing-flow"],
+    "coreMustIncludeModuleIds": ["M10-billing-d1-schema"],
+    "extendedModuleIds": [
+      "M40-deletion-api",
+      "M41-deletion-scheduler",
+      "M42-deletion-ui"
+    ]
+  }
+}

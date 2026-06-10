@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-edge-006",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-edge-006",
+  "content": {
+    "requirement": "Checkout success validates session server-side",
+    "obligations": [
+      "LEG-EDGE-006"
+    ],
+    "compareSteps": [
+      "Run detect.type=flow_ref",
+      "Map result to obligation LEG-EDGE-006",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-EDGE-006: Checkout success validates session server-side"
+  },
+  "references": [
+    "stripe/checkout-success-verify"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-EDGE-006",
+        "type": "flow_ref",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "edge",
+    "disclaimerRequired": true
+  }
+}

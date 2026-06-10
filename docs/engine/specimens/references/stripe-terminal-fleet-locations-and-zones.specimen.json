@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/terminal-fleet-locations-and-zones",
+  "sourceUrl": "https://docs.stripe.com/terminal/fleet/locations-and-zones.md",
+  "lastVerified": "2026-06-03",
+  "title": "Manage locations",
+  "excerpt": "Group and manage your readers by physical location. This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [Dashboard](https://docs.stripe.com/terminal/fleet/locations-and-zones.md?dashboard-or-api=dashboard) - [API](https://docs.stripe.com/terminal/fleet/locations-and-zones.md?dashboard-or-api=api)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

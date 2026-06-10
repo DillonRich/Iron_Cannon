@@ -1,0 +1,246 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/agent-directive-templates/v1",
+  "rulesetVersion": "2026.06.03",
+  "templates": [
+    {
+      "templateId": "DIR-SECURITY-001",
+      "phase": "SECURITY",
+      "tierMin": "armor",
+      "agentMust": [
+        "Implement controls from EM-2 slice",
+        "Run T05 patterns before complete",
+        "Attach T09 evidence if Armor+"
+      ],
+      "agentMustNot": [
+        "Skip signature verification on webhooks",
+        "Disable rate limits in production"
+      ]
+    },
+    {
+      "templateId": "DIR-COMPLIANCE-001",
+      "phase": "COMPLIANCE",
+      "tierMin": "ironclad",
+      "agentMust": [
+        "Run T12 for projectMarkets",
+        "Apply T13 directives per route",
+        "Prove with T05 obligation fixtures"
+      ],
+      "agentMustNot": [
+        "Provide legal advice — checklist only",
+        "Expose L4 payloads to Pro tier"
+      ]
+    },
+    {
+      "templateId": "DIR-COMPLIANCE-AUDIT-001",
+      "phase": "COMPLIANCE_AUDIT",
+      "tierMin": "ironclad",
+      "agentMust": [
+        "Run T14 audit_legal_readiness",
+        "Include disclaimerRef on every outbound block"
+      ],
+      "agentMustNot": [
+        "Mark IRON_CLAD_PASS without T14"
+      ]
+    },
+    {
+      "templateId": "DIR-UX-COMPLIANCE-001",
+      "phase": "UX_COMPLIANCE",
+      "tierMin": "ironclad",
+      "agentMust": [
+        "Map UX route to EM-3 touchpoints",
+        "Verify a11y + privacy links on route"
+      ],
+      "agentMustNot": [
+        "Merge marketing into transactional email templates"
+      ]
+    },
+    {
+      "templateId": "DIR-EDGE-001",
+      "phase": "RESUME",
+      "tierMin": "pro",
+      "agentMust": [
+        "Check edge-case-registry for signal",
+        "Follow CH-* or EC-* mitigation"
+      ],
+      "agentMustNot": [
+        "Ignore HYBRID_STACK_DETECTED warnings"
+      ]
+    },
+    {
+      "templateId": "DIR-TOOL-GATE-001",
+      "phase": "TOOL_GATE",
+      "tierMin": "pro",
+      "agentMust": [
+        "Confirm prior tool succeeded before next MCP call",
+        "Log tool id in state_log"
+      ],
+      "agentMustNot": [
+        "Skip T03 wiremap before T04 compose"
+      ]
+    },
+    {
+      "templateId": "DIR-MONITOR-001",
+      "phase": "MONITOR",
+      "tierMin": "armor",
+      "agentMust": [
+        "Enable structured logging without secrets",
+        "Alert on auth anomaly thresholds"
+      ],
+      "agentMustNot": [
+        "Ship debug logging with PII to third parties"
+      ]
+    },
+    {
+      "templateId": "DIR-OBSERVABILITY-001",
+      "phase": "OBSERVABILITY",
+      "tierMin": "armor",
+      "agentMust": [
+        "Trace webhook and checkout flows end-to-end",
+        "Correlate stripe event id in logs"
+      ],
+      "agentMustNot": [
+        "Rely on client-only success for billing"
+      ]
+    },
+    {
+      "templateId": "DIR-MARKET-001",
+      "phase": "COMPLIANCE",
+      "tierMin": "ironclad",
+      "agentMust": [
+        "Filter obligations by T01 projectMarkets",
+        "Apply jurisdiction bundle micro-stipulations"
+      ],
+      "agentMustNot": [
+        "Apply EU-only cookie rules to US-only projects"
+      ]
+    },
+    {
+      "templateId": "DIR-BUILD-001",
+      "phase": "BUILD",
+      "tierMin": "pro",
+      "agentMust": [
+        "Match module rule specimen",
+        "Run T05 patternsUnderTest"
+      ],
+      "agentMustNot": [
+        "Mark module complete with failing fixture"
+      ]
+    },
+    {
+      "templateId": "DIR-ATTESTATION-001",
+      "phase": "ATTESTATION",
+      "tierMin": "pro",
+      "agentMust": [
+        "Record attestation in state_log before next golden module"
+      ],
+      "agentMustNot": [
+        "Auto-attest without human or explicit agent confirm"
+      ]
+    },
+    {
+      "templateId": "DIR-SLICE-001",
+      "phase": "COMPOSE",
+      "tierMin": "pro",
+      "agentMust": [
+        "Respect C14 token budget",
+        "Emit SLICE_TRUNCATED when overflow"
+      ],
+      "agentMustNot": [
+        "Silently drop legal cards for Iron Clad tier"
+      ]
+    },
+    {
+      "templateId": "DIR-RETRIEVAL-001",
+      "phase": "COMPOSE",
+      "tierMin": "pro",
+      "agentMust": [
+        "Calibrate retrieval baseline after corpus index rebuild",
+        "Prefer top-3 ref overlap SSOT"
+      ],
+      "agentMustNot": [
+        "Hard-code expectedRefIds without calibrate-retrieval-baseline.mjs"
+      ]
+    },
+    {
+      "templateId": "DIR-QUALITY-001",
+      "phase": "MONITOR",
+      "tierMin": "pro",
+      "agentMust": [
+        "Run planning:regression and lint:all before closing planning session"
+      ],
+      "agentMustNot": [
+        "Ship planning wave with failing per-flow protocol ids"
+      ]
+    },
+    {
+      "templateId": "DIR-MARKET-FILTER-001",
+      "phase": "COMPLIANCE",
+      "tierMin": "ironclad",
+      "agentMust": [
+        "Apply jurisdiction bundle for each T01 projectMarket",
+        "Skip obligations outside active markets"
+      ],
+      "agentMustNot": [
+        "Compose EU-only cards for US-only projectMarkets"
+      ]
+    },
+    {
+      "templateId": "DIR-INCIDENT-001",
+      "phase": "INCIDENT",
+      "tierMin": "armor",
+      "agentMust": [
+        "Pause golden loop on COMPLIANCE_FAILED",
+        "Open EM-1 INCIDENT lattice step before resume"
+      ],
+      "agentMustNot": [
+        "Auto-resume without rollback snapshot when webhook verify fails"
+      ]
+    },
+    {
+      "templateId": "DIR-SRE-001",
+      "phase": "MONITOR",
+      "tierMin": "armor",
+      "agentMust": [
+        "Complete EM-1 SRE lattice step before production gate",
+        "Document runbook link in state_log"
+      ],
+      "agentMustNot": [
+        "Skip DRILL phase on billing webhook modules"
+      ]
+    },
+    {
+      "templateId": "DIR-CHAOS-001",
+      "phase": "TEST",
+      "tierMin": "armor",
+      "agentMust": [
+        "Run CHAOS lattice checkpoint on auth and billing paths in preview"
+      ],
+      "agentMustNot": [
+        "Run chaos tests against production Stripe live mode"
+      ]
+    },
+    {
+      "templateId": "DIR-OBLIGATION-001",
+      "phase": "COMPLIANCE",
+      "tierMin": "ironclad",
+      "agentMust": [
+        "Run T12 compare for each LEG-W53 obligation in scope"
+      ],
+      "agentMustNot": [
+        "Skip L4 disclaimer on compliance output"
+      ]
+    },
+    {
+      "templateId": "DIR-CONFIG-001",
+      "phase": "TOOL_GATE",
+      "tierMin": "pro",
+      "agentMust": [
+        "Cross-check T02 stack signals against EM-0 config nodes"
+      ],
+      "agentMustNot": [
+        "Assume wrangler.toml complete without T02"
+      ]
+    }
+  ],
+  "templateCount": 20
+}

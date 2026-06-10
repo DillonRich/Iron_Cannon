@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-runtime-apis-bindings-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/runtime-apis/bindings/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Bindings (env)",
+  "excerpt": "description: Worker Bindings that allow for interaction with other Cloudflare Resources. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Bindings allow your Worker to interact with resources on the Cloudflare Developer Platform. Bindings provide better performance and less restrictions when accessing resources from Workers than the [REST APIs](https://developers.cloudflare.com/api/) which are intended for non-Workers applications. The following bindings are available today:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

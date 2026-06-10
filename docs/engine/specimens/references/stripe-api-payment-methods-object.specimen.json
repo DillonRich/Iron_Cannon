@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-payment-methods-object",
+  "sourceUrl": "https://docs.stripe.com/api/payment_methods/object.md",
+  "lastVerified": "2026-06-03",
+  "title": "The PaymentMethod object",
+  "excerpt": "String representing the object’s type. Objects of the same type share the same value. If this is an `acss_debit` PaymentMethod, this hash contains details about the ACSS Debit payment method. - `acss_debit.bank_name` (string, nullable) Name of the bank associated with the bank account. - `acss_debit.fingerprint` (string, nullable) Uniquely identifies this particular bank account. You can use this attribute to check whether two bank accounts are the same.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

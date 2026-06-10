@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w90-affiliates-prep-sim",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w90/affiliates-prep-sim",
+  "lastVerified": "2026-06-06",
+  "title": "W90 affiliates-prep-sim",
+  "provider": "ironcannon",
+  "excerpt": "simulate-affiliates-prep.mjs validates billing chain readiness",
+  "embeddingHint": "ironcannon affiliates-prep-sim wave90 affiliates-prep-g45",
+  "tags": [
+    "wave90",
+    "knowledge",
+    "ironcannon",
+    "affiliates-prep-g45"
+  ]
+}

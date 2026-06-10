@@ -1,0 +1,15 @@
+{
+  "refId": "resend/knowledge-w70-bounce-suppression-list",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w70/bounce-suppression-list",
+  "lastVerified": "2026-06-06",
+  "title": "W70 bounce-suppression-list",
+  "provider": "resend",
+  "excerpt": "Hard bounces suppress future sends automatically",
+  "embeddingHint": "resend bounce-suppression-list wave70 resilience-telemetry",
+  "tags": [
+    "wave70",
+    "knowledge",
+    "resend",
+    "resilience-telemetry"
+  ]
+}

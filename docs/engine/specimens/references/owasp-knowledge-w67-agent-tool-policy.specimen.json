@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/knowledge-w67-agent-tool-policy",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w67/agent-tool-policy",
+  "lastVerified": "2026-06-06",
+  "title": "W67 agent-tool-policy",
+  "provider": "owasp",
+  "excerpt": "AI agent tool allowlist blocks filesystem and credential exfiltration",
+  "embeddingHint": "owasp agent-tool-policy wave67 phase3 production",
+  "tags": [
+    "wave67",
+    "knowledge",
+    "owasp",
+    "phase3"
+  ]
+}

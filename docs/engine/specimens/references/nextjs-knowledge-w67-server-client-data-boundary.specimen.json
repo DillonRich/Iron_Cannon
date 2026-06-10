@@ -1,0 +1,15 @@
+{
+  "refId": "nextjs/knowledge-w67-server-client-data-boundary",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w67/server-client-data-boundary",
+  "lastVerified": "2026-06-06",
+  "title": "W67 server-client-data-boundary",
+  "provider": "nextjs",
+  "excerpt": "Keep secrets server-side; never expose tokens in client bundles",
+  "embeddingHint": "nextjs server-client-data-boundary wave67 phase3 production",
+  "tags": [
+    "wave67",
+    "knowledge",
+    "nextjs",
+    "phase3"
+  ]
+}

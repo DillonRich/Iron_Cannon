@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-send-with-deno-deploy",
+  "sourceUrl": "https://resend.com/docs/send-with-deno-deploy.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send emails with Deno Deploy",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send emails with Deno Deploy > Learn how to send your first email using Deno Deploy. ## Prerequisites To get the most out of this guide, you'll need to: * [Create an API key](https://resend.com/api-keys) * [Verify your domain](https://resend.com/domains) ## 1. Create a Deno Deploy project Go to [dash.deno.com/projects](https://dash.deno.com/projects) and create a new playground project. ## 2.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

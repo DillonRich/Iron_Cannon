@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-disputes",
+  "sourceUrl": "https://docs.stripe.com/connect/disputes.md",
+  "lastVerified": "2026-06-03",
+  "title": "Disputes on Connect platforms",
+  "excerpt": "Learn about the dispute responsibilities on Connect platforms. You can view all disputes filed against your platform and connected accounts in your Dashboard. When one of your connected accounts receives a dispute against a payment, the [charge type](https://docs.stripe.com/connect/charges.md#types) and negative balance responsibility determine: - Whether you or your connected account responds to that dispute to accept or challenge it. - Which account Stripe debits for the chargeback and fees. This guide describes how Stripe processes disputes for each charge type and how you can handle them. For connected accounts that use [direct charges](https://docs.stripe.com/connect/direct-charges.md), Stripe debits the disputed amount from the connected account’s balance.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

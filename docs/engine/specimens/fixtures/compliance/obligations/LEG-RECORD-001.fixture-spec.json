@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-RECORD-001",
+  "obligationId": "LEG-RECORD-001",
+  "detectType": "schema_table",
+  "detect": {
+    "type": "schema_table",
+    "table": "consent_audit_log"
+  },
+  "passSnippet": "CREATE TABLE consent_audit_log (id INT)",
+  "failSnippet": "gap LEG-RECORD-001",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

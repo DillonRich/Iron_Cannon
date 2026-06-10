@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-quickstart",
+  "sourceUrl": "https://docs.stripe.com/billing/quickstart.md",
+  "lastVerified": "2026-06-03",
+  "title": "Build a pre-built subscription page with Stripe Checkout",
+  "excerpt": "Get started with our sample app to run a full, working subscription integration using [Stripe Billing](https://docs.stripe.com/billing.md) and [Stripe Checkout](https://docs.stripe.com/payments/checkout.md). The sample app demonstrates redirecting your customers from your site to a prebuilt payment page hosted on Stripe. The Stripe Billing APIs create and manage subscriptions, invoices, and recurring payments, while Checkout provides the prebuilt, secure, Stripe-hosted UI for collecting payment details.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

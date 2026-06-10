@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/checkout-elements-with-checkout-sessions-api-changelog",
+  "sourceUrl": "https://docs.stripe.com/checkout/elements-with-checkout-sessions-api/changelog.md",
+  "lastVerified": "2026-06-03",
+  "title": "Elements with Checkout Sessions API beta changelog",
+  "excerpt": "Keep track of changes to the Elements with Checkout Sessions API beta integration. > This doc contains changelogs related to beta versions of Elements with Checkout Sessions API. > This changelog doesn’t apply to you if you’re on [Clover](https://docs.stripe.com/changelog/clover.md) or later. Refer to the [Stripe changelog](https://docs.stripe.com/changelog.md) instead. - (Breaking) The [stripe.initCheckout](https://docs.stripe.com/js/custom_checkout/init) method is now synchronous instead of asynchronous. This reduces render latency and enables Elements to show skeleton loaders earlier. See [Updates initCheckout to be synchronous](https://docs.stripe.com/changelog/clover/2025-09-30/update-init-checkout-synchronous.md) for migration details.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/scale-profiles-bundle/v1",
+  "rulesetVersion": "2026.05.31",
+  "profiles": [
+    { "tool": "T01", "sliceProfile": "wiremap_summary", "maxRuleFragments": 0, "maxMapTokens": 0, "maxExplicitCards": 3, "ragTopK": 3, "maxOutboundTokens": 4000 },
+    { "tool": "T02", "sliceProfile": "compliance_result", "maxRuleFragments": 5, "maxMapTokens": 2000, "maxExplicitCards": 5, "ragTopK": 5, "maxOutboundTokens": 6000 },
+    { "tool": "T03", "sliceProfile": "wiremap_summary", "maxRuleFragments": 15, "maxMapTokens": 3000, "maxExplicitCards": 8, "ragTopK": 5, "maxOutboundTokens": 12000 },
+    { "tool": "T04", "sliceProfile": "module_directive", "maxRuleFragments": 20, "maxMapTokens": 4000, "maxExplicitCards": 10, "ragTopK": 5, "maxOutboundTokens": 16000 },
+    { "tool": "T05", "sliceProfile": "compliance_result", "maxRuleFragments": 10, "maxMapTokens": 2000, "maxExplicitCards": 5, "ragTopK": 3, "maxOutboundTokens": 8000 },
+    { "tool": "T09", "sliceProfile": "security_surface", "maxRuleFragments": 15, "maxMapTokens": 3000, "maxExplicitCards": 5, "ragTopK": 5, "maxOutboundTokens": 12000 },
+    { "tool": "T10", "sliceProfile": "security_directive", "maxRuleFragments": 15, "maxMapTokens": 3000, "maxExplicitCards": 5, "ragTopK": 5, "maxOutboundTokens": 12000 },
+    { "tool": "T11", "sliceProfile": "audit_checklist", "maxRuleFragments": 15, "maxMapTokens": 3000, "maxExplicitCards": 5, "ragTopK": 5, "maxOutboundTokens": 12000 },
+    { "tool": "T12", "sliceProfile": "compliance_directive", "maxRuleFragments": 10, "maxMapTokens": 3000, "maxExplicitCards": 8, "ragTopK": 8, "maxOutboundTokens": 14000 },
+    { "tool": "T13", "sliceProfile": "compliance_directive", "maxRuleFragments": 10, "maxMapTokens": 3000, "maxExplicitCards": 8, "ragTopK": 8, "maxOutboundTokens": 14000 },
+    { "tool": "T14", "sliceProfile": "legal_readiness", "maxRuleFragments": 10, "maxMapTokens": 3000, "maxExplicitCards": 8, "ragTopK": 8, "maxOutboundTokens": 14000 }
+  ]
+}

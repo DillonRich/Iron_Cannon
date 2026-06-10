@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w61-012",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Unsubscribe processes within 10 business days per CAN-SPAM",
+    "obligations": [
+      "LEG-W61-012"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Unsubscribe processes within 10 business days per CAN-SPAM"
+  },
+  "references": [
+    "legal/unsubscribe-sla"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W61-012",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "email",
+    "disclaimerRequired": true
+  }
+}

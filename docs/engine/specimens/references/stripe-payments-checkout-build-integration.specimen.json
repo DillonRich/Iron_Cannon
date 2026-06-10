@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-checkout-build-integration",
+  "sourceUrl": "https://docs.stripe.com/payments/checkout/build-integration.md",
+  "lastVerified": "2026-06-03",
+  "title": "build a checkout page",
+  "excerpt": "Create a payments page with prebuilt UIs using the Checkout Sessions API. Accept one-time and subscription payments from more than 125 local payment methods. [Start building your checkout integration](https://docs.stripe.com/checkout/quickstart.md) You can use three payment UIs with the Checkout Sessions API. The following images highlight which parts of the checkout UI Stripe hosts for each option. To build and manage these integrations, use [Checkout studio](https://docs.stripe.com/payments/checkout-studio.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

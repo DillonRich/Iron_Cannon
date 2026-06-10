@@ -1,0 +1,9 @@
+{
+  "refId": "resend/gdpr-soc2",
+  "sourceUrl": "https://resend.com/security",
+  "lastVerified": "2026-05-31",
+  "title": "Resend compliance posture (advisory)",
+  "excerpt": "Resend maintains SOC 2 Type II and GDPR DPA availability. Iron Cannon does not certify user compliance—user must sign DPA with Resend if processing EU personal data via email. Document Resend as subprocessors in privacy policy when applicable.",
+  "appliesTo": ["layer4", "privacy-gdpr-ccpa"],
+  "tags": ["resend", "gdpr", "compliance", "advisory"]
+}

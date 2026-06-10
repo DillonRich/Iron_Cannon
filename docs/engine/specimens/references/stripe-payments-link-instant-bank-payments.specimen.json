@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-link-instant-bank-payments",
+  "sourceUrl": "https://docs.stripe.com/payments/link/instant-bank-payments.md",
+  "lastVerified": "2026-06-03",
+  "title": "Instant Bank Payments",
+  "excerpt": "Accept low cost bank payments with instant confirmation. Instant Bank Payments lets your customers pay with a US bank account using Link. Unlike [ACH Direct Debit](https://docs.stripe.com/payments/ach-direct-debit.md), Instant Bank Payments deliver instant confirmation, faster settlement, protection from common ACH failures, and accelerated checkout. Instant Bank Payments are automatically enabled when you turn on [Link](https://docs.stripe.com/payments/link.md), subject to [eligibility](https://docs.stripe.com/payments/link/instant-bank-payments.md#eligibility) requirements. Go to your [payment method settings](https://dashboard.stripe.com/settings/payment_methods) to manage Link in your payment integrations. Not all businesses or transactions are eligible for Instant Bank Payments.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

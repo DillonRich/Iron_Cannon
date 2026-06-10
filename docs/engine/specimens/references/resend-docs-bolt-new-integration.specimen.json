@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-bolt-new-integration",
+  "sourceUrl": "https://resend.com/docs/bolt-new-integration.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send emails with Bolt.new and Resend",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send emails with Bolt.new and Resend > Learn how to add the Resend integration to your Bolt.new project. [Bolt.new](https://bolt.new) is a platform for building full-stack web and mobile apps via chat. You can add Resend in a Bolt.new project by asking the chat to add email sending with Resend. ## 1. Add your Resend API key To use Resend with Bolt.new, you'll need to add a Resend API key, which you can create in the [Resend Dashboard](https://resend.com/api-keys). Do not share your API key with others or expose it in the browser or other client-side code. To safely store your Resend API key, use a `.env` file.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

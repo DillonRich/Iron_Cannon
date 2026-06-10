@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/turnstile",
+  "sourceUrl": "https://developers.cloudflare.com/turnstile/",
+  "lastVerified": "2026-05-31",
+  "title": "Cloudflare Turnstile",
+  "excerpt": "CAPTCHA alternative for signup/login forms. Site key client-side, secret key server-side verify via siteverify API. Validate token on server before account creation. Reduces bot signups without UX friction of traditional CAPTCHA.",
+  "appliesTo": ["auth-lifecycle", "layer3"],
+  "tags": ["cloudflare", "turnstile", "auth"]
+}

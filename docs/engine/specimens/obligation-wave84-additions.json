@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W84-001",
+      "category": "operations",
+      "title": "Operator deploy readiness document complete",
+      "sourceRefId": "ironcannon/knowledge-w84-operator-deploy-readiness-doc",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W84-002",
+      "category": "operations",
+      "title": "operator:readiness npm script in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w84-operator-readiness-npm",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W84-003",
+      "category": "operations",
+      "title": "deploy-check documents credential vs artifact checks",
+      "sourceRefId": "ironcannon/knowledge-w84-deploy-check-ironcannon",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W84-004",
+      "category": "operations",
+      "title": "wrangler.toml scaffold documents manual uncomment map",
+      "sourceRefId": "ironcannon/knowledge-w84-wrangler-toml-scaffold",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W84-005",
+      "category": "operations",
+      "title": "Production readiness signoff reflects current journey count",
+      "sourceRefId": "ironcannon/knowledge-w84-production-readiness-v12",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W84-006",
+      "category": "operations",
+      "title": "G-36 planned for live deploy witness",
+      "sourceRefId": "ironcannon/knowledge-w84-g36-live-deploy-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W84-007",
+      "category": "operations",
+      "title": "Onboarding checklist links readiness pack",
+      "sourceRefId": "cloudflare/knowledge-w84-onboarding-checklist-link",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W84-008",
+      "category": "operations",
+      "title": "Vectorize manifest ≥11k vectors before upsert",
+      "sourceRefId": "ironcannon/knowledge-w84-vectorize-manifest-11k",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W84-009",
+      "category": "operations",
+      "title": "Manual blockers doc references G-35 pack",
+      "sourceRefId": "ironcannon/knowledge-w84-manual-blockers-g35",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W84-010",
+      "category": "privacy",
+      "title": "Production witness table for deploy attestation",
+      "sourceRefId": "legal/knowledge-w84-production-witness-table",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

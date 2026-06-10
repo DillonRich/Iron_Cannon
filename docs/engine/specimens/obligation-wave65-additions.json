@@ -1,0 +1,14 @@
+{
+  "obligations": [
+    { "id": "LEG-W65-001", "category": "privacy", "title": "Non-essential cookies blocked until explicit consent", "sourceRefId": "legal/cookie-consent-eu", "detect": { "type": "script_before_consent" } },
+    { "id": "LEG-W65-002", "category": "privacy", "title": "Privacy policy link visible on every page footer", "sourceRefId": "legal/privacy-policy-link", "detect": { "type": "pattern", "pattern": "privacy" } },
+    { "id": "LEG-W65-003", "category": "email", "title": "Marketing unsubscribe honored within 10 business days", "sourceRefId": "legal/can-spam-unsubscribe", "detect": { "type": "header" } },
+    { "id": "LEG-W65-004", "category": "privacy", "title": "CCPA notice at or before data collection", "sourceRefId": "legal/ccpa-overview", "detect": { "type": "pattern", "pattern": "California" } },
+    { "id": "LEG-W65-005", "category": "privacy", "title": "COPPA age gate blocks account creation for minors", "sourceRefId": "legal/coppa-overview", "detect": { "type": "config" } },
+    { "id": "LEG-W65-006", "category": "privacy", "title": "AI-assisted features disclose automated decisioning", "sourceRefId": "legal/ai-disclosure", "detect": { "type": "pattern", "pattern": "AI" } },
+    { "id": "LEG-W65-007", "category": "privacy", "title": "EU cross-border transfer mechanism documented", "sourceRefId": "legal/eu-transfer-mechanism", "detect": { "type": "manual" } },
+    { "id": "LEG-W65-008", "category": "operations", "title": "Public status page linked in incident communications", "sourceRefId": "legal/status-page-link", "detect": { "type": "pattern", "pattern": "status" } },
+    { "id": "LEG-W65-009", "category": "security", "title": "CSP report-uri or report-to configured for violations", "sourceRefId": "owasp/cheatsheets-content-security-policy-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W65-010", "category": "email", "title": "Resend sending domain verified before production mail", "sourceRefId": "resend/domains-verify", "detect": { "type": "config" } }
+  ]
+}

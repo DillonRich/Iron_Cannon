@@ -1,0 +1,8 @@
+{
+  "fixtureId": "DT-16",
+  "detectType": "manual",
+  "passSnippet": "{ \"manualReviewCompleted\": true, \"obligationId\": \"LEG-A11Y-AXE\" }",
+  "failSnippet": "no attestation provided",
+  "expectedPass": "met",
+  "expectedFail": "advisory"
+}

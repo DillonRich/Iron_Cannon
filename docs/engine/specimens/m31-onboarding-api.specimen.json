@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/onboarding/api",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "onboarding",
+  "moduleId": "M31-onboarding-api",
+  "adapterId": "cloudflare-workers",
+  "section": "onboarding-api",
+  "content": {
+    "requirement": "Profile save and onboarding completion API — server validates acceptedTerms",
+    "routes": [
+      { "method": "PATCH", "path": "/api/onboarding/profile", "state": "O00→O01" },
+      { "method": "POST", "path": "/api/onboarding/complete", "state": "O01→O02" },
+      { "method": "POST", "path": "/api/onboarding/skip", "state": "O00→O03", "guard": "product flag allowSkip" }
+    ],
+    "requiredSteps": [
+      "Require authenticated session",
+      "Server-validate acceptedTerms boolean on complete",
+      "Set onboarding_completed_at timestamp on O02",
+      "Reject mass-assignment of protected fields"
+    ]
+  },
+  "references": ["owasp/mass-assignment", "owasp/authentication", "owasp/authorization"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "ONB-API-001", "type": "required_string", "value": "/api/onboarding/complete", "fileGlob": "**/*.{ts,js}", "tier": "pro" },
+      { "id": "ONB-API-002", "type": "required_string", "value": "acceptedTerms", "fileGlob": "**/*.{ts,js}", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "onboarding-api" }
+}

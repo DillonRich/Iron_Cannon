@@ -1,0 +1,14 @@
+{
+  "refId": "legal/focus-visible-checkout",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/legal-focus-visible-checkout",
+  "lastVerified": "2026-06-04",
+  "title": "Focus visible on all interactive checkout controls",
+  "provider": "legal",
+  "excerpt": "LEG-W53-009: Focus visible on all interactive checkout controls",
+  "embeddingHint": "LEG-W53-009 a11y required_attribute",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

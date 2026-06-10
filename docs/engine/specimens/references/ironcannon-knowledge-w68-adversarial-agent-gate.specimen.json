@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w68-adversarial-agent-gate",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w68/adversarial-agent-gate",
+  "lastVerified": "2026-06-06",
+  "title": "W68 adversarial-agent-gate",
+  "provider": "ironcannon",
+  "excerpt": "Run g2:adversarial-agent before production MCP release",
+  "embeddingHint": "ironcannon adversarial-agent-gate wave68 adversarial",
+  "tags": [
+    "wave68",
+    "knowledge",
+    "ironcannon",
+    "adversarial"
+  ]
+}

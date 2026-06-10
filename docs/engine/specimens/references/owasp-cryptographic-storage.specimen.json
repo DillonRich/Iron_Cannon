@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/cryptographic-storage",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Cryptographic storage",
+  "excerpt": "Encrypt sensitive data at rest where required. Use vetted algorithms (AES-GCM). Keys in secrets store—not source code. Minimize stored sensitive data. Tokenize payment data via Stripe—never store PAN.",
+  "appliesTo": ["layer3"],
+  "tags": ["owasp", "crypto", "storage"]
+}

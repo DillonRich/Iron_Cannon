@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/knowledge-w67-mcp-tool-scope",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w67/mcp-tool-scope",
+  "lastVerified": "2026-06-06",
+  "title": "W67 mcp-tool-scope",
+  "provider": "owasp",
+  "excerpt": "Authorize each MCP tool call; deny env/shell tools without explicit policy",
+  "embeddingHint": "owasp mcp-tool-scope wave67 phase3 production",
+  "tags": [
+    "wave67",
+    "knowledge",
+    "owasp",
+    "phase3"
+  ]
+}

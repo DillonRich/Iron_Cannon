@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-runtime-apis-fetch-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/runtime-apis/fetch/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Fetch",
+  "excerpt": "description: An interface for asynchronously fetching resources via HTTP requests inside of a Worker. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. The [Fetch API ↗](https://developer.mozilla.org/en-US/docs/Web/API/Fetch%5FAPI) provides an interface for asynchronously fetching resources via HTTP requests inside of a Worker. Asynchronous tasks such as `fetch` must be executed within a [handler](https://developers.cloudflare.com/workers/runtime-apis/handlers/).…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

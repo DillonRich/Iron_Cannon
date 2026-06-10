@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-cli-quickstart",
+  "sourceUrl": "https://resend.com/docs/cli-quickstart.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send emails with Resend CLI",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send emails with Resend CLI > Learn how to send your first email using the Resend CLI. ## Prerequisites To get the most out of this guide, you'll need to: * [Create an API key](https://resend.com/api-keys) * [Verify your domain](https://resend.com/domains) ## 1.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

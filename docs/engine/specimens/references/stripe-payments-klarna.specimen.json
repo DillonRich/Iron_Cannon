@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-klarna",
+  "sourceUrl": "https://docs.stripe.com/payments/klarna.md",
+  "lastVerified": "2026-06-03",
+  "title": "Klarna payments",
+  "excerpt": "Allow customers to make flexible payments while getting paid upfront with Klarna. Klarna is a global payment method that gives customers a range of payment options during checkout. These payment options enable customers to pay for purchases over time. For information on payment method transaction fees, refer to [pricing details](https://stripe.com/pricing/local-payment-methods#klarna). Paying with Klarna redirects customers to Klarna’s site, which displays payment options based on factors such as the customer’s currency, transaction amount, and the payment use case. After the customer selects a payment option, Klarna returns them to your site to complete the order. When the payment is accepted, you receive the entire order amount (minus fees) in your Stripe account.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

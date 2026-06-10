@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/r2-reference-consistency-index",
+  "sourceUrl": "https://developers.cloudflare.com/r2/reference/consistency/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Consistency model",
+  "excerpt": "description: R2 provides strong global consistency for reads, writes, deletes, and list operations. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/r2/llms.txt > Use this file to discover all available pages before exploring further. This page details R2's consistency model, including where R2 is strongly, globally consistent and which operations this applies to. R2 can be described as \"strongly consistent\", especially in comparison to other distributed object storage systems. This strong consistency ensures that operations against R2 see the latest (accurate) state: clients should be able to observe the effects of any write, update and/or delete operation immediately, globally.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

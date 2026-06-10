@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w79-svc002-queue-blocked",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w79/svc002-queue-blocked",
+  "lastVerified": "2026-06-06",
+  "title": "W79 svc002-queue-blocked",
+  "provider": "ironcannon",
+  "excerpt": "SVC-002 Supabase remains queued until SVC-001 signoff complete",
+  "embeddingHint": "ironcannon svc002-queue-blocked wave79 svc-001-exit",
+  "tags": [
+    "wave79",
+    "knowledge",
+    "ironcannon",
+    "svc-001-exit"
+  ]
+}

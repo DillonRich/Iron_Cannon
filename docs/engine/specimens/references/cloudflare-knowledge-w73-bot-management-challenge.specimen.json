@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/knowledge-w73-bot-management-challenge",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w73/bot-management-challenge",
+  "lastVerified": "2026-06-06",
+  "title": "W73 bot-management-challenge",
+  "provider": "cloudflare",
+  "excerpt": "Bot Management challenges on auth endpoints",
+  "embeddingHint": "cloudflare bot-management-challenge wave73 armor-hardening",
+  "tags": [
+    "wave73",
+    "knowledge",
+    "cloudflare",
+    "armor-hardening"
+  ]
+}

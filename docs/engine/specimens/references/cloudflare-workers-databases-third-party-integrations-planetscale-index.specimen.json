@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-databases-third-party-integrations-planetscale-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/databases/third-party-integrations/planetscale/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "PlanetScale",
+  "excerpt": "description: Connect Cloudflare Workers to a PlanetScale MySQL-compatible database using Hyperdrive or the PlanetScale serverless driver. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. [PlanetScale ↗](https://planetscale.com/) is a database platform that provides MySQL-compatible and PostgreSQL databases, making them more scalable, easier and safer to manage. You can connect to PlanetScale using [Hyperdrive](https://developers.cloudflare.com/hyperdrive) (recommended), or using the PlanetScale serverless driver, `@planetscale/database`.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

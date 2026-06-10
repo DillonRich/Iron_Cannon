@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-analytics-acceptance",
+  "sourceUrl": "https://docs.stripe.com/payments/analytics/acceptance.md",
+  "lastVerified": "2026-06-03",
+  "title": "Acceptance analytics",
+  "excerpt": "Understand what affects payment acceptance and why payments fail or are declined. Use the [Acceptance](https://dashboard.stripe.com/acceptance) page to analyze your payment success rate and network authorization rate, and view pivot reports for common criteria. You can identify where payments fail and why they fail, and use this information to help increase your revenue. > Optimization calculations are estimates and aren’t guarantees of any outcomes. The data we provide is intended to help inform your decision-making, in order for you to make your own independent determinations about whether to use these features. The calculation methodology for estimated impacts is also subject to change without prior notice.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

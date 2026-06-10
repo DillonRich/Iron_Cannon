@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/privacy/signup-policy-link",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": null,
+  "section": "signup-policy-link",
+  "content": {
+    "requirement": "Signup flow must link to privacy policy",
+    "obligations": ["LEG-PRIV-001"],
+    "compareSteps": [
+      "Scan signup page/route for anchor href containing 'privacy'",
+      "Accept /privacy route or configured external URL in app config",
+      "Flag if signup form exists without visible privacy policy link"
+    ],
+    "remediationDirective": "Add Privacy Policy link adjacent to signup form; ensure /privacy route or documented external URL exists."
+  },
+  "references": ["legal/privacy-policy-link", "legal/gdpr-consent-basics"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "LEG-PRIV-001", "type": "route_link", "path": "/signup", "hrefContains": "privacy", "tier": "ironclad" }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "privacy", "disclaimerRequired": true }
+}

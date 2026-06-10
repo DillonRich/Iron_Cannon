@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/products-overview",
+  "sourceUrl": "https://docs.stripe.com/products",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe Products",
+  "excerpt": "Product catalog for checkout and portal.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "stripe",
+    "products-overview"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "refId": "cloudflare/svc001-pages-nodejs-compat-pages-044",
+  "sourceUrl": "https://ironcannon.dev/svc001/pages/nodejs-compat-pages-44",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-001 nodejs-compat-pages 44",
+  "provider": "cloudflare",
+  "excerpt": "Enable nodejs_compat compatibility flag on Pages/OpenNext projects that rely on Node.js APIs in the edge bundle.",
+  "embeddingHint": "cloudflare nodejs-compat-pages svc001 pages worker split sd-06",
+  "tags": [
+    "svc001",
+    "pages",
+    "sd-06",
+    "cloudflare",
+    "nodejs-compat-pages"
+  ]
+}

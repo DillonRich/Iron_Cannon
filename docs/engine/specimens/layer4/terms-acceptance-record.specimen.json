@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/terms/acceptance-record",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": null,
+  "section": "acceptance-record",
+  "content": {
+    "requirement": "Terms acceptance must be recorded with timestamp at signup",
+    "obligations": ["LEG-TERMS-001", "LEG-TERMS-003", "LEG-TERMS-004"],
+    "compareSteps": [
+      "Verify users schema has terms_accepted_at column or equivalent",
+      "Scan signup UI for terms link and explicit accept control (not pre-checked)",
+      "Confirm signup handler writes acceptance timestamp server-side"
+    ],
+    "remediationDirective": "Add terms link on signup; require explicit checkbox; persist termsAcceptedAt and termsVersion on user create."
+  },
+  "references": ["legal/tos-acceptance-record"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "LEG-TERMS-001", "type": "schema_column", "table": "users", "column": "terms_accepted_at", "tier": "ironclad" },
+      { "id": "LEG-TERMS-003", "type": "route_link", "path": "/signup", "hrefContains": "terms", "tier": "ironclad" }
+    ],
+    "advisory": [
+      { "id": "LEG-TERMS-004", "type": "ui_pattern", "pattern": "checkbox:not(:checked) default on signup", "tier": "ironclad" }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "terms", "disclaimerRequired": true }
+}

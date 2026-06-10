@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/d1-reference-backups-index",
+  "sourceUrl": "https://developers.cloudflare.com/d1/reference/backups/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Backups (Legacy)",
+  "excerpt": "description: Create, list, download, and restore legacy snapshot-based backups for D1 alpha databases using Wrangler. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/d1/llms.txt > Use this file to discover all available pages before exploring further. D1 has built-in support for creating and restoring backups of your databases with wrangler v3, including support for scheduled automatic backups and manual backup management. Access to snapshot based backups for D1 alpha databases described in this documentation will be removed on [2025-07-01](https://developers.cloudflare.com/d1/platform/release-notes/#2025-07-01).",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

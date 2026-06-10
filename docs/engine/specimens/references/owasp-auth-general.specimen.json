@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/auth-general",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Authentication (general)",
+  "excerpt": "Central authentication guidance: enforce MFA where appropriate, protect session lifecycle, throttle failed logins, secure password reset flows, and never expose account enumeration via error messages or timing.",
+  "appliesTo": ["auth-lifecycle", "layer3"],
+  "tags": ["owasp", "authentication"]
+}

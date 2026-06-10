@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/disputes-api-visa-compliance",
+  "sourceUrl": "https://docs.stripe.com/disputes/api/visa-compliance.md",
+  "lastVerified": "2026-06-03",
+  "title": "Visa compliance disputes",
+  "excerpt": "Use the API to respond to Visa compliance disputes. Businesses receive Visa compliance disputes in certain cases when the card issuer believes the disputed transaction doesn’t conform to Visa’s network rules. If Visa compliance disputes can’t be resolved between the parties, the dispute is resolved by the network in exchange for a fee. If you contest a Visa compliance dispute, in addition to the applicable Stripe dispute fees, Stripe collects a 500 USD (or local equivalent) amount to cover the network costs associated with resolving Visa compliance disputes. Stripe refunds the 500 USD if you win the dispute. > Compliance cases filed by issuers are referred to as pre-compliance disputes by Visa.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

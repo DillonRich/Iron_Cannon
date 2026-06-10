@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w72-003",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Granular cookie consent before tracking scripts",
+    "obligations": [
+      "LEG-W72-003"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Granular cookie consent before tracking scripts"
+  },
+  "references": [
+    "legal/cookie-consent-granular"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W72-003",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "legal",
+    "disclaimerRequired": true
+  }
+}

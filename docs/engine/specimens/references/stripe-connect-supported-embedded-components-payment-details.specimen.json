@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-supported-embedded-components-payment-details",
+  "sourceUrl": "https://docs.stripe.com/connect/supported-embedded-components/payment-details.md",
+  "lastVerified": "2026-06-03",
+  "title": "Payment details",
+  "excerpt": "Show details of a given payment and allow users to manage disputes and perform refunds. This component is a subset of `payments`, which provides the detail overlay of a given payment. The UI rendered by the payment details component is equivalent to the overlay that the `payments` component renders when the user clicks on a payment row. Use the `payment-details` component to invoke the payment details overlay without the need to inline the entirety of the `payments` list in your website. This allows you to invoke the payment detail overlay from your existing UI (for example, your payments list) and integrate with our detail view to enable your customers to view payment details, issue refunds, and manage disputed payments.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

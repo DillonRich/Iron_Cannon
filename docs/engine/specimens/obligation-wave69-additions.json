@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W69-001",
+      "category": "security",
+      "title": "Rate limits enforced on MCP HTTP surface",
+      "sourceRefId": "cloudflare/workers-rate-limits",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W69-002",
+      "category": "security",
+      "title": "Session KV bindings use encrypted namespaces",
+      "sourceRefId": "cloudflare/kv-encryption",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W69-003",
+      "category": "operations",
+      "title": "API key lifecycle documented with rotation runbook",
+      "sourceRefId": "ironcannon/api-key-lifecycle",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W69-004",
+      "category": "operations",
+      "title": "OpenAPI export linted before each release",
+      "sourceRefId": "ironcannon/openapi-export-spec",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W69-005",
+      "category": "operations",
+      "title": "Vectorize adapter smoke passes in g2:audit",
+      "sourceRefId": "ironcannon/knowledge-w69-vectorize-adapter-smoke",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W69-006",
+      "category": "security",
+      "title": "D1 schema migrations previewed in staging",
+      "sourceRefId": "cloudflare/d1-migrations",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W69-007",
+      "category": "security",
+      "title": "Turnstile protects high-risk auth endpoints",
+      "sourceRefId": "cloudflare/turnstile",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W69-008",
+      "category": "security",
+      "title": "WAF rulesets active on production zone",
+      "sourceRefId": "cloudflare/waf",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W69-009",
+      "category": "operations",
+      "title": "Audit logs retained per compliance schedule",
+      "sourceRefId": "ironcannon/knowledge-w69-audit-log-immutable",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W69-010",
+      "category": "billing",
+      "title": "PCI scope limited to Stripe Elements/Checkout",
+      "sourceRefId": "stripe/pci-compliance",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

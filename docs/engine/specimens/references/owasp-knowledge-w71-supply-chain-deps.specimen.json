@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/knowledge-w71-supply-chain-deps",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w71/supply-chain-deps",
+  "lastVerified": "2026-06-06",
+  "title": "W71 supply-chain-deps",
+  "provider": "owasp",
+  "excerpt": "Dependency audit before armor rule publish",
+  "embeddingHint": "owasp supply-chain-deps wave71 production-mcp-bar",
+  "tags": [
+    "wave71",
+    "knowledge",
+    "owasp",
+    "production-mcp-bar"
+  ]
+}

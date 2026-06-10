@@ -1,0 +1,14 @@
+{
+  "obligations": [
+    { "id": "LEG-W67-001", "category": "security", "title": "MCP tools enforce per-tool authorization and scope", "sourceRefId": "owasp/cheatsheets-mcp-security-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W67-002", "category": "security", "title": "RAG retrieval validates corpus chunks before prompt injection", "sourceRefId": "owasp/cheatsheets-rag-security-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W67-003", "category": "security", "title": "AI agent tool policies block shell and env exfiltration", "sourceRefId": "owasp/cheatsheets-ai-agent-security-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W67-004", "category": "security", "title": "Workers secrets loaded from bindings not wrangler.toml plaintext", "sourceRefId": "cloudflare/workers-secrets", "detect": { "type": "config" } },
+    { "id": "LEG-W67-005", "category": "billing", "title": "Stripe dispute evidence submitted within network deadlines", "sourceRefId": "stripe/disputes-prevention-best-practices", "detect": { "type": "manual" } },
+    { "id": "LEG-W67-006", "category": "email", "title": "Resend webhook signatures verified on inbound events", "sourceRefId": "resend/webhooks", "detect": { "type": "config" } },
+    { "id": "LEG-W67-007", "category": "security", "title": "Next.js data security patterns for server/client boundary", "sourceRefId": "nextjs/docs-app-guides-data-security", "detect": { "type": "config" } },
+    { "id": "LEG-W67-008", "category": "billing", "title": "Refund policy disclosed before checkout confirmation", "sourceRefId": "legal/refund-policy-disclosure", "detect": { "type": "pattern", "pattern": "refund" } },
+    { "id": "LEG-W67-009", "category": "operations", "title": "T10 security directives run before T11 production audit", "sourceRefId": "ironcannon/knowledge-w63-t10-before-t11", "detect": { "type": "flow_ref", "flow": "security-audit" } },
+    { "id": "LEG-W67-010", "category": "operations", "title": "Production-confidence harness passes before release tag", "sourceRefId": "ironcannon/knowledge-w67-production-confidence-gate", "detect": { "type": "manual" } }
+  ]
+}

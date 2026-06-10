@@ -1,0 +1,11 @@
+{
+  "refId": "legal/gdpr-dpa",
+  "sourceUrl": "https://gdpr.eu/article-28-processor/",
+  "lastVerified": "2026-06-03",
+  "title": "Data processing agreement",
+  "excerpt": "B2B EU customers may require DPA with Stripe/Resend as sub-processors documented.",
+  "tags": [
+    "legal",
+    "privacy"
+  ]
+}

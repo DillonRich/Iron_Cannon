@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-COOKIE-006",
+  "obligationId": "LEG-COOKIE-006",
+  "detectType": "route_link",
+  "detect": {
+    "type": "route_link",
+    "path": "/",
+    "hrefContains": "/privacy#cookies"
+  },
+  "passSnippet": "<a href=\"/privacy#cookies\">ok</a>",
+  "failSnippet": "<form></form>",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

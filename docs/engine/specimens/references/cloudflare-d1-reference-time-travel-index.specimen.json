@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/d1-reference-time-travel-index",
+  "sourceUrl": "https://developers.cloudflare.com/d1/reference/time-travel/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Time Travel and backups",
+  "excerpt": "description: Restore a D1 database to any minute within the last 30 days using Time Travel point-in-time recovery. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/d1/llms.txt > Use this file to discover all available pages before exploring further. Time Travel is D1's approach to backups and point-in-time-recovery, and allows you to restore a database to any minute within the last 30 days. * You do not need to enable Time Travel. It is always on.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

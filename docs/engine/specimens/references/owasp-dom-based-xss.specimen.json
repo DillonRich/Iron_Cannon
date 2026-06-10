@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/dom-based-xss",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP DOM-based XSS prevention",
+  "excerpt": "Avoid assigning untrusted data to innerHTML, document.write, or eval. Use textContent for dynamic text. CSP script-src restrictions complement React's default escaping. Sanitize only with vetted libraries when HTML required.",
+  "appliesTo": ["layer3", "nextjs-app-router"],
+  "tags": ["owasp", "xss", "frontend"]
+}

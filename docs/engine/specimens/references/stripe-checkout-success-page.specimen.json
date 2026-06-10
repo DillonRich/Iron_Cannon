@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/checkout-success-page",
+  "sourceUrl": "https://docs.stripe.com/payments/checkout/custom-success-page.md",
+  "lastVerified": "2026-05-31",
+  "title": "Checkout success page behavior",
+  "excerpt": "success_url receives session_id query param. Page must poll or subscribe to app state—not assume immediate active subscription. Show loading/provisioning until D1/KV reflects webhook write. Handle session_id missing or invalid gracefully.",
+  "appliesTo": ["billing-race-shield", "onboarding"],
+  "tags": ["stripe", "checkout", "ux-system"]
+}

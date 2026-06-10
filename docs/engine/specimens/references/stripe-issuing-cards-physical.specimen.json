@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-cards-physical",
+  "sourceUrl": "https://docs.stripe.com/issuing/cards/physical.md",
+  "lastVerified": "2026-06-03",
+  "title": "Physical cards",
+  "excerpt": "Whether you want to start issuing physical cards in as little as two days or design a fully custom card, we have options that fit your issuing needs. Stripe guides you to the solution that best aligns with your desired level of customization and speed to market, and partners with industry-leading, global card printers to produce your cards. This option allows you to quickly get started with a card incorporating your company’s logo. These are best if you want to prioritize speed-to-market, if basic branding is sufficient for your cardholders, or if you need to issue only a few cards. - **Easy setup**: Go directly to the [Designs](https://dashboard.stripe.com/issuing/personalization-designs) tab in the Dashboard to get started.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

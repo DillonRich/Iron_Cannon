@@ -1,0 +1,62 @@
+{
+  "version": "1.0.0",
+  "description": "GuardianInfrastructure-style snippets — must pass T05 with equivalence registry (G-49).",
+  "cases": [
+    {
+      "id": "guardian-m12-webhook",
+      "moduleId": "M12-stripe-webhook",
+      "snippet": "async function verifyStripeSignature(body, sig, secret) {\n  const key = await crypto.subtle.importKey('raw', enc.encode(secret), { name: 'HMAC', hash: 'SHA-256' }, false, ['verify']);\n  return crypto.subtle.verify('HMAC', key, sigBytes, body);\n}\nasync function handleStripeWebhook(event) {\n  switch (event.type) {\n    case 'checkout.session.completed':\n    case 'customer.subscription.updated':\n      await env.DB.prepare('INSERT INTO stripe_activation_email_deliveries (event_id) VALUES (?)').bind(event.id).run();\n      break;\n  }\n}\nif (path === '/api/stripe-webhook') { await verifyStripeSignature(request); }",
+      "expectCompliant": true
+    },
+    {
+      "id": "guardian-m02-auth",
+      "moduleId": "M02-auth-worker-routes",
+      "snippet": "if (url.pathname === '/api/auth/register') return handleRegister(request, env);\nif (url.pathname === '/api/auth/login') return handleLogin(request, env);\nif (url.pathname === '/api/auth/me') return getSessionUser(request, env);\n// PBKDF2 password hash + D1 prepared statements",
+      "expectCompliant": true
+    },
+    {
+      "id": "guardian-m05-session-cors",
+      "moduleId": "M05-auth-session-middleware",
+      "snippet": "const sessionCookie = 'session=...; HttpOnly; Secure; SameSite=Strict';\nconst browserPaths = new Set(['/register.html', '/login.html', '/legal']);\nif (request.method === 'OPTIONS') {\n  return new Response(null, { headers: { 'Access-Control-Allow-Origin': allowedOrigin, 'Access-Control-Allow-Credentials': 'true' } });\n}\nif (!browserPaths.has(url.pathname)) return redirectToLogin();",
+      "expectCompliant": true
+    },
+    {
+      "id": "guardian-m04-static-register",
+      "moduleId": "M04-auth-ui-routes",
+      "snippet": "<!DOCTYPE html><html><body><form action=\"/api/auth/register\"><label for=\"email\">Email</label><input id=\"email\" name=\"email\" /><a href=\"/legal#terms-of-service\">Terms</a><a href=\"/legal#privacy-policy\">Privacy</a></form></body></html>",
+      "expectCompliant": true
+    },
+    {
+      "id": "guardian-m13-provision-d1",
+      "moduleId": "M13-provisioning-kv",
+      "snippet": "const policy = await getAuthRateLimitPolicy(env, ip);\nif (policy.exceeded) return new Response('Too Many', { status: 429, headers: { 'Retry-After': '60' } });\nawait env.DB.prepare('UPDATE subscriptions SET tier = ?').run(tier);",
+      "expectCompliant": true
+    }
+  ],
+  "obligationCases": [
+    {
+      "id": "guardian-legal-privacy-hub",
+      "obligationId": "LEG-GLOBAL-001",
+      "snippet": "<a href=\"/legal#privacy-policy\">Privacy Policy</a>",
+      "expectCompliant": true
+    },
+    {
+      "id": "guardian-terms-on-register",
+      "obligationId": "LEG-TERMS-003",
+      "snippet": "<form action=\"register.html\"><input type=\"checkbox\" name=\"terms\" /><a href=\"/legal#terms-of-service\">Terms of Service</a></form>",
+      "expectCompliant": true
+    },
+    {
+      "id": "guardian-terms-accepted-subscriptions",
+      "obligationId": "LEG-TERMS-001",
+      "snippet": "CREATE TABLE subscriptions (id TEXT PRIMARY KEY, terms_accepted_at INTEGER, stripe_subscription_id TEXT);",
+      "expectCompliant": true
+    },
+    {
+      "id": "guardian-delete-account-flow",
+      "obligationId": "LEG-PRIV-004",
+      "snippet": "router.post('/api/account/delete-account', handleDeleteAccount);",
+      "expectCompliant": true
+    }
+  ]
+}

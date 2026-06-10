@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-403-error-1010",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/403-error-1010.md",
+  "lastVerified": "2026-06-03",
+  "title": "403 Error with Error Code 1010",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # 403 Error with Error Code 1010 > Learn how to resolve a 403 error caused by a missing User-Agent header when sending requests to the Resend API. You may receive a 403 error with error code 1010 (`Access denied`) when sending requests to the Resend API. This happens because requests without a `User-Agent` header are blocked before they reach the API. ## The Problem The Resend API requires all HTTP requests to include a `User-Agent` header. When your HTTP client doesn't send one, the request is rejected with a 403 status code and error 1010 before it ever reaches the API.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

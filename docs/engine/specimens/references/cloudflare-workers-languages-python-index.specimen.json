@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-languages-python-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/languages/python/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Python Workers",
+  "excerpt": "description: Write Workers in 100% Python image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Cloudflare Workers provides a first-class Python experience, including support for: * Easy to install and fast-booting [Packages](https://developers.cloudflare.com/workers/languages/python/packages), including [FastAPI ↗](https://fastapi.tiangolo.com/), [Langchain ↗](https://pypi.org/project/langchain/), [httpx ↗](https://www.python-httpx.org/), [Pydantic ↗](https://docs.pydantic.dev/latest/) and more.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

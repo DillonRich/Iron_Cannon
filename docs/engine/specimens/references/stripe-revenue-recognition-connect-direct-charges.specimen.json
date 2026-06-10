@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-connect-direct-charges",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/connect/direct-charges.md",
+  "lastVerified": "2026-06-03",
+  "title": "Revenue Recognition for direct charges",
+  "excerpt": "Learn how revenue recognition works with direct charges. With Connect, your platform can make charges directly on the connected account and take application fees in the process. To add an application fee on a [direct charge](https://docs.stripe.com/connect/direct-charges.md), pass an optional `application_fee_amount` value. Stripe recognizes the revenue immediately. In this example, the `application_fee_amount=\"200\"` is set on the direct charge. - On January 15, you make a direct charge of 10 USD with a 2 USD application fee. - The 2 USD application fee transfers to your platform. - 8 USD is netted in the connected account.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

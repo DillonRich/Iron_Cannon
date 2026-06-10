@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/webhooks-signature",
+  "sourceUrl": "https://docs.stripe.com/webhooks/signature.md",
+  "lastVerified": "2026-06-03",
+  "title": "Resolve webhook signature verification errors",
+  "excerpt": "Learn how to fix a common error when listening to webhook events. When processing webhook events, we recommend securing your endpoint by [verifying](https://docs.stripe.com/webhooks.md#verify-official-libraries) that the event is coming from Stripe. To do this, use the `Stripe-Signature` header and call the `constructEvent()` function with three parameters: - `requestBody`: The request body string sent by Stripe. - `signature`: The Stripe-Signature header in the request sent by Stripe. - `endpointSecret`: The secret associated with your endpoint. Stripe::Webhook.construct_event(request_body, signature, endpoint_secret)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

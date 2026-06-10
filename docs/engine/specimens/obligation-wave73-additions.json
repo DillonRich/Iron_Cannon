@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W73-001",
+      "category": "security",
+      "title": "Strict CSP with nonces in production",
+      "sourceRefId": "owasp/cheatsheets-content-security-policy-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-002",
+      "category": "security",
+      "title": "HSTS configured for preload eligibility",
+      "sourceRefId": "owasp/cheatsheets-transport-layer-protection-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-003",
+      "category": "security",
+      "title": "SSRF outbound fetches allowlisted only",
+      "sourceRefId": "owasp/cheatsheets-server-side-request-forgery-prevention-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-004",
+      "category": "security",
+      "title": "XML parsers disable external entities",
+      "sourceRefId": "owasp/cheatsheets-xml-security-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-005",
+      "category": "security",
+      "title": "No unsafe deserialization of user payloads",
+      "sourceRefId": "owasp/cheatsheets-deserialization-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-006",
+      "category": "security",
+      "title": "Bot Management on authentication endpoints",
+      "sourceRefId": "cloudflare/bot-management",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-007",
+      "category": "security",
+      "title": "Zero Trust Access on admin dashboards",
+      "sourceRefId": "cloudflare/zero-trust-access",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-008",
+      "category": "operations",
+      "title": "Armor smoke passes before armor tier release",
+      "sourceRefId": "ironcannon/knowledge-w73-armor-smoke-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W73-009",
+      "category": "operations",
+      "title": "Throttle loop guard active in production",
+      "sourceRefId": "ironcannon/knowledge-w73-throttle-loop-guard",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W73-010",
+      "category": "operations",
+      "title": "Retrieval stub passes before RAG live",
+      "sourceRefId": "ironcannon/knowledge-w73-retrieval-stub-gate",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

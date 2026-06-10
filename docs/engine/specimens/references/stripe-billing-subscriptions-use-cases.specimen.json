@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-subscriptions-use-cases",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/use-cases.md",
+  "lastVerified": "2026-06-03",
+  "title": "Subscription use cases",
+  "excerpt": "Learn about some of the business use cases for subscriptions. [Integrate a SaaS business](https://docs.stripe.com/saas.md): Learn how to build a SaaS business with Billing and other Stripe products. [Integrate a sales-led B2B business](https://docs.stripe.com/billing/subscriptions/sales-led-billing.md): Quote and bill complex sales contracts automatically on Stripe Billing. [Billing for a multi-entity business](https://docs.stripe.com/billing/multi-entity-business.md): Integrate Stripe Billing for a business with more than one legal entity. [Integrate with Salesforce](https://docs.stripe.com/use-stripe-apps/stripe-app-for-salesforce/overview.md): Integrate Stripe Billing with your Salesforce workflows and processes.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

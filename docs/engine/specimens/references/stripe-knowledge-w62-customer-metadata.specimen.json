@@ -1,0 +1,14 @@
+{
+  "refId": "stripe/knowledge-w62-customer-metadata",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w62/customer-metadata",
+  "lastVerified": "2026-06-06",
+  "title": "W62 customer-metadata",
+  "provider": "stripe",
+  "excerpt": "Store internal user id in Stripe Customer metadata for reconciliation",
+  "embeddingHint": "stripe customer-metadata wave62",
+  "tags": [
+    "wave62",
+    "knowledge",
+    "stripe"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "refId": "legal/wcag-contrast-cta",
+  "sourceUrl": "https://ironcannon.dev/planning/W65/ref/legal-wcag-contrast-cta",
+  "lastVerified": "2026-06-06",
+  "title": "wcag contrast cta",
+  "provider": "legal",
+  "excerpt": "Primary CTA buttons meet WCAG 2.1 AA contrast ratio minimum.",
+  "embeddingHint": "legal/wcag-contrast-cta wave65 obligation-source legal",
+  "tags": [
+    "wave65",
+    "obligation-source",
+    "legal"
+  ]
+}

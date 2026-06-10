@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-checkout-upsells",
+  "sourceUrl": "https://docs.stripe.com/payments/checkout/upsells.md",
+  "lastVerified": "2026-06-03",
+  "title": "Subscription upsells",
+  "excerpt": "Enable customers to upgrade their subscription plan at checkout by using upsells. This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [Full hosted page](https://docs.stripe.com/payments/checkout/upsells.md?payment-ui=stripe-hosted) - [Full embedded page](https://docs.stripe.com/payments/checkout/upsells.md?payment-ui=embedded-page)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

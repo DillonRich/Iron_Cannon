@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-api-reference-logs-retrieve-log",
+  "sourceUrl": "https://resend.com/docs/api-reference/logs/retrieve-log.md",
+  "lastVerified": "2026-06-03",
+  "title": "Retrieve Log",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Retrieve Log > Retrieve a single API request log. ## Path Parameters The Log ID. The `request_body` and `response_body` fields vary depending on the original API request that was logged. ```ts Node.js theme={\"theme\":{\"light\":\"github-light\",\"dark\":\"vesper\"}} import { Resend } from 'resend'; const resend = new Resend('re_xxxxxxxxx'); const { data, error } = await resend.logs.get( '37e4414c-5e25-4dbc-a071-43552a4bd53b', ); ``` ```php PHP theme={\"theme\":{\"light\":\"github-light\",\"dark\":\"vesper\"}} $resend = Resend::client('re_xxxxxxxxx'); $resend->logs->get('37e4414c-5e25-4dbc-a071-43552a4bd53b'); ``` ```python Python th…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

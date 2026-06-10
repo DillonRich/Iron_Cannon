@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-PRIV-006",
+  "obligationId": "LEG-PRIV-006",
+  "detectType": "schema_column",
+  "detect": {
+    "type": "schema_column",
+    "table": "users",
+    "column": "consent_at"
+  },
+  "passSnippet": "ALTER TABLE users ADD consent_at TEXT",
+  "failSnippet": "gap LEG-PRIV-006",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

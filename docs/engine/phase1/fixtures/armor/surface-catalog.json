@@ -1,0 +1,35 @@
+{
+  "surfaces": [
+    {
+      "surfaceId": "SURF-WH-001",
+      "type": "webhook",
+      "pathGlob": "**/api/webhooks/stripe/**",
+      "pathGlobs": [
+        "**/api/webhooks/stripe/**",
+        "**/api/stripe-webhook**",
+        "**/stripe-webhook**"
+      ],
+      "riskLevel": "critical",
+      "requiredMitigations": ["signature_verify", "idempotency"],
+      "relatedModules": ["M12-stripe-webhook", "A03-webhook-hardening-pass"]
+    },
+    {
+      "surfaceId": "SURF-SESSION-001",
+      "type": "session_cookie",
+      "pathGlob": "**/lib/session*",
+      "pathGlobs": ["**/lib/session*", "**/index.ts", "**/sessionCookie*", "**/auth/**"],
+      "riskLevel": "high",
+      "requiredMitigations": ["httpOnly", "secure", "sameSite"],
+      "relatedModules": ["M05-auth-session-middleware", "A02-session-hardening-pass"]
+    },
+    {
+      "surfaceId": "SURF-INPUT-001",
+      "type": "user_input",
+      "pathGlob": "**/app/**/page.tsx",
+      "pathGlobs": ["**/app/**/page.tsx", "**/website/**/*.html", "**/*.html"],
+      "riskLevel": "medium",
+      "requiredMitigations": ["validation", "csrf_where_applicable"],
+      "relatedModules": ["M04-auth-ui-routes"]
+    }
+  ]
+}

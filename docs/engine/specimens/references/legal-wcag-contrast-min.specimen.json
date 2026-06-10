@@ -1,0 +1,9 @@
+{
+  "refId": "legal/wcag-contrast-min",
+  "sourceUrl": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html",
+  "lastVerified": "2026-05-31",
+  "title": "WCAG 1.4.3 contrast minimum (advisory)",
+  "excerpt": "Normal text requires 4.5:1 contrast ratio against background; large text 3:1. Iron Cannon flags contrast only as advisory/manual at launch—automated scan may use axe-core heuristics. Not a certification of WCAG compliance.",
+  "appliesTo": ["LEG-A11Y-006", "accessibility-wcag"],
+  "tags": ["legal", "wcag", "contrast", "advisory"]
+}

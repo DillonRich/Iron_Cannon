@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer1/billing-subscription/d1-schema",
+  "layer": 1,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "billing-subscription",
+  "moduleId": "M10-billing-d1-schema",
+  "adapterId": "cloudflare-golden-stack",
+  "section": "d1-schema",
+  "content": {
+    "requirement": "Subscriptions and Stripe customer mirror tables",
+    "schemaMinimum": {
+      "subscriptions": ["id", "user_id", "status", "stripe_subscription_id", "stripe_customer_id"],
+      "stripe_customers": ["user_id", "stripe_customer_id"]
+    }
+  },
+  "references": ["cloudflare/d1-migrations", "stripe/subscriptions-overview"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "BILL-SC-001", "type": "required_string", "value": "CREATE TABLE subscriptions", "fileGlob": "**/migrations/**", "tier": "pro" },
+      { "id": "BILL-SC-002", "type": "required_string", "value": "stripe_subscription_id", "fileGlob": "**/migrations/**", "tier": "pro" },
+      { "id": "BILL-SC-003", "type": "required_string", "value": "status", "fileGlob": "**/migrations/**", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "billing-schema" }
+}

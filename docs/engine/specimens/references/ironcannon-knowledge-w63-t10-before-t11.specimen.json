@@ -1,0 +1,14 @@
+{
+  "refId": "ironcannon/knowledge-w63-t10-before-t11",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w63/t10-before-t11",
+  "lastVerified": "2026-06-06",
+  "title": "W63 t10-before-t11",
+  "provider": "ironcannon",
+  "excerpt": "Run get_security_directives before audit_production_readiness with domainId",
+  "embeddingHint": "ironcannon t10-before-t11 wave63 legal security",
+  "tags": [
+    "wave63",
+    "knowledge",
+    "ironcannon"
+  ]
+}

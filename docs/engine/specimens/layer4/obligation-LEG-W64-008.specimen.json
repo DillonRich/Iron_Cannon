@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w64-008",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "GDPR data portability export available on request",
+    "obligations": [
+      "LEG-W64-008"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "GDPR data portability export available on request"
+  },
+  "references": [
+    "legal/gdpr-data-subject-rights"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W64-008",
+        "type": "route_exists",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "privacy",
+    "disclaimerRequired": true
+  }
+}

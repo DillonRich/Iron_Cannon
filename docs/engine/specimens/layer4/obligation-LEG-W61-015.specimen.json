@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w61-015",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Status page linked from app footer during incidents",
+    "obligations": [
+      "LEG-W61-015"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Status page linked from app footer during incidents"
+  },
+  "references": [
+    "legal/status-page-link"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W61-015",
+        "type": "route_exists",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "global",
+    "disclaimerRequired": true
+  }
+}

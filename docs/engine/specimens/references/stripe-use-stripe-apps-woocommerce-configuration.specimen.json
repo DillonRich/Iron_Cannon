@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/use-stripe-apps-woocommerce-configuration",
+  "sourceUrl": "https://docs.stripe.com/use-stripe-apps/woocommerce/configuration.md",
+  "lastVerified": "2026-06-03",
+  "title": "Install and configure the Stripe Tax Extension",
+  "excerpt": "Use the Stripe Tax Extension for WooCommerce to automatically calculate sales tax, VAT, and GST. Use the Stripe Tax Extension for WooCommerce to automatically calculate [sales tax, VAT, and GST](https://docs.stripe.com/tax/calculating.md) for all of your transactions. After you install the Stripe Tax Extension for WooCommerce, you can connect it to your Stripe account and configure your tax settings. If you previously configured these tax settings in the [Stripe Dashboard](https://dashboard.stripe.com/test/settings/tax), the values populate automatically in the Stripe Tax extension. If your menu varies from the following steps, refer to the [WordPress instructions](https://wordpress.com/support/plugins/use-your-plugins/). 1.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

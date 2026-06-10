@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ironcannon.dev/schemas/slice-profile/v1",
+  "type": "string",
+  "enum": [
+    "wiremap_summary",
+    "module_directive",
+    "security_surface",
+    "security_directive",
+    "compliance_result",
+    "audit_checklist",
+    "compliance_directive",
+    "legal_readiness"
+  ]
+}

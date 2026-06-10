@@ -1,0 +1,18 @@
+{
+  "fixtureId": "A02",
+  "moduleId": "A02-session-hardening-pass",
+  "patternsUnderTest": [
+    "ARM-SES-001",
+    "ARM-SES-002",
+    "ARM-SES-003",
+    "ARM-P52-A02",
+    "ARM-P52-HARDENING"
+  ],
+  "passSnippet": "response.headers.set('Content-Security-Policy', \"default-src 'self'\");\nexport function validateCsrf(req) { return req.headers.get('x-csrf-token'); }\nconst cookie = 'HttpOnly; Secure';",
+  "failSnippet": "localStorage.setItem('session', token); export function middleware() { return NextResponse.next(); }",
+  "expectedPass": true,
+  "expectedFail": false,
+  "forbiddenOnFail": [
+    "ARM-SES-F01"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/disputes-prevention-identifying-fraud",
+  "sourceUrl": "https://docs.stripe.com/disputes/prevention/identifying-fraud.md",
+  "lastVerified": "2026-06-03",
+  "title": "Identifying potential fraud",
+  "excerpt": "Learn about the most common fraud indicators. Because Stripe users are responsible for fulfilling orders for customers and possess the most information about their customer at the time of purchase, they’re best equipped to determine whether or not a payment is potentially fraudulent. There are external indicators that indicate a payment might be fraud, such as [Early Fraud Warnings](https://docs.stripe.com/disputes/how-disputes-work.md#early-fraud-warnings), but fraud activity also has many implicit indicators that by themselves don’t unambiguously signal fraud. However, the existence of several of these indicators at the same time can more clearly suggest a payment is fraudulent.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

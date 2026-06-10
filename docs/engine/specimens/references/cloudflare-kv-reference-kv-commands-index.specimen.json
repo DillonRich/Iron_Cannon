@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/kv-reference-kv-commands-index",
+  "sourceUrl": "https://developers.cloudflare.com/kv/reference/kv-commands/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Wrangler KV commands",
+  "excerpt": "description: Manage Workers KV namespaces, keys, and bulk operations using Wrangler CLI commands. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/kv/llms.txt > Use this file to discover all available pages before exploring further. The `kv ...` commands allow you to manage your Workers KV resources in the Cloudflare network. Learn more about using Workers KV with Wrangler in the [Workers KV guide](https://developers.cloudflare.com/kv/get-started/). Since version 3.60.0, Wrangler supports the `kv ...` syntax. If you are using versions below 3.60.0, the command follows the `kv:...` syntax.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

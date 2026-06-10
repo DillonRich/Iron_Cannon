@@ -1,0 +1,16 @@
+{
+  "fixtureId": "W03",
+  "description": "Compact profile swaps low-priority module for onboarding UI",
+  "input": {
+    "flowIds": ["auth-lifecycle", "billing-subscription", "onboarding"],
+    "wiremapProfile": "compact"
+  },
+  "expected": {
+    "split": false,
+    "wiremapCount": 1,
+    "maxModuleCount": 12,
+    "mustIncludeModuleIds": ["M01-auth-d1-schema", "M12-stripe-webhook", "M32-onboarding-ui"],
+    "mustNotIncludeModuleIds": ["M16-billing-emails"],
+    "hasTradeoffs": true
+  }
+}

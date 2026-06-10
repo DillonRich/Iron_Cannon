@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M41",
+  "moduleId": "M41-deletion-scheduler",
+  "patternsUnderTest": [
+    "DEL-SCH-001",
+    "DEL-SCH-002",
+    "AUTH-P50-M41-",
+    "AUTH-P50-LIFECYCLE"
+  ],
+  "passSnippet": "await stripe.subscriptions.cancel(subId);\nawait db.update({ email: `deleted+${userId}@void.local`, grace_ends_at: null });",
+  "failSnippet": "await db.run('DELETE FROM users WHERE grace_ends_at < now');",
+  "expectedPass": true,
+  "expectedFail": false,
+  "forbiddenOnFail": [
+    "DEL-SCH-F01"
+  ]
+}

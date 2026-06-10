@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-what-if-an-email-says-delivered-but-the-recipient-has-not-re",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/what-if-an-email-says-delivered-but-the-recipient-has-not-received-it.md",
+  "lastVerified": "2026-06-03",
+  "title": "What if an email says delivered but the recipient has not received it?",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # What if an email says delivered but the recipient has not received it? > Learn the steps to take when an email is delivered, but the recipient does not receive it. Some emails may be marked as `Delivered` but not reach the recipient's inbox due to various inbox sorting variables. This guide provides reasons for and advice on avoiding such issues. ## Why does this happen When an email is sent, it is marked as `Delivered` once the recipient server accepts it with a `250 OK` response. However, the server can then direct the email to the inbox, queue it for later, route it to the spam folder, or even discard it.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

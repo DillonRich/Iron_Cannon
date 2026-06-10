@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-stripe-007",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "billing-subscription",
+  "section": "leg-stripe-007",
+  "content": {
+    "requirement": "Stripe Customer Portal linked from settings",
+    "obligations": [
+      "LEG-STRIPE-007"
+    ],
+    "compareSteps": [
+      "Run detect.type=route_link",
+      "Map result to obligation LEG-STRIPE-007",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-STRIPE-007: Stripe Customer Portal linked from settings"
+  },
+  "references": [
+    "stripe/customer-portal"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-STRIPE-007",
+        "type": "route_link",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "billing",
+    "disclaimerRequired": true
+  }
+}

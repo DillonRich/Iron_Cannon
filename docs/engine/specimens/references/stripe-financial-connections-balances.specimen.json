@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/financial-connections-balances",
+  "sourceUrl": "https://docs.stripe.com/financial-connections/balances.md",
+  "lastVerified": "2026-06-03",
+  "title": "balances",
+  "excerpt": "Learn how to access an account's balances with your user's permission. The Financial Connections API allows you to retrieve up-to-date balances of a [Financial Connections Account](https://docs.stripe.com/api/financial_connections/accounts.md). Balance data is useful for a variety of applications, including reducing the risk of insufficient funds failures for ACH, underwriting, or building financial management tools. You must have a completed Financial Connections registration to access balances in live mode. Visit your [Dashboard settings](https://dashboard.stripe.com/settings/financial-connections) to check the state of your registration or begin the registration process. Financial Connections test data is always available.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

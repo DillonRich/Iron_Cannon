@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/account-deletion/api",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "account-deletion",
+  "moduleId": "M40-deletion-api",
+  "adapterId": "cloudflare-workers",
+  "section": "deletion-api",
+  "content": {
+    "requirement": "Request account deletion with re-auth; schedule grace period; allow cancel",
+    "routes": [
+      { "method": "POST", "path": "/api/account/delete-request", "state": "D00→D01" },
+      { "method": "POST", "path": "/api/account/delete-cancel", "state": "D02→D00" }
+    ],
+    "requiredSteps": [
+      "Require recent re-auth (password verify within 5 min — Armor)",
+      "Block if active subscription unless user confirms force cancel",
+      "Insert deletion_scheduled_at + grace_ends_at",
+      "Return grace period end date to UI"
+    ]
+  },
+  "references": ["owasp/authentication", "owasp/authorization", "stripe/subscriptions-overview"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "DEL-API-001", "type": "required_string", "value": "delete-request", "fileGlob": "**/*.{ts,js}", "tier": "pro" },
+      { "id": "DEL-API-002", "type": "required_string", "value": "grace_ends_at", "fileGlob": "**/*.{ts,js,sql}", "tier": "pro" },
+      { "id": "DEL-API-003", "type": "required_string", "value": "delete-cancel", "fileGlob": "**/*.{ts,js}", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "account-deletion-api" }
+}

@@ -1,0 +1,6 @@
+{
+  "fixtureId": "T10-01",
+  "description": "Armor tier returns L3 directives with devModeRelaxed when productionMode false",
+  "input": { "tier": "armor", "surfaceId": "SURF-WH-001", "productionMode": false },
+  "expected": { "ok": true, "devModeRelaxed": true, "surfaceId": "SURF-WH-001" }
+}

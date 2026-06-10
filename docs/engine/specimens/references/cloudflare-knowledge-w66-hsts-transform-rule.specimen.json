@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/knowledge-w66-hsts-transform-rule",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w66/hsts-transform-rule",
+  "lastVerified": "2026-06-06",
+  "title": "W66 hsts-transform-rule",
+  "provider": "cloudflare",
+  "excerpt": "Apply HSTS response header via Cloudflare Transform Rules on apex",
+  "embeddingHint": "cloudflare hsts-transform-rule wave66 tgs-v2",
+  "tags": [
+    "wave66",
+    "knowledge",
+    "cloudflare",
+    "tgs-v2"
+  ]
+}

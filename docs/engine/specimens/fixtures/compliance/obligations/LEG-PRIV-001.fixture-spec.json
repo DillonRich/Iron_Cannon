@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-PRIV-001",
+  "obligationId": "LEG-PRIV-001",
+  "detectType": "route_link",
+  "detect": {
+    "type": "route_link",
+    "path": "/signup",
+    "hrefContains": "privacy"
+  },
+  "passSnippet": "<a href=\"privacy\">ok</a>",
+  "failSnippet": "<form></form>",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

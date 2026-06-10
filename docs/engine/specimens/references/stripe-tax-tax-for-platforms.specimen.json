@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-tax-for-platforms",
+  "sourceUrl": "https://docs.stripe.com/tax/tax-for-platforms.md",
+  "lastVerified": "2026-06-03",
+  "title": "Tax for software platforms",
+  "excerpt": "Learn how to enable Stripe Tax for your connected accounts, and collect tax when the connected account is liable for paying the tax. Stripe Tax enables businesses to calculate, collect, and report indirect taxes in over [100 countries](https://docs.stripe.com/tax/supported-countries.md), across hundreds of product categories. As a platform, you can use Stripe tax to offer pre-integrated tax compliance to your connected accounts. Use this guide if your connected accounts are responsible for collecting, filing, and reporting taxes. 1. [Set up your connected accounts for tax](https://docs.stripe.com/tax/tax-for-platforms.md#set-up) 1. (Optional) [Assign tax codes to the product catalog](https://docs.stripe.com/tax/tax-for-platforms.md#assign-product-tax-codes) 1.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

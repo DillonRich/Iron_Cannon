@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-stripe-006",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "billing-subscription",
+  "section": "leg-stripe-006",
+  "content": {
+    "requirement": "Trial terms disclosed before card capture",
+    "obligations": [
+      "LEG-STRIPE-006"
+    ],
+    "compareSteps": [
+      "Run detect.type=ui_pattern",
+      "Map result to obligation LEG-STRIPE-006",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-STRIPE-006: Trial terms disclosed before card capture"
+  },
+  "references": [
+    "legal/trial-disclosure"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-STRIPE-006",
+        "type": "ui_pattern",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "billing",
+    "disclaimerRequired": true
+  }
+}

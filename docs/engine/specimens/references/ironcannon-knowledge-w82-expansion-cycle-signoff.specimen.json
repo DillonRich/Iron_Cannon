@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w82-expansion-cycle-signoff",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w82/expansion-cycle-signoff",
+  "lastVerified": "2026-06-06",
+  "title": "W82 expansion-cycle-signoff",
+  "provider": "ironcannon",
+  "excerpt": "SERVICE_EXPANSION_CYCLE_SIGNOFF when SVC-001 and SVC-002 both complete",
+  "embeddingHint": "ironcannon expansion-cycle-signoff wave82 service-expansion-cycle-exit",
+  "tags": [
+    "wave82",
+    "knowledge",
+    "ironcannon",
+    "service-expansion-cycle-exit"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-data-import-apple-app-store",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/data-import/apple-app-store.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe Connector for the Apple App Store",
+  "excerpt": "Manage your revenue recognition in Stripe by importing data from the Apple App Store. The [Stripe Connector for the Apple App Store](https://docs.stripe.com/data/import-external-data/connectors/apple-app-store.md) lets you automatically import subscription purchases from the Apple App Store into [Stripe Revenue Recognition](https://docs.stripe.com/revenue-recognition.md). The benefits of using Stripe Revenue Recognition for the Apple App Store are: - **Near real-time availability**: Set up daily, automated imports from the Apple App Store. This minimizes manual work and reduces corrections at month-end. - **Increased accuracy**: Improve recognition accuracy by considering time zone differences.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

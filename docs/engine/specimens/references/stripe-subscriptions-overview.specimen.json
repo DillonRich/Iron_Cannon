@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/subscriptions-overview",
+  "sourceUrl": "https://docs.stripe.com/payments/subscriptions.md",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe subscription lifecycle",
+  "excerpt": "Subscription statuses: incomplete, trialing, active, past_due, canceled, unpaid. App state must mirror Stripe via webhooks. past_due requires dunning UX. canceled/unpaid revoke access. Store stripeCustomerId and stripeSubscriptionId in D1 with tenant guard.",
+  "appliesTo": ["billing-subscription"],
+  "tags": ["stripe", "subscription"]
+}

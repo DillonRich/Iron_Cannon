@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-SEC-001",
+  "obligationId": "LEG-SEC-001",
+  "detectType": "route_exists",
+  "detect": {
+    "type": "route_exists",
+    "path": "/.well-known/security.txt"
+  },
+  "passSnippet": "export default function P(){return <main>/.well-known/security.txt</main>}",
+  "failSnippet": "<main>/missing-route</main>",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

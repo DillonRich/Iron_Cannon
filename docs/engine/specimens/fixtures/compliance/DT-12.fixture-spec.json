@@ -1,0 +1,8 @@
+{
+  "fixtureId": "DT-12",
+  "detectType": "script_before_consent",
+  "passSnippet": "<CookieConsent /> then analytics after accept",
+  "failSnippet": "<script src=\"https://www.googletagmanager.com/gtag/js\"> before consent",
+  "expectedPass": "met",
+  "expectedFail": "advisory"
+}

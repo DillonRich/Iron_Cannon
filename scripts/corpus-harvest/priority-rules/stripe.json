@@ -1,0 +1,8 @@
+{
+  "provider": "stripe",
+  "priority": "P0",
+  "includePatterns": ["/webhooks", "/checkout", "/billing", "/subscriptions", "/customer", "/payments", "/api/events", "/security", "/testing", "/invoic", "/radar", "/tax", "/setup-intent", "/idempotent", "/disputes", "/refunds", "/portal", "/prices", "/meters", "/privacy"],
+  "excludePatterns": ["/connect/", "/terminal/", "/issuing/", "/climate/", "/financial-connections/", "/revenue-recognition/", "/netsuite/"],
+  "maxPerRun": 80,
+  "appliesToDefault": ["billing-subscription", "layer2/stripe"]
+}

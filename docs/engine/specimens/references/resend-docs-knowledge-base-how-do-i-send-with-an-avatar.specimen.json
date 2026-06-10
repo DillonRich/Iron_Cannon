@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-how-do-i-send-with-an-avatar",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/how-do-i-send-with-an-avatar.md",
+  "lastVerified": "2026-06-03",
+  "title": "How do I send with an avatar?",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # How do I send with an avatar? > Learn how to show your avatar in the inbox of your recipients. [Recent studies](https://www.businesswire.com/news/home/20210720005361/en/Red-Sift-and-Entrust-Survey-Showing-a-Logo-Positively-Affects-Consumer-Interaction-With-Emails-Open-Rates-Buying-Behavior-Brand-Recall-and-Confidence) are showing meaningful benefits of displaying your logo in the inbox: * Increases brand recall by 18%. * Improves open rate by 21%. * Boosts purchase likelihood by 34%. * Reinforces confidence in email by 90%. ## Gmail Follow these steps to add an avatar to your Gmail inbox: 1.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-supported-embedded-components-tax-registrations",
+  "sourceUrl": "https://docs.stripe.com/connect/supported-embedded-components/tax-registrations.md",
+  "lastVerified": "2026-06-03",
+  "title": "Tax registrations",
+  "excerpt": "Learn how to allow connected accounts to manage their tax registrations for Stripe Tax. The Tax registrations component gives your connected accounts control over their tax compliance. Your connected accounts interact with this component by managing their tax registrations directly in your platform. This component is suitable for [software platforms](https://docs.stripe.com/tax/tax-for-platforms.md), which means that your connected accounts are liable to collect taxes. If you’re a platform integrating Stripe Tax, you must collect information about the [registrations with tax authorities](https://docs.stripe.com/tax/registering.md) of your connected accounts in the applicable jurisdictions.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

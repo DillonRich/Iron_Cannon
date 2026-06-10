@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W64-008",
+  "obligationId": "LEG-W64-008",
+  "detectType": "route_exists",
+  "detect": {
+    "type": "route_exists",
+    "path": "/account/export"
+  },
+  "passSnippet": "export default function P(){return <main>/account/export</main>}",
+  "failSnippet": "<main>/missing</main>",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

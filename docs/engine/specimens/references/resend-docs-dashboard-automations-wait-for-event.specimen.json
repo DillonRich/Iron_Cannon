@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-automations-wait-for-event",
+  "sourceUrl": "https://resend.com/docs/dashboard/automations/wait-for-event.md",
+  "lastVerified": "2026-06-03",
+  "title": "Wait for Event",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Wait for Event > Hold your Automations until a specific event is received. A wait-until step holds the Automation until a specific event is received. Unlike a delay, which resumes after a fixed time, this step resumes when something happens in your application. Common use cases: * **Payment**: Wait for a payment to succeed before sending a receipt. * **Adoption**: Wait for a user to complete an action to unlock a feature. * **Verification**: Wait for the user to verify their email before continuing. ## How it works Add a **Wait for event** step and configure the event to wait for.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

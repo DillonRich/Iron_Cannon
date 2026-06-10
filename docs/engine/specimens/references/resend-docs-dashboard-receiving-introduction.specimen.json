@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-receiving-introduction",
+  "sourceUrl": "https://resend.com/docs/dashboard/receiving/introduction.md",
+  "lastVerified": "2026-06-03",
+  "title": "Receiving Emails",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Receiving Emails > Learn how to receive emails via webhooks. Resend supports receiving emails (commonly called inbound) in addition to sending emails. This is useful for: * Receiving support emails from users * Processing forwarded attachments * Replying to emails from customers ## How does it work Resend processes all incoming emails for your receiving domain, parses the contents and attachments, and then sends a `POST` request to an endpoint that you choose. To receive emails, you can either use a domain managed by Resend, or [set up a custom domain](/dashboard/receiving/custom-domains).…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

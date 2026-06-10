@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/password-reset/ui",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "password-reset",
+  "moduleId": "M22-reset-ui",
+  "adapterId": "nextjs-app-router",
+  "section": "reset-ui",
+  "content": {
+    "requirement": "Forgot-password and reset-password pages with four-state UX and no email enumeration",
+    "routes": [
+      { "path": "/forgot-password", "states": ["P00", "P01"] },
+      { "path": "/reset-password/[token]", "states": ["P03", "P04", "P05"] }
+    ],
+    "requiredSteps": [
+      "Success message: If an account exists, we sent an email",
+      "Password policy inline errors on P03",
+      "Expired token shows P05 message with link to /forgot-password",
+      "loading.tsx + error.tsx on both routes"
+    ]
+  },
+  "references": ["nextjs/app-router-overview", "nextjs/server-actions", "nextjs/loading-error-ui", "owasp/error-handling"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "PW-UI-001", "type": "required_file", "value": "app/forgot-password/page.tsx", "fileGlob": "**/*", "tier": "pro" },
+      { "id": "PW-UI-002", "type": "required_string", "value": "reset-password", "fileGlob": "**/app/**", "tier": "pro" },
+      { "id": "PW-UI-003", "type": "required_file", "value": "loading.tsx", "fileGlob": "**/forgot-password/**", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "password-reset-ui" }
+}

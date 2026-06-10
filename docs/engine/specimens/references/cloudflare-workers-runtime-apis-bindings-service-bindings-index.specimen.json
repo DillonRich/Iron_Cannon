@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-runtime-apis-bindings-service-bindings-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/runtime-apis/bindings/service-bindings/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Service bindings",
+  "excerpt": "description: Facilitate Worker-to-Worker communication. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Service bindings allow one Worker to call into another, without going through a publicly-accessible URL. A Service binding allows Worker A to call a method on Worker B, or to forward a request from Worker A to Worker B. Service bindings provide the separation of concerns that microservice or service-oriented architectures provide, without configuration pain, performance overhead or need to learn RPC protocols.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

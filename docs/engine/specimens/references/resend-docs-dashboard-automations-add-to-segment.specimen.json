@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-automations-add-to-segment",
+  "sourceUrl": "https://resend.com/docs/dashboard/automations/add-to-segment.md",
+  "lastVerified": "2026-06-03",
+  "title": "Add to Segment",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Add to Segment > Include contacts to a segment as part of your Automation. This step adds the current contact to a specified [Segment](/dashboard/segments/introduction) when reached in the Automation flow. Common use cases: * **Cohorts**: Add contacts to a cohort segment after a specific event. * **Lifecycle**: Segment contacts as they progress through onboarding. * **Engagement**: Group contacts who completed a specific action. ## How it works Define a **Add to segment** step and select the segment from the dropdown. The `add_to_segment` step accepts a single `segment_id` field.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

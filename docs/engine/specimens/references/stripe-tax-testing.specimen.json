@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-testing",
+  "sourceUrl": "https://docs.stripe.com/tax/testing.md",
+  "lastVerified": "2026-06-03",
+  "title": "Testing Stripe Tax",
+  "excerpt": "Learn how to test your Stripe Tax integration. You can use Stripe Tax in a *sandbox* (A sandbox is an isolated test environment that allows you to test Stripe functionality in your account without affecting your live integration. Use sandboxes to safely experiment with new features and changes) environment to preview automatic tax calculation behavior for different tax settings. Use a sandbox to: - Preview tax calculation behavior for different customer locations and registered jurisdictions. - Validate that your integration handles automatic tax calculations correctly. Stripe Tax has separate settings for sandboxes, allowing you to preview changes to your tax settings before applying them in live mode.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

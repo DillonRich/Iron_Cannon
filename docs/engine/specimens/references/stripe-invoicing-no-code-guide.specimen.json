@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-no-code-guide",
+  "sourceUrl": "https://docs.stripe.com/invoicing/no-code-guide.md",
+  "lastVerified": "2026-06-03",
+  "title": "No-code Invoicing guide",
+  "excerpt": "Get started with Stripe Invoicing—no code required. Stripe Invoicing can help you get paid and save time using the Dashboard. Automatically charge your customer’s payment method on file, or email them the *invoice* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice) with or without a link to a payment page. You can also send the invoice or payment page link manually. > If you’re interested in managing subscriptions and recurring revenue, see [Subscriptions](https://docs.stripe.com/billing.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "refId": "cloudflare/durable-objects",
+  "sourceUrl": "https://developers.cloudflare.com/durable-objects/",
+  "lastVerified": "2026-05-31",
+  "title": "Cloudflare Durable Objects",
+  "excerpt": "Strongly consistent coordination. Alternative to KV for session if needed; golden path uses D1+KV. Consider for realtime features P2.",
+  "appliesTo": [
+    "P2"
+  ],
+  "tags": [
+    "cloudflare",
+    "do"
+  ]
+}

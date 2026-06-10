@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/error-handling",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Error handling",
+  "excerpt": "Generic user-facing errors; detailed logs server-side only. No stack traces in production responses. Map internal errors to safe HTTP status codes. UX unhappy paths must not leak SQL, paths, or secrets.",
+  "appliesTo": ["layer3", "ux-unhappy-paths"],
+  "tags": ["owasp", "errors", "ux"]
+}

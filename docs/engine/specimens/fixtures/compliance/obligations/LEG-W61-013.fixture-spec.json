@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W61-013",
+  "obligationId": "LEG-W61-013",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "pattern": "Standard Contractual Clauses"
+  },
+  "passSnippet": "notice Standard Contractual Clauses",
+  "failSnippet": "no match here",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-tutorials-handle-form-submissions-with-airtable-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/tutorials/handle-form-submissions-with-airtable/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Handle form submissions with Airtable",
+  "excerpt": "title: Handle form submissions with Airtable description: Use Cloudflare Workers and Airtable to persist form submissions from a front-end user interface. Workers will handle incoming form submissions and use Airtables REST API to asynchronously persist the data in an Airtable base. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. In this tutorial, you will use [Cloudflare Workers](https://developers.cloudflare.com/workers/) and [Airtable ↗](https://airtable.com) to persist form submissions from a front-end user interface.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

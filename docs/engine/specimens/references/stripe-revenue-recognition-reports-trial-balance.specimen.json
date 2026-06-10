@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-reports-trial-balance",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/reports/trial-balance.md",
+  "lastVerified": "2026-06-03",
+  "title": "Trial balance",
+  "excerpt": "View and analyze account balances over specific periods with the trial balance report. The [trial balance](https://dashboard.stripe.com/revenue-recognition/statements?tab=trial_balance) lists the balances of the accounts at a specific time (as of a specific date) and ensures the total of the debit accounts equals the total of the credit accounts. When you’re ready to close an accounting period, prepare a trial balance report. Running a trial balance is an important step in book closing because it summarizes all the transactions for the period, showing the balances in each account. It ensures that the total debits and credits are equal, confirming that the books are balanced.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

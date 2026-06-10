@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-data-001",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-data-001",
+  "content": {
+    "requirement": "Account deletion confirms irreversibility",
+    "obligations": [
+      "LEG-DATA-001"
+    ],
+    "compareSteps": [
+      "Run detect.type=ui_pattern",
+      "Map result to obligation LEG-DATA-001",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-DATA-001: Account deletion confirms irreversibility"
+  },
+  "references": [
+    "legal/gdpr-erasure"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-DATA-001",
+        "type": "ui_pattern",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "data-rights",
+    "disclaimerRequired": true
+  }
+}

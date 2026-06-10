@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w72-008",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Marketing emails one-click unsubscribe",
+    "obligations": [
+      "LEG-W72-008"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Marketing emails one-click unsubscribe"
+  },
+  "references": [
+    "resend/unsubscribe"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W72-008",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "email",
+    "disclaimerRequired": true
+  }
+}

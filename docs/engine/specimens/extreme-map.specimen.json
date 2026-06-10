@@ -1,0 +1,3271 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/extreme-map/v1",
+  "rulesetVersion": "2026.05.31",
+  "meta": {
+    "em0ConfigCount": 228,
+    "em0FlowStepCount": 30,
+    "configRefLinkRate": 1
+  },
+  "nodes": [
+    {
+      "nodeId": "cfg/cloudflare/wrangler_name",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "wrangler.name",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Worker deploy identity",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "wrangler.name",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/wrangler_main",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "wrangler.main",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Entry module for API routes",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "wrangler.main",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/wrangler_compatibility_date",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "wrangler.compatibility_date",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Runtime API surface version",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "wrangler.compatibility_date",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/wrangler_compatibility_flags",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "wrangler.compatibility_flags",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Node.js compat for crypto libs",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "wrangler.compatibility_flags",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/d1_databases_binding",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "d1_databases.binding",
+      "requiredForModules": [
+        "M01-auth-d1-schema",
+        "M10-billing-d1-schema"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle",
+        "billing-subscription"
+      ],
+      "userFlowEffect": "D1 binding name DB",
+      "securityEffects": [
+        "tenant_isolation"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "d1_databases.binding",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/d1-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/d1_databases_database_name",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "d1_databases.database_name",
+      "requiredForModules": [
+        "M01-auth-d1-schema"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Production D1 database name",
+      "securityEffects": [],
+      "legalEffects": [
+        "GDPR storage location"
+      ],
+      "detectSignals": {
+        "envExample": "d1_databases.database_name",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/d1-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/d1_databases_database_id",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "d1_databases.database_id",
+      "requiredForModules": [
+        "M01-auth-d1-schema"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "D1 UUID for wrangler deploy",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "d1_databases.database_id",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/d1-migrations"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/d1_migrations_dir",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "d1_migrations_dir",
+      "requiredForModules": [
+        "M01-auth-d1-schema"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "SQL migration folder",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "d1_migrations_dir",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/d1-migrations"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/kv_namespaces_binding",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "kv_namespaces.binding",
+      "requiredForModules": [
+        "M05-auth-session-middleware",
+        "M13-provisioning-kv"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle",
+        "billing-race-shield"
+      ],
+      "userFlowEffect": "KV binding KV",
+      "securityEffects": [
+        "session_ttl"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "kv_namespaces.binding",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/kv-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/kv_namespaces_id",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "kv_namespaces.id",
+      "requiredForModules": [
+        "M13-provisioning-kv"
+      ],
+      "requiredForFlows": [
+        "billing-race-shield"
+      ],
+      "userFlowEffect": "KV namespace id",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "kv_namespaces.id",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/kv-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/r2_buckets_binding",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "r2_buckets.binding",
+      "requiredForModules": [
+        "M51-export-worker"
+      ],
+      "requiredForFlows": [
+        "data-export"
+      ],
+      "userFlowEffect": "Export archive storage",
+      "securityEffects": [],
+      "legalEffects": [
+        "GDPR export retention"
+      ],
+      "detectSignals": {
+        "envExample": "r2_buckets.binding",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/r2-object-lifecycle"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/queues_producers",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "queues.producers",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "userFlowEffect": "Async webhook processing",
+      "securityEffects": [
+        "queue_auth"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "queues.producers",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/queues"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/durable_objects_bindings",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "durable_objects.bindings",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Optional coordination",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "durable_objects.bindings",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/durable-objects"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/services_binding",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "services.binding",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Service bindings between workers",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "services.binding",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/vectorize_binding",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "vectorize.binding",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "userFlowEffect": "Iron Clad RAG index binding",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "vectorize.binding",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/vectorize-metadata"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/ai_binding",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "ai.binding",
+      "requiredForModules": [
+        "M03-auth-resend-emails"
+      ],
+      "requiredForFlows": [
+        "email-lifecycle"
+      ],
+      "userFlowEffect": "Workers AI optional",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "ai.binding",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-ai-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/hyperdrive_binding",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "hyperdrive.binding",
+      "requiredForModules": [
+        "M01-auth-d1-schema"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "External DB proxy (hybrid)",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "hyperdrive.binding",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/hyperdrive"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/analytics_engine_dataset",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "analytics_engine.dataset",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Security event logging",
+      "securityEffects": [
+        "audit_log"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "analytics_engine.dataset",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "owasp-logging-monitoring"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/vars_ENVIRONMENT",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "vars.ENVIRONMENT",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "production vs staging behavior",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "vars.ENVIRONMENT",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/vars_SESSION_SECRET",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "vars.SESSION_SECRET",
+      "requiredForModules": [
+        "M05-auth-session-middleware"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Session signing secret",
+      "securityEffects": [
+        "secret_rotation"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "vars.SESSION_SECRET",
+        "t02Missing": true
+      },
+      "referenceRefIds": [
+        "owasp/session-management"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/vars_STRIPE_SECRET_KEY",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "vars.STRIPE_SECRET_KEY",
+      "requiredForModules": [
+        "M11-stripe-checkout-route",
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "userFlowEffect": "Stripe API secret",
+      "securityEffects": [
+        "key_leakage"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "vars.STRIPE_SECRET_KEY",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/api-keys"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/vars_STRIPE_WEBHOOK_SECRET",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "vars.STRIPE_WEBHOOK_SECRET",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "userFlowEffect": "Webhook signature secret",
+      "securityEffects": [
+        "SURF-WH-001: signature_verify"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "vars.STRIPE_WEBHOOK_SECRET",
+        "t02Missing": true
+      },
+      "referenceRefIds": [
+        "stripe/webhook-signature"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/vars_RESEND_API_KEY",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "vars.RESEND_API_KEY",
+      "requiredForModules": [
+        "M03-auth-resend-emails",
+        "M16-billing-emails"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle",
+        "email-lifecycle"
+      ],
+      "userFlowEffect": "Transactional email API key",
+      "securityEffects": [
+        "api_key_scope"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "vars.RESEND_API_KEY",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "resend/api-keys"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/vars_APP_URL",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "vars.APP_URL",
+      "requiredForModules": [
+        "M04-auth-ui-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Canonical app URL for links",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "vars.APP_URL",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "nextjs/metadata"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/vars_COOKIE_DOMAIN",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "vars.COOKIE_DOMAIN",
+      "requiredForModules": [
+        "M05-auth-session-middleware"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Session cookie domain",
+      "securityEffects": [
+        "secure_cookie"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "vars.COOKIE_DOMAIN",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "owasp/session-management"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/secrets_store_STRIPE_SECRET_KEY",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "secrets_store.STRIPE_SECRET_KEY",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "userFlowEffect": "Prefer secrets over plain vars",
+      "securityEffects": [
+        "secret_binding"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "secrets_store.STRIPE_SECRET_KEY",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-secrets"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/secrets_store_SESSION_SECRET",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "secrets_store.SESSION_SECRET",
+      "requiredForModules": [
+        "M05-auth-session-middleware"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Session secret in Secrets Store",
+      "securityEffects": [
+        "secret_binding"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "secrets_store.SESSION_SECRET",
+        "t02Missing": true
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-secrets"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/cron_triggers",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "cron_triggers",
+      "requiredForModules": [
+        "M41-deletion-scheduler"
+      ],
+      "requiredForFlows": [
+        "account-deletion"
+      ],
+      "userFlowEffect": "Scheduled deletion jobs",
+      "securityEffects": [
+        "cron_auth"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "cron_triggers",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/cron-triggers"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/routes_pattern",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "routes.pattern",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Worker route patterns",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "routes.pattern",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-routes"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/limits_cpu_ms",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "limits.cpu_ms",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "CPU time per request",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "limits.cpu_ms",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-limits"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/limits_memory_mb",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "limits.memory_mb",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "userFlowEffect": "Webhook handler memory",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "limits.memory_mb",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-limits"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/observability_enabled",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "observability.enabled",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Tracing for auth failures",
+      "securityEffects": [
+        "audit_log"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "observability.enabled",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "owasp-logging-monitoring"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/pages_build_output_dir",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "pages_build_output_dir",
+      "requiredForModules": [
+        "M04-auth-ui-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Hybrid Pages static output",
+      "securityEffects": [
+        "external_api_surface"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "pages_build_output_dir",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "ironcannon/hybrid-stack-detection"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/pages_functions_directory",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "pages_functions_directory",
+      "requiredForModules": [
+        "M04-auth-ui-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Pages Functions for Next hybrid",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "pages_functions_directory",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "ironcannon/hybrid-stack-detection"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/mtls_certificates",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "mtls_certificates",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "mTLS to origin (enterprise)",
+      "securityEffects": [
+        "mtls"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "mtls_certificates",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/ssl-tls"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/ssl_mode",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "ssl_mode",
+      "requiredForModules": [
+        "M04-auth-ui-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "TLS mode for custom domain",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "ssl_mode",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/ssl-tls"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/waf_rules",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "waf_rules",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "WAF on proxied routes",
+      "securityEffects": [
+        "waf"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "waf_rules",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/waf-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/email_routing",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "email_routing",
+      "requiredForModules": [
+        "M03-auth-resend-emails"
+      ],
+      "requiredForFlows": [
+        "email-lifecycle"
+      ],
+      "userFlowEffect": "CF email routing optional",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "email_routing",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/email-routing"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/cache_rules",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "cache_rules",
+      "requiredForModules": [
+        "M04-auth-ui-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Cache auth pages never",
+      "securityEffects": [
+        "no_cache_auth"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "cache_rules",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/cache-rules"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/logpush",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "logpush",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "userFlowEffect": "Webhook audit logs",
+      "securityEffects": [
+        "audit_log"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "logpush",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "owasp-logging-monitoring"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/tail_workers",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "tail_workers",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Tail consumers for security",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "tail_workers",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/placement_mode",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "placement.mode",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Smart placement latency",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "placement.mode",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/triggers_crons_deletion",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "triggers.crons.deletion",
+      "requiredForModules": [
+        "M41-deletion-scheduler"
+      ],
+      "requiredForFlows": [
+        "account-deletion"
+      ],
+      "userFlowEffect": "Cron for M41",
+      "securityEffects": [
+        "cron_auth"
+      ],
+      "legalEffects": [
+        "LEG-GDPR-002"
+      ],
+      "detectSignals": {
+        "envExample": "triggers.crons.deletion",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/cron-triggers"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/triggers_crons_export",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "triggers.crons.export",
+      "requiredForModules": [
+        "M51-export-worker"
+      ],
+      "requiredForFlows": [
+        "data-export"
+      ],
+      "userFlowEffect": "Cron for export jobs",
+      "securityEffects": [
+        "cron_auth"
+      ],
+      "legalEffects": [
+        "LEG-GDPR-003"
+      ],
+      "detectSignals": {
+        "envExample": "triggers.crons.export",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/cron-triggers"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/d1_read_replicas",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "d1_read_replicas",
+      "requiredForModules": [
+        "M01-auth-d1-schema"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Read replicas for scale",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "d1_read_replicas",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/d1-read-replicas"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/d1_backups",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "d1_backups",
+      "requiredForModules": [
+        "M50-export-api"
+      ],
+      "requiredForFlows": [
+        "data-export"
+      ],
+      "userFlowEffect": "D1 backup before export",
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-GDPR-003"
+      ],
+      "detectSignals": {
+        "envExample": "d1_backups",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/d1-backups"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/kv_preview_id",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "kv_preview_id",
+      "requiredForModules": [
+        "M05-auth-session-middleware"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Preview KV for staging",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "kv_preview_id",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/kv-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/r2_public_access",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "r2_public_access",
+      "requiredForModules": [
+        "M51-export-worker"
+      ],
+      "requiredForFlows": [
+        "data-export"
+      ],
+      "userFlowEffect": "Block public R2 on exports",
+      "securityEffects": [
+        "no_public_bucket"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "r2_public_access",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/r2-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/workers_dev",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "workers_dev",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Disable workers.dev in prod",
+      "securityEffects": [
+        "surface_reduction"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "workers_dev",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/nodejs_compat",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "nodejs_compat",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Node compat for Stripe SDK",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "nodejs_compat",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/send_email_binding",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "send_email.binding",
+      "requiredForModules": [
+        "M03-auth-resend-emails"
+      ],
+      "requiredForFlows": [
+        "email-lifecycle"
+      ],
+      "userFlowEffect": "Workers email binding alt",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "send_email.binding",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/email-workers"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/browser_rendering",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "browser_rendering",
+      "requiredForModules": [
+        "M52-export-ui"
+      ],
+      "requiredForFlows": [
+        "data-export"
+      ],
+      "userFlowEffect": "PDF export rendering",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "browser_rendering",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/browser-rendering"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/images_binding",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "images.binding",
+      "requiredForModules": [
+        "M04-auth-ui-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Image optimization",
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-A11Y-008"
+      ],
+      "detectSignals": {
+        "envExample": "images.binding",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/images"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/turnstile_site_key",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "turnstile.site_key",
+      "requiredForModules": [
+        "M04-auth-ui-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Bot protection on signup",
+      "securityEffects": [
+        "captcha"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "turnstile.site_key",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/turnstile"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/turnstile_secret_key",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "turnstile.secret_key",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Turnstile server verify",
+      "securityEffects": [
+        "captcha_verify"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "turnstile.secret_key",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/turnstile"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/rate_limit_auth",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "rate_limit.auth",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Auth endpoint rate limits",
+      "securityEffects": [
+        "rate_limit"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "rate_limit.auth",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "owasp/authentication"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/rate_limit_webhook",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "rate_limit.webhook",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "userFlowEffect": "Webhook flood protection",
+      "securityEffects": [
+        "rate_limit"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "rate_limit.webhook",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/webhook-best-practices"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/cors_allowed_origins",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "cors.allowed_origins",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "CORS for API from app domain",
+      "securityEffects": [
+        "cors_strict"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "cors.allowed_origins",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "owasp/cors"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/service_binding_api",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "service_binding.api",
+      "requiredForModules": [
+        "M04-auth-ui-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Pages → Worker service binding",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "service_binding.api",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/service-bindings"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/env_staging_STRIPE_SECRET_KEY",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "env.staging.STRIPE_SECRET_KEY",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "userFlowEffect": "Test mode keys in staging",
+      "securityEffects": [
+        "test_live_separation"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "env.staging.STRIPE_SECRET_KEY",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/test-mode"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/env_production_STRIPE_SECRET_KEY",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "env.production.STRIPE_SECRET_KEY",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "userFlowEffect": "Live keys for T11",
+      "securityEffects": [
+        "test_live_separation"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "env.production.STRIPE_SECRET_KEY",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/api-keys"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/binding_DB",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "binding.DB",
+      "requiredForModules": [
+        "M01-auth-d1-schema"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Runtime DB handle",
+      "securityEffects": [
+        "parameterized_queries"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "binding.DB",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/d1-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/binding_KV",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "binding.KV",
+      "requiredForModules": [
+        "M13-provisioning-kv"
+      ],
+      "requiredForFlows": [
+        "billing-race-shield"
+      ],
+      "userFlowEffect": "Runtime KV handle",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "binding.KV",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/kv-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/migration_lock",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "migration_lock",
+      "requiredForModules": [
+        "M01-auth-d1-schema"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Single-writer migrations",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "migration_lock",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/d1-migrations"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/wrangler_env_staging",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "wrangler.env.staging",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Staging environment deploy",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "wrangler.env.staging",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-environments"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/wrangler_env_production",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "wrangler.env.production",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "userFlowEffect": "Production deploy target",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "wrangler.env.production",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-environments"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/miniflare_persist",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "miniflare.persist",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Local dev persistence",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "miniflare.persist",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/d1_time_travel",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "d1_time_travel",
+      "requiredForModules": [
+        "M50-export-api"
+      ],
+      "requiredForFlows": [
+        "data-export"
+      ],
+      "userFlowEffect": "Point-in-time for export",
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-GDPR-003"
+      ],
+      "detectSignals": {
+        "envExample": "d1_time_travel",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/d1-backups"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/account_id",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "account_id",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Cloudflare account for deploy",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "account_id",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/zone_id",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "zone_id",
+      "requiredForModules": [
+        "M04-auth-ui-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "DNS zone for custom domain",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "zone_id",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/dns"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/custom_domain",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "custom_domain",
+      "requiredForModules": [
+        "M04-auth-ui-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "App hostname TLS",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "custom_domain",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/ssl-tls"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/workers_route_priority",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "workers_route_priority",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "userFlowEffect": "Webhook route precedence",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "workers_route_priority",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-routes"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/unsafe_ephemeral_cache",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "unsafe.ephemeral_cache",
+      "requiredForModules": [
+        "M04-auth-ui-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Avoid caching PII pages",
+      "securityEffects": [
+        "no_cache_pii"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "unsafe.ephemeral_cache",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/cache-rules"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/version_metadata",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "version_metadata",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Deploy version for rollback",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "version_metadata",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-versions"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/dispatch_namespace",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "dispatch_namespace",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Multi-tenant dispatch (advanced)",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "dispatch_namespace",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/workers-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/mTLS_client_certificate",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "mTLS.client_certificate",
+      "requiredForModules": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Client cert to origin",
+      "securityEffects": [
+        "mtls"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "mTLS.client_certificate",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/ssl-tls"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/log_level",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "log_level",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "userFlowEffect": "Webhook debug off in prod",
+      "securityEffects": [
+        "no_pii_logs"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "log_level",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "owasp-logging-monitoring"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/export_deletion_grace_days",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "export.deletion_grace_days",
+      "requiredForModules": [
+        "M41-deletion-scheduler"
+      ],
+      "requiredForFlows": [
+        "account-deletion"
+      ],
+      "userFlowEffect": "Grace period before purge",
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-GDPR-002"
+      ],
+      "detectSignals": {
+        "envExample": "export.deletion_grace_days",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "legal/gdpr-erasure"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/export_r2_retention_days",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "export.r2_retention_days",
+      "requiredForModules": [
+        "M51-export-worker"
+      ],
+      "requiredForFlows": [
+        "data-export"
+      ],
+      "userFlowEffect": "Export file retention",
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-GDPR-003"
+      ],
+      "detectSignals": {
+        "envExample": "export.r2_retention_days",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "cloudflare/r2-object-lifecycle"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/hybrid_vercel_detection",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "hybrid.vercel_detection",
+      "requiredForModules": [
+        "M04-auth-ui-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Hybrid stack warning",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "hybrid.vercel_detection",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "ironcannon/hybrid-stack-detection"
+      ]
+    },
+    {
+      "nodeId": "cfg/cloudflare/hybrid_firebase_block",
+      "type": "config",
+      "host": "cloudflare",
+      "adapterIds": [
+        "cloudflare-golden-stack"
+      ],
+      "setting": "hybrid.firebase_block",
+      "requiredForModules": [
+        "M01-auth-d1-schema"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "userFlowEffect": "Block Firebase primary",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "hybrid.firebase_block",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "ironcannon/hybrid-stack-detection"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/STRIPE_SECRET_KEY",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "STRIPE_SECRET_KEY",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "API authentication",
+      "securityEffects": [
+        "key_leakage"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "STRIPE_SECRET_KEY",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/api-keys"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/STRIPE_PUBLISHABLE_KEY",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "STRIPE_PUBLISHABLE_KEY",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Client-side Checkout",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "STRIPE_PUBLISHABLE_KEY",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/api-keys"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/STRIPE_WEBHOOK_SECRET",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "STRIPE_WEBHOOK_SECRET",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Webhook verification",
+      "securityEffects": [
+        "signature_verify"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "STRIPE_WEBHOOK_SECRET",
+        "t02Missing": true
+      },
+      "referenceRefIds": [
+        "stripe/webhook-signature"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/STRIPE_WEBHOOK_ENDPOINT",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "STRIPE_WEBHOOK_ENDPOINT",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Registered endpoint URL",
+      "securityEffects": [
+        "https_only"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "STRIPE_WEBHOOK_ENDPOINT",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/webhook-endpoints"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/price_id_monthly",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "price_id_monthly",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "SC-V01 monthly price",
+      "securityEffects": [],
+      "legalEffects": [
+        "pricing_disclosure"
+      ],
+      "detectSignals": {
+        "envExample": "price_id_monthly",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/prices-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/price_id_annual",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "price_id_annual",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Annual plan price",
+      "securityEffects": [],
+      "legalEffects": [
+        "pricing_disclosure"
+      ],
+      "detectSignals": {
+        "envExample": "price_id_annual",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/prices-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/customer_portal_enabled",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "customer_portal_enabled",
+      "requiredForModules": [
+        "M15-billing-dashboard-ui"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Self-serve billing portal",
+      "securityEffects": [
+        "return_url_auth"
+      ],
+      "legalEffects": [
+        "LEG-TERMS-003"
+      ],
+      "detectSignals": {
+        "envExample": "customer_portal_enabled",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/billing-portal-deep"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/checkout_mode_subscription",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "checkout_mode.subscription",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Subscription checkout",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "checkout_mode.subscription",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/checkout-sessions"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/payment_method_types",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "payment_method_types",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Card + wallets",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "payment_method_types",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/payment-methods"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/automatic_tax_enabled",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "automatic_tax.enabled",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Stripe Tax",
+      "securityEffects": [],
+      "legalEffects": [
+        "tax_disclosure"
+      ],
+      "detectSignals": {
+        "envExample": "automatic_tax.enabled",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/tax"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/radar_enabled",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "radar.enabled",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Fraud rules",
+      "securityEffects": [
+        "fraud"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "radar.enabled",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/radar-fraud"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/idempotency_key_header",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "idempotency_key_header",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Safe retries",
+      "securityEffects": [
+        "idempotency"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "idempotency_key_header",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/webhook-idempotency"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/webhook_events_checkout_session_completed",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "webhook_events.checkout.session.completed",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Provision on success",
+      "securityEffects": [
+        "event_order"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "webhook_events.checkout.session.completed",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/webhook-events"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/webhook_events_customer_subscription_updated",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "webhook_events.customer.subscription.updated",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Plan changes",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "webhook_events.customer.subscription.updated",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/webhook-events"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/webhook_events_invoice_paid",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "webhook_events.invoice.paid",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Invoice sync",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "webhook_events.invoice.paid",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/invoice-reconciliation"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/webhook_events_charge_dispute_created",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "webhook_events.charge.dispute.created",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Dispute handling",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "webhook_events.charge.dispute.created",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/chargeback-handling"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/test_mode_keys",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "test_mode_keys",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "T11 blocks test in prod",
+      "securityEffects": [
+        "test_live_separation"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "test_mode_keys",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/test-mode"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/live_mode_keys",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "live_mode_keys",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Production billing",
+      "securityEffects": [
+        "test_live_separation"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "live_mode_keys",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/api-keys"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/billing_portal_return_url",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "billing_portal.return_url",
+      "requiredForModules": [
+        "M15-billing-dashboard-ui"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Return after portal",
+      "securityEffects": [
+        "open_redirect"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "billing_portal.return_url",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/customer-portal"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/setup_intent_usage",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "setup_intent.usage",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Save PM for renewals",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "setup_intent.usage",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/setup-intents-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/subscription_trial_days",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "subscription.trial_days",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Trial disclosure",
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-TERMS-004"
+      ],
+      "detectSignals": {
+        "envExample": "subscription.trial_days",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/subscriptions-trials"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/subscription_cancel_at_period_end",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "subscription.cancel_at_period_end",
+      "requiredForModules": [
+        "M15-billing-dashboard-ui"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Cancel UX",
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-TERMS-003"
+      ],
+      "detectSignals": {
+        "envExample": "subscription.cancel_at_period_end",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/subscriptions-cancel"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/metadata_user_id",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "metadata.user_id",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Link Stripe customer",
+      "securityEffects": [
+        "pii_metadata"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "metadata.user_id",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/customers-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/expand_checkout_line_items",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "expand.checkout.line_items",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Line item detail",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "expand.checkout.line_items",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/checkout-sessions"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/api_version",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "api_version",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Pinned API version",
+      "securityEffects": [
+        "version_pin"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "api_version",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/api-versioning"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/connect_account_id",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "connect.account_id",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Connect (if used)",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "connect.account_id",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/connect-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/tax_behavior_inclusive",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "tax_behavior.inclusive",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Tax display",
+      "securityEffects": [],
+      "legalEffects": [
+        "tax_disclosure"
+      ],
+      "detectSignals": {
+        "envExample": "tax_behavior.inclusive",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/tax"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/invoice_collection_method",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "invoice.collection_method",
+      "requiredForModules": [
+        "M15-billing-dashboard-ui"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Charge automatically",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "invoice.collection_method",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/invoices-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/payment_intent_capture_method",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "payment_intent.capture_method",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Capture timing",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "payment_intent.capture_method",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/payment-intents-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/coupon_promotion_code",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "coupon.promotion_code",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Promo codes",
+      "securityEffects": [],
+      "legalEffects": [
+        "pricing_disclosure"
+      ],
+      "detectSignals": {
+        "envExample": "coupon.promotion_code",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/coupons"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/customer_email",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "customer.email",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Receipt email",
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-EMAIL-001"
+      ],
+      "detectSignals": {
+        "envExample": "customer.email",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/customers-overview"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/webhook_tolerance_seconds",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "webhook_tolerance_seconds",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Clock skew",
+      "securityEffects": [
+        "signature_verify"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "webhook_tolerance_seconds",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/webhook-signature"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/endpoint_disabled_events",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "endpoint.disabled_events",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Minimize attack surface",
+      "securityEffects": [
+        "least_events"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "endpoint.disabled_events",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/webhook-endpoints"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/dashboard_webhook_test",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "dashboard.webhook_test",
+      "requiredForModules": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "CLI test events",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "dashboard.webhook_test",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/webhook-testing"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/sc_v01_checkout",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "sc_v01.checkout",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Iron Cannon SC-V01",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "sc_v01.checkout",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "ironcannon/sc-v01-subscription-checkout"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/sc_v02_one_subscription",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "sc_v02.one_subscription",
+      "requiredForModules": [
+        "M13-provisioning-kv"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Iron Cannon SC-V02",
+      "securityEffects": [
+        "race_shield"
+      ],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "sc_v02.one_subscription",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "ironcannon/sc-v02-one-subscription"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/portal_configuration",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "portal.configuration",
+      "requiredForModules": [
+        "M15-billing-dashboard-ui"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Portal features",
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-TERMS-003"
+      ],
+      "detectSignals": {
+        "envExample": "portal.configuration",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/billing-portal"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/payment_method_save",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "payment_method.save",
+      "requiredForModules": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Off-session renewals",
+      "securityEffects": [],
+      "legalEffects": [],
+      "detectSignals": {
+        "envExample": "payment_method.save",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/payment-methods"
+      ]
+    },
+    {
+      "nodeId": "cfg/stripe/invoice_upcoming_webhook",
+      "type": "config",
+      "host": "stripe",
+      "adapterIds": [
+        "stripe"
+      ],
+      "setting": "invoice.upcoming_webhook",
+      "requiredForModules": [
+        "M16-billing-emails"
+      ],
+      "requiredForFlows": [
+        "billing-subscription",
+        "billing-race-shield",
+        "email-lifecycle",
+        "account-deletion"
+      ],
+      "userFlowEffect": "Upcoming invoice email",
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-EMAIL-002"
+      ],
+      "detectSignals": {
+        "envExample": "invoice.upcoming_webhook",
+        "t02Missing": false
+      },
+      "referenceRefIds": [
+        "stripe/invoice-reconciliation"
+      ]
+    }
+  ]
+}

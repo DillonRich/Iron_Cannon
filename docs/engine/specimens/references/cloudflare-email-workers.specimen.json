@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/email-workers",
+  "sourceUrl": "https://developers.cloudflare.com/email-routing/email-workers/",
+  "lastVerified": "2026-05-31",
+  "title": "Email Workers",
+  "excerpt": "Send email from Workers without third-party API.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "cloudflare",
+    "email-workers"
+  ]
+}

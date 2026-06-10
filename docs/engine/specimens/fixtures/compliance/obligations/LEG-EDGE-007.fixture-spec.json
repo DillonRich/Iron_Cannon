@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-EDGE-007",
+  "obligationId": "LEG-EDGE-007",
+  "detectType": "manual",
+  "detect": {
+    "type": "manual",
+    "note": "T02 surfaces HYBRID_STACK_DETECTED"
+  },
+  "passSnippet": "manualReviewCompleted=true",
+  "failSnippet": "not reviewed yet",
+  "expectedPass": "met",
+  "expectedFail": "advisory"
+}

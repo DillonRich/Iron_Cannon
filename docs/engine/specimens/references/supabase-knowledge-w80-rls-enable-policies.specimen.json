@@ -1,0 +1,15 @@
+{
+  "refId": "supabase/knowledge-w80-rls-enable-policies",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w80/rls-enable-policies",
+  "lastVerified": "2026-06-06",
+  "title": "W80 rls-enable-policies",
+  "provider": "supabase",
+  "excerpt": "RLS enabled on profiles/sessions tables with auth.uid() scoped policies",
+  "embeddingHint": "supabase rls-enable-policies wave80 svc-002-supabase-harvest",
+  "tags": [
+    "wave80",
+    "knowledge",
+    "supabase",
+    "svc-002-supabase-harvest"
+  ]
+}

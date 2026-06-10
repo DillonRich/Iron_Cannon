@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/capital-replacements",
+  "sourceUrl": "https://docs.stripe.com/capital/replacements.md",
+  "lastVerified": "2026-06-03",
+  "title": "Replacements",
+  "excerpt": "Learn how to handle financing offer replacements. > Capital for platforms is available in [public preview](https://docs.stripe.com/release-phases.md). Capital financing applications allow connected accounts to link third-party data to receive updated financing offer terms, such as a higher financing amount. Financing offer replacements give your platform visibility into the offer history of your connected accounts. This guide describes how to manage financing offer replacements. Without replacements, when an account receives an offer with new terms, Stripe updates the existing [FinancingOffer](https://docs.stripe.com/api/capital/connect_financing_object.md). Your platform can’t access any record of previous offers.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

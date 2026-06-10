@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/pages-deploy",
+  "sourceUrl": "https://developers.cloudflare.com/pages/get-started/git-integration/",
+  "lastVerified": "2026-05-31",
+  "title": "Pages Git deployment",
+  "excerpt": "Connect Git repo for automatic builds on push. Preview deployments per branch. Production branch (main) gets production env. Build command and output directory must match Next.js static/SSR adapter config.",
+  "appliesTo": ["layer2/cloudflare"],
+  "tags": ["cloudflare", "pages", "deploy"]
+}

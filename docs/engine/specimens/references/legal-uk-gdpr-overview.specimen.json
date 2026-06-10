@@ -1,0 +1,15 @@
+{
+  "refId": "legal/uk-gdpr-overview",
+  "sourceUrl": "https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/",
+  "lastVerified": "2026-05-31",
+  "title": "UK GDPR overview",
+  "excerpt": "UK GDPR parallels EU requirements for UK primaryMarkets. Cookie consent, privacy notice, and data subject rights patterns align with EU obligation set.",
+  "appliesTo": [
+    "layer4",
+    "uk"
+  ],
+  "tags": [
+    "legal",
+    "gdpr"
+  ]
+}

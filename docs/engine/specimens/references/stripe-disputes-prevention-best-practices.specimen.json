@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/disputes-prevention-best-practices",
+  "sourceUrl": "https://docs.stripe.com/disputes/prevention/best-practices.md",
+  "lastVerified": "2026-06-03",
+  "title": "Best practices for preventing fraud",
+  "excerpt": "Learn how to use best practices to protect against disputes and fraudulent payments. Creating an effective dispute and fraud prevention strategy that best suits your business can help prevent fraud from occurring. By employing some of these best practices as part of your overall strategy, you can avoid excessive chargebacks and reduce potential customer burden and losses. These are tools that any Stripe user—whether or not they’re a developer, and whether or not they use any specialized Stripe tools like *Radar* (Stripe Radar helps detect and block fraud for any type of business using machine learning that trains on data across millions of global companies. It’s built into Stripe and requires no additional setup to get started)—can leverage to reduce fraud and dispute incidents.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

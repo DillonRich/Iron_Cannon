@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-send-with-wordpress-smtp",
+  "sourceUrl": "https://resend.com/docs/send-with-wordpress-smtp.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send emails using WordPress with SMTP",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send emails using WordPress with SMTP > Learn how to send your first email using Wordpress. ## Prerequisites To get the most out of this guide, you'll need to: * [Create an API key](https://resend.com/api-keys) * [Verify your domain](https://resend.com/domains) ## 1. Install a plugin First, you'll need to install and activate the [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) plugin. Once the plugin is activated you will see the setup wizard. You can skip this step as we'll guide you through how to configure the plugin for Resend.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

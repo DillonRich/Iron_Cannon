@@ -1,0 +1,26 @@
+{
+  "fixtureId": "SD-08",
+  "description": "Supabase + Cloudflare D1 — dual-database SSOT conflict (SVC-002)",
+  "projectFiles": [
+    {
+      "path": "package.json",
+      "content": "{\"dependencies\":{\"next\":\"14\",\"@supabase/supabase-js\":\"^2\",\"stripe\":\"^16\"},\"devDependencies\":{\"wrangler\":\"^3\"}}"
+    },
+    {
+      "path": "wrangler.toml",
+      "content": "name = \"app\"\nmain = \"worker/src/index.ts\"\n[[d1_databases]]\nbinding = \"DB\""
+    },
+    {
+      "path": ".env.example",
+      "content": "NEXT_PUBLIC_SUPABASE_URL=\nNEXT_PUBLIC_SUPABASE_ANON_KEY=\nSTRIPE_SECRET_KEY=\nSTRIPE_WEBHOOK_SECRET="
+    }
+  ],
+  "expectedT01": {
+    "supported": false,
+    "warnings": ["SUPABASE_PRIMARY", "dual-database"]
+  },
+  "expectedT02": {
+    "complete": false,
+    "errorCode": "STACK_UNSUPPORTED"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w80-002",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Middleware refreshes session via @supabase/ssr",
+    "obligations": [
+      "LEG-W80-002"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Middleware refreshes session via @supabase/ssr"
+  },
+  "references": [
+    "supabase/knowledge-w80-ssr-middleware-session"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W80-002",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

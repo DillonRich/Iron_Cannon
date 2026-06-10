@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-mobile-payment-sheet",
+  "sourceUrl": "https://docs.stripe.com/payments/mobile/payment-sheet.md",
+  "lastVerified": "2026-06-03",
+  "title": "Payment Sheet",
+  "excerpt": "A prebuilt UI that presents payment methods in a sheet. The Payment Sheet is a prebuilt UI that presents payment methods in a sheet and is our recommended way to [accept payments](https://docs.stripe.com/payments/mobile/accept-payment.md) in most apps. You can customize it to match the look and feel of your app. The In-app Payment Sheet is available in our [iOS](https://github.com/stripe/stripe-ios), [Android](https://github.com/stripe/stripe-android), and [React Native](https://github.com/stripe/stripe-react-native) SDKs. See our [accept in-app payments](https://docs.stripe.com/payments/mobile/accept-payment.md) guide to get started.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

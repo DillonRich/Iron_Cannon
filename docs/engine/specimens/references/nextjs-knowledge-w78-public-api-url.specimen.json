@@ -1,0 +1,15 @@
+{
+  "refId": "nextjs/knowledge-w78-public-api-url",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w78/public-api-url",
+  "lastVerified": "2026-06-06",
+  "title": "W78 public-api-url",
+  "provider": "nextjs",
+  "excerpt": "NEXT_PUBLIC_API_URL points browser to Worker API host on SD-06 split stacks",
+  "embeddingHint": "nextjs public-api-url wave78 svc-001-pages-harvest",
+  "tags": [
+    "wave78",
+    "knowledge",
+    "nextjs",
+    "svc-001-pages-harvest"
+  ]
+}

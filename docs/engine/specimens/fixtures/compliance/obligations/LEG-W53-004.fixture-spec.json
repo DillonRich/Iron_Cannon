@@ -1,0 +1,12 @@
+{
+  "fixtureId": "LEG-W53-004",
+  "obligationId": "LEG-W53-004",
+  "detectType": "header",
+  "detect": {
+    "type": "header"
+  },
+  "passSnippet": "List-Unsubscribe: <mailto:unsub@example.com>",
+  "failSnippet": "Subject: hello",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

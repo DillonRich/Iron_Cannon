@@ -1,0 +1,17 @@
+{
+  "fixtureId": "LEG-A11Y-008",
+  "obligationId": "LEG-A11Y-008",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "patterns": [
+      "<title>",
+      "metadata.title"
+    ],
+    "scope": "auth_routes"
+  },
+  "passSnippet": "<title> metadata.title",
+  "failSnippet": "gap LEG-A11Y-008",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

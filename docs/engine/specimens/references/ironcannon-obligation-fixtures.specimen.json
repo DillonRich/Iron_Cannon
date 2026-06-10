@@ -1,0 +1,16 @@
+{
+  "refId": "ironcannon/obligation-fixtures",
+  "sourceUrl": "https://ironcannon.dev/patterns/obligation-fixtures",
+  "lastVerified": "2026-05-31",
+  "title": "Obligation fixture contract",
+  "excerpt": "Every obligation requires pass/fail snippet fixtures before production.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "ironcannon",
+    "obligation-fixtures"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

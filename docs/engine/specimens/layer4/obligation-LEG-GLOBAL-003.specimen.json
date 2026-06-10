@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-global-003",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "section": "leg-global-003",
+  "content": {
+    "requirement": "Accessibility statement page",
+    "obligations": [
+      "LEG-GLOBAL-003"
+    ],
+    "compareSteps": [
+      "Run detect.type=route_exists per COMPARE_DETECT_TYPES",
+      "Map result to obligation LEG-GLOBAL-003 only",
+      "Attach legalDisclaimer on every T12–T14 response"
+    ],
+    "remediationDirective": "Remediate LEG-GLOBAL-003: Accessibility statement page"
+  },
+  "references": [
+    "legal/ada-title-iii-web"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-GLOBAL-003",
+        "type": "route_exists",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "accessibility",
+    "disclaimerRequired": true
+  }
+}

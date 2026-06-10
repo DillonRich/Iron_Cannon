@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-checkout-sessions-create",
+  "sourceUrl": "https://docs.stripe.com/api/checkout/sessions/create.md",
+  "lastVerified": "2026-06-03",
+  "title": "Create a Checkout Session",
+  "excerpt": "Settings for price localization with [Adaptive Pricing](https://docs.stripe.com/payments/checkout/adaptive-pricing.md). - `adaptive_pricing.enabled` (boolean, optional) If set to `true`, Adaptive Pricing is available on [eligible sessions](https://docs.stripe.com/payments/currencies/localize-prices/adaptive-pricing.md?payment-ui=stripe-hosted#restrictions). Defaults to your [dashboard setting](https://dashboard.stripe.com/settings/adaptive-pricing). Configure actions after a Checkout Session has expired. You can’t set this parameter if `ui_mode` is `elements`. - `after_expiration.recovery` (object, optional) Configure a Checkout Session that can be used to recover an expired session.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

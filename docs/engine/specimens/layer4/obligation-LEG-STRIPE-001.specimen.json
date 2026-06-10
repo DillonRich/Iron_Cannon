@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-stripe-001",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "billing-subscription",
+  "section": "leg-stripe-001",
+  "content": {
+    "requirement": "Refund policy linked near checkout",
+    "obligations": [
+      "LEG-STRIPE-001"
+    ],
+    "compareSteps": [
+      "Run detect.type=route_link",
+      "Map result to obligation LEG-STRIPE-001",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-STRIPE-001: Refund policy linked near checkout"
+  },
+  "references": [
+    "legal/refund-policy-disclosure"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-STRIPE-001",
+        "type": "route_link",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "billing",
+    "disclaimerRequired": true
+  }
+}

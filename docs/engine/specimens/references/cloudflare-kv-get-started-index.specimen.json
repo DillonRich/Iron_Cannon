@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/kv-get-started-index",
+  "sourceUrl": "https://developers.cloudflare.com/kv/get-started/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Getting started",
+  "excerpt": "description: Create a KV namespace, write key-value pairs, and read data from Workers KV using Wrangler or the dashboard. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/kv/llms.txt > Use this file to discover all available pages before exploring further. Create a basic key-value store which stores the notification configuration of all users in an application, where each user may have `enabled` or `disabled` notifications. Workers KV provides low-latency, high-throughput global storage to your [Cloudflare Workers](https://developers.cloudflare.com/workers/) applications.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

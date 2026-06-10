@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-examples-sample-app",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/examples/sample-app.md",
+  "lastVerified": "2026-06-03",
+  "title": "Issuing and Treasury for platforms sample app",
+  "excerpt": "Use the Stripe Next.js sample app to start your own Issuing and Treasury for platforms integration. In addition to a full suite of documentation and SDKs for Stripe Issuing and Stripe Treasury for platforms, we offer a Next.js sample app. See a demo of our sample app at [baas.stripe.dev](https://baas.stripe.dev), or check out the [GitHub repository](https://github.com/stripe-samples/issuing-treasury). The sample app is a Next.js app that leverages TypeScript, React, and Material UI. You can fork the project from the [Stripe samples GitHub repository](https://github.com/stripe-samples/issuing-treasury) and use the included components as a starting point for your own app.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

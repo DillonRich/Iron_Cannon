@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-broadcasts-introduction",
+  "sourceUrl": "https://resend.com/docs/dashboard/broadcasts/introduction.md",
+  "lastVerified": "2026-06-03",
+  "title": "Managing Broadcasts",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Managing Broadcasts > Send marketing emails efficiently without code. Broadcasts allow you to send email blasts to your customers using a no-code editor on Resend, or from our [Broadcast API](/api-reference/broadcasts/create-broadcast). You can use this to send email blasts such as: * Newsletters * Product Launches * Investor Updates * Promotions * Changelogs ## Sending a Broadcast from Resend Our Broadcasts feature was made to enable your entire team to send email campaigns without having to ask for help from developers. ### No-Code Editor ### Markdown Support You can also write your emails using Markdown.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

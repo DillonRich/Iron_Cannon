@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/setup-intents-overview",
+  "sourceUrl": "https://docs.stripe.com/payments/setup-intents",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe SetupIntents",
+  "excerpt": "Save payment methods for recurring billing without immediate charge.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "stripe",
+    "setup-intents-overview"
+  ]
+}

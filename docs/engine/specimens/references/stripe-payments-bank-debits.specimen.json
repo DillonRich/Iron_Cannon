@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-bank-debits",
+  "sourceUrl": "https://docs.stripe.com/payments/bank-debits.md",
+  "lastVerified": "2026-06-03",
+  "title": "Bank Debits",
+  "excerpt": "Learn how to accept bank debits with Stripe. With bank debits, you can pull funds directly from your customer’s bank account for both one-time and recurring purchases. Bank debits are often used by: - Businesses collecting recurring payments from other businesses. - Retail and services businesses that want a low-cost alternative to cards for large consumer payments, like rent or tuition. Bank debits might not be a good fit for your business if: - You deliver goods immediately after checkout because payment confirmation takes several business days.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

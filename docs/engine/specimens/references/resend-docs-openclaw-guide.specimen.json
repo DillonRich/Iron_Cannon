@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-openclaw-guide",
+  "sourceUrl": "https://resend.com/docs/openclaw-guide.md",
+  "lastVerified": "2026-06-03",
+  "title": "OpenClaw Guide",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # OpenClaw Guide > Learn how to give your AI agent an inbox to send and receive emails. ## Why should I give my agent an inbox? Giving your agent an inbox enables it to: * **Sign up for its own accounts** to GitHub, hosting platforms, and more, so you don't need to share your own credentials.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

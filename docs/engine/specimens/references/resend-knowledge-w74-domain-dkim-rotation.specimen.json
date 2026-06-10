@@ -1,0 +1,15 @@
+{
+  "refId": "resend/knowledge-w74-domain-dkim-rotation",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w74/domain-dkim-rotation",
+  "lastVerified": "2026-06-06",
+  "title": "W74 domain-dkim-rotation",
+  "provider": "resend",
+  "excerpt": "DKIM keys rotated on schedule with zero downtime",
+  "embeddingHint": "resend domain-dkim-rotation wave74 stripe-resend-depth",
+  "tags": [
+    "wave74",
+    "knowledge",
+    "resend",
+    "stripe-resend-depth"
+  ]
+}

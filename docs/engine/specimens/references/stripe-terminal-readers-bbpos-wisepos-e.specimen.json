@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/terminal-readers-bbpos-wisepos-e",
+  "sourceUrl": "https://docs.stripe.com/terminal/readers/bbpos-wisepos-e.md",
+  "lastVerified": "2026-06-03",
+  "title": "BBPOS WisePOS E",
+  "excerpt": "Available in: US, CA, GB, IE, SG, AU, NZ, FR, DE, NL, BE, AT, ES, DK, SE, NO, CH, IT, LU, PT, FI, MY, CZ, PL![](https://b.stripecdn.com/docs-statics-srv/assets/wisepos-floating-tall.e8478124cda0e088b2e19f503f574f53.png) The [BBPOS WisePOS E](https://docs.stripe.com/terminal/payments/setup-reader/bbpos-wisepos-e.md) is a countertop reader for Stripe Terminal apps. It [connects](https://docs.stripe.com/terminal/payments/connect-reader.md?reader-type=internet) to the Stripe Terminal SDK over the internet. This reader is compatible with the following integrations: JavaScript, iOS, Android, and React Native SDKs and server-driven.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

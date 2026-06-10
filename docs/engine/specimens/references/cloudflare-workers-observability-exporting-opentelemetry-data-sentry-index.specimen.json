@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-observability-exporting-opentelemetry-data-sentry-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/observability/exporting-opentelemetry-data/sentry/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Export to Sentry",
+  "excerpt": "description: Export OpenTelemetry traces and logs from Cloudflare Workers to Sentry for monitoring and debugging. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Sentry is a software monitoring tool that helps developers identify and debug performance issues and errors. From end-to-end distributed tracing to performance monitoring, Sentry provides code-level observability that makes it easy to diagnose issues and learn continuously about your application code health across systems and services.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

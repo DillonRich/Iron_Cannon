@@ -1,0 +1,14 @@
+{
+  "refId": "owasp/knowledge-w65-csp-report-endpoint",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w65/csp-report-endpoint",
+  "lastVerified": "2026-06-06",
+  "title": "W65 csp-report-endpoint",
+  "provider": "owasp",
+  "excerpt": "Configure CSP report-uri or report-to to collect violation telemetry",
+  "embeddingHint": "owasp csp-report-endpoint wave65 legal security",
+  "tags": [
+    "wave65",
+    "knowledge",
+    "owasp"
+  ]
+}

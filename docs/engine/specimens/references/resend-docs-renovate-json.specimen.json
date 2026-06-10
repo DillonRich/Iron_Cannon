@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-renovate-json",
+  "sourceUrl": "https://resend.com/docs/renovate.json",
+  "lastVerified": "2026-06-03",
+  "title": "renovate",
+  "excerpt": "{ \"$schema\": \"https://docs.renovatebot.com/renovate-schema.json\", \"extends\": [\"config:recommended\"], \"schedule\": [\"before 3am on the first day of the month\"], \"rebaseWhen\": \"conflicted\" }",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

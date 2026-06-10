@@ -1,0 +1,11 @@
+{
+  "refId": "stripe/past-due-billing",
+  "sourceUrl": "https://stripe.com/docs/billing/subscriptions/overview",
+  "lastVerified": "2026-06-03",
+  "title": "Past due subscriptions",
+  "excerpt": "Handle customer.subscription.updated and invoice.payment_failed; show update payment method in app.",
+  "tags": [
+    "stripe",
+    "billing"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/vectorize-best-practices-create-indexes-index",
+  "sourceUrl": "https://developers.cloudflare.com/vectorize/best-practices/create-indexes/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Create indexes",
+  "excerpt": "description: Learn how to create Vectorize indexes, configure dimensions, and choose distance metrics. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/vectorize/llms.txt > Use this file to discover all available pages before exploring further. Indexes are the \"atom\" of Vectorize. Vectors are inserted into an index and enable you to query the index for similar vectors for a given input vector. Creating an index requires three inputs:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

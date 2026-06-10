@@ -1,0 +1,14 @@
+{
+  "refId": "nextjs/knowledge-w61-server-action-origin",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w61/server-action-origin",
+  "lastVerified": "2026-06-06",
+  "title": "W61 server-action-origin",
+  "provider": "nextjs",
+  "excerpt": "Server Actions require origin check; configure allowedOrigins in next.config",
+  "embeddingHint": "nextjs server-action-origin wave61 knowledge",
+  "tags": [
+    "wave61",
+    "knowledge",
+    "nextjs"
+  ]
+}

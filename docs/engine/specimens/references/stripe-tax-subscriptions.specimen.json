@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-subscriptions",
+  "sourceUrl": "https://docs.stripe.com/tax/subscriptions.md",
+  "lastVerified": "2026-06-03",
+  "title": "Collect taxes for recurring payments",
+  "excerpt": "Learn how to collect and report taxes for recurring payments. Stripe Tax allows you to calculate the tax amount on your recurring payments when using Stripe Billing. Use your customer’s location details to preview the tax amount before creating a subscription and then create it with Stripe Tax enabled when your customer is ready to pay. Stripe Tax integrates with Stripe Billing and automatically handles tax calculation with your [pricing model](https://docs.stripe.com/products-prices/pricing-models.md), [prorations](https://docs.stripe.com/billing/subscriptions/prorations.md), [discounts](https://docs.stripe.com/billing/subscriptions/coupons.md), [trials](https://docs.stripe.com/billing/subscriptions/trials.md), and so on.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

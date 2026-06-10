@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/cookies/consent-gate",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": null,
+  "adapterId": null,
+  "section": "consent-gate",
+  "content": {
+    "requirement": "Cookie consent gate for non-essential scripts when primaryMarkets includes eu or uk",
+    "obligations": ["LEG-COOKIE-001", "LEG-COOKIE-002"],
+    "markets": ["eu", "uk"],
+    "compareSteps": [
+      "If primaryMarkets includes eu/uk: scan for consent banner component or script gate",
+      "Flag analytics/ads scripts loading before consent in layout/root",
+      "Advisory only—user declares markets; engine does not geolocate"
+    ],
+    "remediationDirective": "Implement consent banner; defer non-essential scripts until consent granted; document essential auth cookies separately."
+  },
+  "references": ["legal/cookie-consent-eu"],
+  "compliancePatterns": {
+    "advisory": [
+      { "id": "LEG-COOKIE-002", "type": "component_scan", "patterns": ["cookie", "consent"], "tier": "ironclad", "markets": ["eu", "uk"] },
+      { "id": "LEG-COOKIE-001", "type": "script_before_consent", "tier": "ironclad", "markets": ["eu", "uk"] }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "cookies", "disclaimerRequired": true }
+}

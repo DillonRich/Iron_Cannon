@@ -1,0 +1,10 @@
+{
+  "refId": "ironcannon/corpus-staleness-sla",
+  "sourceUrl": "https://ironcannon.dev/patterns/corpus-staleness",
+  "lastVerified": "2026-05-31",
+  "title": "IC corpus staleness SLA",
+  "excerpt": "Cards: legal 60d, stripe/cloudflare 45d, default 90d. STALE flag in compose. Weekly llms.txt HEAD check. Harvest trigger on vendor API bump.",
+  "appliesTo": ["CORPUS_STALENESS_POLICY", "CORPUS_GOVERNANCE", "T04"],
+  "tags": ["ironcannon", "pattern", "corpus"],
+  "authorship": "iron-cannon-pattern"
+}

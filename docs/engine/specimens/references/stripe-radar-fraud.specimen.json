@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/radar-fraud",
+  "sourceUrl": "https://docs.stripe.com/radar",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe Radar fraud",
+  "excerpt": "Radar rules block high-risk cards. Review blocked payments in Dashboard. Not required for V1 golden path but recommended before high volume.",
+  "appliesTo": [
+    "billing-subscription",
+    "P1"
+  ],
+  "tags": [
+    "stripe",
+    "fraud"
+  ]
+}

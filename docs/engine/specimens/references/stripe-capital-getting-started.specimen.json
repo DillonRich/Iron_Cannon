@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/capital-getting-started",
+  "sourceUrl": "https://docs.stripe.com/capital/getting-started.md",
+  "lastVerified": "2026-06-03",
+  "title": "Set up Capital",
+  "excerpt": "Determine which integration option to use when you set up Stripe Capital. > Capital for platforms is available in [public preview](https://docs.stripe.com/release-phases.md). Use Stripe Capital to set up a Capital program, and provide access to financing offers to your eligible connected accounts. Use the quickstart below to launch your program with a no-code integration. After launch, you can customize your integration with embedded components or Stripe APIs. Use the Dashboard to launch a Capital program to offer financing to your connected accounts. Launching your program means you enable sending automatic financing offers to all eligible connected accounts.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

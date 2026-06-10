@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M42",
+  "moduleId": "M42-deletion-ui",
+  "patternsUnderTest": [
+    "DEL-UI-001",
+    "DEL-UI-002",
+    "AUTH-P50-M42-",
+    "AUTH-P50-LIFECYCLE"
+  ],
+  "passSnippet": "export default function Danger() { return (<main>/settings/danger<input type=\"email\" name=\"confirmEmail\" /><div data-state=\"grace_period\">grace</div></main>); }",
+  "failSnippet": "export default function Settings() { return <button>Delete</button>; }",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "DEL-UI-001"
+  ]
+}

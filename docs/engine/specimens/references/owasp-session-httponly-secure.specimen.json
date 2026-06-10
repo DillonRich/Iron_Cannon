@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/session-httponly-secure",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "Session cookie flags (HttpOnly, Secure, SameSite)",
+  "excerpt": "Session cookies must use HttpOnly to prevent XSS theft, Secure on HTTPS, and SameSite=Lax or Strict to reduce CSRF. Do not store session tokens in localStorage. Regenerate session ID on privilege change (login).",
+  "appliesTo": ["auth-lifecycle", "layer3/session-hardening"],
+  "tags": ["owasp", "session", "security"]
+}

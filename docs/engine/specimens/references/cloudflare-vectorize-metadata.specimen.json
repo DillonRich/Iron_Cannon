@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/vectorize-metadata",
+  "sourceUrl": "https://developers.cloudflare.com/vectorize/",
+  "lastVerified": "2026-05-31",
+  "title": "Vectorize metadata filtering",
+  "excerpt": "Metadata filters on vector queries for obligation-scoped RAG at Iron Clad tier.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "cloudflare",
+    "vectorize-metadata"
+  ]
+}

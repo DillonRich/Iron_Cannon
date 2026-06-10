@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-how-connect-works",
+  "sourceUrl": "https://docs.stripe.com/connect/how-connect-works.md",
+  "lastVerified": "2026-06-03",
+  "title": "How Connect works",
+  "excerpt": "Learn how Connect's features support multiparty integrations. Businesses such as marketplaces and software platforms use Connect to manage and route payments and payouts between sellers, customers, service providers, and other entities. - **Onboarding**: Onboard and verify sellers using connected accounts with Stripe-hosted flows, or build your own with our APIs. - **Account management**: Enable sellers to manage their account with Stripe-hosted Dashboards, embedded components, or custom interfaces you can build with our APIs. - **Payments**: Integrate payments and route funds to sellers on your platform. - **Payouts**: Pay out sellers with a variety of payout options. Enable cross-border payouts for global sellers.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

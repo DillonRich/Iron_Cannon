@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-link-mobile-payment-element-link",
+  "sourceUrl": "https://docs.stripe.com/payments/link/mobile-payment-element-link.md",
+  "lastVerified": "2026-06-03",
+  "title": "Link in the Mobile Payment Element",
+  "excerpt": "Add Link to your native iOS, Android, and React Native apps. Let your customer check out faster by using [Link](https://docs.stripe.com/payments/link.md) in the [Mobile Payment Element](https://docs.stripe.com/payments/accept-a-payment.md?payment-ui=mobile&platform=ios). You can autofill information for any customer already using Link, regardless of whether they initially saved their information in Link with another business. The default Mobile Payment Element integration includes a Link prompt in the card form. ![Link in iOS](https://b.stripecdn.com/docs-statics-srv/assets/link-in-ios.de526c6199ff89fbaa7b1beb5e8bc3da.png) 1.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

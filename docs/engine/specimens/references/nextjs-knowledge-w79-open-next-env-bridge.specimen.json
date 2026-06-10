@@ -1,0 +1,15 @@
+{
+  "refId": "nextjs/knowledge-w79-open-next-env-bridge",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w79/open-next-env-bridge",
+  "lastVerified": "2026-06-06",
+  "title": "W79 open-next-env-bridge",
+  "provider": "nextjs",
+  "excerpt": "OpenNext build injects NEXT_PUBLIC_* vars at Pages deploy time",
+  "embeddingHint": "nextjs open-next-env-bridge wave79 svc-001-exit",
+  "tags": [
+    "wave79",
+    "knowledge",
+    "nextjs",
+    "svc-001-exit"
+  ]
+}

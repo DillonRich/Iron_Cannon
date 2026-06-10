@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/identity-use-cases",
+  "sourceUrl": "https://docs.stripe.com/identity/use-cases.md",
+  "lastVerified": "2026-06-03",
+  "title": "Supported use cases and locations for Stripe Identity",
+  "excerpt": "Learn about the verification use cases and business locations supported by Stripe Identity. Eligibility to use Stripe Identity depends on a combination of your business location, how you plan to use Stripe Identity, and the type of business you operate. Check the following lists to determine if Stripe Identity currently supports your use case and industry in your location. While you can [verify identity documents](https://docs.stripe.com/identity/verification-checks.md?type=document) from hundreds of countries across the globe, Stripe Identity is generally available for businesses based in the following countries: Stripe Identity is also available in self-serve public beta for businesses based in the following countries: If you have any questions about supported and unsupported use cases,…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

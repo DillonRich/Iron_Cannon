@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-chat-sdk-proactive-outreach",
+  "sourceUrl": "https://resend.com/docs/chat-sdk-proactive-outreach.md",
+  "lastVerified": "2026-06-03",
+  "title": "Chat SDK Proactive Outreach",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Chat SDK Proactive Outreach > Start new email conversations proactively with the Chat SDK adapter. By default, the Chat SDK adapter responds to inbound emails. With `openDM`, you can go the other way and start a new email thread with any address, without waiting for them to email you first. ## Sending a proactive email Call `openDM` on the adapter to create a new thread, then post a message to it.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-webhooks-ingester",
+  "sourceUrl": "https://resend.com/docs/webhooks/ingester.md",
+  "lastVerified": "2026-06-03",
+  "title": "Webhook Ingester",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Webhook Ingester > A self-hosted solution to store all your Resend webhook events in your own database. The Resend Webhook Ingester is an open-source Next.js application that receives, verifies, and stores all your webhook events in your own database. Deploy it to your infrastructure and gain full control over your email event data. For more details on why you should store your webhook data, see the [data storage guide](/dashboard/webhooks/how-to-store-webhooks-data).…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/accessibility/aria-icon-buttons",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": null,
+  "section": "aria-icon-buttons",
+  "content": {
+    "requirement": "Icon-only buttons must expose accessible names via aria-label",
+    "obligations": ["LEG-A11Y-003"],
+    "compareSteps": [
+      "Find button elements without visible text content",
+      "Require aria-label or aria-labelledby on each"
+    ],
+    "remediationDirective": "Add aria-label describing the button action (e.g. aria-label=\"Close menu\")."
+  },
+  "references": ["legal/wcag-aria-basics"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "LEG-A11Y-003", "type": "required_attribute", "selector": "button", "attr": "aria-label", "tier": "ironclad" }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "accessibility", "disclaimerRequired": true }
+}

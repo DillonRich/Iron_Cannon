@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/d1-get-started-index",
+  "sourceUrl": "https://developers.cloudflare.com/d1/get-started/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Getting started",
+  "excerpt": "description: Create your first D1 database, define a schema, and query it from a Cloudflare Worker. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/d1/llms.txt > Use this file to discover all available pages before exploring further. * Creating your first database using D1, Cloudflare's native serverless SQL database. * Creating a schema and querying your database via the command-line.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

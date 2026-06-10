@@ -1,0 +1,14 @@
+{
+  "refId": "legal/status-page-link",
+  "sourceUrl": "https://ironcannon.dev/planning/W65/ref/legal-status-page-link",
+  "lastVerified": "2026-06-06",
+  "title": "status page link",
+  "provider": "legal",
+  "excerpt": "Maintain a public status page and link it in incident communications and support templates.",
+  "embeddingHint": "legal/status-page-link wave65 obligation-source legal",
+  "tags": [
+    "wave65",
+    "obligation-source",
+    "legal"
+  ]
+}

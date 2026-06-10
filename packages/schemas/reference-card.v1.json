@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ironcannon.dev/schemas/reference-card/v1",
+  "type": "object",
+  "required": ["refId", "sourceUrl", "lastVerified", "title", "excerpt"],
+  "properties": {
+    "refId": { "type": "string" },
+    "sourceUrl": { "type": "string", "format": "uri" },
+    "lastVerified": { "type": "string", "format": "date" },
+    "title": { "type": "string" },
+    "excerpt": { "type": "string", "maxLength": 2000 },
+    "appliesTo": { "type": "array", "items": { "type": "string" } },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "authorship": { "type": "string" }
+  },
+  "additionalProperties": true
+}

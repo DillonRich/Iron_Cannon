@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-send-email",
+  "sourceUrl": "https://docs.stripe.com/invoicing/send-email.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send customer emails",
+  "excerpt": "Configure and send invoicing emails to your customers. Set up Stripe to send important email notifications and reminders to your customers. You can configure email notifications to contain a link to a Stripe-hosted page or your own custom URL that customers can use to confirm or update their payment details and manage their subscriptions. > Stripe *invoices* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice) are [customizable](https://docs.stripe.com/invoicing/customize.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

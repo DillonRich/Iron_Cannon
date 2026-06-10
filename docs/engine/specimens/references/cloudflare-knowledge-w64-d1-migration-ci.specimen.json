@@ -1,0 +1,14 @@
+{
+  "refId": "cloudflare/knowledge-w64-d1-migration-ci",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w64/d1-migration-ci",
+  "lastVerified": "2026-06-06",
+  "title": "W64 d1-migration-ci",
+  "provider": "cloudflare",
+  "excerpt": "Run D1 migrations in CI before deploy; never mutate prod schema manually",
+  "embeddingHint": "cloudflare d1-migration-ci wave64 legal security",
+  "tags": [
+    "wave64",
+    "knowledge",
+    "cloudflare"
+  ]
+}

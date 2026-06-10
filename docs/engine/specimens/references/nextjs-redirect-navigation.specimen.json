@@ -1,0 +1,9 @@
+{
+  "refId": "nextjs/redirect-navigation",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/routing/redirecting",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js redirect and navigation",
+  "excerpt": "Use redirect() from next/navigation in Server Actions and route handlers after auth mutations. Prefer redirect over client router.push for post-login to avoid stale RSC cache. Combine with router.refresh() when UI must sync without full navigation.",
+  "appliesTo": ["auth-lifecycle", "billing-subscription"],
+  "tags": ["nextjs", "redirect", "navigation"]
+}

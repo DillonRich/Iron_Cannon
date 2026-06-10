@@ -1,0 +1,17 @@
+{
+  "fixtureId": "A01",
+  "moduleId": "A01-security-surface-map",
+  "patternsUnderTest": [
+    "SURF-MAP-001",
+    "SURF-MAP-002",
+    "ARM-P52-A01",
+    "ARM-P52-HARDENING"
+  ],
+  "passSnippet": "export const surfaces = [{ surfaceId: 'SURF-SESSION-001', overlayModuleId: 'A02-session-hardening-pass' }, { surfaceId: 'SURF-WH-001', overlayModuleId: 'A03-webhook-hardening-pass' }];",
+  "failSnippet": "export const surfaces = [{ type: 'webhook' }]; // no SURF ids",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "SURF-MAP-001"
+  ]
+}

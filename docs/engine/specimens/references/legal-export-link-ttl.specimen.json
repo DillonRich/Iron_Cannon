@@ -1,0 +1,11 @@
+{
+  "refId": "legal/export-link-ttl",
+  "sourceUrl": "https://gdpr.eu/right-to-data-portability/",
+  "lastVerified": "2026-06-03",
+  "title": "Export download TTL",
+  "excerpt": "Data export download links must expire (recommended 24–72 hours), require authentication to request export, and use signed URLs.",
+  "tags": [
+    "legal",
+    "data-rights"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/stripe-tax",
+  "sourceUrl": "https://docs.stripe.com/payments/checkout/taxes",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe Tax in Checkout",
+  "excerpt": "Enable automatic tax calculation in Checkout when selling globally. Requires tax settings in Dashboard. Iron Cannon billing modules may add manualConfigStep for tax registration.",
+  "appliesTo": [
+    "billing-subscription",
+    "P1"
+  ],
+  "tags": [
+    "stripe",
+    "tax"
+  ]
+}

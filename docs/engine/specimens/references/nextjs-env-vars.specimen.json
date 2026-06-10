@@ -1,0 +1,9 @@
+{
+  "refId": "nextjs/env-vars",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/configuring/environment-variables",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js environment variables",
+  "excerpt": "NEXT_PUBLIC_* exposed to browser—never secrets. STRIPE_SECRET_KEY, RESEND_API_KEY server-only. Use .env.local dev; Cloudflare Pages env in production. Validate required env at boot.",
+  "appliesTo": ["layer2/nextjs", "cloudflare/pages-env"],
+  "tags": ["nextjs", "env", "secrets"]
+}

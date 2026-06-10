@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "auth-lifecycle/signup",
+  "layer": 1,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": null,
+  "section": "signup",
+  "content": {
+    "requirement": "Sign-up creates pending user and sends verification email",
+    "steps": [
+      "Validate email format server-side",
+      "Rate limit by IP + email hash",
+      "Create user row status=pending; constant-time response for duplicate email",
+      "Send verification via Resend with idempotency key",
+      "Transition S00 → S01 on success"
+    ],
+    "unhappyPaths": [
+      { "failure": "duplicate_email", "ui": "Check email or sign in", "backend": "Same timing as success" },
+      { "failure": "email_send_failed", "ui": "Retry send", "backend": "Queue retry; log" }
+    ]
+  },
+  "references": ["owasp/authentication", "owasp/rate-limiting", "resend/send-api"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "AUTH-SU-001", "type": "required_string", "value": "rateLimit", "tier": "pro" }
+    ],
+    "forbidden": [
+      { "id": "AUTH-SU-F01", "type": "forbidden_string", "value": "email already exists", "tier": "pro" }
+    ]
+  },
+  "metadata": { "minTier": "pro", "category": "auth-signup" }
+}

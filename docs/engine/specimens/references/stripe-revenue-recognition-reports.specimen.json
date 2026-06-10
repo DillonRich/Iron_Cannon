@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-reports",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/reports.md",
+  "lastVerified": "2026-06-03",
+  "title": "Revenue Recognition reports",
+  "excerpt": "Generate and export revenue reports using Stripe Revenue Recognition. Stripe Revenue Recognition automatically generates reports that you can view in the Stripe Dashboard and export as CSV files. Use these reports to analyze revenue, deferred revenue and booked revenue across aggregate and detailed views, helping you validate data and prepare financial statements. > Revenue Recognition generates reports from transactions processed by Stripe. Expect a 4-hour delay before data displays in the Dashboard. Stripe Revenue Recognition requires specific configuration of your Stripe account: - Model subscriptions using [products and prices](https://docs.stripe.com/products-prices/overview.md), and [customers](https://docs.stripe.com/billing/customer.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

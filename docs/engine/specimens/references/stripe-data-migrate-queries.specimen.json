@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/data-migrate-queries",
+  "sourceUrl": "https://docs.stripe.com/data/migrate-queries.md",
+  "lastVerified": "2026-06-03",
+  "title": "Migrate queries",
+  "excerpt": "Migrate your Sigma queries from Presto to Trino. We upgraded Sigma’s query infrastructure from [Presto v334](https://trino.io/docs/334/sql.html) to [Trino v414](https://trino.io/docs/414/sql/select.html). Most queries run faster as a result of the upgrade, but a few queries might error unexpectedly or produce results in different formats. Use the following suggestions to make your Sigma queries compatible with Trino v414. The `AMERICA/NEW_YORK` time zone is no longer valid in Trino v414. -- FAILED: Presto error: NOT_SUPPORTED: Time zone not supported: AMERICA/NEW_YORK c.created AT TIME ZONE 'AMERICA/NEW_YORK',",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

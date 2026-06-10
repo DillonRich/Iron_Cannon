@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-requirements",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/requirements.md",
+  "lastVerified": "2026-06-03",
+  "title": "Treasury for platforms requirements",
+  "excerpt": "Understand the requirements for using Treasury for platforms. *Stripe Treasury for platforms* (A collection of API endpoints and cloud- and web-based features that enable platforms to offer embedded financial solutions to their users) have compliance requirements and restrictions in addition to those needed for [Stripe Payments](https://docs.stripe.com/payments.md). They apply to both the platform and its connected accounts. Offer your Stripe Treasury-based financial services only to businesses that meet the requirements. Stripe requires that Treasury platforms maintain a fraud risk management process. The process must include proactive measures to prevent and monitor unauthorized or fraudulent activity, and take steps to remediate it.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

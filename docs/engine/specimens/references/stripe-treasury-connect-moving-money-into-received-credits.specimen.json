@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-moving-money-into-received-credits",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/moving-money/into/received-credits.md",
+  "lastVerified": "2026-06-03",
+  "title": "Moving money using ReceivedCredit objects",
+  "excerpt": "Learn how to move money into a financial account from another financial account or bank account. When funds move into a financial account, Stripe creates a corresponding [ReceivedCredit](https://docs.stripe.com/api/treasury/received_credits.md) object on the account. A `ReceivedCredit` contains information on how the funds were sent and from what account, where possible. You can send funds to a financial account with the account’s routing and account numbers for `ach` and `us_domestic_wire`, or the financial account ID for transfers between financial accounts. When the origin of the funds is another financial account, the `ReceivedCredit` contains a `linked_flows.source_flow` reference to the originating money movement.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

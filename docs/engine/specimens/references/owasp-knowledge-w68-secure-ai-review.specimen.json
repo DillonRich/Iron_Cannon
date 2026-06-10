@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/knowledge-w68-secure-ai-review",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w68/secure-ai-review",
+  "lastVerified": "2026-06-06",
+  "title": "W68 secure-ai-review",
+  "provider": "owasp",
+  "excerpt": "Human review required for AI-generated security-sensitive diffs",
+  "embeddingHint": "owasp secure-ai-review wave68 adversarial",
+  "tags": [
+    "wave68",
+    "knowledge",
+    "owasp",
+    "adversarial"
+  ]
+}

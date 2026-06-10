@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-subscriptions-quantities",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/quantities.md",
+  "lastVerified": "2026-06-03",
+  "title": "Set product or subscription quantities",
+  "excerpt": "Subscribe a customer to multiple products, or to multiple quantities of a single product, all billed in a single invoice. You might need to create subscriptions for [multiple products](https://docs.stripe.com/billing/subscriptions/quantities.md#multiple-product-sub) or for [multiple quantities of the same product](https://docs.stripe.com/billing/subscriptions/quantities.md#multiple-quantities-sub). You can also create [multiple subscriptions for individual customers](https://docs.stripe.com/billing/subscriptions/quantities.md#multiple-subscriptions). If you offer multiple products or want to charge different amounts for the same product, you can create a subscription for multiple products. This generates a single *invoice* (Invoices are statements of amounts owed by a customer.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

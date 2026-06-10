@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-reference-how-workers-works-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/reference/how-workers-works/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "How Workers works",
+  "excerpt": "description: The difference between the Workers runtime versus traditional browsers and Node.js. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Though Cloudflare Workers behave similarly to [JavaScript ↗](https://www.cloudflare.com/learning/serverless/serverless-javascript/) in the browser or in Node.js, there are a few differences in how you have to think about your code. Under the hood, the Workers runtime uses the [V8 engine ↗](https://www.cloudflare.com/learning/serverless/glossary/what-is-chrome-v8/) — the same engine used by Chromium and Node.js.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

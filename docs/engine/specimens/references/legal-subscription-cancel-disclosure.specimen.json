@@ -1,0 +1,11 @@
+{
+  "refId": "legal/subscription-cancel-disclosure",
+  "sourceUrl": "https://stripe.com/docs/billing/subscriptions/cancel",
+  "lastVerified": "2026-06-03",
+  "title": "Cancel subscription UX",
+  "excerpt": "Users must reach cancel flow from account settings or Customer Portal without dark patterns.",
+  "tags": [
+    "legal",
+    "billing"
+  ]
+}

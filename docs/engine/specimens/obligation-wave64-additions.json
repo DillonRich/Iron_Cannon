@@ -1,0 +1,14 @@
+{
+  "obligations": [
+    { "id": "LEG-W64-001", "category": "billing", "title": "Stripe webhook signatures verified before event processing", "sourceRefId": "stripe/webhook-signature", "detect": { "type": "config" } },
+    { "id": "LEG-W64-002", "category": "security", "title": "Cloudflare Turnstile protects login and signup forms", "sourceRefId": "cloudflare/turnstile", "detect": { "type": "config" } },
+    { "id": "LEG-W64-003", "category": "security", "title": "WAF rules block common auth abuse on public routes", "sourceRefId": "cloudflare/waf-overview", "detect": { "type": "config" } },
+    { "id": "LEG-W64-004", "category": "billing", "title": "Stripe Radar enabled for high-risk payment flows", "sourceRefId": "stripe/radar-fraud", "detect": { "type": "config" } },
+    { "id": "LEG-W64-005", "category": "security", "title": "Workers rate limiting on authenticated API routes", "sourceRefId": "cloudflare/workers-runtime-apis-bindings-rate-limit-index", "detect": { "type": "config" } },
+    { "id": "LEG-W64-006", "category": "billing", "title": "Idempotency keys on Stripe POST mutations", "sourceRefId": "stripe/idempotency", "detect": { "type": "config" } },
+    { "id": "LEG-W64-007", "category": "security", "title": "Logs redact PAN and CVV per OWASP logging guidance", "sourceRefId": "owasp/cheatsheets-logging-cheat-sheet-html", "detect": { "type": "pattern", "pattern": "redact" } },
+    { "id": "LEG-W64-008", "category": "privacy", "title": "GDPR data portability export available on request", "sourceRefId": "legal/gdpr-data-subject-rights", "detect": { "type": "route_exists", "path": "/account/export" } },
+    { "id": "LEG-W64-009", "category": "billing", "title": "Stripe test mode keys blocked in production deploy", "sourceRefId": "stripe/test-mode-block", "detect": { "type": "config" } },
+    { "id": "LEG-W64-010", "category": "security", "title": "D1 schema migrations versioned and applied before deploy", "sourceRefId": "cloudflare/d1-migrations", "detect": { "type": "config" } }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w70-error-catalog-parity",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w70/error-catalog-parity",
+  "lastVerified": "2026-06-06",
+  "title": "W70 error-catalog-parity",
+  "provider": "ironcannon",
+  "excerpt": "MCP errors match g2:error-catalog registry",
+  "embeddingHint": "ironcannon error-catalog-parity wave70 resilience-telemetry",
+  "tags": [
+    "wave70",
+    "knowledge",
+    "ironcannon",
+    "resilience-telemetry"
+  ]
+}

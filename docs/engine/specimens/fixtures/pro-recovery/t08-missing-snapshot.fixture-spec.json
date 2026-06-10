@@ -1,0 +1,12 @@
+{
+  "fixtureId": "T08-02",
+  "description": "Unknown moduleId in state_log",
+  "input": {
+    "moduleId": "M99-nonexistent",
+    "stateLogMarkdown": "### M01-auth-d1-schema\n\n| status | complete |\n"
+  },
+  "expected": {
+    "ok": false,
+    "code": "ROLLBACK_SNAPSHOT_MISSING"
+  }
+}

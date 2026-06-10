@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-set-up",
+  "sourceUrl": "https://docs.stripe.com/tax/set-up.md",
+  "lastVerified": "2026-06-03",
+  "title": "Set up Stripe Tax",
+  "excerpt": "Enable Stripe Tax to automatically calculate and collect tax. To set up Stripe Tax, configure your tax settings through the Dashboard on the [tax settings page](https://dashboard.stripe.com/settings/tax). Alternatively, you can use the [Tax Settings API](https://docs.stripe.com/api/tax/settings.md). Depending on your integration, add [one line of code](https://docs.stripe.com/tax/set-up.md#integrate) to enable tax. If you’re a platform that wants to set up Stripe Tax for your connected accounts that are responsible for collecting, filing, and reporting taxes, see [Tax for software platforms](https://docs.stripe.com/tax/tax-for-platforms.md). > [Log in](https://dashboard.stripe.com/settings/tax) or [sign up](https://dashboard.stripe.com/register) for Stripe to enable Stripe Tax.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "pattern": "StripeSignature|signature verification|constructEvent",
+    "edgeCaseId": "E02",
+    "diagnosis": "Stripe webhook signature verification failed",
+    "relatedModules": ["M12-stripe-webhook", "M13-provisioning-kv"],
+    "references": ["docs/flows/billing-subscription.md", "docs/flows/webhook-idempotency.md"],
+    "steps": [
+      { "order": 1, "action": "Confirm STRIPE_WEBHOOK_SECRET matches Stripe dashboard endpoint", "verification": "stripe listen --forward-to localhost" },
+      { "order": 2, "action": "Use raw body with constructEvent", "verification": "T05 M12 passes" },
+      { "order": 3, "action": "Verify KV idempotency for duplicate events", "verification": "Replay event returns 200 without double provision" }
+    ]
+  }
+]

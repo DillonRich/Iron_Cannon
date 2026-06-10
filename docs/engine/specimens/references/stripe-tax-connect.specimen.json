@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-connect",
+  "sourceUrl": "https://docs.stripe.com/tax/connect.md",
+  "lastVerified": "2026-06-03",
+  "title": "Use Stripe Tax with Connect",
+  "excerpt": "Understand how Stripe Tax can help your platform and your connected accounts comply with tax obligations. Stripe Tax supports [Connect](https://docs.stripe.com/connect.md) by helping you calculate and collect taxes. It provides transactional reports to help with tax reporting and filing for your platform or your connected accounts. The first step for using Stripe Tax with Connect requires you to **determine which entity has the obligation to collect and report taxes**.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

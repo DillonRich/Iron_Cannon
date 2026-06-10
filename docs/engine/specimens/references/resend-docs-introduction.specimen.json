@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-introduction",
+  "sourceUrl": "https://resend.com/docs/introduction.md",
+  "lastVerified": "2026-06-03",
+  "title": "Introduction",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Introduction > Resend is the email API for developers. export const TerminalIcon = props => {'Terminal'} ; export const DotnetIcon = props => {'.NET'} ; export const JavaIcon = props => {'Java'} ; export const ElixirIcon = props => {'Elixir'} ; export const RustIcon = props => {'Rust'} ; export const GoIcon = props => {'Go'} ; export const RailsIcon = props => {'Rails'} ; export const RubyIcon = props => {'Ruby'} ; export const PythonIcon = props => {'Python'} ; export const LaravelIcon = props => {'Laravel'} ; export const PhpIcon = props => {'PHP'} ; export const ExpressIcon = props => {'Express'} ; export const…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

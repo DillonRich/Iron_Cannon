@@ -1,0 +1,9 @@
+{
+  "refId": "legal/gdpr-privacy-notice",
+  "sourceUrl": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/the-right-to-be-informed/",
+  "lastVerified": "2026-05-31",
+  "title": "GDPR privacy notice requirements (hooks)",
+  "excerpt": "Privacy notices should identify controller, purposes, legal bases, retention, rights, and subprocessors. Iron Cannon detects presence of privacy policy route and subprocessors mention (Stripe, Resend, Cloudflare)—not legal review of notice text.",
+  "appliesTo": ["LEG-PRIV-008", "LEG-PRIV-009", "privacy-gdpr-ccpa"],
+  "tags": ["legal", "gdpr", "privacy"]
+}

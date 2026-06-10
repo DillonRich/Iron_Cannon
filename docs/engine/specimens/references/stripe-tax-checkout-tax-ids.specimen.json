@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-checkout-tax-ids",
+  "sourceUrl": "https://docs.stripe.com/tax/checkout/tax-ids.md",
+  "lastVerified": "2026-06-03",
+  "title": "Collect customer tax IDs",
+  "excerpt": "Learn how to collect VAT and other customer tax IDs during checkout. Displaying a customer’s tax ID and legal business name on *invoices* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice) is a common requirement that you can satisfy by enabling tax ID collection in Checkout. Tax ID collection works with all Checkout integration types: the hosted page, embedded page, and elements mode. > The Checkout Sessions API is designed to collect business tax IDs, which might have formats similar to personal tax IDs in certain jurisdictions.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

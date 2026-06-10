@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-EDGE-005",
+  "obligationId": "LEG-EDGE-005",
+  "detectType": "schema_column",
+  "detect": {
+    "type": "schema_column",
+    "table": "users",
+    "column": "email_verified_at"
+  },
+  "passSnippet": "ALTER TABLE users ADD email_verified_at TEXT",
+  "failSnippet": "gap LEG-EDGE-005",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

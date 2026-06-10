@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w61-020",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Skip navigation link as first focusable element",
+    "obligations": [
+      "LEG-W61-020"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Skip navigation link as first focusable element"
+  },
+  "references": [
+    "legal/skip-nav-link"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W61-020",
+        "type": "ui_pattern",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "a11y",
+    "disclaimerRequired": true
+  }
+}

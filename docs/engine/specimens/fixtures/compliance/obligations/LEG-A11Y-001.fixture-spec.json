@@ -1,0 +1,15 @@
+{
+  "fixtureId": "LEG-A11Y-001",
+  "obligationId": "LEG-A11Y-001",
+  "detectType": "required_attribute",
+  "detect": {
+    "type": "required_attribute",
+    "selector": "img",
+    "attr": "alt",
+    "scope": "auth_routes"
+  },
+  "passSnippet": "pass LEG-A11Y-001",
+  "failSnippet": "gap LEG-A11Y-001",
+  "expectedPass": "gap",
+  "expectedFail": "gap"
+}

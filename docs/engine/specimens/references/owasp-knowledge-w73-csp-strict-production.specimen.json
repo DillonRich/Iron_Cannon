@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/knowledge-w73-csp-strict-production",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w73/csp-strict-production",
+  "lastVerified": "2026-06-06",
+  "title": "W73 csp-strict-production",
+  "provider": "owasp",
+  "excerpt": "Strict CSP in production with nonce hashes",
+  "embeddingHint": "owasp csp-strict-production wave73 armor-hardening",
+  "tags": [
+    "wave73",
+    "knowledge",
+    "owasp",
+    "armor-hardening"
+  ]
+}

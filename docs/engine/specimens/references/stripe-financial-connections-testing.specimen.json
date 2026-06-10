@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/financial-connections-testing",
+  "sourceUrl": "https://docs.stripe.com/financial-connections/testing.md",
+  "lastVerified": "2026-06-03",
+  "title": "Test Financial Connections",
+  "excerpt": "Learn how to test your integration with simulated Financial Connections accounts. Refer to the [testing](https://docs.stripe.com/testing.md) documentation to learn more about testing your Stripe integration. To test Financial Connections, follow the relevant [use case guide](https://docs.stripe.com/financial-connections/use-cases.md) using a *sandbox* (A sandbox is an isolated test environment that allows you to test Stripe functionality in your account without affecting your live integration. Use sandboxes to safely experiment with new features and changes) and its associated test API keys. Accounts and customers that you make in a sandbox are invisible to your live mode integration.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

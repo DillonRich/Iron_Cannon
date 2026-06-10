@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/accessibility/document-structure",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": "nextjs-app-router",
+  "section": "document-structure",
+  "content": {
+    "requirement": "HTML document language and page titles on key routes",
+    "obligations": ["LEG-A11Y-007", "LEG-A11Y-008", "LEG-A11Y-005"],
+    "compareSteps": [
+      "Root layout must set html lang attribute",
+      "Auth routes must export metadata.title or contain title element",
+      "Advisory: skip navigation link to #main"
+    ],
+    "remediationDirective": "Set lang on html in root layout; add metadata.title per route; optional skip link to main content."
+  },
+  "references": ["legal/wcag-overview", "legal/wcag-skip-nav"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "LEG-A11Y-007", "type": "required_attribute", "selector": "html", "attr": "lang", "tier": "ironclad" },
+      { "id": "LEG-A11Y-008", "type": "pattern", "patterns": ["metadata.title", "<title>"], "scope": "auth_routes", "tier": "ironclad" }
+    ],
+    "advisory": [
+      { "id": "LEG-A11Y-005", "type": "pattern", "patterns": ["skip to content", "#main"], "tier": "ironclad" }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "accessibility", "disclaimerRequired": true }
+}

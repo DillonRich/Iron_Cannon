@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-reference-how-the-cache-works-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/reference/how-the-cache-works/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "How the Cache works",
+  "excerpt": "description: How Workers interacts with the Cloudflare cache. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Workers was designed and built on top of Cloudflare's global network to allow developers to interact directly with the Cloudflare cache. The cache can provide ephemeral, data center-local storage, as a convenient way to frequently access static or dynamic content. By allowing developers to write to the cache, Workers provide a way to customize cache behavior on Cloudflare’s CDN.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

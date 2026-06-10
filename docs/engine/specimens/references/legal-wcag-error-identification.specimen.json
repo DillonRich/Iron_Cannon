@@ -1,0 +1,11 @@
+{
+  "refId": "legal/wcag-error-identification",
+  "sourceUrl": "https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html",
+  "lastVerified": "2026-06-03",
+  "title": "Error identification",
+  "excerpt": "Associate validation errors with fields via aria-describedby; announce in aria-live region.",
+  "tags": [
+    "legal",
+    "a11y"
+  ]
+}

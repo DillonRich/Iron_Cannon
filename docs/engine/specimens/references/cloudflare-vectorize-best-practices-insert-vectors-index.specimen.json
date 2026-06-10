@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/vectorize-best-practices-insert-vectors-index",
+  "sourceUrl": "https://developers.cloudflare.com/vectorize/best-practices/insert-vectors/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Insert vectors",
+  "excerpt": "description: Insert and upsert vectors into a Vectorize index, including supported formats and namespaces. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/vectorize/llms.txt > Use this file to discover all available pages before exploring further. Vectorize indexes allow you to insert vectors at any point: Vectorize will optimize the index behind the scenes to ensure that vector search remains efficient, even as new vectors are added or existing vectors updated. If the same vector id is _inserted_ twice in a Vectorize index, the index would reflect the vector that was added first.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

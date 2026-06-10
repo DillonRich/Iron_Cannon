@@ -1,0 +1,9 @@
+{
+  "refId": "resend/domains-create",
+  "sourceUrl": "https://resend.com/docs/api-reference/domains/create-domain",
+  "lastVerified": "2026-05-31",
+  "title": "Resend create domain",
+  "excerpt": "POST /domains with name field. Returns DNS records for SPF/DKIM. userApprovalRequired: user owns DNS registrar. Agent presents record table; user confirms DNS changes before verify step.",
+  "appliesTo": ["email-lifecycle", "manualConfigSteps"],
+  "tags": ["resend", "manual-config"]
+}

@@ -1,0 +1,14 @@
+{
+  "refId": "stripe/invoice-legal-entity",
+  "sourceUrl": "https://ironcannon.dev/planning/W65/ref/stripe-invoice-legal-entity",
+  "lastVerified": "2026-06-06",
+  "title": "invoice legal entity",
+  "provider": "stripe",
+  "excerpt": "Stripe invoices display legal entity name and tax ID where required.",
+  "embeddingHint": "stripe/invoice-legal-entity wave65 obligation-source legal",
+  "tags": [
+    "wave65",
+    "obligation-source",
+    "stripe"
+  ]
+}

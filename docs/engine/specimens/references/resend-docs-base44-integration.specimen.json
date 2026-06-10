@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-base44-integration",
+  "sourceUrl": "https://resend.com/docs/base44-integration.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send emails with Base44 and Resend",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send emails with Base44 and Resend > Learn how to add the Resend integration to your Base44 project. [Base44](https://base44.com/) is a platform for building apps with AI. You can add Resend in a Base44 project by asking the chat to add email sending with Resend. This integration requires backend functions, a feature available only on Builder tier and above. Learn more about [Base44 pricing](https://base44.com/pricing). ## 1. Add the Resend integration in Base44 **If starting a new app:** 1. Click **Integration** in the top nav. 2. Search for **Resend**, select it, and choose **Use This Integration**.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "refId": "legal/gdpr-ropa",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/legal-gdpr-ropa",
+  "lastVerified": "2026-06-04",
+  "title": "RoPA entry for new processing after feature launch",
+  "provider": "legal",
+  "excerpt": "LEG-W53-001: RoPA entry for new processing after feature launch",
+  "embeddingHint": "LEG-W53-001 privacy manual",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

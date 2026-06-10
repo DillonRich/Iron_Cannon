@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/disputes-prevention-fraud-types",
+  "sourceUrl": "https://docs.stripe.com/disputes/prevention/fraud-types.md",
+  "lastVerified": "2026-06-03",
+  "title": "Common types of online fraud",
+  "excerpt": "Learn about the different kinds of fraud and what your liability is. A payment is considered fraudulent when the cardholder didn’t authorize it. Most fraudulent payments are made using stolen cards or card numbers. When a cardholder is notified that the payment has been made or they review their card statement, they contact their *card issuer* (The entity that issued a payment card to a cardholder. This could be a bank, such as with the Visa or Mastercard network, or it could be the card network itself, such as with American Express) to dispute it. Online fraud is fundamentally different to fraud that occurs at brick-and-mortar businesses as it’s harder to be certain that the person you’re selling to is who they say they are.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-SEC-002",
+  "obligationId": "LEG-SEC-002",
+  "detectType": "manual",
+  "detect": {
+    "type": "manual",
+    "note": "Agent documents IR contact in README internal"
+  },
+  "passSnippet": "manualReviewCompleted=true",
+  "failSnippet": "not reviewed yet",
+  "expectedPass": "met",
+  "expectedFail": "advisory"
+}

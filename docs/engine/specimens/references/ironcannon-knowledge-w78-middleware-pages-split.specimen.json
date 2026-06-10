@@ -1,0 +1,14 @@
+{
+  "refId": "ironcannon/knowledge-w78-middleware-pages-split",
+  "sourceUrl": "https://ironcannon.dev/planning/W78/ironcannon-knowledge-w78-middleware-pages-split",
+  "lastVerified": "2026-06-06",
+  "title": "Session cookies scoped to shared parent domain on split hosts",
+  "provider": "ironcannon",
+  "excerpt": "LEG-W78-006: Session cookies scoped to shared parent domain on split hosts",
+  "embeddingHint": "LEG-W78-006 security wave78",
+  "tags": [
+    "planning",
+    "wave78",
+    "obligation-source"
+  ]
+}

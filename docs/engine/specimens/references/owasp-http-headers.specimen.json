@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/http-headers",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP HTTP security headers",
+  "excerpt": "Set HSTS, X-Content-Type-Options, Referrer-Policy, Permissions-Policy. CSP for XSS defense. X-Frame-Options or CSP frame-ancestors for clickjacking. Apply on all HTML responses via middleware or _headers.",
+  "appliesTo": ["Armor", "layer3"],
+  "tags": ["owasp", "headers", "armor"]
+}

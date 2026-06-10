@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/event-destinations",
+  "sourceUrl": "https://docs.stripe.com/event-destinations.md",
+  "lastVerified": "2026-06-03",
+  "title": "Integrate with events",
+  "excerpt": "Send events from Stripe to webhook endpoints and cloud services. > [Thin events](https://docs.stripe.com/event-destinations.md#thin-events) for API v1 resources are available in private preview. You can use them to streamline integration upgrades without changing your webhook configuration. Previously, thin events only supported API v2 resources. [Learn more and request access](https://docs.google.com/forms/d/e/1FAIpQLSeEkqzB02afvlklMkqwA6wsBH90eW8gxmc-hBOvqe2N6TRujQ/viewform?usp=dialog). Set up an event destination to receive events from Stripe across multiple destination types, including webhook endpoints, [Amazon EventBridge](https://docs.stripe.com/event-destinations/eventbridge.md), and [Azure Event Grid](https://docs.stripe.com/event-destinations/eventgrid.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

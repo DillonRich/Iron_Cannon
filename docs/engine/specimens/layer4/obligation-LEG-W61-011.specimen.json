@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w61-011",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Arbitration clause jurisdiction matches primary market",
+    "obligations": [
+      "LEG-W61-011"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Arbitration clause jurisdiction matches primary market"
+  },
+  "references": [
+    "legal/arbitration-jurisdiction"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W61-011",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "terms",
+    "disclaimerRequired": true
+  }
+}

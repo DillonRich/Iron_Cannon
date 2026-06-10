@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/crypto-onramp-embedded",
+  "sourceUrl": "https://docs.stripe.com/crypto/onramp/embedded.md",
+  "lastVerified": "2026-06-03",
+  "title": "Set up an Embedded onramp integration",
+  "excerpt": "Use this guide to fully customize the embeddable onramp. This guide is an extended version of the [Embedded onramp quickstart](https://docs.stripe.com/crypto/onramp/embedded-quickstart.md). Learn to add more functionality such as how to: - Install the SDK using a script tag or package manager - Configure the onramp UI into mobile web views - Handle customer supportability and fraud - Fetch estimated cryptocurrency conversion quotes",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

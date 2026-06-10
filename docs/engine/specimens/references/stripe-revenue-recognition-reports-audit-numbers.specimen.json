@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-reports-audit-numbers",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/reports/audit-numbers.md",
+  "lastVerified": "2026-06-03",
+  "title": "Audit your numbers",
+  "excerpt": "Use the Stripe Dashboard to examine the details of your revenue numbers. You can get a detailed view of accounting numbers from the Dashboard either by customers or by transactions for: - Each number in the [period summary report](https://docs.stripe.com/revenue-recognition/reports/period-summary.md) - Each number in the [revenue waterfall report](https://docs.stripe.com/revenue-recognition/reports/waterfall.md) - Each number in the AR aging summary report Choose a month in [the monthly summary section](https://dashboard.stripe.com/revenue-recognition) to get a report of the activity that occurred during that time.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-get-started-prompting-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/get-started/prompting/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Prompting",
+  "excerpt": "description: Build Workers apps with AI prompts and MCP servers. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. You can create Workers applications from simple prompts in your favorite agent or editor, including Cursor, Windsurf, VS Code, Claude Code, Codex, and OpenCode. Connect the [cloudflare-docs ↗](https://github.com/cloudflare/mcp-server-cloudflare/tree/main/apps/docs-vectorize) MCP (Model Context Protocol) server to teach your agent about Workers.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "supabase/knowledge-w80-stripe-customer-metadata",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w80/stripe-customer-metadata",
+  "lastVerified": "2026-06-06",
+  "title": "W80 stripe-customer-metadata",
+  "provider": "supabase",
+  "excerpt": "stripe_customer_id stored in Supabase profiles with RLS — server writes only",
+  "embeddingHint": "supabase stripe-customer-metadata wave80 svc-002-supabase-harvest",
+  "tags": [
+    "wave80",
+    "knowledge",
+    "supabase",
+    "svc-002-supabase-harvest"
+  ]
+}

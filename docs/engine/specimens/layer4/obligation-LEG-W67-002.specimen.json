@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w67-002",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "RAG retrieval validates corpus chunks before prompt injection",
+    "obligations": [
+      "LEG-W67-002"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "RAG retrieval validates corpus chunks before prompt injection"
+  },
+  "references": [
+    "owasp/cheatsheets-rag-security-cheat-sheet-html"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W67-002",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

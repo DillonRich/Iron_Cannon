@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-domains-introduction",
+  "sourceUrl": "https://resend.com/docs/dashboard/domains/introduction.md",
+  "lastVerified": "2026-06-03",
+  "title": "Managing Domains",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Managing Domains > Visualize all the domains on the Resend Dashboard. Domain not verifying? [Try this](/knowledge-base/what-if-my-domain-is-not-verifying). ## Verifying a domain Resend sends emails using a domain you own. We recommend using subdomains (e.g., `updates.example.com`) to isolate your sending reputation and communicate your intent. Learn more about [using subdomains](/knowledge-base/is-it-better-to-send-emails-from-a-subdomain-or-the-root-domain). To verify a domain, you must set two DNS entries: 1. [SPF](#what-are-spf-records): list of IP addresses authorized to send email on behalf of your domain 2.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

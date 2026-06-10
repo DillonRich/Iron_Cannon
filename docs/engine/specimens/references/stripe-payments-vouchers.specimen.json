@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-vouchers",
+  "sourceUrl": "https://docs.stripe.com/payments/vouchers.md",
+  "lastVerified": "2026-06-03",
+  "title": "Vouchers",
+  "excerpt": "Learn about voucher payment methods with Stripe. Voucher payment methods are different from gift vouchers. If you want to issue gift vouchers, try promos and discounts with [Checkout](https://docs.stripe.com/payments/checkout/discounts.md). With vouchers, customers complete online purchases in-person at authorized locations such as convenience stores. Vouchers are often used by: - Businesses with customers that don’t have cards or bank accounts. - Retailers with consumers in countries such as Mexico, where card authorizations rates are low and offering a backup payment option improves conversion. Vouchers might not be a good fit for your business if:",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

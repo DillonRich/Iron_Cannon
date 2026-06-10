@@ -1,0 +1,16 @@
+{
+  "refId": "supabase/svc002-supabase-sd07-wiremap-order-017",
+  "sourceUrl": "https://ironcannon.dev/svc002/supabase/sd07-wiremap-order-17",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-002 sd07-wiremap-order 17",
+  "provider": "supabase",
+  "excerpt": "SD-07 wiremap: M70 auth config → M71 SSR middleware → M11–M16 billing (no D1 auth modules).",
+  "embeddingHint": "supabase sd07-wiremap-order svc002 supabase sd-07 rls ssr",
+  "tags": [
+    "svc002",
+    "supabase",
+    "sd-07",
+    "supabase",
+    "sd07-wiremap-order"
+  ]
+}

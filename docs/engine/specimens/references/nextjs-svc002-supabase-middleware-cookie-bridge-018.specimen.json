@@ -1,0 +1,16 @@
+{
+  "refId": "nextjs/svc002-supabase-middleware-cookie-bridge-018",
+  "sourceUrl": "https://ironcannon.dev/svc002/supabase/middleware-cookie-bridge-18",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-002 middleware-cookie-bridge 18",
+  "provider": "nextjs",
+  "excerpt": "Middleware reads/writes Supabase session cookies; never persist session in localStorage.",
+  "embeddingHint": "nextjs middleware-cookie-bridge svc002 supabase sd-07 rls ssr",
+  "tags": [
+    "svc002",
+    "supabase",
+    "sd-07",
+    "nextjs",
+    "middleware-cookie-bridge"
+  ]
+}

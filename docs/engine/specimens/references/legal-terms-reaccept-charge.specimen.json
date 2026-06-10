@@ -1,0 +1,14 @@
+{
+  "refId": "legal/terms-reaccept-charge",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/legal-terms-reaccept-charge",
+  "lastVerified": "2026-06-04",
+  "title": "Material terms change triggers reaccept before next charge",
+  "provider": "legal",
+  "excerpt": "LEG-W53-008: Material terms change triggers reaccept before next charge",
+  "embeddingHint": "LEG-W53-008 terms route_exists",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

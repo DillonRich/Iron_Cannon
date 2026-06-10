@@ -1,0 +1,9 @@
+{
+  "refId": "legal/wcag-skip-nav",
+  "sourceUrl": "https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html",
+  "lastVerified": "2026-05-31",
+  "title": "WCAG bypass blocks (skip navigation)",
+  "excerpt": "Provide a mechanism to skip repeated navigation blocks. Common pattern: visually hidden 'Skip to main content' link as first focusable element targeting #main. Improves keyboard navigation on marketing and app layouts.",
+  "appliesTo": ["LEG-A11Y-005", "accessibility-wcag"],
+  "tags": ["legal", "wcag", "skip-nav", "a11y"]
+}

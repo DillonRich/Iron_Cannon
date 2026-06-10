@@ -1,0 +1,14 @@
+{
+  "refId": "legal/children-block",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/legal-children-block",
+  "lastVerified": "2026-06-04",
+  "title": "Children under 16 blocked at signup",
+  "provider": "legal",
+  "excerpt": "LEG-W53-015: Children under 16 blocked at signup",
+  "embeddingHint": "LEG-W53-015 global ui_pattern",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/d1-examples-d1-and-hono-index",
+  "sourceUrl": "https://developers.cloudflare.com/d1/examples/d1-and-hono/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Query D1 from Hono",
+  "excerpt": "description: Query D1 from the Hono web framework image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/d1/llms.txt > Use this file to discover all available pages before exploring further. Hono is a fast web framework for building API-first applications, and it includes first-class support for both [Workers](https://developers.cloudflare.com/workers/) and [Pages](https://developers.cloudflare.com/pages/). * Ensure you have configured your [Wrangler configuration file](https://developers.cloudflare.com/d1/get-started/#3-bind-your-worker-to-your-d1-database) to bind your D1 database to your Worker.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

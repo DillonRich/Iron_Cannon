@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-PRIV-010",
+  "obligationId": "LEG-PRIV-010",
+  "detectType": "manual",
+  "detect": {
+    "type": "manual",
+    "note": "Only if product targets minors"
+  },
+  "passSnippet": "manualReviewCompleted=true",
+  "failSnippet": "not reviewed yet",
+  "expectedPass": "met",
+  "expectedFail": "advisory"
+}

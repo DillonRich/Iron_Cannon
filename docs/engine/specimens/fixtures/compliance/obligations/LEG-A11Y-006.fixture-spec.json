@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-A11Y-006",
+  "obligationId": "LEG-A11Y-006",
+  "detectType": "manual",
+  "detect": {
+    "type": "manual",
+    "note": "Agent may run axe; not auto-gated at launch"
+  },
+  "passSnippet": "manualReviewCompleted=true",
+  "failSnippet": "not reviewed yet",
+  "expectedPass": "met",
+  "expectedFail": "advisory"
+}

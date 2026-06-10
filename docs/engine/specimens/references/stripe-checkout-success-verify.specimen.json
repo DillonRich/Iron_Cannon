@@ -1,0 +1,11 @@
+{
+  "refId": "stripe/checkout-success-verify",
+  "sourceUrl": "https://stripe.com/docs/checkout/quickstart",
+  "lastVerified": "2026-06-03",
+  "title": "Verify checkout server-side",
+  "excerpt": "Success page must retrieve Checkout Session by ID server-side; never trust client-only success.",
+  "tags": [
+    "stripe",
+    "billing"
+  ]
+}

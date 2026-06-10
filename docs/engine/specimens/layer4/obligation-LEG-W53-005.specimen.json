@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w53-005",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Failed payment retry shows grace period in UI",
+    "obligations": [
+      "LEG-W53-005"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Failed payment retry shows grace period in UI"
+  },
+  "references": [
+    "legal/billing-grace-ui"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W53-005",
+        "type": "ui_pattern",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "billing",
+    "disclaimerRequired": true
+  }
+}

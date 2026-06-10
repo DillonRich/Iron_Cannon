@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W53-012",
+  "obligationId": "LEG-W53-012",
+  "detectType": "schema_table",
+  "detect": {
+    "type": "schema_table",
+    "table": "cookie_categories"
+  },
+  "passSnippet": "table cookie_categories",
+  "failSnippet": "table other",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

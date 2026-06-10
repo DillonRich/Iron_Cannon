@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/disputes-match",
+  "sourceUrl": "https://docs.stripe.com/disputes/match.md",
+  "lastVerified": "2026-06-03",
+  "title": "High risk merchant lists",
+  "excerpt": "Learn the criteria for inclusion in MATCH and VMSS lists. *Card networks* (A network that processes the transactions of a particular card brand. It might be an intermediary in front of an issuing bank as with Visa or Mastercard, or a standalone entity as with American Express), such as Visa and Mastercard, operate databases known as Terminated Merchant Files (TMFs) that contain information about accounts that have been closed by credit card processors around the world for high chargebacks or violations of card brand rules. All payment processors must check these databases when accepting a new user, and must also add merchants to the database if they close the account and it meets TMF criteria. Being placed on a TMF can have serious effects.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

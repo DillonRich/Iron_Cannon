@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-charges-create",
+  "sourceUrl": "https://docs.stripe.com/api/charges/create.md",
+  "lastVerified": "2026-06-03",
+  "title": "Charges",
+  "excerpt": "This method is no longer recommended—use the [Payment Intents API](https://docs.stripe.com/docs/api/payment_intents.md) to initiate a new payment instead. Confirmation of the PaymentIntent creates the `Charge` object used to request payment. Returns the charge object if the charge succeeded. This call raises [an error](https://docs.stripe.com/api/charges/create.md#errors) if something goes wrong. A common source of error is an invalid or expired card, or a valid card with insufficient available balance. Amount intended to be collected by this payment. A positive integer representing how much to charge in the [smallest currency unit](https://docs.stripe.com/docs/currencies.md#zero-decimal) (e.g., 100 cents to charge $1.00 or 100 to charge ¥100, a zero-decimal currency).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M32",
+  "moduleId": "M32-onboarding-ui",
+  "patternsUnderTest": [
+    "ONB-UI-001",
+    "ONB-UI-003",
+    "AUTH-P50-M32-",
+    "AUTH-P50-LIFECYCLE"
+  ],
+  "passSnippet": "// app/onboarding/page.tsx\nimport { useRouter } from 'next/navigation';\nexport default function Onboarding() { const router = useRouter(); router.refresh(); return <main>/onboarding</main>; }",
+  "failSnippet": "export default function Dashboard() { return <main>dashboard only</main>; }",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "ONB-UI-001"
+  ]
+}

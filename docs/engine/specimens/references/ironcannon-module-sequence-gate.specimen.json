@@ -1,0 +1,17 @@
+{
+  "refId": "ironcannon/module-sequence-gate",
+  "sourceUrl": "https://ironcannon.dev/patterns/module-sequence",
+  "lastVerified": "2026-05-31",
+  "title": "IC module sequence gate",
+  "excerpt": "T04 blocked until prior module T05 pass or first module. MODULE_SEQUENCE_VIOLATION if skip ahead. state_log is source of truth.",
+  "appliesTo": [
+    "T04",
+    "T05",
+    "GP-01"
+  ],
+  "tags": [
+    "ironcannon",
+    "pattern"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

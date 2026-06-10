@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w73-001",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Strict CSP with nonces in production",
+    "obligations": [
+      "LEG-W73-001"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Strict CSP with nonces in production"
+  },
+  "references": [
+    "owasp/cheatsheets-content-security-policy-cheat-sheet-html"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W73-001",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

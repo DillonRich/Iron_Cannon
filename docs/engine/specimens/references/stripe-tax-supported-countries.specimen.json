@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-supported-countries",
+  "sourceUrl": "https://docs.stripe.com/tax/supported-countries.md",
+  "lastVerified": "2026-06-03",
+  "title": "Countries supported by Stripe Tax",
+  "excerpt": "Stripe can calculate tax on sales in the locations listed in the table below. Select a location to learn more about: - When to register for tax collection on your sales - How to register to collect tax and links to the relevant tax authority You can also learn about tax calculation and collection in each region: - [Africa](https://docs.stripe.com/tax/supported-countries/africa.md) - [Asia Pacific](https://docs.stripe.com/tax/supported-countries/asia-pacific.md)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

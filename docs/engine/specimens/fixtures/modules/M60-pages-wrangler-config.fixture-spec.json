@@ -1,0 +1,16 @@
+{
+  "fixtureId": "M60",
+  "moduleId": "M60-pages-wrangler-config",
+  "patternsUnderTest": [
+    "PAGES-CFG-001",
+    "PAGES-CFG-002",
+    "BILL-P49-M60-"
+  ],
+  "passSnippet": "pages_build_output_dir = \".open-next/assets\"\ncompatibility_flags = [\"nodejs_compat\"]",
+  "failSnippet": "pages_build_output_dir = \"out\"",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "PAGES-CFG-002"
+  ]
+}

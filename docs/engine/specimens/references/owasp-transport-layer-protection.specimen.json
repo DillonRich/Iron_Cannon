@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/transport-layer-protection",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Transport layer protection",
+  "excerpt": "Enforce HTTPS everywhere. Set HSTS in production. Cloudflare Pages/Workers terminate TLS at edge. Never send session cookies without Secure flag. Redirect HTTP to HTTPS at edge.",
+  "appliesTo": ["layer3", "Armor", "cloudflare"],
+  "tags": ["owasp", "tls", "https"]
+}

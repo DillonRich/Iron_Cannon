@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-choose-cards",
+  "sourceUrl": "https://docs.stripe.com/issuing/choose-cards.md",
+  "lastVerified": "2026-06-03",
+  "title": "Choose which type of card to issue",
+  "excerpt": "Decide on physical or virtual cards for your cardholders. Stripe offers several options for the types of cards that can be issued to cardholders. This page describes these options at a high level, including tradeoffs and use cases for each. You can issue multiple card types simultaneously for your card program. You can also transition to different options as your business needs change. For example, if you wanted to create a custom card, you could issue an instant physical card while you’re working with the Stripe team to manufacture your custom design.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

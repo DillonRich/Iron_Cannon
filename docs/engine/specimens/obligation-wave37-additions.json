@@ -1,0 +1,8 @@
+{
+  "obligations": [
+    { "id": "LEG-SEC-001", "title": "Security.txt or contact for disclosures", "category": "security-disclosure", "sourceRefId": "legal/disclaimer", "severity": "advisory", "tier": "ironclad", "detect": { "type": "route_exists", "path": "/.well-known/security.txt" } },
+    { "id": "LEG-SEC-002", "title": "Incident response runbook linked internally", "category": "security-disclosure", "sourceRefId": "owasp/authentication", "severity": "advisory", "tier": "ironclad", "detect": { "type": "manual", "note": "Agent documents IR contact in README internal" } },
+    { "id": "LEG-BILL-001", "title": "Sales tax displayed when Stripe Tax enabled", "category": "billing", "sourceRefId": "stripe/tax-collection", "severity": "advisory", "tier": "ironclad", "detect": { "type": "config", "key": "automatic_tax" } },
+    { "id": "LEG-BILL-002", "title": "Invoice history accessible to subscriber", "category": "billing", "sourceRefId": "stripe/api-invoices", "severity": "recommended", "tier": "ironclad", "detect": { "type": "ui_pattern", "pattern": "invoice history" } }
+  ]
+}

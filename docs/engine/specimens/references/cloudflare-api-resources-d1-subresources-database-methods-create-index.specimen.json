@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/api-resources-d1-subresources-database-methods-create-index",
+  "sourceUrl": "https://developers.cloudflare.com/api/resources/d1/subresources/database/methods/create/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "REST API",
+  "excerpt": "**post** `/accounts/{account_id}/d1/database` - `jurisdiction: optional \"eu\" or \"fedramp\"` Specify the location to restrict the D1 database to run and store data. If this option is present, the location hint is ignored. - `primary_location_hint: optional \"wnam\" or \"enam\" or \"weur\" or 3 more` Specify the region to create the D1 primary, if available. If this option is omitted, the D1 will be created as close as possible to the current user. - `read_replication: optional object { mode }`",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

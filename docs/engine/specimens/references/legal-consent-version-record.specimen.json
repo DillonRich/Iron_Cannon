@@ -1,0 +1,14 @@
+{
+  "refId": "legal/consent-version-record",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/legal-consent-version-record",
+  "lastVerified": "2026-06-04",
+  "title": "Consent timestamp stored with version id",
+  "provider": "legal",
+  "excerpt": "LEG-W53-016: Consent timestamp stored with version id",
+  "embeddingHint": "LEG-W53-016 record schema_column",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

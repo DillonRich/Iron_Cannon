@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/session-invalidation",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "Server-side session invalidation on logout",
+  "excerpt": "Logout must invalidate the session on the server (delete session record, revoke token). Clearing client storage alone is insufficient. After logout, treat the user as anonymous on all subsequent requests.",
+  "appliesTo": ["auth-lifecycle", "layer3/session-hardening/logout"],
+  "tags": ["owasp", "session", "logout"]
+}

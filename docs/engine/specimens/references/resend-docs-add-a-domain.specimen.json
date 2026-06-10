@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-add-a-domain",
+  "sourceUrl": "https://resend.com/docs/add-a-domain.md",
+  "lastVerified": "2026-06-05",
+  "title": "Add a domain",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Add a domain > Get started sending emails by adding a domain to your account. Resend sends emails using a domain you own. Before you can send or receive emails with Resend, you must have a verified domain associated with your account.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

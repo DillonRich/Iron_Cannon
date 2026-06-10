@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-send-with-django",
+  "sourceUrl": "https://resend.com/docs/send-with-django.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send emails with Django",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send emails with Django > Learn how to send your first email using Django and the Resend Python SDK. ## Prerequisites To get the most out of this guide, you'll need to: * [Create an API key](https://resend.com/api-keys) * [Verify your domain](https://resend.com/domains) ## 1. Install Get the [django-anymail](https://anymail.dev/en/stable/esps/resend/) package with Resend support. ```bash Pip theme={\"theme\":{\"light\":\"github-light\",\"dark\":\"vesper\"}} pip install django-anymail[resend] ``` ## 2. Configure Add Anymail to your Django settings.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

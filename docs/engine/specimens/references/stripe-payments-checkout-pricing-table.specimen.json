@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-checkout-pricing-table",
+  "sourceUrl": "https://docs.stripe.com/payments/checkout/pricing-table.md",
+  "lastVerified": "2026-06-03",
+  "title": "Embeddable pricing table for subscriptions",
+  "excerpt": "Display a subscription pricing table on your website and take customers directly to Stripe Checkout. You can use the Stripe Dashboard to create an embeddable pricing table to: - Display *pricing information* (The pricing model consists of the products or services you sell, how much they cost, what currency you accept for payments, and the service period to charge (for subscriptions). To build the pricing model, you use Products—what you sell—and Prices—how much and how often to charge for your products) and take customers to a prebuilt checkout flow. The checkout flow uses [Stripe Checkout](https://docs.stripe.com/payments/checkout.md) to complete the purchase.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

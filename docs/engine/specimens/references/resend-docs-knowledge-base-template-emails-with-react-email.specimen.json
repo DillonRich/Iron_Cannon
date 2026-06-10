@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-template-emails-with-react-email",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/template-emails-with-react-email.md",
+  "lastVerified": "2026-06-03",
+  "title": "Template emails with React Email",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Template emails with React Email > Author email templates as React components and upload them to Resend with the CLI. With [React Email](https://react.email), write email templates as React components, with full TypeScript and [Tailwind support](https://react.email/docs/components/tailwind), and a local preview server. Preview your emails in real time with hot reloading, and render to email-friendly HTML or plain text when you're ready to send.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

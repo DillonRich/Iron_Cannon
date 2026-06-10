@@ -1,0 +1,14 @@
+{
+  "refId": "stripe/invoices-overview",
+  "sourceUrl": "https://docs.stripe.com/invoicing",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe Invoicing",
+  "excerpt": "Subscriptions generate Invoices automatically. Listen for invoice.payment_failed for dunning. invoice.paid confirms successful cycle.",
+  "appliesTo": [
+    "billing-subscription",
+    "M12-stripe-webhook"
+  ],
+  "tags": [
+    "stripe"
+  ]
+}

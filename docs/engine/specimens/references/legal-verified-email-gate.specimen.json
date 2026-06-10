@@ -1,0 +1,11 @@
+{
+  "refId": "legal/verified-email-gate",
+  "sourceUrl": "https://owasp.org/www-project-web-security-testing-guide/",
+  "lastVerified": "2026-06-03",
+  "title": "Verified email before sensitive action",
+  "excerpt": "Require email_verified_at before checkout, deletion, or export. Resend verification from settings.",
+  "tags": [
+    "legal",
+    "security"
+  ]
+}

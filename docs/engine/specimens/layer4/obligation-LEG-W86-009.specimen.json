@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w86-009",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Business infra validator in stretch suite",
+    "obligations": [
+      "LEG-W86-009"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Business infra validator in stretch suite"
+  },
+  "references": [
+    "ironcannon/knowledge-w86-validate-business-infra-plan"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W86-009",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

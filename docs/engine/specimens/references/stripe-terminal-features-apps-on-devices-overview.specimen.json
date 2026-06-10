@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/terminal-features-apps-on-devices-overview",
+  "sourceUrl": "https://docs.stripe.com/terminal/features/apps-on-devices/overview.md",
+  "lastVerified": "2026-06-03",
+  "title": "Apps on Devices",
+  "excerpt": "Learn about deploying your Android POS apps on Stripe smart readers. Apps on Devices isn’t available to all users. If you pay [standard pricing](https://stripe.com/pricing) on card present transactions, Apps on Devices is available at no extra cost. If you’re interested in using it, [contact your sales representative](https://stripe.com/contact/sales) so they can assess your eligibility and pricing. If you don’t have a sales representative, contact us using the form at [Stripe support](https://support.stripe.com) to enable this feature. To be eligible, you must have either an existing Android-based POS application or the resources to build an Android application. When using direct charges, a single platform must control your connected account.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

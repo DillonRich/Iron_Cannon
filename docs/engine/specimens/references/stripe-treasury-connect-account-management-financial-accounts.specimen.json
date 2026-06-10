@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-account-management-financial-accounts",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/account-management/financial-accounts.md",
+  "lastVerified": "2026-06-03",
+  "title": "Working with financial accounts",
+  "excerpt": "Use financial accounts to store, send, and receive funds. > The Accounts v2 API doesn’t support Treasury workflows. If you have accounts created with Accounts v2, you can use Accounts v1 to manage the `treasury` and `card_issuing` capabilities. For details, see [Use Accounts as customers](https://docs.stripe.com/accounts-v2/use-accounts-as-customers.md). After you [gain API access to Stripe Treasury for platforms](https://docs.stripe.com/treasury/connect/access.md), Stripe attaches a financial account to your platform account and enables you to provision financial accounts for eligible connected accounts on your platform.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

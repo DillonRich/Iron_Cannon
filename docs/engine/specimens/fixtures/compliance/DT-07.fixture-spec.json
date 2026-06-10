@@ -1,0 +1,8 @@
+{
+  "fixtureId": "DT-07",
+  "detectType": "schema_table",
+  "passSnippet": "CREATE TABLE consent_audit_log (id TEXT PRIMARY KEY)",
+  "failSnippet": "CREATE TABLE users (id TEXT PRIMARY KEY)",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-settings-team",
+  "sourceUrl": "https://resend.com/docs/dashboard/settings/team.md",
+  "lastVerified": "2026-06-03",
+  "title": "Managing Teams",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Managing Teams > Manage your account across multiple teams Resend allows multiple teams to be managed under a single email address. Each team is distinct, with its own API keys, billing, and usage. ## Inviting new members to a team 1. Navigate to your [**Team Settings**](https://resend.com/settings/team). 2. Click **Invite**. Input an email address and select a role (**Admin** or **Member**). * **Members** have access to manage emails, domains and webhooks. * **Admins** have all Member permissions plus the ability to invite users, update payments, and delete the team. 3.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

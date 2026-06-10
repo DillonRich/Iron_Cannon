@@ -1,0 +1,15 @@
+{
+  "refId": "resend/batch-email",
+  "sourceUrl": "https://resend.com/docs/api-reference/emails/send-batch",
+  "lastVerified": "2026-05-31",
+  "title": "Resend batch send",
+  "excerpt": "Batch transactional sends with rate limits.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "resend",
+    "batch-email"
+  ]
+}

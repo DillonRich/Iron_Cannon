@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-automations-introduction",
+  "sourceUrl": "https://resend.com/docs/dashboard/automations/introduction.md",
+  "lastVerified": "2026-06-03",
+  "title": "Using Automations",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Using Automations > Automate emails with custom events. Automations allow you to **create email steps** based on custom events from your application. You can use Automations for use cases like: * Welcome emails * Drip campaigns * Payment recovery * Abandoned cart * Trial expiration Automations support `{{{RESEND_UNSUBSCRIBE_URL}}}` for compliance with non-transactional product and marketing messaging. Read more about [when to use an unsubscribe link](/knowledge-base/should-i-add-an-unsubscribe-link). ## How it works To start executing an Automation, you need to: Outline the sequence of steps to be executed.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-data-004",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-data-004",
+  "content": {
+    "requirement": "Export download expires",
+    "obligations": [
+      "LEG-DATA-004"
+    ],
+    "compareSteps": [
+      "Run detect.type=config",
+      "Map result to obligation LEG-DATA-004",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-DATA-004: Export download expires"
+  },
+  "references": [
+    "legal/export-link-ttl"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-DATA-004",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "data-rights",
+    "disclaimerRequired": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M51",
+  "moduleId": "M51-export-worker",
+  "patternsUnderTest": [
+    "EXP-WK-001",
+    "EXP-WK-002",
+    "AUTH-P50-M51-",
+    "AUTH-P50-LIFECYCLE"
+  ],
+  "passSnippet": "await env.R2.put(key, data); const signedUrl = createSignedUrl(env, key); UPDATE export_jobs SET status = 'export_ready'",
+  "failSnippet": "console.log('export done');",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "EXP-WK-001"
+  ]
+}

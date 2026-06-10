@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-edge-008",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-edge-008",
+  "content": {
+    "requirement": "Preview deploy blocks live Stripe keys",
+    "obligations": [
+      "LEG-EDGE-008"
+    ],
+    "compareSteps": [
+      "Run detect.type=config",
+      "Map result to obligation LEG-EDGE-008",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-EDGE-008: Preview deploy blocks live Stripe keys"
+  },
+  "references": [
+    "stripe/test-live-separation"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-EDGE-008",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "edge",
+    "disclaimerRequired": true
+  }
+}

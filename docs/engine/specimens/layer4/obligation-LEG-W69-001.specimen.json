@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w69-001",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Rate limits enforced on MCP HTTP surface",
+    "obligations": [
+      "LEG-W69-001"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Rate limits enforced on MCP HTTP surface"
+  },
+  "references": [
+    "cloudflare/workers-rate-limits"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W69-001",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

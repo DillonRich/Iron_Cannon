@@ -1,0 +1,9 @@
+{
+  "refId": "resend/send-api",
+  "sourceUrl": "https://resend.com/docs/api-reference/emails/send-email",
+  "lastVerified": "2026-05-31",
+  "title": "Resend send email API",
+  "excerpt": "POST https://api.resend.com/emails with Authorization Bearer re_xxx. Required: from (verified domain), to[], subject, html or text. Returns email id on 200. Handle 429 rate limit with backoff. Send from Worker via fetch, never expose API key client-side.",
+  "appliesTo": ["email-lifecycle", "layer2/resend"],
+  "tags": ["resend", "email"]
+}

@@ -1,0 +1,14 @@
+{
+  "obligations": [
+    { "id": "LEG-W66-001", "category": "security", "title": "Next.js middleware protects authenticated route segments", "sourceRefId": "nextjs/middleware", "detect": { "type": "config" } },
+    { "id": "LEG-W66-002", "category": "security", "title": "Server Actions validate and sanitize all inputs", "sourceRefId": "nextjs/server-actions", "detect": { "type": "config" } },
+    { "id": "LEG-W66-003", "category": "security", "title": "Output encoding prevents reflected XSS in user content", "sourceRefId": "owasp/cheatsheets-cross-site-scripting-prevention-cheat-sheet-html", "detect": { "type": "pattern", "pattern": "encode" } },
+    { "id": "LEG-W66-004", "category": "security", "title": "Insecure deserialization blocked on untrusted payloads", "sourceRefId": "owasp/cheatsheets-deserialization-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W66-005", "category": "operations", "title": "T05 verify runs before advancing to next module", "sourceRefId": "ironcannon/knowledge-w61-t05-before-t04-next", "detect": { "type": "flow_ref", "flow": "module-loop" } },
+    { "id": "LEG-W66-006", "category": "security", "title": "HSTS header enabled with preload on production apex", "sourceRefId": "owasp/cheatsheets-http-headers-cheat-sheet-html", "detect": { "type": "header" } },
+    { "id": "LEG-W66-007", "category": "security", "title": "Session cookies use HttpOnly Secure SameSite", "sourceRefId": "owasp/cheatsheets-session-management-cheat-sheet-html", "detect": { "type": "pattern", "pattern": "HttpOnly" } },
+    { "id": "LEG-W66-008", "category": "security", "title": "REST API rate limited per authenticated user", "sourceRefId": "owasp/cheatsheets-rest-security-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W66-009", "category": "security", "title": "Production error responses hide stack traces", "sourceRefId": "owasp/cheatsheets-error-handling-cheat-sheet-html", "detect": { "type": "pattern", "pattern": "generic" } },
+    { "id": "LEG-W66-010", "category": "compliance", "title": "IronClad layer4 compare includes required disclaimer", "sourceRefId": "ironcannon/compare-engine", "detect": { "type": "manual" } }
+  ]
+}

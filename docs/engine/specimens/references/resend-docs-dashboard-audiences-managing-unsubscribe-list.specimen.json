@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-audiences-managing-unsubscribe-list",
+  "sourceUrl": "https://resend.com/docs/dashboard/audiences/managing-unsubscribe-list.md",
+  "lastVerified": "2026-06-03",
+  "title": "Managing Unsubscribed Contacts",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Managing Unsubscribed Contacts > Learn how to check and remove recipients who have unsubscribed to your marketing emails. It's essential to update your Contact list when someone unsubscribes to maintain a good sender reputation. Benefits of managing your unsubscribe list: * reduces the likelihood of your emails being marked as spam * improves deliverability for any other marketing or transactional emails you send When you include an [unsubscribe link in your Broadcasts or Automations](/dashboard/segments/introduction#automatic-unsubscribes), Resend will automatically handle the unsubscribe flow for you.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

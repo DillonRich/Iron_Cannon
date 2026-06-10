@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/capital-marketing",
+  "sourceUrl": "https://docs.stripe.com/capital/marketing.md",
+  "lastVerified": "2026-06-03",
+  "title": "Marketing your Capital program",
+  "excerpt": "> Capital for platforms is available in [public preview](https://docs.stripe.com/release-phases.md). This guide shows how to build marketing assets for Capital that educate your users and promote the Capital program. Learn how to co-brand your product with Stripe and develop content that adheres to [regulatory requirements](https://docs.stripe.com/capital/regulatory-compliance.md) applicable to Capital. Financing is a highly regulated space, and all customer-facing material referencing Stripe Capital must be approved by Stripe and its financial partners before publication. Submit material for review and approval using the [Change Request Form](https://form.asana.com/?k=8K51UWmWhttehNFD5qBLdg&d=974470123217835).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

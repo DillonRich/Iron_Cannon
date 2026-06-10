@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/get-started-test-developer-integration",
+  "sourceUrl": "https://docs.stripe.com/get-started/test-developer-integration.md",
+  "lastVerified": "2026-06-03",
+  "title": "Build and test new features",
+  "excerpt": "Build and test new features using the Stripe developer tools. Use the Stripe developer tools to integrate new features without interrupting your business operations or compromising customer data. This guide helps you: - Test changes without affecting your live system using [Sandboxes](https://docs.stripe.com/sandboxes.md). - Build and manage your integration with [Workbench](https://docs.stripe.com/workbench.md). - Listen to key activities in your Stripe account to automate business processes with [event destinations](https://docs.stripe.com/event-destinations.md). Imagine you’re a developer at Kavholm, a furniture company ready to introduce a [new payment method](https://docs.stripe.com/payments/payment-methods/integration-options.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

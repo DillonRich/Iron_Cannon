@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/acceptable-verification-documents",
+  "sourceUrl": "https://docs.stripe.com/acceptable-verification-documents.md",
+  "lastVerified": "2026-06-03",
+  "title": "Acceptable verification documents by country",
+  "excerpt": "Learn which documents Stripe accepts for verification of identity, address, and legal entity. See the following list of documents that Stripe accepts as proof of identity, address, and entity for each country Stripe supports. - Identity documents (including but not limited to passports and driver’s licenses) must be no more than one step removed from the original document: - Document copies and scans must be in PDF format and taken directly from the original document; they can’t be processed, converted, or embedded in other files - A picture of a physical document must be the original, unprocessed picture in JPEG or PNG format - When the back side of a document contains required information, and you submit it using the API, include an image of the back side using the `document_back` parame…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

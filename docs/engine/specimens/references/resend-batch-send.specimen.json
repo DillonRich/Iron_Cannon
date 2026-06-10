@@ -1,0 +1,9 @@
+{
+  "refId": "resend/batch-send",
+  "sourceUrl": "https://resend.com/docs/api-reference/emails/send-batch-emails",
+  "lastVerified": "2026-05-31",
+  "title": "Resend batch send",
+  "excerpt": "POST /emails/batch with array of up to 100 messages per call. Counts against rate limit as one request. Use for bulk transactional—not a substitute for marketing compliance. Each item needs from/to/subject/html.",
+  "appliesTo": ["email-lifecycle"],
+  "tags": ["resend", "email", "batch"]
+}

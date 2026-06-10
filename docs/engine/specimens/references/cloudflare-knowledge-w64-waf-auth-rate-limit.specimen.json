@@ -1,0 +1,14 @@
+{
+  "refId": "cloudflare/knowledge-w64-waf-auth-rate-limit",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w64/waf-auth-rate-limit",
+  "lastVerified": "2026-06-06",
+  "title": "W64 waf-auth-rate-limit",
+  "provider": "cloudflare",
+  "excerpt": "Combine WAF custom rules with Workers rate limit bindings on auth API routes",
+  "embeddingHint": "cloudflare waf-auth-rate-limit wave64 legal security",
+  "tags": [
+    "wave64",
+    "knowledge",
+    "cloudflare"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-account-management-accounts-structure",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/account-management/accounts-structure.md",
+  "lastVerified": "2026-06-03",
+  "title": "Accounts structure",
+  "excerpt": "Learn how the account components of Treasury for platforms interact. Use this guide to understand the technical components of Stripe Treasury for platforms, specifically the different account types. Your platform must have Stripe *Connect* (Connect is Stripe's solution for multi-party businesses, such as marketplace or software platforms, to route payments between sellers, customers, and other recipients) to use Treasury for platforms. In its most basic form, a Connect integration includes a platform account with many connected accounts, each owned by a seller or service provider that uses the platform. Both the platform account and its connected accounts are [Account](https://docs.stripe.com/api/accounts.md) objects in the Stripe API.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

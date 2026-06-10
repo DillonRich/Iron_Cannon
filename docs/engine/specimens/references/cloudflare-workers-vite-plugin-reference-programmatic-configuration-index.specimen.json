@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-vite-plugin-reference-programmatic-configuration-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/vite-plugin/reference/programmatic-configuration/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Programmatic configuration",
+  "excerpt": "description: Configure Workers programmatically using the Vite plugin image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. The Wrangler configuration file is optional when using the Cloudflare Vite plugin. Without one, the plugin uses default values. You can customize Worker configuration programmatically with the `config` option. This is useful when the Cloudflare plugin runs inside another plugin or framework. Programmatic configuration is primarily designed for use by frameworks and plugin developers. Users should normally use Wrangler config files instead.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

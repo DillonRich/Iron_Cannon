@@ -1,0 +1,16 @@
+{
+  "fixtureId": "LEG-A11Y-004",
+  "obligationId": "LEG-A11Y-004",
+  "detectType": "component_scan",
+  "detect": {
+    "type": "component_scan",
+    "patterns": [
+      "focus-trap",
+      "FocusTrap"
+    ]
+  },
+  "passSnippet": "pass LEG-A11Y-004",
+  "failSnippet": "no banner here",
+  "expectedPass": "advisory",
+  "expectedFail": "advisory"
+}

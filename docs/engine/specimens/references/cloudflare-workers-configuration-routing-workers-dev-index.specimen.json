@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-configuration-routing-workers-dev-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/configuration/routing/workers-dev/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "workers.dev",
+  "excerpt": "description: Deploy Cloudflare Workers on a workers.dev subdomain for quick testing and personal projects. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Cloudflare Workers accounts come with a `workers.dev` subdomain that is configurable in the Cloudflare dashboard. Your `workers.dev` subdomain allows you getting started quickly by deploying Workers without first onboarding your custom domain to Cloudflare. It's recommended to run production Workers on a [Workers route or custom domain](https://developers.cloudflare.com/workers/configuration/routing/), rather than on your `workers.dev` subdomain.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

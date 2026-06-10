@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M01",
+  "moduleId": "M01-auth-d1-schema",
+  "patternsUnderTest": [
+    "AUTH-SC-001",
+    "AUTH-SC-002",
+    "AUTH-P49-M01-",
+    "AUTH-P49-SESSION"
+  ],
+  "passSnippet": "CREATE TABLE users (id TEXT PRIMARY KEY, email TEXT NOT NULL UNIQUE);\nCREATE TABLE sessions (id TEXT PRIMARY KEY, user_id TEXT NOT NULL);",
+  "failSnippet": "CREATE TABLE users (id TEXT PRIMARY KEY, email TEXT NOT NULL UNIQUE);",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "AUTH-SC-002"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w87-010",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "G-42 CI harvest not Stripe live",
+    "obligations": [
+      "LEG-W87-010"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "G-42 CI harvest not Stripe live"
+  },
+  "references": [
+    "legal/knowledge-w87-ci-harvest-not-stripe-live"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W87-010",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "privacy",
+    "disclaimerRequired": true
+  }
+}

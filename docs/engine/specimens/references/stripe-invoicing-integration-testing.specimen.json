@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-integration-testing",
+  "sourceUrl": "https://docs.stripe.com/invoicing/integration/testing.md",
+  "lastVerified": "2026-06-03",
+  "title": "Test Stripe Invoicing",
+  "excerpt": "Learn how to test your Invoicing integration. To learn more about testing an integration, see Stripe’s general-purpose [testing page](https://docs.stripe.com/testing.md). For a Subscriptions integration, go to [Testing Stripe Billing](https://docs.stripe.com/billing/testing.md). Use these common scenarios to test your invoicing integration before taking it live. Stripe triggers event notifications when an *invoice’s* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice) [status changes](https://docs.stripe.com/invoicing/integration/workflow-transitions.md#status-transitions-endpoints).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

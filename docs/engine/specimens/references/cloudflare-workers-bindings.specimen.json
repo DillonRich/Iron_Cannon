@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/workers-bindings",
+  "sourceUrl": "https://developers.cloudflare.com/workers/runtime-apis/bindings/",
+  "lastVerified": "2026-05-31",
+  "title": "Workers bindings",
+  "excerpt": "Declare D1, KV, R2, secrets in wrangler.toml. Access via env in Worker: env.DB, env.KV, env.STRIPE_SECRET. Bindings are zero-latency in same isolate. Do not hardcode resource IDs in source—use wrangler config per environment.",
+  "appliesTo": ["layer2/cloudflare"],
+  "tags": ["cloudflare", "workers", "bindings"]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/atlas-83b-election",
+  "sourceUrl": "https://docs.stripe.com/atlas/83b-election.md",
+  "lastVerified": "2026-06-03",
+  "title": "Section 83(b) elections",
+  "excerpt": "Learn about common considerations for Section 83(b) elections. > Stripe Atlas doesn’t provide tax or legal advice. Consult tax and legal professionals for advice on how to meet ongoing legal, tax, and accounting obligations that apply to you and your company. A Section 83(b) election is a form that lets the Internal Revenue Service (IRS) know you’d like to have your founder stock taxed at the time of purchase rather than at the time of vesting. In many cases, a Section 83(b) election can save you a significant amount on your future taxes. If you make a Section 83(b) election, most importantly, you won’t pay taxes when your stock vests. Instead, you choose to pay very little (if any at all) taxes at the time of stock purchase, and you won’t owe taxes until you actually sell your stock.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

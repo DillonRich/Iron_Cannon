@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/terminal-readers-stripe-reader-s700-s710",
+  "sourceUrl": "https://docs.stripe.com/terminal/readers/stripe-reader-s700-s710.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe Reader S700/S710",
+  "excerpt": "Visit the [Dashboard](https://dashboard.stripe.com/terminal/shop/) to order your Stripe Reader S700/S710. ![Front and back view of the Stripe Reader S700/S710](https://b.stripecdn.com/docs-statics-srv/assets/S700-3D.041eca5dfd580cdc451a41020b4dd45a.png) The [Stripe Reader S700/S710](https://docs.stripe.com/terminal/payments/setup-reader/stripe-reader-s700-s710.md) is an Android-based smart reader for countertop and handheld use. You can customize the on-reader checkout UI using both prebuilt and custom elements. The [Stripe Terminal SDK connects to the reader](https://docs.stripe.com/terminal/payments/connect-reader.md?reader-type=internet) over the internet, LAN, or [handoff mode](https://docs.stripe.com/terminal/features/apps-on-devices/build.md#discover-and-connect-a-reader).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

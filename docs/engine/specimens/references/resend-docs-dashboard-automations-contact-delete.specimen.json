@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-automations-contact-delete",
+  "sourceUrl": "https://resend.com/docs/dashboard/automations/contact-delete.md",
+  "lastVerified": "2026-06-03",
+  "title": "Contact Delete",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Contact Delete > Remove a contact from your audience in an Automation. This step removes the contact that triggered the Automation from its [Audience](/dashboard/audiences/introduction). Once deleted, the contact will no longer receive emails from that audience and any remaining steps in the Automation run are skipped. Common use cases: * **Compliance**: Delete contacts as part of a data-removal workflow. * **Churn**: Remove a contact, when a user stops using your service. * **Unsubscribe flows**: Automatically remove contacts who opt out. ## How it works Include the **Delete contact** step to your Automation.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

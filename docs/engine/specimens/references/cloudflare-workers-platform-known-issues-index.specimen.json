@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-platform-known-issues-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/platform/known-issues/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Known issues",
+  "excerpt": "description: Known issues and bugs to be aware of when using Workers. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Below are some known bugs and issues to be aware of when using Cloudflare Workers. * When defining route specificity, a trailing `/*` in your pattern may not act as expected.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

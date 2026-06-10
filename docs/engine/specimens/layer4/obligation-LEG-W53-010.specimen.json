@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w53-010",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Webhook endpoint rejects missing signature with 400",
+    "obligations": [
+      "LEG-W53-010"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Webhook endpoint rejects missing signature with 400"
+  },
+  "references": [
+    "owasp/webhook-signature"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W53-010",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

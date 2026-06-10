@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W70-001",
+      "category": "operations",
+      "title": "Usage telemetry flushed on session boundary",
+      "sourceRefId": "ironcannon/knowledge-w70-usage-telemetry-flush",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W70-002",
+      "category": "operations",
+      "title": "Obligation verify harness green before release",
+      "sourceRefId": "ironcannon/knowledge-w70-obligation-verify-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W70-003",
+      "category": "operations",
+      "title": "Module sequence guard enforced in CI",
+      "sourceRefId": "ironcannon/knowledge-w70-module-sequence-guard",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W70-004",
+      "category": "operations",
+      "title": "Error catalog parity with MCP responses",
+      "sourceRefId": "ironcannon/knowledge-w70-error-catalog-parity",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W70-005",
+      "category": "operations",
+      "title": "Tools list parity with tier entitlements",
+      "sourceRefId": "ironcannon/knowledge-w70-tools-list-parity",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W70-006",
+      "category": "operations",
+      "title": "Bundle mode smoke passes in g2:audit",
+      "sourceRefId": "ironcannon/knowledge-w70-bundle-mode-smoke",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W70-007",
+      "category": "operations",
+      "title": "Infrastructure smoke passes before deploy",
+      "sourceRefId": "ironcannon/knowledge-w70-infrastructure-smoke",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W70-008",
+      "category": "operations",
+      "title": "Outbound chain validated end-to-end",
+      "sourceRefId": "ironcannon/knowledge-w70-outbound-chain-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W70-009",
+      "category": "billing",
+      "title": "Stripe webhooks idempotent with event dedup",
+      "sourceRefId": "stripe/webhooks-idempotency",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W70-010",
+      "category": "email",
+      "title": "Resend bounce suppression list maintained",
+      "sourceRefId": "resend/bounces",
+      "detect": {
+        "type": "config"
+      }
+    }
+  ]
+}

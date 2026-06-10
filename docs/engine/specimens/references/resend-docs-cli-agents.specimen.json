@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-cli-agents",
+  "sourceUrl": "https://resend.com/docs/cli-agents.md",
+  "lastVerified": "2026-06-03",
+  "title": "Resend CLI for AI Agents",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Resend CLI for AI Agents > How to use the Resend CLI in AI agent workflows. The [Resend CLI](/cli) works out of the box for AI agents and CI/CD pipelines. This page covers agent-specific behavior. See the [CLI reference](/cli) for installation, commands, and full documentation. ## Agent Skills The Resend CLI includes built-in Agent Skills that help AI agents understand how to use the CLI effectively.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

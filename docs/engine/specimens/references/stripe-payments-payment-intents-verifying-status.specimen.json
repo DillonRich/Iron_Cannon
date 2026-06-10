@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-payment-intents-verifying-status",
+  "sourceUrl": "https://docs.stripe.com/payments/payment-intents/verifying-status.md",
+  "lastVerified": "2026-06-03",
+  "title": "Payment status updates",
+  "excerpt": "Monitor and verify payment status, so that you can respond to successful and failed payments. *PaymentIntents* (The Payment Intents API tracks the lifecycle of a customer checkout flow and triggers additional authentication steps when required by regulatory mandates, custom Radar fraud rules, or redirect-based payment methods) update in response to actions taken by the customer or payment method. Your integration can inspect the PaymentIntent to determine the status of the payment process, so that you can take business actions or respond to states that require further intervention. You can also use the Stripe Dashboard to configure your account to email you about payment status, such as successful payments.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

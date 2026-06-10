@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-subscriptions-usage-based-recording-usage",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/usage-based/recording-usage.md",
+  "lastVerified": "2026-06-03",
+  "title": "Record usage for billing",
+  "excerpt": "Learn how to record customer usage data. If you need guidance for the previous usage-based billing process, refer to our [legacy documentation](https://docs.stripe.com/billing/subscriptions/usage-based-legacy.md). Throughout each billing period, you must record usage in Stripe to bill your customers the correct amounts. You can decide how often you record usage in Stripe. You can record usage in Stripe using the Dashboard or API. To record usage in Stripe, first [configure your meter](https://docs.stripe.com/billing/subscriptions/usage-based/meters/configure.md) and then add the recorded usage through the Stripe Dashboard or API.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

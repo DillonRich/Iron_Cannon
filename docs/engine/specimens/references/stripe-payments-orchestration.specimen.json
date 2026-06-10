@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-orchestration",
+  "sourceUrl": "https://docs.stripe.com/payments/orchestration.md",
+  "lastVerified": "2026-06-03",
+  "title": "Orchestration",
+  "excerpt": "Create rules to route payments across your payment processors. Use Orchestration to route payments to multiple processors and monitor your payments performance. [Get started](https://docs.stripe.com/payments/orchestration/route-payments.md) - **Process payments on multiple processors**: Update your [PaymentIntents integration](https://docs.stripe.com/payments/orchestration/route-payments.md) to route payments to any of the Stripe-supported processors, or automatically route payments created through Billing, Checkout, Payment Links, or the Dashboard. - **Retry a payment on a different processor**: Configure rules to automatically [retry](https://docs.stripe.com/payments/orchestration/retries.md) failed payment transactions with alternative processors.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w78-005",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Preview Pages env vars exclude production webhook secrets",
+    "obligations": [
+      "LEG-W78-005"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Preview Pages env vars exclude production webhook secrets"
+  },
+  "references": [
+    "cloudflare/knowledge-w78-pages-preview-env"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W78-005",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

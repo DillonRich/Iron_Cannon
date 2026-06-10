@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/images",
+  "sourceUrl": "https://developers.cloudflare.com/images/",
+  "lastVerified": "2026-05-31",
+  "title": "Cloudflare Images",
+  "excerpt": "Image optimization and responsive delivery.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "cloudflare",
+    "images"
+  ]
+}

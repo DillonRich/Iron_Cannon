@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-audiences-properties",
+  "sourceUrl": "https://resend.com/docs/dashboard/audiences/properties.md",
+  "lastVerified": "2026-06-03",
+  "title": "Contact Properties",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Contact Properties > Learn how to work with Contact Properties with Resend. Contact Properties can be used to store additional information about your Contacts and then personalize your Broadcasts. Resend includes a few default properties: * `first_name`: The first name of the contact. * `last_name`: The last name of the contact. * `unsubscribed`: Whether the contact is unsubscribed from all Broadcasts. * `email`: The email address of the contact. ## Add Custom Contact Properties You can create additional custom Contact Properties for your Contacts to store additional information.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

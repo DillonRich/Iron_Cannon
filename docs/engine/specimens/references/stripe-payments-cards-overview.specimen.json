@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-cards-overview",
+  "sourceUrl": "https://docs.stripe.com/payments/cards/overview.md",
+  "lastVerified": "2026-06-03",
+  "title": "How cards work",
+  "excerpt": "Learn how an online credit or debit card payment works. [Cards](https://docs.stripe.com/payments/cards.md) are one of the most popular ways to pay online, with broad global reach. There are different types of cards and several steps in the process. For information on payment method transaction fees, see [local payment method pricing](https://stripe.com/pricing/local-payment-methods). To build a Stripe integration that supports all of your customers, learn what goes on behind the scenes of a card payment. Stripe checks that the details provided are formatted correctly (for example, the expiry date isn’t in the past). There’s no guarantee that the card itself is valid yet.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

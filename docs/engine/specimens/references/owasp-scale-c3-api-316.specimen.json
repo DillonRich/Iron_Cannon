@@ -1,0 +1,13 @@
+{
+  "refId": "owasp/scale-c3-api-316",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/owasp/scale-c3-api-316",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-C3 api 316",
+  "excerpt": "Rate limit auth endpoints separately from public assets. Planning reference for compose agents and obligation cross-links (EM-3).",
+  "tags": [
+    "owasp",
+    "api",
+    "scale-c3"
+  ],
+  "embeddingHint": "owasp api Rate limit auth endpoints separately from public assets compliance security legal stripe resend owasp"
+}

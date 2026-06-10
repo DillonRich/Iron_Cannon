@@ -1,0 +1,17 @@
+{
+  "fixtureId": "LEG-A11Y-005",
+  "obligationId": "LEG-A11Y-005",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "patterns": [
+      "skip to content",
+      "skip-nav",
+      "#main"
+    ]
+  },
+  "passSnippet": "skip to content skip-nav #main",
+  "failSnippet": "gap LEG-A11Y-005",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

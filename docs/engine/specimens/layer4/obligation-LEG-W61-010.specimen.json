@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w61-010",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Secrets never logged in Workers console.log paths",
+    "obligations": [
+      "LEG-W61-010"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Secrets never logged in Workers console.log paths"
+  },
+  "references": [
+    "cloudflare/secrets-logging"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W61-010",
+        "type": "pattern",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

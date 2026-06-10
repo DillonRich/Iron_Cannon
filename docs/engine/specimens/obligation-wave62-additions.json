@@ -1,0 +1,14 @@
+{
+  "obligations": [
+    { "id": "LEG-W62-001", "category": "security", "title": "Password reset tokens hashed with bcrypt or argon2", "sourceRefId": "owasp/password-storage", "detect": { "type": "config" } },
+    { "id": "LEG-W62-002", "category": "security", "title": "CSRF token on all state-changing forms", "sourceRefId": "owasp/csrf-prevention", "detect": { "type": "config" } },
+    { "id": "LEG-W62-003", "category": "stripe", "title": "Stripe Connect not used unless marketplace scope declared", "sourceRefId": "stripe/connect-scope", "detect": { "type": "manual" } },
+    { "id": "LEG-W62-004", "category": "edge", "title": "Durable Object alarm for subscription renewal sweep", "sourceRefId": "cloudflare/do-alarms", "detect": { "type": "config" } },
+    { "id": "LEG-W62-005", "category": "email", "title": "One-click unsubscribe in List-Unsubscribe-Post header", "sourceRefId": "legal/list-unsubscribe-post", "detect": { "type": "header" } },
+    { "id": "LEG-W62-006", "category": "privacy", "title": "Privacy policy updated within 30 days of new data category", "sourceRefId": "legal/privacy-update-sla", "detect": { "type": "manual" } },
+    { "id": "LEG-W62-007", "category": "billing", "title": "Stripe test mode keys blocked in production Worker env", "sourceRefId": "stripe/test-mode-block", "detect": { "type": "config" } },
+    { "id": "LEG-W62-008", "category": "a11y", "title": "Color contrast 4.5:1 on primary CTA buttons", "sourceRefId": "legal/wcag-contrast-cta", "detect": { "type": "manual" } },
+    { "id": "LEG-W62-009", "category": "security", "title": "Security.txt present at /.well-known/security.txt", "sourceRefId": "owasp/security-txt", "detect": { "type": "route_exists", "path": "/.well-known/security.txt" } },
+    { "id": "LEG-W62-010", "category": "edge", "title": "Cloudflare WAF custom rule blocks known exploit paths", "sourceRefId": "cloudflare/waf-custom-rules", "detect": { "type": "config" } }
+  ]
+}

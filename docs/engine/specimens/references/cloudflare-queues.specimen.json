@@ -1,0 +1,16 @@
+{
+  "refId": "cloudflare/queues",
+  "sourceUrl": "https://developers.cloudflare.com/queues/",
+  "lastVerified": "2026-05-31",
+  "title": "Cloudflare Queues",
+  "excerpt": "Async message queue for Workers. Use for email retry and export jobs instead of blocking HTTP. Producer consumer pattern with at-least-once delivery.",
+  "appliesTo": [
+    "email-lifecycle",
+    "M51-export-worker",
+    "P1"
+  ],
+  "tags": [
+    "cloudflare",
+    "queues"
+  ]
+}

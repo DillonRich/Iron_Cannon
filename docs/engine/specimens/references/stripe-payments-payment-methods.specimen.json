@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-payment-methods",
+  "sourceUrl": "https://docs.stripe.com/payments/payment-methods.md",
+  "lastVerified": "2026-06-03",
+  "title": "Payment Methods API",
+  "excerpt": "Learn about the API that allows you to accept a range of global payment methods. The Payment Methods API allows you to accept a variety of payment methods through a single API. A [PaymentMethod](https://docs.stripe.com/api/payment_methods/object.md) object contains the payment method details to create payments. With the Payment Methods API, you can combine a *PaymentMethod* (PaymentMethods represent your customer's payment instruments, used with the Payment Intents or Setup Intents APIs): - With a [PaymentIntent](https://docs.stripe.com/api/payment_intents.md) to accept a payment - With a [SetupIntent](https://docs.stripe.com/api/setup_intents.md) and a *Customer* (Customer objects represent customers of your business.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

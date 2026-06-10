@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-subscriptions-billing-cycle",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/billing-cycle.md",
+  "lastVerified": "2026-06-03",
+  "title": "Set the subscription billing renewal date",
+  "excerpt": "Learn how to set the billing date for subscriptions. If your integration uses [customer-configured Accounts](https://docs.stripe.com/api/v2/core/accounts/create.md#v2_create_accounts-configuration-customer), replace `Customer` and event references in the code examples with the equivalent Accounts v2 API references. For more information, see [Represent customers with Account objects](https://docs.stripe.com/accounts-v2/use-accounts-as-customers.md). A subscription’s billing period depends on two factors: - The recurring interval of its [price](https://docs.stripe.com/products-prices/overview.md) or prices, such as monthly, yearly, weekly, and so on.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

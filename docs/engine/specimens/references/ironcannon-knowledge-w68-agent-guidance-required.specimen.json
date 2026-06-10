@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w68-agent-guidance-required",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w68/agent-guidance-required",
+  "lastVerified": "2026-06-06",
+  "title": "W68 agent-guidance-required",
+  "provider": "ironcannon",
+  "excerpt": "Every MCP response includes agentGuidance with next steps",
+  "embeddingHint": "ironcannon agent-guidance-required wave68 adversarial",
+  "tags": [
+    "wave68",
+    "knowledge",
+    "ironcannon",
+    "adversarial"
+  ]
+}

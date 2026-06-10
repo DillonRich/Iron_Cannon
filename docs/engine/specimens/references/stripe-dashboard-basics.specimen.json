@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/dashboard-basics",
+  "sourceUrl": "https://docs.stripe.com/dashboard/basics.md",
+  "lastVerified": "2026-06-03",
+  "title": "Web Dashboard",
+  "excerpt": "Learn how to use the web version of the Stripe Dashboard. The [Stripe Dashboard](https://dashboard.stripe.com/) is the user interface where you manage and configure your account. You can use the Dashboard to navigate account resources, [search transactions](https://docs.stripe.com/dashboard/search.md), invite team members, monitor your integration, and more. On your keyboard, press the question mark key (`?`) for a list of available keyboard shortcuts for common actions. The Dashboard officially supports the following web browsers: - The last 20 major versions of Chrome, Firefox, and Edge. If you don’t have access to the Dashboard, [set up your Stripe account](https://docs.stripe.com/get-started/account/set-up.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

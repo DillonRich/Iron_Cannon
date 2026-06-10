@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-send-with-python",
+  "sourceUrl": "https://resend.com/docs/send-with-python.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send emails with Python",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send emails with Python > Learn how to send your first email using the Resend Python SDK. ## Prerequisites To get the most out of this guide, you'll need to: * [Create an API key](https://resend.com/api-keys) * [Verify your domain](https://resend.com/domains) ## 1. Install Get the Resend Python SDK. ```bash Pip theme={\"theme\":{\"light\":\"github-light\",\"dark\":\"vesper\"}} pip install resend ``` ## 2. Send email using HTML The easiest way to send an email is by using the `html` parameter.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

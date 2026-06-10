@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/disputes-api-visa-ce3",
+  "sourceUrl": "https://docs.stripe.com/disputes/api/visa-ce3.md",
+  "lastVerified": "2026-06-03",
+  "title": "Visa Compelling Evidence 3.0 disputes",
+  "excerpt": "Use the API and Visa's Compelling Evidence 3.0 to respond to qualifying disputes. Visa Compelling Evidence 3.0 (CE 3.0) has new qualifying criteria allowing businesses to demonstrate a non-fraudulent history with cardholders to fight friendly fraud. Submitting qualifying evidence for Visa CE 3.0 eligible disputes can increase the chance of an issuer reversing friendly fraud disputes in favor of the business. To respond to a dispute using Visa CE 3.0, the dispute must meet the following criteria: - The disputed transaction must be a Visa transaction with [network reason code](https://docs.stripe.com/api/disputes/object.md#dispute_object-payment_method_details-card-network_reason_code) 10.4.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

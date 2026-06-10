@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-accounts-v2-connected-account-configuration",
+  "sourceUrl": "https://docs.stripe.com/connect/accounts-v2/connected-account-configuration.md",
+  "lastVerified": "2026-06-03",
+  "title": "connected account configuration",
+  "excerpt": "Learn how to configure your connected accounts using the Accounts v2 API. You define the interactions between your platform, connected accounts, and Stripe, such as funds flows and loss liability, by configuring your connected accounts. Set up your integration to configure them by specifying values for certain properties when it creates the corresponding Accounts v2 objects. For example, properties in the `defaults.responsibilities` hash assign liability for negative [balances on your connected accounts](https://docs.stripe.com/connect/account-balances.md) and specify how Stripe collects payment fees. The values you assign to your connected account properties also affect other aspects of your integration.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

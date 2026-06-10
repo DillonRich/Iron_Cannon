@@ -1,0 +1,8 @@
+{
+  "provider": "resend",
+  "priority": "P0",
+  "includePatterns": ["/send", "/domains", "/webhooks", "/audiences", "/templates", "/batch", "/api-reference"],
+  "excludePatterns": ["/changelog", "pnpm-lock", "package.json", ".yaml", ".yml", ".json"],
+  "maxPerRun": 40,
+  "appliesToDefault": ["auth-lifecycle", "email-lifecycle", "resend"]
+}

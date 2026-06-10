@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-subscriptions-payment-methods-setting",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/payment-methods-setting.md",
+  "lastVerified": "2026-06-03",
+  "title": "Set payment methods per-subscription",
+  "excerpt": "Learn how to specify which payment methods are available for a subscription. The subscription [payment_settings](https://docs.stripe.com/api/subscriptions/object.md#subscription_object-payment_settings) parameter lets you set specific payment methods on individual subscriptions. This allows more flexibility than a single `default_payment_method` or less granular customer settings. To enable payment methods, you first need to activate them in your [account settings](https://dashboard.stripe.com/settings/payment_methods) in the Stripe Dashboard. In some situations, there might be restrictions that prevent certain payment methods from being used for a subscription. For example, a payment method might only operate in one currency, or have limitations on the amount that a customer can pay.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

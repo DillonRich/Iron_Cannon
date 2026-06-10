@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/use-stripe-apps-woocommerce",
+  "sourceUrl": "https://docs.stripe.com/use-stripe-apps/woocommerce.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe Tax Extension for WooCommerce",
+  "excerpt": "Learn about the Stripe Tax Extension for WooCommerce. Use the Stripe Tax Extension for WooCommerce to automatically calculate [sales tax, VAT, and GST](https://docs.stripe.com/tax/calculating.md) and apply the accurate tax rate for all of your transactions. Stripe Tax pricing is usage-based. For Stripe Tax Extension for WooCommerce pricing, see [API integration with Stripe Tax](https://support.stripe.com/questions/understanding-stripe-tax-pricing). > This plugin doesn’t support test mode. When using your WooCommerce instance for tests or development, deactivate the plugin in the WooCommerce backoffice. > Stripe provides 30 days of free calculations for new users of the&nbsp;Stripe Tax WooCommerce connector. This lets you test and complete your integrations without being billed.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-link-payment-element-link",
+  "sourceUrl": "https://docs.stripe.com/payments/link/payment-element-link.md",
+  "lastVerified": "2026-06-03",
+  "title": "Link in the Payment Element",
+  "excerpt": "Link in the Payment Element lets your customers check out faster. Let your customer check out faster by using [Link](https://docs.stripe.com/payments/link.md) in the [Payment Element](https://docs.stripe.com/payments/payment-element.md). You can autofill information for any logged-in customer already using Link, regardless of whether they initially saved their information in Link with another business. The default Payment Element integration includes a Link prompt in the card form. To manage Link in the Payment Element, go to your [payment method settings](https://dashboard.stripe.com/settings/payment_methods).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "fixtureId": "M12",
+  "moduleId": "M12-stripe-webhook",
+  "patternsUnderTest": [
+    "STWH-001",
+    "STWH-002",
+    "STWH-003",
+    "BILL-P49-M12-",
+    "STWH-P49-VERIFY"
+  ],
+  "passSnippet": "const event = stripe.webhooks.constructEvent(body, sig, secret);\nif (event.type === 'checkout.session.completed') { await env.KV.put(`stripe_evt:${event.id}`, '1'); }",
+  "failSnippet": "const event = JSON.parse(body); if (event.type === 'checkout.session.completed') { /* no verify */ }",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "STWH-001"
+  ]
+}

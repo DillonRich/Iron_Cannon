@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/radar-rules-reference",
+  "sourceUrl": "https://docs.stripe.com/radar/rules/reference.md",
+  "lastVerified": "2026-06-03",
+  "title": "Rules reference",
+  "excerpt": "Learn about the structure of rules and the order in which Radar processes them. To understand how Radar transaction rules work with Stripe *Connect* (Connect is Stripe's solution for multi-party businesses, such as marketplace or software platforms, to route payments between sellers, customers, and other recipients), see [Using Radar with Connect](https://docs.stripe.com/connect/radar.md). Before creating a rule, you need to understand how they’re processed and what transaction and account attributes you can use to set evaluation criteria. The Stripe machine-learning fraud systems can block many fraudulent payments for you, but you can also set up rules that are unique to your business using the [supported attributes](https://docs.stripe.com/radar/rules/reference.md#supported-attributes).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

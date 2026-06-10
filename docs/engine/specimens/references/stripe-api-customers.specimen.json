@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-customers",
+  "sourceUrl": "https://docs.stripe.com/api/customers.md",
+  "lastVerified": "2026-06-03",
+  "title": "Customers",
+  "excerpt": "This object represents a customer of your business. Use it to [create recurring charges](https://docs.stripe.com/docs/invoicing/customer.md), [save payment](https://docs.stripe.com/docs/payments/save-during-payment.md) and contact information, and track payments that belong to the same customer. - [POST /v1/customers](https://docs.stripe.com/api/customers/create.md) - [POST /v1/customers/:id](https://docs.stripe.com/api/customers/update.md) - [GET /v1/customers/:id](https://docs.stripe.com/api/customers/retrieve.md) - [GET /v1/customers](https://docs.stripe.com/api/customers/list.md) - [DELETE /v1/customers/:id](https://docs.stripe.com/api/customers/delete.md)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

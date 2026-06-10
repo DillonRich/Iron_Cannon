@@ -1,0 +1,12 @@
+[
+  {
+    "pattern": "replica lag|wrong user|stale session",
+    "edgeCaseId": "E03",
+    "diagnosis": "Session read after write may hit replica lag",
+    "relatedModules": ["M05-auth-session-middleware", "M01-auth-d1-schema"],
+    "references": ["docs/flows/auth-lifecycle.md"],
+    "steps": [
+      { "order": 1, "action": "Read session from primary D1 binding after login", "verification": "User sees correct state within 2s" }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "refId": "nextjs/loading-ui",
+  "sourceUrl": "https://nextjs.org/docs/app/api-reference/file-conventions/loading",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js loading UI",
+  "excerpt": "loading.tsx convention for streaming auth and dashboard segments without layout shift.",
+  "appliesTo": ["auth-lifecycle", "layer2/nextjs"],
+  "tags": ["nextjs", "loading", "streaming"]
+}

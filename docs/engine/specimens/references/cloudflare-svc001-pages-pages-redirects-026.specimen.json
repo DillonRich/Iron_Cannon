@@ -1,0 +1,16 @@
+{
+  "refId": "cloudflare/svc001-pages-pages-redirects-026",
+  "sourceUrl": "https://ironcannon.dev/svc001/pages/pages-redirects-26",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-001 pages-redirects 26",
+  "provider": "cloudflare",
+  "excerpt": "Use _redirects or wrangler redirects for SPA fallbacks when serving Next static export from Pages.",
+  "embeddingHint": "cloudflare pages-redirects svc001 pages worker split sd-06",
+  "tags": [
+    "svc001",
+    "pages",
+    "sd-06",
+    "cloudflare",
+    "pages-redirects"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "legal/wai-wcag21-quickref",
+  "sourceUrl": "https://www.w3.org/WAI/WCAG21/quickref/",
+  "lastVerified": "2026-06-03",
+  "title": "wcag",
+  "excerpt": "How to Meet WCAG (Quickref Reference) How to Meet WCAG (Quick Reference) A customizable quick reference to Web Content Accessibility Guidelines (WCAG) 2 requirements (success criteria) and techniques. Show Hide About &amp; How to Use About This tool provides a customizable view of WCAG 2 resources: Web Content Accessibility Guidelines web standard — WCAG 2.2 , WCAG 2.1 , WCAG 2.0 Techniques for WCAG 2 implementation guidance Understanding WCAG 2 supporting information Background on these resources is provided in the WCAG Overview and The WCAG 2 documents . For important information about techniques, see Understanding Techniques for WCAG Success Criteria . How to Use Select the “Filter” tab in the main menu to customize: Tags: Shows only success criteria associated with the selected tags.…",
+  "appliesTo": [
+    "security",
+    "compliance"
+  ],
+  "tags": [
+    "legal",
+    "p0"
+  ]
+}

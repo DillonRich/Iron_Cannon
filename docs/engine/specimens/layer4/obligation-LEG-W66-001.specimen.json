@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w66-001",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Next.js middleware protects authenticated route segments",
+    "obligations": [
+      "LEG-W66-001"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Next.js middleware protects authenticated route segments"
+  },
+  "references": [
+    "nextjs/middleware"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W66-001",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

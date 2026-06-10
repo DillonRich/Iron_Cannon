@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/api-top10-overview",
+  "sourceUrl": "https://owasp.org/API-Security/",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP API Top 10",
+  "excerpt": "API security risks mapped to Iron Cannon Armor surfaces.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "owasp",
+    "api-top10-overview"
+  ]
+}

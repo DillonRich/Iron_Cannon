@@ -1,0 +1,9 @@
+{
+  "refId": "resend/webhooks",
+  "sourceUrl": "https://resend.com/docs/api-reference/webhooks/create-webhook",
+  "lastVerified": "2026-05-31",
+  "title": "Resend delivery webhooks",
+  "excerpt": "Configure webhooks for email.delivered, email.bounced, email.complained events. Verify webhook signature if provided. Update email_failures table on bounce. Complaint events should suppress future marketing sends.",
+  "appliesTo": ["email-lifecycle"],
+  "tags": ["resend", "webhook"]
+}

@@ -1,0 +1,16 @@
+{
+  "fixtureId": "LEG-COOKIE-003",
+  "obligationId": "LEG-COOKIE-003",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "patterns": [
+      "essential cookies",
+      "strictly necessary"
+    ]
+  },
+  "passSnippet": "essential cookies strictly necessary",
+  "failSnippet": "gap LEG-COOKIE-003",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-real-time",
+  "sourceUrl": "https://docs.stripe.com/payments/real-time.md",
+  "lastVerified": "2026-06-03",
+  "title": "Real-time payments",
+  "excerpt": "Learn about real-time payments with Stripe. [Contact us](https://support.stripe.com/contact) for access to our exclusive payment method features, to request a new real-time payment method, or to participate in our UPI beta—a preferred payment method in India. Real-time payment methods let customers directly transfer money from their bank account or alternate funding source using an authenticating intermediary, like a phone number. Because this payment method type increases transaction speeds, it can improve conversion rates. Stripe supports real-time payments in Brazil, Singapore, Thailand, Sweden, and India. The real-time payment method process is as follows: 1. Stripe sends the customer an identifier that lists the payable amount. 1.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

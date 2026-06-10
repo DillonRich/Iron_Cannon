@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-subscriptions",
+  "sourceUrl": "https://docs.stripe.com/api/subscriptions.md",
+  "lastVerified": "2026-06-03",
+  "title": "Subscriptions",
+  "excerpt": "Subscriptions allow you to charge a customer on a recurring basis. Related guide: [Creating subscriptions](https://docs.stripe.com/docs/billing/subscriptions/creating.md) - [POST /v1/subscriptions](https://docs.stripe.com/api/subscriptions/create.md) - [POST /v1/subscriptions/:id](https://docs.stripe.com/api/subscriptions/update.md) - [GET /v1/subscriptions/:id](https://docs.stripe.com/api/subscriptions/retrieve.md) - [GET /v1/subscriptions](https://docs.stripe.com/api/subscriptions/list.md)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-introduction",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/introduction.md",
+  "lastVerified": "2026-06-03",
+  "title": "Introduction",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Introduction > A collection of answers to frequently asked questions. ## Domains & Verification Add DNS records without conflicting with existing MX records. What to do when your domain isn't verifying. ## DNS Guides Step-by-step instructions for verifying your domain with popular DNS providers.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

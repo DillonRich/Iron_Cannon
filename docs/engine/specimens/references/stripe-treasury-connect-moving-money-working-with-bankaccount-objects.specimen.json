@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-moving-money-working-with-bankaccount-objects",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/moving-money/working-with-bankaccount-objects.md",
+  "lastVerified": "2026-06-03",
+  "title": "Working with SetupIntents, PaymentMethods, and BankAccounts",
+  "excerpt": "Set up money movements with Treasury for platforms. > The Accounts v2 API doesn’t support Treasury workflows. If you have accounts created with Accounts v2, you can use Accounts v1 to manage the `treasury` and `card_issuing` capabilities. For details, see [Use Accounts as customers](https://docs.stripe.com/accounts-v2/use-accounts-as-customers.md). You can use [PaymentMethod](https://docs.stripe.com/payments/payment-methods.md#payment-method-object) objects to save account credentials for a US-based bank account for future use. After creating the `PaymentMethod`, you can use the same object repeatedly to move funds into and out of a financial account.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

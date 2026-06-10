@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w79-005",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Auth routes never cached on Pages CDN",
+    "obligations": [
+      "LEG-W79-005"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Auth routes never cached on Pages CDN"
+  },
+  "references": [
+    "cloudflare/knowledge-w79-pages-cache-auth-never"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W79-005",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

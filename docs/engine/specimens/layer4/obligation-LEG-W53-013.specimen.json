@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w53-013",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Bounce webhook updates suppression within one hour",
+    "obligations": [
+      "LEG-W53-013"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Bounce webhook updates suppression within one hour"
+  },
+  "references": [
+    "resend/bounce-suppression"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W53-013",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "email",
+    "disclaimerRequired": true
+  }
+}

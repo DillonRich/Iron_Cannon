@@ -1,0 +1,14 @@
+{
+  "refId": "stripe/knowledge-w64-webhook-signature-verify",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w64/webhook-signature-verify",
+  "lastVerified": "2026-06-06",
+  "title": "W64 webhook-signature-verify",
+  "provider": "stripe",
+  "excerpt": "Verify Stripe-Signature header with endpoint secret before parsing events",
+  "embeddingHint": "stripe webhook-signature-verify wave64 legal security",
+  "tags": [
+    "wave64",
+    "knowledge",
+    "stripe"
+  ]
+}

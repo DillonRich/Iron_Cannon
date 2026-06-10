@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/d1-platform-release-notes-index",
+  "sourceUrl": "https://developers.cloudflare.com/d1/platform/release-notes/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Release notes",
+  "excerpt": "description: Track D1 feature updates, bug fixes, and breaking changes over time. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/d1/llms.txt > Use this file to discover all available pages before exploring further. [ Subscribe to RSS ](https://developers.cloudflare.com/d1/platform/release-notes/index.xml) **D1 can configure jurisdictions for data localization**",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

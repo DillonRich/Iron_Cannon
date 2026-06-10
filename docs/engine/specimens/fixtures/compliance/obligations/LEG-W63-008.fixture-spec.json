@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W63-008",
+  "obligationId": "LEG-W63-008",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "pattern": "process.env"
+  },
+  "passSnippet": "notice process.env",
+  "failSnippet": "no match here",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

@@ -1,0 +1,6 @@
+{
+  "provider": "owasp",
+  "appliesToDefault": ["security", "auth", "billing"],
+  "includePatterns": ["/cheatsheets/", "top10", "asvs"],
+  "excludePatterns": ["/images/", ".pdf"]
+}

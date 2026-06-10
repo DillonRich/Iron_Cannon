@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-testing-miniflare-core-scheduled-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/testing/miniflare/core/scheduled/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Scheduled Events",
+  "excerpt": "description: scheduled events are automatically dispatched according to the specified cron image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. * [ScheduledEvent Reference](https://developers.cloudflare.com/workers/runtime-apis/handlers/scheduled/) `scheduled` events are automatically dispatched according to the specified cron triggers:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

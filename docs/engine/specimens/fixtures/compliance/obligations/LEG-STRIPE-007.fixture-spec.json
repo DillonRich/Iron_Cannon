@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-STRIPE-007",
+  "obligationId": "LEG-STRIPE-007",
+  "detectType": "route_link",
+  "detect": {
+    "type": "route_link",
+    "path": "/settings/billing",
+    "hrefContains": "portal"
+  },
+  "passSnippet": "<a href=\"portal\">ok</a>",
+  "failSnippet": "<form></form>",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

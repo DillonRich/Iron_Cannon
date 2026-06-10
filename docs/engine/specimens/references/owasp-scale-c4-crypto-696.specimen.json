@@ -1,0 +1,14 @@
+{
+  "refId": "owasp/scale-c4-crypto-696",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/owasp/scale-c4-crypto-696",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-C4 crypto 696",
+  "excerpt": "Use AEAD for tokens at rest; rotate keys on compromise. Final Scale-C planning reference for Iron Cannon MCP compose and compliance agents.",
+  "tags": [
+    "owasp",
+    "crypto",
+    "scale-c4",
+    "scale-c"
+  ],
+  "embeddingHint": "owasp crypto Use AEAD for tokens at rest; rotate keys on compromise iron cannon scale-c compliance"
+}

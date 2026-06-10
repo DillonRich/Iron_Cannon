@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-ci-cd-builds-configuration-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/ci-cd/builds/configuration/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Configuration",
+  "excerpt": "description: Understand the different settings associated with your build. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. When connecting your Git repository to your Worker, you can customize the configurations needed to build and deploy your Worker. When a commit is pushed to your connected repository, Workers Builds runs a two-step process:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-functions-routing-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/functions/routing/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Routing",
+  "excerpt": "description: Learn how Pages Functions uses file-based routing to map URL patterns to function files. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. Functions utilize file-based routing. Your `/functions` directory structure determines the designated routes that your Functions will run on. You can create a `/functions` directory with as many levels as needed for your project's use case. Review the following directory: The following routes will be generated based on the above file structure. These routes map the URL pattern to the `/functions` file that will be invoked when a visitor goes to the URL:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

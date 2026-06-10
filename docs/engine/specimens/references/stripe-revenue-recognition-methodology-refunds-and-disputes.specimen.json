@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-methodology-refunds-and-disputes",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/methodology/refunds-and-disputes.md",
+  "lastVerified": "2026-06-03",
+  "title": "Revenue Recognition with refunds and disputes",
+  "excerpt": "Understand how refunds and disputes impact your revenue. Refunds and disputes can happen to any transaction on Stripe, which affects your revenue numbers. Stripe handles refunds and disputes in a similar manner, but the contra revenue generated go to the refunds and disputes accounts respectively. - Prior recognized revenue is offset by contra revenue in the refund or dispute account. - Deferred revenue that hasn’t been recognized is cleared. This next example is a one-time payment refund.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

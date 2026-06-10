@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/resend/password-reset-email",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "password-reset",
+  "moduleId": "M23-reset-email",
+  "adapterId": "resend",
+  "section": "reset-email",
+  "content": {
+    "requirement": "Transactional password reset email via Resend",
+    "templates": [
+      { "id": "auth.password_reset", "trigger": "P01→P02", "type": "transactional" }
+    ],
+    "requiredSteps": [
+      "Link includes opaque token (not userId)",
+      "Idempotency-Key on send",
+      "From verified domain",
+      "Do not include password in email"
+    ]
+  },
+  "references": ["resend/send-api", "resend/from-domain", "resend/idempotency"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "PW-EM-001", "type": "required_string", "value": "auth.password_reset", "fileGlob": "**/*.{ts,tsx,js}", "tier": "pro" },
+      { "id": "PW-EM-002", "type": "required_string", "value": "Idempotency-Key", "fileGlob": "**/*.{ts,js}", "tier": "pro" }
+    ],
+    "forbidden": [
+      { "id": "PW-EM-F01", "type": "forbidden_string", "value": "Your new password is", "fileGlob": "**/*", "tier": "pro" }
+    ]
+  },
+  "metadata": { "minTier": "pro", "category": "password-reset-email" }
+}

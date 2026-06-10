@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-reports-waterfall",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/reports/waterfall.md",
+  "lastVerified": "2026-06-03",
+  "title": "Revenue waterfall",
+  "excerpt": "View and analyze monthly revenue with the waterfall report. The [waterfall report](https://dashboard.stripe.com/revenue-recognition/accounting-reports) displays information about your monthly revenue. You can select a range to view, and you can specify a month to show recognized revenue up to. For example, the following waterfall shows revenue billed in April 2025, with monthly recognized revenue up to the end of June 2025: | **Booked** | **Recognized** | **As of Jun 2025** | | **Month** | **Total** | **May 2025** | **Jun 2025** | **Recognized** | **Remaining** | | Apr 2025 | 2,000,000 USD | 400,000 USD | 700,000 USD | 1,100,000 USD | 900,000 USD |",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

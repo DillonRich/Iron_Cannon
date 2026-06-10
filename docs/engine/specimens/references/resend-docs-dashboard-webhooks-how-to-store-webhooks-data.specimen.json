@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-webhooks-how-to-store-webhooks-data",
+  "sourceUrl": "https://resend.com/docs/dashboard/webhooks/how-to-store-webhooks-data.md",
+  "lastVerified": "2026-06-03",
+  "title": "How to Store Webhooks Data",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # How to Store Webhooks Data > Storing your email event data matters. Learn how to set up your own data storage. When you send emails with Resend, you can receive real-time notifications for each message: * Was it delivered? * Did the recipient open it? * Did they click a link? * Did it bounce? These events contain valuable data, however, by default webhooks are ephemeral. To make the data persistent, you can store the data in your own datasource. This guide explains [why you should store your webhook data](#why-store-webhook-data) and [how to get started](#how-to-store-webhook-data).…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

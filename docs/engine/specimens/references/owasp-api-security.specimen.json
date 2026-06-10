@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/api-security",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP REST API security",
+  "excerpt": "Authenticate all API endpoints. Validate Content-Type. Use HTTPS. Rate limit. Do not expose stack traces. Validate input server-side. Use least privilege authorization on every route including webhooks.",
+  "appliesTo": ["layer3", "webhook-security"],
+  "tags": ["owasp", "api", "security"]
+}

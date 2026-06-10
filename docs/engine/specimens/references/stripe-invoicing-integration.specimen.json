@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-integration",
+  "sourceUrl": "https://docs.stripe.com/invoicing/integration.md",
+  "lastVerified": "2026-06-03",
+  "title": "Integrate with the Invoicing API",
+  "excerpt": "Learn how to create and send an invoice with code. The [Dashboard](https://dashboard.stripe.com/invoices) is the most common way to [create invoices](https://docs.stripe.com/invoicing/dashboard.md#create-invoice). If you’d like to automate invoice creation, you can integrate with the API. Build a full, working Invoicing integration using our [sample integration](https://docs.stripe.com/invoicing/integration/quickstart.md). Use our official libraries for access to the Stripe API: curl https://api.stripe.com/v1/products \\ [Prices](https://docs.stripe.com/api.md#prices) define how much and how often to charge for products. This includes how much the product costs, what currency to use, and the billing interval (when the price is for a subscription).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

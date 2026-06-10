@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-framework-guides-web-apps-nextjs-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Next.js",
+  "excerpt": "description: Create an Next.js application and deploy it to Cloudflare Workers with Workers Assets. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. **Start from CLI** \\- scaffold a Next.js project on Workers. npm create cloudflare@latest -- my-next-app --framework=next",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

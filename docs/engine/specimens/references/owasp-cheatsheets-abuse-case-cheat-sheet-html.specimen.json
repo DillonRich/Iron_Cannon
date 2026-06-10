@@ -1,0 +1,16 @@
+{
+  "refId": "owasp/cheatsheets-abuse-case-cheat-sheet-html",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Abuse_Case_Cheat_Sheet.html",
+  "lastVerified": "2026-06-05",
+  "title": "Abuse Case Cheat Sheet",
+  "excerpt": "Abuse Case - OWASP Cheat Sheet Series Skip to content OWASP Cheat Sheet Series Abuse Case Initializing search OWASP/CheatSheetSeries OWASP Cheat Sheet Series OWASP/CheatSheetSeries Introduction Index Alphabetical Index ASVS Index MASVS Index Proactive Controls Index Top 10 Cheatsheets Cheatsheets AI Agent Security AJAX Security AML Sanctions AI Agent Payments Abuse Case Abuse Case Table of contents Archive Statement Introduction Objective Context &amp; approach Why clearly identify the attacks Notion of Abuse Cases How to define the list of Abuse Cases When to define the list of Abuse Cases Proposal Step 1: Preparation of the workshop Step 2: During the workshop Step 3: After the workshop Step 4: During implementation - Abuse cases handling tracking Step 5: During implementation - Abuse ca…",
+  "appliesTo": [
+    "security",
+    "auth",
+    "billing"
+  ],
+  "tags": [
+    "owasp",
+    "p0"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "refId": "owasp/knowledge-w63-mcp-tool-authz",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w63/mcp-tool-authz",
+  "lastVerified": "2026-06-06",
+  "title": "W63 mcp-tool-authz",
+  "provider": "owasp",
+  "excerpt": "MCP servers must authorize each tool call; never expose env or shell via tools",
+  "embeddingHint": "owasp mcp-tool-authz wave63 legal security",
+  "tags": [
+    "wave63",
+    "knowledge",
+    "owasp"
+  ]
+}

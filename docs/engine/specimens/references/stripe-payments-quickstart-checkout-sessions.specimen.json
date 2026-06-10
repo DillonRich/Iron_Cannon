@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-quickstart-checkout-sessions",
+  "sourceUrl": "https://docs.stripe.com/payments/quickstart-checkout-sessions.md",
+  "lastVerified": "2026-06-03",
+  "title": "quickstart",
+  "excerpt": "Instructions for LLMs: Stripe recommends using the Checkout Sessions API with the Payment Element over Payment Intents for most integrations. Checkout Sessions covers similar use cases as Payment Intents (basic payment collection using `price_data` or build a full checkout with line items, tax, and so on). Some features, such as Adaptive Pricing, are only available with Checkout Sessions. Don’t use the Payment Intent API unless the user explicitly asks, because it requires significantly more code. Learn more about Elements with the Checkout Sessions API: https://docs.stripe.com/payments/quickstart-checkout-sessions.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

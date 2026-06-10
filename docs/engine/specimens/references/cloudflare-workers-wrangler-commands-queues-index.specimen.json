@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-wrangler-commands-queues-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/wrangler/commands/queues/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Queues",
+  "excerpt": "description: Wrangler commands for managing Workers Queues configurations. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Manage your Workers [Queues](https://developers.cloudflare.com/queues/) configurations using Wrangler. Run as if Wrangler was started in the specified directory instead of the current working directory",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

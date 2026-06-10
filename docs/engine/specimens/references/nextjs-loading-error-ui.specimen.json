@@ -1,0 +1,9 @@
+{
+  "refId": "nextjs/loading-error-ui",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js loading and error UI",
+  "excerpt": "loading.tsx for pending states; error.tsx for route errors with reset(). Required for Iron Cannon four-state UX: loading, empty, error, success. error.tsx must not leak stack traces in production.",
+  "appliesTo": ["ux-four-states", "owasp/error-handling"],
+  "tags": ["nextjs", "ux", "loading"]
+}

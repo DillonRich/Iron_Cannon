@@ -1,0 +1,15 @@
+{
+  "refId": "resend/knowledge-w74-webhook-replay-protection",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w74/webhook-replay-protection",
+  "lastVerified": "2026-06-06",
+  "title": "W74 webhook-replay-protection",
+  "provider": "resend",
+  "excerpt": "Webhook replay window rejected after TTL",
+  "embeddingHint": "resend webhook-replay-protection wave74 stripe-resend-depth",
+  "tags": [
+    "wave74",
+    "knowledge",
+    "resend",
+    "stripe-resend-depth"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-edge-005",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-edge-005",
+  "content": {
+    "requirement": "Email verification before sensitive actions",
+    "obligations": [
+      "LEG-EDGE-005"
+    ],
+    "compareSteps": [
+      "Run detect.type=schema_column",
+      "Map result to obligation LEG-EDGE-005",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-EDGE-005: Email verification before sensitive actions"
+  },
+  "references": [
+    "legal/verified-email-gate"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-EDGE-005",
+        "type": "schema_column",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "edge",
+    "disclaimerRequired": true
+  }
+}

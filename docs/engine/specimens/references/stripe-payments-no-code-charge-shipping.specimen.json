@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-no-code-charge-shipping",
+  "sourceUrl": "https://docs.stripe.com/payments/no-code/charge-shipping.md",
+  "lastVerified": "2026-06-03",
+  "title": "Charge for shipping",
+  "excerpt": "Create different shipping rates for your customers. Shipping rates let you display various shipping options—like standard, express, and overnight—with more accurate delivery estimates. Charge your customer for shipping using different Stripe products, some of which require coding. Before you create a shipping rate, learn how to [collect billing and shipping addresses](https://docs.stripe.com/payment-links/customize.md). > If you’re using a third-party application with Stripe (for example, [Thrivecart](https://support.thrivecart.com/help/setting-your-physical-fulfilment-shipping-options/) or [Shopify](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/setting-up-shipping-rates)) and want to adjust the shipping rate, visit the docs for that service. 1.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

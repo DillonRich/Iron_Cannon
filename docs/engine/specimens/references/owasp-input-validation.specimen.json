@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/input-validation",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Input validation",
+  "excerpt": "Validate all input server-side with allowlists. Reject unexpected types and lengths. Normalize before validate. Schema validation (Zod/etc.) at API boundary. Client validation is UX only—not security.",
+  "appliesTo": ["layer3", "input-validation"],
+  "tags": ["owasp", "validation"]
+}

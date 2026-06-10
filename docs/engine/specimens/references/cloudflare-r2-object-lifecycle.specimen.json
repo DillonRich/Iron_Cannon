@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/r2-object-lifecycle",
+  "sourceUrl": "https://developers.cloudflare.com/r2/buckets/lifecycle/",
+  "lastVerified": "2026-05-31",
+  "title": "R2 object lifecycle",
+  "excerpt": "Lifecycle rules for R2 buckets — expiration and transition for export archives.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "cloudflare",
+    "r2-object-lifecycle"
+  ]
+}

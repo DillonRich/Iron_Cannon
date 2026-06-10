@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "billing-subscription/states",
+  "layer": 1,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "billing-subscription",
+  "adapterId": null,
+  "section": "states",
+  "content": {
+    "states": [
+      { "id": "B00", "name": "no_subscription" },
+      { "id": "B01", "name": "checkout_pending" },
+      { "id": "B02", "name": "provisioning" },
+      { "id": "B03", "name": "active" },
+      { "id": "B04", "name": "past_due" },
+      { "id": "B05", "name": "cancel_at_period_end" },
+      { "id": "B06", "name": "canceled" }
+    ],
+    "stripeEventMap": {
+      "checkout.session.completed": "B03",
+      "invoice.payment_failed": "B04",
+      "customer.subscription.deleted": "B06"
+    }
+  },
+  "references": ["stripe/event-types", "stripe/subscriptions-overview"],
+  "compliancePatterns": { "required": [], "forbidden": [] },
+  "metadata": { "minTier": "pro", "category": "billing-states" }
+}

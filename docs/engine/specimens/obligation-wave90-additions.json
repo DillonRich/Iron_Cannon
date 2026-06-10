@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W90-001",
+      "category": "billing",
+      "title": "AFFILIATES_SETUP_PREP published",
+      "sourceRefId": "ironcannon/knowledge-w90-affiliates-setup-prep-doc",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-002",
+      "category": "operations",
+      "title": "simulate-affiliates-prep.mjs green",
+      "sourceRefId": "ironcannon/knowledge-w90-affiliates-prep-sim",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-003",
+      "category": "billing",
+      "title": "Affiliates prep journeys UJ-101–105",
+      "sourceRefId": "ironcannon/knowledge-w90-uj-101-105-affiliates",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-004",
+      "category": "operations",
+      "title": "G-45 validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w90-g45-validator-stretch",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-005",
+      "category": "operations",
+      "title": "Operator preflight bundle validator",
+      "sourceRefId": "ironcannon/knowledge-w90-operator-preflight-bundle",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-006",
+      "category": "operations",
+      "title": "planning:affiliates-prep npm script",
+      "sourceRefId": "ironcannon/knowledge-w90-planning-affiliates-prep-npm",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-007",
+      "category": "billing",
+      "title": "G-41 planned until G-40 complete",
+      "sourceRefId": "ironcannon/knowledge-w90-g41-still-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-008",
+      "category": "billing",
+      "title": "M13 provisioning before affiliate tiers",
+      "sourceRefId": "ironcannon/knowledge-w90-m13-before-affiliate-payout",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-009",
+      "category": "billing",
+      "title": "Referral attribution options documented",
+      "sourceRefId": "stripe/knowledge-w90-referral-attribution-options",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W90-010",
+      "category": "privacy",
+      "title": "G-45 prep not live affiliate payouts",
+      "sourceRefId": "legal/knowledge-w90-affiliates-prep-not-payout-live",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

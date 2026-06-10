@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/vectorize-insert",
+  "sourceUrl": "https://developers.cloudflare.com/vectorize/get-started/intro/",
+  "lastVerified": "2026-05-31",
+  "title": "Vectorize insert and index",
+  "excerpt": "Create index with dimensions matching embedding model. Upsert vectors with metadata (refId, rulesetVersion). Batch insert at publish time. Admin pipeline only—users never insert. Reindex on rulesetVersion bump.",
+  "appliesTo": ["VECTORIZE_RAG_SPEC", "CORPUS_BUILD_PLAYBOOK"],
+  "tags": ["cloudflare", "vectorize"]
+}

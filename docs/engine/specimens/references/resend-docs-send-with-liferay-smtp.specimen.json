@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-send-with-liferay-smtp",
+  "sourceUrl": "https://resend.com/docs/send-with-liferay-smtp.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send emails using Liferay with SMTP",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send emails using Liferay with SMTP > Learn how to integrate Liferay with Resend SMTP. ## Prerequisites To get the most out of this guide, you'll need to: * [Create an API key](https://resend.com/api-keys) * [Verify your domain](https://resend.com/domains) ## 1. Get the Resend SMTP credentials When configuring your SMTP integration, you'll need to use the following credentials: * **Host**: `smtp.resend.com` * **Port**: `465` * **Username**: `resend` * **Password**: `YOUR_API_KEY` ## 2. Integrate with Liferay After logging into your Liferay instance as the admin user, you'll need to enable the SMTP integration. 1.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "refId": "legal/wcag-21-quickref",
+  "sourceUrl": "https://www.w3.org/WAI/WCAG21/quickref/",
+  "lastVerified": "2026-05-31",
+  "title": "WCAG 2.1 Quick Reference",
+  "excerpt": "Authoritative checklist for WCAG 2.1 success criteria. Iron Clad maps detectable subset: alt text, labels, focus, contrast (advisory), page titles, language attribute. Full audit may require manual testing.",
+  "appliesTo": ["layer4", "accessibility"],
+  "tags": ["legal", "wcag", "a11y"]
+}

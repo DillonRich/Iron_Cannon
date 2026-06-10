@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-examples-cors-header-proxy-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/examples/cors-header-proxy/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "CORS header proxy",
+  "excerpt": "description: Add the necessary CORS headers to a third party API response. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Add the necessary CORS headers to a third party API response. If you want to get started quickly, click on the button below.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

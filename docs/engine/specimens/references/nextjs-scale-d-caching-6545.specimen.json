@@ -1,0 +1,13 @@
+{
+  "refId": "nextjs/scale-d-caching-6545",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/nextjs/scale-d-caching-6545",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-D caching 6545",
+  "excerpt": "Partial Prerendering and dynamicIO cache boundaries. Scale-D planning reference for Iron Cannon MCP agents at 10k corpus depth.",
+  "tags": [
+    "nextjs",
+    "caching",
+    "scale-d"
+  ],
+  "embeddingHint": "nextjs caching Partial Prerendering and dynamicIO cache boundaries scale-d compliance security"
+}

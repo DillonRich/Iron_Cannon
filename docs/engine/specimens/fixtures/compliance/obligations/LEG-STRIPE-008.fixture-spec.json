@@ -1,0 +1,19 @@
+{
+  "fixtureId": "LEG-STRIPE-008",
+  "obligationId": "LEG-STRIPE-008",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "patterns": [
+      "StripeElements",
+      "PaymentElement"
+    ],
+    "forbidden": [
+      "card number input"
+    ]
+  },
+  "passSnippet": "StripeElements PaymentElement",
+  "failSnippet": "card number input",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

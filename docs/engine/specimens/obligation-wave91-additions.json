@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W91-001",
+      "category": "operations",
+      "title": "Polish arc signoff published",
+      "sourceRefId": "ironcannon/knowledge-w91-polish-arc-signoff-doc",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-002",
+      "category": "operations",
+      "title": "Next main session checklist published",
+      "sourceRefId": "ironcannon/knowledge-w91-next-main-session-doc",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-003",
+      "category": "operations",
+      "title": "Arc cap journeys UJ-106–110",
+      "sourceRefId": "ironcannon/knowledge-w91-uj-106-110-capstone",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-004",
+      "category": "operations",
+      "title": "G-46 validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w91-g46-validator-stretch",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-005",
+      "category": "operations",
+      "title": "Operator gaps remain planned post G-46",
+      "sourceRefId": "ironcannon/knowledge-w91-operator-gaps-still-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-006",
+      "category": "operations",
+      "title": "Preflight green at arc close",
+      "sourceRefId": "ironcannon/knowledge-w91-preflight-green-at-close",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-007",
+      "category": "operations",
+      "title": "Session handoff marked complete",
+      "sourceRefId": "ironcannon/knowledge-w91-session-handoff-complete",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-008",
+      "category": "operations",
+      "title": "110 behavioral journeys at close",
+      "sourceRefId": "ironcannon/knowledge-w91-110-journeys-milestone",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-009",
+      "category": "operations",
+      "title": "Stretch suite ≥40 at G-46",
+      "sourceRefId": "ironcannon/knowledge-w91-stretch-suite-40",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W91-010",
+      "category": "privacy",
+      "title": "G-46 not production deploy approval",
+      "sourceRefId": "legal/knowledge-w91-arc-signoff-not-deploy",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

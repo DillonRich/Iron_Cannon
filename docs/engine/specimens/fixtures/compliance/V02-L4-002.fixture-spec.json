@@ -1,0 +1,9 @@
+{
+  "fixtureId": "V02-L4-002",
+  "obligationId": "LEG-A11Y-001",
+  "detectType": "required_attribute",
+  "passSnippet": "<img src=\"/logo.png\" alt=\"Acme Corp logo\" />",
+  "failSnippet": "<img src=\"/logo.png\" />",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

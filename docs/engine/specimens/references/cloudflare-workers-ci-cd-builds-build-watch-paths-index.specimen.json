@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-ci-cd-builds-build-watch-paths-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/ci-cd/builds/build-watch-paths/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Build watch paths",
+  "excerpt": "description: Reduce compute for your monorepo by specifying paths for Workers Builds to skip image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. When you connect a git repository to Workers, by default a change to any file in the repository will trigger a build. You can configure Workers to include or exclude specific paths to specify if Workers should skip a build for a given path. This can be especially helpful if you are using a monorepo project structure and want to limit the number of builds being kicked off. To configure which paths are included and excluded:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

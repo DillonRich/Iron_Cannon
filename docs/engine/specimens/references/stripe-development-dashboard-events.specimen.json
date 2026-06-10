@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/development-dashboard-events",
+  "sourceUrl": "https://docs.stripe.com/development/dashboard/events.md",
+  "lastVerified": "2026-06-03",
+  "title": "View events and event object payloads",
+  "excerpt": "View events triggered by your account and their event object payload in the Developers Dashboard. > [Workbench](https://docs.stripe.com/workbench.md) replaces the Developers Dashboard, and we automatically enable it for all new Stripe accounts by default. Configure this setting from the [Developers](https://dashboard.stripe.com/settings/developers) settings in the Dashboard. > Read about how to [view event activity](https://docs.stripe.com/workbench/overview.md#events) in Workbench. > Use [Workbench](https://docs.stripe.com/workbench/overview.md#events) to view snapshot events and thin events, which don’t appear in the Developers Dashboard. When you send an API request, Stripe logs one or more events for your account.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

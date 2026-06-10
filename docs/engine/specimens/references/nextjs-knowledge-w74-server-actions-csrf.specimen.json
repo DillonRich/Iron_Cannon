@@ -1,0 +1,15 @@
+{
+  "refId": "nextjs/knowledge-w74-server-actions-csrf",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w74/server-actions-csrf",
+  "lastVerified": "2026-06-06",
+  "title": "W74 server-actions-csrf",
+  "provider": "nextjs",
+  "excerpt": "Server Actions protected with origin checks",
+  "embeddingHint": "nextjs server-actions-csrf wave74 stripe-resend-depth",
+  "tags": [
+    "wave74",
+    "knowledge",
+    "nextjs",
+    "stripe-resend-depth"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-setup-intents",
+  "sourceUrl": "https://docs.stripe.com/payments/setup-intents.md",
+  "lastVerified": "2026-06-03",
+  "title": "The Setup Intents API",
+  "excerpt": "Learn more about the Setup Intents API for saving payment methods. Use the *Setup Intents API* (The Setup Intents API lets you build dynamic flows for collecting payment method details for future payments. It tracks the lifecycle of a payment setup flow and can trigger additional authentication steps if required by law or by the payment method) to set up a payment method for future payments. It’s similar to a payment, but no charge is created. [Set up a payment method for future payments now](https://docs.stripe.com/payments/save-and-reuse.md). The goal is to have payment credentials saved and optimized for future payments, meaning the payment method is configured correctly for any scenario.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

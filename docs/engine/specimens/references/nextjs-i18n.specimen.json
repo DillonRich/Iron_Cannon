@@ -1,0 +1,15 @@
+{
+  "refId": "nextjs/i18n",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/routing/internationalization",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js Internationalization",
+  "excerpt": "i18n routing for localized apps. Iron Clad obligation markets filter by primaryMarkets—not automatic i18n. Add when product requires locales.",
+  "appliesTo": [
+    "P1",
+    "layer4"
+  ],
+  "tags": [
+    "nextjs",
+    "i18n"
+  ]
+}

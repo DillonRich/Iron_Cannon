@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/r2-data-catalog-get-started-index",
+  "sourceUrl": "https://developers.cloudflare.com/r2/data-catalog/get-started/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Getting started",
+  "excerpt": "description: Learn how to enable the R2 Data Catalog on your bucket, load sample data, and run your first query. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/r2/llms.txt > Use this file to discover all available pages before exploring further. * Creating your first [R2 bucket](https://developers.cloudflare.com/r2/buckets/) and enabling its [data catalog](https://developers.cloudflare.com/r2/data-catalog/). * Creating an [API token](https://developers.cloudflare.com/r2/api/tokens/) needed for query engines to authenticate with your data catalog.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

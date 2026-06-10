@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-COOKIE-004",
+  "obligationId": "LEG-COOKIE-004",
+  "detectType": "route_exists",
+  "detect": {
+    "type": "route_exists",
+    "path": "/cookies"
+  },
+  "passSnippet": "export default function P(){return <main>/cookies</main>}",
+  "failSnippet": "export default function P(){return null}",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

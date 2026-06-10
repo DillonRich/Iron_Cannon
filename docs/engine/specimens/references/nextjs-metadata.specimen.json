@@ -1,0 +1,9 @@
+{
+  "refId": "nextjs/metadata",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/optimizing/metadata",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js Metadata API",
+  "excerpt": "Export metadata or generateMetadata per route for title and description. Required for LEG-A11Y-008 page title checks on auth routes. Use template in root layout for consistent branding.",
+  "appliesTo": ["auth-lifecycle", "layer4/accessibility"],
+  "tags": ["nextjs", "metadata", "a11y"]
+}

@@ -1,0 +1,11 @@
+{
+  "refId": "resend/suppression-list",
+  "sourceUrl": "https://resend.com/docs/dashboard/audiences/introduction",
+  "lastVerified": "2026-06-03",
+  "title": "Suppression on deletion",
+  "excerpt": "Add deleted user emails to suppression; stop marketing sends immediately.",
+  "tags": [
+    "resend",
+    "email"
+  ]
+}

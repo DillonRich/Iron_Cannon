@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/nextjs/session-middleware",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "moduleId": "M05-auth-session-middleware",
+  "adapterId": "nextjs-app-router",
+  "section": "session-middleware",
+  "content": {
+    "requirement": "Protect authenticated routes; redirect anonymous users to /login",
+    "matcher": ["/dashboard/:path*", "/settings/:path*"],
+    "requiredSteps": [
+      "Read session cookie in middleware",
+      "Validate session via /api/me or edge-compatible session decode",
+      "Redirect unauthenticated to /login?next=",
+      "Exclude public routes: /, /login, /signup, /pricing, /privacy, /terms"
+    ]
+  },
+  "references": ["nextjs/middleware", "nextjs/cookies-headers", "owasp/session-httponly-secure"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "AUTH-MW-001", "type": "required_file", "value": "middleware.ts", "fileGlob": "**/*", "tier": "pro" },
+      { "id": "AUTH-MW-002", "type": "required_string", "value": "/dashboard", "fileGlob": "**/middleware.ts", "tier": "pro" },
+      { "id": "AUTH-MW-003", "type": "required_string", "value": "/login", "fileGlob": "**/middleware.ts", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "auth-middleware" }
+}

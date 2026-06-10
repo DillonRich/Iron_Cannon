@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-development-testing-local-explorer-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/development-testing/local-explorer/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Local Explorer",
+  "excerpt": "description: Browse and edit local binding data from your browser during development. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Local Explorer is a browser-based interface for viewing and editing the data in your local [bindings](https://developers.cloudflare.com/workers/runtime-apis/bindings/) during development. It is available at `/cdn-cgi/explorer` on your local development server. Instead of running CLI commands or writing throwaway code to inspect local state, you can open Local Explorer in your browser and work with your data directly.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

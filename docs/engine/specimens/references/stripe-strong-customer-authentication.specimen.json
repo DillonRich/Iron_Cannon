@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/strong-customer-authentication",
+  "sourceUrl": "https://docs.stripe.com/strong-customer-authentication",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe SCA",
+  "excerpt": "3DS and SCA requirements for EU card payments at checkout.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "stripe",
+    "strong-customer-authentication"
+  ]
+}

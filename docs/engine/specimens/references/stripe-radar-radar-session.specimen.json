@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/radar-radar-session",
+  "sourceUrl": "https://docs.stripe.com/radar/radar-session.md",
+  "lastVerified": "2026-06-03",
+  "title": "Provide Radar additional fraud data",
+  "excerpt": "Learn how to provide critical data for improved fraud protection. If you perform card tokenization yourself, through a third-party, or send raw credit card numbers to Stripe from your servers, critical device details won’t be automatically captured. With fewer data points, *Radar* (Stripe Radar helps detect and block fraud for any type of business using machine learning that trains on data across millions of global companies. It’s built into Stripe and requires no additional setup to get started) might produce less accurate fraud scores. Inaccurate fraud scores can result in fraudulent charges not being blocked. By using Radar Sessions, you can capture critical fraud information without tokenizing on Stripe.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

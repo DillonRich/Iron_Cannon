@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/declines-codes",
+  "sourceUrl": "https://docs.stripe.com/declines/codes.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe decline codes",
+  "excerpt": "Learn about Stripe decline codes and how to resolve them when a charge fails. Stripe uses its own decline codes that cover many of the same potential reasons as [issuer decline codes](https://docs.stripe.com/declines/network-codes.md). Our decline codes expand on issuer decline codes by going into more detail about the specific reason for the decline. In addition to a decline code, an error can contain an [advice_code](https://docs.stripe.com/declines/card.md#retrying-issuer-declines) with suggested next steps. > Some [API errors](https://docs.stripe.com/api/errors.md) include a [code](https://docs.stripe.com/api/errors.md#errors-code) attribute to help you [resolve them](https://docs.stripe.com/error-handling.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

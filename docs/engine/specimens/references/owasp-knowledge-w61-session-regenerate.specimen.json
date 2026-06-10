@@ -1,0 +1,14 @@
+{
+  "refId": "owasp/knowledge-w61-session-regenerate",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w61/session-regenerate",
+  "lastVerified": "2026-06-06",
+  "title": "W61 session-regenerate",
+  "provider": "owasp",
+  "excerpt": "Regenerate session ID on privilege change login logout",
+  "embeddingHint": "owasp session-regenerate wave61 knowledge",
+  "tags": [
+    "wave61",
+    "knowledge",
+    "owasp"
+  ]
+}

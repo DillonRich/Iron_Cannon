@@ -1,0 +1,20 @@
+{
+  "name": "@ironcannon/mcp-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./tier-gate": "./src/tier-gate.js",
+    "./mcp-handler": "./src/mcp-handler.js",
+    "./tool-catalog": "./src/tool-catalog.js",
+    "./ruleset": "./src/ruleset.js",
+    "./stripe-platform": "./src/stripe-platform.js"
+  },
+  "dependencies": {
+    "@ironcannon/compose": "file:../compose",
+    "@ironcannon/compare": "file:../compare",
+    "@ironcannon/verify": "file:../verify"
+  }
+}

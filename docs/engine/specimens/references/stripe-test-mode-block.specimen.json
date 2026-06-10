@@ -1,0 +1,11 @@
+{
+  "refId": "stripe/test-mode-block",
+  "sourceUrl": "https://docs.stripe.com/keys.md",
+  "lastVerified": "2026-06-05",
+  "title": "Stripe test mode keys blocked in production Worker env",
+  "excerpt": "# API keys Use API keys to authenticate API requests. Stripe authenticates API requests using your account’s API keys. If a request doesn’t include a valid key, Stripe returns an [invalid request error](https://docs.stripe.com/error-handling.md#invalid-request-errors). If a request includes a deleted or expired key, Stripe returns an [authentication error](https://docs.stripe.com/error-handling.md#authentication-errors). Use the [Developers Dashboard](https://dashboard.stripe.com/test/apikeys) to create, reveal, delete, and rotate API keys. You can access your API keys on the [API keys](https://dashboard.stripe.com/test/apikeys) tab.…",
+  "tags": [
+    "stripe",
+    "billing"
+  ]
+}

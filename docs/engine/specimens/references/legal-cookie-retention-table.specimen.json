@@ -1,0 +1,14 @@
+{
+  "refId": "legal/cookie-retention-table",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/legal-cookie-retention-table",
+  "lastVerified": "2026-06-04",
+  "title": "Cookie policy lists retention per category",
+  "provider": "legal",
+  "excerpt": "LEG-W53-012: Cookie policy lists retention per category",
+  "embeddingHint": "LEG-W53-012 cookie schema_table",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

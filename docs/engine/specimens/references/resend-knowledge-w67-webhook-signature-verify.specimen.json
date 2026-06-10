@@ -1,0 +1,15 @@
+{
+  "refId": "resend/knowledge-w67-webhook-signature-verify",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w67/webhook-signature-verify",
+  "lastVerified": "2026-06-06",
+  "title": "W67 webhook-signature-verify",
+  "provider": "resend",
+  "excerpt": "Verify Resend webhook HMAC before processing bounce events",
+  "embeddingHint": "resend webhook-signature-verify wave67 phase3 production",
+  "tags": [
+    "wave67",
+    "knowledge",
+    "resend",
+    "phase3"
+  ]
+}

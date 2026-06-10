@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-testing-vitest-integration-migration-guides-migrate-from-unstable-dev-in",
+  "sourceUrl": "https://developers.cloudflare.com/workers/testing/vitest-integration/migration-guides/migrate-from-unstable-dev/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Migrate from unstable_dev",
+  "excerpt": "description: Migrate from the [`unstable_dev`](/workers/wrangler/api/#unstable_dev) API to writing tests with the Workers Vitest integration. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. The [unstable\\_dev](https://developers.cloudflare.com/workers/wrangler/api/#unstable%5Fdev) API has been a recommended approach to run integration tests. The `@cloudflare/vitest-pool-workers` package integrates directly with Vitest for fast re-runs, supports both unit and integration tests, all whilst providing isolated per-test storage.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

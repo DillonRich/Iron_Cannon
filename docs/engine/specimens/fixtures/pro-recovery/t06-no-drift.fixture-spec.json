@@ -1,0 +1,17 @@
+{
+  "fixtureId": "T06-01",
+  "description": "All watched files match state_log hashes — proceed",
+  "input": {
+    "session": { "wiremapHash": "wm-abc" },
+    "stackSignals": { "frontend": "nextjs", "hasWrangler": true },
+    "stateLogMarkdown": "---\nwiremapId: wm_abc\n---\n\n### M01-auth-d1-schema\n\n| Field | Value |\n| status | complete |\n\n**fileHashes:**\n- migrations/0001.sql: sha256:aaa111\n",
+    "diskFiles": {
+      "migrations/0001.sql": "content-v1"
+    }
+  },
+  "expected": {
+    "driftDetected": false,
+    "code": null,
+    "changedPathsCount": 0
+  }
+}

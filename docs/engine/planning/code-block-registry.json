@@ -1,0 +1,3638 @@
+{
+  "version": "1.0.0",
+  "blockCount": 454,
+  "blocks": [
+    {
+      "id": "CB-1",
+      "source": "docs/engine/ABUSE_PREVENTION.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 8,
+      "hash": "add4c03f9fd22afa"
+    },
+    {
+      "id": "CB-2",
+      "source": "docs/engine/ADAPTIVE_LOGIC_DEEP.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 9,
+      "hash": "241a0a191e12081d"
+    },
+    {
+      "id": "CB-3",
+      "source": "docs/engine/ADAPTIVE_LOGIC_DEEP.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 3,
+      "hash": "75369bd531cca986"
+    },
+    {
+      "id": "CB-4",
+      "source": "docs/engine/ADAPTIVE_LOGIC_DEEP.md",
+      "index": 2,
+      "lang": "plain",
+      "lines": 3,
+      "hash": "359c872bb4b54fd3"
+    },
+    {
+      "id": "CB-5",
+      "source": "docs/engine/ADAPTIVE_LOGIC_DEEP.md",
+      "index": 3,
+      "lang": "plain",
+      "lines": 4,
+      "hash": "6cc874448c0a7c8d"
+    },
+    {
+      "id": "CB-6",
+      "source": "docs/engine/ADAPTIVE_LOGIC_DEEP.md",
+      "index": 4,
+      "lang": "plain",
+      "lines": 3,
+      "hash": "1089522e38f03678"
+    },
+    {
+      "id": "CB-7",
+      "source": "docs/engine/ADAPTIVE_LOGIC_DEEP.md",
+      "index": 5,
+      "lang": "json",
+      "lines": 8,
+      "hash": "7c2ee7ec1d81bc45"
+    },
+    {
+      "id": "CB-8",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 21,
+      "hash": "68fa273d2ba006c3"
+    },
+    {
+      "id": "CB-9",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 1,
+      "lang": "mermaid",
+      "lines": 26,
+      "hash": "5d459494f02f70f7"
+    },
+    {
+      "id": "CB-10",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 2,
+      "lang": "mermaid",
+      "lines": 16,
+      "hash": "e6cdb82c471bd333"
+    },
+    {
+      "id": "CB-11",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 3,
+      "lang": "json",
+      "lines": 6,
+      "hash": "28baac9367ae82db"
+    },
+    {
+      "id": "CB-12",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 4,
+      "lang": "json",
+      "lines": 9,
+      "hash": "fbbad1a4ff6f7182"
+    },
+    {
+      "id": "CB-13",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 5,
+      "lang": "json",
+      "lines": 5,
+      "hash": "4a4a6dc5b6c3fb20"
+    },
+    {
+      "id": "CB-14",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 6,
+      "lang": "json",
+      "lines": 5,
+      "hash": "c46de9c8826bea3a"
+    },
+    {
+      "id": "CB-15",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 7,
+      "lang": "mermaid",
+      "lines": 16,
+      "hash": "c6b048327f8518d8"
+    },
+    {
+      "id": "CB-16",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 8,
+      "lang": "plain",
+      "lines": 3,
+      "hash": "763c9105da0b830d"
+    },
+    {
+      "id": "CB-17",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 9,
+      "lang": "plain",
+      "lines": 11,
+      "hash": "3154a781418bddd2"
+    },
+    {
+      "id": "CB-18",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 10,
+      "lang": "json",
+      "lines": 5,
+      "hash": "49d114018f8aeffb"
+    },
+    {
+      "id": "CB-19",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 11,
+      "lang": "mermaid",
+      "lines": 11,
+      "hash": "6274e8a4227aacac"
+    },
+    {
+      "id": "CB-20",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 12,
+      "lang": "typescript",
+      "lines": 10,
+      "hash": "c562df6c01dd86aa"
+    },
+    {
+      "id": "CB-21",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 13,
+      "lang": "mermaid",
+      "lines": 6,
+      "hash": "5c40bc1a396d9e3c"
+    },
+    {
+      "id": "CB-22",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 14,
+      "lang": "mermaid",
+      "lines": 8,
+      "hash": "8c9a7fa6de6129b8"
+    },
+    {
+      "id": "CB-23",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 15,
+      "lang": "mermaid",
+      "lines": 6,
+      "hash": "590049982f6d72e4"
+    },
+    {
+      "id": "CB-24",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 16,
+      "lang": "plain",
+      "lines": 5,
+      "hash": "cdea7d3da733f9e0"
+    },
+    {
+      "id": "CB-25",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 17,
+      "lang": "mermaid",
+      "lines": 7,
+      "hash": "242fa623a179466f"
+    },
+    {
+      "id": "CB-26",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 18,
+      "lang": "mermaid",
+      "lines": 7,
+      "hash": "a7c9373d16c796f8"
+    },
+    {
+      "id": "CB-27",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 19,
+      "lang": "json",
+      "lines": 6,
+      "hash": "5fdbfb35db869a16"
+    },
+    {
+      "id": "CB-28",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 20,
+      "lang": "json",
+      "lines": 13,
+      "hash": "06cacf592dd7baa1"
+    },
+    {
+      "id": "CB-29",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 21,
+      "lang": "markdown",
+      "lines": 16,
+      "hash": "0ea3b7d22371c588"
+    },
+    {
+      "id": "CB-30",
+      "source": "docs/engine/ADAPTIVE_LOGIC_ENGINE.md",
+      "index": 22,
+      "lang": "mermaid",
+      "lines": 4,
+      "hash": "b17eff44f7417151"
+    },
+    {
+      "id": "CB-31",
+      "source": "docs/engine/AGENT_CONCURRENCY_LIMITS.md",
+      "index": 0,
+      "lang": "markdown",
+      "lines": 3,
+      "hash": "7d3ea7b9aa03c4f6"
+    },
+    {
+      "id": "CB-32",
+      "source": "docs/engine/AGENT_GUIDANCE_PROTOCOL.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 31,
+      "hash": "47198491dfc741d4"
+    },
+    {
+      "id": "CB-33",
+      "source": "docs/engine/AGENT_GUIDANCE_PROTOCOL.md",
+      "index": 1,
+      "lang": "json",
+      "lines": 18,
+      "hash": "7d0c79a8f912bb59"
+    },
+    {
+      "id": "CB-34",
+      "source": "docs/engine/AGENT_GUIDANCE_PROTOCOL.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 17,
+      "hash": "07a10dd046fe4d03"
+    },
+    {
+      "id": "CB-35",
+      "source": "docs/engine/AGENT_GUIDANCE_PROTOCOL.md",
+      "index": 3,
+      "lang": "json",
+      "lines": 14,
+      "hash": "095ed72c9e8a23f5"
+    },
+    {
+      "id": "CB-36",
+      "source": "docs/engine/AGENT_GUIDANCE_PROTOCOL.md",
+      "index": 4,
+      "lang": "json",
+      "lines": 6,
+      "hash": "e6602e2e0556a126"
+    },
+    {
+      "id": "CB-37",
+      "source": "docs/engine/AGENT_GUIDANCE_PROTOCOL.md",
+      "index": 5,
+      "lang": "json",
+      "lines": 4,
+      "hash": "c2d6cd328a405e3c"
+    },
+    {
+      "id": "CB-38",
+      "source": "docs/engine/AGENT_VERIFY_MANDATE.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 14,
+      "hash": "161c5fc2100818a7"
+    },
+    {
+      "id": "CB-39",
+      "source": "docs/engine/AGENT_VERIFY_MANDATE.md",
+      "index": 1,
+      "lang": "json",
+      "lines": 9,
+      "hash": "0db450990e138b65"
+    },
+    {
+      "id": "CB-40",
+      "source": "docs/engine/AGENT_VERIFY_MANDATE.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 10,
+      "hash": "2d90e62a2a6a81a7"
+    },
+    {
+      "id": "CB-41",
+      "source": "docs/engine/AGENT_VERIFY_MANDATE.md",
+      "index": 3,
+      "lang": "plain",
+      "lines": 1,
+      "hash": "eb2efb07e6025f52"
+    },
+    {
+      "id": "CB-42",
+      "source": "docs/engine/AGENT_VERIFY_MANDATE.md",
+      "index": 4,
+      "lang": "markdown",
+      "lines": 4,
+      "hash": "ba7fe3b4876b2758"
+    },
+    {
+      "id": "CB-43",
+      "source": "docs/engine/audits/CHUNK5A_PSYCHO_ANALYSIS.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 2,
+      "hash": "3b38a3e27fdee4ba"
+    },
+    {
+      "id": "CB-44",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 6,
+      "hash": "d6aeede04fc6a9d8"
+    },
+    {
+      "id": "CB-45",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 1,
+      "lang": "json",
+      "lines": 7,
+      "hash": "b0e58fa8542a0423"
+    },
+    {
+      "id": "CB-46",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 4,
+      "hash": "20836eb32d7a8e0a"
+    },
+    {
+      "id": "CB-47",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 3,
+      "lang": "json",
+      "lines": 5,
+      "hash": "02d68c8fa4859633"
+    },
+    {
+      "id": "CB-48",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 4,
+      "lang": "json",
+      "lines": 5,
+      "hash": "15268c788a6c7fce"
+    },
+    {
+      "id": "CB-49",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 5,
+      "lang": "json",
+      "lines": 5,
+      "hash": "eec2cd6bbeeff351"
+    },
+    {
+      "id": "CB-50",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 6,
+      "lang": "json",
+      "lines": 4,
+      "hash": "80a8fd777cf93e88"
+    },
+    {
+      "id": "CB-51",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 7,
+      "lang": "json",
+      "lines": 5,
+      "hash": "9d14536fa32fb696"
+    },
+    {
+      "id": "CB-52",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 8,
+      "lang": "json",
+      "lines": 4,
+      "hash": "2c65e950175ea66d"
+    },
+    {
+      "id": "CB-53",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 9,
+      "lang": "json",
+      "lines": 4,
+      "hash": "6f13ef933182204a"
+    },
+    {
+      "id": "CB-54",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 10,
+      "lang": "json",
+      "lines": 4,
+      "hash": "09dd631e048fed67"
+    },
+    {
+      "id": "CB-55",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 11,
+      "lang": "json",
+      "lines": 4,
+      "hash": "6e9bf0bce5d72d13"
+    },
+    {
+      "id": "CB-56",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 12,
+      "lang": "json",
+      "lines": 4,
+      "hash": "f87826cb362a4bb2"
+    },
+    {
+      "id": "CB-57",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 13,
+      "lang": "json",
+      "lines": 4,
+      "hash": "6171b8012a778a45"
+    },
+    {
+      "id": "CB-58",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 14,
+      "lang": "json",
+      "lines": 5,
+      "hash": "d93b80585c167b9a"
+    },
+    {
+      "id": "CB-59",
+      "source": "docs/engine/COMPARE_DETECT_TYPES.md",
+      "index": 15,
+      "lang": "json",
+      "lines": 4,
+      "hash": "0781a377962da3e4"
+    },
+    {
+      "id": "CB-60",
+      "source": "docs/engine/COMPONENT_SPEC.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 17,
+      "hash": "f30938d9a337ade5"
+    },
+    {
+      "id": "CB-61",
+      "source": "docs/engine/COMPONENT_SPEC.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 5,
+      "hash": "7181bc10bc448584"
+    },
+    {
+      "id": "CB-62",
+      "source": "docs/engine/COMPONENT_SPEC.md",
+      "index": 2,
+      "lang": "typescript",
+      "lines": 4,
+      "hash": "082d4cfa4240cc5c"
+    },
+    {
+      "id": "CB-63",
+      "source": "docs/engine/COMPONENT_SPEC.md",
+      "index": 3,
+      "lang": "typescript",
+      "lines": 3,
+      "hash": "017e311b93111492"
+    },
+    {
+      "id": "CB-64",
+      "source": "docs/engine/COMPONENT_SPEC.md",
+      "index": 4,
+      "lang": "plain",
+      "lines": 9,
+      "hash": "c566aab8a02184ee"
+    },
+    {
+      "id": "CB-65",
+      "source": "docs/engine/COMPONENT_SPEC.md",
+      "index": 5,
+      "lang": "typescript",
+      "lines": 4,
+      "hash": "649494c76cc51256"
+    },
+    {
+      "id": "CB-66",
+      "source": "docs/engine/COMPONENT_SPEC.md",
+      "index": 6,
+      "lang": "typescript",
+      "lines": 5,
+      "hash": "3c4472e2f84d1a40"
+    },
+    {
+      "id": "CB-67",
+      "source": "docs/engine/COMPONENT_SPEC.md",
+      "index": 7,
+      "lang": "typescript",
+      "lines": 4,
+      "hash": "81e7a74d13bf0dfd"
+    },
+    {
+      "id": "CB-68",
+      "source": "docs/engine/COMPONENT_SPEC.md",
+      "index": 8,
+      "lang": "markdown",
+      "lines": 6,
+      "hash": "75198ac954b6eba8"
+    },
+    {
+      "id": "CB-69",
+      "source": "docs/engine/COMPONENT_SPEC.md",
+      "index": 9,
+      "lang": "typescript",
+      "lines": 6,
+      "hash": "8f1389772b5b52ca"
+    },
+    {
+      "id": "CB-70",
+      "source": "docs/engine/COMPONENT_SPEC.md",
+      "index": 10,
+      "lang": "typescript",
+      "lines": 6,
+      "hash": "2a8f599402b73bf0"
+    },
+    {
+      "id": "CB-71",
+      "source": "docs/engine/COMPONENT_SPEC.md",
+      "index": 11,
+      "lang": "plain",
+      "lines": 1,
+      "hash": "4060dfefd189dbb1"
+    },
+    {
+      "id": "CB-72",
+      "source": "docs/engine/COMPOSITION_EDGE_CASES.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 2,
+      "hash": "0f9ec94fd23029d2"
+    },
+    {
+      "id": "CB-73",
+      "source": "docs/engine/COMPOSITION_PIPELINE.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 13,
+      "hash": "e329dd499d997074"
+    },
+    {
+      "id": "CB-74",
+      "source": "docs/engine/COMPOSITION_PIPELINE.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 27,
+      "hash": "a2abac0cbdb52462"
+    },
+    {
+      "id": "CB-75",
+      "source": "docs/engine/COMPOSITION_PIPELINE.md",
+      "index": 2,
+      "lang": "plain",
+      "lines": 1,
+      "hash": "8c2b91a8a504aa9e"
+    },
+    {
+      "id": "CB-76",
+      "source": "docs/engine/COMPOSITION_PIPELINE.md",
+      "index": 3,
+      "lang": "plain",
+      "lines": 17,
+      "hash": "629632fe2acd7a13"
+    },
+    {
+      "id": "CB-77",
+      "source": "docs/engine/COMPOSITION_PIPELINE.md",
+      "index": 4,
+      "lang": "json",
+      "lines": 9,
+      "hash": "359913a4b0d251ec"
+    },
+    {
+      "id": "CB-78",
+      "source": "docs/engine/COMPOSITION_PIPELINE.md",
+      "index": 5,
+      "lang": "json",
+      "lines": 12,
+      "hash": "78b0c635346ca8cd"
+    },
+    {
+      "id": "CB-79",
+      "source": "docs/engine/COMPOSITION_PIPELINE.md",
+      "index": 6,
+      "lang": "text",
+      "lines": 28,
+      "hash": "246f5627e2fb1e6a"
+    },
+    {
+      "id": "CB-80",
+      "source": "docs/engine/CORPUS_BUILD_PLAYBOOK.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 21,
+      "hash": "6ba8c757d08b8bd6"
+    },
+    {
+      "id": "CB-81",
+      "source": "docs/engine/CORPUS_BUILD_PLAYBOOK.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 7,
+      "hash": "e244a919d4ff8044"
+    },
+    {
+      "id": "CB-82",
+      "source": "docs/engine/CORPUS_GOVERNANCE.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 12,
+      "hash": "f5e8186245f2a56d"
+    },
+    {
+      "id": "CB-83",
+      "source": "docs/engine/CORPUS_GOVERNANCE.md",
+      "index": 1,
+      "lang": "json",
+      "lines": 6,
+      "hash": "d2cca558b3f395ea"
+    },
+    {
+      "id": "CB-84",
+      "source": "docs/engine/CORPUS_RESEARCH_AUTOMATION.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 8,
+      "hash": "6c6784d377bce9dd"
+    },
+    {
+      "id": "CB-85",
+      "source": "docs/engine/CORPUS_STALENESS_POLICY.md",
+      "index": 0,
+      "lang": "javascript",
+      "lines": 8,
+      "hash": "d7efc76a3b10a672"
+    },
+    {
+      "id": "CB-86",
+      "source": "docs/engine/CORPUS_STALENESS_POLICY.md",
+      "index": 1,
+      "lang": "bash",
+      "lines": 2,
+      "hash": "88a53189ed41f59e"
+    },
+    {
+      "id": "CB-87",
+      "source": "docs/engine/DATA_FLOW_MATRIX.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 12,
+      "hash": "5b6afe93f9a7f5ff"
+    },
+    {
+      "id": "CB-88",
+      "source": "docs/engine/DATA_FLOW_MATRIX.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 12,
+      "hash": "25928e750b004541"
+    },
+    {
+      "id": "CB-89",
+      "source": "docs/engine/DISTRIBUTION_LIFECYCLE.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 4,
+      "hash": "e9a70cbd631e1bd2"
+    },
+    {
+      "id": "CB-90",
+      "source": "docs/engine/DISTRIBUTION_LIFECYCLE.md",
+      "index": 1,
+      "lang": "bash",
+      "lines": 1,
+      "hash": "0c972d61ccce46a6"
+    },
+    {
+      "id": "CB-91",
+      "source": "docs/engine/DISTRIBUTION_LIFECYCLE.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 1,
+      "hash": "831b135a5b2ee101"
+    },
+    {
+      "id": "CB-92",
+      "source": "docs/engine/DISTRIBUTION_LIFECYCLE.md",
+      "index": 3,
+      "lang": "bash",
+      "lines": 1,
+      "hash": "a22e84e0a7fd4ea8"
+    },
+    {
+      "id": "CB-93",
+      "source": "docs/engine/DISTRIBUTION_LIFECYCLE.md",
+      "index": 4,
+      "lang": "json",
+      "lines": 1,
+      "hash": "450dad4c2678fbf9"
+    },
+    {
+      "id": "CB-94",
+      "source": "docs/engine/DISTRIBUTION_LIFECYCLE.md",
+      "index": 5,
+      "lang": "mermaid",
+      "lines": 12,
+      "hash": "7c3b49f83a377faf"
+    },
+    {
+      "id": "CB-95",
+      "source": "docs/engine/DISTRIBUTION_LIFECYCLE.md",
+      "index": 6,
+      "lang": "bash",
+      "lines": 5,
+      "hash": "ce813495f24971f1"
+    },
+    {
+      "id": "CB-96",
+      "source": "docs/engine/DISTRIBUTION_LIFECYCLE.md",
+      "index": 7,
+      "lang": "bash",
+      "lines": 1,
+      "hash": "7296ec1c72c24419"
+    },
+    {
+      "id": "CB-97",
+      "source": "docs/engine/ERROR_CATALOG.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 9,
+      "hash": "3bdc0ed7f0c1b5ce"
+    },
+    {
+      "id": "CB-98",
+      "source": "docs/engine/ERROR_CATALOG.md",
+      "index": 1,
+      "lang": "json",
+      "lines": 16,
+      "hash": "0143a5a89dd08e44"
+    },
+    {
+      "id": "CB-99",
+      "source": "docs/engine/ERROR_CATALOG.md",
+      "index": 2,
+      "lang": "plain",
+      "lines": 1,
+      "hash": "43054602227b2b75"
+    },
+    {
+      "id": "CB-100",
+      "source": "docs/engine/GATE1_BLOCKER_REGISTER.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 7,
+      "hash": "23e653a3eb045c74"
+    },
+    {
+      "id": "CB-101",
+      "source": "docs/engine/GATE1_STAKEHOLDER_SIGNOFF.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "6c74a1b7ac562ca3"
+    },
+    {
+      "id": "CB-102",
+      "source": "docs/engine/GATE1_STAKEHOLDER_SIGNOFF.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 2,
+      "hash": "8b50077f289f2c5c"
+    },
+    {
+      "id": "CB-103",
+      "source": "docs/engine/GOLDEN_PATH_E2E.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 10,
+      "hash": "8a79fcd01ba09ac1"
+    },
+    {
+      "id": "CB-104",
+      "source": "docs/engine/GOLDEN_PATH_E2E.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 7,
+      "hash": "370fc31c33965615"
+    },
+    {
+      "id": "CB-105",
+      "source": "docs/engine/GOLDEN_PATH_E2E.md",
+      "index": 2,
+      "lang": "plain",
+      "lines": 7,
+      "hash": "3a764b410b135755"
+    },
+    {
+      "id": "CB-106",
+      "source": "docs/engine/GOLDEN_PATH_E2E.md",
+      "index": 3,
+      "lang": "plain",
+      "lines": 4,
+      "hash": "dc02f1539b969429"
+    },
+    {
+      "id": "CB-107",
+      "source": "docs/engine/GOLDEN_PATH_E2E.md",
+      "index": 4,
+      "lang": "plain",
+      "lines": 2,
+      "hash": "838189026276a002"
+    },
+    {
+      "id": "CB-108",
+      "source": "docs/engine/GOLDEN_PATH_E2E.md",
+      "index": 5,
+      "lang": "plain",
+      "lines": 2,
+      "hash": "ead26e814cd9a825"
+    },
+    {
+      "id": "CB-109",
+      "source": "docs/engine/INTERACTION_MODEL.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 11,
+      "hash": "7e7e3cdaf1aaa395"
+    },
+    {
+      "id": "CB-110",
+      "source": "docs/engine/INTERNAL_WIREMAPS.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 46,
+      "hash": "91f8957cc803bcec"
+    },
+    {
+      "id": "CB-111",
+      "source": "docs/engine/INTERNAL_WIREMAPS.md",
+      "index": 1,
+      "lang": "mermaid",
+      "lines": 24,
+      "hash": "4a932c7ff020aa12"
+    },
+    {
+      "id": "CB-112",
+      "source": "docs/engine/INTERNAL_WIREMAPS.md",
+      "index": 2,
+      "lang": "mermaid",
+      "lines": 16,
+      "hash": "25695ca9b4dc711c"
+    },
+    {
+      "id": "CB-113",
+      "source": "docs/engine/INTERNAL_WIREMAPS.md",
+      "index": 3,
+      "lang": "mermaid",
+      "lines": 20,
+      "hash": "460d0e7a1f3d15b4"
+    },
+    {
+      "id": "CB-114",
+      "source": "docs/engine/INTERNAL_WIREMAPS.md",
+      "index": 4,
+      "lang": "mermaid",
+      "lines": 17,
+      "hash": "708430de9dc6b133"
+    },
+    {
+      "id": "CB-115",
+      "source": "docs/engine/INTERNAL_WIREMAPS.md",
+      "index": 5,
+      "lang": "mermaid",
+      "lines": 8,
+      "hash": "ddad9ade9709904a"
+    },
+    {
+      "id": "CB-116",
+      "source": "docs/engine/INTERNAL_WIREMAPS.md",
+      "index": 6,
+      "lang": "mermaid",
+      "lines": 14,
+      "hash": "3958474ad23391db"
+    },
+    {
+      "id": "CB-117",
+      "source": "docs/engine/INTERNAL_WIREMAPS.md",
+      "index": 7,
+      "lang": "mermaid",
+      "lines": 10,
+      "hash": "3257e7d06b115197"
+    },
+    {
+      "id": "CB-118",
+      "source": "docs/engine/INTERNAL_WIREMAPS.md",
+      "index": 8,
+      "lang": "mermaid",
+      "lines": 9,
+      "hash": "6706f02a9fc6b100"
+    },
+    {
+      "id": "CB-119",
+      "source": "docs/engine/INTERNAL_WIREMAPS.md",
+      "index": 9,
+      "lang": "mermaid",
+      "lines": 21,
+      "hash": "3436d516de6e912d"
+    },
+    {
+      "id": "CB-120",
+      "source": "docs/engine/INTERNAL_WIREMAPS.md",
+      "index": 10,
+      "lang": "mermaid",
+      "lines": 7,
+      "hash": "8dd7224386475b74"
+    },
+    {
+      "id": "CB-121",
+      "source": "docs/engine/INTERNAL_WIREMAPS.md",
+      "index": 11,
+      "lang": "mermaid",
+      "lines": 26,
+      "hash": "8fa80ac4171a08d9"
+    },
+    {
+      "id": "CB-122",
+      "source": "docs/engine/INTERNAL_WIREMAPS.md",
+      "index": 12,
+      "lang": "mermaid",
+      "lines": 15,
+      "hash": "c4dc1e830566749d"
+    },
+    {
+      "id": "CB-123",
+      "source": "docs/engine/INTERNAL_WIREMAPS.md",
+      "index": 13,
+      "lang": "mermaid",
+      "lines": 10,
+      "hash": "55b7759f80015472"
+    },
+    {
+      "id": "CB-124",
+      "source": "docs/engine/INTERNAL_WIREMAPS.md",
+      "index": 14,
+      "lang": "mermaid",
+      "lines": 14,
+      "hash": "a1d43c84bc7c8cd9"
+    },
+    {
+      "id": "CB-125",
+      "source": "docs/engine/KNOWLEDGE_CORPUS.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 22,
+      "hash": "fb93608e59dd811f"
+    },
+    {
+      "id": "CB-126",
+      "source": "docs/engine/KNOWLEDGE_CORPUS.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 10,
+      "hash": "4880bc9a7353ab03"
+    },
+    {
+      "id": "CB-127",
+      "source": "docs/engine/KNOWLEDGE_CORPUS.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 8,
+      "hash": "d29cb7d3c7ad4917"
+    },
+    {
+      "id": "CB-128",
+      "source": "docs/engine/KNOWLEDGE_CORPUS.md",
+      "index": 3,
+      "lang": "mermaid",
+      "lines": 6,
+      "hash": "d7e8bfbac0f978c7"
+    },
+    {
+      "id": "CB-129",
+      "source": "docs/engine/KNOWLEDGE_CORPUS.md",
+      "index": 4,
+      "lang": "json",
+      "lines": 1,
+      "hash": "7fb0675ee3bac547"
+    },
+    {
+      "id": "CB-130",
+      "source": "docs/engine/KNOWLEDGE_CORPUS_DEEP.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 32,
+      "hash": "df056545aaf9c17c"
+    },
+    {
+      "id": "CB-131",
+      "source": "docs/engine/KNOWLEDGE_CORPUS_DEEP.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 7,
+      "hash": "aca4e026241c522b"
+    },
+    {
+      "id": "CB-132",
+      "source": "docs/engine/KNOWLEDGE_CORPUS_DEEP.md",
+      "index": 2,
+      "lang": "mermaid",
+      "lines": 9,
+      "hash": "4504588f6605c87b"
+    },
+    {
+      "id": "CB-133",
+      "source": "docs/engine/KNOWLEDGE_CORPUS_DEEP.md",
+      "index": 3,
+      "lang": "plain",
+      "lines": 20,
+      "hash": "77461ab3fa6df7f1"
+    },
+    {
+      "id": "CB-134",
+      "source": "docs/engine/LAYER4_COMPARE_FRAMEWORK.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 13,
+      "hash": "de53fc727551bf99"
+    },
+    {
+      "id": "CB-135",
+      "source": "docs/engine/LAYER4_COMPARE_FRAMEWORK.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 10,
+      "hash": "358c2ea7dd4390a3"
+    },
+    {
+      "id": "CB-136",
+      "source": "docs/engine/LAYER4_COMPARE_FRAMEWORK.md",
+      "index": 2,
+      "lang": "plain",
+      "lines": 1,
+      "hash": "b8558a278d9e03cd"
+    },
+    {
+      "id": "CB-137",
+      "source": "docs/engine/LAYER4_COMPARE_FRAMEWORK.md",
+      "index": 3,
+      "lang": "json",
+      "lines": 14,
+      "hash": "56623b320e977f00"
+    },
+    {
+      "id": "CB-138",
+      "source": "docs/engine/LAYER4_COMPARE_FRAMEWORK.md",
+      "index": 4,
+      "lang": "json",
+      "lines": 17,
+      "hash": "26d0a8a819cfd5e9"
+    },
+    {
+      "id": "CB-139",
+      "source": "docs/engine/LOCAL_CLI.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 22,
+      "hash": "2569c165af431739"
+    },
+    {
+      "id": "CB-140",
+      "source": "docs/engine/LOCAL_CLI.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 14,
+      "hash": "6ba2489ce2040bbb"
+    },
+    {
+      "id": "CB-141",
+      "source": "docs/engine/LOCAL_CLI.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 13,
+      "hash": "f9bdd18251a51033"
+    },
+    {
+      "id": "CB-142",
+      "source": "docs/engine/MCP_PROTOCOL.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 14,
+      "hash": "e83e0e5a2e32fa6e"
+    },
+    {
+      "id": "CB-143",
+      "source": "docs/engine/MCP_PROTOCOL.md",
+      "index": 1,
+      "lang": "json",
+      "lines": 5,
+      "hash": "a3f13cd489712812"
+    },
+    {
+      "id": "CB-144",
+      "source": "docs/engine/MCP_PROTOCOL.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 6,
+      "hash": "f523fcac0a2c1b9f"
+    },
+    {
+      "id": "CB-145",
+      "source": "docs/engine/MCP_PROTOCOL.md",
+      "index": 3,
+      "lang": "json",
+      "lines": 9,
+      "hash": "5159b9c1d45f427d"
+    },
+    {
+      "id": "CB-146",
+      "source": "docs/engine/MCP_PROTOCOL.md",
+      "index": 4,
+      "lang": "json",
+      "lines": 4,
+      "hash": "8460d578050f23e7"
+    },
+    {
+      "id": "CB-147",
+      "source": "docs/engine/MCP_PROTOCOL.md",
+      "index": 5,
+      "lang": "plain",
+      "lines": 5,
+      "hash": "f6201409ce2aadac"
+    },
+    {
+      "id": "CB-148",
+      "source": "docs/engine/MCP_PROTOCOL.md",
+      "index": 6,
+      "lang": "json",
+      "lines": 13,
+      "hash": "dffa9ccc05d519be"
+    },
+    {
+      "id": "CB-149",
+      "source": "docs/engine/MCP_PROTOCOL.md",
+      "index": 7,
+      "lang": "json",
+      "lines": 12,
+      "hash": "ed90bc9fa0ce0c65"
+    },
+    {
+      "id": "CB-150",
+      "source": "docs/engine/MCP_PROTOCOL.md",
+      "index": 8,
+      "lang": "json",
+      "lines": 11,
+      "hash": "892e87afd0c98e40"
+    },
+    {
+      "id": "CB-151",
+      "source": "docs/engine/MCP_PROTOCOL.md",
+      "index": 9,
+      "lang": "json",
+      "lines": 4,
+      "hash": "d51bbf1a1783170f"
+    },
+    {
+      "id": "CB-152",
+      "source": "docs/engine/MCP_PROTOCOL.md",
+      "index": 10,
+      "lang": "markdown",
+      "lines": 7,
+      "hash": "4cc65f2372819cfe"
+    },
+    {
+      "id": "CB-153",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 5,
+      "hash": "34aa98d2380267fb"
+    },
+    {
+      "id": "CB-154",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 12,
+      "hash": "44fd53a954f4a9cc"
+    },
+    {
+      "id": "CB-155",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 1,
+      "hash": "ef52c743bda1417d"
+    },
+    {
+      "id": "CB-156",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 3,
+      "lang": "plain",
+      "lines": 9,
+      "hash": "cd0a17651de7585b"
+    },
+    {
+      "id": "CB-157",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 4,
+      "lang": "json",
+      "lines": 1,
+      "hash": "09024b2cbe6158f6"
+    },
+    {
+      "id": "CB-158",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 5,
+      "lang": "plain",
+      "lines": 12,
+      "hash": "97724da7362da73c"
+    },
+    {
+      "id": "CB-159",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 6,
+      "lang": "json",
+      "lines": 9,
+      "hash": "3cc292eead9bf6ff"
+    },
+    {
+      "id": "CB-160",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 7,
+      "lang": "plain",
+      "lines": 12,
+      "hash": "427ff7dde909a4d6"
+    },
+    {
+      "id": "CB-161",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 8,
+      "lang": "plain",
+      "lines": 6,
+      "hash": "4624b7902504a5a4"
+    },
+    {
+      "id": "CB-162",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 9,
+      "lang": "plain",
+      "lines": 5,
+      "hash": "3146e15845676689"
+    },
+    {
+      "id": "CB-163",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 10,
+      "lang": "plain",
+      "lines": 4,
+      "hash": "06b639213b8f2b02"
+    },
+    {
+      "id": "CB-164",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 11,
+      "lang": "plain",
+      "lines": 3,
+      "hash": "027595e59c129277"
+    },
+    {
+      "id": "CB-165",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 12,
+      "lang": "plain",
+      "lines": 4,
+      "hash": "fe576bc0e4e2893a"
+    },
+    {
+      "id": "CB-166",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 13,
+      "lang": "plain",
+      "lines": 3,
+      "hash": "d50947869bb5288e"
+    },
+    {
+      "id": "CB-167",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 14,
+      "lang": "plain",
+      "lines": 3,
+      "hash": "b10f94850da9662e"
+    },
+    {
+      "id": "CB-168",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 15,
+      "lang": "plain",
+      "lines": 6,
+      "hash": "134cef7f563cd80c"
+    },
+    {
+      "id": "CB-169",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 16,
+      "lang": "plain",
+      "lines": 4,
+      "hash": "8b8c633a3e63217b"
+    },
+    {
+      "id": "CB-170",
+      "source": "docs/engine/MCP_TOOL_LOGIC_SPEC.md",
+      "index": 17,
+      "lang": "plain",
+      "lines": 5,
+      "hash": "5f89aa50b4751f78"
+    },
+    {
+      "id": "CB-171",
+      "source": "docs/engine/module-specs/A01-security-surface-map.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 74,
+      "hash": "f2dc72868daa40f7"
+    },
+    {
+      "id": "CB-172",
+      "source": "docs/engine/module-specs/A01-security-surface-map.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 15,
+      "hash": "ff5c998c6c17c9f7"
+    },
+    {
+      "id": "CB-173",
+      "source": "docs/engine/module-specs/A02-session-hardening-pass.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 29,
+      "hash": "41e8d57950042735"
+    },
+    {
+      "id": "CB-174",
+      "source": "docs/engine/module-specs/A02-session-hardening-pass.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 27,
+      "hash": "863267133ad19191"
+    },
+    {
+      "id": "CB-175",
+      "source": "docs/engine/module-specs/A02-session-hardening-pass.md",
+      "index": 2,
+      "lang": "typescript",
+      "lines": 7,
+      "hash": "dea49cae54c87b16"
+    },
+    {
+      "id": "CB-176",
+      "source": "docs/engine/module-specs/A03-webhook-hardening-pass.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 17,
+      "hash": "3f53d662133fdbc6"
+    },
+    {
+      "id": "CB-177",
+      "source": "docs/engine/module-specs/A03-webhook-hardening-pass.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 42,
+      "hash": "2d96e5b9e4936208"
+    },
+    {
+      "id": "CB-178",
+      "source": "docs/engine/module-specs/M01-auth-d1-schema.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 5,
+      "hash": "6b61911fec60245a"
+    },
+    {
+      "id": "CB-179",
+      "source": "docs/engine/module-specs/M01-auth-d1-schema.md",
+      "index": 1,
+      "lang": "sql",
+      "lines": 26,
+      "hash": "06ef4c3432b1f7b6"
+    },
+    {
+      "id": "CB-180",
+      "source": "docs/engine/module-specs/M01-auth-d1-schema.md",
+      "index": 2,
+      "lang": "toml",
+      "lines": 7,
+      "hash": "085e07ffd5242fea"
+    },
+    {
+      "id": "CB-181",
+      "source": "docs/engine/module-specs/M02-auth-worker-routes.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 43,
+      "hash": "ae72a4613bb1bb53"
+    },
+    {
+      "id": "CB-182",
+      "source": "docs/engine/module-specs/M02-auth-worker-routes.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 27,
+      "hash": "51c7f9752bc099b3"
+    },
+    {
+      "id": "CB-183",
+      "source": "docs/engine/module-specs/M02-auth-worker-routes.md",
+      "index": 2,
+      "lang": "typescript",
+      "lines": 20,
+      "hash": "2e46749d6b4482d9"
+    },
+    {
+      "id": "CB-184",
+      "source": "docs/engine/module-specs/M03-auth-resend-emails.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 35,
+      "hash": "ac3a88a4def35eee"
+    },
+    {
+      "id": "CB-185",
+      "source": "docs/engine/module-specs/M03-auth-resend-emails.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 20,
+      "hash": "00daa23347207926"
+    },
+    {
+      "id": "CB-186",
+      "source": "docs/engine/module-specs/M04-auth-ui-routes.md",
+      "index": 0,
+      "lang": "tsx",
+      "lines": 28,
+      "hash": "047d93d9b5b4a380"
+    },
+    {
+      "id": "CB-187",
+      "source": "docs/engine/module-specs/M04-auth-ui-routes.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 18,
+      "hash": "efcbe3a2c9979b85"
+    },
+    {
+      "id": "CB-188",
+      "source": "docs/engine/module-specs/M04-auth-ui-routes.md",
+      "index": 2,
+      "lang": "tsx",
+      "lines": 5,
+      "hash": "1fb53d7712ff32a4"
+    },
+    {
+      "id": "CB-189",
+      "source": "docs/engine/module-specs/M05-auth-session-middleware.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 37,
+      "hash": "cfd66bd75a3de489"
+    },
+    {
+      "id": "CB-190",
+      "source": "docs/engine/module-specs/M10-billing-d1-schema.md",
+      "index": 0,
+      "lang": "sql",
+      "lines": 22,
+      "hash": "5bd97bddd7ad88e0"
+    },
+    {
+      "id": "CB-191",
+      "source": "docs/engine/module-specs/M11-stripe-checkout-route.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 31,
+      "hash": "0a336074e82b4ea1"
+    },
+    {
+      "id": "CB-192",
+      "source": "docs/engine/module-specs/M12-stripe-webhook.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 40,
+      "hash": "c5d6e28669e0fe23"
+    },
+    {
+      "id": "CB-193",
+      "source": "docs/engine/module-specs/M12-stripe-webhook.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 15,
+      "hash": "107966e9317e180e"
+    },
+    {
+      "id": "CB-194",
+      "source": "docs/engine/module-specs/M13-provisioning-kv.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 15,
+      "hash": "1ee386d0c253d1a6"
+    },
+    {
+      "id": "CB-195",
+      "source": "docs/engine/module-specs/M14-billing-success-ui.md",
+      "index": 0,
+      "lang": "tsx",
+      "lines": 42,
+      "hash": "0aff53a5396cf6bf"
+    },
+    {
+      "id": "CB-196",
+      "source": "docs/engine/module-specs/M15-billing-dashboard-ui.md",
+      "index": 0,
+      "lang": "tsx",
+      "lines": 33,
+      "hash": "f9daf7126f26f673"
+    },
+    {
+      "id": "CB-197",
+      "source": "docs/engine/module-specs/M16-billing-emails.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 21,
+      "hash": "5f15c92f9f62f3bb"
+    },
+    {
+      "id": "CB-198",
+      "source": "docs/engine/module-specs/M20-reset-token-schema.md",
+      "index": 0,
+      "lang": "sql",
+      "lines": 13,
+      "hash": "ff01c03f06d3aab7"
+    },
+    {
+      "id": "CB-199",
+      "source": "docs/engine/module-specs/M21-reset-api.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 31,
+      "hash": "b1343699c67c22aa"
+    },
+    {
+      "id": "CB-200",
+      "source": "docs/engine/module-specs/M21-reset-api.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 36,
+      "hash": "b9efc0fa28acb59b"
+    },
+    {
+      "id": "CB-201",
+      "source": "docs/engine/module-specs/M22-reset-ui.md",
+      "index": 0,
+      "lang": "tsx",
+      "lines": 16,
+      "hash": "180eeea2ce9b23b4"
+    },
+    {
+      "id": "CB-202",
+      "source": "docs/engine/module-specs/M22-reset-ui.md",
+      "index": 1,
+      "lang": "tsx",
+      "lines": 9,
+      "hash": "0976e68c66344a00"
+    },
+    {
+      "id": "CB-203",
+      "source": "docs/engine/module-specs/M22-reset-ui.md",
+      "index": 2,
+      "lang": "tsx",
+      "lines": 17,
+      "hash": "ccff316a23afeccf"
+    },
+    {
+      "id": "CB-204",
+      "source": "docs/engine/module-specs/M23-reset-email.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 31,
+      "hash": "92f87419c751b425"
+    },
+    {
+      "id": "CB-205",
+      "source": "docs/engine/module-specs/M30-onboarding-schema.md",
+      "index": 0,
+      "lang": "sql",
+      "lines": 5,
+      "hash": "bccc410fcf9df7b7"
+    },
+    {
+      "id": "CB-206",
+      "source": "docs/engine/module-specs/M31-onboarding-api.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 28,
+      "hash": "d60ed215375a3e4a"
+    },
+    {
+      "id": "CB-207",
+      "source": "docs/engine/module-specs/M31-onboarding-api.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 15,
+      "hash": "dda3a5c98fd5fb4c"
+    },
+    {
+      "id": "CB-208",
+      "source": "docs/engine/module-specs/M32-onboarding-ui.md",
+      "index": 0,
+      "lang": "tsx",
+      "lines": 28,
+      "hash": "b8a291c8a3f9b37d"
+    },
+    {
+      "id": "CB-209",
+      "source": "docs/engine/module-specs/M32-onboarding-ui.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 19,
+      "hash": "01ba33ad3456d998"
+    },
+    {
+      "id": "CB-210",
+      "source": "docs/engine/module-specs/M32-onboarding-ui.md",
+      "index": 2,
+      "lang": "typescript",
+      "lines": 9,
+      "hash": "d82d144e5382e1d0"
+    },
+    {
+      "id": "CB-211",
+      "source": "docs/engine/module-specs/M40-deletion-api.md",
+      "index": 0,
+      "lang": "sql",
+      "lines": 5,
+      "hash": "8185d712c856d38b"
+    },
+    {
+      "id": "CB-212",
+      "source": "docs/engine/module-specs/M40-deletion-api.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 37,
+      "hash": "05d57698b6672f1e"
+    },
+    {
+      "id": "CB-213",
+      "source": "docs/engine/module-specs/M40-deletion-api.md",
+      "index": 2,
+      "lang": "typescript",
+      "lines": 14,
+      "hash": "0edebab813101f86"
+    },
+    {
+      "id": "CB-214",
+      "source": "docs/engine/module-specs/M41-deletion-scheduler.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 49,
+      "hash": "90bd3d422031c4a7"
+    },
+    {
+      "id": "CB-215",
+      "source": "docs/engine/module-specs/M41-deletion-scheduler.md",
+      "index": 1,
+      "lang": "toml",
+      "lines": 4,
+      "hash": "3b92907fc3a5ce10"
+    },
+    {
+      "id": "CB-216",
+      "source": "docs/engine/module-specs/M42-deletion-ui.md",
+      "index": 0,
+      "lang": "tsx",
+      "lines": 13,
+      "hash": "7d071882b9e90ed6"
+    },
+    {
+      "id": "CB-217",
+      "source": "docs/engine/module-specs/M42-deletion-ui.md",
+      "index": 1,
+      "lang": "tsx",
+      "lines": 36,
+      "hash": "c920055770b28aee"
+    },
+    {
+      "id": "CB-218",
+      "source": "docs/engine/module-specs/M42-deletion-ui.md",
+      "index": 2,
+      "lang": "tsx",
+      "lines": 13,
+      "hash": "ddb3ecb713bdf0a3"
+    },
+    {
+      "id": "CB-219",
+      "source": "docs/engine/module-specs/M50-export-api.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 13,
+      "hash": "a21abe710a15d064"
+    },
+    {
+      "id": "CB-220",
+      "source": "docs/engine/module-specs/M51-export-worker.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 12,
+      "hash": "e4d1287b74ac0b5e"
+    },
+    {
+      "id": "CB-221",
+      "source": "docs/engine/module-specs/M52-export-ui.md",
+      "index": 0,
+      "lang": "tsx",
+      "lines": 13,
+      "hash": "fa55ea515eb8f4af"
+    },
+    {
+      "id": "CB-222",
+      "source": "docs/engine/module-specs/M55-terms-reaccept-api.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 14,
+      "hash": "9d2f6be06d22cdbd"
+    },
+    {
+      "id": "CB-223",
+      "source": "docs/engine/module-specs/M56-terms-reaccept-ui.md",
+      "index": 0,
+      "lang": "tsx",
+      "lines": 17,
+      "hash": "a2dfed7125d4fdb0"
+    },
+    {
+      "id": "CB-224",
+      "source": "docs/engine/module-specs/M56-terms-reaccept-ui.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 4,
+      "hash": "028ac708819daeb4"
+    },
+    {
+      "id": "CB-225",
+      "source": "docs/engine/module-specs/_TEMPLATE.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 5,
+      "hash": "39681e9510f3019c"
+    },
+    {
+      "id": "CB-226",
+      "source": "docs/engine/module-specs/_TEMPLATE.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 2,
+      "hash": "bb14ec8338a5d09a"
+    },
+    {
+      "id": "CB-227",
+      "source": "docs/engine/MODULE_INTERCONNECT.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 14,
+      "hash": "ba0da60d93400919"
+    },
+    {
+      "id": "CB-228",
+      "source": "docs/engine/MODULE_INTERCONNECT.md",
+      "index": 1,
+      "lang": "mermaid",
+      "lines": 18,
+      "hash": "db7c2e15dbde0528"
+    },
+    {
+      "id": "CB-229",
+      "source": "docs/engine/MODULE_INTERCONNECT.md",
+      "index": 2,
+      "lang": "mermaid",
+      "lines": 15,
+      "hash": "7d295d8b66b1b753"
+    },
+    {
+      "id": "CB-230",
+      "source": "docs/engine/phase1/COMPOSE_AT_SCALE.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 15,
+      "hash": "cbbab58f59b9cdfe"
+    },
+    {
+      "id": "CB-231",
+      "source": "docs/engine/phase1/COMPOSE_AT_SCALE.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 13,
+      "hash": "a8039272b946d349"
+    },
+    {
+      "id": "CB-232",
+      "source": "docs/engine/phase1/COMPOSE_AT_SCALE.md",
+      "index": 2,
+      "lang": "typescript",
+      "lines": 6,
+      "hash": "3a2b8a86a8aa78b8"
+    },
+    {
+      "id": "CB-233",
+      "source": "docs/engine/PLANNING_AGENT_MITIGATION_GUIDANCE.md",
+      "index": 0,
+      "lang": "markdown",
+      "lines": 7,
+      "hash": "4e7b4f5b0f24019f"
+    },
+    {
+      "id": "CB-234",
+      "source": "docs/engine/PLANNING_AGENT_MITIGATION_GUIDANCE.md",
+      "index": 1,
+      "lang": "markdown",
+      "lines": 7,
+      "hash": "e96156bb314ec807"
+    },
+    {
+      "id": "CB-235",
+      "source": "docs/engine/PLANNING_CHUNK_ROADMAP.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 7,
+      "hash": "7c35421bd5fed9df"
+    },
+    {
+      "id": "CB-236",
+      "source": "docs/engine/PLANNING_CODE_BLOCKS_PHASE.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "29dc9c60e3048560"
+    },
+    {
+      "id": "CB-237",
+      "source": "docs/engine/PLANNING_COMPOSE_TIER_REDACTION.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 24,
+      "hash": "aeaf7b57183f3157"
+    },
+    {
+      "id": "CB-238",
+      "source": "docs/engine/PLANNING_COMPOSE_TIER_REDACTION.md",
+      "index": 1,
+      "lang": "json",
+      "lines": 6,
+      "hash": "7912cf545dbfe875"
+    },
+    {
+      "id": "CB-239",
+      "source": "docs/engine/PLANNING_EDGE_CASE_COVERAGE.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 5,
+      "hash": "397aac536725d64c"
+    },
+    {
+      "id": "CB-240",
+      "source": "docs/engine/PLANNING_GAP_CLOSURE_ROADMAP.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 4,
+      "hash": "6af34fc47ae32bbb"
+    },
+    {
+      "id": "CB-241",
+      "source": "docs/engine/PLANNING_GOLDEN_RUNTIME_SPEC.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 7,
+      "hash": "c51be8cc80a14cbf"
+    },
+    {
+      "id": "CB-242",
+      "source": "docs/engine/PLANNING_GOLDEN_RUNTIME_SPEC.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 1,
+      "hash": "dbb3b7c80298b326"
+    },
+    {
+      "id": "CB-243",
+      "source": "docs/engine/PLANNING_INFINITE_DEPTH_ROADMAP.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 6,
+      "hash": "514e165d8fc011a3"
+    },
+    {
+      "id": "CB-244",
+      "source": "docs/engine/PLANNING_MASTER.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 8,
+      "hash": "a1816998e510c671"
+    },
+    {
+      "id": "CB-245",
+      "source": "docs/engine/PLANNING_MASTER.md",
+      "index": 1,
+      "lang": "bash",
+      "lines": 7,
+      "hash": "f82b295620557157"
+    },
+    {
+      "id": "CB-246",
+      "source": "docs/engine/PLANNING_METHODOLOGY.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 15,
+      "hash": "963e3d901d9a1c51"
+    },
+    {
+      "id": "CB-247",
+      "source": "docs/engine/PLANNING_NEXT_ACTIONS.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "0ac01ede9af9b1e2"
+    },
+    {
+      "id": "CB-248",
+      "source": "docs/engine/PLANNING_PACKAGE_SCHEMAS.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 25,
+      "hash": "3d8866d9836e7c16"
+    },
+    {
+      "id": "CB-249",
+      "source": "docs/engine/PLANNING_PACKAGE_SCHEMAS.md",
+      "index": 1,
+      "lang": "json",
+      "lines": 17,
+      "hash": "94294671e79d8fb1"
+    },
+    {
+      "id": "CB-250",
+      "source": "docs/engine/PLANNING_PACKAGE_SCHEMAS.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 23,
+      "hash": "d00e8dc22aecde7b"
+    },
+    {
+      "id": "CB-251",
+      "source": "docs/engine/PLANNING_PACKAGE_SCHEMAS.md",
+      "index": 3,
+      "lang": "json",
+      "lines": 26,
+      "hash": "aa58b431e38a6448"
+    },
+    {
+      "id": "CB-252",
+      "source": "docs/engine/PLANNING_PACKAGE_SCHEMAS.md",
+      "index": 4,
+      "lang": "json",
+      "lines": 15,
+      "hash": "a32f76499bf1accc"
+    },
+    {
+      "id": "CB-253",
+      "source": "docs/engine/PLANNING_PACKAGE_SCHEMAS.md",
+      "index": 5,
+      "lang": "typescript",
+      "lines": 19,
+      "hash": "4b77b3437dcc6980"
+    },
+    {
+      "id": "CB-254",
+      "source": "docs/engine/PLANNING_PACKAGE_SCHEMAS.md",
+      "index": 6,
+      "lang": "yaml",
+      "lines": 11,
+      "hash": "369760fca87160a4"
+    },
+    {
+      "id": "CB-255",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK10B_OPTIONAL_MODULES.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 11,
+      "hash": "dc4dbabb2e5ad69f"
+    },
+    {
+      "id": "CB-256",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK10_C14_SLICER.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 75,
+      "hash": "15e0cb22d39f5f6c"
+    },
+    {
+      "id": "CB-257",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK10_C14_SLICER.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 12,
+      "hash": "9ecd0e4f41f79035"
+    },
+    {
+      "id": "CB-258",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK11_C09_C10_AUTH.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 40,
+      "hash": "2db0ba4a2af3786a"
+    },
+    {
+      "id": "CB-259",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK11_C09_C10_AUTH.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 25,
+      "hash": "42e41b603e34e10d"
+    },
+    {
+      "id": "CB-260",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK11_C09_C10_AUTH.md",
+      "index": 2,
+      "lang": "typescript",
+      "lines": 9,
+      "hash": "b22ed7751f10d230"
+    },
+    {
+      "id": "CB-261",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK11_C09_C10_AUTH.md",
+      "index": 3,
+      "lang": "plain",
+      "lines": 6,
+      "hash": "8e5e9d5cbecf3710"
+    },
+    {
+      "id": "CB-262",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK12_COMPARE_ENGINE.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 71,
+      "hash": "5288f98f6285be20"
+    },
+    {
+      "id": "CB-263",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK12_COMPARE_ENGINE.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 22,
+      "hash": "752632a35c1c1e4f"
+    },
+    {
+      "id": "CB-264",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK13_C15_OUTBOUND.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 33,
+      "hash": "85398d009b9f4ff8"
+    },
+    {
+      "id": "CB-265",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK14_SCALE_ENGINE.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 47,
+      "hash": "3f4366a20a9491fe"
+    },
+    {
+      "id": "CB-266",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK15_EXTREME_MAP.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 14,
+      "hash": "5fdf4804e7b7d1ab"
+    },
+    {
+      "id": "CB-267",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK15_EXTREME_MAP.md",
+      "index": 1,
+      "lang": "json",
+      "lines": 11,
+      "hash": "f873c9475eeba6e0"
+    },
+    {
+      "id": "CB-268",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK16_CORPUS_SCALE.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 12,
+      "hash": "f4220b9f1a8f9645"
+    },
+    {
+      "id": "CB-269",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK1_SCHEMAS.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "27a4e2dab1c7a2fb"
+    },
+    {
+      "id": "CB-270",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK1_SCHEMAS.md",
+      "index": 1,
+      "lang": "bash",
+      "lines": 2,
+      "hash": "f61fc587540a8bbf"
+    },
+    {
+      "id": "CB-271",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK1_SCHEMAS.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 22,
+      "hash": "5681184040a39526"
+    },
+    {
+      "id": "CB-272",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK1_SCHEMAS.md",
+      "index": 3,
+      "lang": "json",
+      "lines": 15,
+      "hash": "0abad8a42c735ce3"
+    },
+    {
+      "id": "CB-273",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK1_SCHEMAS.md",
+      "index": 4,
+      "lang": "typescript",
+      "lines": 65,
+      "hash": "6554ff68af508140"
+    },
+    {
+      "id": "CB-274",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK1_SCHEMAS.md",
+      "index": 5,
+      "lang": "plain",
+      "lines": 6,
+      "hash": "45d4d2dcf6663c2a"
+    },
+    {
+      "id": "CB-275",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK23_REMOTE_HANDLERS.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 10,
+      "hash": "56fb9f2b3f249bc8"
+    },
+    {
+      "id": "CB-276",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK23_REMOTE_HANDLERS.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 14,
+      "hash": "30cc830a119c8aa2"
+    },
+    {
+      "id": "CB-277",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK25_SCALE_B_PLAN.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 6,
+      "hash": "0f48f7bce61bf8f7"
+    },
+    {
+      "id": "CB-278",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK2_VERIFY.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 2,
+      "hash": "67d4bed2eba90e44"
+    },
+    {
+      "id": "CB-279",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK2_VERIFY.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 8,
+      "hash": "cd8a31c7d5791cf3"
+    },
+    {
+      "id": "CB-280",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK2_VERIFY.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 18,
+      "hash": "ae7b72808403c7e5"
+    },
+    {
+      "id": "CB-281",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK2_VERIFY.md",
+      "index": 3,
+      "lang": "json",
+      "lines": 3,
+      "hash": "b3e61b2a5fe4ab8a"
+    },
+    {
+      "id": "CB-282",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK2_VERIFY.md",
+      "index": 4,
+      "lang": "typescript",
+      "lines": 8,
+      "hash": "0db5d8e62abc112f"
+    },
+    {
+      "id": "CB-283",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK2_VERIFY.md",
+      "index": 5,
+      "lang": "typescript",
+      "lines": 109,
+      "hash": "8df6918e003e3f76"
+    },
+    {
+      "id": "CB-284",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK2_VERIFY.md",
+      "index": 6,
+      "lang": "typescript",
+      "lines": 52,
+      "hash": "de7587969a3bbde4"
+    },
+    {
+      "id": "CB-285",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK2_VERIFY.md",
+      "index": 7,
+      "lang": "typescript",
+      "lines": 9,
+      "hash": "3b247334d717b654"
+    },
+    {
+      "id": "CB-286",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK2_VERIFY.md",
+      "index": 8,
+      "lang": "typescript",
+      "lines": 60,
+      "hash": "c8934b55a2cbfc3c"
+    },
+    {
+      "id": "CB-287",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK2_VERIFY.md",
+      "index": 9,
+      "lang": "typescript",
+      "lines": 17,
+      "hash": "e80d72a2995c3400"
+    },
+    {
+      "id": "CB-288",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK36_G_INFINITY_B.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 2,
+      "hash": "a8e47c35218abfae"
+    },
+    {
+      "id": "CB-289",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK37_G_INFINITY_C.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "e2e42dc0401b6988"
+    },
+    {
+      "id": "CB-290",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK38_G_INFINITY_D.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "9c1152f739fbfd2d"
+    },
+    {
+      "id": "CB-291",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK39_G_INFINITY_E.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "497065cc1912b68b"
+    },
+    {
+      "id": "CB-292",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK3_COMPOSE.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 2,
+      "hash": "89c8ce0448485d1b"
+    },
+    {
+      "id": "CB-293",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK3_COMPOSE.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 8,
+      "hash": "17be313d1b35ae65"
+    },
+    {
+      "id": "CB-294",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK3_COMPOSE.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 15,
+      "hash": "e4806b81acbb639c"
+    },
+    {
+      "id": "CB-295",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK3_COMPOSE.md",
+      "index": 3,
+      "lang": "typescript",
+      "lines": 23,
+      "hash": "a1dc17fd3253081e"
+    },
+    {
+      "id": "CB-296",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK3_COMPOSE.md",
+      "index": 4,
+      "lang": "typescript",
+      "lines": 58,
+      "hash": "e77610471c50f536"
+    },
+    {
+      "id": "CB-297",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK3_COMPOSE.md",
+      "index": 5,
+      "lang": "typescript",
+      "lines": 2,
+      "hash": "09f18b4696e91610"
+    },
+    {
+      "id": "CB-298",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK3_COMPOSE.md",
+      "index": 6,
+      "lang": "typescript",
+      "lines": 63,
+      "hash": "c6453f7cc74dfc51"
+    },
+    {
+      "id": "CB-299",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK3_COMPOSE.md",
+      "index": 7,
+      "lang": "typescript",
+      "lines": 5,
+      "hash": "515c7982ff75b7e3"
+    },
+    {
+      "id": "CB-300",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK40_G_INFINITY_F.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 1,
+      "hash": "d0f2bf6c8a1b33ad"
+    },
+    {
+      "id": "CB-301",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK40_G_INFINITY_F.md",
+      "index": 1,
+      "lang": "bash",
+      "lines": 4,
+      "hash": "00407d792e7fd84b"
+    },
+    {
+      "id": "CB-302",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK41_G_INFINITY_G.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 1,
+      "hash": "237a5768cac22e60"
+    },
+    {
+      "id": "CB-303",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK41_G_INFINITY_G.md",
+      "index": 1,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "83a2d8b1446c441d"
+    },
+    {
+      "id": "CB-304",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK42_G_INFINITY_H.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 4,
+      "hash": "d51775ffa8e3523a"
+    },
+    {
+      "id": "CB-305",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK43_G_INFINITY_I.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 5,
+      "hash": "1492bf9f42a3608c"
+    },
+    {
+      "id": "CB-306",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK44_G_INFINITY_J.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 4,
+      "hash": "001389a16ad3d544"
+    },
+    {
+      "id": "CB-307",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK45_G_INFINITY_K.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "c151d9ec356e3d22"
+    },
+    {
+      "id": "CB-308",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK46_G_INFINITY_L.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 1,
+      "hash": "414cf8d59e77e40a"
+    },
+    {
+      "id": "CB-309",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK47_G_INFINITY_M.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 2,
+      "hash": "9655effcd7973060"
+    },
+    {
+      "id": "CB-310",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK48_G_INFINITY_N.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "8f2d2010ec65b497"
+    },
+    {
+      "id": "CB-311",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK49_G_INFINITY_O.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "80a6e4b5d6681bb6"
+    },
+    {
+      "id": "CB-312",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "703ca61e4768e2a2"
+    },
+    {
+      "id": "CB-313",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 8,
+      "hash": "9847ecbe1903001b"
+    },
+    {
+      "id": "CB-314",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 10,
+      "hash": "f1937a53b1811a3c"
+    },
+    {
+      "id": "CB-315",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 3,
+      "lang": "json",
+      "lines": 23,
+      "hash": "3dd3c1816021f27c"
+    },
+    {
+      "id": "CB-316",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 4,
+      "lang": "json",
+      "lines": 22,
+      "hash": "0b68c3642b0a1025"
+    },
+    {
+      "id": "CB-317",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 5,
+      "lang": "typescript",
+      "lines": 31,
+      "hash": "2e566227534f5fd9"
+    },
+    {
+      "id": "CB-318",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 6,
+      "lang": "typescript",
+      "lines": 42,
+      "hash": "5a0a47abb8195dc9"
+    },
+    {
+      "id": "CB-319",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 7,
+      "lang": "typescript",
+      "lines": 9,
+      "hash": "e80f508bbcbf9c2f"
+    },
+    {
+      "id": "CB-320",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 8,
+      "lang": "typescript",
+      "lines": 99,
+      "hash": "ba5221a88ec4605d"
+    },
+    {
+      "id": "CB-321",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 9,
+      "lang": "typescript",
+      "lines": 21,
+      "hash": "d941577e950940a0"
+    },
+    {
+      "id": "CB-322",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 10,
+      "lang": "typescript",
+      "lines": 32,
+      "hash": "bcc5b953b1114d4b"
+    },
+    {
+      "id": "CB-323",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 11,
+      "lang": "typescript",
+      "lines": 32,
+      "hash": "372d028a84d4dbf6"
+    },
+    {
+      "id": "CB-324",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 12,
+      "lang": "typescript",
+      "lines": 19,
+      "hash": "55e83b10cc1432d6"
+    },
+    {
+      "id": "CB-325",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 13,
+      "lang": "typescript",
+      "lines": 13,
+      "hash": "ca5f4fde8492f24d"
+    },
+    {
+      "id": "CB-326",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 14,
+      "lang": "typescript",
+      "lines": 33,
+      "hash": "3dd859b27de3446c"
+    },
+    {
+      "id": "CB-327",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 15,
+      "lang": "typescript",
+      "lines": 49,
+      "hash": "c0ebae0074c81593"
+    },
+    {
+      "id": "CB-328",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 16,
+      "lang": "typescript",
+      "lines": 17,
+      "hash": "a7037d8e69b13bc8"
+    },
+    {
+      "id": "CB-329",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 17,
+      "lang": "typescript",
+      "lines": 18,
+      "hash": "fb96b0e639faf0d2"
+    },
+    {
+      "id": "CB-330",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK4_MCP.md",
+      "index": 18,
+      "lang": "jsonc",
+      "lines": 6,
+      "hash": "3a5eada9dcb5a027"
+    },
+    {
+      "id": "CB-331",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK50_G_INFINITY_P.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "eca9d9efc5be23b6"
+    },
+    {
+      "id": "CB-332",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK51_G_INFINITY_Q.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "e9b5ebe0b01428fa"
+    },
+    {
+      "id": "CB-333",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK52_G_INFINITY_R.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "64b7c33787535d74"
+    },
+    {
+      "id": "CB-334",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK53_G_INFINITY_S.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "d53905f61c185d16"
+    },
+    {
+      "id": "CB-335",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK54_G_INFINITY_T.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 4,
+      "hash": "254f465e562edd02"
+    },
+    {
+      "id": "CB-336",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5A_T03_WIREMAP.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "dde2cd6116a519ef"
+    },
+    {
+      "id": "CB-337",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5A_T03_WIREMAP.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 58,
+      "hash": "27f2569ae7995fc3"
+    },
+    {
+      "id": "CB-338",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5A_T03_WIREMAP.md",
+      "index": 2,
+      "lang": "typescript",
+      "lines": 45,
+      "hash": "0791eb5705509a8d"
+    },
+    {
+      "id": "CB-339",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5A_T03_WIREMAP.md",
+      "index": 3,
+      "lang": "typescript",
+      "lines": 156,
+      "hash": "1c6ed20d07211db3"
+    },
+    {
+      "id": "CB-340",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5A_T03_WIREMAP.md",
+      "index": 4,
+      "lang": "typescript",
+      "lines": 17,
+      "hash": "42099753d804d7a4"
+    },
+    {
+      "id": "CB-341",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5A_T03_WIREMAP.md",
+      "index": 5,
+      "lang": "typescript",
+      "lines": 61,
+      "hash": "52d6345ed5e780b2"
+    },
+    {
+      "id": "CB-342",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5A_T03_WIREMAP.md",
+      "index": 6,
+      "lang": "typescript",
+      "lines": 14,
+      "hash": "6925b85f87c133be"
+    },
+    {
+      "id": "CB-343",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5A_T03_WIREMAP.md",
+      "index": 7,
+      "lang": "typescript",
+      "lines": 34,
+      "hash": "03ad51c986c9f3c2"
+    },
+    {
+      "id": "CB-344",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5A_T03_WIREMAP.md",
+      "index": 8,
+      "lang": "json",
+      "lines": 8,
+      "hash": "1d9eb3feac414d40"
+    },
+    {
+      "id": "CB-345",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5B_T06_T08.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 2,
+      "hash": "c0f49b3eb12bb1c0"
+    },
+    {
+      "id": "CB-346",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5B_T06_T08.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 35,
+      "hash": "8e448103a4263af3"
+    },
+    {
+      "id": "CB-347",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5B_T06_T08.md",
+      "index": 2,
+      "lang": "typescript",
+      "lines": 54,
+      "hash": "59b9ae5e703753bf"
+    },
+    {
+      "id": "CB-348",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5B_T06_T08.md",
+      "index": 3,
+      "lang": "typescript",
+      "lines": 98,
+      "hash": "fed2cd448890790f"
+    },
+    {
+      "id": "CB-349",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5B_T06_T08.md",
+      "index": 4,
+      "lang": "typescript",
+      "lines": 15,
+      "hash": "ec1ec8c7810f14f2"
+    },
+    {
+      "id": "CB-350",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5B_T06_T08.md",
+      "index": 5,
+      "lang": "typescript",
+      "lines": 51,
+      "hash": "dfe24376ab3af13f"
+    },
+    {
+      "id": "CB-351",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5B_T06_T08.md",
+      "index": 6,
+      "lang": "typescript",
+      "lines": 62,
+      "hash": "ba4883e95cdf52cd"
+    },
+    {
+      "id": "CB-352",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK5B_T06_T08.md",
+      "index": 7,
+      "lang": "mermaid",
+      "lines": 12,
+      "hash": "659868ce82272e2e"
+    },
+    {
+      "id": "CB-353",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK6_RULES_PACKAGE.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 24,
+      "hash": "c12383d16cd0039d"
+    },
+    {
+      "id": "CB-354",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK6_RULES_PACKAGE.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 60,
+      "hash": "55b942a9d4cd0905"
+    },
+    {
+      "id": "CB-355",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK6_RULES_PACKAGE.md",
+      "index": 2,
+      "lang": "javascript",
+      "lines": 2,
+      "hash": "79c3da2f3f695117"
+    },
+    {
+      "id": "CB-356",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK7_T04_T05_MODULES.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 8,
+      "hash": "b11ba0d470eaa502"
+    },
+    {
+      "id": "CB-357",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK7_T04_T05_MODULES.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 53,
+      "hash": "a419973ef6dd4518"
+    },
+    {
+      "id": "CB-358",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK7_T04_T05_MODULES.md",
+      "index": 2,
+      "lang": "typescript",
+      "lines": 38,
+      "hash": "852d997b1a526f9c"
+    },
+    {
+      "id": "CB-359",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK8_T09_T11_ARMOR.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 15,
+      "hash": "db185dccb9ff3027"
+    },
+    {
+      "id": "CB-360",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK8_T09_T11_ARMOR.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 8,
+      "hash": "b586d9f0629100d2"
+    },
+    {
+      "id": "CB-361",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK8_T09_T11_ARMOR.md",
+      "index": 2,
+      "lang": "typescript",
+      "lines": 19,
+      "hash": "88d2f7dcbdd6d508"
+    },
+    {
+      "id": "CB-362",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK9_T12_T14_IRONCLAD.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 13,
+      "hash": "da53d459a8d4704d"
+    },
+    {
+      "id": "CB-363",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK9_T12_T14_IRONCLAD.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 14,
+      "hash": "5e7e01b657e93442"
+    },
+    {
+      "id": "CB-364",
+      "source": "docs/engine/PLANNING_PHASE1_CHUNK9_T12_T14_IRONCLAD.md",
+      "index": 2,
+      "lang": "typescript",
+      "lines": 11,
+      "hash": "dcef2694a5879569"
+    },
+    {
+      "id": "CB-365",
+      "source": "docs/engine/PLANNING_PHASE1_PREP.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 1,
+      "hash": "da93d4046855e768"
+    },
+    {
+      "id": "CB-366",
+      "source": "docs/engine/PLANNING_PHASE1_REPO_LAYOUT.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 13,
+      "hash": "bbdf96cbc7eb7189"
+    },
+    {
+      "id": "CB-367",
+      "source": "docs/engine/PLANNING_PROGRESS_REPORT.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 5,
+      "hash": "22ed6ac56d73c839"
+    },
+    {
+      "id": "CB-368",
+      "source": "docs/engine/PLANNING_QUALITY_GATES.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "0ac01ede9af9b1e2"
+    },
+    {
+      "id": "CB-369",
+      "source": "docs/engine/PLANNING_QUALITY_GUARDRAILS.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 2,
+      "hash": "e3347e78e993d290"
+    },
+    {
+      "id": "CB-370",
+      "source": "docs/engine/PLANNING_QUALITY_GUARDRAILS.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 10,
+      "hash": "8e9aeb4e941707a6"
+    },
+    {
+      "id": "CB-371",
+      "source": "docs/engine/PLANNING_R13_CORPUS_L4_PASS.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 1,
+      "hash": "56a2682caede17a5"
+    },
+    {
+      "id": "CB-372",
+      "source": "docs/engine/PLANNING_R15_IMAGINATION_100_SPEC.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 2,
+      "hash": "b9ebecbbc991cf59"
+    },
+    {
+      "id": "CB-373",
+      "source": "docs/engine/PLANNING_SCALE_VISION.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 5,
+      "hash": "a4a4c84ad7b54032"
+    },
+    {
+      "id": "CB-374",
+      "source": "docs/engine/PLANNING_SCALE_VISION.md",
+      "index": 1,
+      "lang": "mermaid",
+      "lines": 34,
+      "hash": "c3c01dd14e87867a"
+    },
+    {
+      "id": "CB-375",
+      "source": "docs/engine/PLANNING_SECURITY_KNOWLEDGE_SCALE.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 1,
+      "hash": "675912004cb0ab4f"
+    },
+    {
+      "id": "CB-376",
+      "source": "docs/engine/PLANNING_SECURITY_KNOWLEDGE_SCALE.md",
+      "index": 1,
+      "lang": "json",
+      "lines": 5,
+      "hash": "7700cfe619ee3b5d"
+    },
+    {
+      "id": "CB-377",
+      "source": "docs/engine/PLANNING_SESSION_END_2026-06-03.md",
+      "index": 0,
+      "lang": "bash",
+      "lines": 2,
+      "hash": "bcb8c7580a592e38"
+    },
+    {
+      "id": "CB-378",
+      "source": "docs/engine/PLANNING_UPDATE_PIPELINE.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 24,
+      "hash": "60f56d49e13d76ff"
+    },
+    {
+      "id": "CB-379",
+      "source": "docs/engine/PLANNING_UPDATE_PIPELINE.md",
+      "index": 1,
+      "lang": "bash",
+      "lines": 3,
+      "hash": "aa47ffe54b99cea2"
+    },
+    {
+      "id": "CB-380",
+      "source": "docs/engine/PRESENTATION_STYLE_GUIDE.md",
+      "index": 0,
+      "lang": "markdown",
+      "lines": 19,
+      "hash": "0db44e9102289d01"
+    },
+    {
+      "id": "CB-381",
+      "source": "docs/engine/PRESENTATION_STYLE_GUIDE.md",
+      "index": 1,
+      "lang": "markdown",
+      "lines": 4,
+      "hash": "39e1d090b176aeb3"
+    },
+    {
+      "id": "CB-382",
+      "source": "docs/engine/PRESENTATION_STYLE_GUIDE.md",
+      "index": 2,
+      "lang": "markdown",
+      "lines": 4,
+      "hash": "24676eb71b1d380b"
+    },
+    {
+      "id": "CB-383",
+      "source": "docs/engine/PRESENTATION_STYLE_GUIDE.md",
+      "index": 3,
+      "lang": "markdown",
+      "lines": 1,
+      "hash": "470abd722a012ef2"
+    },
+    {
+      "id": "CB-384",
+      "source": "docs/engine/PRESENTATION_STYLE_GUIDE.md",
+      "index": 4,
+      "lang": "markdown",
+      "lines": 2,
+      "hash": "6ab2843caa63dd12"
+    },
+    {
+      "id": "CB-385",
+      "source": "docs/engine/README.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 11,
+      "hash": "ef8328d468fadb77"
+    },
+    {
+      "id": "CB-386",
+      "source": "docs/engine/REFERENCE_CORPUS_CATALOG.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 9,
+      "hash": "eff3410b73da6bcc"
+    },
+    {
+      "id": "CB-387",
+      "source": "docs/engine/REMOTE_WORKER.md",
+      "index": 0,
+      "lang": "jsonc",
+      "lines": 20,
+      "hash": "3cad4e702f8f3c2c"
+    },
+    {
+      "id": "CB-388",
+      "source": "docs/engine/REMOTE_WORKER.md",
+      "index": 1,
+      "lang": "mermaid",
+      "lines": 15,
+      "hash": "d2f5095d14fe14fe"
+    },
+    {
+      "id": "CB-389",
+      "source": "docs/engine/REMOTE_WORKER.md",
+      "index": 2,
+      "lang": "sql",
+      "lines": 6,
+      "hash": "aefdf58bd998f44c"
+    },
+    {
+      "id": "CB-390",
+      "source": "docs/engine/REMOTE_WORKER.md",
+      "index": 3,
+      "lang": "sql",
+      "lines": 11,
+      "hash": "c236e0a83839eea7"
+    },
+    {
+      "id": "CB-391",
+      "source": "docs/engine/REMOTE_WORKER.md",
+      "index": 4,
+      "lang": "sql",
+      "lines": 8,
+      "hash": "55c4e6786593dbc6"
+    },
+    {
+      "id": "CB-392",
+      "source": "docs/engine/REMOTE_WORKER.md",
+      "index": 5,
+      "lang": "sql",
+      "lines": 6,
+      "hash": "14c0cf2f71dd3c26"
+    },
+    {
+      "id": "CB-393",
+      "source": "docs/engine/REMOTE_WORKER.md",
+      "index": 6,
+      "lang": "plain",
+      "lines": 3,
+      "hash": "2f6dd7490a3697c7"
+    },
+    {
+      "id": "CB-394",
+      "source": "docs/engine/REMOTE_WORKER.md",
+      "index": 7,
+      "lang": "plain",
+      "lines": 22,
+      "hash": "f842bf0514b1c768"
+    },
+    {
+      "id": "CB-395",
+      "source": "docs/engine/REMOTE_WORKER.md",
+      "index": 8,
+      "lang": "toml",
+      "lines": 3,
+      "hash": "0371bdc33682907c"
+    },
+    {
+      "id": "CB-396",
+      "source": "docs/engine/RESPONSE_PRESENTATION_PROTOCOL.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 35,
+      "hash": "d92c965fe42158a4"
+    },
+    {
+      "id": "CB-397",
+      "source": "docs/engine/RESPONSE_PRESENTATION_PROTOCOL.md",
+      "index": 1,
+      "lang": "markdown",
+      "lines": 10,
+      "hash": "13823fe6bfbc6afc"
+    },
+    {
+      "id": "CB-398",
+      "source": "docs/engine/RESPONSE_PRESENTATION_PROTOCOL.md",
+      "index": 2,
+      "lang": "markdown",
+      "lines": 10,
+      "hash": "7403ac8392295819"
+    },
+    {
+      "id": "CB-399",
+      "source": "docs/engine/RESPONSE_PRESENTATION_PROTOCOL.md",
+      "index": 3,
+      "lang": "markdown",
+      "lines": 9,
+      "hash": "fff23add67e39fb2"
+    },
+    {
+      "id": "CB-400",
+      "source": "docs/engine/RESPONSE_PRESENTATION_PROTOCOL.md",
+      "index": 4,
+      "lang": "markdown",
+      "lines": 7,
+      "hash": "cd1227cf8c8ab9dc"
+    },
+    {
+      "id": "CB-401",
+      "source": "docs/engine/RESPONSE_PRESENTATION_PROTOCOL.md",
+      "index": 5,
+      "lang": "markdown",
+      "lines": 7,
+      "hash": "cb6f5205b3e84560"
+    },
+    {
+      "id": "CB-402",
+      "source": "docs/engine/RULE_AUTHORING_SPEC.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 17,
+      "hash": "6ec43079cbf084bd"
+    },
+    {
+      "id": "CB-403",
+      "source": "docs/engine/RULE_AUTHORING_SPEC.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 7,
+      "hash": "11a2167e956cbdc8"
+    },
+    {
+      "id": "CB-404",
+      "source": "docs/engine/RULE_STORE.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 26,
+      "hash": "b24ee3c2d9c69ca5"
+    },
+    {
+      "id": "CB-405",
+      "source": "docs/engine/RULE_STORE.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 31,
+      "hash": "44b26414113a7438"
+    },
+    {
+      "id": "CB-406",
+      "source": "docs/engine/RULE_STORE.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 8,
+      "hash": "d16b3593389f2158"
+    },
+    {
+      "id": "CB-407",
+      "source": "docs/engine/RULE_STORE.md",
+      "index": 3,
+      "lang": "json",
+      "lines": 12,
+      "hash": "545933643eaad87c"
+    },
+    {
+      "id": "CB-408",
+      "source": "docs/engine/RULE_STORE.md",
+      "index": 4,
+      "lang": "plain",
+      "lines": 2,
+      "hash": "0005c04284f95248"
+    },
+    {
+      "id": "CB-409",
+      "source": "docs/engine/RULE_STORE.md",
+      "index": 5,
+      "lang": "mermaid",
+      "lines": 6,
+      "hash": "096e1285081c28d9"
+    },
+    {
+      "id": "CB-410",
+      "source": "docs/engine/RUNTIME_BEHAVIOR.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 17,
+      "hash": "181c118c964f0701"
+    },
+    {
+      "id": "CB-411",
+      "source": "docs/engine/RUNTIME_BEHAVIOR.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 3,
+      "hash": "e054de540c6c3d13"
+    },
+    {
+      "id": "CB-412",
+      "source": "docs/engine/RUNTIME_BEHAVIOR.md",
+      "index": 2,
+      "lang": "plain",
+      "lines": 2,
+      "hash": "ddafb975d6e069dc"
+    },
+    {
+      "id": "CB-413",
+      "source": "docs/engine/RUNTIME_BEHAVIOR.md",
+      "index": 3,
+      "lang": "mermaid",
+      "lines": 10,
+      "hash": "801bc5a9096eaa90"
+    },
+    {
+      "id": "CB-414",
+      "source": "docs/engine/RUNTIME_BEHAVIOR.md",
+      "index": 4,
+      "lang": "json",
+      "lines": 6,
+      "hash": "14d6e8194ac83a0f"
+    },
+    {
+      "id": "CB-415",
+      "source": "docs/engine/RUNTIME_BEHAVIOR.md",
+      "index": 5,
+      "lang": "plain",
+      "lines": 6,
+      "hash": "36c8299363353be9"
+    },
+    {
+      "id": "CB-416",
+      "source": "docs/engine/RUNTIME_BEHAVIOR.md",
+      "index": 6,
+      "lang": "mermaid",
+      "lines": 26,
+      "hash": "22980217feaba583"
+    },
+    {
+      "id": "CB-417",
+      "source": "docs/engine/RUNTIME_BEHAVIOR.md",
+      "index": 7,
+      "lang": "json",
+      "lines": 9,
+      "hash": "54944d7998add377"
+    },
+    {
+      "id": "CB-418",
+      "source": "docs/engine/SCOPE_AND_REJECTION.md",
+      "index": 0,
+      "lang": "mermaid",
+      "lines": 12,
+      "hash": "51cd51f5c266788c"
+    },
+    {
+      "id": "CB-419",
+      "source": "docs/engine/SCOPE_AND_REJECTION.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 20,
+      "hash": "306a4c005dc367d2"
+    },
+    {
+      "id": "CB-420",
+      "source": "docs/engine/SCOPE_AND_REJECTION.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 11,
+      "hash": "48ab91de1a93dad3"
+    },
+    {
+      "id": "CB-421",
+      "source": "docs/engine/SCOPE_AND_REJECTION.md",
+      "index": 3,
+      "lang": "json",
+      "lines": 10,
+      "hash": "58ba727025f81564"
+    },
+    {
+      "id": "CB-422",
+      "source": "docs/engine/SCOPE_AND_REJECTION.md",
+      "index": 4,
+      "lang": "json",
+      "lines": 13,
+      "hash": "14fec887c7a18e6f"
+    },
+    {
+      "id": "CB-423",
+      "source": "docs/engine/SCOPE_AND_REJECTION.md",
+      "index": 5,
+      "lang": "json",
+      "lines": 8,
+      "hash": "75a7dfae07b3a5d4"
+    },
+    {
+      "id": "CB-424",
+      "source": "docs/engine/SCOPE_AND_REJECTION.md",
+      "index": 6,
+      "lang": "json",
+      "lines": 8,
+      "hash": "d40b7190138a9bf5"
+    },
+    {
+      "id": "CB-425",
+      "source": "docs/engine/SCOPE_AND_REJECTION.md",
+      "index": 7,
+      "lang": "plain",
+      "lines": 4,
+      "hash": "8b31bd20eadfa443"
+    },
+    {
+      "id": "CB-426",
+      "source": "docs/engine/SESSION_RESUME_PROTOCOL.md",
+      "index": 0,
+      "lang": "plain",
+      "lines": 2,
+      "hash": "3fa02d59652930bb"
+    },
+    {
+      "id": "CB-427",
+      "source": "docs/engine/SESSION_RESUME_PROTOCOL.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 8,
+      "hash": "5eb4ecf447fa4d17"
+    },
+    {
+      "id": "CB-428",
+      "source": "docs/engine/SESSION_RESUME_PROTOCOL.md",
+      "index": 2,
+      "lang": "mermaid",
+      "lines": 35,
+      "hash": "7b731f6bfd6641d7"
+    },
+    {
+      "id": "CB-429",
+      "source": "docs/engine/SESSION_RESUME_PROTOCOL.md",
+      "index": 3,
+      "lang": "typescript",
+      "lines": 6,
+      "hash": "334ffc62a5d53e3a"
+    },
+    {
+      "id": "CB-430",
+      "source": "docs/engine/SESSION_RESUME_PROTOCOL.md",
+      "index": 4,
+      "lang": "plain",
+      "lines": 2,
+      "hash": "4031989563608503"
+    },
+    {
+      "id": "CB-431",
+      "source": "docs/engine/SESSION_RESUME_PROTOCOL.md",
+      "index": 5,
+      "lang": "json",
+      "lines": 20,
+      "hash": "764784c2741f617a"
+    },
+    {
+      "id": "CB-432",
+      "source": "docs/engine/SESSION_RESUME_PROTOCOL.md",
+      "index": 6,
+      "lang": "markdown",
+      "lines": 16,
+      "hash": "425ab432dd149fb3"
+    },
+    {
+      "id": "CB-433",
+      "source": "docs/engine/SILENT_FAILURE_GUARD.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 8,
+      "hash": "8624a2cd905528ec"
+    },
+    {
+      "id": "CB-434",
+      "source": "docs/engine/SILENT_FAILURE_GUARD.md",
+      "index": 1,
+      "lang": "mermaid",
+      "lines": 4,
+      "hash": "ff8265f696a0b636"
+    },
+    {
+      "id": "CB-435",
+      "source": "docs/engine/TIER_MATRIX.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 1,
+      "hash": "c5031ff097275e0d"
+    },
+    {
+      "id": "CB-436",
+      "source": "docs/engine/UX_BOUNDARY_PROTOCOL.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 11,
+      "hash": "beac145939169300"
+    },
+    {
+      "id": "CB-437",
+      "source": "docs/engine/UX_BOUNDARY_PROTOCOL.md",
+      "index": 1,
+      "lang": "json",
+      "lines": 11,
+      "hash": "b721f0f7afecadca"
+    },
+    {
+      "id": "CB-438",
+      "source": "docs/engine/UX_BOUNDARY_PROTOCOL.md",
+      "index": 2,
+      "lang": "json",
+      "lines": 17,
+      "hash": "c2ae5569bf7e5db4"
+    },
+    {
+      "id": "CB-439",
+      "source": "docs/engine/UX_BOUNDARY_PROTOCOL.md",
+      "index": 3,
+      "lang": "mermaid",
+      "lines": 9,
+      "hash": "343a423c0feedfc8"
+    },
+    {
+      "id": "CB-440",
+      "source": "docs/engine/UX_BOUNDARY_PROTOCOL.md",
+      "index": 4,
+      "lang": "plain",
+      "lines": 3,
+      "hash": "4beb97b1838b9960"
+    },
+    {
+      "id": "CB-441",
+      "source": "docs/engine/VECTORIZE_RAG_SPEC.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 11,
+      "hash": "3be625b7ab89e854"
+    },
+    {
+      "id": "CB-442",
+      "source": "docs/engine/VECTORIZE_RAG_SPEC.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 5,
+      "hash": "40a02a049da1413a"
+    },
+    {
+      "id": "CB-443",
+      "source": "docs/engine/VECTORIZE_RAG_SPEC.md",
+      "index": 2,
+      "lang": "typescript",
+      "lines": 20,
+      "hash": "f0cc6a86a5c45479"
+    },
+    {
+      "id": "CB-444",
+      "source": "docs/engine/VECTORIZE_RAG_SPEC.md",
+      "index": 3,
+      "lang": "toml",
+      "lines": 3,
+      "hash": "0371bdc33682907c"
+    },
+    {
+      "id": "CB-445",
+      "source": "docs/engine/WIREMAP_OPTIONAL_FLOW_COMPOSITION.md",
+      "index": 0,
+      "lang": "typescript",
+      "lines": 46,
+      "hash": "9d00fca4eb735d9a"
+    },
+    {
+      "id": "CB-446",
+      "source": "docs/engine/WIREMAP_OPTIONAL_FLOW_COMPOSITION.md",
+      "index": 1,
+      "lang": "typescript",
+      "lines": 8,
+      "hash": "94d09d612b8c2d90"
+    },
+    {
+      "id": "CB-447",
+      "source": "docs/engine/WIREMAP_OPTIONAL_FLOW_COMPOSITION.md",
+      "index": 2,
+      "lang": "markdown",
+      "lines": 14,
+      "hash": "0f2385f65e7c9233"
+    },
+    {
+      "id": "CB-448",
+      "source": "docs/engine/WIREMAP_OPTIONAL_FLOW_COMPOSITION.md",
+      "index": 3,
+      "lang": "json",
+      "lines": 6,
+      "hash": "6b07487de0a56787"
+    },
+    {
+      "id": "CB-449",
+      "source": "docs/engine/WIREMAP_OPTIONAL_FLOW_COMPOSITION.md",
+      "index": 4,
+      "lang": "json",
+      "lines": 6,
+      "hash": "948b3238d9d2cf29"
+    },
+    {
+      "id": "CB-450",
+      "source": "docs/engine/WIREMAP_OPTIONAL_FLOW_COMPOSITION.md",
+      "index": 5,
+      "lang": "json",
+      "lines": 6,
+      "hash": "02fd081e8b536aae"
+    },
+    {
+      "id": "CB-451",
+      "source": "docs/clients/cursor.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 11,
+      "hash": "11ecb8b815072180"
+    },
+    {
+      "id": "CB-452",
+      "source": "docs/clients/cursor.md",
+      "index": 1,
+      "lang": "plain",
+      "lines": 1,
+      "hash": "c362c1d3637d1332"
+    },
+    {
+      "id": "CB-453",
+      "source": "docs/clients/cursor.md",
+      "index": 2,
+      "lang": "plain",
+      "lines": 1,
+      "hash": "68e17ef19363c341"
+    },
+    {
+      "id": "CB-454",
+      "source": "docs/clients/vscode-copilot.md",
+      "index": 0,
+      "lang": "json",
+      "lines": 11,
+      "hash": "11ecb8b815072180"
+    }
+  ]
+}

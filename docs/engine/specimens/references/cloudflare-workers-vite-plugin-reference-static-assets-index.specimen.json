@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-vite-plugin-reference-static-assets-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/vite-plugin/reference/static-assets/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Static Assets",
+  "excerpt": "description: Static assets and the Vite plugin image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. This guide focuses on the areas of working with static assets that are unique to the Vite plugin. For more general documentation, see [Static Assets](https://developers.cloudflare.com/workers/static-assets/). The Vite plugin does not require that you provide the `assets` field in order to enable assets and instead determines whether assets should be included based on whether the `client` environment has been built. By default, the `client` environment is built if any of the following conditions are met:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

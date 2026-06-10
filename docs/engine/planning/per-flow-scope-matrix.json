@@ -1,0 +1,599 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/per-flow-scope-matrix/v1",
+  "rulesetVersion": "2026.06.08",
+  "flows": [
+    {
+      "flowId": "auth-lifecycle",
+      "scopeServices": {
+        "cloudflare": {
+          "protocolIds": [
+            "owasp/auth-rate-limit",
+            "owasp/crypto-random",
+            "cloudflare/worker-auth-routes",
+            "owasp/injection-sql",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455",
+            "owasp/csrf",
+            "supabase/auth-helpers-nextjs"
+          ],
+          "legalOnlyIronClad": [
+            "LEG-PRIV-001",
+            "LEG-TERMS-003"
+          ]
+        },
+        "nextjs": {
+          "protocolIds": [
+            "owasp/csrf",
+            "owasp/session-cookie-flags",
+            "nextjs/middleware-auth",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": [
+            "LEG-A11Y-001",
+            "LEG-A11Y-002"
+          ]
+        },
+        "resend": {
+          "protocolIds": [
+            "resend/domain-verification",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": [
+            "LEG-EMAIL-002"
+          ]
+        }
+      }
+    },
+    {
+      "flowId": "billing-subscription",
+      "scopeServices": {
+        "stripe": {
+          "protocolIds": [
+            "stripe/webhook-signing",
+            "stripe/checkout-metadata",
+            "stripe/idempotency-keys",
+            "cwe/webhook-replay",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": [
+            "LEG-TERMS-004"
+          ]
+        },
+        "cloudflare": {
+          "protocolIds": [
+            "cloudflare/kv-session-ttl",
+            "generic/tenant-isolation",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455",
+            "owasp/csrf",
+            "cloudflare/worker-auth-routes",
+            "supabase/auth-helpers-nextjs"
+          ],
+          "legalOnlyIronClad": []
+        },
+        "nextjs": {
+          "protocolIds": [
+            "nextjs/middleware-auth",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": []
+        },
+        "resend": {
+          "protocolIds": [
+            "resend/transactional-only-billing",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": [
+            "LEG-EMAIL-001",
+            "LEG-EMAIL-003"
+          ]
+        }
+      }
+    },
+    {
+      "flowId": "password-reset",
+      "scopeServices": {
+        "cloudflare": {
+          "protocolIds": [
+            "owasp/auth-rate-limit",
+            "optional/password-reset-token",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455",
+            "owasp/csrf",
+            "cloudflare/worker-auth-routes",
+            "supabase/auth-helpers-nextjs"
+          ],
+          "legalOnlyIronClad": []
+        },
+        "resend": {
+          "protocolIds": [
+            "resend/transactional-only-billing",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": []
+        },
+        "nextjs": {
+          "protocolIds": [
+            "owasp/account-enumeration",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": []
+        }
+      }
+    },
+    {
+      "flowId": "onboarding",
+      "scopeServices": {
+        "nextjs": {
+          "protocolIds": [
+            "generic/terms-privacy-links",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": [
+            "LEG-PRIV-001"
+          ]
+        },
+        "resend": {
+          "protocolIds": [
+            "resend/domain-verification",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": []
+        }
+      }
+    },
+    {
+      "flowId": "account-deletion",
+      "scopeServices": {
+        "cloudflare": {
+          "protocolIds": [
+            "optional/account-deletion-cascade",
+            "generic/gdpr-erasure-hook",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": [
+            "LEG-PRIV-008",
+            "LEG-DATA-001",
+            "LEG-DATA-003",
+            "LEG-DATA-005"
+          ]
+        },
+        "stripe": {
+          "protocolIds": [
+            "stripe/customer-metadata",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": [
+            "LEG-DATA-005"
+          ]
+        },
+        "resend": {
+          "protocolIds": [
+            "resend/bounce-suppression",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": [
+            "LEG-DATA-006"
+          ]
+        }
+      }
+    },
+    {
+      "flowId": "data-export",
+      "scopeServices": {
+        "cloudflare": {
+          "protocolIds": [
+            "optional/data-export-encrypt",
+            "generic/privacy-data-min",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": [
+            "LEG-DATA-002",
+            "LEG-DATA-004"
+          ]
+        },
+        "nextjs": {
+          "protocolIds": [
+            "nextjs/route-handler-auth",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": []
+        }
+      }
+    },
+    {
+      "flowId": "terms-reaccept",
+      "scopeServices": {
+        "nextjs": {
+          "protocolIds": [
+            "generic/terms-privacy-links",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": [
+            "LEG-TERMS-005"
+          ]
+        },
+        "cloudflare": {
+          "protocolIds": [
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": [
+            "LEG-TERMS-002"
+          ]
+        }
+      }
+    },
+    {
+      "flowId": "billing-race-shield",
+      "scopeServices": {
+        "stripe": {
+          "protocolIds": [
+            "stripe/webhook-signing",
+            "stripe/idempotency-keys",
+            "stripe/checkout-metadata",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": [
+            "LEG-EDGE-006"
+          ]
+        },
+        "cloudflare": {
+          "protocolIds": [
+            "cloudflare/kv-session-ttl",
+            "generic/tenant-isolation",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": []
+        },
+        "nextjs": {
+          "protocolIds": [
+            "nextjs/middleware-auth",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": [
+            "LEG-EDGE-006"
+          ]
+        }
+      }
+    },
+    {
+      "flowId": "email-lifecycle",
+      "scopeServices": {
+        "resend": {
+          "protocolIds": [
+            "resend/transactional-only-billing",
+            "resend/domain-verification",
+            "resend/bounce-suppression",
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455"
+          ],
+          "legalOnlyIronClad": [
+            "LEG-EMAIL-001",
+            "LEG-EMAIL-003",
+            "LEG-EMAIL-010"
+          ]
+        },
+        "cloudflare": {
+          "protocolIds": [
+            "planning/sp49-stripe-access-000",
+            "planning/sp49-owasp-access-003",
+            "owasp/logging-pii",
+            "generic/audit-log-auth",
+            "planning/sp50-stripe-billing-300",
+            "planning/sp50-owasp-billing-303",
+            "planning/sp51-stripe-edge-354",
+            "planning/sp51-legal-session-353",
+            "armor/surface-session",
+            "planning/sp52-owasp-logging-405",
+            "planning/sp52-ironcannon-access-400",
+            "planning/sp53-legal-email-455",
+            "owasp/csrf",
+            "cloudflare/worker-auth-routes",
+            "supabase/auth-helpers-nextjs"
+          ],
+          "legalOnlyIronClad": []
+        }
+      }
+    }
+  ],
+  "flowCount": 9,
+  "scopeServiceCount": 5,
+  "stackProfiles": {
+    "SD-06": {
+      "label": "Pages + Worker split (SVC-001)",
+      "prependedModules": [
+        "M60-pages-wrangler-config",
+        "M61-pages-env-bridge"
+      ],
+      "goldenCoreReuse": "M01–M16",
+      "em4Conflicts": [
+        "CH-PAGES-001",
+        "CH-PAGES-002"
+      ],
+      "detectSignal": "pages-worker-split",
+      "flows": [
+        "auth-lifecycle",
+        "billing-subscription",
+        "password-reset",
+        "email-lifecycle"
+      ],
+      "extraProtocolIds": [
+        "owasp/csrf",
+        "cloudflare/worker-auth-routes"
+      ]
+    },
+    "SD-07": {
+      "label": "Supabase-primary (SVC-002)",
+      "prependedModules": [
+        "M70-supabase-auth-config",
+        "M71-supabase-middleware-ssr"
+      ],
+      "goldenCoreReuse": "M11–M16 billing only (no D1 auth)",
+      "em4Conflicts": [
+        "CH-SUPA-001",
+        "CH-SUPA-002",
+        "CH-005"
+      ],
+      "detectSignal": "SUPABASE_PRIMARY",
+      "flows": [
+        "auth-lifecycle",
+        "billing-subscription",
+        "password-reset",
+        "email-lifecycle"
+      ],
+      "extraProtocolIds": [
+        "owasp/csrf",
+        "supabase/auth-helpers-nextjs"
+      ]
+    }
+  }
+}

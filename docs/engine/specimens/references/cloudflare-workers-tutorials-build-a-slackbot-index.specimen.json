@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-tutorials-build-a-slackbot-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/tutorials/build-a-slackbot/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Build a Slackbot",
+  "excerpt": "description: Learn how to build a Slackbot with Hono and TypeScript in Cloudflare Workers image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. In this tutorial, you will build a [Slack ↗](https://slack.com) bot using [Cloudflare Workers](https://developers.cloudflare.com/workers/). Your bot will make use of GitHub webhooks to send messages to a Slack channel when issues are updated or created, and allow users to write a command to look up GitHub issues from inside Slack. ![After following this tutorial, you will be able to create a Slackbot like the one in this example.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

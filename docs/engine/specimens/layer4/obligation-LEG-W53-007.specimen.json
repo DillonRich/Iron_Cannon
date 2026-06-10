@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w53-007",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Export download requires re-authentication within 15 minutes",
+    "obligations": [
+      "LEG-W53-007"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Export download requires re-authentication within 15 minutes"
+  },
+  "references": [
+    "legal/export-reauth"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W53-007",
+        "type": "flow_ref",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "data",
+    "disclaimerRequired": true
+  }
+}

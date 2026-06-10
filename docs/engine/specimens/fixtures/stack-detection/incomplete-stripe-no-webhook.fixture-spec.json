@@ -1,0 +1,11 @@
+{
+  "fixtureId": "SD-05",
+  "description": "Stripe present but webhook secret missing from env template",
+  "projectFiles": [
+    { "path": "package.json", "content": "{\"dependencies\":{\"next\":\"14\",\"stripe\":\"^14\"}}" },
+    { "path": "wrangler.toml", "content": "name = \"app\"" },
+    { "path": ".env.example", "content": "STRIPE_SECRET_KEY=\nRESEND_API_KEY=" }
+  ],
+  "expectedT01": { "supported": true, "stack": ["nextjs", "stripe"] },
+  "expectedT02": { "complete": false, "missingConfig": ["STRIPE_WEBHOOK_SECRET"], "agentGuidance": "Ask user for webhook signing secret structure before M12." }
+}

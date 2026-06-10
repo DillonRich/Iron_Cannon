@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-templates-template-variables",
+  "sourceUrl": "https://resend.com/docs/dashboard/templates/template-variables.md",
+  "lastVerified": "2026-06-03",
+  "title": "Working with Variables",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Working with Variables > How to work with custom variables in Templates. Custom Template variables provide your team flexibility when sending emails. Define custom variables for your Template with optional fallback values which will be replaced with the actual values when sending the email. ## Create custom variables Each Template may contain up to 50 variables. To add a custom variable, select **Variable** in the commands palette or type `{{` in the editor. Define the `name`, `type`, and `fallback_value` (optional). You can also define custom variables via the API.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

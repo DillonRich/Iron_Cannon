@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/kv-concepts-kv-namespaces-index",
+  "sourceUrl": "https://developers.cloudflare.com/kv/concepts/kv-namespaces/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "KV namespaces",
+  "excerpt": "description: A KV namespace is a key-value database replicated across Cloudflare's global network. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/kv/llms.txt > Use this file to discover all available pages before exploring further. A KV namespace is a key-value database replicated to Cloudflare’s global network. Bind your KV namespaces through Wrangler or via the Cloudflare dashboard.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

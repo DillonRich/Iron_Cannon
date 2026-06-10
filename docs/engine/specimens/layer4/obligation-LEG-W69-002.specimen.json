@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w69-002",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Session KV bindings use encrypted namespaces",
+    "obligations": [
+      "LEG-W69-002"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Session KV bindings use encrypted namespaces"
+  },
+  "references": [
+    "cloudflare/kv-encryption"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W69-002",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

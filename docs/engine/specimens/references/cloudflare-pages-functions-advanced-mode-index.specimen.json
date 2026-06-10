@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-functions-advanced-mode-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/functions/advanced-mode/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Advanced mode",
+  "excerpt": "description: Use a _worker.js file to develop Pages Functions instead of the /functions directory. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. Advanced mode allows you to develop your Pages Functions with a `_worker.js` file rather than the `/functions` directory. In some cases, Pages Functions' built-in file path based routing and middleware system is not desirable for existing applications. You may have a Worker that is complex and difficult to splice up into Pages' file-based routing system.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

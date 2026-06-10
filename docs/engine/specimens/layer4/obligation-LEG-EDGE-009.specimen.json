@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-edge-009",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-edge-009",
+  "content": {
+    "requirement": "Session fixation on tier upgrade blocked",
+    "obligations": [
+      "LEG-EDGE-009"
+    ],
+    "compareSteps": [
+      "Run detect.type=manual",
+      "Map result to obligation LEG-EDGE-009",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-EDGE-009: Session fixation on tier upgrade blocked"
+  },
+  "references": [
+    "ironcannon/resume-tier"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-EDGE-009",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "edge",
+    "disclaimerRequired": true
+  }
+}

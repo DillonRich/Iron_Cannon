@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-reports-monthly-summary",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/reports/monthly-summary.md",
+  "lastVerified": "2026-06-03",
+  "title": "Monthly summary",
+  "excerpt": "The [monthly summary](https://dashboard.stripe.com/revenue-recognition/) provides a detailed breakdown of activity for the previous month. You can use this information to understand how your billing activity affected your revenue and to book journal entries. ![Monthly summary for a given month](https://b.stripecdn.com/docs-statics-srv/assets/monthly-summary-v2.ba474e8e2a801fedb0674c40bae653ad.png) You can see that the net recognized revenue is 171,601 USD and the ending balance of deferred revenue at the end of July is 310,000 USD. Items can be broken down into two categories: revenue and contra revenue.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

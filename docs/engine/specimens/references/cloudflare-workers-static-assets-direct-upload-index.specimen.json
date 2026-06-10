@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-static-assets-direct-upload-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/static-assets/direct-upload/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Direct Uploads",
+  "excerpt": "description: Upload assets through the Workers API. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Directly uploading assets via APIs is an advanced approach which, unless you are building a programmatic integration, most users will not need. Instead, we encourage users to deploy your Worker with [Wrangler](https://developers.cloudflare.com/workers/static-assets/get-started/#1-create-a-new-worker-project-using-the-cli). Our API empowers users to upload and include static assets as part of a Worker.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

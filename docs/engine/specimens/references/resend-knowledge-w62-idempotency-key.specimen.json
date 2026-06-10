@@ -1,0 +1,14 @@
+{
+  "refId": "resend/knowledge-w62-idempotency-key",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w62/idempotency-key",
+  "lastVerified": "2026-06-06",
+  "title": "W62 idempotency-key",
+  "provider": "resend",
+  "excerpt": "Send idempotency key on Resend API calls from Workers to prevent duplicate sends",
+  "embeddingHint": "resend idempotency-key wave62",
+  "tags": [
+    "wave62",
+    "knowledge",
+    "resend"
+  ]
+}

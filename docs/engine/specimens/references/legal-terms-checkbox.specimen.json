@@ -1,0 +1,16 @@
+{
+  "refId": "legal/terms-checkbox",
+  "sourceUrl": "https://ironcannon.dev/patterns/terms-checkbox",
+  "lastVerified": "2026-05-31",
+  "title": "Terms checkbox",
+  "excerpt": "Unchecked-by-default terms acceptance on signup.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "legal",
+    "terms-checkbox"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

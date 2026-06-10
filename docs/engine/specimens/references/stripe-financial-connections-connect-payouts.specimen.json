@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/financial-connections-connect-payouts",
+  "sourceUrl": "https://docs.stripe.com/financial-connections/connect-payouts.md",
+  "lastVerified": "2026-06-03",
+  "title": "Collect a bank account to enhance Connect payouts",
+  "excerpt": "Collect your connected account's bank account and use account data to enhance payouts. Not sure about which Financial Connections integration to use? See our [overview of integration options](https://docs.stripe.com/financial-connections/use-cases.md). Financial Connections lets you instantly collect tokenized account and routing numbers for payouts to connected accounts where your platform is liable for negative balances, including Custom and Express accounts. - Increase onboarding conversion by eliminating the need for your connected accounts to leave your website or application to locate their account and routing numbers. - Reduce payout failure rates by eliminating errors that result from manual entry of account and routing numbers.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

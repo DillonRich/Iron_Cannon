@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w89-008",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "G-41 after G-40 sequencing",
+    "obligations": [
+      "LEG-W89-008"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "G-41 after G-40 sequencing"
+  },
+  "references": [
+    "ironcannon/knowledge-w89-g41-after-g40"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W89-008",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "billing",
+    "disclaimerRequired": true
+  }
+}

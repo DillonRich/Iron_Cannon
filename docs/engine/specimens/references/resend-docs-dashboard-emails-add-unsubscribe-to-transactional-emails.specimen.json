@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-emails-add-unsubscribe-to-transactional-emails",
+  "sourceUrl": "https://resend.com/docs/dashboard/emails/add-unsubscribe-to-transactional-emails.md",
+  "lastVerified": "2026-06-03",
+  "title": "Add an unsubscribe link to transactional emails",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Add an unsubscribe link to transactional emails > Learn how to give email recipients the ability to unsubscribe without searching for the unsubscribe link. For contact and unsubscribe management workflows, see the [Audiences overview](/dashboard/audiences/introduction), where Broadcasts are built for keeping track of topics, segments, and unsubscribe preferences. Resend doesn't manage contact lists for transactional emails. If you manage your own list, you can add the `List-Unsubscribe: https://example.com/unsubscribe` header when sending emails using the Resend API.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

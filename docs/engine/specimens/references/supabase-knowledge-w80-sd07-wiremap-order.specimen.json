@@ -1,0 +1,15 @@
+{
+  "refId": "supabase/knowledge-w80-sd07-wiremap-order",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w80/sd07-wiremap-order",
+  "lastVerified": "2026-06-06",
+  "title": "W80 sd07-wiremap-order",
+  "provider": "supabase",
+  "excerpt": "SD-07 wiremap M70→M71→M11–M16 omits D1 auth modules M01–M05",
+  "embeddingHint": "supabase sd07-wiremap-order wave80 svc-002-supabase-harvest",
+  "tags": [
+    "wave80",
+    "knowledge",
+    "supabase",
+    "svc-002-supabase-harvest"
+  ]
+}

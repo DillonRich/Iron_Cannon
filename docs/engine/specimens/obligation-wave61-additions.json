@@ -1,0 +1,24 @@
+{
+  "obligations": [
+    { "id": "LEG-W61-001", "category": "privacy", "title": "AI feature disclosure in privacy policy when user data sent to models", "sourceRefId": "legal/ai-disclosure", "detect": { "type": "pattern", "pattern": "artificial intelligence" } },
+    { "id": "LEG-W61-002", "category": "billing", "title": "Usage-based billing shows metered unit and cap in UI", "sourceRefId": "stripe/usage-based-billing", "detect": { "type": "ui_pattern", "pattern": "usage" } },
+    { "id": "LEG-W61-003", "category": "security", "title": "CSP report-uri or report-to configured for production", "sourceRefId": "owasp/csp-reporting", "detect": { "type": "config" } },
+    { "id": "LEG-W61-004", "category": "email", "title": "Transactional email from verified domain only", "sourceRefId": "resend/verified-domain", "detect": { "type": "config" } },
+    { "id": "LEG-W61-005", "category": "edge", "title": "Workers rate limit binding on public auth routes", "sourceRefId": "cloudflare/rate-limit-binding", "detect": { "type": "config" } },
+    { "id": "LEG-W61-006", "category": "a11y", "title": "Form errors announced to screen readers via aria-live", "sourceRefId": "legal/aria-live-errors", "detect": { "type": "required_attribute", "attr": "aria-live", "value": "polite" } },
+    { "id": "LEG-W61-007", "category": "cookie", "title": "Reject-all cookies does not block essential auth cookies", "sourceRefId": "legal/cookie-reject-essential", "detect": { "type": "manual" } },
+    { "id": "LEG-W61-008", "category": "data", "title": "Backup retention period documented in privacy policy", "sourceRefId": "legal/backup-retention", "detect": { "type": "pattern", "pattern": "backup" } },
+    { "id": "LEG-W61-009", "category": "billing", "title": "Invoice PDF includes legal entity name and tax ID when applicable", "sourceRefId": "stripe/invoice-legal-entity", "detect": { "type": "manual" } },
+    { "id": "LEG-W61-010", "category": "security", "title": "Secrets never logged in Workers console.log paths", "sourceRefId": "cloudflare/secrets-logging", "detect": { "type": "pattern", "pattern": "redact" } },
+    { "id": "LEG-W61-011", "category": "terms", "title": "Arbitration clause jurisdiction matches primary market", "sourceRefId": "legal/arbitration-jurisdiction", "detect": { "type": "manual" } },
+    { "id": "LEG-W61-012", "category": "email", "title": "Unsubscribe processes within 10 business days per CAN-SPAM", "sourceRefId": "legal/unsubscribe-sla", "detect": { "type": "config" } },
+    { "id": "LEG-W61-013", "category": "privacy", "title": "Cross-border transfer mechanism named for EU users", "sourceRefId": "legal/eu-transfer-mechanism", "detect": { "type": "pattern", "pattern": "Standard Contractual Clauses" } },
+    { "id": "LEG-W61-014", "category": "stripe", "title": "Radar rules enabled for high-risk signup velocity", "sourceRefId": "stripe/radar-rules", "detect": { "type": "config" } },
+    { "id": "LEG-W61-015", "category": "global", "title": "Status page linked from app footer during incidents", "sourceRefId": "legal/status-page-link", "detect": { "type": "route_exists", "path": "/status" } },
+    { "id": "LEG-W61-016", "category": "security", "title": "Turnstile or CAPTCHA on public signup when bot traffic detected", "sourceRefId": "cloudflare/turnstile-signup", "detect": { "type": "config" } },
+    { "id": "LEG-W61-017", "category": "billing", "title": "Refund window stated on pricing page", "sourceRefId": "legal/refund-window-pricing", "detect": { "type": "ui_pattern", "pattern": "refund" } },
+    { "id": "LEG-W61-018", "category": "data", "title": "PII fields encrypted at rest in D1 via application layer", "sourceRefId": "cloudflare/d1-encryption", "detect": { "type": "config" } },
+    { "id": "LEG-W61-019", "category": "email", "title": "DMARC policy at least p=none before p=reject rollout", "sourceRefId": "resend/dmarc-rollout", "detect": { "type": "manual" } },
+    { "id": "LEG-W61-020", "category": "a11y", "title": "Skip navigation link as first focusable element", "sourceRefId": "legal/skip-nav-link", "detect": { "type": "ui_pattern", "pattern": "skip to" } }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "fixtureId": "DT-05",
+  "detectType": "route_exists",
+  "passSnippet": "app/privacy/page.tsx export default function Privacy()",
+  "failSnippet": "no privacy route in project",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

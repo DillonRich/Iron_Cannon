@@ -1,0 +1,31 @@
+{
+  "fixtureId": "SD-TD",
+  "description": "Tauri desktop + Cloudflare Worker backend (G-56)",
+  "projectFiles": [
+    {
+      "path": "src-tauri/tauri.conf.json",
+      "content": "{\"productName\":\"Guardian\",\"identifier\":\"com.example.guardian\",\"app\":{\"security\":{\"csp\":\"default-src 'self'\"}}}"
+    },
+    {
+      "path": "cloudflare-worker/wrangler.toml",
+      "content": "name = \"guardian-api\"\nmain = \"src/index.ts\"\n[[d1_databases]]\nbinding = \"DB\""
+    },
+    {
+      "path": "cloudflare-worker/package.json",
+      "content": "{\"dependencies\":{\"stripe\":\"^16.0.0\"}}"
+    },
+    {
+      "path": ".env.example",
+      "content": "STRIPE_SECRET_KEY=\nSTRIPE_WEBHOOK_SECRET="
+    }
+  ],
+  "expectedT01": {
+    "supported": true,
+    "stackId": "tauri-desktop",
+    "compute": "cloudflare_workers",
+    "warnings": ["tauri-desktop", "HYBRID_STACK_DETECTED"]
+  },
+  "expectedT02": {
+    "complete": true
+  }
+}

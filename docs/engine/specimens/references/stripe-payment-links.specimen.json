@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payment-links",
+  "sourceUrl": "https://docs.stripe.com/payment-links",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe Payment Links",
+  "excerpt": "Hosted payment links without custom checkout route.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "stripe",
+    "payment-links"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-wrangler-commands-workers-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/wrangler/commands/workers/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Workers",
+  "excerpt": "description: Wrangler commands for creating, developing, deploying, and managing Workers. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Wrangler commands for creating, developing, deploying, and managing Workers. Create a new project via the [create-cloudflare-cli (C3) tool](https://developers.cloudflare.com/workers/get-started/guide/#1-create-a-new-worker-project). A variety of web frameworks are available to choose from as well as templates. Dependencies are installed by default, with the option to deploy your project immediately.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

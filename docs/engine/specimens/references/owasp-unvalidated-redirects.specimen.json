@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/unvalidated-redirects",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "Open redirects",
+  "excerpt": "Allowlist redirect URLs after Stripe checkout.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "owasp",
+    "unvalidated-redirects"
+  ]
+}

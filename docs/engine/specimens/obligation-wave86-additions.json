@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W86-001",
+      "category": "operations",
+      "title": "Business infrastructure plan published",
+      "sourceRefId": "ironcannon/knowledge-w86-business-infra-plan-ssot",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-002",
+      "category": "operations",
+      "title": "Pre-launch dogfood plan published",
+      "sourceRefId": "ironcannon/knowledge-w86-pre-launch-dogfood-plan",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-003",
+      "category": "operations",
+      "title": "Cheap Cloudflare stack documented",
+      "sourceRefId": "ironcannon/knowledge-w86-stakeholder-cheap-cloudflare",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-004",
+      "category": "billing",
+      "title": "Stripe transcript input noted for G-40",
+      "sourceRefId": "ironcannon/knowledge-w86-stripe-transcript-input",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-005",
+      "category": "billing",
+      "title": "Affiliates G-41 planned after subscriptions",
+      "sourceRefId": "ironcannon/knowledge-w86-affiliates-g41-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-006",
+      "category": "operations",
+      "title": "Workspace email before Cloudflare signup",
+      "sourceRefId": "google/knowledge-w86-workspace-business-email",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-007",
+      "category": "operations",
+      "title": "G-38..G-41 in gap register",
+      "sourceRefId": "ironcannon/knowledge-w86-g38-g41-gap-register",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-008",
+      "category": "operations",
+      "title": "Dogfood scope is monorepo root",
+      "sourceRefId": "ironcannon/knowledge-w86-dogfood-not-golden-app",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-009",
+      "category": "operations",
+      "title": "Business infra validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w86-validate-business-infra-plan",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W86-010",
+      "category": "privacy",
+      "title": "Launch after dogfood witness",
+      "sourceRefId": "legal/knowledge-w86-launch-after-dogfood",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-3d-secure",
+  "sourceUrl": "https://docs.stripe.com/issuing/3d-secure.md",
+  "lastVerified": "2026-06-03",
+  "title": "Cardholder authentication using 3D Secure",
+  "excerpt": "Learn about 3D Secure, an additional layer of authentication used by businesses to combat fraud. 3D Secure (3DS) uses multi-factor authentication to reduce fraud for online transactions where a card isn’t physically present. 3DS is triggered by businesses in online checkout flows, and requires multi-factor authentication (usually through SMS or email-based one-time passcode that Stripe sends) to complete. ![A Stripe checkout page with the payment information filled out, including the Pay button](https://b.stripecdn.com/docs-statics-srv/assets/3ds-flow-1-checkout-page.039294e0dee3a6dede8ea8a32185aae5.png) Step 1: The customer enters their card details.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "fixtureId": "T06-03",
+  "description": "package.json gained firebase dep since validation",
+  "input": {
+    "session": { "validatedStackHash": "stack-golden-v1" },
+    "stackSignals": { "frontend": "nextjs", "deps": { "firebase": "^10" } },
+    "stateLogMarkdown": "### M01-auth-d1-schema\n\n| status | complete |\n",
+    "diskFiles": {}
+  },
+  "expected": {
+    "driftDetected": true,
+    "stackDrift": true,
+    "code": "DIFF_DRIFT_DETECTED",
+    "reasons": ["stack_signal_changed"]
+  }
+}

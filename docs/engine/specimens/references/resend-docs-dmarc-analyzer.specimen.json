@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dmarc-analyzer",
+  "sourceUrl": "https://resend.com/docs/dmarc-analyzer.md",
+  "lastVerified": "2026-06-03",
+  "title": "DMARC Analyzer",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # DMARC Analyzer > Analyze DMARC XML reports with a free, open-source tool built by Resend. [DMARC Analyzer](https://github.com/resend/resend-dmarc-analyzer) is an open-source tool built by Resend that parses DMARC XML reports and turns them into human-readable dashboards. You can use it directly in your browser or deploy your own instance to receive automated email digests. ## What is DMARC? DMARC (Domain-based Message Authentication, Reporting, and Conformance) is an email authentication protocol that builds on [SPF and DKIM](/dashboard/domains/introduction).…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

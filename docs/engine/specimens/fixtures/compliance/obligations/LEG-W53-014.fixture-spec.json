@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W53-014",
+  "obligationId": "LEG-W53-014",
+  "detectType": "ui_pattern",
+  "detect": {
+    "type": "ui_pattern",
+    "pattern": "prorat"
+  },
+  "passSnippet": "/* shows prorat */",
+  "failSnippet": "defaultChecked=true",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

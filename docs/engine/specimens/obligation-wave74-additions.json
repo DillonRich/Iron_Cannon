@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W74-001",
+      "category": "billing",
+      "title": "Connect onboarding collects required KYC",
+      "sourceRefId": "stripe/connect-onboarding",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W74-002",
+      "category": "security",
+      "title": "Stripe Radar custom rules for fraud patterns",
+      "sourceRefId": "stripe/radar",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W74-003",
+      "category": "billing",
+      "title": "Portal proration documented for plan changes",
+      "sourceRefId": "stripe/billing-portal-proration",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W74-004",
+      "category": "billing",
+      "title": "Checkout branding matches published terms",
+      "sourceRefId": "stripe/checkout-customization",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W74-005",
+      "category": "email",
+      "title": "DKIM keys rotated on documented schedule",
+      "sourceRefId": "resend/dkim-rotation",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W74-006",
+      "category": "email",
+      "title": "Resend webhook replay rejected after TTL",
+      "sourceRefId": "resend/webhook-replay",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W74-007",
+      "category": "email",
+      "title": "Deliverability metrics reviewed weekly",
+      "sourceRefId": "resend/deliverability",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W74-008",
+      "category": "security",
+      "title": "Next.js Server Actions origin-validated",
+      "sourceRefId": "nextjs/docs-app-building-your-application-data-fetching-server-actions",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W74-009",
+      "category": "security",
+      "title": "Cache purge requires scoped API token",
+      "sourceRefId": "cloudflare/cache-purge",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W74-010",
+      "category": "operations",
+      "title": "Golden integration smoke before major release",
+      "sourceRefId": "ironcannon/knowledge-w74-golden-integration-gate",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

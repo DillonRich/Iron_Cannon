@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/event-types",
+  "sourceUrl": "https://docs.stripe.com/api/events/types.md",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe webhook event types (P0 billing)",
+  "excerpt": "P0 subscription events: checkout.session.completed (checkout done), customer.subscription.updated (status changes), customer.subscription.deleted (canceled), invoice.payment_failed (past due), invoice.paid (confirm payment). Handler must switch on event.type and idempotently update app state.",
+  "appliesTo": ["billing-subscription", "billing-race-shield"],
+  "tags": ["stripe", "webhook", "events"]
+}

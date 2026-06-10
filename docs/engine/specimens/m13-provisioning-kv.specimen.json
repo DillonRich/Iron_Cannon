@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/cloudflare/provisioning-kv",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "billing-race-shield",
+  "moduleId": "M13-provisioning-kv",
+  "adapterId": "cloudflare-golden-stack",
+  "section": "provisioning-kv",
+  "content": {
+    "requirement": "E01 race shield — provisioning flag between checkout return and webhook B03",
+    "kvKey": "provisioning:{userId}",
+    "ttlSeconds": 300,
+    "requiredSteps": [
+      "Set KV on checkout success page load (M14)",
+      "Clear KV on webhook B03 (M12)",
+      "Dashboard reads KV — show provisioning UI not paywall error"
+    ]
+  },
+  "references": ["cloudflare/kv-ttl", "cloudflare/kv-session-pattern"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "BILL-KV-001", "type": "required_string", "value": "provisioning:", "fileGlob": "**/*.{ts,js,tsx}", "tier": "pro" },
+      { "id": "BILL-KV-002", "type": "required_string", "value": "expirationTtl", "fileGlob": "**/*.{ts,js}", "tier": "pro" },
+      { "id": "BILL-KV-003", "type": "required_string", "value": "KV.delete", "fileGlob": "**/webhooks/**", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "billing-race" }
+}

@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W53-016",
+  "obligationId": "LEG-W53-016",
+  "detectType": "schema_column",
+  "detect": {
+    "type": "schema_column",
+    "column": "consent_version"
+  },
+  "passSnippet": "column consent_version",
+  "failSnippet": "column other",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-examples-data-loss-prevention-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/examples/data-loss-prevention/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Data loss prevention",
+  "excerpt": "description: Protect sensitive data to prevent data loss, and send alerts to a webhooks server in the event of a data breach. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Protect sensitive data to prevent data loss, and send alerts to a webhooks server in the event of a data breach. If you want to get started quickly, click on the button below.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

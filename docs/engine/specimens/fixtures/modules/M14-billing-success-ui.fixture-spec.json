@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M14",
+  "moduleId": "M14-billing-success-ui",
+  "patternsUnderTest": [
+    "BILL-UI-001",
+    "BILL-UI-002",
+    "BILL-P49-M14-",
+    "STWH-P49-VERIFY"
+  ],
+  "passSnippet": "import { router } from 'next/navigation'; export default function Success() { router.refresh(); return <p>Success</p>; }",
+  "failSnippet": "export default function Success() { return <p>Success</p>; }",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "BILL-UI-002"
+  ]
+}

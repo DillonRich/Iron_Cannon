@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-cards-digital-wallets",
+  "sourceUrl": "https://docs.stripe.com/issuing/cards/digital-wallets.md",
+  "lastVerified": "2026-06-03",
+  "title": "Use digital wallets with Issuing",
+  "excerpt": "Learn how to use Issuing to add cards to digital wallets. This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [iOS](https://docs.stripe.com/issuing/cards/digital-wallets.md?platform=ios) - [Android](https://docs.stripe.com/issuing/cards/digital-wallets.md?platform=android) - [React Native](https://docs.stripe.com/issuing/cards/digital-wallets.md?platform=react-native)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/d1-worker-api-prepared-statements-index",
+  "sourceUrl": "https://developers.cloudflare.com/d1/worker-api/prepared-statements/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Prepared statement methods",
+  "excerpt": "description: Bind parameters and run D1 prepared statements using the run, all, first, and raw methods. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/d1/llms.txt > Use this file to discover all available pages before exploring further. This chapter documents the various ways you can run and retrieve the results of a query after you have [prepared your statement](https://developers.cloudflare.com/d1/worker-api/d1-database/#prepare). Binds a parameter to the prepared statement.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

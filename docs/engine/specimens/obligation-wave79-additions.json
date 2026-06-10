@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W79-001",
+      "category": "operations",
+      "title": "SVC-001 mini signoff document complete",
+      "sourceRefId": "ironcannon/knowledge-w79-svc001-signoff-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W79-002",
+      "category": "operations",
+      "title": "Per-flow-scope SD-06 profile in matrix",
+      "sourceRefId": "ironcannon/knowledge-w79-sd06-per-flow-scope",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W79-003",
+      "category": "operations",
+      "title": "Pages-split outbound bundle present and valid",
+      "sourceRefId": "ironcannon/knowledge-w79-pages-split-e2e-bundle",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W79-004",
+      "category": "security",
+      "title": "Worker CORS allows Pages static origin only",
+      "sourceRefId": "cloudflare/knowledge-w79-pages-cors-preflight",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W79-005",
+      "category": "security",
+      "title": "Auth routes never cached on Pages CDN",
+      "sourceRefId": "cloudflare/knowledge-w79-pages-cache-auth-never",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W79-006",
+      "category": "operations",
+      "title": "OpenNext env bridge documented for SD-06",
+      "sourceRefId": "nextjs/knowledge-w79-open-next-env-bridge",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W79-007",
+      "category": "operations",
+      "title": "Imagination includes SD-06 and W06 harness rows",
+      "sourceRefId": "ironcannon/knowledge-w79-sd06-imagination-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W79-008",
+      "category": "operations",
+      "title": "Adversarial SD-03 vs SD-06 scenarios pass",
+      "sourceRefId": "ironcannon/knowledge-w79-svc001-adversarial-depth",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W79-009",
+      "category": "privacy",
+      "title": "Split-host cookie policy in privacy notice",
+      "sourceRefId": "legal/knowledge-w79-split-host-cookie-policy",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W79-010",
+      "category": "operations",
+      "title": "SVC-002 blocked until SVC-001 witness approved",
+      "sourceRefId": "ironcannon/knowledge-w79-svc002-queue-blocked",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

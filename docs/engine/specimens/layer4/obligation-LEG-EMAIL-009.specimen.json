@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-email-009",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-email-009",
+  "content": {
+    "requirement": "Transactional emails omit marketing modules",
+    "obligations": [
+      "LEG-EMAIL-009"
+    ],
+    "compareSteps": [
+      "Run detect.type=template_scan",
+      "Map result to obligation LEG-EMAIL-009",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-EMAIL-009: Transactional emails omit marketing modules"
+  },
+  "references": [
+    "legal/can-spam-transactional"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-EMAIL-009",
+        "type": "template_scan",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "email",
+    "disclaimerRequired": true
+  }
+}

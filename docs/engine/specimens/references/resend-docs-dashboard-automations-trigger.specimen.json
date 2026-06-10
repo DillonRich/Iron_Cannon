@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-automations-trigger",
+  "sourceUrl": "https://resend.com/docs/dashboard/automations/trigger.md",
+  "lastVerified": "2026-06-03",
+  "title": "Trigger",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Trigger > Start your Automations based on custom events. A trigger is the first step in every Automation. It defines which event will start the Automation when received. When your application sends an event to Resend, every active Automation with a matching trigger will execute its workflow for that contact. ## How it works The trigger is the first node in the editor. Choose an existing [custom event](/dashboard/automations/custom-events) or type a new event name. When creating an Automation via the API, the trigger is defined as the first item in the `steps` array with `type: 'trigger'`.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

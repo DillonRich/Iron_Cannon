@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W67-008",
+  "obligationId": "LEG-W67-008",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "pattern": "refund"
+  },
+  "passSnippet": "notice refund",
+  "failSnippet": "no match here",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

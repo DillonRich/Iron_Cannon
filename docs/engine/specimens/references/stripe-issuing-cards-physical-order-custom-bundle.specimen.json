@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-cards-physical-order-custom-bundle",
+  "sourceUrl": "https://docs.stripe.com/issuing/cards/physical/order-custom-bundle.md",
+  "lastVerified": "2026-06-03",
+  "title": "Order a custom bundle",
+  "excerpt": "After reviewing the [manufactured and personalized](https://docs.stripe.com/issuing/cards/choose-bundle.md#manufacturing-personalization) overview, learn the process to make your custom bundle available in the Issuing Dashboard. Stripe supports you every step of the way when placing a custom bundle order. We provide all the necessary input forms and design templates for each phase through email and hold live sessions to explain the requirements and work through your design ideas. On average, this process can take 12 to 14 weeks before you can start issuing cards. This can vary depending on design readiness and complexity.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

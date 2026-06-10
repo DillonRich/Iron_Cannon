@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-priv-011",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-priv-011",
+  "content": {
+    "requirement": "Do Not Sell link for CPRA",
+    "obligations": [
+      "LEG-PRIV-011"
+    ],
+    "compareSteps": [
+      "Run detect.type=route_link",
+      "Map result to obligation LEG-PRIV-011",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-PRIV-011: Do Not Sell link for CPRA"
+  },
+  "references": [
+    "legal/ccpa-do-not-sell"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-PRIV-011",
+        "type": "route_link",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "privacy",
+    "disclaimerRequired": true
+  }
+}

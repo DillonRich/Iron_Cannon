@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/samples-identity-redirect",
+  "sourceUrl": "https://docs.stripe.com/samples/identity/redirect.md",
+  "lastVerified": "2026-06-03",
+  "title": "Identity verification (redirect)",
+  "excerpt": "The redirect integration decreases the amount of private information you handle on your site, allows you to support users in a variety of platforms and languages, and allows you to customize the style to match your branding. STRIPE_PUBLISHABLE_KEY=<<YOUR_PUBLISHABLE_KEY>> \\# https://stripe.com/docs/webhooks#verify-events",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "refId": "stripe/customer-delete",
+  "sourceUrl": "https://stripe.com/docs/api/customers/delete",
+  "lastVerified": "2026-06-03",
+  "title": "Delete Stripe customer",
+  "excerpt": "On account deletion, delete or anonymize Stripe customer after grace period.",
+  "tags": [
+    "stripe",
+    "data-rights"
+  ]
+}

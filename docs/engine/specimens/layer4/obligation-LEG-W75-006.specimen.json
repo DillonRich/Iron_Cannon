@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w75-006",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Imagination extended at 1750 scenarios",
+    "obligations": [
+      "LEG-W75-006"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Imagination extended at 1750 scenarios"
+  },
+  "references": [
+    "ironcannon/knowledge-w75-imagination-1750-floor"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W75-006",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

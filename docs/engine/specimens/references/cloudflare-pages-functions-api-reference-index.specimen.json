@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-functions-api-reference-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/functions/api-reference/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "API reference",
+  "excerpt": "description: Learn about the APIs used within Pages Functions. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. The following methods can be used to configure your Pages Function. The `onRequest` method will be called unless a more specific `onRequestVerb` method is exported. For example, if both `onRequest` and `onRequestGet` are exported, only `onRequestGet` will be called for `GET` requests.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

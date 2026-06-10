@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W53-005",
+  "obligationId": "LEG-W53-005",
+  "detectType": "ui_pattern",
+  "detect": {
+    "type": "ui_pattern",
+    "pattern": "grace period"
+  },
+  "passSnippet": "/* shows grace period */",
+  "failSnippet": "defaultChecked=true",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

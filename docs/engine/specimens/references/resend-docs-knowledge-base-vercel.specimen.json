@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-vercel",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/vercel.md",
+  "lastVerified": "2026-06-03",
+  "title": "Vercel",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Vercel > Verify your domain on Vercel with Resend. This guide helps you verify your domain on Vercel with Resend. We also have [an official integration for Vercel](https://resend.com/blog/vercel-integration) that helps you set up your API keys on Vercel projects so you can start sending emails with Resend. [View the integration here](https://vercel.com/resend/~/integrations/resend). ## Add Domain to Resend First, log in to your [Resend Account](https://resend.com/login) and [add a domain](https://resend.com/domains).…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

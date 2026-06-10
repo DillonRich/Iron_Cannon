@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w83-004",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "G-34 harvest journeys UJ-076–080 present",
+    "obligations": [
+      "LEG-W83-004"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "G-34 harvest journeys UJ-076–080 present"
+  },
+  "references": [
+    "ironcannon/knowledge-w83-uj-076-080-harvest"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W83-004",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

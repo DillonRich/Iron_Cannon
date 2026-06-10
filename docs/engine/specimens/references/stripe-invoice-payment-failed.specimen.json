@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/invoice-payment-failed",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/overview#subscription-lifecycle",
+  "lastVerified": "2026-05-31",
+  "title": "Invoice payment failed handling",
+  "excerpt": "invoice.payment_failed moves subscription toward past_due. Handler must update app tier to restricted/dunning UI. Send transactional email via Resend. Do not immediately revoke if grace period configured. customer.subscription.updated also fires—reconcile idempotently.",
+  "appliesTo": ["billing-subscription", "B04", "email-lifecycle"],
+  "tags": ["stripe", "webhook", "dunning"]
+}

@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-automations-custom-events",
+  "sourceUrl": "https://resend.com/docs/dashboard/automations/custom-events.md",
+  "lastVerified": "2026-06-03",
+  "title": "Custom Events",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Custom Events > Define custom events to trigger Automations. Custom events are used to trigger automations and can be defined with an optional schema for payload validation. If a schema is defined, payloads are validated when the event is sent. Fields that don't match the expected type are rejected with a `422` error and the event is not delivered. ## How it works The [Events page](https://resend.com/automations/events) shows all existing events. Click **Add event** to create a new event. Enter the event name and optional schema to define the event payload you will send with the event.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

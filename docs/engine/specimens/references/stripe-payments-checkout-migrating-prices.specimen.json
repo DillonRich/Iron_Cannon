@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-checkout-migrating-prices",
+  "sourceUrl": "https://docs.stripe.com/payments/checkout/migrating-prices.md",
+  "lastVerified": "2026-06-03",
+  "title": "Checkout prices migration guide",
+  "excerpt": "Learn how to update your integration to use prices with Stripe Checkout. The [Prices API](https://docs.stripe.com/api/prices.md) adds new features and flexibility to how you charge customers. This new integration offers: - More unified modeling for Checkout items—instead of plans, *SKUs* (SKUs (Stock Keeping Units) represent a specific Product variation, taking into account any combination of attributes and cost (for instance, size, color, currency, cost)), and inline line items, every item is now a *price*. - The ability to render product images for recurring items. - Create a reusable product and price catalog instead of one-time line items.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

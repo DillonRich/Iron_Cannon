@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-priv-003",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "section": "leg-priv-003",
+  "content": {
+    "requirement": "Data export flow exists",
+    "obligations": [
+      "LEG-PRIV-003"
+    ],
+    "compareSteps": [
+      "Run detect.type=flow_ref per COMPARE_DETECT_TYPES",
+      "Map result to obligation LEG-PRIV-003 only",
+      "Attach legalDisclaimer on every T12–T14 response"
+    ],
+    "remediationDirective": "Remediate LEG-PRIV-003: Data export flow exists"
+  },
+  "references": [
+    "legal/gdpr-data-subject-rights"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-PRIV-003",
+        "type": "flow_ref",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "privacy",
+    "disclaimerRequired": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-how-issuing-works",
+  "sourceUrl": "https://docs.stripe.com/issuing/how-issuing-works.md",
+  "lastVerified": "2026-06-03",
+  "title": "How Issuing works",
+  "excerpt": "Learn how to start building a card program with Stripe Issuing. Stripe [Issuing](https://stripe.com/issuing) allows you to create, manage, and scale a payment card program for your users without setup fees. You can programmatically control the details of your card program, which includes issuing [physical](https://docs.stripe.com/issuing/cards/physical.md) or [virtual](https://docs.stripe.com/issuing/cards/virtual.md) cards, managing [spending](https://docs.stripe.com/issuing/controls/spending-controls.md), and [approving or declining transactions](https://docs.stripe.com/issuing/controls/real-time-authorizations.md). We partner with multiple trusted banks to provide an embedded finance infrastructure for you to build new financial service offerings.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-supported-countries-asia-pacific",
+  "sourceUrl": "https://docs.stripe.com/tax/supported-countries/asia-pacific.md",
+  "lastVerified": "2026-06-03",
+  "title": "Tax in Asia Pacific",
+  "excerpt": "Use Stripe Tax to calculate, collect, and report tax in Asia Pacific. In Asia Pacific (APAC), Stripe supports tax calculation for businesses making sales into a [range of countries](https://docs.stripe.com/tax/supported-countries/asia-pacific/collect-tax.md). The requirements for tax registration, as well as which types of transactions are included, vary from country to country. For each country listed, you can find information about: - The types of tax Stripe can help you collect. - The registration threshold that determines when you’re required to register for tax collection. - What kinds of products or sales are subject to tax calculation.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

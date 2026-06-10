@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-resend-skill",
+  "sourceUrl": "https://resend.com/docs/resend-skill.md",
+  "lastVerified": "2026-06-03",
+  "title": "Resend Skill",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Resend Skill > Send emails through the Resend API with AI agents. The Resend skill enables AI agents to send emails through the Resend API using our official recommendations. It provides a streamlined interface for sending single and batch emails with built-in error handling and retry logic. ## Installation This skill is part of the [resend-skills](https://github.com/resend/resend-skills) repository, which also includes the [Agent Email Inbox skill](/agent-email-inbox-skill) for secure inbound email processing. When you run the install command, you'll be prompted to choose which skills to install.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

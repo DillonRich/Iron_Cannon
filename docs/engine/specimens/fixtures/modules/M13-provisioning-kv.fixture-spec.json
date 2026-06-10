@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M13",
+  "moduleId": "M13-provisioning-kv",
+  "patternsUnderTest": [
+    "PROV-001",
+    "PROV-002",
+    "BILL-P49-M13-",
+    "STWH-P49-VERIFY"
+  ],
+  "passSnippet": "await env.KV.put(`provisioning:${userId}`, '1', { expirationTtl: 300 }); const v = await env.KV.get(`provisioning:${userId}`);",
+  "failSnippet": "let isProvisioning = true; // no KV binding",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "PROV-001"
+  ]
+}

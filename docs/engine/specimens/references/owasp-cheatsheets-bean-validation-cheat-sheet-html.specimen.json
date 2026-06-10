@@ -1,0 +1,16 @@
+{
+  "refId": "owasp/cheatsheets-bean-validation-cheat-sheet-html",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Bean_Validation_Cheat_Sheet.html",
+  "lastVerified": "2026-06-05",
+  "title": "Bean Validation Cheat Sheet",
+  "excerpt": "Bean Validation - OWASP Cheat Sheet Series Skip to content OWASP Cheat Sheet Series Bean Validation Initializing search OWASP/CheatSheetSeries OWASP Cheat Sheet Series OWASP/CheatSheetSeries Introduction Index Alphabetical Index ASVS Index MASVS Index Proactive Controls Index Top 10 Cheatsheets Cheatsheets AI Agent Security AJAX Security AML Sanctions AI Agent Payments Abuse Case Access Control Attack Surface Analysis Authentication Authorization Authorization Testing Automation Automotive Security Bean Validation Bean Validation Table of contents Introduction Typical Validation Bean Validation Setup Basics Predefined Constraints @Pattern @Digits @Size @Past / @Future Combining Constraints Cascading Constraints Additional Constraints Custom Constraints Error Messages Bot Management and Ant…",
+  "appliesTo": [
+    "security",
+    "auth",
+    "billing"
+  ],
+  "tags": [
+    "owasp",
+    "p0"
+  ]
+}

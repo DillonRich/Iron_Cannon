@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-W61-006",
+  "obligationId": "LEG-W61-006",
+  "detectType": "required_attribute",
+  "detect": {
+    "type": "required_attribute",
+    "attr": "aria-live",
+    "value": "polite"
+  },
+  "passSnippet": "aria-live=polite",
+  "failSnippet": "aria-live=none",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

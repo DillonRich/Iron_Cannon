@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-overview",
+  "sourceUrl": "https://docs.stripe.com/connect",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe Connect overview",
+  "excerpt": "Marketplace payouts require Connect. Out of golden-path V1 scope unless userRequirements.marketplace=true. SCOPE_NOT_SUPPORTED for default wiremap.",
+  "appliesTo": [
+    "P2",
+    "marketplace"
+  ],
+  "tags": [
+    "stripe",
+    "connect"
+  ]
+}

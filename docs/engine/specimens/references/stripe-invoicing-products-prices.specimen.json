@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-products-prices",
+  "sourceUrl": "https://docs.stripe.com/invoicing/products-prices.md",
+  "lastVerified": "2026-06-03",
+  "title": "Products and prices",
+  "excerpt": "Use the Invoicing API to manage products and prices. Define all your business and product offerings in one place. *Products* (Products represent what your business sells—whether that's a good or a service) define what you sell and *Prices* (Prices define how much and how often to charge for products. This includes how much the product costs, what currency to use, and the interval if the price is for subscriptions) track how much and how often to charge. This is a core entity within Stripe that works with *subscriptions* (A Subscription represents the product details associated with the plan that your customer subscribes to. Allows you to charge the customer on a recurring basis), *invoices* (Invoices are statements of amounts owed by a customer.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

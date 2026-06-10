@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-bulk-update-line-item",
+  "sourceUrl": "https://docs.stripe.com/invoicing/bulk-update-line-item.md",
+  "lastVerified": "2026-06-03",
+  "title": "Manage bulk invoice line items",
+  "excerpt": "Add, update and remove multiple invoice line items with the Invoices API. You can edit multiple line items on an invoice by bulk adding, updating, and removing line items with the [Invoices API](https://docs.stripe.com/api/invoices.md). To update an invoice, you need to create one first. You can [create an invoice in the Dashboard ](https://docs.stripe.com/invoicing/dashboard.md#create-invoice)or with the [Invoices API](https://docs.stripe.com/api/invoices/create.md). You can only update invoices in a [draft state](https://docs.stripe.com/invoicing/overview.md#invoice-lifecycle). To create multiple line items on the same invoice, reference the [invoice ID](https://docs.stripe.com/api/invoices/object.md#invoice_object-).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

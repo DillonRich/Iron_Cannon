@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/knowledge-w68-prompt-injection-sanitize",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w68/prompt-injection-sanitize",
+  "lastVerified": "2026-06-06",
+  "title": "W68 prompt-injection-sanitize",
+  "provider": "owasp",
+  "excerpt": "Strip instruction-like patterns from user text before LLM tool args",
+  "embeddingHint": "owasp prompt-injection-sanitize wave68 adversarial",
+  "tags": [
+    "wave68",
+    "knowledge",
+    "owasp",
+    "adversarial"
+  ]
+}

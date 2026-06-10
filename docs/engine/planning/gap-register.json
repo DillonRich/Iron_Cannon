@@ -1,0 +1,611 @@
+{
+  "version": "4.0.0",
+  "updated": "2026-05-31",
+  "policy": "Zero open/partial for currentStage. Use status=planned for tracked work queue (does not fail lint).",
+  "currentStage": "continuous-improvement",
+  "gaps": [
+    {
+      "id": "G-01",
+      "title": "Public MCP Worker deploy + live traffic",
+      "severity": "high",
+      "stage": "operator-deploy",
+      "planningWave": "G-2",
+      "status": "deferred",
+      "closedNote": "Core MCP quality proven via g2:golden-full + user-journey harness. Deploy: MANUAL_SETUP_BLOCKERS.md §1"
+    },
+    {
+      "id": "G-02",
+      "title": "Live Vectorize upsert",
+      "severity": "high",
+      "stage": "operator-deploy",
+      "planningWave": "G-2",
+      "status": "deferred",
+      "closedNote": "Manifest 10983 synced; BM25 fallback + g2:vectorize. Live upsert: CLOUDFLARE_ONBOARDING_CHECKLIST.md §4"
+    },
+    {
+      "id": "G-03",
+      "title": "Vendor corpus depth vs count",
+      "severity": "high",
+      "stage": "core-mcp",
+      "planningWave": "61",
+      "status": "closed",
+      "closedNote": "10983 cards, planning:corpus-depth, harvest:balance, vendor-freshness lint"
+    },
+    {
+      "id": "G-04",
+      "title": "Planning code blocks deep-tested",
+      "severity": "medium",
+      "stage": "core-mcp",
+      "planningWave": "57",
+      "status": "closed",
+      "closedNote": "454 blocks registered"
+    },
+    {
+      "id": "G-05",
+      "title": "Imagination extended shallow ratio",
+      "severity": "medium",
+      "stage": "core-mcp",
+      "planningWave": "76",
+      "status": "closed",
+      "closedNote": "45 user-journey behavioral journeys via invokeTool; g2:user-journey-behavioral"
+    },
+    {
+      "id": "G-06",
+      "title": "Update pipeline operator SSOT",
+      "severity": "medium",
+      "stage": "core-mcp",
+      "planningWave": "55",
+      "status": "closed",
+      "closedNote": "PLANNING_UPDATE_PIPELINE.md"
+    },
+    {
+      "id": "G-07",
+      "title": "GAP_ANALYSIS_FINAL.md stale",
+      "severity": "low",
+      "stage": "core-mcp",
+      "planningWave": "55",
+      "status": "closed",
+      "closedNote": "Superseded by gap-register.json v3"
+    },
+    {
+      "id": "G-08",
+      "title": "Module rule matrix reconcile",
+      "severity": "medium",
+      "stage": "core-mcp",
+      "planningWave": "55",
+      "status": "closed",
+      "closedNote": "UJ-042 full 12-module golden path + g2:t05-all"
+    },
+    {
+      "id": "G-09",
+      "title": "Out-of-scope stacks documented",
+      "severity": "medium",
+      "stage": "core-mcp",
+      "planningWave": "56",
+      "status": "closed",
+      "closedNote": "PLANNING_SCOPE_BOUNDARIES.md + UJ-011/034"
+    },
+    {
+      "id": "G-10",
+      "title": "Wiremap/attestation runtime enforcement",
+      "severity": "medium",
+      "stage": "core-mcp",
+      "planningWave": "G-2",
+      "status": "closed",
+      "closedNote": "UJ-014 WIREMAP_NOT_APPROVED + g2:wiremap-armor-overlay"
+    },
+    {
+      "id": "G-11",
+      "title": "Legal planning vs professional advice",
+      "severity": "high",
+      "stage": "core-mcp",
+      "planningWave": "56",
+      "status": "closed",
+      "closedNote": "Scope doc + disclaimers + UJ-008/010 ironclad"
+    },
+    {
+      "id": "G-12",
+      "title": "TGS v2 re-baseline criteria",
+      "severity": "low",
+      "stage": "core-mcp",
+      "planningWave": "TGS",
+      "status": "closed",
+      "closedNote": "TGS_V2_CRITERIA.md rebaselined wave 66"
+    },
+    {
+      "id": "G-13",
+      "title": "Vendor API changelog watch",
+      "severity": "medium",
+      "stage": "core-mcp",
+      "planningWave": "61",
+      "status": "closed",
+      "closedNote": "vendor-changelog-watch in stretch suite"
+    },
+    {
+      "id": "G-14",
+      "title": "EM-4 conflicts detect fixtures",
+      "severity": "medium",
+      "stage": "core-mcp",
+      "planningWave": "56",
+      "status": "closed",
+      "closedNote": "145 conflicts + validate-em4-links"
+    },
+    {
+      "id": "G-15",
+      "title": "Supabase/Vercel adapter indices",
+      "severity": "low",
+      "stage": "phase-4",
+      "planningWave": "Phase-4",
+      "status": "deferred",
+      "closedNote": "PLANNING_PHASE4_ADAPTER_SCOPE.md — after CORE_MCP_QUALITY_SIGNOFF"
+    },
+    {
+      "id": "G-16",
+      "title": "Behavioral user-journey coverage",
+      "severity": "medium",
+      "stage": "core-mcp",
+      "planningWave": "76",
+      "status": "closed",
+      "closedNote": "55 journeys / 140 invokeTool steps — drift, sequence, wiremap, rate-limit, recovery chains"
+    },
+    {
+      "id": "G-17",
+      "title": "Core quality vs deploy wording conflated",
+      "severity": "medium",
+      "stage": "core-mcp",
+      "planningWave": "76",
+      "status": "closed",
+      "closedNote": "CORE_MCP_QUALITY_SIGNOFF.md separates quality from operator deploy"
+    },
+    {
+      "id": "G-18",
+      "title": "MCP_TOOL_STATUS stale runtime row",
+      "severity": "medium",
+      "stage": "core-mcp",
+      "planningWave": "76",
+      "status": "closed",
+      "closedNote": "MCP_TOOL_STATUS.md v3 — mcp-core invokeTool green"
+    },
+    {
+      "id": "G-19",
+      "title": "Golden module ID drift (bundle vs fixtures)",
+      "severity": "high",
+      "stage": "core-mcp",
+      "planningWave": "76",
+      "status": "closed",
+      "closedNote": "User-journey harness aligned to golden-path-outbound.bundle.json moduleOrder"
+    },
+    {
+      "id": "G-20",
+      "title": "Rate-limit cross-test pollution",
+      "severity": "medium",
+      "stage": "core-mcp",
+      "planningWave": "76",
+      "status": "closed",
+      "closedNote": "resetRateLimitForTests + per-journey clientKey in behavioral harness"
+    },
+    {
+      "id": "G-21",
+      "title": "Live agent adversarial (deploy-time)",
+      "severity": "medium",
+      "stage": "operator-deploy",
+      "planningWave": "76",
+      "status": "deferred",
+      "closedNote": "24 planning AA scenarios green; live Cursor loop after staging deploy"
+    },
+    {
+      "id": "G-22",
+      "title": "Golden reference app not built",
+      "severity": "high",
+      "stage": "starter-scope",
+      "planningWave": "77",
+      "status": "closed",
+      "closedNote": "examples/golden-reference-app/ — starter:validate 13/13 modules, T01 projectPath"
+    },
+    {
+      "id": "G-23",
+      "title": "Real Cursor MCP session on SD-01 not documented",
+      "severity": "high",
+      "stage": "starter-scope",
+      "planningWave": "77",
+      "status": "closed",
+      "closedNote": "SESSION-20260531-reference-app-golden-path.md + starter:golden-path (12 modules, real snippets)"
+    },
+    {
+      "id": "G-24",
+      "title": "Starter scope signoff not witnessed",
+      "severity": "medium",
+      "stage": "starter-scope",
+      "planningWave": "77",
+      "status": "closed",
+      "closedNote": "Automated proof: starter:validate + starter:golden-path; live Stripe/Resend smoke optional per AUTONOMY_CHARTER"
+    },
+    {
+      "id": "G-25",
+      "title": "Post-core MCP planning SSOT missing",
+      "severity": "medium",
+      "stage": "starter-scope",
+      "planningWave": "77",
+      "status": "closed",
+      "closedNote": "POST_CORE_MCP_MASTER_ROADMAP + validation plan + expansion playbook + validate-post-core-roadmap.mjs"
+    },
+    {
+      "id": "G-26",
+      "title": "Service expansion queue undefined",
+      "severity": "low",
+      "stage": "service-expansion",
+      "planningWave": "77",
+      "status": "closed",
+      "closedNote": "planning/service-expansion-queue.json v1"
+    },
+    {
+      "id": "G-27",
+      "title": "SVC-001 Vercel-adjacent planning spike",
+      "severity": "medium",
+      "stage": "service-expansion",
+      "planningWave": "78",
+      "status": "closed",
+      "closedNote": "SD-06 fixture, pages-worker-split T01, M60/M61 specs, EM-4 CH-PAGES-001/002, validate-svc001-spike.mjs"
+    },
+    {
+      "id": "G-28",
+      "title": "SVC-001 wave 78 harvest + SD-06 wiremap",
+      "severity": "medium",
+      "stage": "service-expansion",
+      "planningWave": "78",
+      "status": "closed",
+      "closedNote": "wave78 knowledge harvest, pages-split bundle W06, UJ-058–061, validate-svc001-wave78.mjs"
+    },
+    {
+      "id": "G-29",
+      "title": "SVC-001 cycle exit signoff",
+      "severity": "medium",
+      "stage": "service-expansion",
+      "planningWave": "79",
+      "status": "closed",
+      "closedNote": "SVC-001_SIGNOFF.md, per-flow-scope SD-06, wave79, validate-svc001-signoff.mjs, queue complete"
+    },
+    {
+      "id": "G-30",
+      "title": "SVC-002 Supabase-primary planning spike",
+      "severity": "medium",
+      "stage": "service-expansion",
+      "planningWave": "80",
+      "status": "closed",
+      "closedNote": "SD-07/08 fixtures, supabase T01/T02, M70/M71 specs, W07 wiremap, EM-4 CH-SUPA-001/002, validate-svc002-spike.mjs"
+    },
+    {
+      "id": "G-31",
+      "title": "SVC-002 wave 80 harvest + SD-07 wiremap bundle",
+      "severity": "medium",
+      "stage": "service-expansion",
+      "planningWave": "80",
+      "status": "closed",
+      "closedNote": "wave80 knowledge harvest, supabase-primary bundle W07, UJ-068–072, validate-svc002-wave80.mjs"
+    },
+    {
+      "id": "G-32",
+      "title": "SVC-002 cycle exit signoff",
+      "severity": "medium",
+      "stage": "service-expansion",
+      "planningWave": "81",
+      "status": "closed",
+      "closedNote": "SVC-002_SIGNOFF.md, per-flow-scope SD-07, wave81, validate-svc002-signoff.mjs, queue complete"
+    },
+    {
+      "id": "G-33",
+      "title": "Service expansion cycle exit signoff",
+      "severity": "medium",
+      "stage": "service-expansion",
+      "planningWave": "82",
+      "status": "closed",
+      "closedNote": "SERVICE_EXPANSION_CYCLE_SIGNOFF.md, SVC-001/002 complete, validate-service-expansion-cycle.mjs, stage→continuous-improvement"
+    },
+    {
+      "id": "G-34",
+      "title": "Real-session user journey harvest",
+      "severity": "low",
+      "stage": "continuous-improvement",
+      "planningWave": "83",
+      "status": "closed",
+      "closedNote": "3 session docs, ref_app_att chain, UJ-076–080, validate-g34-session-harvest.mjs"
+    },
+    {
+      "id": "G-35",
+      "title": "Operator deploy readiness pack",
+      "severity": "medium",
+      "stage": "operator-deploy",
+      "planningWave": "84",
+      "status": "closed",
+      "closedNote": "OPERATOR_DEPLOY_READINESS.md, validate-operator-deploy-readiness.mjs, operator:readiness npm script; G-01/G-02 remain deferred"
+    },
+    {
+      "id": "G-36",
+      "title": "Production deploy witness (G-01 + G-02 live)",
+      "severity": "high",
+      "stage": "operator-deploy",
+      "planningWave": "84",
+      "status": "planned",
+      "closedNote": "Close when Dillon completes OPERATOR_DEPLOY_READINESS phases 3–5 and PRODUCTION_READINESS_SIGNOFF witness"
+    },
+    {
+      "id": "G-37",
+      "title": "G-35 post-readiness regression harvest",
+      "severity": "low",
+      "stage": "continuous-improvement",
+      "planningWave": "85",
+      "status": "closed",
+      "closedNote": "SESSION operator-deploy-readiness, UJ-081–085, validate-g37-wave85-harvest.mjs, wave 84 gates verified"
+    },
+    {
+      "id": "G-38",
+      "title": "Business infrastructure setup (Workspace + cheap Cloudflare)",
+      "severity": "medium",
+      "stage": "operator-deploy",
+      "planningWave": "86",
+      "status": "planned",
+      "closedNote": "Close when BUSINESS_INFRASTRUCTURE_PLAN Phase 0a–B complete: Workspace email, CF zone, wrangler login"
+    },
+    {
+      "id": "G-39",
+      "title": "Pre-launch MCP dogfood on Iron Cannon repo",
+      "severity": "high",
+      "stage": "pre-launch",
+      "planningWave": "86",
+      "status": "planned",
+      "closedNote": "Automated: planning:dogfood-live + UJ-111–115 + SESSION-20260531-iron-cannon-dogfood.md. Close when Dillon witness row in PRE_LAUNCH_DOGFOOD_SIGNOFF.md"
+    },
+    {
+      "id": "G-40",
+      "title": "Stripe subscription flow (transcript-guided)",
+      "severity": "medium",
+      "stage": "pre-launch",
+      "planningWave": "86",
+      "status": "planned",
+      "closedNote": "Close when Dillon supplies prior-project transcript and staging checkout + webhooks pass"
+    },
+    {
+      "id": "G-41",
+      "title": "Affiliates program v1",
+      "severity": "low",
+      "stage": "pre-launch",
+      "planningWave": "86",
+      "status": "planned",
+      "closedNote": "Close after G-40 — attribution + payout path documented and smoke-tested"
+    },
+    {
+      "id": "G-42",
+      "title": "Business infra session regression harvest",
+      "severity": "low",
+      "stage": "continuous-improvement",
+      "planningWave": "87",
+      "status": "closed",
+      "closedNote": "SESSION business-infra-stakeholder-notes, UJ-086–090, validate-g42-wave87-harvest.mjs"
+    },
+    {
+      "id": "G-43",
+      "title": "Pre-launch dogfood prep scaffold",
+      "severity": "low",
+      "stage": "pre-launch",
+      "planningWave": "88",
+      "status": "closed",
+      "closedNote": "PRE_LAUNCH_DOGFOOD_SIGNOFF scaffold, iron-cannon-repo.mjs, UJ-091–095, simulate-dogfood-prep.mjs; G-39 still planned"
+    },
+    {
+      "id": "G-44",
+      "title": "Stripe setup prep scaffold",
+      "severity": "low",
+      "stage": "pre-launch",
+      "planningWave": "89",
+      "status": "closed",
+      "closedNote": "STRIPE_SETUP_PREP.md, UJ-096–100, simulate-stripe-prep.mjs; G-40 still planned until transcript"
+    },
+    {
+      "id": "G-45",
+      "title": "Affiliates setup prep scaffold",
+      "severity": "low",
+      "stage": "pre-launch",
+      "planningWave": "90",
+      "status": "closed",
+      "closedNote": "AFFILIATES_SETUP_PREP.md, UJ-101–105, simulate-affiliates-prep.mjs, planning:preflight; G-41 still planned"
+    },
+    {
+      "id": "G-46",
+      "title": "Polish arc session signoff",
+      "severity": "low",
+      "stage": "continuous-improvement",
+      "planningWave": "91",
+      "status": "closed",
+      "closedNote": "POLISH_ARC_SIGNOFF.md, NEXT_MAIN_SESSION.md, UJ-106–110, validate-g46-wave91-polish-arc.mjs; waves 84–91 complete"
+    },
+    {
+      "id": "G-47",
+      "title": "Dogfood live harness (pre-CF automated)",
+      "severity": "low",
+      "stage": "pre-launch",
+      "planningWave": "92",
+      "status": "closed",
+      "closedNote": "planning:dogfood-live, operator:dogfood, UJ-111–115, DOGFOOD_CURSOR_WALKTHROUGH.md, g2:http CLI+HTTP split fix; G-39 witness still planned"
+    },
+    {
+      "id": "G-48",
+      "title": "Guardian dogfood P0 trust (T05 notAudited, T11 verifiedModules)",
+      "severity": "high",
+      "stage": "pre-launch",
+      "planningWave": "93",
+      "status": "closed",
+      "closedNote": "T05 notAudited when no snippet; T11 verifiedModules + autoConfirmInfra explicit; g2-golden-full passSnippet; UJ-117–118; pro rate 120/min; split attestation in audit CLI; cursor ironclad MCP example"
+    },
+    {
+      "id": "G-49",
+      "title": "Pattern equivalence registry (Guardian custom crypto/HMAC)",
+      "severity": "high",
+      "stage": "pre-launch",
+      "planningWave": "94",
+      "status": "closed",
+      "closedNote": "pattern-equivalence-registry.json, pattern-equivalence.js, guardian-style-snippets, planning:guardian-retest, g2-t05 calibration fix"
+    },
+    {
+      "id": "G-50",
+      "title": "SD-06 Pages+Worker stack profile",
+      "severity": "medium",
+      "stage": "pre-launch",
+      "planningWave": "95",
+      "status": "closed",
+      "closedNote": "SD-06G guardian layout fixture, website+cloudflare-worker T01 detection, static_pages frontend"
+    },
+    {
+      "id": "G-51",
+      "title": "Static-site / legal-hub IronClad route aliases",
+      "severity": "medium",
+      "stage": "pre-launch",
+      "planningWave": "96",
+      "status": "closed",
+      "closedNote": "obligation-verify route_link hrefContains, schema_column subscriptions alias, /legal# routes"
+    },
+    {
+      "id": "G-52",
+      "title": "T01 nested monorepo discovery",
+      "severity": "medium",
+      "stage": "pre-launch",
+      "planningWave": "97",
+      "status": "closed",
+      "closedNote": "nested scan cloudflare-worker/website, SD-06G fixture, stripe/resend from worker src"
+    },
+    {
+      "id": "G-53",
+      "title": "SURF path inference + split wiremap attestation",
+      "severity": "medium",
+      "stage": "pre-launch",
+      "planningWave": "98",
+      "status": "closed",
+      "closedNote": "surface-catalog pathGlobs for stripe-webhook; audit CLI splitWiremapAttestation (wave 93)"
+    },
+    {
+      "id": "G-54",
+      "title": "T06/T08 state_log generator for external audits",
+      "severity": "low",
+      "stage": "continuous-improvement",
+      "planningWave": "99",
+      "status": "closed",
+      "closedNote": "ironcannon audit --write-state-log → .iron_cannon/state_log.md"
+    },
+    {
+      "id": "G-55",
+      "title": "MCP reliability + audit rate limits",
+      "severity": "medium",
+      "stage": "pre-launch",
+      "planningWave": "100",
+      "status": "closed",
+      "closedNote": "mcp-tool-result content[].text envelope, g2:mcp-envelope, g2:http unwrap, CURSOR_MCP_SETUP doc, pro 120/min"
+    },
+    {
+      "id": "G-56",
+      "title": "Desktop/Tauri wiremap profile",
+      "severity": "low",
+      "stage": "continuous-improvement",
+      "planningWave": "101",
+      "status": "closed",
+      "closedNote": "SD-TD fixture, M80/M81 modules, tauri-desktop wiremap, UJ-121"
+    },
+    {
+      "id": "G-57",
+      "title": "T14 tiered legal readiness gates",
+      "severity": "low",
+      "stage": "continuous-improvement",
+      "planningWave": "102",
+      "status": "closed",
+      "closedNote": "productReady/operationsReady/counselReady, verifiedObligationIds, autoConfirmOnT13Pass, UJ-120"
+    },
+    {
+      "id": "G-58",
+      "title": "Cursor MCP ping keepalive (Streamable HTTP)",
+      "severity": "high",
+      "stage": "continuous-improvement",
+      "planningWave": "103",
+      "status": "closed",
+      "closedNote": "mcp-handler ping + notifications/* noop, g2:mcp-envelope + g2:http ping smoke, CURSOR_MCP_SETUP G-58 section; Round 2 IronCannonReview2 incident"
+    },
+    {
+      "id": "G-59",
+      "title": "T04 snippetHint for verify-heavy modules",
+      "severity": "medium",
+      "stage": "continuous-improvement",
+      "planningWave": "104",
+      "status": "closed",
+      "closedNote": "snippet-hint-registry.json, snippet-hints.js, T04 compose; M02/M05/M12/M04/M11"
+    },
+    {
+      "id": "G-60",
+      "title": "T11 infraVerified vs infraAcknowledged",
+      "severity": "medium",
+      "stage": "continuous-improvement",
+      "planningWave": "105",
+      "status": "closed",
+      "closedNote": "autoConfirmInfra acknowledges only; infraReady requires confirmedChecklistIds or verifiedInfraDomains"
+    },
+    {
+      "id": "G-61",
+      "title": "T13 tri-state verification with reasons",
+      "severity": "medium",
+      "stage": "continuous-improvement",
+      "planningWave": "106",
+      "status": "closed",
+      "closedNote": "normalizeT13Verification pass/fail/inconclusive; route aliases in evaluateCompare; advisory→inconclusive"
+    },
+    {
+      "id": "G-62",
+      "title": "ironcannon:dogfood one-shot retest command",
+      "severity": "low",
+      "stage": "continuous-improvement",
+      "planningWave": "107",
+      "status": "closed",
+      "closedNote": "scripts/ironcannon-dogfood.mjs — audit + guardian-retest + g2:mcp-envelope + optional g2:http"
+    },
+    {
+      "id": "G-63",
+      "title": "CLI attestation chooser + optional flows",
+      "severity": "low",
+      "stage": "continuous-improvement",
+      "planningWave": "108",
+      "status": "closed",
+      "closedNote": "ironcannon audit --optional-flows; markdown attestation chooser table; split attestation when split wiremap"
+    },
+    {
+      "id": "G-64",
+      "title": "T05 pass auto-records verifiedModules on attestation",
+      "severity": "medium",
+      "stage": "continuous-improvement",
+      "planningWave": "109",
+      "status": "closed",
+      "closedNote": "recordModuleVerificationAsync after compliant audited T05; T11 merges attestation.verifiedModules"
+    },
+    {
+      "id": "G-65",
+      "title": "T02 completenessHints for wrangler secrets",
+      "severity": "low",
+      "stage": "continuous-improvement",
+      "planningWave": "110",
+      "status": "closed",
+      "closedNote": "STRIPE_WEBHOOK_SECRET and related hints on T02 missing config"
+    },
+    {
+      "id": "G-66",
+      "title": "Pattern equivalence contributor workflow doc",
+      "severity": "low",
+      "stage": "continuous-improvement",
+      "planningWave": "111",
+      "status": "closed",
+      "closedNote": "contributorWorkflow in pattern-equivalence-registry.json"
+    },
+    {
+      "id": "G-67",
+      "title": "unwrapMcpToolResult integrator documentation",
+      "severity": "low",
+      "stage": "continuous-improvement",
+      "planningWave": "111",
+      "status": "closed",
+      "closedNote": "CURSOR_MCP_SETUP unwrap section; export from mcp-core index"
+    }
+  ]
+}

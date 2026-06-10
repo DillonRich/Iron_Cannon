@@ -1,0 +1,15 @@
+{
+  "refId": "nextjs/suspense",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js Suspense",
+  "excerpt": "Streaming and suspense boundaries for auth pages.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "nextjs",
+    "suspense"
+  ]
+}

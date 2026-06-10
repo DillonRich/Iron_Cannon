@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/knowledge-w78-open-next-assets",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w78/open-next-assets",
+  "lastVerified": "2026-06-06",
+  "title": "W78 open-next-assets",
+  "provider": "cloudflare",
+  "excerpt": "OpenNext on Cloudflare: static assets in .open-next/assets with Worker handler",
+  "embeddingHint": "cloudflare open-next-assets wave78 svc-001-pages-harvest",
+  "tags": [
+    "wave78",
+    "knowledge",
+    "cloudflare",
+    "svc-001-pages-harvest"
+  ]
+}

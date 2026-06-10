@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/d1-reference-glossary-index",
+  "sourceUrl": "https://developers.cloudflare.com/d1/reference/glossary/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Glossary",
+  "excerpt": "description: Definitions of key terms used throughout the D1 documentation. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/d1/llms.txt > Use this file to discover all available pages before exploring further. Review the definitions for terms used across Cloudflare's D1 documentation. | Term | Definition |",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

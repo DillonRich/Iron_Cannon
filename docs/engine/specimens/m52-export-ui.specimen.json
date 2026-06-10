@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/data-export/ui",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "data-export",
+  "moduleId": "M52-export-ui",
+  "adapterId": "nextjs-app-router",
+  "section": "export-ui",
+  "content": {
+    "requirement": "Settings privacy page with Download my data CTA"
+  },
+  "references": ["nextjs/server-actions", "legal/gdpr-data-subject-rights"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "EXP-UI-001", "type": "required_string", "value": "/settings/privacy", "fileGlob": "**/app/**", "tier": "pro" },
+      { "id": "EXP-UI-002", "type": "required_string", "value": "Download my data", "fileGlob": "**/*.{tsx,jsx}", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "data-export" }
+}

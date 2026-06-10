@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing",
+  "sourceUrl": "https://docs.stripe.com/issuing.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe Issuing",
+  "excerpt": "Use the Stripe Issuing API to create, manage, and distribute payment cards for your business. Issuing is available in the United States, United Kingdom, and European Economic Area. Stablecoin-backed card programs are also available in more than 30 countries across Latin America, the Caribbean, and Africa. Learn more about [availability by country](https://docs.stripe.com/issuing/global.md). [Stripe Issuing](https://dashboard.stripe.com/issuing/overview) allows you to create a commercial card program for your users without setup fees. You can create your own card designs, and approve transactions in real time.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

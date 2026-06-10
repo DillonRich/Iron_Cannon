@@ -1,0 +1,14 @@
+{
+  "refId": "legal/unsubscribe-sla",
+  "sourceUrl": "https://ironcannon.dev/planning/W65/ref/legal-unsubscribe-sla",
+  "lastVerified": "2026-06-06",
+  "title": "unsubscribe sla",
+  "provider": "legal",
+  "excerpt": "Honor marketing unsubscribe requests within CAN-SPAM 10 business day window.",
+  "embeddingHint": "legal/unsubscribe-sla wave65 obligation-source legal",
+  "tags": [
+    "wave65",
+    "obligation-source",
+    "legal"
+  ]
+}

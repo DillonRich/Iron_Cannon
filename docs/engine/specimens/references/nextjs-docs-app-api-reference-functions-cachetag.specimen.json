@@ -1,0 +1,15 @@
+{
+  "refId": "nextjs/docs-app-api-reference-functions-cachetag",
+  "sourceUrl": "https://nextjs.org/docs/app/api-reference/functions/cacheTag",
+  "lastVerified": "2026-06-05",
+  "title": "cacheTag",
+  "excerpt": "Functions: cacheTag | Next.js Skip to content Search documentation... Search... ⌘K Showcase Docs Blog Templates Enterprise Search documentation... Search... ⌘K Feedback Learn NEXT.JS NIGHTS SF JUN 9 • AMS JUN 11 • LDN JUN 18 VIEW EVENTS › Menu Using App Router Features available in /app Latest Version 16.2.7 Getting Started Installation Project Structure Layouts and Pages Linking and Navigating Server and Client Components Fetching Data Mutating Data Caching Revalidating Error Handling CSS Image Optimization Font Optimization Metadata and OG images Route Handlers Proxy Deploying Upgrading Guides AI Coding Agents Analytics Authentication Backend for Frontend Caching (Previous Model) CDN Caching CI Build Caching Content Security Policy CSS-in-JS Custom Server Data Security Debugging Deployin…",
+  "appliesTo": [
+    "nextjs-app-router",
+    "layer2/nextjs"
+  ],
+  "tags": [
+    "nextjs",
+    "p1"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-customize",
+  "sourceUrl": "https://docs.stripe.com/invoicing/customize.md",
+  "lastVerified": "2026-06-03",
+  "title": "Customize invoices",
+  "excerpt": "Learn how to customize the content and branding of your invoices. You can customize the content of an *invoice* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice) in the following ways: - Through [invoice templates](https://docs.stripe.com/invoicing/invoice-rendering-template.md) - Through account [Invoice settings](https://dashboard.stripe.com/settings/billing/invoice) You can also set a customer preferred language and include public information in your [account details](https://dashboard.stripe.com/settings/account/?support_details=true).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

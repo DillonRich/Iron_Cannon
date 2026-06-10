@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-STRIPE-006",
+  "obligationId": "LEG-STRIPE-006",
+  "detectType": "ui_pattern",
+  "detect": {
+    "type": "ui_pattern",
+    "pattern": "trial ends"
+  },
+  "passSnippet": "/* trial ends */",
+  "failSnippet": "defaultChecked={true}",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

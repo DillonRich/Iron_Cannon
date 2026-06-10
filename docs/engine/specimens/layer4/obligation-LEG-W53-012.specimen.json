@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w53-012",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Cookie policy lists retention per category",
+    "obligations": [
+      "LEG-W53-012"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Cookie policy lists retention per category"
+  },
+  "references": [
+    "legal/cookie-retention-table"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W53-012",
+        "type": "schema_table",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "cookie",
+    "disclaimerRequired": true
+  }
+}

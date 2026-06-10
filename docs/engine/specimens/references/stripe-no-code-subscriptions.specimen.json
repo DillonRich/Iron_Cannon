@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/no-code-subscriptions",
+  "sourceUrl": "https://docs.stripe.com/no-code/subscriptions.md",
+  "lastVerified": "2026-06-03",
+  "title": "Create subscriptions",
+  "excerpt": "Set up recurring payments by offering subscriptions to your service. - **Stripe compatibility:** Payment Links, customer portal - **Good for:** SaaS businesses, individual creators, e-commerce businesses - **Pricing:** [Stripe Billing pricing](https://stripe.com/billing/pricing) for recurring payments Subscriptions represent what your customer is paying for and how much and how often you’re charging them for the product. You can subscribe customers manually through the Dashboard. You can also let them sign up through your website or a [Payment Link](https://docs.stripe.com/payment-links/create.md?pricing-model=standard). This page shows you how to manually create and edit a subscription in your Stripe Dashboard.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

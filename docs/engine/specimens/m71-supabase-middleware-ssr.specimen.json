@@ -1,0 +1,42 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/supabase/middleware-ssr",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "moduleId": "M71-supabase-middleware-ssr",
+  "adapterId": "supabase",
+  "section": "supabase-middleware-ssr",
+  "content": {
+    "requirement": "Next.js middleware refreshes Supabase session via @supabase/ssr createServerClient — no localStorage session"
+  },
+  "references": ["supabase/ssr-nextjs", "nextjs/docs-app-building-your-application-routing-middleware"],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "SUPA-MW-001",
+        "type": "required_string",
+        "value": "createServerClient",
+        "fileGlob": "**/middleware.{ts,js}",
+        "tier": "pro"
+      },
+      {
+        "id": "SUPA-MW-002",
+        "type": "required_string",
+        "value": "@supabase/ssr",
+        "fileGlob": "**/middleware.{ts,js}",
+        "tier": "pro"
+      }
+    ],
+    "forbidden": [
+      {
+        "id": "SUPA-MW-F01",
+        "type": "forbidden_string",
+        "value": "localStorage.setItem('supabase.session')",
+        "fileGlob": "**/*.{ts,tsx}",
+        "tier": "pro"
+      }
+    ]
+  },
+  "metadata": { "minTier": "pro", "category": "supabase-auth" }
+}

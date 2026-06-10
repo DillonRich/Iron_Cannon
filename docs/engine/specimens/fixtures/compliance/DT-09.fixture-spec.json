@@ -1,0 +1,8 @@
+{
+  "fixtureId": "DT-09",
+  "detectType": "template_scan",
+  "passSnippet": "physicalAddress: '123 Main St, City, ST 12345'",
+  "failSnippet": "template body with no address block",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

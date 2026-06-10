@@ -1,0 +1,12 @@
+{
+  "fixtureId": "LEG-W65-001",
+  "obligationId": "LEG-W65-001",
+  "detectType": "script_before_consent",
+  "detect": {
+    "type": "script_before_consent"
+  },
+  "passSnippet": "consentGate blocks analytics until accept",
+  "failSnippet": "analytics.js loads before banner",
+  "expectedPass": "met",
+  "expectedFail": "advisory"
+}

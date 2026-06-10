@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-runtime-apis-context-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/runtime-apis/context/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Context (ctx)",
+  "excerpt": "description: The Context API in Cloudflare Workers, including props, exports, waitUntil and passThroughOnException. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. The Context API provides methods to manage the lifecycle of your Worker or Durable Object. Context is exposed via the following places:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

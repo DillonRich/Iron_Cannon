@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-supported-embedded-components-tax-settings",
+  "sourceUrl": "https://docs.stripe.com/connect/supported-embedded-components/tax-settings.md",
+  "lastVerified": "2026-06-03",
+  "title": "Tax settings",
+  "excerpt": "Learn how to allow connected accounts to set up Stripe Tax. The Tax settings component allows your connected accounts to [set up Stripe Tax](https://docs.stripe.com/tax/set-up.md) in your platform. Connected accounts can change their head office address and [preset tax code](https://docs.stripe.com/tax/products-prices-tax-codes-tax-behavior.md#product-tax-code) with this component. This component is suitable for [software platforms](https://docs.stripe.com/tax/tax-for-platforms.md), which means that your connected accounts are liable to collect taxes.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

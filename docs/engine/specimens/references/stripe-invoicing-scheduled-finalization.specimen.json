@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-scheduled-finalization",
+  "sourceUrl": "https://docs.stripe.com/invoicing/scheduled-finalization.md",
+  "lastVerified": "2026-06-03",
+  "title": "Schedule invoice finalization to send or charge an invoice in the future",
+  "excerpt": "Learn how to schedule an invoice and automatically send or charge for it on a future date. You can create an invoice on Stripe today and [finalize](https://docs.stripe.com/invoicing/integration/workflow-transitions.md) or charge for it on a future date. > When you use a custom finalization time for invoices, finalization won’t be delayed because of `invoice.created` webhook failures. This is different from the behavior described in the [Webhooks and invoices](https://docs.stripe.com/billing/subscriptions/webhooks.md#understand) guidance. To configure an automatic finalization time for an invoice, you must have [automatic invoice advancement](https://docs.stripe.com/invoicing/integration/automatic-advancement-collection.md) enabled for the invoice.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

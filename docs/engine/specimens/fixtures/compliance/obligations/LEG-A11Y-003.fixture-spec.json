@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-A11Y-003",
+  "obligationId": "LEG-A11Y-003",
+  "detectType": "required_attribute",
+  "detect": {
+    "type": "required_attribute",
+    "selector": "button:not(:has(*))",
+    "attr": "aria-label"
+  },
+  "passSnippet": "pass LEG-A11Y-003",
+  "failSnippet": "gap LEG-A11Y-003",
+  "expectedPass": "gap",
+  "expectedFail": "gap"
+}

@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/webhooks-quickstart",
+  "sourceUrl": "https://docs.stripe.com/webhooks/quickstart.md",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe webhook endpoint setup",
+  "excerpt": "Create a POST route for Stripe webhooks. Use the endpoint signing secret from Dashboard or Stripe CLI. Listen with stripe listen for local dev. Register production URL in Developers → Webhooks. Select events needed for subscription lifecycle.",
+  "appliesTo": ["M12-stripe-webhook", "layer2/stripe/webhook-handler"],
+  "tags": ["stripe", "webhook", "manual-config"]
+}

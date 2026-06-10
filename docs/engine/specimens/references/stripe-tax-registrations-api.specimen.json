@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-registrations-api",
+  "sourceUrl": "https://docs.stripe.com/tax/registrations-api.md",
+  "lastVerified": "2026-06-03",
+  "title": "Use the Registrations API to manage tax registrations",
+  "excerpt": "Learn how to add, schedule, and check active tax registrations. This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [Connect platform](https://docs.stripe.com/tax/registrations-api.md?tax-integration=connect-platform) - [Direct usage](https://docs.stripe.com/tax/registrations-api.md?tax-integration=direct)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

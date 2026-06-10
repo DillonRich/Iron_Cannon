@@ -1,0 +1,43 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer3/session-hardening/pass",
+  "layer": 3,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "armor-overlay",
+  "moduleId": "A02-session-hardening-pass",
+  "adapterId": "nextjs-app-router",
+  "section": "session-hardening",
+  "content": {
+    "requirement": "Armor-tier session hardening for SURF-SESSION-001 — CSRF, CSP, cookie flags, logout invalidation",
+    "surfaceId": "SURF-SESSION-001",
+    "requiredSteps": [
+      "Set session cookie SameSite=Strict in production (Lax acceptable in dev with T11 flag)",
+      "Add CSRF token validation on state-changing Server Actions and POST routes",
+      "Deploy Content-Security-Policy header via middleware or next.config headers",
+      "Ensure server-side session invalidation on logout (extends layer3/logout)",
+      "Invalidate all sessions on password reset (PW-A01 cross-link)"
+    ],
+    "productionUpgrades": [
+      { "devPattern": "SameSite=Lax", "prodPattern": "SameSite=Strict", "fileGlob": "**/session.ts" },
+      { "devPattern": "Content-Security-Policy-Report-Only", "prodPattern": "Content-Security-Policy", "fileGlob": "**/middleware.ts" }
+    ]
+  },
+  "references": [
+    "owasp/csrf-prevention",
+    "owasp/content-security-policy",
+    "owasp/session-httponly-secure",
+    "owasp/session-invalidation",
+    "owasp/cookie-theft"
+  ],
+  "compliancePatterns": {
+    "required": [
+      { "id": "ARM-SES-001", "type": "required_string", "value": "HttpOnly", "fileGlob": "**/*session*", "tier": "armor" },
+      { "id": "ARM-SES-002", "type": "required_string", "value": "csrf", "fileGlob": "**/*.{ts,tsx}", "tier": "armor" },
+      { "id": "ARM-SES-003", "type": "required_string", "value": "Content-Security-Policy", "fileGlob": "**/middleware.ts", "tier": "armor" }
+    ],
+    "forbidden": [
+      { "id": "ARM-SES-F01", "type": "forbidden_string", "value": "localStorage.setItem('session'", "fileGlob": "**/*.{ts,tsx}", "tier": "armor" }
+    ]
+  },
+  "metadata": { "minTier": "armor", "category": "session-hardening", "mcpTool": "T10" }
+}

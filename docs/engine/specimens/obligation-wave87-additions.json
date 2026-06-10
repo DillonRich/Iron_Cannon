@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W87-001",
+      "category": "operations",
+      "title": "G-42 harvest journeys UJ-086–090 present",
+      "sourceRefId": "ironcannon/knowledge-w87-g42-uj-086-090-harvest",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-002",
+      "category": "billing",
+      "title": "UJ-087 Stripe checkout SD-07 regression",
+      "sourceRefId": "ironcannon/knowledge-w87-uj-087-stripe-checkout-sd07",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-003",
+      "category": "operations",
+      "title": "UJ-088 Pages wrangler SD-06 regression",
+      "sourceRefId": "ironcannon/knowledge-w87-uj-088-pages-wrangler-sd06",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-004",
+      "category": "operations",
+      "title": "G-42 validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w87-g42-validator-stretch",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-005",
+      "category": "operations",
+      "title": "Stretch suite count ≥35 after G-42",
+      "sourceRefId": "ironcannon/knowledge-w87-stretch-suite-35",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-006",
+      "category": "operations",
+      "title": "SD-01 golden unchanged UJ-086",
+      "sourceRefId": "ironcannon/knowledge-w87-sd01-golden-unchanged-uj086",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-007",
+      "category": "operations",
+      "title": "SD-01 wiremap 12 modules UJ-089",
+      "sourceRefId": "ironcannon/knowledge-w87-sd01-wiremap-12-uj089",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-008",
+      "category": "operations",
+      "title": "Dual stack SD-06 SD-07 UJ-090",
+      "sourceRefId": "ironcannon/knowledge-w87-dual-stack-uj090",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-009",
+      "category": "operations",
+      "title": "G-38..G-41 still planned",
+      "sourceRefId": "ironcannon/knowledge-w87-g38-g41-still-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W87-010",
+      "category": "privacy",
+      "title": "G-42 CI harvest not Stripe live",
+      "sourceRefId": "legal/knowledge-w87-ci-harvest-not-stripe-live",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

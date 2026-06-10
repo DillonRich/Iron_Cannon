@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-api-reference-emails-retrieve-received-email",
+  "sourceUrl": "https://resend.com/docs/api-reference/emails/retrieve-received-email.md",
+  "lastVerified": "2026-06-03",
+  "title": "Retrieve Received Email",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Retrieve Received Email > Retrieve a single received email. ## Path Parameters The ID for the received email. ## Query Parameters Controls how inline images are returned inside `html`. The response echoes the form actually served as `html_format` on the body. By default (or when set to `data_uri`), inline images appear in `html` as base64 `data:` URIs. Set `html_format=cid` to keep the original ` ` references instead. Each `cid:` matches the `content_id` of an attachment, so you can correlate inline images with entries in the `attachments` array and fetch them via the attachment download endpoint.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

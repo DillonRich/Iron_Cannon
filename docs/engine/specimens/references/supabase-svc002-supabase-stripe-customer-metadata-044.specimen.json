@@ -1,0 +1,16 @@
+{
+  "refId": "supabase/svc002-supabase-stripe-customer-metadata-044",
+  "sourceUrl": "https://ironcannon.dev/svc002/supabase/stripe-customer-metadata-44",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-002 stripe-customer-metadata 44",
+  "provider": "supabase",
+  "excerpt": "Store stripe_customer_id in Supabase profiles table with RLS — not in client-readable columns.",
+  "embeddingHint": "supabase stripe-customer-metadata svc002 supabase sd-07 rls ssr",
+  "tags": [
+    "svc002",
+    "supabase",
+    "sd-07",
+    "supabase",
+    "stripe-customer-metadata"
+  ]
+}

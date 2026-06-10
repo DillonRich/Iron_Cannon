@@ -1,0 +1,26 @@
+{
+  "name": "iron-cannon-golden-reference-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "SD-01 demo SaaS for Iron Cannon starter-scope validation",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "tsc --noEmit",
+    "worker:dev": "wrangler dev worker/src/index.ts",
+    "db:migrate:local": "wrangler d1 execute golden-demo --local --file=./migrations/0001_init.sql"
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "stripe": "^16.0.0",
+    "resend": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.0",
+    "typescript": "^5.4.0",
+    "wrangler": "^3.90.0"
+  }
+}

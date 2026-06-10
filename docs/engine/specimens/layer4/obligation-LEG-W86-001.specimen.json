@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w86-001",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Business infrastructure plan published",
+    "obligations": [
+      "LEG-W86-001"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Business infrastructure plan published"
+  },
+  "references": [
+    "ironcannon/knowledge-w86-business-infra-plan-ssot"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W86-001",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

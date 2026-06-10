@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w64-003",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "WAF rules block common auth abuse on public routes",
+    "obligations": [
+      "LEG-W64-003"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "WAF rules block common auth abuse on public routes"
+  },
+  "references": [
+    "cloudflare/waf-overview"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W64-003",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "auth-lifecycle/signin",
+  "layer": 1,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": null,
+  "section": "signin",
+  "content": {
+    "requirement": "Sign-in establishes server-side session with secure cookie",
+    "steps": [
+      "Validate credentials or magic link token server-side",
+      "Create session row in D1/KV with expiry",
+      "Set HttpOnly Secure SameSite session cookie",
+      "Transition S00 → S02 or S01 → S02 after verify"
+    ],
+    "unhappyPaths": [
+      { "failure": "invalid_credentials", "ui": "Invalid credentials", "backend": "Generic message; rate limit" },
+      { "failure": "expired_magic_link", "ui": "Link expired + resend", "backend": "Reject token" }
+    ]
+  },
+  "references": ["owasp/authentication", "owasp/session-httponly-secure", "nextjs/cookies-headers"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "AUTH-SI-001", "type": "required_string", "value": "httpOnly", "tier": "pro" },
+      { "id": "AUTH-SI-002", "type": "required_string", "value": "sameSite", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "auth-signin" }
+}

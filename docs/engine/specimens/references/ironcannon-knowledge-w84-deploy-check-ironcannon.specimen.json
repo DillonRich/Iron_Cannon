@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w84-deploy-check-ironcannon",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w84/deploy-check-ironcannon",
+  "lastVerified": "2026-06-06",
+  "title": "W84 deploy-check-ironcannon",
+  "provider": "ironcannon",
+  "excerpt": "ironcannon deploy-check lists wrangler-auth and vectorize-creds separately",
+  "embeddingHint": "ironcannon deploy-check-ironcannon wave84 operator-deploy-readiness-g35",
+  "tags": [
+    "wave84",
+    "knowledge",
+    "ironcannon",
+    "operator-deploy-readiness-g35"
+  ]
+}

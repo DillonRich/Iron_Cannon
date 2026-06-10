@@ -1,0 +1,9 @@
+{
+  "refId": "nextjs/app-router-overview",
+  "sourceUrl": "https://nextjs.org/docs/app",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js App Router overview",
+  "excerpt": "App Router uses app/ directory with layouts, server components by default, and route handlers for APIs. Prefer Server Actions for mutations; Route Handlers for webhooks needing raw body. Iron Cannon golden stack assumes App Router—not Pages router.",
+  "appliesTo": ["layer2/nextjs"],
+  "tags": ["nextjs", "app-router"]
+}

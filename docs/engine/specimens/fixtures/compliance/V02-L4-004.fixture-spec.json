@@ -1,0 +1,9 @@
+{
+  "fixtureId": "V02-L4-004",
+  "obligationId": "LEG-TERMS-001",
+  "detectType": "schema_column",
+  "passSnippet": "CREATE TABLE users (..., terms_accepted_at INTEGER NOT NULL, ...)",
+  "failSnippet": "CREATE TABLE users (id TEXT PRIMARY KEY, email TEXT)",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

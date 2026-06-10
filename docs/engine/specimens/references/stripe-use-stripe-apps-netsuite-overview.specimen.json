@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/use-stripe-apps-netsuite-overview",
+  "sourceUrl": "https://docs.stripe.com/use-stripe-apps/netsuite/overview.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe Connector for NetSuite",
+  "excerpt": "Use the app to reconcile your Stripe activity into NetSuite. The Stripe Connector for NetSuite eliminates manual work and custom NetSuite development by automating accounting workflows. The connector includes an automated testing system that runs daily tests on every NetSuite feature and use case. You can connect your Stripe test environment to your NetSuite release preview to verify that the connector functions properly with the latest NetSuite release and your other integrations. The connector uses HTTPS to [securely](https://docs.stripe.com/security.md) communicate with NetSuite, and the latest version of TLS supported by NetSuite. No unauthenticated data is passed to NetSuite or any other system.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

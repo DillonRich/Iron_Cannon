@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-platform-changelog-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/platform/changelog/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Changelog",
+  "excerpt": "description: Recent changes and updates to Cloudflare Pages. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. [ Subscribe to RSS ](https://developers.cloudflare.com/pages/platform/changelog/index.xml) **Action recommended - Node.js 18 end-of-life and impact on Pages Build System V2**",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

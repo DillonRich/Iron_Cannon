@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/upgrades",
+  "sourceUrl": "https://docs.stripe.com/upgrades.md",
+  "lastVerified": "2026-06-03",
+  "title": "API upgrades",
+  "excerpt": "Learn how to manage API versions and handle breaking changes in major releases. Check the [Developer Changelog](https://docs.stripe.com/changelog.md) for the complete record of changes to Stripe’s API. Your API version controls the API and webhook behavior you see (for example, what parameters you can include in requests, what properties you see in responses, and so on). Your version gets set the first time you make an API request. Each major release, such as [Acacia](https://docs.stripe.com/changelog/acacia.md), includes changes that aren’t backward-compatible with previous releases. Upgrading to a new major release can require updates to existing code. Each monthly release includes only backward-compatible changes, and uses the same name as the last major release.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

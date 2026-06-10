@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-required-verification-information",
+  "sourceUrl": "https://docs.stripe.com/connect/required-verification-information.md",
+  "lastVerified": "2026-06-03",
+  "title": "Required verification information",
+  "excerpt": "Identify current and future information requirements that connected accounts must provide based on their business, location, and requested capabilities. In the UAE, company documents such as the [Trade License](https://docs.stripe.com/api/accounts/create.md#create_account-documents-company_license) and [Proof of Bank Account](https://docs.stripe.com/api/accounts/create.md#create_account-documents-bank_account_ownership_verification) as well as relevant identity documents must be verified before a connected account can start processing live charges and receiving *payouts* (A payout is the transfer of funds to an external account, usually a bank account, in the form of a deposit).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

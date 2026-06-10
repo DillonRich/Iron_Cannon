@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-marketplace-quickstart",
+  "sourceUrl": "https://docs.stripe.com/connect/marketplace/quickstart.md",
+  "lastVerified": "2026-06-03",
+  "title": "Marketplace quickstart",
+  "excerpt": "> You can customize this guide by selecting integration options in the [Interactive platform guide](https://docs.stripe.com/connect/interactive-platform-guide.md). Use this working code sample to integrate Stripe Hosted Checkout for one-time payments with Stripe Connect. With this approach, Stripe hosts the checkout page for you. const handleCreateProduct = async (formData) => { const response = await fetch(\"/api/create-product\", { headers: { \"Content-Type\": \"application/json\" }, body: JSON.stringify({ ...formData, accountId }),",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

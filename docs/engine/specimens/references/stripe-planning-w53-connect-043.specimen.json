@@ -1,0 +1,14 @@
+{
+  "refId": "stripe/planning-w53-connect-043",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/stripe-planning-w53-connect-043",
+  "lastVerified": "2026-06-03",
+  "title": "Wave53 connect 43",
+  "provider": "stripe",
+  "excerpt": "Stripe Connect embedded components planning reference",
+  "embeddingHint": "Stripe Connect embedded components planning reference",
+  "tags": [
+    "planning",
+    "wave53",
+    "stretch"
+  ]
+}

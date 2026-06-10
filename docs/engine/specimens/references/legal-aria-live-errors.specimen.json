@@ -1,0 +1,14 @@
+{
+  "refId": "legal/aria-live-errors",
+  "sourceUrl": "https://ironcannon.dev/planning/W65/ref/legal-aria-live-errors",
+  "lastVerified": "2026-06-06",
+  "title": "aria live errors",
+  "provider": "legal",
+  "excerpt": "Form validation errors announced via aria-live regions for screen reader users.",
+  "embeddingHint": "legal/aria-live-errors wave65 obligation-source legal",
+  "tags": [
+    "wave65",
+    "obligation-source",
+    "legal"
+  ]
+}

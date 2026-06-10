@@ -1,0 +1,9 @@
+{
+  "refId": "nextjs/route-handlers",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/routing/route-handlers",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js Route Handlers",
+  "excerpt": "export async function POST(request: Request) in route.ts. Used for Stripe webhooks and API endpoints. Do not parse JSON before signature verify on webhooks—use raw body variant.",
+  "appliesTo": ["M12-stripe-webhook", "nextjs/route-handlers-raw-body"],
+  "tags": ["nextjs", "api", "webhooks"]
+}

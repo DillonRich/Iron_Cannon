@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer1/password-reset/d1-schema",
+  "layer": 1,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "password-reset",
+  "moduleId": "M20-reset-token-schema",
+  "adapterId": "cloudflare-d1",
+  "section": "reset-token-schema",
+  "content": {
+    "requirement": "D1 table for hashed password reset tokens with TTL and single-use semantics",
+    "requiredSteps": [
+      "Store token_hash only — never plaintext token in D1",
+      "TTL default 3600 seconds (1 hour)",
+      "Columns: used_at for single-use enforcement",
+      "FK user_id → users.id ON DELETE CASCADE"
+    ]
+  },
+  "references": ["cloudflare/d1-migrations", "owasp/credential-storage", "owasp/cryptographic-storage"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "PW-SC-001", "type": "required_string", "value": "password_reset_tokens", "fileGlob": "**/*.sql", "tier": "pro" },
+      { "id": "PW-SC-002", "type": "required_string", "value": "token_hash", "fileGlob": "**/*.sql", "tier": "pro" },
+      { "id": "PW-R01", "type": "required_string", "value": "token_hash", "fileGlob": "**/*.sql", "tier": "pro" }
+    ],
+    "forbidden": [
+      { "id": "PW-SC-F01", "type": "forbidden_string", "value": "token TEXT NOT NULL UNIQUE", "fileGlob": "**/*.sql", "tier": "pro" }
+    ]
+  },
+  "metadata": { "minTier": "pro", "category": "password-reset-schema" }
+}

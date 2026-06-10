@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-static-assets-billing-and-limitations-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Billing and Limitations",
+  "excerpt": "description: Billing, troubleshooting, and limitations for Static assets on Workers image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Requests to a project with static assets can either return static assets or invoke the Worker script, depending on if the request [matches a static asset or not](https://developers.cloudflare.com/workers/static-assets/routing/). * Requests to static assets are free and unlimited. Requests to the Worker script (for example, in the case of SSR content) are billed according to Workers pricing.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

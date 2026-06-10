@@ -1,0 +1,15 @@
+{
+  "refId": "supabase/knowledge-w81-rls-billing-profiles",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w81/rls-billing-profiles",
+  "lastVerified": "2026-06-06",
+  "title": "W81 rls-billing-profiles",
+  "provider": "supabase",
+  "excerpt": "Billing tier stored in Supabase profiles with RLS — webhook updates service role",
+  "embeddingHint": "supabase rls-billing-profiles wave81 svc-002-exit",
+  "tags": [
+    "wave81",
+    "knowledge",
+    "supabase",
+    "svc-002-exit"
+  ]
+}

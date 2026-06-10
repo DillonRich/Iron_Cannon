@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W85-001",
+      "category": "operations",
+      "title": "G-37 harvest journeys UJ-081–085 present",
+      "sourceRefId": "ironcannon/knowledge-w85-g37-uj-081-085-harvest",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-002",
+      "category": "operations",
+      "title": "Wave 84 operator gates verified before G-37",
+      "sourceRefId": "ironcannon/knowledge-w85-wave84-gates-verified",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-003",
+      "category": "operations",
+      "title": "G-37 validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w85-g37-validator-stretch",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-004",
+      "category": "operations",
+      "title": "Operator session doc indexed",
+      "sourceRefId": "ironcannon/knowledge-w85-operator-session-indexed",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-005",
+      "category": "operations",
+      "title": "Stretch suite count ≥33 after G-37",
+      "sourceRefId": "ironcannon/knowledge-w85-stretch-suite-33",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-006",
+      "category": "operations",
+      "title": "SD-06 deploy regression journey UJ-081",
+      "sourceRefId": "ironcannon/knowledge-w85-sd06-deploy-regression",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-007",
+      "category": "operations",
+      "title": "SD-07 parallel regression journey UJ-082",
+      "sourceRefId": "ironcannon/knowledge-w85-sd07-parallel-regression",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-008",
+      "category": "operations",
+      "title": "Reference app deploy regression UJ-085",
+      "sourceRefId": "ironcannon/knowledge-w85-ref-app-deploy-regression",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-009",
+      "category": "operations",
+      "title": "G-36 planned until live deploy",
+      "sourceRefId": "ironcannon/knowledge-w85-g36-still-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W85-010",
+      "category": "privacy",
+      "title": "G-37 witness is CI regression not deploy approval",
+      "sourceRefId": "legal/knowledge-w85-ci-witness-not-deploy",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

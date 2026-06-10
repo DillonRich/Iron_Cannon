@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w61-007",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Reject-all cookies does not block essential auth cookies",
+    "obligations": [
+      "LEG-W61-007"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Reject-all cookies does not block essential auth cookies"
+  },
+  "references": [
+    "legal/cookie-reject-essential"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W61-007",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "cookie",
+    "disclaimerRequired": true
+  }
+}

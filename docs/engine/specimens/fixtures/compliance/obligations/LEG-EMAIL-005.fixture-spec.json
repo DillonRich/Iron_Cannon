@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-EMAIL-005",
+  "obligationId": "LEG-EMAIL-005",
+  "detectType": "verified_sender_domain",
+  "detect": {
+    "type": "verified_sender_domain",
+    "configField": "resend.verifiedDomain",
+    "templateScope": "email_templates"
+  },
+  "passSnippet": "pass LEG-EMAIL-005",
+  "failSnippet": "gap LEG-EMAIL-005",
+  "expectedPass": "gap",
+  "expectedFail": "gap"
+}

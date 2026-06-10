@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W71-001",
+      "category": "operations",
+      "title": "T05 golden harness passes before MCP signoff",
+      "sourceRefId": "ironcannon/knowledge-w71-t05-golden-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W71-002",
+      "category": "operations",
+      "title": "All golden modules pass T05 individually",
+      "sourceRefId": "ironcannon/knowledge-w71-t05-all-modules",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W71-003",
+      "category": "operations",
+      "title": "E2E packages smoke passes in g2:audit",
+      "sourceRefId": "ironcannon/knowledge-w71-e2e-packages-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W71-004",
+      "category": "operations",
+      "title": "Obligation calibration matches fixture bundle",
+      "sourceRefId": "ironcannon/knowledge-w71-obligation-calibration-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W71-005",
+      "category": "operations",
+      "title": "Obligation coverage at 100 percent index layer4",
+      "sourceRefId": "ironcannon/knowledge-w71-obligation-coverage-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W71-006",
+      "category": "security",
+      "title": "Session attestation on remote MCP connections",
+      "sourceRefId": "ironcannon/knowledge-w71-session-attestation",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W71-007",
+      "category": "operations",
+      "title": "Production readiness checklist signed off",
+      "sourceRefId": "ironcannon/knowledge-w71-production-readiness-doc",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W71-008",
+      "category": "operations",
+      "title": "Phase 3 exit criteria documented and met",
+      "sourceRefId": "ironcannon/knowledge-w71-phase3-exit-signal",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W71-009",
+      "category": "security",
+      "title": "MCP tool poisoning defenses in tool registry",
+      "sourceRefId": "owasp/cheatsheets-mcp-security-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W71-010",
+      "category": "security",
+      "title": "Supply chain audit before armor publish",
+      "sourceRefId": "owasp/cheatsheets-software-supply-chain-security-cheat-sheet-html",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

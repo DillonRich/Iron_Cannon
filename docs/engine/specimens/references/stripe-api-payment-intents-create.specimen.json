@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-payment-intents-create",
+  "sourceUrl": "https://docs.stripe.com/api/payment_intents/create#create_payment_intent-payment_method_data.md",
+  "lastVerified": "2026-06-03",
+  "title": "payment_method_data",
+  "excerpt": "<title data-rh=\"true\">Create a PaymentIntent | Stripe API Reference</title> <meta data-rh=\"true\" name=\"viewport\" content=\"width=device-width, initial-scale=1.0, viewport-fit=cover\"/><meta data-rh=\"true\" name=\"description\" content/> <link data-rh=\"true\" rel=\"icon\" type=\"image/svg+xml\" href=\"https://b.stripecdn.com/docs-statics-srv/assets/de2c5759f9d0c4faed776e94d1c3c32f.svg\"/><link data-rh=\"true\" rel=\"icon\" href=\"https://b.stripecdn.com/docs-statics-srv/assets/9529426dfc1865a9f12e3d7071e6e704.png\" type=\"image/png\" sizes=\"512x512\"/><link data-rh=\"true\" rel=\"apple-touch-icon\" href=\"https://b.stripecdn.com/docs-statics-srv/assets/8a5d7f8191d9d50bfa09a1a83577a269.png\" sizes=\"180x180\"/> <link rel=\"stylesheet\" href=https://b.stripecdn.com/docs-statics-srv/assets/sail.205757ec34a2cc4626b9.css /> <…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

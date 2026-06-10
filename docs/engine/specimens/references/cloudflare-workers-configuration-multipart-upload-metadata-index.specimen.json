@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-configuration-multipart-upload-metadata-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Multipart upload metadata",
+  "excerpt": "description: Define Workers configuration in JSON metadata for multipart form-data script uploads. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. There is a new API for uploading Workers. Refer to [these docs](https://developers.cloudflare.com/workers/platform/infrastructure-as-code#cloudflare-rest-api) for more information.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

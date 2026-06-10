@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/r2-bindings",
+  "sourceUrl": "https://developers.cloudflare.com/r2/api/workers/workers-api/",
+  "lastVerified": "2026-05-31",
+  "title": "R2 Workers binding",
+  "excerpt": "R2 bucket bound in wrangler.toml. Access via env.RULES_BUCKET.put/get. Iron Cannon uses private R2 for rules and references—not user data. Use list with prefix for manifest discovery. No egress fees; ideal for large corpus.",
+  "appliesTo": ["RULE_STORE", "layer2/cloudflare"],
+  "tags": ["cloudflare", "r2"]
+}

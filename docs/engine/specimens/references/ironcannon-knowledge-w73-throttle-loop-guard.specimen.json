@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w73-throttle-loop-guard",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w73/throttle-loop-guard",
+  "lastVerified": "2026-06-06",
+  "title": "W73 throttle-loop-guard",
+  "provider": "ironcannon",
+  "excerpt": "Throttle loop detection blocks runaway agents",
+  "embeddingHint": "ironcannon throttle-loop-guard wave73 armor-hardening",
+  "tags": [
+    "wave73",
+    "knowledge",
+    "ironcannon",
+    "armor-hardening"
+  ]
+}

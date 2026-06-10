@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/terminal-payments-setup-reader-stripe-m2",
+  "sourceUrl": "https://docs.stripe.com/terminal/payments/setup-reader/stripe-m2.md",
+  "lastVerified": "2026-06-03",
+  "title": "Set up Stripe Reader M2",
+  "excerpt": "Learn how to set up the Stripe Reader M2. ![](https://b.stripecdn.com/docs-statics-srv/assets/stripem2.bf6a7eabd353369bfa596a81ab51ca9a.png) Stripe Reader M2 is a small reader that you can use with mobile applications. It uses Bluetooth Low Energy (LE) or USB (Android only) to [connect](https://docs.stripe.com/terminal/payments/connect-reader.md) to the Stripe Terminal SDK on a mobile device. This reader is compatible with our iOS, Android, and React Native SDKs. To view the reader’s parts and features, see the [Stripe Reader M2 product sheet](https://stripe.com/m2/manual). > Stripe readers aren’t liquid-proof and we recommend that users make appropriate efforts to make sure their devices remain dry.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

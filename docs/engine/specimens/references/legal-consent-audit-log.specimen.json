@@ -1,0 +1,10 @@
+{
+  "refId": "legal/consent-audit-log",
+  "sourceUrl": "https://ironcannon.dev/patterns/consent-audit-log",
+  "authorship": "iron-cannon-pattern",
+  "lastVerified": "2026-05-31",
+  "title": "Consent audit log pattern",
+  "excerpt": "Record consent events: userId, consentType, version, timestamp, ipHash (optional). Supports GDPR accountability for marketing/cookie/terms consent. Table consent_audit_log append-only; no PII in logs beyond userId foreign key.",
+  "appliesTo": ["LEG-RECORD-001", "LEG-PRIV-006"],
+  "tags": ["legal", "gdpr", "pattern", "records"]
+}

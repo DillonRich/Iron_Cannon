@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/cron-triggers",
+  "sourceUrl": "https://developers.cloudflare.com/workers/configuration/cron-triggers/",
+  "lastVerified": "2026-05-31",
+  "title": "Workers cron",
+  "excerpt": "Scheduled jobs for deletion scheduler and export workers.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "cloudflare",
+    "cron-triggers"
+  ]
+}

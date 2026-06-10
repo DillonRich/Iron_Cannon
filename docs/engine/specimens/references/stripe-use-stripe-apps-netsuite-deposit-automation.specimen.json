@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/use-stripe-apps-netsuite-deposit-automation",
+  "sourceUrl": "https://docs.stripe.com/use-stripe-apps/netsuite/deposit-automation.md",
+  "lastVerified": "2026-06-03",
+  "title": "Deposit automation",
+  "excerpt": "Use the connector to automate the bank reconciliation process. To learn more and get a demo of the Stripe Connector for NetSuite, go to the [Stripe App Marketplace](https://marketplace.stripe.com/apps/netsuite-connector) and click **Install app**. The Stripe Connector for NetSuite automates the bank reconciliation process by creating bank deposits in NetSuite for all of your [Stripe payouts](https://docs.stripe.com/use-stripe-apps/netsuite/stripe-payouts-netsuite.md). The connector also automates fee calculation, the refund life cycle, the dispute life cycle, and handling of multiple currencies and subsidiaries. This means you only need to match the bank deposit record to the Stripe deposits on your bank statement, reducing the amount of manual work required each month.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

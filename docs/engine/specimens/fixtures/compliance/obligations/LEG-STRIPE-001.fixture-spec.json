@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-STRIPE-001",
+  "obligationId": "LEG-STRIPE-001",
+  "detectType": "route_link",
+  "detect": {
+    "type": "route_link",
+    "path": "/settings/billing",
+    "hrefContains": "refund"
+  },
+  "passSnippet": "<a href=\"refund\">ok</a>",
+  "failSnippet": "<form></form>",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

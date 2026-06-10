@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/atlas-signup",
+  "sourceUrl": "https://docs.stripe.com/atlas/signup.md",
+  "lastVerified": "2026-06-03",
+  "title": "How to incorporate your company",
+  "excerpt": "Learn what you need to get started with Atlas. Stripe Atlas incorporates your company in Delaware, gets your company tax ID (EIN) from the IRS, issues founders equity, and files your 83(b) election. After incorporating you can open a business bank account, charge customers using Stripe payments, and access discounts on tools for founders. Atlas costs 500 USD, which covers incorporation (plus state fees), and your first year of registered agent services. After that, we charge 100 USD annually to maintain your registered agent. We’ll refund your fee if we’re unable to support your business. Read more about Stripe Atlas’ [restricted business categories](https://support.stripe.com/questions/stripe-atlas-restricted-business-categories).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

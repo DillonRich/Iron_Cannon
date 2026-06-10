@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/radar-analytics",
+  "sourceUrl": "https://docs.stripe.com/radar/analytics.md",
+  "lastVerified": "2026-06-03",
+  "title": "Radar analytics center",
+  "excerpt": "Review fraud patterns and their impact on your business in the Dashboard. This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [Radar Analytics center](https://docs.stripe.com/radar/analytics.md?radar-dash=rac) - [Legacy Radar overview](https://docs.stripe.com/radar/analytics.md?radar-dash=legacy)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

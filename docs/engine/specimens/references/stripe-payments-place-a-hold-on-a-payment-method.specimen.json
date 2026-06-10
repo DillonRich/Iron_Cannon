@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-place-a-hold-on-a-payment-method",
+  "sourceUrl": "https://docs.stripe.com/payments/place-a-hold-on-a-payment-method.md",
+  "lastVerified": "2026-06-03",
+  "title": "Place a hold on a payment method",
+  "excerpt": "Separate payment authorization and capture to create a charge now, but capture funds later. When you create a payment, you can place a hold on an eligible payment method to reserve funds that you can capture later. For example, hotels often authorize a payment in full before a guest arrives, then capture the money when the guest checks out. This is sometimes referred to as *manual capture* (Manually capture funds separately from an authorization). Authorizing a payment guarantees the amount by holding it on the customer’s payment method. If you’re using the API, the [payment_method_details.card.capture_before](https://docs.stripe.com/api/charges/object.md#charge_object-payment_method_details-card-capture_before) attribute on the charge indicates when the authorization expires.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

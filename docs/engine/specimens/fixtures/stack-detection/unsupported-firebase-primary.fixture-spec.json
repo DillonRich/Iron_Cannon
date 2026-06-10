@@ -1,0 +1,10 @@
+{
+  "fixtureId": "SD-04",
+  "description": "Firebase as primary backend — unsupported V1",
+  "projectFiles": [
+    { "path": "package.json", "content": "{\"dependencies\":{\"firebase\":\"^10\",\"next\":\"14\"}}" },
+    { "path": "firebase.json", "content": "{\"hosting\":{\"public\":\"out\"}}" }
+  ],
+  "expectedT01": { "supported": false, "stack": ["firebase"], "conflicts": [] },
+  "expectedT02": { "complete": false, "errorCode": "STACK_UNSUPPORTED" }
+}

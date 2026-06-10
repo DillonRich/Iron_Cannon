@@ -1,0 +1,15 @@
+{
+  "refId": "google/knowledge-w86-workspace-business-email",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w86/workspace-business-email",
+  "lastVerified": "2026-06-06",
+  "title": "W86 workspace-business-email",
+  "provider": "google",
+  "excerpt": "Google Workspace provides business email before CF account signup",
+  "embeddingHint": "google workspace-business-email wave86 business-infra-dogfood-g38",
+  "tags": [
+    "wave86",
+    "knowledge",
+    "google",
+    "business-infra-dogfood-g38"
+  ]
+}

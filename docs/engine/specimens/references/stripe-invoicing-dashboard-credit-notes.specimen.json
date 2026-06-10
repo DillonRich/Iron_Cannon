@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-dashboard-credit-notes",
+  "sourceUrl": "https://docs.stripe.com/invoicing/dashboard/credit-notes.md",
+  "lastVerified": "2026-06-03",
+  "title": "Issue credit notes",
+  "excerpt": "Use the Dashboard to adjust or refund finalized invoices with credit notes. Credit notes are documents that decrease the amount of an `open` or `paid` *invoice* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice). The difference between issuing a credit note and adjusting the amount of an invoice by [revising it](https://docs.stripe.com/invoicing/invoice-edits.md) is that a credit note doesn’t void and replace the original invoice.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

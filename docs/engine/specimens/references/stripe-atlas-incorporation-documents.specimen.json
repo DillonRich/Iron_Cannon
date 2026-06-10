@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/atlas-incorporation-documents",
+  "sourceUrl": "https://docs.stripe.com/atlas/incorporation-documents.md",
+  "lastVerified": "2026-06-03",
+  "title": "Incorporation documents",
+  "excerpt": "Learn about the documents Atlas uses to incorporate your company. Here are the documents Atlas uses to incorporate your company. After you form your company, you can view your incorporation documents in the [Documents](https://dashboard.stripe.com/atlas/documents) tab of your Atlas Dashboard. Atlas helps you set up a company using templates created in collaboration with Cooley LLP. These include common defaults and don’t include non-compete and non-solicit clauses. This service isn’t a substitute for legal advice. If you need customized documents, consider speaking with a lawyer.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

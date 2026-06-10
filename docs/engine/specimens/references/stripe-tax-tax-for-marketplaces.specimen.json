@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-tax-for-marketplaces",
+  "sourceUrl": "https://docs.stripe.com/tax/tax-for-marketplaces.md",
+  "lastVerified": "2026-06-03",
+  "title": "Tax for marketplaces",
+  "excerpt": "Learn about tax requirements for platforms and marketplaces, and how to enable Stripe Tax to collect tax on transactions when the Connect platform is liable. Many countries and US states require marketplace operators to collect sales tax and VAT on their facilitated sales. The US refers to these businesses as marketplace facilitators, while other regions, such as Europe, might refer to them as deemed sellers. As a marketplace operator, your tax collection requirements differ depending on the country or state. However, if your electronic interface enables transactions between buyers and sellers and you directly or indirectly collect customer payments, you might need to fulfill tax collection responsibilities.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

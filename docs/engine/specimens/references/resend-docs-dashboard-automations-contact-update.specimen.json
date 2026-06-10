@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-automations-contact-update",
+  "sourceUrl": "https://resend.com/docs/dashboard/automations/contact-update.md",
+  "lastVerified": "2026-06-03",
+  "title": "Contact Update",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Contact Update > Update contact fields during an Automation. The contact update step modifies a contact's fields as part of an Automation. You can update a contact's name, subscription status, or custom properties. Common use cases: * **Enrich profiles**: Copy event data into the contact record. * **Set flags**: Mark contacts as VIP, or churned based on their activity. * **Sync properties**: Keep custom properties up to date as events flow in. ## How it works Add an **Update contact** step and update the fields you want to change. Add a `contact_update` step to your Automation's `steps` array.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

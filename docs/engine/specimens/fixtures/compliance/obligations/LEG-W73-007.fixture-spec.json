@@ -1,0 +1,12 @@
+{
+  "fixtureId": "LEG-W73-007",
+  "obligationId": "LEG-W73-007",
+  "detectType": "config",
+  "detect": {
+    "type": "config"
+  },
+  "passSnippet": "verifiedDomain configured",
+  "failSnippet": "gap",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

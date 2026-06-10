@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w75-001",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Production MCP signoff checklist complete",
+    "obligations": [
+      "LEG-W75-001"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Production MCP signoff checklist complete"
+  },
+  "references": [
+    "ironcannon/knowledge-w75-production-mcp-signoff"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W75-001",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

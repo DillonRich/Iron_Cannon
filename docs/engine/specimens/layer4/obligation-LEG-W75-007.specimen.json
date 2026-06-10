@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w75-007",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Security protocols at 1300 active",
+    "obligations": [
+      "LEG-W75-007"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Security protocols at 1300 active"
+  },
+  "references": [
+    "ironcannon/knowledge-w75-protocol-1300-floor"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W75-007",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

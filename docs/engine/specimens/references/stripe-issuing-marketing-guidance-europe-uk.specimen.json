@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-marketing-guidance-europe-uk",
+  "sourceUrl": "https://docs.stripe.com/issuing/marketing-guidance-europe-uk.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe Issuing marketing guidelines",
+  "excerpt": "Learn about marketing guidelines for Issuing programs in the United Kingdom and Europe. These marketing guidelines only apply when you’re marketing Stripe’s Issuing product and services. If you’re only using Stripe Issuing for your own business expenses (and not to facilitate or provide services to your customers) then you don’t need to market any of Stripe’s products and services and these marketing guidelines wouldn’t apply. To offer and promote Stripe’s Issuing products in the United Kingdom and countries within Europe, your user interfaces and advertising must adhere to the guidelines outlined in this document. We’re providing these guidelines to help you navigate the financial regulations that govern the messaging you can use to describe our Issuing product.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

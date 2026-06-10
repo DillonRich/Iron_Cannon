@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w70-008",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Outbound chain validated end-to-end",
+    "obligations": [
+      "LEG-W70-008"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Outbound chain validated end-to-end"
+  },
+  "references": [
+    "ironcannon/knowledge-w70-outbound-chain-gate"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W70-008",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

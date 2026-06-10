@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/radar-risk-settings",
+  "sourceUrl": "https://docs.stripe.com/radar/risk-settings.md",
+  "lastVerified": "2026-06-03",
+  "title": "Risk setting and risk controls",
+  "excerpt": "Automatically adjust which payments you block based on dynamic detection. Stripe Radar lets you choose a risk setting that automatically adjusts your protection thresholds based on your business needs and tolerance. Based on the risk setting you choose, we recommend the risk controls that help protect against fraud. Risk settings let you balance authorization and fraud on your account by using risk controls. These risk controls set different thresholds to block payments that might result in fraudulent disputes or early fraud warnings. Certain risk settings also recommend that you enable or disable additional risk controls, such as adaptive 3DS, to help protect your account from fraud while allowing non-fraudulent payments.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

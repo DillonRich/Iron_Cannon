@@ -1,0 +1,14 @@
+{
+  "fixtureId": "T08-01",
+  "description": "Rollback to M02 returns context block and pending later modules",
+  "input": {
+    "moduleId": "M02-auth-worker-routes",
+    "stateLogMarkdown": "### M01-auth-d1-schema\n\n| status | complete |\n\n**notes:**\nD1 schema applied.\n\n### M02-auth-worker-routes\n\n| status | complete |\n\n**notes:**\nRoutes implemented.\n\n### M03-auth-resend-emails\n\n| status | in_progress |\n"
+  },
+  "expected": {
+    "ok": true,
+    "rollbackTo": "M02-auth-worker-routes",
+    "modulesToReset": ["M03-auth-resend-emails"],
+    "markdownContains": ["M01-auth-d1-schema", "M02-auth-worker-routes"]
+  }
+}

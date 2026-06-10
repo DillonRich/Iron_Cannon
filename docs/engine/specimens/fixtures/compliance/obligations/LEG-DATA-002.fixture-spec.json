@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-DATA-002",
+  "obligationId": "LEG-DATA-002",
+  "detectType": "route_exists",
+  "detect": {
+    "type": "route_exists",
+    "path": "/api/account/export"
+  },
+  "passSnippet": "export default function P(){return <main>/api/account/export</main>}",
+  "failSnippet": "<main>/missing-route</main>",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

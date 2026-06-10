@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-integration-guides-b2b-payments",
+  "sourceUrl": "https://docs.stripe.com/issuing/integration-guides/b2b-payments.md",
+  "lastVerified": "2026-06-03",
+  "title": "B2B payments integration guide",
+  "excerpt": "Build a B2B payments integration with Issuing. Check out our introductory guide to using [embedded finance for SaaS Platforms](https://stripe.com/guides/introduction-to-embedded-finance). Build a US B2B payments integration by using Stripe [Issuing](https://docs.stripe.com/issuing/how-issuing-works.md) to create cards for your business, employees, or contractors to make purchases on your behalf. By the end of this guide, you’ll know how to: - Create virtual cards for your own business - Use these cards to spend funds from your Issuing Balance",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

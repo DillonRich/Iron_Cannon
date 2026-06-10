@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-framework-guides-web-apps-react-router-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/framework-guides/web-apps/react-router/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "React Router (formerly Remix)",
+  "excerpt": "description: Create a React Router application and deploy it to Cloudflare Workers image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. **Start from CLI**: Scaffold a full-stack app with [React Router v7 ↗](https://reactrouter.com/) and the [Cloudflare Vite plugin](https://developers.cloudflare.com/workers/vite-plugin/) for lightning-fast development. npm create cloudflare@latest -- my-react-router-app --framework=react-router",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

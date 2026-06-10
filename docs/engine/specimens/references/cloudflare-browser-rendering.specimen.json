@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/browser-rendering",
+  "sourceUrl": "https://developers.cloudflare.com/browser-rendering/",
+  "lastVerified": "2026-05-31",
+  "title": "Browser Rendering",
+  "excerpt": "Headless browser for PDF export workers.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "cloudflare",
+    "browser-rendering"
+  ]
+}

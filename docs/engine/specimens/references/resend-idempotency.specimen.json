@@ -1,0 +1,9 @@
+{
+  "refId": "resend/idempotency",
+  "sourceUrl": "https://resend.com/docs/api-reference/introduction",
+  "lastVerified": "2026-05-31",
+  "title": "Resend idempotency key",
+  "excerpt": "Include Idempotency-Key header on send requests to prevent duplicate emails on retry. Use stable key per logical send (e.g. password-reset:userId:tokenHash). Safe to retry 5xx responses with same key.",
+  "appliesTo": ["email-lifecycle", "password-reset"],
+  "tags": ["resend", "idempotency"]
+}

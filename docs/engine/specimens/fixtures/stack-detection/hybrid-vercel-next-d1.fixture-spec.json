@@ -1,0 +1,11 @@
+{
+  "fixtureId": "SD-02",
+  "description": "Hybrid Vercel deploy + Cloudflare D1 — not golden stack",
+  "projectFiles": [
+    { "path": "package.json", "content": "{\"dependencies\":{\"next\":\"14\"},\"devDependencies\":{\"@cloudflare/workers-types\":\"^4\"}}" },
+    { "path": "vercel.json", "content": "{\"framework\":\"nextjs\"}" },
+    { "path": "wrangler.toml", "content": "[[d1_databases]]\nbinding = \"DB\"" }
+  ],
+  "expectedT01": { "supported": false, "conflicts": ["hybrid-host:vercel+cloudflare-d1"], "warnings": ["HYBRID_STACK_DETECTED"] },
+  "expectedT02": { "complete": false, "errorCode": "STACK_UNSUPPORTED", "agentGuidance": "Declare single hosting target or wait for Phase 4 Supabase/Vercel adapters." }
+}

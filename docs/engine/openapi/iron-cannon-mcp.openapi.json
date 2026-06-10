@@ -1,0 +1,801 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Iron Cannon MCP HTTP API",
+    "version": "0.4.0",
+    "description": "HTTP bridge for MCP tools. Primary integrators use POST /mcp (JSON-RPC). Legacy body { toolId } supported. Examples: docs/engine/mcp-clients/golden-path-rpc-examples.json"
+  },
+  "servers": [
+    {
+      "url": "https://api.ironcannon.ai"
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Health check",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/v1/ruleset/latest": {
+      "get": {
+        "summary": "Current ruleset version",
+        "responses": {
+          "200": {
+            "description": "Ruleset metadata",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean"
+                    },
+                    "rulesetVersion": {
+                      "type": "string"
+                    },
+                    "engine": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/webhooks/stripe": {
+      "post": {
+        "summary": "Stripe platform billing webhooks (Iron Cannon subscriptions)",
+        "description": "Requires STRIPE_WEBHOOK_SECRET. Returns 501 when secret unset. Verifies Stripe-Signature header.",
+        "parameters": [
+          {
+            "name": "stripe-signature",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Event processed (idempotent)"
+          },
+          "400": {
+            "description": "Invalid signature or JSON"
+          },
+          "501": {
+            "description": "NOT_CONFIGURED — webhook secret missing"
+          }
+        }
+      }
+    },
+    "/tools": {
+      "get": {
+        "summary": "List tools for tier",
+        "parameters": [
+          {
+            "name": "x-ironcannon-tier",
+            "in": "header",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "pro",
+                "armor",
+                "ironclad"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Tool catalog slice"
+          }
+        }
+      }
+    },
+    "/mcp": {
+      "post": {
+        "summary": "MCP JSON-RPC or legacy tool invoke",
+        "parameters": [
+          {
+            "name": "x-ironcannon-tier",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "x-ironcannon-client",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              },
+              "examples": {
+                "toolsList": {
+                  "value": {
+                    "jsonrpc": "2.0",
+                    "id": 1,
+                    "method": "tools/list",
+                    "params": {}
+                  }
+                },
+                "toolsCall": {
+                  "value": {
+                    "jsonrpc": "2.0",
+                    "id": 2,
+                    "method": "tools/call",
+                    "params": {
+                      "name": "get_module_directives",
+                      "arguments": {
+                        "moduleId": "M12-stripe-webhook"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "JSON-RPC result or legacy tool payload"
+          },
+          "401": {
+            "description": "AUTH_MISSING / AUTH_INVALID"
+          },
+          "402": {
+            "description": "SUBSCRIPTION_INACTIVE"
+          },
+          "403": {
+            "description": "TIER_INSUFFICIENT"
+          },
+          "429": {
+            "description": "RATE_LIMIT_EXCEEDED"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "T01": {
+        "type": "object",
+        "description": "Detect frontend, database, and service stack from project files (local discovery).",
+        "properties": {
+          "fixtureId": {
+            "type": "string",
+            "description": "Stack detection fixture id (e.g. SD-01) for local test harness."
+          },
+          "projectRoot": {
+            "type": "string",
+            "description": "Absolute path to project root for live discovery (optional)."
+          }
+        }
+      },
+      "T02": {
+        "type": "object",
+        "description": "Validate detected stack is complete and supported for Iron Cannon golden flows.",
+        "properties": {
+          "stack": {
+            "type": "object",
+            "description": "DetectedStack object from analyze_project_stack (T01)."
+          }
+        },
+        "required": [
+          "stack"
+        ]
+      },
+      "T03": {
+        "type": "object",
+        "description": "Generate auth + billing wiremap and issue wiremapAttestation for later module calls.",
+        "properties": {
+          "flowIds": {
+            "type": "array",
+            "description": "Flow ids to compose into wiremap.",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "T04": {
+        "type": "object",
+        "description": "Compose tier-redacted module directives for one wiremap module (requires wiremapAttestation).",
+        "properties": {
+          "moduleId": {
+            "type": "string",
+            "description": "Wiremap module id (e.g. M12-stripe-webhook)."
+          },
+          "completedModules": {
+            "type": "array",
+            "description": "Module ids already verified in order.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "wiremapAttestation": {
+            "type": "object",
+            "description": "Wiremap attestation object from T03 (required after wiremap approval)."
+          }
+        },
+        "required": [
+          "moduleId"
+        ]
+      },
+      "T05": {
+        "type": "object",
+        "description": "Verify module source against compliance patterns; returns compliant true/false (requires wiremapAttestation).",
+        "properties": {
+          "moduleId": {
+            "type": "string",
+            "description": "Module id to verify against fixture patterns."
+          },
+          "snippet": {
+            "type": "string",
+            "description": "Source code excerpt to verify (optional; uses fixture pass snippet if omitted)."
+          },
+          "wiremapAttestation": {
+            "type": "object",
+            "description": "Wiremap attestation object from T03 (required after wiremap approval)."
+          }
+        },
+        "required": [
+          "moduleId"
+        ]
+      },
+      "T06": {
+        "type": "object",
+        "description": "Continuous diff check — compare state_log, disk files, and stack signals for drift.",
+        "properties": {
+          "stateLogMarkdown": {
+            "type": "string",
+            "description": "Contents of .iron_cannon/state_log.md."
+          },
+          "diskFiles": {
+            "type": "object",
+            "description": "Map of relative path → file hash or excerpt."
+          },
+          "session": {
+            "type": "object",
+            "description": "Session metadata (clientKey, tier)."
+          },
+          "stackSignals": {
+            "type": "object",
+            "description": "Optional fresh stack signals from T01."
+          }
+        }
+      },
+      "T07": {
+        "type": "object",
+        "description": "Audit a failed user flow — map symptoms and logs to recovery steps.",
+        "properties": {
+          "flowId": {
+            "type": "string",
+            "description": "Failed flow id (e.g. billing-subscription)."
+          },
+          "errorLog": {
+            "type": "string",
+            "description": "Error log or stack trace excerpt."
+          },
+          "symptoms": {
+            "type": "string",
+            "description": "Human-readable symptom summary."
+          }
+        },
+        "required": [
+          "flowId"
+        ]
+      },
+      "T08": {
+        "type": "object",
+        "description": "Rollback to a prior module boundary using state_log snapshot (destructive — confirm first).",
+        "properties": {
+          "moduleId": {
+            "type": "string",
+            "description": "Module boundary to roll back to."
+          },
+          "stateLogMarkdown": {
+            "type": "string",
+            "description": "State log snapshot to restore."
+          }
+        },
+        "required": [
+          "moduleId",
+          "stateLogMarkdown"
+        ]
+      },
+      "T09": {
+        "type": "object",
+        "description": "Map vulnerability surfaces and infrastructure domains for Armor hardening.",
+        "properties": {
+          "surfaceHints": {
+            "type": "array",
+            "description": "Hints like { type: \"webhook\" } or { type: \"session\" }.",
+            "items": {
+              "type": "object"
+            }
+          },
+          "infraHints": {
+            "type": "array",
+            "description": "Filter infrastructure domains (e.g. { type: \"cache\" }).",
+            "items": {
+              "type": "object"
+            }
+          },
+          "includeInfrastructure": {
+            "type": "boolean",
+            "description": "Include INFRA-* domains in response (default true)."
+          }
+        }
+      },
+      "T10": {
+        "type": "object",
+        "description": "Security or infrastructure directives for a surfaceId (SURF-*) or domainId (INFRA-*).",
+        "properties": {
+          "surfaceId": {
+            "type": "string",
+            "description": "Security surface id (e.g. SURF-WH-001)."
+          },
+          "domainId": {
+            "type": "string",
+            "description": "Infrastructure domain id (e.g. INFRA-CACHE)."
+          },
+          "productionMode": {
+            "type": "boolean",
+            "description": "When true, omit dev-relaxed security patterns."
+          },
+          "expectedRps": {
+            "type": "number",
+            "description": "Peak requests per second for scale directives."
+          },
+          "expectedUsers": {
+            "type": "number",
+            "description": "Expected user scale for capacity planning."
+          }
+        }
+      },
+      "T11": {
+        "type": "object",
+        "description": "Production readiness gate: security checklist + infrastructure scale (requires wiremapAttestation).",
+        "properties": {
+          "wiremapContext": {
+            "type": "object",
+            "description": "Object with completedModules array from golden path."
+          },
+          "confirmedChecklistIds": {
+            "type": "array",
+            "description": "Infra checklist item ids user confirmed manually.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "autoConfirmInfra": {
+            "type": "boolean",
+            "description": "Auto-confirm infra items tied to completed modules (default true)."
+          },
+          "wiremapAttestation": {
+            "type": "object",
+            "description": "Wiremap attestation object from T03 (required after wiremap approval)."
+          }
+        }
+      },
+      "T12": {
+        "type": "object",
+        "description": "Map legal/compliance obligations by primary market (IronClad — not legal advice).",
+        "properties": {
+          "primaryMarkets": {
+            "type": "array",
+            "description": "Market codes: us, eu, uk, ca, etc.",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "T13": {
+        "type": "object",
+        "description": "Compliance directive for one obligationId; optional snippet for automated detect.",
+        "properties": {
+          "obligationId": {
+            "type": "string",
+            "description": "Obligation id (e.g. LEG-A11Y-001)."
+          },
+          "snippet": {
+            "type": "string",
+            "description": "Code or template excerpt to run obligation detect against."
+          }
+        },
+        "required": [
+          "obligationId"
+        ]
+      },
+      "T14": {
+        "type": "object",
+        "description": "Legal readiness advisory — confirm reviewed obligation IDs (IronClad — not legal advice).",
+        "properties": {
+          "primaryMarkets": {
+            "type": "array",
+            "description": "Markets in scope for readiness audit.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confirmedObligationIds": {
+            "type": "array",
+            "description": "Obligation ids counsel/user confirmed reviewed.",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "x-ironcannon-tools": [
+    {
+      "id": "T01",
+      "name": "analyze_project_stack",
+      "tierMin": "pro",
+      "description": "Detect frontend, database, and service stack from project files (local discovery).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "fixtureId": {
+            "type": "string",
+            "description": "Stack detection fixture id (e.g. SD-01) for local test harness."
+          },
+          "projectRoot": {
+            "type": "string",
+            "description": "Absolute path to project root for live discovery (optional)."
+          }
+        }
+      }
+    },
+    {
+      "id": "T02",
+      "name": "validate_stack_completeness",
+      "tierMin": "pro",
+      "description": "Validate detected stack is complete and supported for Iron Cannon golden flows.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "stack": {
+            "type": "object",
+            "description": "DetectedStack object from analyze_project_stack (T01)."
+          }
+        },
+        "required": [
+          "stack"
+        ]
+      }
+    },
+    {
+      "id": "T03",
+      "name": "generate_system_wiremap",
+      "tierMin": "pro",
+      "description": "Generate auth + billing wiremap and issue wiremapAttestation for later module calls.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "flowIds": {
+            "type": "array",
+            "description": "Flow ids to compose into wiremap.",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T04",
+      "name": "get_module_directives",
+      "tierMin": "pro",
+      "description": "Compose tier-redacted module directives for one wiremap module (requires wiremapAttestation).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "moduleId": {
+            "type": "string",
+            "description": "Wiremap module id (e.g. M12-stripe-webhook)."
+          },
+          "completedModules": {
+            "type": "array",
+            "description": "Module ids already verified in order.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "wiremapAttestation": {
+            "type": "object",
+            "description": "Wiremap attestation object from T03 (required after wiremap approval)."
+          }
+        },
+        "required": [
+          "moduleId"
+        ]
+      }
+    },
+    {
+      "id": "T05",
+      "name": "verify_module_compliance",
+      "tierMin": "pro",
+      "description": "Verify module source against compliance patterns; returns compliant true/false (requires wiremapAttestation).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "moduleId": {
+            "type": "string",
+            "description": "Module id to verify against fixture patterns."
+          },
+          "snippet": {
+            "type": "string",
+            "description": "Source code excerpt to verify (optional; uses fixture pass snippet if omitted)."
+          },
+          "wiremapAttestation": {
+            "type": "object",
+            "description": "Wiremap attestation object from T03 (required after wiremap approval)."
+          }
+        },
+        "required": [
+          "moduleId"
+        ]
+      }
+    },
+    {
+      "id": "T06",
+      "name": "run_continuous_diff_check",
+      "tierMin": "pro",
+      "description": "Continuous diff check — compare state_log, disk files, and stack signals for drift.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "stateLogMarkdown": {
+            "type": "string",
+            "description": "Contents of .iron_cannon/state_log.md."
+          },
+          "diskFiles": {
+            "type": "object",
+            "description": "Map of relative path → file hash or excerpt."
+          },
+          "session": {
+            "type": "object",
+            "description": "Session metadata (clientKey, tier)."
+          },
+          "stackSignals": {
+            "type": "object",
+            "description": "Optional fresh stack signals from T01."
+          }
+        }
+      }
+    },
+    {
+      "id": "T07",
+      "name": "audit_failed_flow",
+      "tierMin": "pro",
+      "description": "Audit a failed user flow — map symptoms and logs to recovery steps.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "flowId": {
+            "type": "string",
+            "description": "Failed flow id (e.g. billing-subscription)."
+          },
+          "errorLog": {
+            "type": "string",
+            "description": "Error log or stack trace excerpt."
+          },
+          "symptoms": {
+            "type": "string",
+            "description": "Human-readable symptom summary."
+          }
+        },
+        "required": [
+          "flowId"
+        ]
+      }
+    },
+    {
+      "id": "T08",
+      "name": "rollback_to_module",
+      "tierMin": "pro",
+      "description": "Rollback to a prior module boundary using state_log snapshot (destructive — confirm first).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "moduleId": {
+            "type": "string",
+            "description": "Module boundary to roll back to."
+          },
+          "stateLogMarkdown": {
+            "type": "string",
+            "description": "State log snapshot to restore."
+          }
+        },
+        "required": [
+          "moduleId",
+          "stateLogMarkdown"
+        ]
+      }
+    },
+    {
+      "id": "T09",
+      "name": "map_vulnerability_surfaces",
+      "tierMin": "armor",
+      "description": "Map vulnerability surfaces and infrastructure domains for Armor hardening.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "surfaceHints": {
+            "type": "array",
+            "description": "Hints like { type: \"webhook\" } or { type: \"session\" }.",
+            "items": {
+              "type": "object"
+            }
+          },
+          "infraHints": {
+            "type": "array",
+            "description": "Filter infrastructure domains (e.g. { type: \"cache\" }).",
+            "items": {
+              "type": "object"
+            }
+          },
+          "includeInfrastructure": {
+            "type": "boolean",
+            "description": "Include INFRA-* domains in response (default true)."
+          }
+        }
+      }
+    },
+    {
+      "id": "T10",
+      "name": "get_security_directives",
+      "tierMin": "armor",
+      "description": "Security or infrastructure directives for a surfaceId (SURF-*) or domainId (INFRA-*).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "surfaceId": {
+            "type": "string",
+            "description": "Security surface id (e.g. SURF-WH-001)."
+          },
+          "domainId": {
+            "type": "string",
+            "description": "Infrastructure domain id (e.g. INFRA-CACHE)."
+          },
+          "productionMode": {
+            "type": "boolean",
+            "description": "When true, omit dev-relaxed security patterns."
+          },
+          "expectedRps": {
+            "type": "number",
+            "description": "Peak requests per second for scale directives."
+          },
+          "expectedUsers": {
+            "type": "number",
+            "description": "Expected user scale for capacity planning."
+          }
+        }
+      }
+    },
+    {
+      "id": "T11",
+      "name": "audit_production_readiness",
+      "tierMin": "armor",
+      "description": "Production readiness gate: security checklist + infrastructure scale (requires wiremapAttestation).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "wiremapContext": {
+            "type": "object",
+            "description": "Object with completedModules array from golden path."
+          },
+          "confirmedChecklistIds": {
+            "type": "array",
+            "description": "Infra checklist item ids user confirmed manually.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "autoConfirmInfra": {
+            "type": "boolean",
+            "description": "Auto-confirm infra items tied to completed modules (default true)."
+          },
+          "wiremapAttestation": {
+            "type": "object",
+            "description": "Wiremap attestation object from T03 (required after wiremap approval)."
+          }
+        }
+      }
+    },
+    {
+      "id": "T12",
+      "name": "map_compliance_obligations",
+      "tierMin": "ironclad",
+      "description": "Map legal/compliance obligations by primary market (IronClad — not legal advice).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "primaryMarkets": {
+            "type": "array",
+            "description": "Market codes: us, eu, uk, ca, etc.",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "T13",
+      "name": "get_compliance_directives",
+      "tierMin": "ironclad",
+      "description": "Compliance directive for one obligationId; optional snippet for automated detect.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "obligationId": {
+            "type": "string",
+            "description": "Obligation id (e.g. LEG-A11Y-001)."
+          },
+          "snippet": {
+            "type": "string",
+            "description": "Code or template excerpt to run obligation detect against."
+          }
+        },
+        "required": [
+          "obligationId"
+        ]
+      }
+    },
+    {
+      "id": "T14",
+      "name": "audit_legal_readiness",
+      "tierMin": "ironclad",
+      "description": "Legal readiness advisory — confirm reviewed obligation IDs (IronClad — not legal advice).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "primaryMarkets": {
+            "type": "array",
+            "description": "Markets in scope for readiness audit.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confirmedObligationIds": {
+            "type": "array",
+            "description": "Obligation ids counsel/user confirmed reviewed.",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

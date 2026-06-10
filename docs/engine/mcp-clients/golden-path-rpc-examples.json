@@ -1,0 +1,179 @@
+{
+  "description": "Copy-paste JSON-RPC bodies for POST /mcp — see GOLDEN_AGENT_PLAYBOOK.md",
+  "baseUrl": "http://127.0.0.1:8787/mcp",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-ironcannon-tier": "pro",
+    "x-ironcannon-client": "cursor-dev"
+  },
+  "sequence": [
+    {
+      "step": "initialize",
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 0,
+        "method": "initialize",
+        "params": {}
+      }
+    },
+    {
+      "step": "tools/list",
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "tools/list",
+        "params": {}
+      }
+    },
+    {
+      "step": "T01 analyze_project_stack",
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "tools/call",
+        "params": {
+          "name": "analyze_project_stack",
+          "arguments": { "fixtureId": "SD-01" }
+        }
+      }
+    },
+    {
+      "step": "T02 validate_stack_completeness",
+      "note": "Pass stack object from T01 result",
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "tools/call",
+        "params": {
+          "name": "validate_stack_completeness",
+          "arguments": { "stack": { "supported": true, "missingConfig": [], "conflicts": [] } }
+        }
+      }
+    },
+    {
+      "step": "T03 generate_system_wiremap",
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "method": "tools/call",
+        "params": {
+          "name": "generate_system_wiremap",
+          "arguments": { "flowIds": ["auth-lifecycle", "billing-subscription"] }
+        }
+      },
+      "saveFromResult": ["wiremapAttestation", "wiremaps[0].moduleIds"]
+    },
+    {
+      "step": "T04 get_module_directives",
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "method": "tools/call",
+        "params": {
+          "name": "get_module_directives",
+          "arguments": {
+            "moduleId": "M01-auth-d1-schema",
+            "wiremapAttestation": "<paste from T03>",
+            "completedModules": []
+          }
+        }
+      }
+    },
+    {
+      "step": "T05 verify_module_compliance",
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "method": "tools/call",
+        "params": {
+          "name": "verify_module_compliance",
+          "arguments": {
+            "moduleId": "M01-auth-d1-schema",
+            "wiremapAttestation": "<paste from T03>",
+            "snippet": "<optional source excerpt>"
+          }
+        }
+      }
+    },
+    {
+      "step": "T10 infrastructure (Armor tier)",
+      "headers": { "x-ironcannon-tier": "armor" },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 10,
+        "method": "tools/call",
+        "params": {
+          "name": "get_security_directives",
+          "arguments": {
+            "domainId": "INFRA-STRESS",
+            "expectedUsers": 1000000
+          }
+        }
+      }
+    },
+    {
+      "step": "T11 audit_production_readiness (Armor)",
+      "headers": { "x-ironcannon-tier": "armor" },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "tools/call",
+        "params": {
+          "name": "audit_production_readiness",
+          "arguments": {
+            "wiremapAttestation": "<paste from T03>",
+            "wiremapContext": {
+              "completedModules": ["M01-auth-d1-schema", "M12-stripe-webhook", "A02-session-hardening-pass", "A03-webhook-hardening-pass"]
+            },
+            "confirmedChecklistIds": ["cache-rules-explicit", "per-ip-limits", "rps-budget", "baseline-load-test"]
+          }
+        }
+      }
+    },
+    {
+      "step": "T12 map_compliance_obligations (IronClad)",
+      "headers": { "x-ironcannon-tier": "ironclad" },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "tools/call",
+        "params": {
+          "name": "map_compliance_obligations",
+          "arguments": { "primaryMarkets": ["us", "eu"] }
+        }
+      }
+    },
+    {
+      "step": "T13 obligation (IronClad tier)",
+      "headers": { "x-ironcannon-tier": "ironclad" },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 13,
+        "method": "tools/call",
+        "params": {
+          "name": "get_compliance_directives",
+          "arguments": {
+            "obligationId": "LEG-A11Y-001",
+            "snippet": "<img alt=\"logo\" />"
+          }
+        }
+      }
+    },
+    {
+      "step": "T14 audit_legal_readiness (IronClad)",
+      "headers": { "x-ironcannon-tier": "ironclad" },
+      "body": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "tools/call",
+        "params": {
+          "name": "audit_legal_readiness",
+          "arguments": {
+            "primaryMarkets": ["us"],
+            "confirmedObligationIds": ["LEG-A11Y-001", "LEG-A11Y-002"]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-security",
+  "sourceUrl": "https://resend.com/docs/security.md",
+  "lastVerified": "2026-06-03",
+  "title": "Security",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Security > An overview of Resend security features and practices. ## Governance Resend establishes policies and controls, monitors compliance with those controls, and proves the security and compliance to third-party auditors. Our policies are based on the following **foundational principles**: Access should be limited to only those with a legitimate business needs, based on the principle of least privilege. Security controls should be applied consistently across all areas of the enterprise. Security controls should be implemented and layered according to the principle of defense-in-depth.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

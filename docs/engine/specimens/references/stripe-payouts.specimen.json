@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payouts",
+  "sourceUrl": "https://docs.stripe.com/payouts.md",
+  "lastVerified": "2026-06-03",
+  "title": "Receive payouts",
+  "excerpt": "Set up your bank account to receive payouts. You receive funds when Stripe (or your platform) makes payouts to your bank account. Payout availability varies depending on your industry and country of operation. When you start processing live payments, Stripe typically schedules your initial payout for 7-14 days after you successfully receive your first payment. Your first payout might take longer, depending on your industry risk level and country of operation. Subsequent payouts follow your account’s [payout schedule](https://docs.stripe.com/payouts.md#payout-schedule). You can see a comprehensive list of your payouts and the expected dates of deposit into your bank account in the [Dashboard](https://dashboard.stripe.com/test/payouts).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

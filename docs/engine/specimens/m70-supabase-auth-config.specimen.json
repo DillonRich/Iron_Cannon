@@ -1,0 +1,42 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/supabase/auth-config",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "moduleId": "M70-supabase-auth-config",
+  "adapterId": "supabase",
+  "section": "supabase-auth-config",
+  "content": {
+    "requirement": "Browser client uses anon key only; service role server-side; RLS enabled on auth tables"
+  },
+  "references": ["supabase/auth-helpers-nextjs", "supabase/database-row-level-security"],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "SUPA-CFG-001",
+        "type": "required_string",
+        "value": "NEXT_PUBLIC_SUPABASE_URL",
+        "fileGlob": "**/.env*",
+        "tier": "pro"
+      },
+      {
+        "id": "SUPA-CFG-002",
+        "type": "required_string",
+        "value": "row level security",
+        "fileGlob": "**/*.{sql,ts,tsx}",
+        "tier": "pro"
+      }
+    ],
+    "forbidden": [
+      {
+        "id": "SUPA-CFG-F01",
+        "type": "forbidden_string",
+        "value": "SUPABASE_SERVICE_ROLE_KEY",
+        "fileGlob": "**/*client*.{ts,tsx}",
+        "tier": "pro"
+      }
+    ]
+  },
+  "metadata": { "minTier": "pro", "category": "supabase-auth" }
+}

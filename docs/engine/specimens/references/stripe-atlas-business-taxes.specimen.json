@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/atlas-business-taxes",
+  "sourceUrl": "https://docs.stripe.com/atlas/business-taxes.md",
+  "lastVerified": "2026-06-03",
+  "title": "Business taxes",
+  "excerpt": "Business tax basics for startup founders. > Stripe Atlas doesn’t provide tax or legal accounting advice. Consult tax and legal professionals for advice on how to meet ongoing legal, tax, and accounting obligations that apply to you and your company. Companies formed in Delaware are subject to yearly tax obligations, including: - US federal and state corporate income tax as applicable. - Delaware franchise tax (for C corporations) or annual LLC tax (for Limited Liability Companies). - An annual tax if your company also operates in other US states.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

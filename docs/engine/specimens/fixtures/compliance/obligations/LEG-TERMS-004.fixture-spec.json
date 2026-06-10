@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-TERMS-004",
+  "obligationId": "LEG-TERMS-004",
+  "detectType": "ui_pattern",
+  "detect": {
+    "type": "ui_pattern",
+    "pattern": "terms checkbox default unchecked"
+  },
+  "passSnippet": "/* terms checkbox default unchecked */",
+  "failSnippet": "defaultChecked={true}",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-taxes-account-tax-ids",
+  "sourceUrl": "https://docs.stripe.com/invoicing/taxes/account-tax-ids.md",
+  "lastVerified": "2026-06-03",
+  "title": "Account tax IDs",
+  "excerpt": "Store and render your tax IDs with Stripe Invoicing. Need another tax ID type? Request additional tax ID types by emailing [Stripe support](https://support.stripe.com/contact?subject=Request). Displaying your tax IDs on *invoice* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice) documents is a common regulatory requirement. With Stripe, you can add up to 25 tax IDs to your account. Both the account and [customer tax IDs](https://docs.stripe.com/invoicing/customer/tax-ids.md) display in the header of invoice and credit note PDFs.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-development-testing-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/development-testing/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Development & testing",
+  "excerpt": "description: Develop and test your Workers locally. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. You can build, run, and test your Worker code on your own local machine before deploying it to Cloudflare's network. This is made possible through [Miniflare](https://developers.cloudflare.com/workers/testing/miniflare/), a simulator that executes your Worker code using the same runtime used in production, [workerd ↗](https://github.com/cloudflare/workerd).…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

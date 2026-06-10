@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-afterpay-clearpay",
+  "sourceUrl": "https://docs.stripe.com/payments/afterpay-clearpay.md",
+  "lastVerified": "2026-06-03",
+  "title": "Afterpay and Clearpay payments",
+  "excerpt": "Offer your customers flexible financing while getting paid upfront with Afterpay (also known as Clearpay in the UK). > Afterpay has rebranded to Cash App Afterpay in the US. This update gives your business access to Cash App users without requiring any changes, unless you have custom Afterpay components. For more information about the change, see the [Cash App Afterpay support page](https://support.stripe.com/questions/afterpay-is-now-branded-as-cash-app-afterpay-in-the-us). Afterpay is a global payment method that allows your customers to split purchases into 4 interest-free installments, or longer term interest-bearing monthly installments (US only).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

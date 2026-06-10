@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/key-management",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Key management",
+  "excerpt": "Secrets via Cloudflare Workers secrets / wrangler secret put. Rotate webhook signing secrets on compromise. Separate dev/staging/prod keys. Never log secrets or include in client bundles.",
+  "appliesTo": ["cloudflare/workers-secrets", "layer3"],
+  "tags": ["owasp", "secrets", "keys"]
+}

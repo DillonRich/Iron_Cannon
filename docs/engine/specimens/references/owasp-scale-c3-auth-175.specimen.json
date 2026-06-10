@@ -1,0 +1,13 @@
+{
+  "refId": "owasp/scale-c3-auth-175",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/owasp/scale-c3-auth-175",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-C3 auth 175",
+  "excerpt": "Password storage: Argon2id or bcrypt with per-user salt. Planning reference for compose agents and obligation cross-links (EM-3).",
+  "tags": [
+    "owasp",
+    "auth",
+    "scale-c3"
+  ],
+  "embeddingHint": "owasp auth Password storage: Argon2id or bcrypt with per-user salt compliance security legal stripe resend owasp"
+}

@@ -1,0 +1,36 @@
+name = "iron-cannon-mcp"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+IRON_CANNON_DOMAIN = "ironcannon.ai"
+RULESET_VERSION = "2026.06.04"
+
+# --- MANUAL: uncomment after Cloudflare zone exists ---
+# routes = [{ pattern = "api.ironcannon.ai/*", zone_name = "ironcannon.ai" }]
+
+# --- MANUAL: KV session attestation (optional, multi-instance) ---
+# [[kv_namespaces]]
+# binding = "SESSION_KV"
+# id = "<namespace-id>"
+
+# --- MANUAL: KV rate limits (optional, multi-instance) ---
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT_KV"
+# id = "<namespace-id>"
+
+# --- MANUAL: Platform D1 (see docs/engine/PLATFORM_D1_SETUP.md) ---
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "iron-cannon-platform"
+# database_id = "<database-id>"
+
+# Flush deferred usage_events to D1 every 5 minutes when DB is bound
+[triggers]
+crons = ["*/5 * * * *"]
+
+# --- MANUAL: Vectorize (see MANUAL_SETUP_BLOCKERS.md §2) ---
+# [[vectorize]]
+# binding = "VECTORIZE"
+# index_name = "iron-cannon-corpus"

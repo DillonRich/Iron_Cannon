@@ -1,0 +1,9 @@
+{
+  "refId": "nextjs/cookies-headers",
+  "sourceUrl": "https://nextjs.org/docs/app/api-reference/functions/cookies",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js cookies() API",
+  "excerpt": "cookies().set(name, value, { httpOnly, secure, sameSite, maxAge }) in Server Actions and Route Handlers. Read session cookie server-side only. Do not set session tokens from client JavaScript.",
+  "appliesTo": ["auth-lifecycle", "owasp/session-httponly-secure"],
+  "tags": ["nextjs", "cookies", "session"]
+}

@@ -1,0 +1,9 @@
+{
+  "fixtureId": "V02-L4-005",
+  "obligationId": "LEG-EMAIL-005",
+  "detectType": "verified_sender_domain",
+  "passSnippet": "{ \"resend\": { \"verifiedDomain\": \"mail.example.com\" }, \"from\": \"noreply@mail.example.com\" }",
+  "failSnippet": "{ \"from\": \"noreply@gmail.com\" }",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

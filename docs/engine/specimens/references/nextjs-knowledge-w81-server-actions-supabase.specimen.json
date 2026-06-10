@@ -1,0 +1,15 @@
+{
+  "refId": "nextjs/knowledge-w81-server-actions-supabase",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w81/server-actions-supabase",
+  "lastVerified": "2026-06-06",
+  "title": "W81 server-actions-supabase",
+  "provider": "nextjs",
+  "excerpt": "Server Actions use createServerClient with cookie store — not browser client",
+  "embeddingHint": "nextjs server-actions-supabase wave81 svc-002-exit",
+  "tags": [
+    "wave81",
+    "knowledge",
+    "nextjs",
+    "svc-002-exit"
+  ]
+}

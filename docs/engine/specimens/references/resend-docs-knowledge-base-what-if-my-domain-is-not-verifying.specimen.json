@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-what-if-my-domain-is-not-verifying",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/what-if-my-domain-is-not-verifying.md",
+  "lastVerified": "2026-06-03",
+  "title": "What if my domain is not verifying?",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # What if my domain is not verifying? > Learn what steps to take when your domain doesn't seem to be verifying. Verifying a domain involves a few steps: 1. Add your domain to Resend 2. Copy the required DNS records from Resend 3. Add these records to your DNS provider 4. Wait for verification to complete When this process is completed correctly, your domain will often verify within 15 minutes of adding the DNS records. What should you do if your domain isn't verifying? If you are having any conflict issues with the `MX` records, [check out this guide](/knowledge-base/how-do-i-avoid-conflicting-with-my-mx-records).…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-forwarding-third-party-processors",
+  "sourceUrl": "https://docs.stripe.com/payments/forwarding-third-party-processors.md",
+  "lastVerified": "2026-06-03",
+  "title": "Use Payment Element across multiple processors",
+  "excerpt": "Learn how to collect card details with Payment Element and use them with a third-party processor. Use [Payment Element](https://docs.stripe.com/payments/payment-element.md) to build a custom payment flow that allows you to collect card details, create a [PaymentMethod](https://docs.stripe.com/api/payment_methods.md), and [forward](https://docs.stripe.com/api/forwarding/request.md) the payment method to a third-party processor.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

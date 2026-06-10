@@ -1,0 +1,14 @@
+{
+  "refId": "legal/dsar-public-form",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/legal-dsar-public-form",
+  "lastVerified": "2026-06-04",
+  "title": "DSAR intake form accessible without login",
+  "provider": "legal",
+  "excerpt": "LEG-W53-019: DSAR intake form accessible without login",
+  "embeddingHint": "LEG-W53-019 privacy route_exists",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

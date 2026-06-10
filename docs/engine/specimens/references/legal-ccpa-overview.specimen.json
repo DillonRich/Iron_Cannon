@@ -1,0 +1,9 @@
+{
+  "refId": "legal/ccpa-overview",
+  "sourceUrl": "https://oag.ca.gov/privacy/ccpa",
+  "lastVerified": "2026-05-31",
+  "title": "CCPA overview (California)",
+  "excerpt": "California consumers may have rights to know, delete, and opt out of sale/share of personal information. Web-detectable patterns: privacy policy, do-not-sell link when selling data, self-service deletion. Iron Cannon detects patterns only—not legal compliance verdict.",
+  "appliesTo": ["layer4", "privacy"],
+  "tags": ["legal", "ccpa", "us-ca"]
+}

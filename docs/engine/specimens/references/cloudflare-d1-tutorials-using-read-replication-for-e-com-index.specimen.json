@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/d1-tutorials-using-read-replication-for-e-com-index",
+  "sourceUrl": "https://developers.cloudflare.com/d1/tutorials/using-read-replication-for-e-com/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Using D1 Read Replication for your e-commerce website",
+  "excerpt": "title: Using D1 Read Replication for your e-commerce website description: D1 Read Replication is a feature that allows you to replicate your D1 database to multiple regions. This is useful for your e-commerce website, as it reduces read latencies and improves read throughput. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/d1/llms.txt > Use this file to discover all available pages before exploring further. [D1 Read Replication](https://developers.cloudflare.com/d1/best-practices/read-replication/) is a feature that allows you to replicate your D1 database to multiple regions. This is useful for your e-commerce website, as it reduces read latencies and improves read throughput.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

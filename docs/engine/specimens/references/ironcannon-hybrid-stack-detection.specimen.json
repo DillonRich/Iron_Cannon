@@ -1,0 +1,10 @@
+{
+  "refId": "ironcannon/hybrid-stack-detection",
+  "sourceUrl": "https://ironcannon.dev/patterns/hybrid-stack-detection",
+  "lastVerified": "2026-05-31",
+  "title": "IC hybrid stack detection",
+  "excerpt": "T01 flags vercel.json + wrangler.toml, external API + Pages-only, firebase primary. T02 returns STACK_UNSUPPORTED or HYBRID_STACK_DETECTED warning.",
+  "appliesTo": ["T01", "T02", "stack-detection-fixtures"],
+  "tags": ["ironcannon", "pattern", "discovery"],
+  "authorship": "iron-cannon-pattern"
+}

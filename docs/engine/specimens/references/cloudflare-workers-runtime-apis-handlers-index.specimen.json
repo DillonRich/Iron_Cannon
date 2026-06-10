@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-runtime-apis-handlers-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/runtime-apis/handlers/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Handlers",
+  "excerpt": "description: Methods, such as `fetch()`, on Workers that can receive and process external inputs. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Handlers are methods on Workers that can receive and process external inputs, and can be invoked from outside your Worker. For example, the `fetch()` handler receives an HTTP request, and can return a response: The following handlers are available within Workers:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

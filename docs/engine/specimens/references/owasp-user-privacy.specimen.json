@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/user-privacy",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/User_Privacy_Protection_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP User privacy protection",
+  "excerpt": "Minimize PII collection, define retention, support deletion and export flows. Anonymize rather than hard-delete where audit required. Align with account-deletion and data-export Iron Cannon flows for GDPR-style rights.",
+  "appliesTo": ["layer4", "account-deletion", "privacy"],
+  "tags": ["owasp", "privacy"]
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-cookie-008",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-cookie-008",
+  "content": {
+    "requirement": "Consent withdrawal as easy as grant",
+    "obligations": [
+      "LEG-COOKIE-008"
+    ],
+    "compareSteps": [
+      "Run detect.type=ui_pattern",
+      "Map result to obligation LEG-COOKIE-008",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-COOKIE-008: Consent withdrawal as easy as grant"
+  },
+  "references": [
+    "legal/gdpr-consent-withdraw"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-COOKIE-008",
+        "type": "ui_pattern",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "cookies",
+    "disclaimerRequired": true
+  }
+}

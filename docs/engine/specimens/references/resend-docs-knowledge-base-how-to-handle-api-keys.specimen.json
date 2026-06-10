@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-how-to-handle-api-keys",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/how-to-handle-api-keys.md",
+  "lastVerified": "2026-06-03",
+  "title": "How to Handle API Keys",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # How to Handle API Keys > Learn our suggested practices for handling API keys. For more help creating, deleting, and managing API keys, see the [API Keys documentation](/dashboard/api-keys/introduction). ## Best Practices It's crucial you handle your API keys securely. Do not share your API key with others or expose it in the browser or other client-side code. Here are some general guidelines: * Store API keys in environment variables. * Never commit API keys to version control. * Never hard-code API keys in your code or share them publicly. * Rotate API keys regularly.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

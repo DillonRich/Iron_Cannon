@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/chargeback-handling",
+  "sourceUrl": "https://docs.stripe.com/disputes",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe disputes",
+  "excerpt": "Dispute webhooks and evidence submission for SaaS billing.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "stripe",
+    "chargeback-handling"
+  ]
+}

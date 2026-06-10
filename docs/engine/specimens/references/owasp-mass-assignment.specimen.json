@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/mass-assignment",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Mass_Assignment_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Mass assignment",
+  "excerpt": "Allowlist fields on update DTOs—never spread req.body into DB update. Explicitly reject isAdmin, role, subscriptionTier from client input. Use schema validation at API boundary.",
+  "appliesTo": ["layer3", "input-validation"],
+  "tags": ["owasp", "api", "authorization"]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-eftpos-australia",
+  "sourceUrl": "https://docs.stripe.com/payments/eftpos-australia.md",
+  "lastVerified": "2026-06-03",
+  "title": "eftpos Australia",
+  "excerpt": "Learn about eftpos Australia, a common payment method in Australia. [Eftpos](https://www.eftposaustralia.com.au/) is Australia’s local debit card network. More than 90% of eftpos cards are co-branded with either Visa or Mastercard, meaning you can process these cards over either network supported by the card. Stripe processes co-branded eftpos cards over eftpos, plus either Visa or Mastercard, in accordance with [least cost routing requirements](https://support.stripe.com/questions/supporting-dual-network-debit-cards-in-australia) and depending on the [type of transaction](https://docs.stripe.com/payments/eftpos-australia.md#identify-which-network-a-payment-was-processed-on).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

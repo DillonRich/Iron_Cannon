@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-hosted-onboarding",
+  "sourceUrl": "https://docs.stripe.com/connect/hosted-onboarding.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe-hosted onboarding",
+  "excerpt": "Onboard connected accounts by redirecting them to a Stripe-hosted onboarding flow. Stripe-hosted onboarding handles the collection of business and identity verification information from connected accounts, requiring minimal effort by the platform. It’s a web form hosted by Stripe that renders dynamically based on the capabilities, country, and business type of each connected account. ![](https://b.stripecdn.com/docs-statics-srv/assets/hosted_onboarding_form.e59ba8300f563e43489953f06127f52c.png) The hosted onboarding form in the Stripe sample integration, [Furever](https://furever.dev/).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

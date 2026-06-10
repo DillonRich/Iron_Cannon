@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer1/billing-subscription/dashboard-ui",
+  "layer": 1,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "billing-subscription",
+  "moduleId": "M15-billing-dashboard-ui",
+  "adapterId": "nextjs-app-router",
+  "section": "dashboard-ui",
+  "content": {
+    "requirement": "Dashboard reflects subscription states B00–B06 with paywall and past_due banner",
+    "route": "/dashboard",
+    "uxRequirements": [
+      "B00: paywall CTA to /pricing",
+      "B02: provisioning overlay (coordinate M13)",
+      "B03: full access",
+      "B04: payment issue banner + portal link"
+    ]
+  },
+  "references": ["stripe/customer-portal", "nextjs/loading-error-ui"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "BILL-DH-001", "type": "required_file", "value": "dashboard", "fileGlob": "**/app/**", "tier": "pro" },
+      { "id": "BILL-DH-002", "type": "required_string", "value": "past_due", "fileGlob": "**/dashboard/**", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "billing-dashboard" }
+}

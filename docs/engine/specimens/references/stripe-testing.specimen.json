@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/testing",
+  "sourceUrl": "https://docs.stripe.com/testing.md",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe test mode and test cards",
+  "excerpt": "Use test API keys (sk_test_) and test webhook signing secret. Card 4242424242424242 succeeds; 4000000000000002 declines. Trigger events with Stripe CLI: stripe trigger checkout.session.completed. Never use live keys in development harness.",
+  "appliesTo": ["testHarness", "billing-subscription"],
+  "tags": ["stripe", "testing"]
+}

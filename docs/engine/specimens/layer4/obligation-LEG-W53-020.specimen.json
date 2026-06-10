@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w53-020",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Trial end email sent 3 days before charge",
+    "obligations": [
+      "LEG-W53-020"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Trial end email sent 3 days before charge"
+  },
+  "references": [
+    "legal/trial-end-notice"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W53-020",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "billing",
+    "disclaimerRequired": true
+  }
+}

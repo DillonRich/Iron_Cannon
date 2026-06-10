@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/email-can-spam/marketing-unsubscribe",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "email-lifecycle",
+  "adapterId": "resend",
+  "section": "marketing-unsubscribe",
+  "content": {
+    "requirement": "Marketing email templates must include functional unsubscribe mechanism",
+    "obligations": ["LEG-EMAIL-001", "LEG-EMAIL-003"],
+    "compareSteps": [
+      "Scan marketing template files for unsubscribe link or List-Unsubscribe header config",
+      "Flag transactional templates that include promotional CTAs (LEG-EMAIL-004 advisory)",
+      "Verify Resend send calls for marketing type include list-unsubscribe headers"
+    ],
+    "remediationDirective": "Add visible unsubscribe link in footer; configure List-Unsubscribe header via Resend API for marketing sends."
+  },
+  "references": ["legal/can-spam-unsubscribe", "legal/list-unsubscribe-rfc", "resend/list-unsubscribe"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "LEG-EMAIL-001", "type": "pattern", "patterns": ["unsubscribe", "opt-out"], "tier": "ironclad" }
+    ],
+    "advisory": [
+      { "id": "LEG-EMAIL-003", "type": "header", "name": "List-Unsubscribe", "tier": "ironclad" }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "email", "disclaimerRequired": true }
+}

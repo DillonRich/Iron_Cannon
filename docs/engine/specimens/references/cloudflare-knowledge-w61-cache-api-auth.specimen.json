@@ -1,0 +1,14 @@
+{
+  "refId": "cloudflare/knowledge-w61-cache-api-auth",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w61/cache-api-auth",
+  "lastVerified": "2026-06-06",
+  "title": "W61 cache-api-auth",
+  "provider": "cloudflare",
+  "excerpt": "Never cache authenticated API responses at CDN without private directive",
+  "embeddingHint": "cloudflare cache-api-auth wave61 knowledge",
+  "tags": [
+    "wave61",
+    "knowledge",
+    "cloudflare"
+  ]
+}

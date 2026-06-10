@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ironcannon.dev/schemas/remediation-steps/v1",
+  "type": "object",
+  "required": ["flowId", "diagnosis", "steps"],
+  "additionalProperties": true,
+  "properties": {
+    "flowId": { "type": "string" },
+    "matchedEdgeCaseId": { "type": "string" },
+    "diagnosis": { "type": "string" },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["order", "action", "verification"],
+        "properties": {
+          "order": { "type": "integer", "minimum": 1 },
+          "action": { "type": "string" },
+          "verification": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "relatedModules": { "type": "array", "items": { "type": "string" } },
+    "references": { "type": "array", "items": { "type": "string" } },
+    "agentGuidance": { "type": "object", "additionalProperties": true }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/checkout-subscription",
+  "sourceUrl": "https://docs.stripe.com/billing/quickstart.md",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe Checkout subscription mode",
+  "excerpt": "Create Checkout Session with mode=subscription and line_items referencing a Price ID. success_url and cancel_url required. Customer created or reused via customer_email or customer ID. Fulfill access only after webhook confirms payment—not on redirect alone.",
+  "appliesTo": ["billing-subscription", "SC-V01"],
+  "tags": ["stripe", "checkout", "subscription"]
+}

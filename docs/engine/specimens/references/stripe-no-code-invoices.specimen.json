@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/no-code-invoices",
+  "sourceUrl": "https://docs.stripe.com/no-code/invoices.md",
+  "lastVerified": "2026-06-03",
+  "title": "Use invoices",
+  "excerpt": "Send an invoice your customers can pay online. - **Compatible with:** Customer portal, Hosted Invoice Page - **Good for:** Professional services, e-commerce businesses, B2B businesses - **Pricing:** [Pay-as-you-go](https://stripe.com/pricing), [Stripe Billing pricing](https://stripe.com/billing/pricing) for recurring payments Automatically charge your customer’s payment method on file, or email them the *invoice* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice) with or without a link to a payment page. You can also send the invoice or payment page link manually.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

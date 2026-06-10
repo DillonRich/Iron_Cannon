@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-checkout-billing-cycle",
+  "sourceUrl": "https://docs.stripe.com/payments/checkout/billing-cycle.md",
+  "lastVerified": "2026-06-03",
+  "title": "Set the billing cycle date",
+  "excerpt": "Set a subscription's billing cycle anchor to a fixed date. This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [Full hosted page](https://docs.stripe.com/payments/checkout/billing-cycle.md?payment-ui=stripe-hosted) - [Full embedded page](https://docs.stripe.com/payments/checkout/billing-cycle.md?payment-ui=embedded-page)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

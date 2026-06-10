@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-why-are-my-emails-going-to-spam",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/why-are-my-emails-going-to-spam.md",
+  "lastVerified": "2026-06-03",
+  "title": "Why Are My Emails Going to Spam?",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Why Are My Emails Going to Spam? > Troubleshoot and resolve emails landing in spam or being quarantined. # Why Are My Emails Going to Spam? If your emails are landing in spam or being quarantined, work through this checklist to identify and fix the issue. ## 1. Check your authentication records Make sure your domain has all three authentication records properly configured: * **SPF**: Automatically set up when you verify your domain with Resend. Verify it is still present with [dns.email](https://dns.email). * **DKIM**: Also set up during domain verification. Confirm with [dns.email](https://dns.email).…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

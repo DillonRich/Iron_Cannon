@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-framework-guides-automatic-configuration-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/framework-guides/automatic-configuration/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Deploy an existing project",
+  "excerpt": "description: Learn how Wrangler automatically detects and configures your project for Cloudflare Workers. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Wrangler can automatically detect your framework and configure your project for Cloudflare Workers. This allows you to deploy existing projects with a single command, without manually setting up configuration files or installing adapters. Minimum required Wrangler version: **4.68.0**. Check your version by running `wrangler --version`.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

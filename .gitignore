@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+
+# Local / IDE
+.cursor/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
+
+# Cloudflare Worker dev artifacts
+.wrangler/
+apps/mcp-worker/.wrangler/
+apps/mcp-worker/rules/
+dist/
+.wrangler/
+
+# Generated at build time (run: npm run build:worker-bundle)
+packages/mcp-core/src/generated/
+
+# Harvest pipeline (internal corpus tooling)
+harvest-data/
+
+# Internal documentation — portfolio ships root README + SECURITY only
+**/*.md
+!/README.md
+!/SECURITY.md
+
+# Dogfood / session artifacts (local only)
+docs/engine/sessions/
+docs/engine/templates/
+.iron_cannon/

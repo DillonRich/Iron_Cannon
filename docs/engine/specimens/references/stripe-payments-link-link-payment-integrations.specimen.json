@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-link-link-payment-integrations",
+  "sourceUrl": "https://docs.stripe.com/payments/link/link-payment-integrations.md",
+  "lastVerified": "2026-06-03",
+  "title": "Link in different payment integrations",
+  "excerpt": "Use Link with dynamic payment methods and other integrations. To use Link, you must enable it under **Wallets** in your [payment method settings](https://dashboard.stripe.com/settings/payment_methods) and integrate it appropriately for your use case. After you’ve enabled and integrated it, Stripe automatically displays Link to your customers for eligible transactions. All Link transactions confirm immediately, and successful payments settle to your Stripe balance on the same timeline as card payments, regardless of the payment method that funds the payment. - [As a payment method](https://docs.stripe.com/payments/link/link-payment-integrations.md?link-integrations=link-payment-method): Recommended.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

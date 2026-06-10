@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-W53-009",
+  "obligationId": "LEG-W53-009",
+  "detectType": "required_attribute",
+  "detect": {
+    "type": "required_attribute",
+    "attr": "className",
+    "value": "focus-visible"
+  },
+  "passSnippet": "className=focus-visible",
+  "failSnippet": "className=none",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

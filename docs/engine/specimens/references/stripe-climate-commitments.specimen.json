@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/climate-commitments",
+  "sourceUrl": "https://docs.stripe.com/climate/commitments.md",
+  "lastVerified": "2026-06-03",
+  "title": "Climate Commitments",
+  "excerpt": "Direct a fraction of your revenue to help advance carbon removal. Help emerging permanent carbon removal technologies scale by allocating a fraction of your revenue to Climate Commitments in the [Dashboard](https://dashboard.stripe.com/setup/climate/activate). Stripe puts these contributions toward projects that remove carbon dioxide (CO2) from the atmosphere to help those projects scale. We select [various projects with the help of scientific expert reviewers](https://stripe.com/climate) and use a [transparent application process](https://github.com/stripe/negative-emissions-source-materials). Following the common pattern of a portfolio approach, some projects might deliver results, and others might fail.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

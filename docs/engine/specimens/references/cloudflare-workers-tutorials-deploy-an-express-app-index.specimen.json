@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-tutorials-deploy-an-express-app-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/tutorials/deploy-an-express-app/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Deploy an Express.js application on Cloudflare Workers",
+  "excerpt": "title: Deploy an Express.js application on Cloudflare Workers description: Learn how to deploy an Express.js application on Cloudflare Workers. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. In this tutorial, you will learn how to deploy an [Express.js ↗](https://expressjs.com/) application on Cloudflare Workers using the [Cloudflare Workers platform](https://developers.cloudflare.com/workers/) and [D1 database](https://developers.cloudflare.com/d1/). You will build a Members Registry API with basic Create, Read, Update, and Delete (CRUD) operations.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

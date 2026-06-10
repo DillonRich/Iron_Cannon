@@ -1,0 +1,16 @@
+{
+  "fixtureId": "M80",
+  "moduleId": "M80-tauri-app-config",
+  "patternsUnderTest": [
+    "TAURI-CFG-001",
+    "TAURI-CFG-002",
+    "TAURI-P49-"
+  ],
+  "passSnippet": "{\n  \"productName\": \"Guardian\",\n  \"identifier\": \"com.example.guardian\",\n  \"app\": { \"security\": { \"csp\": \"default-src 'self'\" } }\n}",
+  "failSnippet": "{ \"productName\": \"Guardian\" }",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "TAURI-CFG-002"
+  ]
+}

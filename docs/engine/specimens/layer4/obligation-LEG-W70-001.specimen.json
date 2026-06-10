@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w70-001",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Usage telemetry flushed on session boundary",
+    "obligations": [
+      "LEG-W70-001"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Usage telemetry flushed on session boundary"
+  },
+  "references": [
+    "ironcannon/knowledge-w70-usage-telemetry-flush"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W70-001",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

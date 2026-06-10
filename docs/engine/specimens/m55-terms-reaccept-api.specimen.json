@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/terms-reaccept/api",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "terms-reaccept",
+  "moduleId": "M55-terms-reaccept-api",
+  "adapterId": "cloudflare-workers",
+  "section": "terms-reaccept-api",
+  "content": {
+    "requirement": "Re-accept terms when CURRENT_TERMS_VERSION bumps",
+    "routes": [{ "method": "POST", "path": "/api/legal/reaccept-terms" }]
+  },
+  "references": ["legal/tos-acceptance-record"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "TR-API-001", "type": "required_string", "value": "reaccept-terms", "fileGlob": "**/*.{ts,js}", "tier": "pro" },
+      { "id": "TR-API-002", "type": "required_string", "value": "terms_version", "fileGlob": "**/*.{ts,js,sql}", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "terms-reaccept" }
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-payment-methods-create",
+  "sourceUrl": "https://docs.stripe.com/api/payment_methods/create.md",
+  "lastVerified": "2026-06-03",
+  "title": "Create a PaymentMethod",
+  "excerpt": "Creates a PaymentMethod object. Read the [Stripe.js reference](https://docs.stripe.com/docs/stripe-js/reference.md#stripe-create-payment-method) to learn how to create PaymentMethods via Stripe.js. Instead of creating a PaymentMethod directly, we recommend using the [PaymentIntents](https://docs.stripe.com/docs/payments/accept-a-payment.md) API to accept a payment immediately or the [SetupIntent](https://docs.stripe.com/docs/payments/save-and-reuse.md) API to collect payment method details ahead of a future payment. The type of the PaymentMethod. An additional hash is included on the PaymentMethod with a name matching this value. It contains additional information specific to the PaymentMethod type.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

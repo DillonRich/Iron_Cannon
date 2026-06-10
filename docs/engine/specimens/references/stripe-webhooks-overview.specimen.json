@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/webhooks-overview",
+  "sourceUrl": "https://docs.stripe.com/webhooks.md",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe webhooks overview",
+  "excerpt": "Register an HTTPS endpoint to receive Stripe events. Return 2xx quickly after processing. Use separate endpoints per environment. Stripe retries failed deliveries with exponential backoff. Verify signatures before handling payload.",
+  "appliesTo": ["webhook-idempotency", "billing-subscription", "M12-stripe-webhook"],
+  "tags": ["stripe", "webhook"]
+}

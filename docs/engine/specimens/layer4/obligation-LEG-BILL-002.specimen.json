@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-bill-002",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Invoice history accessible to subscriber",
+    "obligations": [
+      "LEG-BILL-002"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Invoice history accessible to subscriber"
+  },
+  "references": [
+    "stripe/api-invoices"
+  ],
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "billing",
+    "disclaimerRequired": true
+  },
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-BILL-002",
+        "type": "ui_pattern",
+        "tier": "ironclad"
+      }
+    ]
+  }
+}

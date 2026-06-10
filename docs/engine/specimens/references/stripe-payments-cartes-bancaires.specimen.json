@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-cartes-bancaires",
+  "sourceUrl": "https://docs.stripe.com/payments/cartes-bancaires.md",
+  "lastVerified": "2026-06-03",
+  "title": "Cartes Bancaires (CB)",
+  "excerpt": "Learn about Cartes Bancaires, a common payment method in France. Cartes Bancaires is France’s local card network. More than 95% of these cards are co-badged with either Visa or Mastercard, meaning you can process these cards over either Cartes Bancaires or the Visa or Mastercard networks. Businesses processing co-badged cards in the EEA must provide customers a choice of which network they prefer at checkout. Learn more in our [guide for co-badged cards compliance](https://docs.stripe.com/co-badged-cards-compliance.md). Cartes Bancaires can have a positive effect on your acceptance rate in France.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

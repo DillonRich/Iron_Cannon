@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w67-004",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Workers secrets loaded from bindings not wrangler.toml plaintext",
+    "obligations": [
+      "LEG-W67-004"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Workers secrets loaded from bindings not wrangler.toml plaintext"
+  },
+  "references": [
+    "cloudflare/workers-secrets"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W67-004",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

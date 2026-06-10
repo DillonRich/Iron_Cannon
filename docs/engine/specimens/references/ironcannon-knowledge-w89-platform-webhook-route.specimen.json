@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w89-platform-webhook-route",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w89/platform-webhook-route",
+  "lastVerified": "2026-06-06",
+  "title": "W89 platform-webhook-route",
+  "provider": "ironcannon",
+  "excerpt": "apps/mcp-worker POST /webhooks/stripe delegates to mcp-core",
+  "embeddingHint": "ironcannon platform-webhook-route wave89 stripe-prep-g44",
+  "tags": [
+    "wave89",
+    "knowledge",
+    "ironcannon",
+    "stripe-prep-g44"
+  ]
+}

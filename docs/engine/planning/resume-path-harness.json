@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "minPassRate": 1.0,
+  "paths": [
+    { "id": "R01", "trigger": { "mode": "FRESH", "stateLogExists": false }, "expect": "OK_FULL_PATH" },
+    { "id": "R02", "trigger": { "mode": "CONTINUE_BUILD", "stateLogExists": true, "cleanDiff": true }, "expect": "OK_RESUME_MODULE" },
+    { "id": "R03", "trigger": { "mode": "SECURITY_ONLY", "tier": "armor", "attestation": true }, "expect": "OK_RESUME_MODULE" },
+    { "id": "R04", "trigger": { "mode": "SECURITY_ONLY", "tier": "pro" }, "expect": "TIER_INSUFFICIENT" },
+    { "id": "R05", "trigger": { "mode": "COMPLIANCE_ONLY", "tier": "iron_clad" }, "expect": "OK_COMPLIANCE_ONLY" },
+    { "id": "R06", "trigger": { "mode": "COMPLIANCE_ONLY", "tier": "armor" }, "expect": "TIER_INSUFFICIENT" },
+    { "id": "R07", "trigger": { "stackDrift": true }, "expect": "RESUME_DRIFT_DETECTED" },
+    { "id": "R08", "trigger": { "stateLogCorrupt": true }, "expect": "RESUME_STATE_LOG_CORRUPT" },
+    { "id": "R09", "trigger": { "moduleCompleteWithoutVerify": true }, "expect": "RESUME_MODULE_GAP" },
+    { "id": "R10", "trigger": { "sessionAgeDays": 120 }, "expect": "RESUME_STALE_RULESET" },
+    { "id": "R11", "trigger": { "mode": "IRON_CLAD_FULL_AUDIT", "tier": "iron_clad" }, "expect": "OK_IRON_CLAD_AUDIT" },
+    { "id": "R12", "trigger": { "cloneWithStateLog": true }, "expect": "OK_RESUME_MENU" },
+    { "id": "R13", "trigger": { "sessionMissing": true, "stateLogExists": true }, "expect": "OK_REBUILD_SESSION" },
+    { "id": "R14", "trigger": { "tierDowngrade": true }, "expect": "OK_L4_BLOCKED" },
+    { "id": "R15", "trigger": { "phaseJump": true, "attestation": false }, "expect": "RESUME_ATTESTATION_REQUIRED" }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-sources-object",
+  "sourceUrl": "https://docs.stripe.com/api/sources/object.md",
+  "lastVerified": "2026-06-03",
+  "title": "Sources API",
+  "excerpt": "String representing the object’s type. Objects of the same type share the same value. This field indicates whether this payment method can be shown again to its customer in a checkout flow. Stripe products such as Checkout and Elements use this field to determine whether a payment method can be shown as a saved payment method in a checkout flow. The field defaults to “unspecified”. Use `always` to indicate that this payment method can always be shown to a customer in a checkout flow. Use `limited` to indicate that this payment method can’t always be shown to a customer in a checkout flow. For example, it can only be shown in the context of a specific subscription. This is the default value for payment methods where `allow_redisplay` wasn’t set.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

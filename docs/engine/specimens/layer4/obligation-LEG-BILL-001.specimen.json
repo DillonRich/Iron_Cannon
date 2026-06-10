@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-bill-001",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Sales tax displayed when Stripe Tax enabled",
+    "obligations": [
+      "LEG-BILL-001"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Sales tax displayed when Stripe Tax enabled"
+  },
+  "references": [
+    "stripe/tax-collection"
+  ],
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "billing",
+    "disclaimerRequired": true
+  },
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-BILL-001",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  }
+}

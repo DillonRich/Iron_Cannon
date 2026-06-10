@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/idempotency",
+  "sourceUrl": "https://docs.stripe.com/api/idempotent_requests.md",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe API idempotency keys",
+  "excerpt": "Pass Idempotency-Key header on POST requests to safely retry without duplicate side effects. Keys expire after 24h. Use for checkout session creation and customer create. Distinct from webhook event idempotency—both required in billing flows.",
+  "appliesTo": ["billing-subscription", "webhook-idempotency"],
+  "tags": ["stripe", "idempotency", "api"]
+}

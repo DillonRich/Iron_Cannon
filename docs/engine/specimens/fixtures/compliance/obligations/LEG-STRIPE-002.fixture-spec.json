@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-STRIPE-002",
+  "obligationId": "LEG-STRIPE-002",
+  "detectType": "ui_pattern",
+  "detect": {
+    "type": "ui_pattern",
+    "pattern": "cancel subscription"
+  },
+  "passSnippet": "/* cancel subscription */",
+  "failSnippet": "defaultChecked={true}",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

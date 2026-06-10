@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/terminal-features-apps-on-devices-build",
+  "sourceUrl": "https://docs.stripe.com/terminal/features/apps-on-devices/build.md",
+  "lastVerified": "2026-06-03",
+  "title": "Build and test your app",
+  "excerpt": "Learn how to build and test your app using a DevKit. Access the Apps on Devices sample integration repository on [GitHub](https://github.com/stripe-samples/terminal-apps-on-devices). Use your SmartPOS DevKit device to test and iterate your application without going through the deployment, app review, or signing process. If you need a DevKit device, you can [order up to five per user](https://docs.stripe.com/terminal/fleet/order-and-return-readers.md) from the [Readers](https://dashboard.stripe.com/terminal) section in your Dashboard. > Verifone reader support is in public preview for the United States and Canada. Some verifone readers are in private preview for Ireland and the United Kingdom (V660p, UX700, P630) and for Singapore (V660p, P630).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

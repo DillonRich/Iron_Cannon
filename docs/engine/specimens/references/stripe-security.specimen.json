@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/security",
+  "sourceUrl": "https://docs.stripe.com/security.md",
+  "lastVerified": "2026-06-03",
+  "title": "Security at Stripe",
+  "excerpt": "Our users trust Stripe with their sensitive data and rely on us to be good custodians of their customers’ data as well. As a payments infrastructure company, our security posture continually evolves to meet the rigorous standards of the global financial industry. Stripe uses best-in-class security practices to maintain a high level of security. A PCI-certified auditor evaluated Stripe and certified us to [PCI Service Provider Level 1](https://usa.visa.com/splisting/splistinglearnmore.html). This is the most stringent level of certification available in the payments industry. This audit includes both Stripe’s Card Data Vault (CDV) and the secure software development of our integration code. We provide our users with features to automate some aspects of PCI compliance.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

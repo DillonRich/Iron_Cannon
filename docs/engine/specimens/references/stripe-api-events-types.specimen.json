@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-events-types",
+  "sourceUrl": "https://docs.stripe.com/api/events/types.md",
+  "lastVerified": "2026-06-03",
+  "title": "Types of events",
+  "excerpt": "This is a list of all public snapshot events we currently send for /v1 resources, which is continually evolving and expanding. Stripe events use the `resource.event` naming convention. Events that occur on subresources like `customer.subscription.updated` don’t trigger a corresponding event for the parent resource (`customer.updated`). Stripe creates event types marked as **Selection required** only when at least one [webhook](https://docs.stripe.com/webhooks.md) is listening for it. A webhook set to listen to all events doesn’t satisfy this requirement and won’t generate **Selection required** event types. Occurs whenever a user authorizes an application. Sent to the related application only. Occurs whenever a user deauthorizes an application. Sent to the related application only.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

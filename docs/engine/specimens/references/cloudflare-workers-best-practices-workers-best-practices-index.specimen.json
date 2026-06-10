@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-best-practices-workers-best-practices-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/best-practices/workers-best-practices/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Workers Best Practices",
+  "excerpt": "description: Code patterns and configuration guidance for building fast, reliable, observable, and secure Workers. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Best practices for Workers based on production patterns, Cloudflare's own internal usage, and common issues seen across the developer community. The [compatibility\\_date](https://developers.cloudflare.com/workers/configuration/compatibility-dates/) controls which runtime features and bug fixes are available to your Worker. Setting it to today's date on new projects ensures you get the latest behavior.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

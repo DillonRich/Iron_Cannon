@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w78-sd-06-wiremap",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w78/sd-06-wiremap",
+  "lastVerified": "2026-06-06",
+  "title": "W78 sd-06-wiremap",
+  "provider": "ironcannon",
+  "excerpt": "SD-06 wiremap prepends M60/M61 before golden M01–M16 core modules",
+  "embeddingHint": "ironcannon sd-06-wiremap wave78 svc-001-pages-harvest",
+  "tags": [
+    "wave78",
+    "knowledge",
+    "ironcannon",
+    "svc-001-pages-harvest"
+  ]
+}

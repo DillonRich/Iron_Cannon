@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-email-006",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "email-lifecycle",
+  "section": "leg-email-006",
+  "content": {
+    "requirement": "Bounce and complaint webhooks configured",
+    "obligations": [
+      "LEG-EMAIL-006"
+    ],
+    "compareSteps": [
+      "Run detect.type=config per COMPARE_DETECT_TYPES",
+      "Map result to obligation LEG-EMAIL-006 only",
+      "Attach legalDisclaimer on every T12–T14 response"
+    ],
+    "remediationDirective": "Remediate LEG-EMAIL-006: Bounce and complaint webhooks configured"
+  },
+  "references": [
+    "resend/webhooks"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-EMAIL-006",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "email",
+    "disclaimerRequired": true
+  }
+}

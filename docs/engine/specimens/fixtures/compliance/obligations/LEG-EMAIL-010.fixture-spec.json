@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-EMAIL-010",
+  "obligationId": "LEG-EMAIL-010",
+  "detectType": "route_exists",
+  "detect": {
+    "type": "route_exists",
+    "path": "/api/webhooks/resend"
+  },
+  "passSnippet": "export default function P(){return <main>/api/webhooks/resend</main>}",
+  "failSnippet": "<main>/missing-route</main>",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

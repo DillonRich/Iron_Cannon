@@ -1,0 +1,10 @@
+{
+  "refId": "legal/wcag-alt-text",
+  "sourceUrl": "https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html",
+  "lastVerified": "2026-05-31",
+  "title": "WCAG non-text content (alt text)",
+  "excerpt": "All non-text content presented to the user has a text alternative that serves the equivalent purpose. Images used for decoration use alt=\"\" or role=presentation. Functional images need descriptive alt text.",
+  "appliesTo": ["layer4/accessibility", "LEG-A11Y-001"],
+  "tags": ["legal", "wcag", "a11y"],
+  "disclaimerRef": "legal/disclaimer"
+}

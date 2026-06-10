@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer1/billing-race-shield/success-ui",
+  "layer": 1,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "billing-race-shield",
+  "moduleId": "M14-billing-success-ui",
+  "adapterId": "nextjs-app-router",
+  "section": "success-ui",
+  "content": {
+    "requirement": "Post-checkout success page sets provisioning KV and polls until B03",
+    "route": "/billing/success",
+    "uxRequirements": [
+      "Show provisioning spinner (B02) — not error",
+      "Poll subscription status or /api/me entitlement",
+      "router.refresh() on transition to B03"
+    ],
+    "uxFindingTemplate": {
+      "category": "billing_provisioning",
+      "systemRequirement": "User must see provisioning state until webhook completes — never blank error",
+      "designOwnership": "agent"
+    }
+  },
+  "references": ["nextjs/router-refresh", "nextjs/loading-error-ui", "stripe/checkout-success-page"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "BILL-UI-001", "type": "required_string", "value": "session_id", "fileGlob": "**/billing/success/**", "tier": "pro" },
+      { "id": "BILL-UI-002", "type": "required_string", "value": "provisioning", "fileGlob": "**/billing/**", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "billing-ui" }
+}

@@ -1,0 +1,14 @@
+{
+  "refId": "owasp/knowledge-w63-rag-poisoning",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w63/rag-poisoning",
+  "lastVerified": "2026-06-06",
+  "title": "W63 rag-poisoning",
+  "provider": "owasp",
+  "excerpt": "Validate retrieved corpus chunks before injecting into compose prompts",
+  "embeddingHint": "owasp rag-poisoning wave63 legal security",
+  "tags": [
+    "wave63",
+    "knowledge",
+    "owasp"
+  ]
+}

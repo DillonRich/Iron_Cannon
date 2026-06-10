@@ -1,0 +1,14 @@
+{
+  "refId": "owasp/knowledge-w64-logging-pci-redact",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w64/logging-pci-redact",
+  "lastVerified": "2026-06-06",
+  "title": "W64 logging-pci-redact",
+  "provider": "owasp",
+  "excerpt": "Redact PAN, CVV, and secrets from application logs per OWASP logging cheat sheet",
+  "embeddingHint": "owasp logging-pci-redact wave64 legal security",
+  "tags": [
+    "wave64",
+    "knowledge",
+    "owasp"
+  ]
+}

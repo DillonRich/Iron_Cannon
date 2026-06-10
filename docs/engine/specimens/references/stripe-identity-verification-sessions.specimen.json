@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/identity-verification-sessions",
+  "sourceUrl": "https://docs.stripe.com/identity/verification-sessions.md",
+  "lastVerified": "2026-06-03",
+  "title": "The Verification Sessions API",
+  "excerpt": "Learn more about the Verification Sessions API that powers Stripe Identity. Use the [Verification Session API](https://docs.stripe.com/api/identity/verification_sessions.md) to securely collect information and perform [verification checks](https://docs.stripe.com/identity/verification-checks.md). This API tracks a verification, from initial creation through the entire verification process, and shows verification results upon completion. For a step-by-step guide on using the Verification Session API to verify your users’ identity document, follow the related guide: [Verify your users’ identity documents](https://docs.stripe.com/identity/verify-identity-documents.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

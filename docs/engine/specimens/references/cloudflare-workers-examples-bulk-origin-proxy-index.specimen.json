@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-examples-bulk-origin-proxy-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/examples/bulk-origin-proxy/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Bulk origin override",
+  "excerpt": "description: Resolve requests to your domain to a set of proxy third-party origin URLs. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Resolve requests to your domain to a set of proxy third-party origin URLs. * An object with different URLs to fetch",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

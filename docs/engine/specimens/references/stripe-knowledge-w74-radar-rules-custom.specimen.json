@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/knowledge-w74-radar-rules-custom",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w74/radar-rules-custom",
+  "lastVerified": "2026-06-06",
+  "title": "W74 radar-rules-custom",
+  "provider": "stripe",
+  "excerpt": "Stripe Radar custom rules for high-risk patterns",
+  "embeddingHint": "stripe radar-rules-custom wave74 stripe-resend-depth",
+  "tags": [
+    "wave74",
+    "knowledge",
+    "stripe",
+    "stripe-resend-depth"
+  ]
+}

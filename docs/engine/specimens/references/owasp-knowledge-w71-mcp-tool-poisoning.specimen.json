@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/knowledge-w71-mcp-tool-poisoning",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w71/mcp-tool-poisoning",
+  "lastVerified": "2026-06-06",
+  "title": "W71 mcp-tool-poisoning",
+  "provider": "owasp",
+  "excerpt": "MCP tool descriptions cannot override system policy",
+  "embeddingHint": "owasp mcp-tool-poisoning wave71 production-mcp-bar",
+  "tags": [
+    "wave71",
+    "knowledge",
+    "owasp",
+    "production-mcp-bar"
+  ]
+}

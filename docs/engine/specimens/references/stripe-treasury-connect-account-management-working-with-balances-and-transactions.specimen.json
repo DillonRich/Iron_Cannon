@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-account-management-working-with-balances-and-transactions",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/account-management/working-with-balances-and-transactions.md",
+  "lastVerified": "2026-06-03",
+  "title": "Working with balances and transactions",
+  "excerpt": "Learn about financial account balances and the effect transactions have on them. [Financial accounts](https://docs.stripe.com/treasury/connect/account-management/financial-accounts.md) have their own balance separate from the balance of the account they’re attached to (platform account or connected account). `Balance` objects record the amount of funds in a financial account and their state of availability. `Transaction` and `TransactionEntry` objects debit or credit the funds in that balance. A financial account has a balance of funds. The sum total of the balance isn’t always available for spending, however, as it might include pending transactions into or out of the financial account.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

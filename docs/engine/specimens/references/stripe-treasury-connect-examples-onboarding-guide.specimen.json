@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-examples-onboarding-guide",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/examples/onboarding-guide.md",
+  "lastVerified": "2026-06-03",
+  "title": "Treasury for platforms connected account onboarding guide",
+  "excerpt": "Learn how to onboard your connected accounts. When a Connect platform uses Treasury for platforms to offer financial services to its connected accounts, the account onboarding process must consider fraud prevention and regulatory compliance. For example, financial services providers must employ Know Your Customer (KYC) and Know Your Business (KYB) client data collection and verification procedures. Use this guide to implement a Treasury for platforms onboarding process for your connected accounts. Before you launch your embedded finance capabilities, implement an onboarding flow that collects the [necessary KYC and KYB information from your connected accounts](https://docs.stripe.com/connect/identity-verification.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

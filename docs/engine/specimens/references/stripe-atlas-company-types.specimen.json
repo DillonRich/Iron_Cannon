@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/atlas-company-types",
+  "sourceUrl": "https://docs.stripe.com/atlas/company-types.md",
+  "lastVerified": "2026-06-03",
+  "title": "Company types",
+  "excerpt": "Form a C corporation or an LLC using Stripe Atlas. With Stripe Atlas, you can incorporate a Delaware C corporation (C corp), a Delaware Limited Liability Company (LLC), or a subsidiary (also a C corp). Each entity type is suited to different business needs. This guide outlines what you need to know about each entity. With Stripe Atlas, you can incorporate a new Delaware C corporation or a subsidiary of an existing corporation. Here are a few characteristics that are common to C corporations. - **Ownership**: Used to grant equity to employees, advisors, and investors. - **Capital** : Preferred by institutional investors who might be unable to invest in LLCs. - **Tax treatment**: Can typically use early startup losses to offset future taxes, subject to some limitations.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

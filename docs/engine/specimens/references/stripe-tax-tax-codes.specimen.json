@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-tax-codes",
+  "sourceUrl": "https://docs.stripe.com/tax/tax-codes.md",
+  "lastVerified": "2026-06-03",
+  "title": "Product tax codes",
+  "excerpt": "Stripe Tax uses product tax codes to determine a product's tax rate. > [Log in](https://dashboard.stripe.com/settings/tax) or [sign up](https://dashboard.stripe.com/register) for Stripe to enable Stripe Tax. Stripe Tax uses product tax codes (PTCs) to associate products with tax rates. For example, a jurisdiction can charge one tax rate for products in the **Clothing & Footwear** category and a different tax rate for products in the **School Uniforms** category. - set a preset product tax code in your [tax settings](https://dashboard.stripe.com/settings/tax). - set a product tax code for [each of your products individually](https://dashboard.stripe.com/products?active=true). Stripe Tax uses the preset product tax code for products that don’t have a PTC set directly.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

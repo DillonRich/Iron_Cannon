@@ -1,0 +1,15 @@
+{
+  "refId": "resend/audiences",
+  "sourceUrl": "https://resend.com/docs/dashboard/audiences/introduction",
+  "lastVerified": "2026-05-31",
+  "title": "Resend Audiences",
+  "excerpt": "Contact lists for marketing broadcasts. Separate from transactional auth/billing emails. Requires unsubscribe compliance (LEG-EMAIL-001).",
+  "appliesTo": [
+    "email-lifecycle",
+    "layer4"
+  ],
+  "tags": [
+    "resend",
+    "marketing"
+  ]
+}

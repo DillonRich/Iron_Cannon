@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/checkout-embedded-quickstart",
+  "sourceUrl": "https://docs.stripe.com/checkout/embedded/quickstart.md",
+  "lastVerified": "2026-06-03",
+  "title": "Embed a checkout page in your site",
+  "excerpt": "Explore a full, working code sample of an integration with [Stripe Checkout](https://docs.stripe.com/payments/checkout.md) that lets your customers pay through an embedded form on your website. The example includes client and server-side code, and an embeddable UI component displays the checkout page. Install the package and import it in your code. Alternatively, if you’re starting from scratch and need a package.json file, download the project files using the Download link in the code editor. Or download the stripe-node library source code directly [from GitHub](https://github.com/stripe/stripe-node). Install the Stripe ruby gem and require it in your code. Alternatively, if you’re starting from scratch and need a Gemfile, download the project files using the link in the code editor.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

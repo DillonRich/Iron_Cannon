@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-account-capabilities",
+  "sourceUrl": "https://docs.stripe.com/connect/account-capabilities.md",
+  "lastVerified": "2026-06-03",
+  "title": "Account capabilities and configurations",
+  "excerpt": "Learn about capabilities you can enable for accounts, the account configurations they belong to, and their requirements. Capabilities represent functionality that you can request for your connected accounts, such as accepting card payments or receiving transferred funds from your platform account. A capability must be active for a connected account to perform actions associated with that capability. > Sandboxes might not enforce some capabilities. In certain cases, they can allow an `Account` to perform capability-dependent actions even when the associated capability’s `status` isn’t `active`. Most capabilities require verification of certain information about the connected account’s business before Stripe enables them.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

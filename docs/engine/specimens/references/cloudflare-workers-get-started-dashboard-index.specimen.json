@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-get-started-dashboard-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/get-started/dashboard/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Dashboard",
+  "excerpt": "description: Create and deploy a Cloudflare Worker using the Cloudflare dashboard. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Follow this guide to create a Workers application using the Cloudflare dashboard. The quickest way to experiment with Cloudflare Workers is in the [Playground ↗](https://workers.cloudflare.com/playground). The Playground does not require any setup. It is an instant way to preview and test a Worker directly in the browser.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

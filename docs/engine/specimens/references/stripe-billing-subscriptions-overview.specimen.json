@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-subscriptions-overview",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/overview",
+  "lastVerified": "2026-06-03",
+  "title": "billing",
+  "excerpt": "Manage recurring payments and subscription lifecycles. Subscriptions let your customers make recurring payments to access a product. Unlike one-time purchases, subscriptions require you to store additional customer information for future charges. Stripe provides features that help you manage subscription billing. - [Support for different pricing models ](https://docs.stripe.com/products-prices/pricing-models.md) - [Subscription discount management](https://docs.stripe.com/billing/subscriptions/coupons.md) - [Trial management](https://docs.stripe.com/billing/subscriptions/trials.md) - [Prorations for modified subscriptions](https://docs.stripe.com/billing/subscriptions/prorations.md)",
+  "appliesTo": [
+    "security",
+    "compliance"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

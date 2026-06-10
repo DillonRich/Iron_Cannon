@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-checkout-client",
+  "sourceUrl": "https://docs.stripe.com/payments/checkout/client.md",
+  "lastVerified": "2026-06-03",
+  "title": "One-time payments with Checkout",
+  "excerpt": "Learn how to accept one-time card payments with just a few lines of code. > The client-only integration of Checkout isn’t actively maintained and doesn’t support many of the features available with the [client and server integration](https://docs.stripe.com/payments/accept-a-payment.md?integration=checkout). We recommend using [Payment Links](https://docs.stripe.com/payment-links.md) for a no-code workflow. Check out the [donations](https://github.com/stripe-samples/github-pages-stripe-checkout) sample on GitHub or try the [hosted version](https://stripe-samples.github.io/github-pages-stripe-checkout/). With the client-only integration, you define your products directly in the Stripe Dashboard and reference them by ID on the client side.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

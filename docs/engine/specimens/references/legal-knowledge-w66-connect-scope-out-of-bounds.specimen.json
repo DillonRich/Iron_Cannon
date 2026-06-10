@@ -1,0 +1,15 @@
+{
+  "refId": "legal/knowledge-w66-connect-scope-out-of-bounds",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w66/connect-scope-out-of-bounds",
+  "lastVerified": "2026-06-06",
+  "title": "W66 connect-scope-out-of-bounds",
+  "provider": "legal",
+  "excerpt": "Stripe Connect is out of TGS v1 scope; use SD-01 billing path only",
+  "embeddingHint": "legal connect-scope-out-of-bounds wave66 tgs-v2",
+  "tags": [
+    "wave66",
+    "knowledge",
+    "legal",
+    "tgs-v2"
+  ]
+}

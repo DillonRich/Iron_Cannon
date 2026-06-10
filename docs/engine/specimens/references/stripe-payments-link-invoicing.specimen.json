@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-link-invoicing",
+  "sourceUrl": "https://docs.stripe.com/payments/link/invoicing.md",
+  "lastVerified": "2026-06-03",
+  "title": "Link with Invoicing",
+  "excerpt": "Speed up invoice payments by using Link with the Hosted Invoice Page. Use [Link](https://docs.stripe.com/payments/link.md) with the [Hosted Invoice Page](https://docs.stripe.com/invoicing/hosted-invoice-page.md) to let your customers pay invoices faster. Stripe assigns all invoices a unique URL that you can send to your customer. We host these invoices, which means you can securely collect payments without any extra implementation code. Link is compatible with both the [Invoices](https://docs.stripe.com/api/invoices.md) and [Subscriptions](https://docs.stripe.com/api/subscriptions.md) APIs. For information about how your payment integration affects Link, see [Link in different payment integrations](https://docs.stripe.com/payments/link/link-payment-integrations.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

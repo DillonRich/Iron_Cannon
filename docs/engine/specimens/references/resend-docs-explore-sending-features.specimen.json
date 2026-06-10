@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-explore-sending-features",
+  "sourceUrl": "https://resend.com/docs/explore-sending-features.md",
+  "lastVerified": "2026-06-07",
+  "title": "Sending emails with Resend",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Sending emails with Resend > Resend has a wide range of features for sending both transactional and marketing emails. Resend provides an API, webhooks, automations, templates, AI tools, a command-line interface (CLI), and more for both types of emails you need to send: * **Transactional emails:** personalized, event-driven communication * **Marketing campaigns:** bulk email [Broadcasts](/dashboard/broadcasts/introduction) distributed to a contact list All of these email features and activities are also available through a user-friendly Dashboard.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

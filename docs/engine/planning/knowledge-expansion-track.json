@@ -1,0 +1,249 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-06-06",
+  "phase": 3,
+  "phaseLabel": "Expand + test loops toward production MCP",
+  "waves": [
+    {
+      "id": "wave61",
+      "date": "2026-06-06",
+      "status": "complete",
+      "deliverables": [
+        "harvest:vendor-depth",
+        "bootstrap-obligations-wave61",
+        "expand-security-protocol-registry-wave61",
+        "expand-retrieval-baseline-wave61",
+        "bootstrap-corpus-knowledge-wave61"
+      ],
+      "results": {
+        "corpusCards": 10691,
+        "obligations": 120,
+        "securityProtocols": 600,
+        "retrievalQueries": 90,
+        "imaginationScenarios": 1050,
+        "nextjsHarvested": 276
+      }
+    },
+    {
+      "id": "wave62",
+      "date": "2026-06-06",
+      "status": "complete",
+      "deliverables": [
+        "harvest:owasp-cheatsheets",
+        "bootstrap-obligations-wave62",
+        "expand-security-protocol-registry-wave62",
+        "expand-retrieval-baseline-wave62",
+        "bootstrap-corpus-knowledge-wave62"
+      ],
+      "results": {
+        "corpusCards": 10825,
+        "owaspCheatsheetsHarvested": 115,
+        "obligations": 130,
+        "securityProtocols": 650,
+        "retrievalQueries": 100,
+        "imaginationScenarios": 1100
+      }
+    },
+    {
+      "id": "wave63",
+      "date": "2026-06-06",
+      "status": "complete",
+      "deliverables": [
+        "expand-em1-owasp-links-wave63",
+        "append-em4-conflicts-wave63",
+        "bootstrap-edge-cases-wave63",
+        "bootstrap-obligations-wave63",
+        "bootstrap-obligation-source-ref-cards-wave63",
+        "expand-security-protocol-registry-wave63",
+        "expand-retrieval-baseline-wave63",
+        "bootstrap-corpus-knowledge-wave63",
+        "bootstrap-fetch-obligation-sources"
+      ],
+      "results": {
+        "corpusCards": 10835,
+        "em1Nodes": 2240,
+        "em2Controls": 5004,
+        "em4Conflicts": 85,
+        "edgeCases": 85,
+        "obligations": 140,
+        "securityProtocols": 700,
+        "retrievalQueries": 110,
+        "imaginationScenarios": 1150
+      }
+    },
+    {
+      "id": "wave64",
+      "date": "2026-06-06",
+      "status": "complete",
+      "deliverables": [
+        "harvest:vendor-depth",
+        "expand-em1-stripe-cf-links-wave64",
+        "bootstrap-obligations-wave64",
+        "expand-security-protocol-registry-wave64",
+        "expand-retrieval-baseline-wave64",
+        "bootstrap-corpus-knowledge-wave64",
+        "expand-production-confidence-wave64",
+        "bootstrap-fetch-obligation-sources"
+      ],
+      "results": {
+        "corpusCards": 10845,
+        "em1Nodes": 2252,
+        "em2Controls": 5055,
+        "em4Conflicts": 90,
+        "edgeCases": 90,
+        "obligations": 150,
+        "securityProtocols": 750,
+        "retrievalQueries": 120,
+        "imaginationScenarios": 1200,
+        "productionConfidenceScenarios": 30
+      }
+    },
+    {
+      "id": "wave65",
+      "date": "2026-06-06",
+      "status": "complete",
+      "deliverables": [
+        "repair-stripe-inventory-wave65",
+        "bootstrap-missing-obligation-refs-wave65",
+        "expand-em1-legal-links-wave65",
+        "bootstrap-obligations-wave65",
+        "expand-security-protocol-registry-wave65",
+        "expand-retrieval-baseline-wave65",
+        "expand-production-confidence-wave65",
+        "bootstrap-fetch-obligation-sources"
+      ],
+      "results": {
+        "corpusCards": 10879,
+        "em1Nodes": 2264,
+        "em2Controls": 5085,
+        "em4Conflicts": 95,
+        "edgeCases": 95,
+        "obligations": 160,
+        "securityProtocols": 800,
+        "retrievalQueries": 130,
+        "imaginationScenarios": 1250,
+        "productionConfidenceScenarios": 40,
+        "missingObligationRefsClosed": 24
+      }
+    },
+    {
+      "id": "wave66",
+      "date": "2026-06-06",
+      "status": "complete",
+      "deliverables": [
+        "bootstrap-corpus-knowledge-wave66",
+        "expand-em1-nextjs-owasp-links-wave66",
+        "bootstrap-obligations-wave66",
+        "expand-security-protocol-registry-wave66",
+        "expand-production-confidence-wave66",
+        "record-tgs-v2-rebaseline-wave66"
+      ],
+      "results": {
+        "corpusCards": 10890,
+        "em1Nodes": 2276,
+        "em2Controls": 5136,
+        "em4Conflicts": 100,
+        "edgeCases": 100,
+        "obligations": 170,
+        "securityProtocols": 850,
+        "retrievalQueries": 140,
+        "imaginationScenarios": 1300,
+        "productionConfidenceScenarios": 50,
+        "tgsVersion": "v2-rebaselined"
+      }
+    },
+    {
+      "id": "wave67",
+      "date": "2026-06-06",
+      "status": "complete",
+      "deliverables": [
+        "bootstrap-corpus-knowledge-wave67",
+        "expand-em1-production-links-wave67",
+        "bootstrap-obligations-wave67",
+        "expand-security-protocol-registry-wave67",
+        "expand-production-confidence-wave67",
+        "record-phase3-entry-wave67"
+      ],
+      "results": {
+        "corpusCards": 10900,
+        "em1Nodes": 2288,
+        "em2Controls": 5172,
+        "em4Conflicts": 105,
+        "edgeCases": 105,
+        "obligations": 180,
+        "securityProtocols": 900,
+        "retrievalQueries": 150,
+        "imaginationScenarios": 1350,
+        "productionConfidenceScenarios": 60,
+        "phase": 3
+      }
+    },
+    {
+      "id": "wave68",
+      "date": "2026-06-06",
+      "status": "complete",
+      "deliverables": [
+        "bootstrap-corpus-knowledge-wave68",
+        "expand-em1-adversarial-links-wave68",
+        "bootstrap-obligations-wave68",
+        "expand-security-protocol-registry-wave68",
+        "expand-production-confidence-wave68",
+        "adversarial-agent-scenarios",
+        "g2-adversarial-agent"
+      ],
+      "results": {
+        "corpusCards": 10910,
+        "em1Nodes": 2300,
+        "em2Controls": 5205,
+        "em4Conflicts": 110,
+        "edgeCases": 110,
+        "obligations": 190,
+        "securityProtocols": 950,
+        "retrievalQueries": 160,
+        "imaginationScenarios": 1400,
+        "productionConfidenceScenarios": 70,
+        "adversarialAgentScenarios": 10,
+        "vectorizeManifest": 10910
+      }
+    },
+    {
+      "id": "waves69-75",
+      "date": "2026-06-06",
+      "status": "complete",
+      "deliverables": [
+        "run-knowledge-wave.mjs",
+        "knowledge-wave-config.mjs",
+        "planning:waves69-75",
+        "PRODUCTION_READINESS_SIGNOFF.md",
+        "record-phase3-exit-wave75"
+      ],
+      "results": {
+        "corpusCards": 10983,
+        "em1Nodes": 2383,
+        "em4Conflicts": 145,
+        "edgeCases": 145,
+        "obligations": 260,
+        "securityProtocols": 1300,
+        "retrievalQueries": 230,
+        "imaginationScenarios": 1750,
+        "productionConfidenceScenarios": 140,
+        "adversarialAgentScenarios": 24,
+        "vectorizeManifest": 10983,
+        "phase3Exit": true
+      }
+    }
+  ],
+  "phase": 3,
+  "phaseLabel": "Complete — awaiting production MCP stakeholder signoff",
+  "tgsVersion": "v2",
+  "tgsRebaselineDate": "2026-06-06",
+  "tgsTrigger": "criterion-3-obligations-120",
+  "phase2Status": "complete",
+  "phase2Entry": "g2:production-confidence",
+  "phase3Status": "complete",
+  "phase3Entry": "2026-06-06",
+  "phase3Gate": "g2:production-confidence",
+  "phase4BlockedUntil": "stakeholder PRODUCTION_READINESS_SIGNOFF witness",
+  "phase3ExitDate": "2026-06-06",
+  "phase3ExitWave": 75
+}

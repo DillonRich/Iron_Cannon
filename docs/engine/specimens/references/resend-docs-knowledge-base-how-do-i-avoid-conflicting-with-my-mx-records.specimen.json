@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-how-do-i-avoid-conflicting-with-my-mx-records",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/how-do-i-avoid-conflicting-with-my-mx-records.md",
+  "lastVerified": "2026-06-03",
+  "title": "How do I avoid conflicts with my MX records?",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # How do I avoid conflicts with my MX records? > Learn how to avoid conflicts with your existing MX records when setting up a Resend domain. ## What is an MX record? MX (Mail Exchanger) records specify where incoming mail should be delivered on behalf of a domain. Every MX value has a unique priority (also known as preference) value. The lower the number, the higher the priority. Resend requires that you setup a MX record on two occasions: 1.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

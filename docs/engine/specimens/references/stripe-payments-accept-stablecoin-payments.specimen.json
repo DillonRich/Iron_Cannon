@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-accept-stablecoin-payments",
+  "sourceUrl": "https://docs.stripe.com/payments/accept-stablecoin-payments.md",
+  "lastVerified": "2026-06-03",
+  "title": "Accept stablecoin payments",
+  "excerpt": "Start accepting stablecoins by enabling the Crypto payment method. This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [Checkout](https://docs.stripe.com/payments/accept-stablecoin-payments.md?payment-ui=checkout) - [Checkout Sessions API](https://docs.stripe.com/payments/accept-stablecoin-payments.md?payment-ui=elements&api-integration=checkout) - [Payment Intents API](https://docs.stripe.com/payments/accept-stablecoin-payments.md?payment-ui=elements&api-integration=paymentintents) - [Direct API](https://docs.stripe.com/payments/accept-stablecoin-payments.md?payment-ui=direct-api)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

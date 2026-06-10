@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W61-001",
+  "obligationId": "LEG-W61-001",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "pattern": "artificial intelligence"
+  },
+  "passSnippet": "notice artificial intelligence",
+  "failSnippet": "no match here",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

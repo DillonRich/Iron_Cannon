@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-cards-virtual",
+  "sourceUrl": "https://docs.stripe.com/issuing/cards/virtual.md",
+  "lastVerified": "2026-06-03",
+  "title": "Virtual cards with Issuing",
+  "excerpt": "Learn about virtual cards created with Issuing. You can retrieve or display virtual card details through the Dashboard, the API, or by using [Issuing Elements](https://docs.stripe.com/issuing/elements.md). [PCI-DSS](https://stripe.com/guides/pci-compliance) rules protect cardholder data, and not all methods of card information retrieval are PCI-DSS compliant. You can create virtual cards using the Dashboard or the [Cardholders API](https://docs.stripe.com/api/issuing/cardholders.md). For details about how to create a cardholder, create a card, and activate a card, see [Create virtual cards](https://docs.stripe.com/issuing/cards/virtual/issue-cards.md). After you create a virtual card, it’s generated immediately and is available for use.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

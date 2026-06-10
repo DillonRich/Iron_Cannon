@@ -1,0 +1,9 @@
+{
+  "refId": "resend/list-unsubscribe",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/what-sending-feature-to-use",
+  "lastVerified": "2026-05-31",
+  "title": "Marketing email unsubscribe (Resend)",
+  "excerpt": "Marketing/broadcast emails must include unsubscribe mechanism per CAN-SPAM. Use Resend Broadcasts with unsubscribe handling or include List-Unsubscribe header and visible link in template. Transactional emails (password reset) exempt but must not contain marketing content.",
+  "appliesTo": ["layer4/email", "email-lifecycle", "legal/can-spam-unsubscribe"],
+  "tags": ["resend", "legal", "email"]
+}

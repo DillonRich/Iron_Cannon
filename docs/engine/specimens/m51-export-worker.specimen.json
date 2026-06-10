@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/data-export/worker",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "data-export",
+  "moduleId": "M51-export-worker",
+  "adapterId": "cloudflare-workers",
+  "section": "export-worker",
+  "content": {
+    "requirement": "Assemble user JSON/ZIP, store in R2, signed URL 72h TTL"
+  },
+  "references": ["cloudflare/r2-bindings", "cloudflare/workers-cron", "legal/gdpr-data-subject-rights"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "EXP-WK-001", "type": "required_string", "value": "export_jobs", "fileGlob": "**/*.{ts,js,sql}", "tier": "pro" },
+      { "id": "EXP-WK-002", "type": "required_string", "value": "signedUrl", "fileGlob": "**/*.{ts,js}", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "data-export" }
+}

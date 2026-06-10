@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/stripe-reports",
+  "sourceUrl": "https://docs.stripe.com/stripe-reports.md",
+  "lastVerified": "2026-06-03",
+  "title": "reports",
+  "excerpt": "Use reports to help analyze and understand your business. Use prebuilt reports to understand basic activity on your account or across [multiple accounts in an organization](https://docs.stripe.com/reports/multiple-accounts.md) such as payments, payouts, fees, and balance changes. View the reports in the [Stripe Dashboard](https://dashboard.stripe.com/reporting), or download a CSV to complete accounting tasks. Learn more about Stripe’s reporting [features](https://docs.stripe.com/stripe-reports.md#features). [Balance](https://docs.stripe.com/reports/balance.md): Reconcile your Stripe balance like a bank account and download a list of payouts.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

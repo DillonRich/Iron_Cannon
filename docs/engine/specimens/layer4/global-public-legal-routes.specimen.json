@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/global/public-legal-routes",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": "nextjs-app-router",
+  "section": "public-routes",
+  "content": {
+    "requirement": "Privacy, terms, and accessibility pages reachable without authentication",
+    "obligations": ["LEG-GLOBAL-001", "LEG-GLOBAL-002", "LEG-GLOBAL-003"],
+    "compareSteps": [
+      "Verify /privacy and /terms routes exist and are excluded from auth middleware",
+      "US advisory: /accessibility statement route"
+    ],
+    "remediationDirective": "Add public /privacy and /terms pages; exclude from M05 auth matcher; optional /accessibility."
+  },
+  "references": ["legal/privacy-policy-link", "legal/tos-acceptance-record", "legal/ada-title-iii-web"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "LEG-GLOBAL-001", "type": "route_exists", "path": "/privacy", "public": true, "tier": "ironclad" },
+      { "id": "LEG-GLOBAL-002", "type": "route_exists", "path": "/terms", "public": true, "tier": "ironclad" }
+    ],
+    "advisory": [
+      { "id": "LEG-GLOBAL-003", "type": "route_exists", "path": "/accessibility", "tier": "ironclad" }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "global", "disclaimerRequired": true }
+}

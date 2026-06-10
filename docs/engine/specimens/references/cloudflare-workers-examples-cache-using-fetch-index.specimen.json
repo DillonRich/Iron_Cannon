@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-examples-cache-using-fetch-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/examples/cache-using-fetch/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Cache using fetch",
+  "excerpt": "description: Determine how to cache a resource by setting TTLs, custom cache keys, and cache headers in a fetch request. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Determine how to cache a resource by setting TTLs, custom cache keys, and cache headers in a fetch request. If you want to get started quickly, click on the button below.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

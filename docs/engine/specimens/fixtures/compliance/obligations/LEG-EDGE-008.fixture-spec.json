@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-EDGE-008",
+  "obligationId": "LEG-EDGE-008",
+  "detectType": "config",
+  "detect": {
+    "type": "config",
+    "key": "STRIPE_SECRET_KEY",
+    "prefix": "sk_test_"
+  },
+  "passSnippet": "verifiedDomain webhooks deliveryEvents",
+  "failSnippet": "gap LEG-EDGE-008",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

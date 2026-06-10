@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-runtime-apis-streams-transformstream-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/runtime-apis/streams/transformstream/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "TransformStream",
+  "excerpt": "description: Use the TransformStream API in Workers to pipe data between readable and writable streams. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. A transform stream consists of a pair of streams: a writable stream, known as its writable side, and a readable stream, known as its readable side. Writes to the writable side result in new data being made available for reading from the readable side. Workers currently only implements an identity transform stream, a type of transform stream which forwards all chunks written to its writable side to its readable side, without any changes.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

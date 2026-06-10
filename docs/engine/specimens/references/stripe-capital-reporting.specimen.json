@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/capital-reporting",
+  "sourceUrl": "https://docs.stripe.com/capital/reporting.md",
+  "lastVerified": "2026-06-03",
+  "title": "Capital metrics",
+  "excerpt": "Access financing offer data in the Stripe Dashboard. > Capital for platforms is available in [public preview](https://docs.stripe.com/release-phases.md). The Capital page in the [Stripe Dashboard](https://dashboard.stripe.com/connect/capital) can help you understand the performance of your Capital program. The page displays metrics for originations, conversion, and the level of engagement with financing offers that were delivered to your connected accounts. It also provides detailed insights into the status and specifics of these offers. Capital metrics refresh nightly. You can see different insights on the [Overview](https://docs.stripe.com/capital/reporting.md#overview-tab) tab and the [Financing offers](https://docs.stripe.com/capital/reporting.md#financing-offers-tab) tab.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

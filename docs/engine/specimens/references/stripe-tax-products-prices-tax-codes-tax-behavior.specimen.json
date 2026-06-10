@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-products-prices-tax-codes-tax-behavior",
+  "sourceUrl": "https://docs.stripe.com/tax/products-prices-tax-codes-tax-behavior.md",
+  "lastVerified": "2026-06-03",
+  "title": "Specify product tax codes and tax behavior",
+  "excerpt": "Add tax codes and tax behavior to your products and prices to automatically calculate tax. > [Log in](https://dashboard.stripe.com/settings/tax) or [sign up](https://dashboard.stripe.com/register) for Stripe to enable Stripe Tax. Stripe Tax uses product tax codes to associate products with their applicable tax rates. Assign each of your [products a tax code](https://docs.stripe.com/tax/products-prices-tax-codes-tax-behavior.md#tax-code-on-product) to automatically apply the rate and other taxability rules. Tax codes within Stripe are always the same across different jurisdictions. However, individual products might have tax treatments that differ by location, and Stripe maintains current rate and taxability information for you, while staying up to date with any changing regulations.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

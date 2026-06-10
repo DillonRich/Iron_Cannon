@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/radar",
+  "sourceUrl": "https://docs.stripe.com/radar.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe Radar",
+  "excerpt": "Use Stripe Radar to protect your business against fraud. Use Radar to evaluate transactions in real time, using AI algorithms to assess the risk of fraud. [Set up your Radar integration](https://docs.stripe.com/radar/optimize-risk-factors.md) [Set up your integration](https://docs.stripe.com/radar/optimize-risk-factors.md): Make sure your payment integration collects the transaction data needed for Stripe to assess fraud risk. [Radar Sessions](https://docs.stripe.com/radar/radar-session.md): Use Radar Session to apply Radar protection to your non-Stripe tokenized payments.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

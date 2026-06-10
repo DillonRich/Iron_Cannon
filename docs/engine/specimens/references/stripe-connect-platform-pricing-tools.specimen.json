@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-platform-pricing-tools",
+  "sourceUrl": "https://docs.stripe.com/connect/platform-pricing-tools.md",
+  "lastVerified": "2026-06-03",
+  "title": "Platform pricing tool",
+  "excerpt": "Set platform processing fees for your connected accounts from your Stripe Dashboard. If your platform is [responsible for paying Stripe fees](https://docs.stripe.com/connect/platform-pricing-tools.md#fee-payer-reference), the [platform pricing tool](https://dashboard.stripe.com/settings/connect/platform_pricing) allows you to set pricing logic for all platform processing fees you charge your connected accounts. You can use this fee, known as an “application fee,\" for different purposes depending on your platform’s Connect configuration and business model: - SaaS Platforms who are responsible for paying Stripe fees typically use application fees to recover or sometimes mark up payment processing costs they charge to their connected accounts.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

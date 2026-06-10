@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-payment-methods-custom-payment-methods",
+  "sourceUrl": "https://docs.stripe.com/payments/payment-methods/custom-payment-methods.md",
+  "lastVerified": "2026-06-03",
+  "title": "Custom payment methods",
+  "excerpt": "Extend your integrations with additional payment methods processed outside of Stripe. Custom payment methods allow you to extend your payment and billing integrations with payment methods processed outside of Stripe. For a list of payment methods offered by Stripe, see the [payment method overview page](https://docs.stripe.com/payments/payment-methods/overview.md). While you process custom payment method transactions outside of Stripe, you can still [record the transaction details](https://docs.stripe.com/api/payment-record/report-payment/report.md) to your Stripe account to unify reporting and build back office workflows. In the Dashboard, create the custom payment method type your customers will pay with.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

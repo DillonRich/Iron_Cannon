@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-supported-embedded-components-capital-financing-promotion",
+  "sourceUrl": "https://docs.stripe.com/connect/supported-embedded-components/capital-financing-promotion.md",
+  "lastVerified": "2026-06-03",
+  "title": "Capital promotion component",
+  "excerpt": "Show promotional content about a connected account's Capital financing offer and launch a Capital application. The Capital promotion component allows your eligible connected accounts to complete a financing application in your platform’s website or application. Connected accounts can select their offer amount and terms, view contractual details, and submit their application. This component displays educational and promotional content about the Capital program as the starting point in the application process. Note: The following is a preview/demo component that behaves differently than live mode usage with real connected accounts. The actual component has more functionality than what might appear in this demo component.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

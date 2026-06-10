@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/terminal-network-requirements",
+  "sourceUrl": "https://docs.stripe.com/terminal/network-requirements.md",
+  "lastVerified": "2026-06-03",
+  "title": "Terminal network requirements",
+  "excerpt": "Make sure your network is ready for Terminal, and troubleshoot common issues. Terminal network requirements vary depending on the readers you use and the way you build your integration.&nbsp; If your network doesn’t meet the requirements outlined below, your Terminal integration won’t work as expected. If you plan to use Terminal readers in remote locations with unfamiliar or unknown network conditions, be prepared to handle unexpected network-related issues.&nbsp;When using smart readers, we recommend a [server-driven integration](https://docs.stripe.com/terminal/payments/setup-integration.md?terminal-sdk-platform=server-driven) to minimize the number of potential network issues you might encounter.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

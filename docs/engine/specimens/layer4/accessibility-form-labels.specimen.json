@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/accessibility/form-labels",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": "nextjs-app-router",
+  "section": "form-labels",
+  "content": {
+    "requirement": "Auth form inputs must have programmatically associated labels",
+    "obligations": ["LEG-A11Y-002", "LEG-A11Y-009"],
+    "compareSteps": [
+      "Scan /login, /signup, /forgot-password for input elements",
+      "Each input must have matching label htmlFor/id or aria-label",
+      "Error messages should use aria-describedby or aria-invalid (advisory for A11Y-009)"
+    ],
+    "remediationDirective": "Wrap inputs in label elements or use htmlFor/id pairs; associate validation errors with aria-describedby."
+  },
+  "references": ["legal/wcag-form-labels"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "LEG-A11Y-002", "type": "label_association", "scope": "auth_routes", "tier": "ironclad" }
+    ],
+    "advisory": [
+      { "id": "LEG-A11Y-009", "type": "pattern", "patterns": ["aria-describedby", "aria-invalid"], "tier": "ironclad" }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "accessibility", "disclaimerRequired": true }
+}

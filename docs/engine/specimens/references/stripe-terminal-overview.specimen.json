@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/terminal-overview",
+  "sourceUrl": "https://docs.stripe.com/terminal/overview.md#availability",
+  "lastVerified": "2026-06-03",
+  "title": "availability by country",
+  "excerpt": "With [Stripe Terminal](https://docs.stripe.com/terminal.md), you can integrate Stripe payments into your existing in-person checkout flow or build in-person payments into your native mobile or web-based application. To get started without writing any code, use [standalone mode](https://docs.stripe.com/terminal/payments/standalone-mode.md) on compatible smart readers. Terminal comes with SDKs built for modern development environments, Tap to Pay on [iPhone](https://docs.stripe.com/terminal/payments/setup-reader/tap-to-pay.md?platform=ios) and [Android](https://docs.stripe.com/terminal/payments/setup-reader/tap-to-pay.md?platform=android), [pre-certified readers](https://docs.stripe.com/terminal/payments/setup-reader.md), and tools for ordering and managing readers from the Stripe Dashboard.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

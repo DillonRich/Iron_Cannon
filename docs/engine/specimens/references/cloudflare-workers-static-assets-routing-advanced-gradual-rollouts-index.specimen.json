@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-static-assets-routing-advanced-gradual-rollouts-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/static-assets/routing/advanced/gradual-rollouts/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Gradual rollouts",
+  "excerpt": "description: Provide static asset routing solutions for gradual Worker deployments. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. [Gradual deployments](https://developers.cloudflare.com/workers/configuration/versions-and-deployments/gradual-deployments/) route requests to different Worker versions based on configured percentages. When your Worker serves static assets, this per-request routing can cause asset reference mismatches that result in 404 errors and broken user experiences. Modern JavaScript frameworks commonly generate fingerprinted asset filenames during builds.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/r2-buckets-local-uploads-index",
+  "sourceUrl": "https://developers.cloudflare.com/r2/buckets/local-uploads/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Local uploads",
+  "excerpt": "description: Improve R2 upload performance by writing object data to a nearby location before async copy. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/r2/llms.txt > Use this file to discover all available pages before exploring further. You can enable Local Uploads on your bucket to improve the performance of upload requests when clients upload data from a different region than your bucket. Local Uploads writes object data to a nearby location, then asynchronously copies it to your bucket. Data is available immediately and remains strongly consistent. The following sections describe how R2 handles upload requests with and without Local Uploads enabled.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

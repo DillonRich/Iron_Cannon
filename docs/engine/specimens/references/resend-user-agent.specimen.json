@@ -1,0 +1,9 @@
+{
+  "refId": "resend/user-agent",
+  "sourceUrl": "https://resend.com/docs/api-reference/introduction",
+  "lastVerified": "2026-05-31",
+  "title": "Resend User-Agent requirement",
+  "excerpt": "All API requests must include User-Agent header or receive 403. Resend SDKs include automatically. Raw fetch from Workers must set User-Agent: iron-cannon-worker/1.0 or app identifier.",
+  "appliesTo": ["layer2/resend"],
+  "tags": ["resend", "api"]
+}

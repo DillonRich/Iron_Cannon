@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-edge-001",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-edge-001",
+  "content": {
+    "requirement": "Webhook duplicate events idempotent",
+    "obligations": [
+      "LEG-EDGE-001"
+    ],
+    "compareSteps": [
+      "Run detect.type=config",
+      "Map result to obligation LEG-EDGE-001",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-EDGE-001: Webhook duplicate events idempotent"
+  },
+  "references": [
+    "stripe/idempotent-webhook"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-EDGE-001",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "edge",
+    "disclaimerRequired": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "legal/knowledge-w83-session-pii-redaction",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w83/session-pii-redaction",
+  "lastVerified": "2026-06-06",
+  "title": "W83 session-pii-redaction",
+  "provider": "legal",
+  "excerpt": "Session logs omit secrets and production API keys",
+  "embeddingHint": "legal session-pii-redaction wave83 session-harvest-g34",
+  "tags": [
+    "wave83",
+    "knowledge",
+    "legal",
+    "session-harvest-g34"
+  ]
+}

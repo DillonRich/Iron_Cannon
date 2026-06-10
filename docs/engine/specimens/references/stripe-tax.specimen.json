@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax",
+  "sourceUrl": "https://docs.stripe.com/tax.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe Tax",
+  "excerpt": "Automate sales tax, VAT, and GST compliance on all your transactions. Calculate and report tax on all payments, even those that you process outside of Stripe. [Learn more](https://docs.stripe.com/tax/payment-intent/custom.md) [How Stripe Tax works](https://docs.stripe.com/tax/how-tax-works.md): Learn how Stripe Tax helps you automate tax compliance. [How Stripe calculates tax](https://docs.stripe.com/tax/calculating.md): Learn how Stripe Tax calculates tax on transactions. [Supported countries](https://docs.stripe.com/tax/supported-countries.md): See which countries Stripe Tax supports, and learn about tax calculation and collection in each region.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

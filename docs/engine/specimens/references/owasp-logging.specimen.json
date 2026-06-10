@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/logging",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Logging",
+  "excerpt": "Log security events: auth failures, privilege changes, webhook errors. Never log passwords, session tokens, or PII in plaintext. Include requestId for trace. Structured JSON logs preferred.",
+  "appliesTo": ["layer3", "audit"],
+  "tags": ["owasp", "logging"]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/atlas-83b-elections-non-us-founders",
+  "sourceUrl": "https://docs.stripe.com/atlas/83b-elections-non-us-founders.md",
+  "lastVerified": "2026-06-03",
+  "title": "File Section 83(b) elections as a non-US founder",
+  "excerpt": "Learn about filing an 83(b) election as a non-US founder. > Stripe Atlas doesn’t provide tax or legal advice. Consult tax and legal professionals for advice on how to meet ongoing legal, tax, and accounting obligations that apply to you and your company. If you live outside the US but file US tax returns, startup lawyers recommend making a Section 83(b) election because it might save you on future US taxes. If you currently don’t file US tax returns but might become a US taxpayer in the future, it’s important to make a Section 83(b) election. Failing to do so could lead to additional US tax liability when your stock vests. If you’re not a US taxpayer and don’t plan to become one, making a Section 83(b) election is unnecessary as it only impacts US tax liability.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

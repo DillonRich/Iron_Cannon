@@ -1,0 +1,9 @@
+{
+  "refId": "legal/transactional-vs-marketing",
+  "sourceUrl": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business",
+  "lastVerified": "2026-05-31",
+  "title": "Transactional vs marketing email (CAN-SPAM)",
+  "excerpt": "Transactional emails facilitate an agreed transaction (receipts, password reset) and have lighter CAN-SPAM requirements. Marketing/promotional content in transactional messages can reclassify the message. Keep transactional templates free of promotional CTAs.",
+  "appliesTo": ["LEG-EMAIL-004", "email-can-spam", "resend/transactional-vs-broadcast"],
+  "tags": ["legal", "can-spam", "email"]
+}

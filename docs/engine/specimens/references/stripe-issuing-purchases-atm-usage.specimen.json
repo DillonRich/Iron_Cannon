@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-purchases-atm-usage",
+  "sourceUrl": "https://docs.stripe.com/issuing/purchases/atm-usage.md",
+  "lastVerified": "2026-06-03",
+  "title": "Use cards at automated teller machines (ATMs)",
+  "excerpt": "Learn how you can use your Stripe Issuing cards at ATMs. You can use your US-issued cards for ATM cash withdrawals if you enable the feature for your Stripe account, and set up valid PINs for your cards. ATM withdrawals aren’t enabled by default, so you need to request approval for your use case [through support](https://support.stripe.com/?contact=true). In addition, make sure all your relevant cards have PINs set up by following our [PIN management guide](https://docs.stripe.com/issuing/cards/pin-management.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

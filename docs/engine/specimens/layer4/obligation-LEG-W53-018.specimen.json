@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w53-018",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Session cookie SameSite=Lax or Strict in production",
+    "obligations": [
+      "LEG-W53-018"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Session cookie SameSite=Lax or Strict in production"
+  },
+  "references": [
+    "owasp/session-samesite"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W53-018",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

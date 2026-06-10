@@ -1,0 +1,8 @@
+{
+  "fixtureId": "DT-08",
+  "detectType": "header",
+  "passSnippet": "headers: { 'List-Unsubscribe': '<mailto:unsub@example.com>' }",
+  "failSnippet": "await resend.emails.send({ subject: 'Hi' })",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/resend/auth-emails",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "moduleId": "M03-auth-resend-emails",
+  "adapterId": "resend",
+  "section": "auth-emails",
+  "content": {
+    "requirement": "Transactional auth emails via Resend with verified domain",
+    "templates": [
+      { "id": "auth.verify_email", "trigger": "signup S01", "type": "transactional" },
+      { "id": "auth.magic_link_signin", "trigger": "passwordless signin", "type": "transactional" }
+    ],
+    "requiredSteps": [
+      "Use Resend send API with Authorization bearer",
+      "Set User-Agent header per Resend requirements",
+      "From address on verified domain only",
+      "Idempotency-Key on send for retries",
+      "Queue retry on failure — do not block HTTP response indefinitely"
+    ],
+    "manualConfigSteps": [
+      {
+        "order": 1,
+        "platform": "resend",
+        "action": "Verify sender domain in Resend dashboard; add DNS records",
+        "userApprovalRequired": true,
+        "documentationUrl": "https://resend.com/docs/dashboard/domains/introduction"
+      }
+    ]
+  },
+  "references": ["resend/send-api", "resend/from-domain", "resend/idempotency", "resend/user-agent"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "AUTH-EM-001", "type": "required_string", "value": "api.resend.com", "fileGlob": "**/*.{ts,js}", "tier": "pro" },
+      { "id": "AUTH-EM-002", "type": "required_string", "value": "auth.verify_email", "fileGlob": "**/*.{ts,js,tsx}", "tier": "pro" },
+      { "id": "AUTH-EM-003", "type": "required_string", "value": "Idempotency-Key", "fileGlob": "**/*.{ts,js}", "tier": "pro" }
+    ],
+    "forbidden": [
+      { "id": "AUTH-EM-F01", "type": "forbidden_string", "value": "@gmail.com", "fileGlob": "**/email/**", "tier": "pro" }
+    ]
+  },
+  "metadata": { "minTier": "pro", "category": "email-auth" }
+}

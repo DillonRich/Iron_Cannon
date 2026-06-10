@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/metered-billing",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/usage-based",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe metered billing",
+  "excerpt": "Usage records and metered prices for seat-based SaaS.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "stripe",
+    "metered-billing"
+  ]
+}

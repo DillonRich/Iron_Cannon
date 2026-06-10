@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-invoices",
+  "sourceUrl": "https://docs.stripe.com/api/invoices.md",
+  "lastVerified": "2026-06-03",
+  "title": "Invoices",
+  "excerpt": "Invoices are statements of amounts owed by a customer, and are either generated one-off, or generated periodically from a subscription. They contain [invoice items](https://docs.stripe.com/api/invoices.md#invoiceitems), and proration adjustments that may be caused by subscription upgrades/downgrades (if necessary). If your invoice is configured to be billed through automatic charges, Stripe automatically finalizes your invoice and attempts payment. Note that finalizing the invoice, [when automatic](https://docs.stripe.com/docs/invoicing/integration/automatic-advancement-collection.md), does not happen immediately as the invoice is created. Stripe waits until one hour after the last webhook was successfully sent (or the last webhook timed out after failing).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

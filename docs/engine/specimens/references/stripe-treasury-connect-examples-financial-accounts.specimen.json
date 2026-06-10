@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-examples-financial-accounts",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/examples/financial-accounts.md",
+  "lastVerified": "2026-06-03",
+  "title": "Use Treasury for platforms and Issuing to set up financial accounts and cards",
+  "excerpt": "Follow a sample Treasury for platforms and Issuing integration that sets up a financial account and creates cards. Homebox is a fictitious vertical SaaS that builds software for home-services companies like HVAC technicians, cleaners, and plumbers. Homebox begins its Treasury for platforms integration by setting up a financial account and creating payment cards. To see how Homebox moves money to and from external bank accounts, see the [Using Treasury for platforms to move money](https://docs.stripe.com/treasury/connect/examples/moving-money.md) example integration. Homebox is already a Stripe platform with [Payments](https://docs.stripe.com/payments.md) and [Connect](https://docs.stripe.com/connect.md) enabled.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

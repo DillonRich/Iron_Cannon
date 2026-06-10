@@ -1,0 +1,14 @@
+{
+  "refId": "legal/cookie-consent-gate",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/legal-cookie-consent-gate",
+  "lastVerified": "2026-06-04",
+  "title": "Consent banner blocks non-essential scripts until accept",
+  "provider": "legal",
+  "excerpt": "LEG-W53-003: Consent banner blocks non-essential scripts until accept",
+  "embeddingHint": "LEG-W53-003 cookie script_before_consent",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

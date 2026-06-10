@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-moving-money-out-of-received-debits",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/moving-money/out-of/received-debits.md",
+  "lastVerified": "2026-06-03",
+  "title": "Moving money using ReceivedDebit objects",
+  "excerpt": "Learn how external account holders can pull funds from a financial account. Certain processes initiated outside of Treasury for platforms result in money being pulled out of a financial account. This includes: - Spending money on a card through [Stripe Issuing](https://docs.stripe.com/issuing/purchases/transactions.md#transactions) - Pulling money out of a financial account into an external account using ACH debits - Pulling money out of a platform’s financial account into that platform’s Stripe Payments balance using [top-ups](https://docs.stripe.com/treasury/connect/moving-money/payouts.md#top-ups) These money movements result in the creation of `ReceivedDebit` objects. You don’t create `ReceivedDebits` directly, rather you observe `ReceivedDebit` object creation with webhooks.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

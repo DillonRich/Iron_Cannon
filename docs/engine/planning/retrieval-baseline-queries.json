@@ -1,0 +1,3339 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/retrieval-baseline/v1",
+  "rulesetVersion": "2026.06.03",
+  "description": "Planning baseline at 11224 cards",
+  "passThreshold": 0.9,
+  "queries": [
+    {
+      "id": "RB-01",
+      "query": "stripe webhook signature verify raw body constructEvent",
+      "expectedRefIds": [
+        "stripe/knowledge-w64-webhook-signature-verify",
+        "resend/knowledge-w67-webhook-signature-verify",
+        "stripe/webhook-signature"
+      ]
+    },
+    {
+      "id": "RB-02",
+      "query": "cloudflare d1 migrations apply snake_case tables",
+      "expectedRefIds": [
+        "cloudflare/d1-migrations",
+        "cloudflare/d1-reference-migrations-index",
+        "cloudflare/pages-migrations-migrating-from-firebase-index"
+      ]
+    },
+    {
+      "id": "RB-03",
+      "query": "resend verified domain CAN-SPAM transactional sender",
+      "expectedRefIds": [
+        "resend/verified-domain",
+        "resend/docs-knowledge-base-403-error-domain-mismatch",
+        "resend/from-domain"
+      ]
+    },
+    {
+      "id": "RB-04",
+      "query": "nextjs middleware session protected routes matcher",
+      "expectedRefIds": [
+        "nextjs/knowledge-w61-middleware-matcher",
+        "nextjs/docs-app-api-reference-config-next-config-js-typedroutes",
+        "nextjs/docs-app-api-reference-file-conventions-dynamic-routes"
+      ]
+    },
+    {
+      "id": "RB-05",
+      "query": "GDPR lawful basis privacy policy data subject rights",
+      "expectedRefIds": [
+        "legal/gdpr-data-subject-rights",
+        "legal/gdpr-privacy-notice",
+        "legal/knowledge-w72-privacy-policy-changelog"
+      ]
+    },
+    {
+      "id": "RB-06",
+      "query": "OWASP CSRF prevention SameSite server actions",
+      "expectedRefIds": [
+        "nextjs/knowledge-w74-server-actions-csrf",
+        "owasp/cheatsheets-server-side-request-forgery-prevention-cheat-sheet-html",
+        "owasp/csrf-prevention"
+      ]
+    },
+    {
+      "id": "RB-07",
+      "query": "stripe checkout session subscription SC-V01 price id",
+      "expectedRefIds": [
+        "ironcannon/sc-v01-subscription-checkout",
+        "stripe/api-checkout-sessions",
+        "stripe/api-checkout-sessions-create"
+      ]
+    },
+    {
+      "id": "RB-08",
+      "query": "cloudflare kv session TTL provisioning race idempotency",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w69-session-kv-binding",
+        "cloudflare/kv-session-pattern",
+        "cloudflare/kv-ttl"
+      ]
+    },
+    {
+      "id": "RB-09",
+      "query": "stripe billing portal customer return URL production",
+      "expectedRefIds": [
+        "stripe/billing-portal-deep",
+        "stripe/billing-customer",
+        "stripe/billing-customer-tax-ids"
+      ]
+    },
+    {
+      "id": "RB-10",
+      "query": "WCAG alt text form labels accessibility signup",
+      "expectedRefIds": [
+        "legal/wcag-alt-text",
+        "legal/wcag-form-labels",
+        "cloudflare/cloudflare-for-platforms-workers-for-platforms-configuration-dynamic-dispatch-in"
+      ]
+    },
+    {
+      "id": "RB-100",
+      "query": "nextjs middleware matcher auth protected routes",
+      "expectedRefIds": [
+        "nextjs/knowledge-w61-middleware-matcher",
+        "nextjs/knowledge-w66-middleware-auth-guard",
+        "nextjs/knowledge-w72-middleware-auth-guard"
+      ]
+    },
+    {
+      "id": "RB-101",
+      "query": "owasp mcp security cheat sheet tool attestation",
+      "expectedRefIds": [
+        "owasp/cheatsheets-mcp-security-cheat-sheet-html",
+        "owasp/cheatsheets-ai-agent-security-cheat-sheet-html",
+        "owasp/cheatsheets-ajax-security-cheat-sheet-html"
+      ]
+    },
+    {
+      "id": "RB-102",
+      "query": "owasp llm prompt injection prevention sanitize",
+      "expectedRefIds": [
+        "owasp/cheatsheets-llm-prompt-injection-prevention-cheat-sheet-html",
+        "owasp/knowledge-w68-prompt-injection-sanitize",
+        "owasp/cheatsheets-injection-prevention-cheat-sheet-html"
+      ]
+    },
+    {
+      "id": "RB-103",
+      "query": "owasp graphql introspection production disable",
+      "expectedRefIds": [
+        "owasp/cheatsheets-graphql-cheat-sheet-html",
+        "owasp/knowledge-w73-csp-strict-production",
+        "owasp/knowledge-w73-xxe-parser-disabled"
+      ]
+    },
+    {
+      "id": "RB-104",
+      "query": "owasp websocket security origin validation",
+      "expectedRefIds": [
+        "owasp/cheatsheets-websocket-security-cheat-sheet-html",
+        "owasp/api-security",
+        "owasp/cheatsheets-ai-agent-security-cheat-sheet-html"
+      ]
+    },
+    {
+      "id": "RB-105",
+      "query": "owasp oauth2 state parameter authorization code",
+      "expectedRefIds": [
+        "owasp/authorization",
+        "owasp/cheatsheets-authorization-cheat-sheet-html",
+        "owasp/cheatsheets-authorization-testing-automation-cheat-sheet-html"
+      ]
+    },
+    {
+      "id": "RB-106",
+      "query": "owasp secrets management environment variables",
+      "expectedRefIds": [
+        "owasp/cheatsheets-secrets-management-cheat-sheet-html",
+        "cloudflare/workers-development-testing-environment-variables-index",
+        "owasp/key-management"
+      ]
+    },
+    {
+      "id": "RB-107",
+      "query": "owasp ssrf prevention outbound fetch allowlist",
+      "expectedRefIds": [
+        "owasp/knowledge-w73-ssrf-outbound-allowlist",
+        "owasp/ssrf",
+        "owasp/cheatsheets-credential-stuffing-prevention-cheat-sheet-html"
+      ]
+    },
+    {
+      "id": "RB-108",
+      "query": "legal gdpr legitimate interest assessment analytics",
+      "expectedRefIds": [
+        "legal/knowledge-w62-legitimate-interest",
+        "legal/knowledge-w63-legitimate-interest-record",
+        "legal/gdpr-access"
+      ]
+    },
+    {
+      "id": "RB-109",
+      "query": "ironclad obligation layer4 compare disclaimer",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w66-layer4-disclaimer",
+        "legal/disclaimer",
+        "ironcannon/compare-engine"
+      ]
+    },
+    {
+      "id": "RB-11",
+      "query": "stripe connect account onboarding capabilities",
+      "expectedRefIds": [
+        "stripe/connect-account-capabilities",
+        "stripe/treasury-connect-examples-onboarding-guide",
+        "stripe/connect-accounts"
+      ]
+    },
+    {
+      "id": "RB-110",
+      "query": "cloudflare workers ai agents vectorize embeddings",
+      "expectedRefIds": [
+        "cloudflare/vectorize-get-started-embeddings-index",
+        "cloudflare/workers-wrangler-commands-vectorize-index",
+        "cloudflare/agents-index"
+      ]
+    },
+    {
+      "id": "RB-111",
+      "query": "stripe webhook signature verify endpoint secret",
+      "expectedRefIds": [
+        "stripe/knowledge-w64-webhook-signature-verify",
+        "resend/knowledge-w67-webhook-signature-verify",
+        "stripe/webhook-signature"
+      ]
+    },
+    {
+      "id": "RB-112",
+      "query": "cloudflare turnstile login form server verify",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w64-turnstile-login-gate",
+        "cloudflare/cloudflare-for-platforms-workers-for-platforms-configuration-dynamic-dispatch-in",
+        "cloudflare/cloudflare-for-platforms-workers-for-platforms-index"
+      ]
+    },
+    {
+      "id": "RB-113",
+      "query": "cloudflare waf custom rules auth abuse block",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w69-waf-custom-rules",
+        "cloudflare/waf-custom-rules",
+        "cloudflare/knowledge-w64-waf-auth-rate-limit"
+      ]
+    },
+    {
+      "id": "RB-114",
+      "query": "stripe radar fraud high risk payment 3ds",
+      "expectedRefIds": [
+        "stripe/knowledge-w64-radar-high-risk-3ds",
+        "stripe/knowledge-w63-payment-intent-3ds",
+        "stripe/radar-analytics-fraud-insights"
+      ]
+    },
+    {
+      "id": "RB-115",
+      "query": "workers rate limit binding authenticated api",
+      "expectedRefIds": [
+        "cloudflare/workers-runtime-apis-bindings-rate-limit-index",
+        "cloudflare/knowledge-w69-rate-limit-binding",
+        "cloudflare/rate-limit-binding"
+      ]
+    },
+    {
+      "id": "RB-116",
+      "query": "stripe idempotency key post mutation retry",
+      "expectedRefIds": [
+        "stripe/knowledge-w70-webhook-retry-idempotency",
+        "stripe/idempotency",
+        "resend/docs-dashboard-emails-idempotency-keys"
+      ]
+    },
+    {
+      "id": "RB-117",
+      "query": "owasp logging redact pan cvv secrets",
+      "expectedRefIds": [
+        "owasp/knowledge-w64-logging-pci-redact",
+        "cloudflare/secrets-logging",
+        "owasp-logging-monitoring"
+      ]
+    },
+    {
+      "id": "RB-118",
+      "query": "gdpr data portability export json account",
+      "expectedRefIds": [
+        "legal/knowledge-w64-gdpr-portability-json",
+        "cloudflare/d1-best-practices-import-export-data-index",
+        "cloudflare/workers-observability-exporting-opentelemetry-data-axiom-index"
+      ]
+    },
+    {
+      "id": "RB-119",
+      "query": "stripe test mode keys production block",
+      "expectedRefIds": [
+        "stripe/test-mode-block",
+        "stripe/testing",
+        "stripe/disputes-prevention-card-testing"
+      ]
+    },
+    {
+      "id": "RB-12",
+      "query": "stripe radar fraud rules payment intent",
+      "expectedRefIds": [
+        "stripe/radar-rules",
+        "stripe/api-payment-intents",
+        "stripe/api-payment-intents-create"
+      ]
+    },
+    {
+      "id": "RB-120",
+      "query": "cloudflare d1 migrations versioned deploy",
+      "expectedRefIds": [
+        "cloudflare/d1-migrations",
+        "cloudflare/d1-reference-migrations-index",
+        "cloudflare/pages-configuration-deploy-hooks-index"
+      ]
+    },
+    {
+      "id": "RB-121",
+      "query": "cookie consent banner eu gdpr before analytics",
+      "expectedRefIds": [
+        "legal/cookie-consent-gate",
+        "legal/cookie-consent-gating",
+        "legal/cookie-consent-eu"
+      ]
+    },
+    {
+      "id": "RB-122",
+      "query": "privacy policy link footer every page",
+      "expectedRefIds": [
+        "legal/privacy-policy-link",
+        "legal/knowledge-w72-privacy-policy-changelog",
+        "legal/status-page-link"
+      ]
+    },
+    {
+      "id": "RB-123",
+      "query": "can-spam unsubscribe marketing email 10 days",
+      "expectedRefIds": [
+        "legal/can-spam-unsubscribe",
+        "legal/can-spam-compliance-guide",
+        "legal/business-guidance-resources-can-spam-act-compliance-guide-business"
+      ]
+    },
+    {
+      "id": "RB-124",
+      "query": "ccpa notice california collection personal information",
+      "expectedRefIds": [
+        "legal/knowledge-w65-ccpa-notice-collection",
+        "legal/ccpa-overview",
+        "legal/ccpa-do-not-sell"
+      ]
+    },
+    {
+      "id": "RB-125",
+      "query": "coppa age gate minors under 13 parental consent",
+      "expectedRefIds": [
+        "legal/knowledge-w65-coppa-age-gate",
+        "legal/age-gate-minor",
+        "ironcannon/knowledge-w68-adversarial-agent-gate"
+      ]
+    },
+    {
+      "id": "RB-126",
+      "query": "ai disclosure automated decision transparency",
+      "expectedRefIds": [
+        "legal/ai-disclosure",
+        "legal/knowledge-w65-ai-feature-disclosure",
+        "legal/knowledge-w67-refund-checkout-disclosure"
+      ]
+    },
+    {
+      "id": "RB-127",
+      "query": "eu data transfer scc standard contractual clauses",
+      "expectedRefIds": [
+        "legal/knowledge-w65-eu-scc-transfer",
+        "cloudflare/api-resources-d1-subresources-database-methods-create-index",
+        "cloudflare/d1-best-practices-import-export-data-index"
+      ]
+    },
+    {
+      "id": "RB-128",
+      "query": "status page incident communication public link",
+      "expectedRefIds": [
+        "legal/knowledge-w65-status-page-incident",
+        "legal/status-page-link",
+        "nextjs/docs-app-api-reference-functions-use-link-status"
+      ]
+    },
+    {
+      "id": "RB-129",
+      "query": "content security policy report-uri violations",
+      "expectedRefIds": [
+        "nextjs/docs-app-guides-content-security-policy",
+        "owasp/cheatsheets-content-security-policy-cheat-sheet-html",
+        "owasp/content-security-policy"
+      ]
+    },
+    {
+      "id": "RB-13",
+      "query": "cloudflare workers ai vectorize embeddings",
+      "expectedRefIds": [
+        "cloudflare/vectorize-get-started-embeddings-index",
+        "cloudflare/workers-wrangler-commands-vectorize-index",
+        "cloudflare/api-resources-vectorize-subresources-indexes-methods-list-index"
+      ]
+    },
+    {
+      "id": "RB-130",
+      "query": "resend domain verify dns sending production",
+      "expectedRefIds": [
+        "resend/domains-verify",
+        "resend/docs-api-reference-domains-verify-domain",
+        "resend/docs-knowledge-base-what-if-my-domain-is-not-verifying"
+      ]
+    },
+    {
+      "id": "RB-131",
+      "query": "nextjs middleware protect authenticated routes session",
+      "expectedRefIds": [
+        "nextjs/docs-app-api-reference-config-next-config-js-typedroutes",
+        "nextjs/docs-app-api-reference-file-conventions-dynamic-routes",
+        "nextjs/docs-app-api-reference-file-conventions-intercepting-routes"
+      ]
+    },
+    {
+      "id": "RB-132",
+      "query": "nextjs server actions validate input zod sanitize",
+      "expectedRefIds": [
+        "nextjs/docs-app-api-reference-config-next-config-js-serveractions",
+        "nextjs/knowledge-w66-server-action-zod",
+        "nextjs/knowledge-w74-server-actions-csrf"
+      ]
+    },
+    {
+      "id": "RB-133",
+      "query": "owasp xss prevention output encoding escape",
+      "expectedRefIds": [
+        "owasp/cheatsheets-dom-based-xss-prevention-cheat-sheet-html",
+        "owasp/knowledge-w66-xss-output-encode",
+        "owasp/xss-prevention"
+      ]
+    },
+    {
+      "id": "RB-134",
+      "query": "owasp insecure deserialization untrusted payload block",
+      "expectedRefIds": [
+        "owasp/cheatsheets-deserialization-cheat-sheet-html",
+        "owasp/cheatsheets-insecure-direct-object-reference-prevention-cheat-sheet-html",
+        "owasp/insecure-direct-object-reference"
+      ]
+    },
+    {
+      "id": "RB-135",
+      "query": "iron cannon t05 verify before next module directive",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w61-t05-before-t04-next",
+        "ironcannon/knowledge-w66-t05-verify-mandate",
+        "ironcannon/knowledge-w71-t05-all-modules"
+      ]
+    },
+    {
+      "id": "RB-136",
+      "query": "hsts strict transport security preload header",
+      "expectedRefIds": [
+        "owasp/cheatsheets-http-strict-transport-security-cheat-sheet-html",
+        "owasp/cheatsheets-transport-layer-security-cheat-sheet-html",
+        "owasp/knowledge-w61-hsts-preload"
+      ]
+    },
+    {
+      "id": "RB-137",
+      "query": "session cookie httponly secure samesite",
+      "expectedRefIds": [
+        "owasp/session-httponly-secure",
+        "owasp/session-samesite",
+        "nextjs/cookies-headers"
+      ]
+    },
+    {
+      "id": "RB-138",
+      "query": "rest api rate limit per user authenticated",
+      "expectedRefIds": [
+        "owasp/knowledge-w66-rest-api-rate-limit",
+        "cloudflare/workers-runtime-apis-bindings-rate-limit-index",
+        "resend/docs-api-reference-rate-limit"
+      ]
+    },
+    {
+      "id": "RB-139",
+      "query": "error handling hide stack trace production generic",
+      "expectedRefIds": [
+        "cloudflare/workers-runtime-apis-rpc-error-handling-index",
+        "nextjs/docs-app-getting-started-error-handling",
+        "owasp/cheatsheets-error-handling-cheat-sheet-html"
+      ]
+    },
+    {
+      "id": "RB-14",
+      "query": "cloudflare zero trust access application",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w73-zero-trust-access",
+        "cloudflare/d1-tutorials-build-an-api-to-access-d1-index",
+        "cloudflare/pages-functions-plugins-cloudflare-access-index"
+      ]
+    },
+    {
+      "id": "RB-140",
+      "query": "ironclad layer4 compare disclaimer compliance",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w66-layer4-disclaimer",
+        "legal/disclaimer",
+        "ironcannon/compare-engine"
+      ]
+    },
+    {
+      "id": "RB-141",
+      "query": "owasp mcp security tool authorization scope",
+      "expectedRefIds": [
+        "owasp/knowledge-w67-mcp-tool-scope",
+        "owasp/cheatsheets-mcp-security-cheat-sheet-html",
+        "owasp/knowledge-w63-mcp-tool-authz"
+      ]
+    },
+    {
+      "id": "RB-142",
+      "query": "owasp rag security corpus poisoning validation",
+      "expectedRefIds": [
+        "owasp/cheatsheets-rag-security-cheat-sheet-html",
+        "owasp/knowledge-w63-rag-poisoning",
+        "owasp/password-storage"
+      ]
+    },
+    {
+      "id": "RB-143",
+      "query": "owasp ai agent tool policy exfiltration block",
+      "expectedRefIds": [
+        "owasp/knowledge-w67-agent-tool-policy",
+        "ironcannon/agent-guidance-block",
+        "owasp/cheatsheets-ai-agent-security-cheat-sheet-html"
+      ]
+    },
+    {
+      "id": "RB-144",
+      "query": "cloudflare workers secrets binding wrangler",
+      "expectedRefIds": [
+        "cloudflare/workers-wrangler-commands-secrets-store-index",
+        "cloudflare/workers-secrets",
+        "cloudflare/knowledge-w61-wrangler-secrets-rotate"
+      ]
+    },
+    {
+      "id": "RB-145",
+      "query": "stripe dispute evidence best practices deadline",
+      "expectedRefIds": [
+        "stripe/disputes-prevention-best-practices",
+        "stripe/knowledge-w67-dispute-evidence-sla",
+        "stripe/disputes-api-visa-ce3"
+      ]
+    },
+    {
+      "id": "RB-146",
+      "query": "resend webhook signature verify inbound",
+      "expectedRefIds": [
+        "resend/knowledge-w67-webhook-signature-verify",
+        "resend/docs-webhooks-verify-webhooks-requests",
+        "stripe/knowledge-w64-webhook-signature-verify"
+      ]
+    },
+    {
+      "id": "RB-147",
+      "query": "nextjs data security server client boundary",
+      "expectedRefIds": [
+        "nextjs/knowledge-w67-server-client-data-boundary",
+        "nextjs/docs-app-getting-started-server-and-client-components",
+        "nextjs/docs-app-guides-data-security"
+      ]
+    },
+    {
+      "id": "RB-148",
+      "query": "refund policy disclosure checkout billing",
+      "expectedRefIds": [
+        "legal/refund-policy-disclosure",
+        "legal/knowledge-w67-refund-checkout-disclosure",
+        "stripe/payments-checkout-billing-cycle"
+      ]
+    },
+    {
+      "id": "RB-149",
+      "query": "t10 security directives before t11 audit",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w63-t10-before-t11",
+        "cloudflare/d1-observability-audit-logs-index",
+        "cloudflare/d1-reference-data-security-index"
+      ]
+    },
+    {
+      "id": "RB-15",
+      "query": "resend broadcast audience unsubscribe",
+      "expectedRefIds": [
+        "resend/docs-dashboard-audiences-managing-unsubscribe-list",
+        "resend/audiences",
+        "resend/docs-api-reference-broadcasts-create-broadcast"
+      ]
+    },
+    {
+      "id": "RB-150",
+      "query": "production confidence g2 release gate",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w67-production-confidence-gate",
+        "ironcannon/knowledge-w71-e2e-packages-gate",
+        "ironcannon/knowledge-w71-obligation-calibration-gate"
+      ]
+    },
+    {
+      "id": "RB-151",
+      "query": "owasp abuse case catalog authentication billing",
+      "expectedRefIds": [
+        "owasp/cheatsheets-abuse-case-cheat-sheet-html",
+        "owasp/knowledge-w68-abuse-case-auth",
+        "owasp/authentication"
+      ]
+    },
+    {
+      "id": "RB-152",
+      "query": "clickjacking x-frame-options frame-ancestors defense",
+      "expectedRefIds": [
+        "owasp/cheatsheets-clickjacking-defense-cheat-sheet-html",
+        "owasp/knowledge-w68-clickjacking-frame-deny",
+        "owasp/clickjacking"
+      ]
+    },
+    {
+      "id": "RB-153",
+      "query": "secure coding with ai human review gate",
+      "expectedRefIds": [
+        "owasp/cheatsheets-secure-coding-with-ai-cheat-sheet-html",
+        "cloudflare/pages-how-to-preview-with-cloudflare-tunnel-index",
+        "owasp/cheatsheets-secure-code-review-cheat-sheet-html"
+      ]
+    },
+    {
+      "id": "RB-154",
+      "query": "llm prompt injection sanitize tool arguments",
+      "expectedRefIds": [
+        "owasp/cheatsheets-llm-prompt-injection-prevention-cheat-sheet-html",
+        "owasp/knowledge-w68-prompt-injection-sanitize",
+        "cloudflare/workers-get-started-prompting-index"
+      ]
+    },
+    {
+      "id": "RB-155",
+      "query": "nextjs app router authentication session",
+      "expectedRefIds": [
+        "nextjs/knowledge-w68-app-router-auth-session",
+        "nextjs/app-router-overview",
+        "nextjs/docs-app-api-reference-functions-use-router"
+      ]
+    },
+    {
+      "id": "RB-156",
+      "query": "stripe customer portal self service billing",
+      "expectedRefIds": [
+        "stripe/billing-portal-deep",
+        "stripe/billing-customer",
+        "stripe/billing-customer-tax-ids"
+      ]
+    },
+    {
+      "id": "RB-157",
+      "query": "iron cannon agent guidance block every response",
+      "expectedRefIds": [
+        "ironcannon/agent-guidance-block",
+        "ironcannon/knowledge-w68-agent-guidance-required",
+        "ironcannon/agent-concurrency"
+      ]
+    },
+    {
+      "id": "RB-158",
+      "query": "adversarial agent harness g2 release gate",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w68-adversarial-agent-gate",
+        "ironcannon/knowledge-w68-agent-guidance-required",
+        "cloudflare/agents-index"
+      ]
+    },
+    {
+      "id": "RB-159",
+      "query": "csrf token state changing form api",
+      "expectedRefIds": [
+        "legal/knowledge-w68-csrf-state-changing",
+        "cloudflare/d1-sql-api-sql-statements-index",
+        "cloudflare/d1-worker-api-prepared-statements-index"
+      ]
+    },
+    {
+      "id": "RB-16",
+      "query": "resend webhook bounce complaint delivered",
+      "expectedRefIds": [
+        "resend/knowledge-w64-bounce-complaint-webhook",
+        "resend/docs-webhooks-emails-bounced",
+        "resend/docs-webhooks-emails-delivered"
+      ]
+    },
+    {
+      "id": "RB-160",
+      "query": "tier entitlement matrix mcp tools parity",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w68-tier-tool-parity",
+        "ironcannon/knowledge-w70-tools-list-parity",
+        "cloudflare/workers-observability-dev-tools-breakpoints-index"
+      ]
+    },
+    {
+      "id": "RB-161",
+      "query": "cloudflare workers rate limits mcp http throttle",
+      "expectedRefIds": [
+        "cloudflare/workers-ci-cd-builds-limits-and-pricing-index",
+        "cloudflare/workers-languages-rust-crates-index",
+        "cloudflare/workers-limits"
+      ]
+    },
+    {
+      "id": "RB-162",
+      "query": "kv session encryption binding ttl workers",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w67-workers-secret-binding",
+        "cloudflare/knowledge-w69-session-kv-binding",
+        "cloudflare/workers-bindings"
+      ]
+    },
+    {
+      "id": "RB-163",
+      "query": "iron cannon api key rotation dual window",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w69-api-key-rotation",
+        "ironcannon/api-key-lifecycle",
+        "ironcannon/knowledge-w69-openapi-lint-gate"
+      ]
+    },
+    {
+      "id": "RB-164",
+      "query": "openapi lint mcp export release gate",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w69-openapi-lint-gate",
+        "ironcannon/openapi-export-spec",
+        "ironcannon/knowledge-w71-e2e-packages-gate"
+      ]
+    },
+    {
+      "id": "RB-165",
+      "query": "vectorize adapter smoke g2 retrieval stub",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w69-vectorize-adapter-smoke",
+        "ironcannon/knowledge-w69-vectorize-adapter-smoke",
+        "ironcannon/knowledge-w73-retrieval-stub-gate"
+      ]
+    },
+    {
+      "id": "RB-166",
+      "query": "d1 migration preview staging safety",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w69-d1-migration-safety",
+        "cloudflare/d1-migrations",
+        "cloudflare/d1-platform-alpha-migration-index"
+      ]
+    },
+    {
+      "id": "RB-167",
+      "query": "turnstile signup password reset bot protection",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w69-turnstile-bot-gate",
+        "cloudflare/turnstile-signup",
+        "owasp/forgot-password"
+      ]
+    },
+    {
+      "id": "RB-168",
+      "query": "waf custom rules exploit block cloudflare",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w69-waf-custom-rules",
+        "cloudflare/waf-custom-rules",
+        "cloudflare/cache-rules"
+      ]
+    },
+    {
+      "id": "RB-169",
+      "query": "audit log immutable retention compliance",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w69-audit-log-immutable",
+        "cloudflare/d1-observability-audit-logs-index",
+        "cloudflare/r2-platform-audit-logs-index"
+      ]
+    },
+    {
+      "id": "RB-17",
+      "query": "OWASP authentication password storage bcrypt",
+      "expectedRefIds": [
+        "owasp/password-storage",
+        "owasp/cheatsheets-password-storage-cheat-sheet-html",
+        "owasp/credential-storage"
+      ]
+    },
+    {
+      "id": "RB-170",
+      "query": "stripe pci scope checkout elements only",
+      "expectedRefIds": [
+        "stripe/checkout-elements-with-checkout-sessions-api-changelog",
+        "ironcannon/knowledge-w87-uj-087-stripe-checkout-sd07",
+        "legal/knowledge-w69-pci-scope-minimization"
+      ]
+    },
+    {
+      "id": "RB-171",
+      "query": "usage telemetry flush session boundary iron cannon",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w70-usage-telemetry-flush",
+        "ironcannon/knowledge-w71-session-attestation",
+        "ironcannon/knowledge-w83-multi-stack-regression-session"
+      ]
+    },
+    {
+      "id": "RB-172",
+      "query": "obligation verify g2 harness release gate",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w70-obligation-verify-gate",
+        "ironcannon/knowledge-w71-obligation-calibration-gate",
+        "ironcannon/knowledge-w71-obligation-coverage-gate"
+      ]
+    },
+    {
+      "id": "RB-173",
+      "query": "module sequence guard mcp ci enforcement",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w70-module-sequence-guard",
+        "ironcannon/module-sequence-gate",
+        "ironcannon/knowledge-w71-t05-all-modules"
+      ]
+    },
+    {
+      "id": "RB-174",
+      "query": "error catalog parity mcp response codes",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w70-error-catalog-parity",
+        "cloudflare/r2-api-error-codes-index",
+        "cloudflare/r2-data-catalog-config-examples-duckdb-index"
+      ]
+    },
+    {
+      "id": "RB-175",
+      "query": "tools list tier entitlement matrix parity",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w70-tools-list-parity",
+        "ironcannon/knowledge-w68-tier-tool-parity",
+        "cloudflare/api-resources-vectorize-subresources-indexes-methods-list-index"
+      ]
+    },
+    {
+      "id": "RB-176",
+      "query": "worker bundle mode g2 smoke deploy",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w70-bundle-mode-smoke",
+        "cloudflare/workers-ci-cd-builds-deploy-hooks-index",
+        "cloudflare/workers-configuration-versions-and-deployments-gradual-deployments-index"
+      ]
+    },
+    {
+      "id": "RB-177",
+      "query": "infrastructure catalog smoke g2 gate",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w70-infrastructure-smoke",
+        "ironcannon/knowledge-w73-armor-smoke-gate",
+        "cloudflare/knowledge-w64-turnstile-login-gate"
+      ]
+    },
+    {
+      "id": "RB-178",
+      "query": "outbound module chain golden path validation",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w70-outbound-chain-gate",
+        "ironcannon/knowledge-w83-starter-golden-path-unchanged",
+        "cloudflare/learning-paths-r2-intro-series-r2-1-index"
+      ]
+    },
+    {
+      "id": "RB-179",
+      "query": "stripe webhook idempotency event dedup retry",
+      "expectedRefIds": [
+        "stripe/knowledge-w70-webhook-retry-idempotency",
+        "stripe/webhook-idempotency",
+        "stripe/event-types"
+      ]
+    },
+    {
+      "id": "RB-18",
+      "query": "OWASP injection SQL prepared statements",
+      "expectedRefIds": [
+        "owasp/cheatsheets-sql-injection-prevention-cheat-sheet-html",
+        "owasp/sql-injection",
+        "cloudflare/d1-sql-api-sql-statements-index"
+      ]
+    },
+    {
+      "id": "RB-180",
+      "query": "resend bounce suppression hard bounce list",
+      "expectedRefIds": [
+        "resend/knowledge-w70-bounce-suppression-list",
+        "resend/bounce-suppression",
+        "resend/docs-knowledge-base-why-are-my-emails-landing-on-the-suppression-list"
+      ]
+    },
+    {
+      "id": "RB-181",
+      "query": "t05 golden path mcp production signoff gate",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w71-t05-golden-gate",
+        "ironcannon/knowledge-w75-production-mcp-signoff",
+        "ironcannon/knowledge-w67-production-confidence-gate"
+      ]
+    },
+    {
+      "id": "RB-182",
+      "query": "t05 all modules individual harness pass",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w71-t05-all-modules",
+        "cloudflare/knowledge-w73-bot-management-challenge",
+        "cloudflare/workers-testing-miniflare-core-modules-index"
+      ]
+    },
+    {
+      "id": "RB-183",
+      "query": "e2e packages smoke g2 gate monorepo",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w71-e2e-packages-gate",
+        "ironcannon/knowledge-w73-armor-smoke-gate",
+        "cloudflare/knowledge-w64-turnstile-login-gate"
+      ]
+    },
+    {
+      "id": "RB-184",
+      "query": "obligation calibration fixture bundle parity",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w71-obligation-calibration-gate",
+        "ironcannon/obligation-fixtures",
+        "ironcannon/knowledge-w64-obligation-150-floor"
+      ]
+    },
+    {
+      "id": "RB-185",
+      "query": "obligation coverage index layer4 one hundred",
+      "expectedRefIds": [
+        "cloudflare/pages-functions-plugins-honeycomb-index",
+        "cloudflare/r2-examples-rclone-index",
+        "cloudflare/workers-observability-exporting-opentelemetry-data-honeycomb-index"
+      ]
+    },
+    {
+      "id": "RB-186",
+      "query": "session attestation remote mcp connection",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w71-session-attestation",
+        "cloudflare/d1-best-practices-remote-development-index",
+        "cloudflare/knowledge-w69-session-kv-binding"
+      ]
+    },
+    {
+      "id": "RB-187",
+      "query": "production readiness checklist signoff",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w71-production-readiness-doc",
+        "ironcannon/knowledge-w75-production-mcp-signoff",
+        "ironcannon/knowledge-w84-production-readiness-v12"
+      ]
+    },
+    {
+      "id": "RB-188",
+      "query": "phase 3 exit pc 100 obligations 220",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w71-phase3-exit-signal",
+        "ironcannon/knowledge-w75-phase4-adapter-blocked",
+        "cloudflare/scale-c4-workers-100"
+      ]
+    },
+    {
+      "id": "RB-189",
+      "query": "mcp tool poisoning description override defense",
+      "expectedRefIds": [
+        "owasp/knowledge-w71-mcp-tool-poisoning",
+        "owasp/knowledge-w63-mcp-tool-authz",
+        "owasp/knowledge-w67-mcp-tool-scope"
+      ]
+    },
+    {
+      "id": "RB-19",
+      "query": "GDPR data subject access privacy personal data rights",
+      "expectedRefIds": [
+        "legal/gdpr-data-subject-rights",
+        "legal/gdpr-access",
+        "legal/gdpr-privacy-notice"
+      ]
+    },
+    {
+      "id": "RB-190",
+      "query": "supply chain dependency audit armor publish",
+      "expectedRefIds": [
+        "owasp/cheatsheets-software-supply-chain-security-cheat-sheet-html",
+        "owasp/knowledge-w71-supply-chain-deps",
+        "cloudflare/d1-observability-audit-logs-index"
+      ]
+    },
+    {
+      "id": "RB-191",
+      "query": "gdpr dsar data export statutory deadline api",
+      "expectedRefIds": [
+        "legal/knowledge-w72-gdpr-dsar-export",
+        "cloudflare/api-resources-d1-subresources-database-methods-create-index",
+        "cloudflare/d1-best-practices-import-export-data-index"
+      ]
+    },
+    {
+      "id": "RB-192",
+      "query": "ccpa do not sell california opt out link",
+      "expectedRefIds": [
+        "legal/knowledge-w63-ccpa-opt-out-link",
+        "legal/ccpa-do-not-sell",
+        "legal/knowledge-w61-ccpa-do-not-sell"
+      ]
+    },
+    {
+      "id": "RB-193",
+      "query": "granular cookie consent categories tracking scripts",
+      "expectedRefIds": [
+        "legal/knowledge-w72-cookie-consent-granular",
+        "legal/cookie-consent-gate",
+        "legal/cookie-consent-eu"
+      ]
+    },
+    {
+      "id": "RB-194",
+      "query": "terms version pinned subscription creation audit",
+      "expectedRefIds": [
+        "legal/knowledge-w72-terms-version-pin",
+        "cloudflare/d1-observability-audit-logs-index",
+        "cloudflare/kv-platform-event-subscriptions-index"
+      ]
+    },
+    {
+      "id": "RB-195",
+      "query": "privacy policy changelog user notice requirement",
+      "expectedRefIds": [
+        "legal/knowledge-w72-privacy-policy-changelog",
+        "legal/gdpr-privacy-notice",
+        "legal/privacy-policy-link"
+      ]
+    },
+    {
+      "id": "RB-196",
+      "query": "stripe tax automatic nexus calculation checkout",
+      "expectedRefIds": [
+        "stripe/knowledge-w72-tax-automatic-enabled",
+        "stripe/payments-checkout-taxes",
+        "stripe/tax-checkout"
+      ]
+    },
+    {
+      "id": "RB-197",
+      "query": "invoice statutory business identifier compliance",
+      "expectedRefIds": [
+        "legal/business-guidance-resources-can-spam-act-compliance-guide-business",
+        "stripe/knowledge-w72-invoice-compliance-fields",
+        "google/knowledge-w86-workspace-business-email"
+      ]
+    },
+    {
+      "id": "RB-198",
+      "query": "marketing email one click unsubscribe resend",
+      "expectedRefIds": [
+        "resend/knowledge-w72-unsubscribe-one-click",
+        "resend/docs-dashboard-emails-add-unsubscribe-to-transactional-emails",
+        "resend/docs-webhooks-emails-clicked"
+      ]
+    },
+    {
+      "id": "RB-199",
+      "query": "nextjs middleware authenticated route guard",
+      "expectedRefIds": [
+        "nextjs/knowledge-w66-middleware-auth-guard",
+        "nextjs/knowledge-w72-middleware-auth-guard",
+        "nextjs/app-router-overview"
+      ]
+    },
+    {
+      "id": "RB-20",
+      "query": "iron cannon tier compose redaction pro legal",
+      "expectedRefIds": [
+        "ironcannon/tier-compose-redaction",
+        "ironcannon/knowledge-w67-production-confidence-gate",
+        "ironcannon/knowledge-w68-tier-tool-parity"
+      ]
+    },
+    {
+      "id": "RB-200",
+      "query": "idle session timeout sensitive dashboard owasp",
+      "expectedRefIds": [
+        "owasp/knowledge-w72-session-timeout-idle",
+        "owasp/cheatsheets-session-management-cheat-sheet-html",
+        "owasp/knowledge-w61-session-regenerate"
+      ]
+    },
+    {
+      "id": "RB-201",
+      "query": "strict csp nonce hash production content security policy",
+      "expectedRefIds": [
+        "owasp/content-security-policy",
+        "nextjs/docs-app-guides-content-security-policy",
+        "owasp/cheatsheets-content-security-policy-cheat-sheet-html"
+      ]
+    },
+    {
+      "id": "RB-202",
+      "query": "hsts preload max age transport layer protection",
+      "expectedRefIds": [
+        "owasp/cheatsheets-transport-layer-protection-cheat-sheet-html",
+        "owasp/transport-layer-protection",
+        "owasp/cheatsheets-transport-layer-security-cheat-sheet-html"
+      ]
+    },
+    {
+      "id": "RB-203",
+      "query": "ssrf outbound allowlist server side request forgery",
+      "expectedRefIds": [
+        "owasp/cheatsheets-server-side-request-forgery-prevention-cheat-sheet-html",
+        "owasp/knowledge-w73-ssrf-outbound-allowlist",
+        "owasp/cheatsheets-cross-site-request-forgery-prevention-cheat-sheet-html"
+      ]
+    },
+    {
+      "id": "RB-204",
+      "query": "xml external entity parser disabled security",
+      "expectedRefIds": [
+        "owasp/cheatsheets-xml-external-entity-prevention-cheat-sheet-html",
+        "owasp/cheatsheets-xml-security-cheat-sheet-html",
+        "owasp/knowledge-w73-xxe-parser-disabled"
+      ]
+    },
+    {
+      "id": "RB-205",
+      "query": "unsafe deserialization user payload prevention",
+      "expectedRefIds": [
+        "cloudflare/workers-examples-data-loss-prevention-index",
+        "nextjs/docs-app-api-reference-functions-useragent",
+        "owasp/cheatsheets-credential-stuffing-prevention-cheat-sheet-html"
+      ]
+    },
+    {
+      "id": "RB-206",
+      "query": "bot management challenge authentication cloudflare",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w73-bot-management-challenge",
+        "cloudflare/knowledge-w63-bot-fight-mode",
+        "cloudflare/knowledge-w69-turnstile-bot-gate"
+      ]
+    },
+    {
+      "id": "RB-207",
+      "query": "zero trust access admin dashboard cloudflare",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w73-zero-trust-access",
+        "cloudflare/d1-tutorials-build-an-api-to-access-d1-index",
+        "cloudflare/pages-functions-plugins-cloudflare-access-index"
+      ]
+    },
+    {
+      "id": "RB-208",
+      "query": "armor smoke g2 gate before armor tier release",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w73-armor-smoke-gate",
+        "ironcannon/knowledge-w62-armor-before-ship",
+        "ironcannon/knowledge-w73-retrieval-stub-gate"
+      ]
+    },
+    {
+      "id": "RB-209",
+      "query": "throttle loop detection runaway agent guard",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w73-throttle-loop-guard",
+        "cloudflare/agents-index",
+        "ironcannon/agent-concurrency"
+      ]
+    },
+    {
+      "id": "RB-21",
+      "query": "cloudflare workers durable objects sqlite alarm websocket",
+      "expectedRefIds": [
+        "cloudflare/durable-objects-api-alarms-index",
+        "cloudflare/workers-testing-miniflare-storage-durable-objects-index",
+        "cloudflare/durable-objects"
+      ]
+    },
+    {
+      "id": "RB-210",
+      "query": "retrieval stub g2 before rag live enablement",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w73-retrieval-stub-gate",
+        "stripe/identity-before-going-live",
+        "cloudflare/knowledge-w62-do-storage-limit"
+      ]
+    },
+    {
+      "id": "RB-211",
+      "query": "stripe connect onboarding kyc required fields",
+      "expectedRefIds": [
+        "stripe/knowledge-w74-connect-onboarding-kyc",
+        "stripe/connect-hosted-onboarding",
+        "stripe/connect-onboarding"
+      ]
+    },
+    {
+      "id": "RB-212",
+      "query": "stripe radar custom rules fraud high risk",
+      "expectedRefIds": [
+        "stripe/knowledge-w64-radar-high-risk-3ds",
+        "stripe/knowledge-w74-radar-rules-custom",
+        "stripe/radar-rules"
+      ]
+    },
+    {
+      "id": "RB-213",
+      "query": "billing portal proration upgrade downgrade behavior",
+      "expectedRefIds": [
+        "stripe/knowledge-w74-billing-portal-proration",
+        "stripe/billing-portal-deep",
+        "stripe/proration-disclosure"
+      ]
+    },
+    {
+      "id": "RB-214",
+      "query": "checkout ui customization branding terms match",
+      "expectedRefIds": [
+        "stripe/knowledge-w74-checkout-ui-customization",
+        "stripe/payments-checkout-customization",
+        "stripe/payments-checkout-customization-card-brands"
+      ]
+    },
+    {
+      "id": "RB-215",
+      "query": "resend dkim key rotation zero downtime schedule",
+      "expectedRefIds": [
+        "resend/knowledge-w74-domain-dkim-rotation",
+        "ironcannon/knowledge-w69-api-key-rotation",
+        "resend/docs-api-reference-api-keys-create-api-key"
+      ]
+    },
+    {
+      "id": "RB-216",
+      "query": "resend webhook replay protection ttl reject",
+      "expectedRefIds": [
+        "resend/knowledge-w74-webhook-replay-protection",
+        "resend/docs-webhooks-retries-and-replays",
+        "resend/docs-api-reference-webhooks-create-webhook"
+      ]
+    },
+    {
+      "id": "RB-217",
+      "query": "email deliverability bounce complaint rate monitor",
+      "expectedRefIds": [
+        "resend/docs-dashboard-emails-deliverability-insights",
+        "resend/docs-dashboard-emails-email-bounces",
+        "resend/docs-knowledge-base-how-do-i-maximize-deliverability-for-supabase-auth-emails"
+      ]
+    },
+    {
+      "id": "RB-218",
+      "query": "nextjs server actions csrf origin validation",
+      "expectedRefIds": [
+        "nextjs/knowledge-w74-server-actions-csrf",
+        "nextjs/docs-app-api-reference-config-next-config-js-serveractions",
+        "nextjs/knowledge-w61-server-action-origin"
+      ]
+    },
+    {
+      "id": "RB-219",
+      "query": "cloudflare cache purge scoped api token auth",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w61-cache-api-auth",
+        "cloudflare/knowledge-w74-cache-purge-auth",
+        "cloudflare/r2-api-tokens-index"
+      ]
+    },
+    {
+      "id": "RB-22",
+      "query": "cloudflare turnstile bot management captcha",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w69-turnstile-bot-gate",
+        "cloudflare/knowledge-w73-bot-management-challenge",
+        "cloudflare/knowledge-w63-bot-fight-mode"
+      ]
+    },
+    {
+      "id": "RB-220",
+      "query": "golden integration smoke major release gate",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w74-golden-integration-gate",
+        "ironcannon/knowledge-w71-t05-golden-gate",
+        "ironcannon/knowledge-w73-armor-smoke-gate"
+      ]
+    },
+    {
+      "id": "RB-221",
+      "query": "production mcp signoff checklist stakeholder complete",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w75-production-mcp-signoff",
+        "nextjs/docs-app-guides-production-checklist",
+        "ironcannon/knowledge-w71-production-readiness-doc"
+      ]
+    },
+    {
+      "id": "RB-222",
+      "query": "phase 4 adapter scope blocked until mcp signoff",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w75-phase4-adapter-blocked",
+        "ironcannon/knowledge-w75-production-mcp-signoff",
+        "owasp/knowledge-w67-mcp-tool-scope"
+      ]
+    },
+    {
+      "id": "RB-223",
+      "query": "production confidence 140 scenario registry floor",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w67-production-confidence-gate",
+        "ironcannon/knowledge-w75-pc-140-floor",
+        "cloudflare/pages-how-to-npm-private-registry-index"
+      ]
+    },
+    {
+      "id": "RB-224",
+      "query": "adversarial agent harness 24 scenario floor",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w68-adversarial-agent-gate",
+        "ironcannon/knowledge-w75-adversarial-24-floor",
+        "ironcannon/knowledge-w68-agent-guidance-required"
+      ]
+    },
+    {
+      "id": "RB-225",
+      "query": "obligation index 260 layer4 parity coverage",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w71-obligation-coverage-gate",
+        "ironcannon/knowledge-w75-obligation-260-floor",
+        "cloudflare/agents-index"
+      ]
+    },
+    {
+      "id": "RB-226",
+      "query": "imagination extended 1750 scenario floor",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w75-imagination-1750-floor",
+        "ironcannon/knowledge-w79-sd06-imagination-floor",
+        "ironcannon/knowledge-w81-sd07-imagination-floor"
+      ]
+    },
+    {
+      "id": "RB-227",
+      "query": "security protocol registry 1300 active floor",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w75-protocol-1300-floor",
+        "cloudflare/d1-reference-data-security-index",
+        "cloudflare/kv-reference-data-security-index"
+      ]
+    },
+    {
+      "id": "RB-228",
+      "query": "retrieval baseline 230 topic focused queries",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w75-retrieval-230-floor",
+        "cloudflare/d1-best-practices-retry-queries-index",
+        "cloudflare/scale-c4-workers-230"
+      ]
+    },
+    {
+      "id": "RB-229",
+      "query": "corpus 11000 reference cards harvest quality",
+      "expectedRefIds": [
+        "ironcannon/harvest-card-schema",
+        "cloudflare/d1-reference-backups-index",
+        "cloudflare/d1-reference-community-projects-index"
+      ]
+    },
+    {
+      "id": "RB-23",
+      "query": "stripe subscription schedule proration billing portal",
+      "expectedRefIds": [
+        "stripe/knowledge-w74-billing-portal-proration",
+        "stripe/billing-portal-deep",
+        "stripe/billing-subscriptions-billing-cycle"
+      ]
+    },
+    {
+      "id": "RB-230",
+      "query": "vectorize manifest synced corpus index every wave",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w84-vectorize-manifest-11k",
+        "cloudflare/api-resources-vectorize-subresources-indexes-methods-list-index",
+        "cloudflare/vectorize-best-practices-create-indexes-index"
+      ]
+    },
+    {
+      "id": "RB-24",
+      "query": "stripe tax calculation automatic tax compliance",
+      "expectedRefIds": [
+        "stripe/knowledge-w72-tax-automatic-enabled",
+        "stripe/tax-invoicing",
+        "stripe/tax-payment-links"
+      ]
+    },
+    {
+      "id": "RB-25",
+      "query": "resend batch email rate limit api key scopes",
+      "expectedRefIds": [
+        "resend/docs-api-reference-emails-send-batch-emails",
+        "resend/docs-api-reference-rate-limit",
+        "cloudflare/workers-runtime-apis-bindings-rate-limit-index"
+      ]
+    },
+    {
+      "id": "RB-251",
+      "query": "cloudflare pages_build_output_dir wrangler.pages.toml dual deploy",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w78-pages-build-output-dir",
+        "cloudflare/svc001-pages-pages-build-output-dir-000",
+        "cloudflare/svc001-pages-pages-build-output-dir-010"
+      ]
+    },
+    {
+      "id": "RB-252",
+      "query": "open-next assets worker handler cloudflare nextjs split",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w78-open-next-assets",
+        "cloudflare/svc001-pages-open-next-assets-001",
+        "cloudflare/svc001-pages-open-next-assets-011"
+      ]
+    },
+    {
+      "id": "RB-253",
+      "query": "pages static origin cors worker api fetch bridge",
+      "expectedRefIds": [
+        "cloudflare/workers-runtime-apis-fetch-index",
+        "cloudflare/workers-runtime-apis-handlers-fetch-index",
+        "cloudflare/workers-static-assets-migration-guides-migrate-from-pages-index"
+      ]
+    },
+    {
+      "id": "RB-254",
+      "query": "pages preview environment variables wrangler env preview",
+      "expectedRefIds": [
+        "cloudflare/workers-wrangler-system-environment-variables-index",
+        "cloudflare/knowledge-w78-pages-preview-env",
+        "cloudflare/svc001-pages-pages-preview-env-003"
+      ]
+    },
+    {
+      "id": "RB-255",
+      "query": "NEXT_PUBLIC_API_URL browser worker api sd-06",
+      "expectedRefIds": [
+        "nextjs/knowledge-w78-public-api-url",
+        "nextjs/svc001-pages-public-api-url-008",
+        "nextjs/svc001-pages-public-api-url-018"
+      ]
+    },
+    {
+      "id": "RB-256",
+      "query": "nextjs middleware session cookie shared domain pages worker",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w78-middleware-pages-split",
+        "legal/knowledge-w78-pages-cookie-domain",
+        "nextjs/knowledge-w78-middleware-pages-split"
+      ]
+    },
+    {
+      "id": "RB-257",
+      "query": "sd-06 wiremap m60 m61 golden core module order",
+      "expectedRefIds": [
+        "cloudflare/workers-testing-miniflare-core-modules-index",
+        "supabase/knowledge-w80-sd07-wiremap-order",
+        "supabase/svc002-supabase-sd07-wiremap-order-007"
+      ]
+    },
+    {
+      "id": "RB-258",
+      "query": "pages-worker-split t01 detect vs external-api-surface sd-03",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w78-pages-worker-split-detect",
+        "cloudflare/d1-worker-api-d1-database-index",
+        "cloudflare/d1-worker-api-index"
+      ]
+    },
+    {
+      "id": "RB-259",
+      "query": "svc-001 vercel adjacent harvest planning gate stretch",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w78-svc001-harvest-gate",
+        "ironcannon/knowledge-w79-svc001-signoff-gate",
+        "ironcannon/knowledge-w80-svc002-harvest-gate"
+      ]
+    },
+    {
+      "id": "RB-26",
+      "query": "nextjs server actions security csrf mutation",
+      "expectedRefIds": [
+        "nextjs/knowledge-w74-server-actions-csrf",
+        "nextjs/server-actions-security",
+        "nextjs/docs-app-api-reference-config-next-config-js-serveractions"
+      ]
+    },
+    {
+      "id": "RB-260",
+      "query": "session cookie domain policy split pages worker hosts",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w78-middleware-pages-split",
+        "ironcannon/knowledge-w78-pages-worker-split-detect",
+        "legal/knowledge-w78-pages-cookie-domain"
+      ]
+    },
+    {
+      "id": "RB-261",
+      "query": "svc-001 mini signoff stretch test g2 audit user journeys",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w79-svc001-signoff-gate",
+        "cloudflare/svc001-pages-nodejs-compat-pages-004",
+        "cloudflare/svc001-pages-nodejs-compat-pages-014"
+      ]
+    },
+    {
+      "id": "RB-262",
+      "query": "per-flow-scope matrix sd-06 m60 m61 prepended modules",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w79-sd06-per-flow-scope",
+        "ironcannon/knowledge-w81-sd07-per-flow-scope",
+        "cloudflare/hyperdrive"
+      ]
+    },
+    {
+      "id": "RB-263",
+      "query": "pages-split-outbound bundle fourteen module t04 chain",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w79-pages-split-e2e-bundle",
+        "cloudflare/pages-functions-module-support-index",
+        "ironcannon/knowledge-w70-outbound-chain-gate"
+      ]
+    },
+    {
+      "id": "RB-264",
+      "query": "worker cors access-control-allow-origin pages static ui",
+      "expectedRefIds": [
+        "cloudflare/workers-static-assets-migration-guides-migrate-from-pages-index",
+        "cloudflare/workers-static-assets-routing-static-site-generation-index",
+        "cloudflare/knowledge-w78-pages-functions-cors"
+      ]
+    },
+    {
+      "id": "RB-265",
+      "query": "cache rules bypass auth session routes pages cdn",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w79-pages-cache-auth-never",
+        "cloudflare/cache-rules",
+        "cloudflare/knowledge-w61-cache-api-auth"
+      ]
+    },
+    {
+      "id": "RB-266",
+      "query": "opennext next public env bridge pages deploy sd-06",
+      "expectedRefIds": [
+        "cloudflare/pages-framework-guides-nextjs-deploy-a-static-nextjs-site-index",
+        "nextjs/docs-app-guides-public-static-pages",
+        "nextjs/knowledge-w79-open-next-env-bridge"
+      ]
+    },
+    {
+      "id": "RB-267",
+      "query": "imagination registry sd-06 w06 wiremap harness scenarios",
+      "expectedRefIds": [
+        "ironcannon/imagination-50",
+        "cloudflare/pages-how-to-npm-private-registry-index",
+        "ironcannon/edge-case-registry"
+      ]
+    },
+    {
+      "id": "RB-268",
+      "query": "adversarial sd-03 external-api vs sd-06 pages-worker-split",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w78-pages-worker-split-detect",
+        "cloudflare/d1-worker-api-d1-database-index",
+        "cloudflare/d1-worker-api-index"
+      ]
+    },
+    {
+      "id": "RB-269",
+      "query": "split host cookie domain privacy notice policy",
+      "expectedRefIds": [
+        "legal/knowledge-w79-split-host-cookie-policy",
+        "ironcannon/knowledge-w78-middleware-pages-split",
+        "legal/cookie-policy-template"
+      ]
+    },
+    {
+      "id": "RB-27",
+      "query": "OWASP logging monitoring cheat sheet security events",
+      "expectedRefIds": [
+        "owasp/cheatsheets-ai-agent-security-cheat-sheet-html",
+        "owasp/cheatsheets-ajax-security-cheat-sheet-html",
+        "owasp/cheatsheets-automotive-security-cheat-sheet-html"
+      ]
+    },
+    {
+      "id": "RB-270",
+      "query": "svc-002 supabase queued blocked until svc-001 signoff",
+      "expectedRefIds": [
+        "supabase/svc002-supabase-dual-database-blocked-006",
+        "supabase/svc002-supabase-dual-database-blocked-016",
+        "supabase/svc002-supabase-dual-database-blocked-026"
+      ]
+    },
+    {
+      "id": "RB-271",
+      "query": "supabase anon key browser createClient next public url sd-07",
+      "expectedRefIds": [
+        "nextjs/knowledge-w78-public-api-url",
+        "nextjs/svc001-pages-public-api-url-008",
+        "nextjs/svc001-pages-public-api-url-018"
+      ]
+    },
+    {
+      "id": "RB-272",
+      "query": "supabase ssr middleware createServerClient session refresh nextjs",
+      "expectedRefIds": [
+        "supabase/knowledge-w80-ssr-middleware-session",
+        "supabase/svc002-supabase-ssr-middleware-session-001",
+        "supabase/svc002-supabase-ssr-middleware-session-011"
+      ]
+    },
+    {
+      "id": "RB-273",
+      "query": "row level security enable policies auth uid supabase postgres",
+      "expectedRefIds": [
+        "supabase/knowledge-w80-rls-enable-policies",
+        "supabase/svc002-supabase-rls-enable-policies-002",
+        "supabase/svc002-supabase-rls-enable-policies-012"
+      ]
+    },
+    {
+      "id": "RB-274",
+      "query": "oauth callback exchangeCodeForSession supabase auth route",
+      "expectedRefIds": [
+        "supabase/knowledge-w80-auth-callback-route",
+        "supabase/svc002-supabase-auth-callback-route-003",
+        "supabase/svc002-supabase-auth-callback-route-013"
+      ]
+    },
+    {
+      "id": "RB-275",
+      "query": "stripe customer id supabase profiles rls server metadata",
+      "expectedRefIds": [
+        "supabase/knowledge-w80-stripe-customer-metadata",
+        "supabase/svc002-supabase-stripe-customer-metadata-004",
+        "supabase/svc002-supabase-stripe-customer-metadata-014"
+      ]
+    },
+    {
+      "id": "RB-276",
+      "query": "dual database supabase d1 ssot conflict sd-08 blocked",
+      "expectedRefIds": [
+        "supabase/knowledge-w80-dual-database-blocked",
+        "supabase/svc002-supabase-dual-database-blocked-006",
+        "supabase/svc002-supabase-dual-database-blocked-016"
+      ]
+    },
+    {
+      "id": "RB-277",
+      "query": "sd-07 wiremap m70 m71 billing modules without d1 auth",
+      "expectedRefIds": [
+        "cloudflare/d1-observability-billing-index",
+        "cloudflare/knowledge-w61-cache-api-auth",
+        "cloudflare/knowledge-w64-waf-auth-rate-limit"
+      ]
+    },
+    {
+      "id": "RB-278",
+      "query": "middleware cookie bridge no localStorage supabase session",
+      "expectedRefIds": [
+        "nextjs/svc002-supabase-middleware-cookie-bridge-008",
+        "nextjs/svc002-supabase-middleware-cookie-bridge-018",
+        "nextjs/svc002-supabase-middleware-cookie-bridge-028"
+      ]
+    },
+    {
+      "id": "RB-279",
+      "query": "svc-002 supabase harvest planning gate stretch suite",
+      "expectedRefIds": [
+        "ironcannon/svc002-supabase-svc002-harvest-gate-009",
+        "ironcannon/svc002-supabase-svc002-harvest-gate-019",
+        "ironcannon/svc002-supabase-svc002-harvest-gate-029"
+      ]
+    },
+    {
+      "id": "RB-28",
+      "query": "OWASP XSS prevention output encoding context",
+      "expectedRefIds": [
+        "owasp/cheatsheets-dom-based-xss-prevention-cheat-sheet-html",
+        "owasp/knowledge-w66-xss-output-encode",
+        "owasp/xss-prevention"
+      ]
+    },
+    {
+      "id": "RB-280",
+      "query": "supabase subprocessor privacy notice dpa disclosure",
+      "expectedRefIds": [
+        "legal/knowledge-w80-supabase-dpa-notice",
+        "legal/gdpr-privacy-notice",
+        "legal/gdpr-subprocessors"
+      ]
+    },
+    {
+      "id": "RB-281",
+      "query": "svc-002 mini signoff stretch test g2 audit user journeys",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w81-svc002-signoff-gate",
+        "cloudflare/svc001-pages-pages-functions-cors-002",
+        "cloudflare/workers-testing-miniflare-core-compatibility-index"
+      ]
+    },
+    {
+      "id": "RB-282",
+      "query": "per-flow-scope matrix sd-07 m70 m71 prepended modules",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w79-sd06-per-flow-scope",
+        "ironcannon/knowledge-w81-sd07-per-flow-scope",
+        "cloudflare/hyperdrive"
+      ]
+    },
+    {
+      "id": "RB-283",
+      "query": "supabase-primary-outbound bundle eight module t04 chain",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w81-supabase-primary-e2e-bundle",
+        "ironcannon/knowledge-w70-outbound-chain-gate",
+        "ironcannon/knowledge-w82-dual-outbound-bundles"
+      ]
+    },
+    {
+      "id": "RB-284",
+      "query": "rls billing profiles stripe tier supabase webhook service role",
+      "expectedRefIds": [
+        "supabase/knowledge-w81-rls-billing-profiles",
+        "stripe/billing",
+        "stripe/billing-billing-apis"
+      ]
+    },
+    {
+      "id": "RB-285",
+      "query": "resend smtp supabase auth email bridge deliverability",
+      "expectedRefIds": [
+        "resend/docs-knowledge-base-how-do-i-maximize-deliverability-for-supabase-auth-emails",
+        "supabase/knowledge-w81-auth-email-resend-bridge",
+        "supabase/svc002-supabase-resend-smtp-auth-005"
+      ]
+    },
+    {
+      "id": "RB-286",
+      "query": "server actions createServerClient cookie store supabase",
+      "expectedRefIds": [
+        "nextjs/knowledge-w81-server-actions-supabase",
+        "nextjs/docs-app-api-reference-config-next-config-js-serveractions",
+        "nextjs/knowledge-w74-server-actions-csrf"
+      ]
+    },
+    {
+      "id": "RB-287",
+      "query": "imagination registry sd-07 w07 wiremap harness scenarios",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w82-imagination-sd07-w07",
+        "ironcannon/imagination-50",
+        "cloudflare/pages-how-to-npm-private-registry-index"
+      ]
+    },
+    {
+      "id": "RB-288",
+      "query": "adversarial sd-07 supabase vs sd-08 dual database sd-01 d1",
+      "expectedRefIds": [
+        "supabase/knowledge-w80-dual-database-blocked",
+        "supabase/svc002-supabase-dual-database-blocked-006",
+        "supabase/svc002-supabase-dual-database-blocked-016"
+      ]
+    },
+    {
+      "id": "RB-289",
+      "query": "supabase auth email policy resend smtp terms notice",
+      "expectedRefIds": [
+        "legal/knowledge-w81-supabase-auth-email-policy",
+        "resend/docs-knowledge-base-how-do-i-maximize-deliverability-for-supabase-auth-emails",
+        "supabase/knowledge-w81-auth-email-resend-bridge"
+      ]
+    },
+    {
+      "id": "RB-29",
+      "query": "cookie consent banner GDPR ePrivacy legitimate interest",
+      "expectedRefIds": [
+        "legal/cookie-consent-gate",
+        "legal/cookie-consent-eu",
+        "legal/cookie-consent-gating"
+      ]
+    },
+    {
+      "id": "RB-290",
+      "query": "svc-003 paddle deferred until svc-002 signoff witness",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w81-svc002-signoff-gate",
+        "supabase/svc002-supabase-auth-callback-route-003",
+        "ironcannon/knowledge-w81-svc003-queue-blocked"
+      ]
+    },
+    {
+      "id": "RB-291",
+      "query": "service expansion cycle signoff svc-001 svc-002 complete",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w82-expansion-cycle-signoff",
+        "cloudflare/svc001-pages-pages-functions-cors-002",
+        "ironcannon/knowledge-w79-svc001-signoff-gate"
+      ]
+    },
+    {
+      "id": "RB-292",
+      "query": "continuous improvement stage gap register post expansion",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w82-continuous-improvement-stage",
+        "ironcannon/knowledge-w83-continuous-improvement-80uj",
+        "ironcannon/knowledge-w86-g38-g41-gap-register"
+      ]
+    },
+    {
+      "id": "RB-293",
+      "query": "stack surface sd-01 through sd-08 scope boundaries",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w82-stack-surface-sd01-08",
+        "cloudflare/workers-framework-guides-web-apps-tanstack-start-index",
+        "cloudflare/workers-static-assets-routing-full-stack-application-index"
+      ]
+    },
+    {
+      "id": "RB-294",
+      "query": "pages split supabase primary dual outbound t04 compose",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w78-middleware-pages-split",
+        "ironcannon/knowledge-w78-pages-worker-split-detect",
+        "ironcannon/knowledge-w79-pages-split-e2e-bundle"
+      ]
+    },
+    {
+      "id": "RB-295",
+      "query": "imagination sd-07 w07 harness img-053 img-054",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w82-imagination-sd07-w07",
+        "cloudflare/planning-w53-durable-054",
+        "cloudflare/scale-d-vectorize-0531"
+      ]
+    },
+    {
+      "id": "RB-296",
+      "query": "svc-003 paddle deferred demand driven only",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w82-svc003-demand-gate",
+        "cloudflare/svc001-pages-pages-preview-env-003",
+        "ironcannon/knowledge-w81-svc003-queue-blocked"
+      ]
+    },
+    {
+      "id": "RB-297",
+      "query": "operator deploy g-01 g-02 deferred manual blockers",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w82-operator-deploy-deferred",
+        "ironcannon/knowledge-w84-manual-blockers-g35",
+        "ironcannon/knowledge-w83-operator-deploy-g35-planned"
+      ]
+    },
+    {
+      "id": "RB-298",
+      "query": "stretch suite thirty validators expansion cycle",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w82-stretch-suite-30",
+        "ironcannon/knowledge-w82-expansion-cycle-signoff",
+        "ironcannon/knowledge-w83-session-expansion-cycle-log"
+      ]
+    },
+    {
+      "id": "RB-299",
+      "query": "multi stack privacy supabase subprocessors notice",
+      "expectedRefIds": [
+        "legal/knowledge-w82-multi-stack-privacy",
+        "ironcannon/knowledge-w83-multi-stack-regression-session",
+        "legal/gdpr-privacy-notice"
+      ]
+    },
+    {
+      "id": "RB-30",
+      "query": "iron cannon scheduled regression psycho scorecard",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w83-multi-stack-regression-session",
+        "ironcannon/knowledge-w85-ref-app-deploy-regression",
+        "ironcannon/knowledge-w85-sd06-deploy-regression"
+      ]
+    },
+    {
+      "id": "RB-300",
+      "query": "planning az signoff v7 service expansion complete",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w82-expansion-cycle-signoff",
+        "ironcannon/knowledge-w82-az-signoff-v7",
+        "cloudflare/planning-w52-planning-007"
+      ]
+    },
+    {
+      "id": "RB-301",
+      "query": "session index readme documented agent session logs uj links",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w83-session-index-readme",
+        "cloudflare/agents-index",
+        "cloudflare/d1-observability-audit-logs-index"
+      ]
+    },
+    {
+      "id": "RB-302",
+      "query": "ref_app_att setup chain reference app projectPath t01 t03",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w83-ref-app-att-chain",
+        "nextjs/docs-app-api-reference-config-next-config-js-webvitalsattribution",
+        "nextjs/docs-app-api-reference"
+      ]
+    },
+    {
+      "id": "RB-303",
+      "query": "multi stack regression session sd-01 golden wiremap twelve modules",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w83-multi-stack-regression-session",
+        "legal/knowledge-w82-multi-stack-privacy",
+        "ironcannon/knowledge-w83-starter-golden-path-unchanged"
+      ]
+    },
+    {
+      "id": "RB-304",
+      "query": "g-34 harvest user journeys uj-076 through uj-080 behavioral",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w83-uj-076-080-harvest",
+        "cloudflare/scale-c4-workers-080",
+        "cloudflare/scale-d-vectorize-0761"
+      ]
+    },
+    {
+      "id": "RB-305",
+      "query": "validate g34 session harvest stretch suite validator",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w83-g34-validator-stretch",
+        "ironcannon/knowledge-w85-g37-validator-stretch",
+        "ironcannon/knowledge-w85-stretch-suite-33"
+      ]
+    },
+    {
+      "id": "RB-306",
+      "query": "starter golden path twelve modules unchanged expansion",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w83-starter-golden-path-unchanged",
+        "ironcannon/knowledge-w87-sd01-golden-unchanged-uj086",
+        "cloudflare/learning-paths-r2-intro-series-r2-1-index"
+      ]
+    },
+    {
+      "id": "RB-307",
+      "query": "service expansion cycle session log svc-001 svc-002",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w83-session-expansion-cycle-log",
+        "supabase/svc002-supabase-ssr-middleware-session-001",
+        "cloudflare/svc001-pages-pages-functions-cors-002"
+      ]
+    },
+    {
+      "id": "RB-308",
+      "query": "g-35 operator deploy planned manual setup blockers",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w83-operator-deploy-g35-planned",
+        "ironcannon/knowledge-w84-manual-blockers-g35",
+        "ironcannon/knowledge-w84-g36-live-deploy-planned"
+      ]
+    },
+    {
+      "id": "RB-309",
+      "query": "session log pii redaction secrets api keys omit",
+      "expectedRefIds": [
+        "legal/knowledge-w83-session-pii-redaction",
+        "stripe/checkout-elements-with-checkout-sessions-api-changelog",
+        "cloudflare/d1-sql-api-foreign-keys-index"
+      ]
+    },
+    {
+      "id": "RB-31",
+      "query": "iron cannon tier entitlement compose redaction pro armor",
+      "expectedRefIds": [
+        "ironcannon/tier-compose-redaction",
+        "ironcannon/knowledge-w62-armor-before-ship",
+        "ironcannon/knowledge-w67-production-confidence-gate"
+      ]
+    },
+    {
+      "id": "RB-310",
+      "query": "continuous improvement eighty behavioral journeys floor",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w82-continuous-improvement-stage",
+        "ironcannon/knowledge-w83-continuous-improvement-80uj",
+        "cloudflare/pages-how-to-use-direct-upload-with-continuous-integration-index"
+      ]
+    },
+    {
+      "id": "RB-311",
+      "query": "operator deploy readiness g-35 manual task card phases",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w84-operator-deploy-readiness-doc",
+        "ironcannon/knowledge-w84-operator-readiness-npm",
+        "ironcannon/knowledge-w82-operator-deploy-deferred"
+      ]
+    },
+    {
+      "id": "RB-312",
+      "query": "npm run operator readiness validate artifacts no credentials",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w84-operator-readiness-npm",
+        "ironcannon/knowledge-w84-operator-deploy-readiness-doc",
+        "ironcannon/knowledge-w84-production-readiness-v12"
+      ]
+    },
+    {
+      "id": "RB-313",
+      "query": "ironcannon deploy-check wrangler auth vectorize creds",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w84-deploy-check-ironcannon",
+        "ironcannon/knowledge-w84-vectorize-manifest-11k",
+        "ironcannon/knowledge-w84-wrangler-toml-scaffold"
+      ]
+    },
+    {
+      "id": "RB-314",
+      "query": "wrangler toml routes d1 vectorize kv uncomment map",
+      "expectedRefIds": [
+        "cloudflare/vectorize-reference-wrangler-commands-index",
+        "cloudflare/workers-wrangler-commands-vectorize-index",
+        "ironcannon/knowledge-w84-wrangler-toml-scaffold"
+      ]
+    },
+    {
+      "id": "RB-315",
+      "query": "production readiness signoff eighty journeys g-35",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w71-production-readiness-doc",
+        "ironcannon/knowledge-w75-production-mcp-signoff",
+        "ironcannon/knowledge-w84-production-readiness-v12"
+      ]
+    },
+    {
+      "id": "RB-316",
+      "query": "g-36 live deploy witness planned production signoff",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w84-g36-live-deploy-planned",
+        "legal/knowledge-w84-production-witness-table",
+        "ironcannon/knowledge-w75-production-mcp-signoff"
+      ]
+    },
+    {
+      "id": "RB-317",
+      "query": "cloudflare onboarding checklist operator deploy readiness",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w84-onboarding-checklist-link",
+        "ironcannon/knowledge-w84-operator-deploy-readiness-doc",
+        "ironcannon/knowledge-w84-operator-readiness-npm"
+      ]
+    },
+    {
+      "id": "RB-318",
+      "query": "vectorize manifest eleven thousand cards upsert preflight",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w84-vectorize-manifest-11k",
+        "cloudflare/api-resources-vectorize-subresources-indexes-methods-list-index",
+        "cloudflare/knowledge-w69-vectorize-adapter-smoke"
+      ]
+    },
+    {
+      "id": "RB-319",
+      "query": "manual setup blockers g-35 operator readiness pack",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w84-manual-blockers-g35",
+        "ironcannon/knowledge-w84-operator-deploy-readiness-doc",
+        "ironcannon/knowledge-w84-operator-readiness-npm"
+      ]
+    },
+    {
+      "id": "RB-32",
+      "query": "scale-d corpus planning reference card compliance agent",
+      "expectedRefIds": [
+        "nextjs/docs-app-api-reference-config-next-config-js-httpagentoptions",
+        "nextjs/docs-app-api-reference-functions-useragent",
+        "ironcannon/harvest-card-schema"
+      ]
+    },
+    {
+      "id": "RB-320",
+      "query": "production witness table live deploy attestation",
+      "expectedRefIds": [
+        "legal/knowledge-w84-production-witness-table",
+        "ironcannon/knowledge-w84-g36-live-deploy-planned",
+        "legal/knowledge-w85-ci-witness-not-deploy"
+      ]
+    },
+    {
+      "id": "RB-321",
+      "query": "g-37 harvest user journeys uj-081 through uj-085 behavioral",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w85-g37-uj-081-085-harvest",
+        "cloudflare/scale-c4-d1-081",
+        "cloudflare/scale-d-vectorize-0081"
+      ]
+    },
+    {
+      "id": "RB-322",
+      "query": "wave 84 operator readiness gates verified green",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w85-wave84-gates-verified",
+        "ironcannon/knowledge-w84-operator-deploy-readiness-doc",
+        "ironcannon/knowledge-w84-operator-readiness-npm"
+      ]
+    },
+    {
+      "id": "RB-323",
+      "query": "validate g37 wave85 harvest stretch suite validator",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w85-g37-validator-stretch",
+        "ironcannon/knowledge-w85-stretch-suite-33",
+        "ironcannon/knowledge-w83-g34-validator-stretch"
+      ]
+    },
+    {
+      "id": "RB-324",
+      "query": "operator deploy readiness session indexed sessions readme",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w84-operator-deploy-readiness-doc",
+        "ironcannon/knowledge-w85-operator-session-indexed",
+        "ironcannon/knowledge-w83-operator-deploy-g35-planned"
+      ]
+    },
+    {
+      "id": "RB-325",
+      "query": "planning stretch suite thirty three suites g-37",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w82-stretch-suite-30",
+        "ironcannon/knowledge-w85-stretch-suite-33",
+        "ironcannon/knowledge-w87-stretch-suite-35"
+      ]
+    },
+    {
+      "id": "RB-326",
+      "query": "sd-06 deploy regression uj-081 stack complete",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w83-multi-stack-regression-session",
+        "ironcannon/knowledge-w85-ref-app-deploy-regression",
+        "ironcannon/knowledge-w85-sd06-deploy-regression"
+      ]
+    },
+    {
+      "id": "RB-327",
+      "query": "sd-07 parallel regression uj-082 stack complete",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w83-multi-stack-regression-session",
+        "ironcannon/knowledge-w85-sd07-parallel-regression",
+        "cloudflare/scale-d-vectorize-0821"
+      ]
+    },
+    {
+      "id": "RB-328",
+      "query": "reference app deploy regression uj-085 t02 complete",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w85-ref-app-deploy-regression",
+        "nextjs/docs-app-api-reference-config-next-config-js-deploymentid",
+        "cloudflare/workers-tutorials-deploy-a-realtime-chat-app-index"
+      ]
+    },
+    {
+      "id": "RB-329",
+      "query": "g-36 live deploy witness still planned operator",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w84-g36-live-deploy-planned",
+        "ironcannon/knowledge-w83-operator-deploy-g35-planned",
+        "ironcannon/knowledge-w82-operator-deploy-deferred"
+      ]
+    },
+    {
+      "id": "RB-33",
+      "query": "jurisdiction market bundle GDPR micro stipulation",
+      "expectedRefIds": [
+        "legal/knowledge-w72-gdpr-dsar-export",
+        "cloudflare/workers-framework-guides-web-apps-microfrontends-index",
+        "ironcannon/knowledge-w62-t12-markets-first"
+      ]
+    },
+    {
+      "id": "RB-330",
+      "query": "g-37 continuous improvement witness not production deploy",
+      "expectedRefIds": [
+        "legal/knowledge-w85-ci-witness-not-deploy",
+        "legal/knowledge-w84-production-witness-table",
+        "ironcannon/knowledge-w82-continuous-improvement-stage"
+      ]
+    },
+    {
+      "id": "RB-331",
+      "query": "business infrastructure plan google workspace cloudflare stripe affiliates",
+      "expectedRefIds": [
+        "google/knowledge-w86-workspace-business-email",
+        "ironcannon/knowledge-w86-affiliates-g41-planned",
+        "cloudflare/pages-functions-plugins-google-chat-index"
+      ]
+    },
+    {
+      "id": "RB-332",
+      "query": "pre launch dogfood mcp t01 t05 iron cannon monorepo g-39",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w86-pre-launch-dogfood-plan",
+        "ironcannon/knowledge-w88-mcp-worker-subpath-t01",
+        "ironcannon/knowledge-w88-dogfood-prep-sim"
+      ]
+    },
+    {
+      "id": "RB-333",
+      "query": "cheap cloudflare free workers d1 kv minimize vectorize cost",
+      "expectedRefIds": [
+        "cloudflare/workers-wrangler-commands-vectorize-index",
+        "cloudflare/vectorize-get-started-embeddings-index",
+        "cloudflare/api-resources-vectorize-subresources-indexes-methods-list-index"
+      ]
+    },
+    {
+      "id": "RB-334",
+      "query": "stripe transcript prior project g-40 subscription setup",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w86-stripe-transcript-input",
+        "ironcannon/knowledge-w89-stripe-setup-prep-doc",
+        "stripe/api-subscriptions"
+      ]
+    },
+    {
+      "id": "RB-335",
+      "query": "affiliates program g-41 planned after stripe subscriptions",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w86-affiliates-g41-planned",
+        "stripe/api-subscriptions",
+        "stripe/api-subscriptions-create"
+      ]
+    },
+    {
+      "id": "RB-336",
+      "query": "google workspace business email before cloudflare account",
+      "expectedRefIds": [
+        "google/knowledge-w86-workspace-business-email",
+        "cloudflare/email-routing",
+        "cloudflare/email-routing-email-workers-runtime-api-index"
+      ]
+    },
+    {
+      "id": "RB-337",
+      "query": "gap register g-38 g-39 g-40 g-41 pre-launch planned",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w86-g38-g41-gap-register",
+        "ironcannon/knowledge-w86-pre-launch-dogfood-plan",
+        "legal/knowledge-w88-prep-not-launch-approval"
+      ]
+    },
+    {
+      "id": "RB-338",
+      "query": "dogfood iron cannon repo not golden reference app only",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w86-dogfood-not-golden-app",
+        "ironcannon/knowledge-w88-golden-app-contrast-uj094",
+        "ironcannon/knowledge-w88-iron-cannon-repo-module"
+      ]
+    },
+    {
+      "id": "RB-339",
+      "query": "validate business infra plan stretch suite validator",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w86-validate-business-infra-plan",
+        "ironcannon/knowledge-w86-business-infra-plan-ssot",
+        "ironcannon/knowledge-w87-g42-validator-stretch"
+      ]
+    },
+    {
+      "id": "RB-34",
+      "query": "EM-2 security control matrix flow step protocol",
+      "expectedRefIds": [
+        "cloudflare/d1-reference-data-security-index",
+        "cloudflare/kv-reference-data-security-index",
+        "cloudflare/pages-configuration-branch-build-controls-index"
+      ]
+    },
+    {
+      "id": "RB-340",
+      "query": "public launch blocked until dogfood witness g-39",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w86-pre-launch-dogfood-plan",
+        "legal/knowledge-w86-launch-after-dogfood",
+        "legal/knowledge-w88-prep-not-launch-approval"
+      ]
+    },
+    {
+      "id": "RB-341",
+      "query": "g-42 harvest user journeys uj-086 through uj-090 behavioral",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w87-g42-uj-086-090-harvest",
+        "ironcannon/knowledge-w87-dual-stack-uj090",
+        "ironcannon/knowledge-w87-sd01-golden-unchanged-uj086"
+      ]
+    },
+    {
+      "id": "RB-342",
+      "query": "uj-087 m11 stripe checkout sd-07 g-40 prep",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w87-uj-087-stripe-checkout-sd07",
+        "ironcannon/knowledge-w89-planning-stripe-prep-npm",
+        "ironcannon/knowledge-w89-stripe-prep-sim"
+      ]
+    },
+    {
+      "id": "RB-343",
+      "query": "uj-088 m60 pages wrangler sd-06 cheap cloudflare deploy",
+      "expectedRefIds": [
+        "cloudflare/pages-configuration-deploy-hooks-index",
+        "cloudflare/pages-configuration-preview-deployments-index",
+        "cloudflare/pages-deploy"
+      ]
+    },
+    {
+      "id": "RB-344",
+      "query": "validate g42 wave87 harvest stretch suite validator",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w87-g42-validator-stretch",
+        "ironcannon/knowledge-w87-stretch-suite-35",
+        "ironcannon/knowledge-w83-g34-validator-stretch"
+      ]
+    },
+    {
+      "id": "RB-345",
+      "query": "planning stretch suite thirty five suites g-42",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w82-stretch-suite-30",
+        "ironcannon/knowledge-w85-stretch-suite-33",
+        "ironcannon/knowledge-w87-stretch-suite-35"
+      ]
+    },
+    {
+      "id": "RB-346",
+      "query": "sd-01 golden unchanged uj-086 t02 complete",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w87-sd01-golden-unchanged-uj086",
+        "ironcannon/knowledge-w83-starter-golden-path-unchanged",
+        "cloudflare/scale-d-vectorize-0861"
+      ]
+    },
+    {
+      "id": "RB-347",
+      "query": "sd-01 wiremap twelve modules uj-089",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w87-sd01-wiremap-12-uj089",
+        "cloudflare/planning-w53-durable-089",
+        "cloudflare/scale-d-vectorize-0891"
+      ]
+    },
+    {
+      "id": "RB-348",
+      "query": "dual stack sd-06 sd-07 uj-090 both supported",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w87-dual-stack-uj090",
+        "cloudflare/scale-c4-workers-090",
+        "cloudflare/scale-d-vectorize-0901"
+      ]
+    },
+    {
+      "id": "RB-349",
+      "query": "g-38 g-39 g-40 g-41 still planned operator session",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w83-operator-deploy-g35-planned",
+        "ironcannon/knowledge-w85-g36-still-planned",
+        "ironcannon/knowledge-w85-operator-session-indexed"
+      ]
+    },
+    {
+      "id": "RB-35",
+      "query": "password reset token single use expiry LEG-EDGE",
+      "expectedRefIds": [
+        "owasp/reset-token",
+        "legal/knowledge-w61-breach-72h",
+        "legal/knowledge-w61-ccpa-do-not-sell"
+      ]
+    },
+    {
+      "id": "RB-350",
+      "query": "g-42 harvest not stripe live mode affiliates live",
+      "expectedRefIds": [
+        "legal/knowledge-w87-ci-harvest-not-stripe-live",
+        "legal/knowledge-w90-affiliates-prep-not-payout-live",
+        "legal/knowledge-w89-prep-not-live-keys"
+      ]
+    },
+    {
+      "id": "RB-351",
+      "query": "iron cannon repo module repo root dogfood projectpath",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w88-iron-cannon-repo-module",
+        "ironcannon/knowledge-w70-module-sequence-guard",
+        "ironcannon/knowledge-w71-t05-all-modules"
+      ]
+    },
+    {
+      "id": "RB-352",
+      "query": "simulate dogfood prep monorepo t01 meta stack",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w88-dogfood-prep-sim",
+        "ironcannon/knowledge-w88-planning-dogfood-prep-npm",
+        "ironcannon/knowledge-w88-mcp-worker-subpath-t01"
+      ]
+    },
+    {
+      "id": "RB-353",
+      "query": "dogfood prep journeys uj-091 through uj-095",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w88-uj-091-095-prep",
+        "ironcannon/knowledge-w88-dogfood-prep-sim",
+        "ironcannon/knowledge-w88-planning-dogfood-prep-npm"
+      ]
+    },
+    {
+      "id": "RB-354",
+      "query": "pre launch dogfood signoff scaffold g-39 witness",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w88-dogfood-signoff-scaffold",
+        "ironcannon/knowledge-w86-pre-launch-dogfood-plan",
+        "legal/knowledge-w88-prep-not-launch-approval"
+      ]
+    },
+    {
+      "id": "RB-355",
+      "query": "validate g43 wave88 dogfood prep stretch suite",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w88-g43-validator-stretch",
+        "ironcannon/knowledge-w88-dogfood-prep-sim",
+        "ironcannon/knowledge-w88-planning-dogfood-prep-npm"
+      ]
+    },
+    {
+      "id": "RB-356",
+      "query": "npm run planning dogfood prep preflight command",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w88-planning-dogfood-prep-npm",
+        "ironcannon/knowledge-w89-planning-stripe-prep-npm",
+        "ironcannon/knowledge-w90-planning-affiliates-prep-npm"
+      ]
+    },
+    {
+      "id": "RB-357",
+      "query": "mcp worker subpath t01 cloudflare workers uj-092",
+      "expectedRefIds": [
+        "cloudflare/scale-d-workers-ai-0920",
+        "ironcannon/knowledge-w88-mcp-worker-subpath-t01",
+        "cloudflare/cloudflare-for-platforms-workers-for-platforms-configuration-dynamic-dispatch-in"
+      ]
+    },
+    {
+      "id": "RB-358",
+      "query": "g-39 live dogfood session still planned",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w88-g39-still-planned",
+        "ironcannon/knowledge-w84-g36-live-deploy-planned",
+        "ironcannon/knowledge-w85-g36-still-planned"
+      ]
+    },
+    {
+      "id": "RB-359",
+      "query": "golden reference app contrast uj-094 supported true",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w88-golden-app-contrast-uj094",
+        "ironcannon/knowledge-w86-dogfood-not-golden-app",
+        "nextjs/docs-app-api-reference"
+      ]
+    },
+    {
+      "id": "RB-36",
+      "query": "data export portability TTL download link GDPR",
+      "expectedRefIds": [
+        "legal/export-link-ttl",
+        "cloudflare/d1-best-practices-import-export-data-index",
+        "cloudflare/workers-observability-exporting-opentelemetry-data-axiom-index"
+      ]
+    },
+    {
+      "id": "RB-360",
+      "query": "g-43 prep not public launch approval",
+      "expectedRefIds": [
+        "legal/knowledge-w88-prep-not-launch-approval",
+        "legal/knowledge-w89-prep-not-live-keys",
+        "legal/knowledge-w90-affiliates-prep-not-payout-live"
+      ]
+    },
+    {
+      "id": "RB-361",
+      "query": "stripe setup prep transcript intake g-40 scaffold",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w89-stripe-setup-prep-doc",
+        "ironcannon/knowledge-w86-stripe-transcript-input",
+        "ironcannon/knowledge-w89-planning-stripe-prep-npm"
+      ]
+    },
+    {
+      "id": "RB-362",
+      "query": "simulate stripe prep d1 webhook route uj-096",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w89-platform-webhook-route",
+        "ironcannon/knowledge-w89-uj-096-100-stripe",
+        "ironcannon/knowledge-w89-planning-stripe-prep-npm"
+      ]
+    },
+    {
+      "id": "RB-363",
+      "query": "stripe prep journeys uj-096 through uj-100 m11 m12",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w89-uj-096-100-stripe",
+        "ironcannon/knowledge-w89-planning-stripe-prep-npm",
+        "ironcannon/knowledge-w89-stripe-prep-sim"
+      ]
+    },
+    {
+      "id": "RB-364",
+      "query": "validate g44 wave89 stripe prep stretch suite",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w89-g44-validator-stretch",
+        "ironcannon/knowledge-w89-planning-stripe-prep-npm",
+        "ironcannon/knowledge-w89-stripe-prep-sim"
+      ]
+    },
+    {
+      "id": "RB-365",
+      "query": "npm run planning stripe prep preflight",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w89-planning-stripe-prep-npm",
+        "ironcannon/knowledge-w88-planning-dogfood-prep-npm",
+        "ironcannon/knowledge-w90-planning-affiliates-prep-npm"
+      ]
+    },
+    {
+      "id": "RB-366",
+      "query": "platform webhook stripe route mcp worker",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w89-platform-webhook-route",
+        "stripe/treasury-connect-examples-webhooks",
+        "cloudflare/cloudflare-for-platforms-workers-for-platforms-configuration-dynamic-dispatch-in"
+      ]
+    },
+    {
+      "id": "RB-367",
+      "query": "g-40 planned until dillon stripe transcript",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w86-stripe-transcript-input",
+        "ironcannon/knowledge-w89-g40-still-planned",
+        "ironcannon/knowledge-w83-operator-deploy-g35-planned"
+      ]
+    },
+    {
+      "id": "RB-368",
+      "query": "g-41 affiliates after g-40 subscription path",
+      "expectedRefIds": [
+        "cloudflare/kv-platform-event-subscriptions-index",
+        "cloudflare/learning-paths-r2-intro-series-r2-1-index",
+        "cloudflare/pages-configuration-build-watch-paths-index"
+      ]
+    },
+    {
+      "id": "RB-369",
+      "query": "d1 stripe customer id subscription id columns",
+      "expectedRefIds": [
+        "stripe/checkout-limit-subscriptions",
+        "stripe/payments-checkout-limit-subscriptions",
+        "stripe/api-customer-balance-transactions"
+      ]
+    },
+    {
+      "id": "RB-37",
+      "query": "stripe billing portal cancel subscription proration",
+      "expectedRefIds": [
+        "stripe/billing-subscriptions-cancel",
+        "stripe/knowledge-w74-billing-portal-proration",
+        "stripe/billing-portal-deep"
+      ]
+    },
+    {
+      "id": "RB-370",
+      "query": "g-44 prep no stripe api keys in repository",
+      "expectedRefIds": [
+        "legal/knowledge-w89-prep-not-live-keys",
+        "cloudflare/d1-sql-api-foreign-keys-index",
+        "cloudflare/d1-worker-api-prepared-statements-index"
+      ]
+    },
+    {
+      "id": "RB-371",
+      "query": "affiliates setup prep g-41 after g-40 sequencing",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w90-affiliates-setup-prep-doc",
+        "ironcannon/knowledge-w89-stripe-setup-prep-doc",
+        "ironcannon/knowledge-w90-affiliates-prep-sim"
+      ]
+    },
+    {
+      "id": "RB-372",
+      "query": "simulate affiliates prep m13 billing chain uj-101",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w90-uj-101-105-affiliates",
+        "ironcannon/knowledge-w90-affiliates-prep-sim",
+        "ironcannon/knowledge-w90-affiliates-setup-prep-doc"
+      ]
+    },
+    {
+      "id": "RB-373",
+      "query": "affiliates prep journeys uj-101 through uj-105",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w90-uj-101-105-affiliates",
+        "ironcannon/knowledge-w90-affiliates-prep-sim",
+        "ironcannon/knowledge-w90-affiliates-setup-prep-doc"
+      ]
+    },
+    {
+      "id": "RB-374",
+      "query": "validate g45 wave90 affiliates prep stretch suite",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w90-g45-validator-stretch",
+        "ironcannon/knowledge-w90-affiliates-prep-sim",
+        "ironcannon/knowledge-w90-affiliates-setup-prep-doc"
+      ]
+    },
+    {
+      "id": "RB-375",
+      "query": "operator preflight bundle planning preflight command",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w90-operator-preflight-bundle",
+        "cloudflare/d1-wrangler-commands-index",
+        "cloudflare/knowledge-w79-pages-cors-preflight"
+      ]
+    },
+    {
+      "id": "RB-376",
+      "query": "npm run planning affiliates prep standalone",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w90-planning-affiliates-prep-npm",
+        "ironcannon/knowledge-w88-planning-dogfood-prep-npm",
+        "ironcannon/knowledge-w89-planning-stripe-prep-npm"
+      ]
+    },
+    {
+      "id": "RB-377",
+      "query": "g-41 affiliates live still planned until stripe",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w89-g40-still-planned",
+        "ironcannon/knowledge-w90-g41-still-planned",
+        "ironcannon/knowledge-w84-g36-live-deploy-planned"
+      ]
+    },
+    {
+      "id": "RB-378",
+      "query": "m13 provisioning before affiliate tier grants",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w90-m13-before-affiliate-payout",
+        "ironcannon/knowledge-w61-t05-before-t04-next",
+        "ironcannon/knowledge-w62-armor-before-ship"
+      ]
+    },
+    {
+      "id": "RB-379",
+      "query": "referral attribution promotion codes stripe connect",
+      "expectedRefIds": [
+        "stripe/connect-supported-embedded-components-capital-financing-promotion",
+        "stripe/knowledge-w90-referral-attribution-options",
+        "stripe/connect"
+      ]
+    },
+    {
+      "id": "RB-38",
+      "query": "resend webhook bounce complaint suppression list",
+      "expectedRefIds": [
+        "resend/knowledge-w64-bounce-complaint-webhook",
+        "resend/knowledge-w70-bounce-suppression-list",
+        "resend/bounce-suppression"
+      ]
+    },
+    {
+      "id": "RB-380",
+      "query": "g-45 prep not live affiliate payouts",
+      "expectedRefIds": [
+        "legal/knowledge-w90-affiliates-prep-not-payout-live",
+        "legal/knowledge-w89-prep-not-live-keys",
+        "ironcannon/knowledge-w90-affiliates-prep-sim"
+      ]
+    },
+    {
+      "id": "RB-381",
+      "query": "polish arc signoff g-46 waves 84 through 91 complete",
+      "expectedRefIds": [
+        "cloudflare/reference-architecture-diagrams-serverless-a-b-testing-using-workers-index",
+        "cloudflare/reference-architecture-diagrams-storage-egress-free-storage-multi-cloud-index",
+        "ironcannon/knowledge-w75-production-mcp-signoff"
+      ]
+    },
+    {
+      "id": "RB-382",
+      "query": "next main session operator checklist dillon",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w85-operator-session-indexed",
+        "nextjs/docs-app-guides-production-checklist",
+        "nextjs/knowledge-w68-app-router-auth-session"
+      ]
+    },
+    {
+      "id": "RB-383",
+      "query": "arc capstone journeys uj-106 through uj-110",
+      "expectedRefIds": [
+        "owasp/scale-d-llm-1106",
+        "cloudflare/reference-architecture-diagrams-serverless-a-b-testing-using-workers-index",
+        "cloudflare/reference-architecture-diagrams-storage-egress-free-storage-multi-cloud-index"
+      ]
+    },
+    {
+      "id": "RB-384",
+      "query": "validate g46 wave91 polish arc stretch suite",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w82-stretch-suite-30",
+        "ironcannon/knowledge-w85-stretch-suite-33",
+        "ironcannon/knowledge-w87-stretch-suite-35"
+      ]
+    },
+    {
+      "id": "RB-385",
+      "query": "operator gaps g-36 g-38 g-39 g-40 g-41 still planned",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w83-operator-deploy-g35-planned",
+        "ironcannon/knowledge-w85-g36-still-planned",
+        "ironcannon/knowledge-w87-g38-g41-still-planned"
+      ]
+    },
+    {
+      "id": "RB-386",
+      "query": "planning preflight green at polish arc close",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w79-pages-cors-preflight",
+        "cloudflare/planning-w52-planning-007",
+        "cloudflare/planning-w52-planning-017"
+      ]
+    },
+    {
+      "id": "RB-387",
+      "query": "session handoff wave 91 complete",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w69-session-kv-binding",
+        "ironcannon/knowledge-w71-session-attestation",
+        "ironcannon/knowledge-w83-multi-stack-regression-session"
+      ]
+    },
+    {
+      "id": "RB-388",
+      "query": "one hundred ten behavioral journeys milestone",
+      "expectedRefIds": [
+        "stripe/payments-checkout-custom-components",
+        "stripe/treasury-connect-moving-money-working-with-bankaccount-objects",
+        "cloudflare/pages-functions-plugins-honeycomb-index"
+      ]
+    },
+    {
+      "id": "RB-389",
+      "query": "forty stretch suites g-46 close",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w82-stretch-suite-30",
+        "ironcannon/knowledge-w83-g34-validator-stretch",
+        "ironcannon/knowledge-w85-g37-validator-stretch"
+      ]
+    },
+    {
+      "id": "RB-39",
+      "query": "nextjs app router server component client boundary security",
+      "expectedRefIds": [
+        "nextjs/docs-app-getting-started-server-and-client-components",
+        "nextjs/docs-app-api-reference-config-next-config-js-servercomponentshmrcache",
+        "nextjs/knowledge-w67-server-client-data-boundary"
+      ]
+    },
+    {
+      "id": "RB-390",
+      "query": "g-46 polish arc not production deploy approval",
+      "expectedRefIds": [
+        "legal/knowledge-w85-ci-witness-not-deploy",
+        "legal/knowledge-w88-prep-not-launch-approval",
+        "resend/docs-knowledge-base-does-resend-require-production-approval"
+      ]
+    },
+    {
+      "id": "RB-40",
+      "query": "OWASP insecure design threat modeling checklist",
+      "expectedRefIds": [
+        "owasp/cheatsheets-threat-modeling-cheat-sheet-html",
+        "owasp/secure-product-design",
+        "owasp/cheatsheets-insecure-direct-object-reference-prevention-cheat-sheet-html"
+      ]
+    },
+    {
+      "id": "RB-41",
+      "query": "per-flow scope matrix security protocol registry",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w79-sd06-per-flow-scope",
+        "ironcannon/knowledge-w81-sd07-per-flow-scope",
+        "cloudflare/d1-reference-data-security-index"
+      ]
+    },
+    {
+      "id": "RB-42",
+      "query": "agent directive template TOOL_GATE MONITOR phase",
+      "expectedRefIds": [
+        "owasp/knowledge-w67-agent-tool-policy",
+        "ironcannon/knowledge-w68-adversarial-agent-gate",
+        "ironcannon/knowledge-w67-production-confidence-gate"
+      ]
+    },
+    {
+      "id": "RB-43",
+      "query": "compliance pattern density AUTH BILL module fixture",
+      "expectedRefIds": [
+        "ironcannon/compliance-pattern-types",
+        "nextjs/auth-patterns",
+        "ironcannon/module-sequence-gate"
+      ]
+    },
+    {
+      "id": "RB-44",
+      "query": "planning quality gates regression lint session",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w83-multi-stack-regression-session",
+        "owasp/session-samesite",
+        "cloudflare/knowledge-w69-session-kv-binding"
+      ]
+    },
+    {
+      "id": "RB-45",
+      "query": "EM-4 cross-host conflict CH-055 unknown protocol matrix",
+      "expectedRefIds": [
+        "cloudflare/scale-d-vectorize-0551",
+        "cloudflare/scale-d-workers-ai-0550",
+        "cloudflare/workers-reference-protocols-index"
+      ]
+    },
+    {
+      "id": "RB-46",
+      "query": "psycho scorecard weighted fidelity planning lint regression",
+      "expectedRefIds": [
+        "cloudflare/planning-w52-planning-007",
+        "cloudflare/planning-w52-planning-017",
+        "cloudflare/planning-w52-planning-027"
+      ]
+    },
+    {
+      "id": "RB-47",
+      "query": "harvest sync vendor queue dry planning card bootstrap",
+      "expectedRefIds": [
+        "ironcannon/harvest-card-schema",
+        "cloudflare/planning-w52-planning-007",
+        "cloudflare/planning-w52-planning-017"
+      ]
+    },
+    {
+      "id": "RB-48",
+      "query": "ironclad tier L4 obligation compose slice precedence",
+      "expectedRefIds": [
+        "ironcannon/tier-compose-redaction",
+        "ironcannon/knowledge-w63-ironclad-markets",
+        "ironcannon/knowledge-w64-obligation-150-floor"
+      ]
+    },
+    {
+      "id": "RB-49",
+      "query": "account deletion grace period stripe customer orphan",
+      "expectedRefIds": [
+        "legal/deletion-grace-period",
+        "stripe/revenue-recognition-revenue-settings-accounting-period-control",
+        "legal/deletion-stripe-cancel"
+      ]
+    },
+    {
+      "id": "RB-50",
+      "query": "terms reaccept M55 API version bump legal record",
+      "expectedRefIds": [
+        "legal/consent-version-record",
+        "legal/knowledge-w72-terms-version-pin",
+        "legal/terms-reaccept-charge"
+      ]
+    },
+    {
+      "id": "RB-51",
+      "query": "EM-1 lattice wave 51 RUNBOOK INCIDENT KEY_ROTATION DATA_MAP",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w69-api-key-rotation",
+        "ironcannon/api-key-lifecycle",
+        "nextjs/docs-app-api-reference-file-conventions-metadata-sitemap"
+      ]
+    },
+    {
+      "id": "RB-52",
+      "query": "jurisdiction bundle Austria Belgium Finland Denmark Portugal",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w70-bundle-mode-smoke",
+        "ironcannon/knowledge-w79-pages-split-e2e-bundle",
+        "ironcannon/knowledge-w81-supabase-primary-e2e-bundle"
+      ]
+    },
+    {
+      "id": "RB-53",
+      "query": "planning w51 corpus card ironcannon retrieval diversity",
+      "expectedRefIds": [
+        "ironcannon/planning-w51-retrieval-002",
+        "ironcannon/planning-w51-retrieval-012",
+        "ironcannon/planning-w51-retrieval-022"
+      ]
+    },
+    {
+      "id": "RB-54",
+      "query": "security protocol sp51 registry 400 active controls",
+      "expectedRefIds": [
+        "cloudflare/d1-reference-data-security-index",
+        "cloudflare/kv-reference-data-security-index",
+        "cloudflare/pages-configuration-branch-build-controls-index"
+      ]
+    },
+    {
+      "id": "RB-55",
+      "query": "vectorize manifest stale export only no cloudflare upsert",
+      "expectedRefIds": [
+        "cloudflare/api-resources-vectorize-subresources-indexes-methods-list-index",
+        "cloudflare/d1-best-practices-import-export-data-index",
+        "cloudflare/knowledge-w69-vectorize-adapter-smoke"
+      ]
+    },
+    {
+      "id": "RB-56",
+      "query": "EM-1 wave 52 SRE CHAOS BACKUP lattice compliance attest",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w61-wiremap-attestation-ttl",
+        "ironcannon/knowledge-w71-session-attestation",
+        "legal/backup-retention"
+      ]
+    },
+    {
+      "id": "RB-57",
+      "query": "jurisdiction Greece Czech Romania Hungary Lithuania bundle",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w70-bundle-mode-smoke",
+        "ironcannon/knowledge-w79-pages-split-e2e-bundle",
+        "ironcannon/knowledge-w81-supabase-primary-e2e-bundle"
+      ]
+    },
+    {
+      "id": "RB-58",
+      "query": "Armor A01 A02 A03 security surface hardening pattern",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w73-armor-smoke-gate",
+        "cloudflare/d1-reference-data-security-index",
+        "cloudflare/kv-reference-data-security-index"
+      ]
+    },
+    {
+      "id": "RB-59",
+      "query": "security protocol sp52 registry 450 active EM-2 rebuild",
+      "expectedRefIds": [
+        "cloudflare/d1-reference-data-security-index",
+        "cloudflare/kv-reference-data-security-index",
+        "cloudflare/pages-how-to-npm-private-registry-index"
+      ]
+    },
+    {
+      "id": "RB-60",
+      "query": "planning w52 corpus 10200 cards retrieval baseline calibrate",
+      "expectedRefIds": [
+        "cloudflare/planning-w52-planning-007",
+        "cloudflare/planning-w52-planning-017",
+        "cloudflare/planning-w52-planning-027"
+      ]
+    },
+    {
+      "id": "RB-61",
+      "query": "EM-1 2000 flow steps lattice CAPACITY COST LATENCY stretch",
+      "expectedRefIds": [
+        "cloudflare/scale-d-workers-ai-2000",
+        "cloudflare/workers-wrangler-commands-workflows-index",
+        "cloudflare/workflows-examples-backup-d1-index"
+      ]
+    },
+    {
+      "id": "RB-62",
+      "query": "EM-0 config matrix 500 nodes cloudflare stripe setting",
+      "expectedRefIds": [
+        "stripe/tax-settings-api",
+        "cloudflare/cloudflare-for-platforms-workers-for-platforms-configuration-dynamic-dispatch-in",
+        "cloudflare/d1-configuration-data-location-index"
+      ]
+    },
+    {
+      "id": "RB-63",
+      "query": "LEG-W53 obligation fixture compare detect manual config",
+      "expectedRefIds": [
+        "legal/planning-w53-obligation-002",
+        "legal/planning-w53-obligation-007",
+        "legal/planning-w53-obligation-012"
+      ]
+    },
+    {
+      "id": "RB-64",
+      "query": "security protocol sp53 registry 500 active planning",
+      "expectedRefIds": [
+        "ironcannon/planning-w51-protocol-004",
+        "ironcannon/planning-w51-protocol-014",
+        "ironcannon/planning-w51-protocol-024"
+      ]
+    },
+    {
+      "id": "RB-65",
+      "query": "jurisdiction Slovakia Slovenia Bulgaria Croatia Estonia bundle",
+      "expectedRefIds": [
+        "ironcannon/knowledge-w70-bundle-mode-smoke",
+        "ironcannon/knowledge-w79-pages-split-e2e-bundle",
+        "ironcannon/knowledge-w81-supabase-primary-e2e-bundle"
+      ]
+    },
+    {
+      "id": "RB-66",
+      "query": "planning wave 54 exhaust corpus 66 EM-1 market lattice protocols 550",
+      "expectedRefIds": [
+        "ironcannon/planning-w54-exhaust-000",
+        "ironcannon/planning-w54-exhaust-003",
+        "ironcannon/planning-w54-exhaust-006"
+      ]
+    },
+    {
+      "id": "RB-67",
+      "query": "planning wave 54 exhaust corpus 67 EM-1 market lattice protocols 550",
+      "expectedRefIds": [
+        "ironcannon/planning-w54-exhaust-000",
+        "ironcannon/planning-w54-exhaust-003",
+        "ironcannon/planning-w54-exhaust-006"
+      ]
+    },
+    {
+      "id": "RB-68",
+      "query": "planning wave 54 exhaust corpus 68 EM-1 market lattice protocols 550",
+      "expectedRefIds": [
+        "ironcannon/planning-w54-exhaust-000",
+        "ironcannon/planning-w54-exhaust-003",
+        "ironcannon/planning-w54-exhaust-006"
+      ]
+    },
+    {
+      "id": "RB-69",
+      "query": "planning wave 54 exhaust corpus 69 EM-1 market lattice protocols 550",
+      "expectedRefIds": [
+        "ironcannon/planning-w54-exhaust-000",
+        "ironcannon/planning-w54-exhaust-003",
+        "ironcannon/planning-w54-exhaust-006"
+      ]
+    },
+    {
+      "id": "RB-70",
+      "query": "planning wave 54 exhaust corpus 70 EM-1 market lattice protocols 550",
+      "expectedRefIds": [
+        "ironcannon/planning-w54-exhaust-000",
+        "ironcannon/planning-w54-exhaust-003",
+        "ironcannon/planning-w54-exhaust-006"
+      ]
+    },
+    {
+      "id": "RB-71",
+      "query": "planning wave 54 exhaust corpus 71 EM-1 market lattice protocols 550",
+      "expectedRefIds": [
+        "ironcannon/planning-w54-exhaust-000",
+        "ironcannon/planning-w54-exhaust-003",
+        "ironcannon/planning-w54-exhaust-006"
+      ]
+    },
+    {
+      "id": "RB-72",
+      "query": "planning wave 54 exhaust corpus 72 EM-1 market lattice protocols 550",
+      "expectedRefIds": [
+        "ironcannon/planning-w54-exhaust-000",
+        "ironcannon/planning-w54-exhaust-003",
+        "ironcannon/planning-w54-exhaust-006"
+      ]
+    },
+    {
+      "id": "RB-73",
+      "query": "planning wave 54 exhaust corpus 73 EM-1 market lattice protocols 550",
+      "expectedRefIds": [
+        "ironcannon/planning-w54-exhaust-000",
+        "ironcannon/planning-w54-exhaust-003",
+        "ironcannon/planning-w54-exhaust-006"
+      ]
+    },
+    {
+      "id": "RB-74",
+      "query": "planning wave 54 exhaust corpus 74 EM-1 market lattice protocols 550",
+      "expectedRefIds": [
+        "ironcannon/planning-w54-exhaust-000",
+        "ironcannon/planning-w54-exhaust-003",
+        "ironcannon/planning-w54-exhaust-006"
+      ]
+    },
+    {
+      "id": "RB-75",
+      "query": "planning wave 54 exhaust corpus 75 EM-1 market lattice protocols 550",
+      "expectedRefIds": [
+        "ironcannon/planning-w54-exhaust-000",
+        "ironcannon/planning-w54-exhaust-003",
+        "ironcannon/planning-w54-exhaust-006"
+      ]
+    },
+    {
+      "id": "RB-76",
+      "query": "stripe webhook signature constructEvent idempotency",
+      "expectedRefIds": [
+        "stripe/knowledge-w64-webhook-signature-verify",
+        "stripe/knowledge-w70-webhook-retry-idempotency",
+        "stripe/webhook-idempotency"
+      ]
+    },
+    {
+      "id": "RB-77",
+      "query": "cloudflare workers d1 migrations wrangler bindings",
+      "expectedRefIds": [
+        "cloudflare/pages-migrations-migrating-from-workers-index",
+        "cloudflare/workers-ai-get-started-workers-wrangler",
+        "cloudflare/workers-bindings"
+      ]
+    },
+    {
+      "id": "RB-78",
+      "query": "resend domain verification dkim spf dmarc",
+      "expectedRefIds": [
+        "resend/docs-dashboard-domains-dmarc",
+        "resend/knowledge-w74-domain-dkim-rotation",
+        "resend/domains-verify"
+      ]
+    },
+    {
+      "id": "RB-79",
+      "query": "nextjs app router middleware session cookies",
+      "expectedRefIds": [
+        "nextjs/knowledge-w68-app-router-auth-session",
+        "nextjs/app-router-overview",
+        "nextjs/docs-app-api-reference-functions-cookies"
+      ]
+    },
+    {
+      "id": "RB-80",
+      "query": "owasp csrf session fixation password reset",
+      "expectedRefIds": [
+        "owasp/knowledge-w62-session-fixation",
+        "owasp/forgot-password",
+        "owasp/password-storage"
+      ]
+    },
+    {
+      "id": "RB-81",
+      "query": "cloudflare vectorize embeddings retrieval rag",
+      "expectedRefIds": [
+        "cloudflare/vectorize-get-started-embeddings-index",
+        "cloudflare/vectorize-query",
+        "cloudflare/api-resources-vectorize-subresources-indexes-methods-list-index"
+      ]
+    },
+    {
+      "id": "RB-82",
+      "query": "stripe checkout session success url verify server",
+      "expectedRefIds": [
+        "stripe/checkout-success-verify",
+        "stripe/api-checkout-sessions",
+        "stripe/api-checkout-sessions-create"
+      ]
+    },
+    {
+      "id": "RB-83",
+      "query": "cloudflare turnstile bot protection signup",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w69-turnstile-bot-gate",
+        "cloudflare/turnstile-signup",
+        "cloudflare/knowledge-w63-bot-fight-mode"
+      ]
+    },
+    {
+      "id": "RB-84",
+      "query": "resend webhook bounce complaint suppression",
+      "expectedRefIds": [
+        "resend/knowledge-w64-bounce-complaint-webhook",
+        "resend/bounce-suppression",
+        "resend/docs-webhooks-emails-bounced"
+      ]
+    },
+    {
+      "id": "RB-85",
+      "query": "legal gdpr data export portability deletion",
+      "expectedRefIds": [
+        "legal/gdpr-data-subject-rights",
+        "legal/knowledge-w64-gdpr-portability-json",
+        "legal/knowledge-w72-gdpr-dsar-export"
+      ]
+    },
+    {
+      "id": "RB-86",
+      "query": "stripe subscription cancel portal customer",
+      "expectedRefIds": [
+        "stripe/knowledge-w65-customer-portal-cancel",
+        "stripe/knowledge-w68-customer-portal-cancel",
+        "stripe/billing-subscriptions-cancel"
+      ]
+    },
+    {
+      "id": "RB-87",
+      "query": "cloudflare kv session attestation rate limit",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w64-waf-auth-rate-limit",
+        "cloudflare/knowledge-w69-rate-limit-binding",
+        "cloudflare/rate-limit-binding"
+      ]
+    },
+    {
+      "id": "RB-88",
+      "query": "security csp headers armor production checklist",
+      "expectedRefIds": [
+        "owasp/knowledge-w73-csp-strict-production",
+        "nextjs/docs-app-guides-production-checklist",
+        "owasp/content-security-policy"
+      ]
+    },
+    {
+      "id": "RB-89",
+      "query": "ironclad obligation detect layer4 compare",
+      "expectedRefIds": [
+        "ironcannon/compare-engine",
+        "ironcannon/hybrid-stack-detection",
+        "ironcannon/knowledge-w63-ironclad-markets"
+      ]
+    },
+    {
+      "id": "RB-90",
+      "query": "billing race shield duplicate checkout guard",
+      "expectedRefIds": [
+        "legal/billing-grace-ui",
+        "stripe/payments-checkout-billing-cycle",
+        "ironcannon/edge-e03-race"
+      ]
+    },
+    {
+      "id": "RB-91",
+      "query": "owasp csrf prevention cheat sheet synchronizer token",
+      "expectedRefIds": [
+        "owasp/cheatsheets-cross-site-request-forgery-prevention-cheat-sheet-html",
+        "owasp/cheatsheets-credential-stuffing-prevention-cheat-sheet-html",
+        "owasp/cheatsheets-cross-site-scripting-prevention-cheat-sheet-html"
+      ]
+    },
+    {
+      "id": "RB-92",
+      "query": "owasp session management regenerate id fixation",
+      "expectedRefIds": [
+        "owasp/cheatsheets-session-management-cheat-sheet-html",
+        "owasp/knowledge-w61-session-regenerate",
+        "owasp/knowledge-w62-session-fixation"
+      ]
+    },
+    {
+      "id": "RB-93",
+      "query": "owasp password storage bcrypt argon2 scrypt",
+      "expectedRefIds": [
+        "owasp/password-storage",
+        "owasp/cheatsheets-password-storage-cheat-sheet-html",
+        "owasp/credential-storage"
+      ]
+    },
+    {
+      "id": "RB-94",
+      "query": "cloudflare waf custom rules managed rulesets",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w69-waf-custom-rules",
+        "cloudflare/waf-custom-rules",
+        "cloudflare/cache-rules"
+      ]
+    },
+    {
+      "id": "RB-95",
+      "query": "cloudflare turnstile widget server side validation",
+      "expectedRefIds": [
+        "cloudflare/knowledge-w64-turnstile-login-gate",
+        "cloudflare/knowledge-w69-turnstile-bot-gate",
+        "cloudflare/pages-functions-plugins-turnstile-index"
+      ]
+    },
+    {
+      "id": "RB-96",
+      "query": "cloudflare durable objects alarm sqlite storage",
+      "expectedRefIds": [
+        "cloudflare/durable-objects-api-alarms-index",
+        "cloudflare/workers-testing-miniflare-storage-durable-objects-index",
+        "cloudflare/durable-objects"
+      ]
+    },
+    {
+      "id": "RB-97",
+      "query": "stripe idempotency key POST retry safe",
+      "expectedRefIds": [
+        "stripe/knowledge-w70-webhook-retry-idempotency",
+        "stripe/idempotency",
+        "resend/docs-dashboard-emails-idempotency-keys"
+      ]
+    },
+    {
+      "id": "RB-98",
+      "query": "stripe radar fraud rules list disposable email",
+      "expectedRefIds": [
+        "stripe/radar-rules",
+        "stripe/knowledge-w61-radar-list",
+        "stripe/knowledge-w74-radar-rules-custom"
+      ]
+    },
+    {
+      "id": "RB-99",
+      "query": "resend batch send rate limit queue worker",
+      "expectedRefIds": [
+        "resend/docs-api-reference-rate-limit",
+        "resend/knowledge-w61-batch-rate",
+        "resend/rate-limits"
+      ]
+    }
+  ],
+  "queryCount": 370
+}

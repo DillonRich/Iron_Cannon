@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M22",
+  "moduleId": "M22-reset-ui",
+  "patternsUnderTest": [
+    "PW-UI-001",
+    "PW-UI-002",
+    "AUTH-P49-M22-",
+    "AUTH-P49-SESSION"
+  ],
+  "passSnippet": "// app/forgot-password/page.tsx\nexport default function Forgot() { return <form action=\"/reset-password\">reset-password link</form>; }",
+  "failSnippet": "export default function Home() { return <h1>Home</h1>; }",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "PW-UI-001"
+  ]
+}

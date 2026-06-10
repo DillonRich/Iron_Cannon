@@ -1,0 +1,20 @@
+{
+  "fixtureId": "W06",
+  "description": "SD-06 Pages+Worker split — M60/M61 prepended to golden core (SVC-001)",
+  "input": {
+    "stackId": "SD-06",
+    "flowIds": ["auth-lifecycle", "billing-subscription"]
+  },
+  "expected": {
+    "split": false,
+    "wiremapCount": 1,
+    "moduleCount": 14,
+    "firstModuleIds": [
+      "M60-pages-wrangler-config",
+      "M61-pages-env-bridge",
+      "M01-auth-d1-schema"
+    ],
+    "warnings": ["pages-worker-split-wiremap"],
+    "phaseGate": "AWAIT_USER_WIREMAP_APPROVAL"
+  }
+}

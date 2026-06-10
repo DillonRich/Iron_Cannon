@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/kv-limits",
+  "sourceUrl": "https://developers.cloudflare.com/kv/platform/limits/",
+  "lastVerified": "2026-05-31",
+  "title": "KV value and key limits",
+  "excerpt": "Max value size 25MB (but prefer small session/idempotency payloads). Key max 512 bytes. Listing keys is expensive—avoid list in hot path. Free tier read/write daily limits apply—monitor usage dashboard.",
+  "appliesTo": ["layer2/cloudflare", "webhook-idempotency"],
+  "tags": ["cloudflare", "kv", "limits"]
+}

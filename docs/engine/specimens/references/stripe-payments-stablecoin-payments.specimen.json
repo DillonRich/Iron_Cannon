@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-stablecoin-payments",
+  "sourceUrl": "https://docs.stripe.com/payments/stablecoin-payments.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stablecoin payments",
+  "excerpt": "Learn about accepting payments in stablecoins. Stablecoin payments allow you to accept *stablecoins* (A cryptocurrency that's pegged to the value of a fiat currency or other asset in order to limit volatility) from customers around the world. Customers can pay with their preferred crypto wallet, token, and payment network, while completed stablecoin payments settle in your Stripe balance in USD. [Try the demo](https://buy.stripe.com/test_28o4ig0SY9Xq8co3cc) [Enable stablecoin payments](https://docs.stripe.com/payments/accept-stablecoin-payments.md) USDC (Ethereum, Solana, Polygon, and Base networks), USDP (Ethereum and Solana), USDG (Ethereum) [Yes](https://docs.stripe.com/billing/subscriptions/stablecoins.md) [Yes / Yes](https://docs.stripe.com/payments/stablecoin-payments.md#refunds)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

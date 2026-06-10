@@ -1,0 +1,9 @@
+{
+  "refId": "nextjs/middleware",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/routing/middleware",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js Middleware",
+  "excerpt": "middleware.ts runs on Edge before routes. Use for auth gate on /dashboard, session cookie validation, geo headers. Matcher config limits scope—avoid running on static assets.",
+  "appliesTo": ["auth-lifecycle", "layer3"],
+  "tags": ["nextjs", "middleware", "auth"]
+}

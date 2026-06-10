@@ -1,0 +1,9 @@
+{
+  "refId": "resend/react-email",
+  "sourceUrl": "https://resend.com/docs/send-with-react",
+  "lastVerified": "2026-05-31",
+  "title": "Resend React Email templates",
+  "excerpt": "Render React Email components server-side; pass to Resend send API. Keeps marketing/transactional templates type-safe. Include unsubscribe footer in marketing templates at component level. Preview locally before deploy.",
+  "appliesTo": ["email-lifecycle", "layer4/email"],
+  "tags": ["resend", "react-email", "templates"]
+}

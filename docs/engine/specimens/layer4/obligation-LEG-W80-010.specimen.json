@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w80-010",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Supabase subprocessor disclosed in privacy notice",
+    "obligations": [
+      "LEG-W80-010"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Supabase subprocessor disclosed in privacy notice"
+  },
+  "references": [
+    "legal/knowledge-w80-supabase-dpa-notice"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W80-010",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "privacy",
+    "disclaimerRequired": true
+  }
+}

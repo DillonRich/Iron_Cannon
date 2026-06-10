@@ -1,0 +1,11 @@
+{
+  "fixtureId": "SD-01",
+  "description": "Complete golden stack — Next.js + wrangler + Stripe + Resend",
+  "projectFiles": [
+    { "path": "package.json", "content": "{\"dependencies\":{\"next\":\"14\",\"@stripe/stripe-js\":\"^2\",\"resend\":\"^3\"},\"devDependencies\":{\"wrangler\":\"^3\"}}" },
+    { "path": "wrangler.toml", "content": "name = \"app\"\n[[d1_databases]]\nbinding = \"DB\"\n[[kv_namespaces]]\nbinding = \"KV\"" },
+    { "path": ".env.example", "content": "STRIPE_SECRET_KEY=\nSTRIPE_WEBHOOK_SECRET=\nRESEND_API_KEY=" }
+  ],
+  "expectedT01": { "supported": true, "stack": ["nextjs", "cloudflare-workers", "d1", "kv", "stripe", "resend"], "conflicts": [] },
+  "expectedT02": { "complete": true, "missingConfig": [] }
+}

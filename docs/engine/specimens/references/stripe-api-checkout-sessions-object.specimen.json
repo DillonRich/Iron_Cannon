@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-checkout-sessions-object",
+  "sourceUrl": "https://docs.stripe.com/api/checkout/sessions/object.md",
+  "lastVerified": "2026-06-03",
+  "title": "The Checkout Session object",
+  "excerpt": "String representing the object’s type. Objects of the same type share the same value. Settings for price localization with [Adaptive Pricing](https://docs.stripe.com/payments/checkout/adaptive-pricing.md). If enabled, Adaptive Pricing is available on [eligible sessions](https://docs.stripe.com/payments/currencies/localize-prices/adaptive-pricing.md?payment-ui=stripe-hosted#restrictions). When set, provides configuration for actions to take if this Checkout Session expires. - `after_expiration.recovery` (object, nullable) When set, configuration used to recover the Checkout Session on expiry.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

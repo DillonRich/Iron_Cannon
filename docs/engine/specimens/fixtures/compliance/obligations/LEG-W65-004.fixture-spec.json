@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W65-004",
+  "obligationId": "LEG-W65-004",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "pattern": "California"
+  },
+  "passSnippet": "notice California",
+  "failSnippet": "no match here",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

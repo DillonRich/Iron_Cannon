@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-api-reference-templates-delete-template",
+  "sourceUrl": "https://resend.com/docs/api-reference/templates/delete-template.md",
+  "lastVerified": "2026-06-03",
+  "title": "Delete Template",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Delete Template > Delete a template. ## Path Parameters The ID or alias of the template to delete. ```ts Node.js theme={\"theme\":{\"light\":\"github-light\",\"dark\":\"vesper\"}} import { Resend } from 'resend'; const resend = new Resend('re_xxxxxxxxx'); const { data, error } = await resend.templates.remove( '34a080c9-b17d-4187-ad80-5af20266e535', ); ``` ```php PHP theme={\"theme\":{\"light\":\"github-light\",\"dark\":\"vesper\"}} $resend = Resend::client('re_xxxxxxxxx'); $resend->templates->remove('34a080c9-b17d-4187-ad80-5af20266e535'); ``` ```py Python theme={\"theme\":{\"light\":\"github-light\",\"dark\":\"vesper\"}} import resend resend.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

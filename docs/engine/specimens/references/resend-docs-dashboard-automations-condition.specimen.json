@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-automations-condition",
+  "sourceUrl": "https://resend.com/docs/dashboard/automations/condition.md",
+  "lastVerified": "2026-06-03",
+  "title": "Condition",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Condition > Route contacts through different paths based on conditions. A branch step evaluates a condition against event or contact data and routes the Automation down one of two paths: **condition met** or **condition not met**. Common use cases: * **Plan-based emails**: Send different content to free vs. paid users. * **Engagement splits**: Take different actions based on user activity. * **Personalization**: Tailor follow-ups based on event payload values. ## How it works Add a **Condition** step and configure the condition using the editor.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

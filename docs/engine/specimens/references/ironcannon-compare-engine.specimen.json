@@ -1,0 +1,16 @@
+{
+  "refId": "ironcannon/compare-engine",
+  "sourceUrl": "https://ironcannon.dev/patterns/compare-engine",
+  "lastVerified": "2026-05-31",
+  "title": "Iron Cannon compare engine",
+  "excerpt": "C16 obligation compare — met/gap/advisory only, never legal_compliant.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "ironcannon",
+    "compare-engine"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

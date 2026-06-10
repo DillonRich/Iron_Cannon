@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w79-pages-split-e2e-bundle",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w79/pages-split-e2e-bundle",
+  "lastVerified": "2026-06-06",
+  "title": "W79 pages-split-e2e-bundle",
+  "provider": "ironcannon",
+  "excerpt": "pages-split-outbound.bundle.json validates 14-module T04 chain",
+  "embeddingHint": "ironcannon pages-split-e2e-bundle wave79 svc-001-exit",
+  "tags": [
+    "wave79",
+    "knowledge",
+    "ironcannon",
+    "svc-001-exit"
+  ]
+}

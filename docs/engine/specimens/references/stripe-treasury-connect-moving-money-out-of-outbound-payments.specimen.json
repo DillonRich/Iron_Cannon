@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-moving-money-out-of-outbound-payments",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/moving-money/out-of/outbound-payments.md",
+  "lastVerified": "2026-06-03",
+  "title": "Moving money using OutboundPayment objects",
+  "excerpt": "Learn how to create outbound payments to move money out of financial accounts to third parties. `OutboundPayment` objects represent push-based transfers from your financial account to a third-party external account using ACH or wire transfer, or another financial account associated with the same platform instantly using the `stripe` network. For example, if you want to send money from your financial account to your vendor’s external US bank account, you create an `OutboundPayment` to move the funds. The receiving accounts for an `OutboundPayment` are either an external bank account or another financial account. The typical transfer time for outbound payments can range from minutes (when using the Stripe network), same day, to 1-2 business days (when using the ACH network).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

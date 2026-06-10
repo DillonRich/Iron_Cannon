@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-framework-guides-nextjs-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/framework-guides/nextjs/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Next.js",
+  "excerpt": "description: React framework for building full-stack web applications. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. [Next.js ↗](https://nextjs.org) is an open-source React framework for creating websites and applications. If you want to deploy a full stack Server Side Rendered Next.js application please refer to the [Next.js Workers guide](https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs).",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

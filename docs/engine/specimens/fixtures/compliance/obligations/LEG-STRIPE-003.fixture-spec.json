@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-STRIPE-003",
+  "obligationId": "LEG-STRIPE-003",
+  "detectType": "ui_pattern",
+  "detect": {
+    "type": "ui_pattern",
+    "pattern": "per month|per year"
+  },
+  "passSnippet": "/* per month|per year */",
+  "failSnippet": "defaultChecked={true}",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

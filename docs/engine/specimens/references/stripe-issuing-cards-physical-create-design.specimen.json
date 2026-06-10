@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-cards-physical-create-design",
+  "sourceUrl": "https://docs.stripe.com/issuing/cards/physical/create-design.md",
+  "lastVerified": "2026-06-03",
+  "title": "Create a design",
+  "excerpt": "This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [Dashboard](https://docs.stripe.com/issuing/cards/physical/create-design.md?testing-method=without-code) - [API](https://docs.stripe.com/issuing/cards/physical/create-design.md?testing-method=with-code)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-how-do-i-avoid-outlooks-spam-folder",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/how-do-i-avoid-outlooks-spam-folder.md",
+  "lastVerified": "2026-06-03",
+  "title": "How do I avoid Outlook's spam folder?",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # How do I avoid Outlook's spam folder? > Learn how to improve inbox placement in Outlook. This guide is adapted from Microsoft's article to [Improve your spam reputation](https://support.microsoft.com/en-us/office/sender-support-in-outlook-com-05875e8d-1950-4d89-a5c3-adc355d0d652). For high-volume senders (5,000+ messages per day), see [Microsoft's bulk sending requirements for 2025](https://resend.com/blog/microsoft-bulk-sending-requirements-2025). * **Set up email authentication**. Configure [SPF, DKIM, and DMARC](/dashboard/domains/introduction) for your domain.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

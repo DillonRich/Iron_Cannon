@@ -1,0 +1,16 @@
+{
+  "fixtureId": "LEG-PRIV-012",
+  "obligationId": "LEG-PRIV-012",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "patterns": [
+      "retention",
+      "delete after"
+    ]
+  },
+  "passSnippet": "retention delete after",
+  "failSnippet": "gap LEG-PRIV-012",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-checkout",
+  "sourceUrl": "https://docs.stripe.com/tax/checkout.md",
+  "lastVerified": "2026-06-03",
+  "title": "Collect tax with Checkout",
+  "excerpt": "Learn how to automatically calculate taxes using Stripe Checkout. Stripe Tax automatically calculates taxes on purchases and *subscriptions* (A Subscription represents the product details associated with the plan that your customer subscribes to. Allows you to charge the customer on a recurring basis) during a Checkout session. If you haven’t integrated with Checkout, complete the [Accept a Payment guide](https://docs.stripe.com/checkout/quickstart.md) first. > If you sell digital products, [Managed Payments](https://docs.stripe.com/payments/managed-payments/tax-compliance.md) allows you to offload tax liability to Stripe so we’re directly responsible for handling sales tax, VAT, or GST globally.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

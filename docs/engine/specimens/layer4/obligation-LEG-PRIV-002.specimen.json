@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-priv-002",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "section": "leg-priv-002",
+  "content": {
+    "requirement": "Privacy policy linked in account settings",
+    "obligations": [
+      "LEG-PRIV-002"
+    ],
+    "compareSteps": [
+      "Run detect.type=route_link per COMPARE_DETECT_TYPES",
+      "Map result to obligation LEG-PRIV-002 only",
+      "Attach legalDisclaimer on every T12–T14 response"
+    ],
+    "remediationDirective": "Remediate LEG-PRIV-002: Privacy policy linked in account settings"
+  },
+  "references": [
+    "legal/privacy-policy-link"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-PRIV-002",
+        "type": "route_link",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "privacy",
+    "disclaimerRequired": true
+  }
+}

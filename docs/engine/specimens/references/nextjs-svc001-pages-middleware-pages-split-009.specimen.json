@@ -1,0 +1,16 @@
+{
+  "refId": "nextjs/svc001-pages-middleware-pages-split-009",
+  "sourceUrl": "https://ironcannon.dev/svc001/pages/middleware-pages-split-9",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-001 middleware-pages-split 9",
+  "provider": "nextjs",
+  "excerpt": "Next.js middleware on Pages must use same session cookie name and parent domain as Worker auth routes.",
+  "embeddingHint": "nextjs middleware-pages-split svc001 pages worker split sd-06",
+  "tags": [
+    "svc001",
+    "pages",
+    "sd-06",
+    "nextjs",
+    "middleware-pages-split"
+  ]
+}

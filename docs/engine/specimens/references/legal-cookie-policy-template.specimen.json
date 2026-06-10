@@ -1,0 +1,16 @@
+{
+  "refId": "legal/cookie-policy-template",
+  "sourceUrl": "https://ironcannon.dev/patterns/cookie-policy",
+  "lastVerified": "2026-05-31",
+  "title": "Cookie policy template",
+  "excerpt": "EU cookie policy page structure and essential cookie disclosure.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "legal",
+    "cookie-policy-template"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w53-016",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Consent timestamp stored with version id",
+    "obligations": [
+      "LEG-W53-016"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Consent timestamp stored with version id"
+  },
+  "references": [
+    "legal/consent-version-record"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W53-016",
+        "type": "schema_column",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "record",
+    "disclaimerRequired": true
+  }
+}

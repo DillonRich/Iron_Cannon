@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-payment-element-control-billing-details-collection",
+  "sourceUrl": "https://docs.stripe.com/payments/payment-element/control-billing-details-collection.md",
+  "lastVerified": "2026-06-03",
+  "title": "Control billing details collection",
+  "excerpt": "Customize the billing details you collect within the Payment Element. You can collect billing details several ways with the Payment Element: - `never`: Don’t collect any billing details in the Payment Element. You can set this for all [fields](https://docs.stripe.com/js/elements_object/create_payment_element#payment_element_create-options-fields) or on specific fields subcomponents, like `name`, `email`, and `address`. - `if_required`: Collect only the address fields required for each payment method to complete the payment. - `auto` (default): Stripe determines which billing fields to collect based on customer friction and authorization success rate for each payment method. You don’t need to pass in additional billing details at confirm time for this mode.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-saas-platforms-and-marketplaces",
+  "sourceUrl": "https://docs.stripe.com/connect/saas-platforms-and-marketplaces.md",
+  "lastVerified": "2026-06-03",
+  "title": "Introduction to SaaS platforms and marketplaces with Connect",
+  "excerpt": "Learn about the types of business models that Connect supports. Connect allows you to offer payment processing and other embedded B2B services to third parties, known as *connected accounts* (A person or business accepting payments or receiving payouts on a Connect platform). Connect primarily supports the following types of business models: *SaaS platforms* (A Software as a Service (SaaS) Connect platform that provides Stripe products and services to its connected accounts) and *marketplaces* (A Connect platform that provides a platform-branded storefront for products and services from its connected accounts). While a wide variety of integrations are possible, we provide detailed, step-by-step guidance for building a basic SaaS platform or marketplace.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

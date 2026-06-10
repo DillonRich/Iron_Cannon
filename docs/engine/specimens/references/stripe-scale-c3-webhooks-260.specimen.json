@@ -1,0 +1,13 @@
+{
+  "refId": "stripe/scale-c3-webhooks-260",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/stripe/scale-c3-webhooks-260",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-C3 webhooks 260",
+  "excerpt": "Verify signature with raw body; reject missing stripe-signature. Planning reference for compose agents and obligation cross-links (EM-3).",
+  "tags": [
+    "stripe",
+    "webhooks",
+    "scale-c3"
+  ],
+  "embeddingHint": "stripe webhooks Verify signature with raw body; reject missing stripe-signature compliance security legal stripe resend owasp"
+}

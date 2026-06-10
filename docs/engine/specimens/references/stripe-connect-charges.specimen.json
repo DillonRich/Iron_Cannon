@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-charges",
+  "sourceUrl": "https://docs.stripe.com/connect/charges.md",
+  "lastVerified": "2026-06-03",
+  "title": "Understand how charges work in a Connect integration",
+  "excerpt": "Learn about the types of charges used in Connect integrations and how funds move between the platform and connected accounts. In a *Connect* (Connect is Stripe's solution for multi-party businesses, such as marketplace or software platforms, to route payments between sellers, customers, and other recipients) integration, for your platform or a connected account to accept a payment from a customer, you must first create a charge. The type of charge you create determines how the funds are distributed between your platform, the connected account, and Stripe. It also determines whether your platform’s or the connected account’s information appears on the customer’s bank or billing statement and which account Stripe debits for refunds and chargebacks.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W72-001",
+      "category": "legal",
+      "title": "GDPR DSAR export within statutory deadline",
+      "sourceRefId": "legal/gdpr-dsar-export",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W72-002",
+      "category": "legal",
+      "title": "CCPA do-not-sell honored for California users",
+      "sourceRefId": "legal/ccpa-opt-out-sale",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W72-003",
+      "category": "legal",
+      "title": "Granular cookie consent before tracking scripts",
+      "sourceRefId": "legal/cookie-consent-granular",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W72-004",
+      "category": "legal",
+      "title": "Terms version pinned at subscription creation",
+      "sourceRefId": "legal/terms-version-pin",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W72-005",
+      "category": "legal",
+      "title": "Privacy policy changes trigger user notice",
+      "sourceRefId": "legal/privacy-policy-changelog",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W72-006",
+      "category": "billing",
+      "title": "Stripe Tax automatic where nexus requires",
+      "sourceRefId": "stripe/tax-automatic",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W72-007",
+      "category": "billing",
+      "title": "Invoices include statutory business identifiers",
+      "sourceRefId": "stripe/invoices-compliance",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W72-008",
+      "category": "email",
+      "title": "Marketing emails one-click unsubscribe",
+      "sourceRefId": "resend/unsubscribe",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W72-009",
+      "category": "security",
+      "title": "Next.js middleware guards authenticated routes",
+      "sourceRefId": "nextjs/docs-app-building-your-application-routing-middleware",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W72-010",
+      "category": "security",
+      "title": "Idle session timeout on sensitive dashboards",
+      "sourceRefId": "owasp/cheatsheets-session-management-cheat-sheet-html",
+      "detect": {
+        "type": "config"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "refId": "stripe/knowledge-w64-radar-high-risk-3ds",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w64/radar-high-risk-3ds",
+  "lastVerified": "2026-06-06",
+  "title": "W64 radar-high-risk-3ds",
+  "provider": "stripe",
+  "excerpt": "Enable Radar rules and 3DS for high-risk PaymentIntents per fraud settings",
+  "embeddingHint": "stripe radar-high-risk-3ds wave64 legal security",
+  "tags": [
+    "wave64",
+    "knowledge",
+    "stripe"
+  ]
+}

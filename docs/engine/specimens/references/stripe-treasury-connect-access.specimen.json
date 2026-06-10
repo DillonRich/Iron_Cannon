@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-access",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/access.md",
+  "lastVerified": "2026-06-03",
+  "title": "Get started with API access to Treasury for platforms",
+  "excerpt": "Test in a sandbox environment to experiment before going live. You can use Treasury for platforms and Issuing in a *sandbox* (A sandbox is an isolated test environment that allows you to test Stripe functionality in your account without affecting your live integration. Use sandboxes to safely experiment with new features and changes) environment to see what functionality you want to enable in your live integration. Enable your Stripe account to request `issuing` and `treasury` (Treasury for platforms) capabilities on connected accounts. To issue cards to your own company or employees, see the [Issuing documentation](https://docs.stripe.com/issuing.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

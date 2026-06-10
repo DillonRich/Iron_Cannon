@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/get-started-data-migrations-overview",
+  "sourceUrl": "https://docs.stripe.com/get-started/data-migrations/overview.md",
+  "lastVerified": "2026-06-03",
+  "title": "Overview",
+  "excerpt": "Successfully migrate your customers and their payments data to Stripe. Migrating your customer and payments data to Stripe is a multi-step process. After you read through this guide, you’ll: - Understand the Stripe migration process. - Be able to scope the timeline for your migration. - Know the integration elements required for a successful migration. - Understand how to migrate payment details with minimal disruption to your users.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "mcpServers": {
+    "iron-cannon-local": {
+      "comment": "npm run ironcannon:serve — see CURSOR_MCP_SETUP.md",
+      "url": "http://127.0.0.1:8787/mcp",
+      "headers": {
+        "x-ironcannon-tier": "pro",
+        "x-ironcannon-client": "cursor-dev",
+        "x-ironcannon-api-key": "ic_dev_pro_testkey12345678"
+      }
+    },
+    "iron-cannon-local-armor": {
+      "comment": "Infrastructure + security tools T09-T11",
+      "url": "http://127.0.0.1:8787/mcp",
+      "headers": {
+        "x-ironcannon-tier": "armor",
+        "x-ironcannon-client": "cursor-armor"
+      }
+    },
+    "iron-cannon-ironclad": {
+      "comment": "Legal obligations T12-T14",
+      "url": "http://127.0.0.1:8787/mcp",
+      "headers": {
+        "x-ironcannon-tier": "ironclad",
+        "x-ironcannon-client": "cursor-ironclad",
+        "x-ironcannon-api-key": "ic_dev_ironclad_legaltest12345678"
+      }
+    },
+    "iron-cannon-staging": {
+      "comment": "Uncomment when api.ironcannon.ai is deployed",
+      "url": "https://api.ironcannon.ai/mcp",
+      "headers": {
+        "x-ironcannon-tier": "pro",
+        "x-ironcannon-client": "cursor-staging",
+        "x-ironcannon-api-key": "ic_dev_pro_REPLACE_ME"
+      }
+    }
+  }
+}

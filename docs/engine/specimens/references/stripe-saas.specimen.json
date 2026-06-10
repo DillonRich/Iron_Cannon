@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/saas",
+  "sourceUrl": "https://docs.stripe.com/saas.md",
+  "lastVerified": "2026-06-03",
+  "title": "Integrate a SaaS business on Stripe",
+  "excerpt": "Learn how to build a Software as a Service (SaaS) business with Billing and other Stripe products. Many Stripe users have a SaaS business model that involves subscriptions or recurring payments. This guide describes the unique actions you need to take in your Stripe integration to support typical SaaS business models. To help get you started more quickly, this guide presents no-code options where available.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

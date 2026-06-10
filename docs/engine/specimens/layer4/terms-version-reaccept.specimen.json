@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/terms/version-and-reaccept",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": "cloudflare-d1",
+  "section": "terms-version",
+  "content": {
+    "requirement": "Terms version tracking and re-accept on material changes",
+    "obligations": ["LEG-TERMS-002", "LEG-TERMS-005"],
+    "compareSteps": [
+      "Verify users.terms_version column in schema (M01/M30)",
+      "Advisory: flow_ref terms-reaccept when CURRENT_TERMS_VERSION bumps"
+    ],
+    "remediationDirective": "Store terms_version on signup; plan terms-reaccept flow for version bumps."
+  },
+  "references": ["legal/tos-acceptance-record"],
+  "compliancePatterns": {
+    "advisory": [
+      { "id": "LEG-TERMS-002", "type": "schema_column", "table": "users", "column": "terms_version", "tier": "ironclad" },
+      { "id": "LEG-TERMS-005", "type": "flow_ref", "flowId": "terms-reaccept", "tier": "ironclad" }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "terms", "disclaimerRequired": true }
+}

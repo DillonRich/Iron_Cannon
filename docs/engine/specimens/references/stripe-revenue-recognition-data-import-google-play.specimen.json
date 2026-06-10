@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-data-import-google-play",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/data-import/google-play.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe Connector for Google Play",
+  "excerpt": "Manage your revenue recognition in Stripe by importing data from Google Play. The [Stripe Connector for Google Play](https://docs.stripe.com/data/import-external-data/connectors/google-play.md) lets you import subscription purchases from Google Play into Stripe Revenue Recognition automatically. Some benefits of using Stripe Revenue Recognition for Google Play include: - **Near real-time availability**: Set up daily, automated imports from Google Play. This minimizes manual work and reduces corrections at month-end. - **Improved refund treatment**: Link refunds to original purchases, and generate more accurate refund journal entries that adjust deferred revenue instead of treating refunds as negative line items.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

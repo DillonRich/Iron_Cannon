@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-entitlements",
+  "sourceUrl": "https://docs.stripe.com/billing/entitlements.md",
+  "lastVerified": "2026-06-03",
+  "title": "Entitlements",
+  "excerpt": "Determine when you can grant or revoke product feature access to customers. This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [Dashboard](https://docs.stripe.com/billing/entitlements.md?dashboard-or-api=dashboard) - [API](https://docs.stripe.com/billing/entitlements.md?dashboard-or-api=api)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

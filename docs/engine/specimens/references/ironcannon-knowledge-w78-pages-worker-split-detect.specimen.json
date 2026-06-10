@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w78-pages-worker-split-detect",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w78/pages-worker-split-detect",
+  "lastVerified": "2026-06-06",
+  "title": "W78 pages-worker-split-detect",
+  "provider": "ironcannon",
+  "excerpt": "T01 pages-worker-split warning distinguishes SD-06 from SD-03 external-api",
+  "embeddingHint": "ironcannon pages-worker-split-detect wave78 svc-001-pages-harvest",
+  "tags": [
+    "wave78",
+    "knowledge",
+    "ironcannon",
+    "svc-001-pages-harvest"
+  ]
+}

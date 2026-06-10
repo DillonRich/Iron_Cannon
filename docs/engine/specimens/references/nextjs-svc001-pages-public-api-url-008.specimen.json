@@ -1,0 +1,16 @@
+{
+  "refId": "nextjs/svc001-pages-public-api-url-008",
+  "sourceUrl": "https://ironcannon.dev/svc001/pages/public-api-url-8",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-001 public-api-url 8",
+  "provider": "nextjs",
+  "excerpt": "Expose Worker API base URL via NEXT_PUBLIC_API_URL for browser fetch from Pages-hosted Next.js UI (SD-06 pattern).",
+  "embeddingHint": "nextjs public-api-url svc001 pages worker split sd-06",
+  "tags": [
+    "svc001",
+    "pages",
+    "sd-06",
+    "nextjs",
+    "public-api-url"
+  ]
+}

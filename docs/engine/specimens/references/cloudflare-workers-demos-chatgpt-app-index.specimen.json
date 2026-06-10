@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-demos-chatgpt-app-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/demos/chatgpt-app/index.md",
+  "lastVerified": "2026-06-05",
+  "title": "Build an Interactive ChatGPT App",
+  "excerpt": "description: Build and deploy an interactive ChatGPT App on Cloudflare Workers with real-time multiplayer state using MCP. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. This guide will show you how to build and deploy an interactive ChatGPT App on Cloudflare Workers that can: * Render rich, interactive UI widgets directly in ChatGPT conversations",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

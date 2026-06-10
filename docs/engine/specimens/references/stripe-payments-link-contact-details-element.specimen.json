@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-link-contact-details-element",
+  "sourceUrl": "https://docs.stripe.com/payments/link/contact-details-element.md",
+  "lastVerified": "2026-06-03",
+  "title": "Explore the Contact Details Element",
+  "excerpt": "Create a single email input for both email collection and Link authentication. If you already have customer email addresses, [pass them directly to the Payment Element](https://docs.stripe.com/payments/link/payment-element-link.md?elements=pass-email) instead. Create a single email input for both email collection and Link authentication by adding the [Contact Details Element](https://docs.stripe.com/payments/elements/contact-details-element.md) (previously known as the Link Authentication Element) to your Elements integration. If your customer doesn’t have a Link account, and they select one of its supported payment methods (credit card, debit card, or US bank), they’re given the option of signing up.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

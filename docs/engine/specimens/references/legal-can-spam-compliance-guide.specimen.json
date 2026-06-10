@@ -1,0 +1,9 @@
+{
+  "refId": "legal/can-spam-compliance-guide",
+  "sourceUrl": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business",
+  "lastVerified": "2026-05-31",
+  "title": "FTC CAN-SPAM compliance guide",
+  "excerpt": "Commercial email must identify sender, include valid physical postal address, provide clear unsubscribe, honor opt-out within 10 business days. Transactional messages exempt from some requirements but must not contain false routing info.",
+  "appliesTo": ["layer4", "email-can-spam"],
+  "tags": ["legal", "can-spam", "email"]
+}

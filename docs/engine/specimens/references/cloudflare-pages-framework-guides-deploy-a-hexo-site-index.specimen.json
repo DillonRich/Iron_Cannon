@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-framework-guides-deploy-a-hexo-site-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/framework-guides/deploy-a-hexo-site/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Hexo",
+  "excerpt": "description: Deploy a Hexo static site to Cloudflare Pages. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. [Hexo ↗](https://hexo.io/) is a tool for generating static websites, powered by Node.js. Hexo's benefits include speed, simplicity, and flexibility, allowing it to render Markdown files into static web pages via Node.js. In this guide, you will create a new Hexo application and deploy it using Cloudflare Pages. You will use the `hexo` CLI to create a new Hexo site.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

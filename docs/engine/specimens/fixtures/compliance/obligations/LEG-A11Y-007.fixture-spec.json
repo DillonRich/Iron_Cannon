@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-A11Y-007",
+  "obligationId": "LEG-A11Y-007",
+  "detectType": "required_attribute",
+  "detect": {
+    "type": "required_attribute",
+    "selector": "html",
+    "attr": "lang"
+  },
+  "passSnippet": "pass LEG-A11Y-007",
+  "failSnippet": "gap LEG-A11Y-007",
+  "expectedPass": "gap",
+  "expectedFail": "gap"
+}

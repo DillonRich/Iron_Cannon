@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/elements-appearance-api-mobile",
+  "sourceUrl": "https://docs.stripe.com/elements/appearance-api/mobile.md",
+  "lastVerified": "2026-06-03",
+  "title": "Customize appearance",
+  "excerpt": "Customize your mobile integration with the Appearance API. This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [iOS](https://docs.stripe.com/elements/appearance-api/mobile.md?platform=ios) - [Android](https://docs.stripe.com/elements/appearance-api/mobile.md?platform=android) - [React Native](https://docs.stripe.com/elements/appearance-api/mobile.md?platform=react-native)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

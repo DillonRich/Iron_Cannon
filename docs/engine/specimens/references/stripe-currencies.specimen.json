@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/currencies",
+  "sourceUrl": "https://docs.stripe.com/currencies.md",
+  "lastVerified": "2026-06-03",
+  "title": "Supported currencies",
+  "excerpt": "Learn which currencies Stripe supports for payments and bank payouts. Use this guide to understand which currencies Stripe supports for payments and bank payouts, how conversions work, how to format amounts in API requests (including minor units and decimals), each currency’s minimum and maximum charge limits, and specific currency rules. You can charge customers in over 135 currencies and receive funds in your preferred currency. Converting prices to local currencies can improve customer conversion and authorization rates, while lowering payment processing costs. Learn how to [display and charge customers in multiple currencies](https://docs.stripe.com/payments/currencies/localize-prices.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

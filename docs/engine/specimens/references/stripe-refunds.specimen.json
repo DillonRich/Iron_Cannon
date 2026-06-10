@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/refunds",
+  "sourceUrl": "https://docs.stripe.com/refunds.md",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe refunds",
+  "excerpt": "Refunds created via API or Dashboard against Charge or PaymentIntent. Partial refunds supported. Subscription cancel is separate from refund. App billing state must not assume refund webhook unless listening to charge.refunded. Document refund policy in UX—not IC legal copy.",
+  "appliesTo": ["billing-subscription"],
+  "tags": ["stripe", "refunds"]
+}

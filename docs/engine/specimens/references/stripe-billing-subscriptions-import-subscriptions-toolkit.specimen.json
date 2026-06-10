@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-subscriptions-import-subscriptions-toolkit",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/import-subscriptions-toolkit.md",
+  "lastVerified": "2026-06-03",
+  "title": "Migrate subscriptions to Stripe Billing using toolkit",
+  "excerpt": "Learn how to migrate your existing subscriptions to Stripe using the toolkit. Use the [Billing migration toolkit](https://dashboard.stripe.com/billing/migrations) in the Stripe Dashboard to migrate your existing subscriptions from a third-party system, a home-grown system, or an existing Stripe account to Stripe Billing. 1. If you haven’t already, review the [migration stages](https://docs.stripe.com/billing/subscriptions/migrate-subscriptions.md#migration-stages). 1. [Set up a Stripe Billing integration](https://docs.stripe.com/billing/subscriptions/build-subscriptions.md) before you begin migration. This is a one-time setup that you don’t need to repeat for future migrations. 1.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

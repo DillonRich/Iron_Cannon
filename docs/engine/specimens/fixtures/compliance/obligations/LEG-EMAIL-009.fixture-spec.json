@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-EMAIL-009",
+  "obligationId": "LEG-EMAIL-009",
+  "detectType": "template_scan",
+  "detect": {
+    "type": "template_scan",
+    "templateIdPrefix": "txn_"
+  },
+  "passSnippet": "templateId=txn_welcome",
+  "failSnippet": "empty template",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

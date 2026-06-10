@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-EDGE-010",
+  "obligationId": "LEG-EDGE-010",
+  "detectType": "header",
+  "detect": {
+    "type": "header",
+    "name": "X-Iron-Cannon-Legal-Disclaimer"
+  },
+  "passSnippet": "X-Iron-Cannon-Legal-Disclaimer: ok",
+  "failSnippet": "gap LEG-EDGE-010",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

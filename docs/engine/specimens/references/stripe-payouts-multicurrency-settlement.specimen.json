@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payouts-multicurrency-settlement",
+  "sourceUrl": "https://docs.stripe.com/payouts/multicurrency-settlement.md",
+  "lastVerified": "2026-06-03",
+  "title": "Multi-currency settlement",
+  "excerpt": "Accept, settle, and pay out funds in multiple currencies. If you’re a Connect platform looking to offer multi-currency settlement capabilities to your connected accounts, see our [Connect Docs](https://docs.stripe.com/connect/multicurrency-settlement.md). Stripe automatically converts all incoming funds into the default currency of your home country. With multi-currency settlement, you can configure your account to accrue balances and get paid out in additional currencies without incurring foreign exchange fees. Multi-currency settlement is available in the following locations: To configure your account to receive settlement and pay out in multiple currencies, configure the currencies and bank accounts in your [Dashboard](https://dashboard.stripe.com/account/payouts).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

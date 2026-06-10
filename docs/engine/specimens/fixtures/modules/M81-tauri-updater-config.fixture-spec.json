@@ -1,0 +1,16 @@
+{
+  "fixtureId": "M81",
+  "moduleId": "M81-tauri-updater-config",
+  "patternsUnderTest": [
+    "TAURI-UPD-001",
+    "TAURI-UPD-002",
+    "TAURI-P49-"
+  ],
+  "passSnippet": "plugins.updater = { active: true, pubkey: \"...\", endpoints: [\"https://releases.example.com/update\"] }\nverifySignature = true",
+  "failSnippet": "plugins = {}\n// release channel not configured",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "TAURI-UPD-001"
+  ]
+}

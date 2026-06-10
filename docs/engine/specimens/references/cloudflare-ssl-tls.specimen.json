@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/ssl-tls",
+  "sourceUrl": "https://developers.cloudflare.com/ssl/",
+  "lastVerified": "2026-05-31",
+  "title": "Cloudflare SSL/TLS",
+  "excerpt": "Full strict SSL between visitor and Cloudflare and origin. Required for Secure cookies and HSTS. Pages deploy includes TLS by default.",
+  "appliesTo": [
+    "layer3",
+    "Armor"
+  ],
+  "tags": [
+    "cloudflare",
+    "tls"
+  ]
+}

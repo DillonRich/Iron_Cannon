@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-moving-money-out-of-outbound-transfers",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/moving-money/out-of/outbound-transfers.md",
+  "lastVerified": "2026-06-03",
+  "title": "Moving money using OutboundTransfer objects",
+  "excerpt": "Learn how to transfer money out of financial accounts to external accounts. An `OutboundTransfer` object facilitates money movement out of a financial account. Use `OutboundTransfer` to send funds over ACH rails or through a domestic wire transfer to an external bank account that a connected account owns. Outbound transfers typically arrive at the receiving bank between the same day and 2 business days, depending on whether you use a wire or ACH. > (Multi FA beta) If enrolled in the Multi FA beta, you can use `OutboundTransfer` to send funds over `stripe` network rails to another financial account associated with the same connected account. Funds arrive in the destination financial account within minutes.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

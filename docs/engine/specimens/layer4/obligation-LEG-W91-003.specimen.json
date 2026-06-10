@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w91-003",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Arc cap journeys UJ-106–110",
+    "obligations": [
+      "LEG-W91-003"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Arc cap journeys UJ-106–110"
+  },
+  "references": [
+    "ironcannon/knowledge-w91-uj-106-110-capstone"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W91-003",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

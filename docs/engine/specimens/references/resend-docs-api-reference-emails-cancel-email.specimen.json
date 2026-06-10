@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-api-reference-emails-cancel-email",
+  "sourceUrl": "https://resend.com/docs/api-reference/emails/cancel-email.md",
+  "lastVerified": "2026-06-03",
+  "title": "Cancel Email",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Cancel Email > Cancel a scheduled email. ## Path Parameters The Email ID. ```ts Node.js theme={\"theme\":{\"light\":\"github-light\",\"dark\":\"vesper\"}} import { Resend } from 'resend'; const resend = new Resend('re_xxxxxxxxx'); const { data, error } = await resend.emails.cancel( '49a3999c-0ce1-4ea6-ab68-afcd6dc2e794', ); ``` ```php PHP theme={\"theme\":{\"light\":\"github-light\",\"dark\":\"vesper\"}} $resend = Resend::client('re_xxxxxxxxx'); $resend->emails->cancel('49a3999c-0ce1-4ea6-ab68-afcd6dc2e794'); ``` ```python Python theme={\"theme\":{\"light\":\"github-light\",\"dark\":\"vesper\"}} import resend resend.api_key = \"re_xxxxxxxxx\" re…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

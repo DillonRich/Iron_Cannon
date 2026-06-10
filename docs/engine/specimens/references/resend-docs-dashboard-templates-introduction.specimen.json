@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-templates-introduction",
+  "sourceUrl": "https://resend.com/docs/dashboard/templates/introduction.md",
+  "lastVerified": "2026-06-03",
+  "title": "Using Templates",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Using Templates > Learn how to use templates to send emails. Templates are stored on Resend and can be referenced when you send transactional emails. With Templates, define the structure and layout of a message and optionally include custom variables which will be replaced with the actual values when sending the email. Send only the Template `id` and `variables` (instead of sending the HTML), and Resend will render your final email and send it out.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

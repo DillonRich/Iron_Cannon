@@ -1,0 +1,16 @@
+{
+  "refId": "owasp/cheatsheets-authorization-testing-automation-cheat-sheet-html",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Testing_Automation_Cheat_Sheet.html",
+  "lastVerified": "2026-06-05",
+  "title": "Authorization Testing Automation Cheat Sheet",
+  "excerpt": "Authorization Testing Automation - OWASP Cheat Sheet Series Skip to content OWASP Cheat Sheet Series Authorization Testing Automation Initializing search OWASP/CheatSheetSeries OWASP Cheat Sheet Series OWASP/CheatSheetSeries Introduction Index Alphabetical Index ASVS Index MASVS Index Proactive Controls Index Top 10 Cheatsheets Cheatsheets AI Agent Security AJAX Security AML Sanctions AI Agent Payments Abuse Case Access Control Attack Surface Analysis Authentication Authorization Authorization Testing Automation Authorization Testing Automation Table of contents Introduction Context Objective Proposition Preparing to automate the authorization matrix Create the authorization matrix pivot file Implementing an integration test Rendering the authorization matrix for an audit / review Sources…",
+  "appliesTo": [
+    "security",
+    "auth",
+    "billing"
+  ],
+  "tags": [
+    "owasp",
+    "p0"
+  ]
+}

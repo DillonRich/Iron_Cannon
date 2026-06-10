@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w90-008",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "M13 provisioning before affiliate tiers",
+    "obligations": [
+      "LEG-W90-008"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "M13 provisioning before affiliate tiers"
+  },
+  "references": [
+    "ironcannon/knowledge-w90-m13-before-affiliate-payout"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W90-008",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "billing",
+    "disclaimerRequired": true
+  }
+}

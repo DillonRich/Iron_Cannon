@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w74-golden-integration-gate",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w74/golden-integration-gate",
+  "lastVerified": "2026-06-06",
+  "title": "W74 golden-integration-gate",
+  "provider": "ironcannon",
+  "excerpt": "Golden integration smoke before major release",
+  "embeddingHint": "ironcannon golden-integration-gate wave74 stripe-resend-depth",
+  "tags": [
+    "wave74",
+    "knowledge",
+    "ironcannon",
+    "stripe-resend-depth"
+  ]
+}

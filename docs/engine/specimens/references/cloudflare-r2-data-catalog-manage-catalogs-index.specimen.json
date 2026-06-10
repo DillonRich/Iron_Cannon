@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/r2-data-catalog-manage-catalogs-index",
+  "sourceUrl": "https://developers.cloudflare.com/r2/data-catalog/manage-catalogs/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Manage catalogs",
+  "excerpt": "description: Understand how to manage Iceberg REST catalogs associated with R2 buckets image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/r2/llms.txt > Use this file to discover all available pages before exploring further. * Enable and disable [R2 Data Catalog](https://developers.cloudflare.com/r2/data-catalog/) on your buckets. * Enable and disable [table maintenance](https://developers.cloudflare.com/r2/data-catalog/table-maintenance/) features like compaction and snapshot expiration.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

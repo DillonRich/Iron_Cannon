@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-STRIPE-005",
+  "obligationId": "LEG-STRIPE-005",
+  "detectType": "template_scan",
+  "detect": {
+    "type": "template_scan",
+    "event": "invoice.payment_failed"
+  },
+  "passSnippet": "invoice.payment_failed template txn_ok physicalAddress",
+  "failSnippet": "empty template",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

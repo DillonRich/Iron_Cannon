@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/api-versioning",
+  "sourceUrl": "https://docs.stripe.com/api/versioning.md",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe API versioning",
+  "excerpt": "Pin Stripe API version in Dashboard or per-request via Stripe-Version header. SDK versions bundle a default API version—upgrade SDK deliberately. Webhook events use account API version unless versioned endpoint configured. Document pinned version in adapter rules.",
+  "appliesTo": ["layer2/stripe", "cloudflare-golden-stack"],
+  "tags": ["stripe", "api", "versioning"]
+}

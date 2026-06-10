@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-adding-funds-to-your-card-program",
+  "sourceUrl": "https://docs.stripe.com/issuing/adding-funds-to-your-card-program.md",
+  "lastVerified": "2026-06-03",
+  "title": "Add funds to your card program",
+  "excerpt": "Learn about your options to fund card spend. To enable card spend, Stripe Issuing users must fund an Issuing balance. Your default funding option is to use an external bank account. Depending on your integration and region, you have the option to pull or push funds from an external bank account to your Issuing balance. If you use Stripe to process payments, you can fund your Issuing balance from your Stripe acquiring balance or from your external bank account.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

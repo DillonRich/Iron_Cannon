@@ -1,0 +1,18 @@
+{
+  "fixtureId": "M40",
+  "moduleId": "M40-deletion-api",
+  "patternsUnderTest": [
+    "DEL-API-001",
+    "DEL-API-002",
+    "DEL-API-003",
+    "AUTH-P50-M40-",
+    "AUTH-P50-LIFECYCLE"
+  ],
+  "passSnippet": "export async function deleteRequest() { await db.update({ grace_ends_at: ts, deletion_status: 'scheduled' }); }\nexport async function deleteCancel() { /* POST /api/account/delete-cancel */ }",
+  "failSnippet": "export async function deleteNow() { await db.run('DELETE FROM users'); }",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "DEL-API-002"
+  ]
+}

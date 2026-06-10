@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-emails-custom-headers",
+  "sourceUrl": "https://resend.com/docs/dashboard/emails/custom-headers.md",
+  "lastVerified": "2026-06-03",
+  "title": "Custom Headers",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Custom Headers > Customize how emails are sent with your own headers. Email headers are typically hidden from the end user but are crucial for deliverability. They include information about the sender, receiver, timestamp, and more. Resend already includes all the necessary headers for you, but now you can also add your own custom headers.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

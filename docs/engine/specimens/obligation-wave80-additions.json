@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W80-001",
+      "category": "security",
+      "title": "Browser Supabase client uses anon key only",
+      "sourceRefId": "supabase/knowledge-w80-anon-client-browser",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W80-002",
+      "category": "security",
+      "title": "Middleware refreshes session via @supabase/ssr",
+      "sourceRefId": "supabase/knowledge-w80-ssr-middleware-session",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W80-003",
+      "category": "security",
+      "title": "RLS enabled on user-linked Postgres tables",
+      "sourceRefId": "supabase/knowledge-w80-rls-enable-policies",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W80-004",
+      "category": "operations",
+      "title": "Auth callback route handles OAuth code exchange",
+      "sourceRefId": "supabase/knowledge-w80-auth-callback-route",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W80-005",
+      "category": "billing",
+      "title": "Stripe customer id stored server-side in Supabase profiles",
+      "sourceRefId": "supabase/knowledge-w80-stripe-customer-metadata",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W80-006",
+      "category": "operations",
+      "title": "SD-08 dual-database stacks blocked at discovery",
+      "sourceRefId": "supabase/knowledge-w80-dual-database-blocked",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W80-007",
+      "category": "operations",
+      "title": "SD-07 wiremap order documented in W07 fixture",
+      "sourceRefId": "supabase/knowledge-w80-sd07-wiremap-order",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W80-008",
+      "category": "security",
+      "title": "No localStorage session persistence for Supabase auth",
+      "sourceRefId": "nextjs/knowledge-w80-middleware-cookie-bridge",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W80-009",
+      "category": "operations",
+      "title": "SVC-002 harvest gate green in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w80-svc002-harvest-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W80-010",
+      "category": "privacy",
+      "title": "Supabase subprocessor disclosed in privacy notice",
+      "sourceRefId": "legal/knowledge-w80-supabase-dpa-notice",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-audiences-contacts",
+  "sourceUrl": "https://resend.com/docs/dashboard/audiences/contacts.md",
+  "lastVerified": "2026-06-03",
+  "title": "Managing Contacts",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Managing Contacts > Learn how to work with Contacts with Resend. Contacts in Resend are global entities linked to a specific email address. After adding Contacts, send [Broadcasts](/dashboard/broadcasts/introduction) to groups of Contacts. If you previously used our Audience model, learn how to [migrate to the new Contacts model](/dashboard/segments/migrating-from-audiences-to-segments). ## Add Contacts You can add a Contact in three different ways: via API, CSV upload, or manually. ### 1.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

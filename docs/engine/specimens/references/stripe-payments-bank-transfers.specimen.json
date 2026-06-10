@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-bank-transfers",
+  "sourceUrl": "https://docs.stripe.com/payments/bank-transfers.md",
+  "lastVerified": "2026-06-03",
+  "title": "Bank transfer payments",
+  "excerpt": "Learn about bank transfers and managing payments with the customer balance. Bank transfers provide a safe way for customers to send money over bank rails. When accepting bank transfers with Stripe, you provide customers with a virtual bank account number that they can push money to from their own online bank interface or in-person bank branch. Stripe uses this virtual account number to automate reconciliation and prevent exposing your real account details to customers. > To turn on bank transfer payments, go to your [Payment methods settings](https://dashboard.stripe.com/settings/payment_methods).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

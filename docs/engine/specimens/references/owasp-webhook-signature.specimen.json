@@ -1,0 +1,14 @@
+{
+  "refId": "owasp/webhook-signature",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/owasp-webhook-signature",
+  "lastVerified": "2026-06-04",
+  "title": "Webhook endpoint rejects missing signature with 400",
+  "provider": "owasp",
+  "excerpt": "LEG-W53-010: Webhook endpoint rejects missing signature with 400",
+  "embeddingHint": "LEG-W53-010 security config",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

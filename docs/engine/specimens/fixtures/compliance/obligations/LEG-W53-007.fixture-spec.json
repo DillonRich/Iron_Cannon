@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W53-007",
+  "obligationId": "LEG-W53-007",
+  "detectType": "flow_ref",
+  "detect": {
+    "type": "flow_ref",
+    "flow": "data-export"
+  },
+  "passSnippet": "flowRef data-export",
+  "failSnippet": "flowRef unknown-flow",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

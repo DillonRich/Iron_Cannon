@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/cache-rules",
+  "sourceUrl": "https://developers.cloudflare.com/cache/",
+  "lastVerified": "2026-05-31",
+  "title": "Cache rules",
+  "excerpt": "Cache Rules to bypass cache on authenticated routes.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "cloudflare",
+    "cache-rules"
+  ]
+}

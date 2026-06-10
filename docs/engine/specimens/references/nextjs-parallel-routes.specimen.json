@@ -1,0 +1,13 @@
+{
+  "refId": "nextjs/parallel-routes",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/routing/parallel-routes",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js Parallel routes",
+  "excerpt": "Render multiple pages in same layout via @slots. Advanced—default SaaS uses simpler layouts.",
+  "appliesTo": [
+    "P1"
+  ],
+  "tags": [
+    "nextjs"
+  ]
+}

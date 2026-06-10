@@ -1,0 +1,14 @@
+{
+  "refId": "resend/knowledge-w64-bounce-complaint-webhook",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w64/bounce-complaint-webhook",
+  "lastVerified": "2026-06-06",
+  "title": "W64 bounce-complaint-webhook",
+  "provider": "resend",
+  "excerpt": "Process Resend bounce/complaint webhooks to sync suppression list",
+  "embeddingHint": "resend bounce-complaint-webhook wave64 legal security",
+  "tags": [
+    "wave64",
+    "knowledge",
+    "resend"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "refId": "owasp/scale-c2-headers-087",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/owasp/scale-c2-headers-087",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-C2 headers 87",
+  "excerpt": "Set HSTS, X-Content-Type-Options, Referrer-Policy on all routes. Planning reference card 87 for Iron Cannon compose and compliance agents. Cross-ref obligations and EM-3 touchpoints.",
+  "tags": [
+    "owasp",
+    "headers",
+    "scale-c2"
+  ]
+}

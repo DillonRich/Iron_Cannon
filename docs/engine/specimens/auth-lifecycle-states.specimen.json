@@ -1,0 +1,40 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "auth-lifecycle/states",
+  "layer": 1,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": null,
+  "section": "states",
+  "content": {
+    "states": [
+      { "id": "S00", "name": "anonymous" },
+      { "id": "S01", "name": "signup_pending" },
+      { "id": "S02", "name": "authenticated" },
+      { "id": "S04", "name": "session_expired" }
+    ],
+    "transitions": [
+      { "from": "S00", "to": "S01", "trigger": "signup_submit" },
+      { "from": "S01", "to": "S02", "trigger": "email_verified" },
+      { "from": "S02", "to": "S00", "trigger": "signout_server_invalidate" }
+    ],
+    "unhappyPaths": [
+      {
+        "state": "S01",
+        "failure": "email_send_failed",
+        "ui": "Show retry; do not expose internal error",
+        "backend": "Queue retry; log to email_failures"
+      }
+    ]
+  },
+  "references": ["owasp/session-httponly-secure", "owasp/auth-general"],
+  "compliancePatterns": {
+    "required": [],
+    "forbidden": []
+  },
+  "metadata": {
+    "author": "iron-cannon",
+    "minTier": "pro",
+    "specVersion": "docs/flows/auth-lifecycle.md v1.0.0"
+  }
+}

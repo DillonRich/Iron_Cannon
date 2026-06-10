@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/email/can-spam-physical-address",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "email-lifecycle",
+  "adapterId": "resend",
+  "section": "can-spam-address",
+  "content": {
+    "requirement": "Marketing emails must include valid physical postal address",
+    "obligations": ["LEG-EMAIL-002", "LEG-EMAIL-004"],
+    "compareSteps": [
+      "Scan marketing templates for physical address block",
+      "Advisory: flag promotional CTAs inside transactional templates"
+    ],
+    "remediationDirective": "Add company physical address to marketing email footer; keep transactional emails free of marketing CTAs."
+  },
+  "references": ["legal/can-spam-physical-address", "legal/transactional-vs-marketing"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "LEG-EMAIL-002", "type": "template_scan", "field": "physicalAddress", "tier": "ironclad" }
+    ],
+    "advisory": [
+      { "id": "LEG-EMAIL-004", "type": "template_scan", "field": "promotionalContentInTransactional", "tier": "ironclad" }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "email", "disclaimerRequired": true }
+}

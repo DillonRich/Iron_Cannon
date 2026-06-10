@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w53-009",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Focus visible on all interactive checkout controls",
+    "obligations": [
+      "LEG-W53-009"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Focus visible on all interactive checkout controls"
+  },
+  "references": [
+    "legal/focus-visible-checkout"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W53-009",
+        "type": "required_attribute",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "a11y",
+    "disclaimerRequired": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-tax-customizations",
+  "sourceUrl": "https://docs.stripe.com/tax/tax-customizations.md",
+  "lastVerified": "2026-06-03",
+  "title": "Tax customizations",
+  "excerpt": "Learn how to customize tax behavior using Stripe Tax. Set up Stripe Tax to fit your business needs with tax customizations. Create rules that apply to a product tax code in any supported location. - Change the [Software as a service (SaaS) - personal use](https://docs.stripe.com/tax/tax-codes.md?tax_code=txcd_10103000) tax code from taxable to non-taxable in Louisiana to reflect the uncertainty of how SaaS might be taxed. - Apply a 5% tax rate to the [Newspapers](https://docs.stripe.com/tax/tax-codes.md?tax_code=txcd_35020100%09) tax code in Poland, instead of the applied rate of 8%, to reflect that your product is a regional newspaper and not a national one.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-dashboard-manage-invoices",
+  "sourceUrl": "https://docs.stripe.com/invoicing/dashboard/manage-invoices.md",
+  "lastVerified": "2026-06-03",
+  "title": "Manage invoices",
+  "excerpt": "Learn how to manage your invoices in the Dashboard. Invoices move through a series of statuses as they’re created and processed. You can track the status of an *invoice* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice) on the [Invoices page](https://dashboard.stripe.com/invoices), and view its details by clicking into it. Invoices that are `open` might display a different badge, such as `Past due` or `Retrying`. For some invoices, you can hover over the badge to see an explanatory tooltip.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

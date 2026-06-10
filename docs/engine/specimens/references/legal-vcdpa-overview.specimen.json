@@ -1,0 +1,15 @@
+{
+  "refId": "legal/vcdpa-overview",
+  "sourceUrl": "https://law.lis.virginia.gov/",
+  "lastVerified": "2026-05-31",
+  "title": "Virginia CDPA",
+  "excerpt": "Virginia consumer data protection act overview.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "legal",
+    "vcdpa-overview"
+  ]
+}

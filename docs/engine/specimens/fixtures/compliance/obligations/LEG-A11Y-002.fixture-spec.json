@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-A11Y-002",
+  "obligationId": "LEG-A11Y-002",
+  "detectType": "label_association",
+  "detect": {
+    "type": "label_association",
+    "scope": "auth_routes"
+  },
+  "passSnippet": "pass LEG-A11Y-002",
+  "failSnippet": "gap LEG-A11Y-002",
+  "expectedPass": "gap",
+  "expectedFail": "gap"
+}

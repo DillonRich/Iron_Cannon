@@ -1,0 +1,15 @@
+{
+  "refId": "legal/knowledge-w84-production-witness-table",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w84/production-witness-table",
+  "lastVerified": "2026-06-06",
+  "title": "W84 production-witness-table",
+  "provider": "legal",
+  "excerpt": "PRODUCTION_READINESS_SIGNOFF witness table for live deploy attestation",
+  "embeddingHint": "legal production-witness-table wave84 operator-deploy-readiness-g35",
+  "tags": [
+    "wave84",
+    "knowledge",
+    "legal",
+    "operator-deploy-readiness-g35"
+  ]
+}

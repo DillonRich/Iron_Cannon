@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-integration-programmatic-credit-notes",
+  "sourceUrl": "https://docs.stripe.com/invoicing/integration/programmatic-credit-notes.md",
+  "lastVerified": "2026-06-03",
+  "title": "Generate credit notes programmatically",
+  "excerpt": "Use the Invoicing API to adjust or refund finalized invoices with credit notes. To adjust the balance of an `open`, `paid`, or `uncollectible` *invoice* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice), generate a [credit note](https://docs.stripe.com/api/credit_notes.md). > For information about working with credit notes using the Dashboard, see [Issue credit notes](https://docs.stripe.com/invoicing/dashboard/credit-notes.md). When you create a credit note, you can apply credit amounts in three ways: - Discount a fixed amount from an invoice line item. - Discount a quantity from an invoice line item.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

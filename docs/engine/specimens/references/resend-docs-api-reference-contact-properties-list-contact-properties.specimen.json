@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-api-reference-contact-properties-list-contact-properties",
+  "sourceUrl": "https://resend.com/docs/api-reference/contact-properties/list-contact-properties.md",
+  "lastVerified": "2026-06-03",
+  "title": "List Contact Properties",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # List Contact Properties > Retrieve a list of contact properties. export const QueryParams = ({type, isRequired}) => { return <> Query Parameters {isRequired ? Number of {type} to retrieve. Default value: 20 Maximum value: 100 Minimum value: 1 : <> Note that the limit parameter is optional . If you do not provide a limit , all {type} will be returned in a single response. Number of {type} to retrieve. Maximum value: 100 Minimum value: 1 } The ID after which we'll retrieve more {type} (for pagination). This ID will not be included in the returned list. Cannot be used with the before parameter.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

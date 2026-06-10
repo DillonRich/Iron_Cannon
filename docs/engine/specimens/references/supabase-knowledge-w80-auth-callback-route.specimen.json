@@ -1,0 +1,15 @@
+{
+  "refId": "supabase/knowledge-w80-auth-callback-route",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w80/auth-callback-route",
+  "lastVerified": "2026-06-06",
+  "title": "W80 auth-callback-route",
+  "provider": "supabase",
+  "excerpt": "Auth callback route exchanges OAuth code via exchangeCodeForSession",
+  "embeddingHint": "supabase auth-callback-route wave80 svc-002-supabase-harvest",
+  "tags": [
+    "wave80",
+    "knowledge",
+    "supabase",
+    "svc-002-supabase-harvest"
+  ]
+}

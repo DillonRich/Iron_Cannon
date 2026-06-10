@@ -1,0 +1,14 @@
+{
+  "refId": "legal/skip-nav-link",
+  "sourceUrl": "https://ironcannon.dev/planning/W65/ref/legal-skip-nav-link",
+  "lastVerified": "2026-06-06",
+  "title": "skip nav link",
+  "provider": "legal",
+  "excerpt": "Provide skip navigation link as first focusable element on every page.",
+  "embeddingHint": "legal/skip-nav-link wave65 obligation-source legal",
+  "tags": [
+    "wave65",
+    "obligation-source",
+    "legal"
+  ]
+}

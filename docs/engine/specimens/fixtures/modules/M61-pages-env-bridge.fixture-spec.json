@@ -1,0 +1,16 @@
+{
+  "fixtureId": "M61",
+  "moduleId": "M61-pages-env-bridge",
+  "patternsUnderTest": [
+    "PAGES-ENV-001",
+    "PAGES-ENV-002",
+    "BILL-P49-M61-"
+  ],
+  "passSnippet": "NEXT_PUBLIC_API_URL=https://api.example.com\nvars = { APP_URL = \"https://app.example.com\" }",
+  "failSnippet": "API_URL=secret-internal-only",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "PAGES-ENV-001"
+  ]
+}

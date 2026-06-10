@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payment-links-post-payment",
+  "sourceUrl": "https://docs.stripe.com/payment-links/post-payment.md",
+  "lastVerified": "2026-06-03",
+  "title": "After a payment link payment",
+  "excerpt": "Learn what you can do after receiving a payment link payment. After you receive a payment through a payment link, you can track payments, manage fulfillment automatically, view payment link metrics, and more. After your customer makes a payment using a payment link, you can see it in the payments overview in the [Dashboard](https://dashboard.stripe.com/payments). If you’re new to Stripe, you receive an email after your first payment. To receive emails for all successful payments, update your notification preferences in your [Personal details](https://dashboard.stripe.com/settings/user) settings.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

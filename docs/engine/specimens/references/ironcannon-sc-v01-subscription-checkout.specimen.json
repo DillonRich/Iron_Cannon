@@ -1,0 +1,17 @@
+{
+  "refId": "ironcannon/sc-v01-subscription-checkout",
+  "sourceUrl": "https://ironcannon.dev/patterns/sc-v01",
+  "lastVerified": "2026-05-31",
+  "title": "IC SC-V01 subscription checkout",
+  "excerpt": "Checkout Session mode=subscription with Price ID. success_url to billing success route. metadata.userId required for webhook handoff.",
+  "appliesTo": [
+    "billing-subscription",
+    "M11",
+    "SC-V01"
+  ],
+  "tags": [
+    "ironcannon",
+    "stripe-variant"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

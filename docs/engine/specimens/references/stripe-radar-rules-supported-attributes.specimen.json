@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/radar-rules-supported-attributes",
+  "sourceUrl": "https://docs.stripe.com/radar/rules/supported-attributes.md",
+  "lastVerified": "2026-06-03",
+  "title": "Supported attributes",
+  "excerpt": "Review a complete list of attributes supported in Radar rules. > #### Use the Accounts v2 API to represent customers > The Accounts v2 API is generally available for Connect users, and in public preview for other Stripe users. If you’re part of the Accounts v2 preview, you need to specify a [specify a preview version](https://docs.stripe.com/api-v2-overview.md#sdk-and-api-versioning) in your code. > To request access to the Accounts v2 preview, > For most use cases, we recommend [modeling your customers as customer-configured Account objects](https://docs.stripe.com/accounts-v2/use-accounts-as-customers.md) instead of using [Customer](https://docs.stripe.com/api/customers.md) objects.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

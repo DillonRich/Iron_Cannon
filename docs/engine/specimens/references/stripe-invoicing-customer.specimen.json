@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-customer",
+  "sourceUrl": "https://docs.stripe.com/invoicing/customer.md",
+  "lastVerified": "2026-06-03",
+  "title": "Customers",
+  "excerpt": "Learn how to use the Customer object with Stripe Invoicing. Create a customer for every new user or business you want to bill. When you create a new customer, set up a [minimal customer profile](https://docs.stripe.com/invoicing/customer.md#customer-profile) to help generate more useful invoices, and enable Smart Retries (if you’re an [Invoicing Plus](https://stripe.com/invoicing/pricing) user). After you set up your customer, you can issue one-off invoices or create *subscriptions* (A Subscription represents the product details associated with the plan that your customer subscribes to. Allows you to charge the customer on a recurring basis). > #### Use the Accounts v2 API to represent customers > You can instead use customer-configured `Account` objects to represent your customers.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

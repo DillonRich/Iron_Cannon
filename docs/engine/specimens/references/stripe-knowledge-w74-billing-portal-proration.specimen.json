@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/knowledge-w74-billing-portal-proration",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w74/billing-portal-proration",
+  "lastVerified": "2026-06-06",
+  "title": "W74 billing-portal-proration",
+  "provider": "stripe",
+  "excerpt": "Portal proration behavior documented for upgrades",
+  "embeddingHint": "stripe billing-portal-proration wave74 stripe-resend-depth",
+  "tags": [
+    "wave74",
+    "knowledge",
+    "stripe",
+    "stripe-resend-depth"
+  ]
+}

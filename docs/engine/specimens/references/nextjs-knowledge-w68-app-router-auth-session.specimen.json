@@ -1,0 +1,15 @@
+{
+  "refId": "nextjs/knowledge-w68-app-router-auth-session",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w68/app-router-auth-session",
+  "lastVerified": "2026-06-06",
+  "title": "W68 app-router-auth-session",
+  "provider": "nextjs",
+  "excerpt": "Use Next.js App Router auth patterns; server-side session validation",
+  "embeddingHint": "nextjs app-router-auth-session wave68 adversarial",
+  "tags": [
+    "wave68",
+    "knowledge",
+    "nextjs",
+    "adversarial"
+  ]
+}

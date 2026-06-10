@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-framework-guides-deploy-a-solid-start-site-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/framework-guides/deploy-a-solid-start-site/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "SolidStart",
+  "excerpt": "description: Deploy a SolidStart application to Cloudflare Pages. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. [Solid ↗](https://www.solidjs.com/) is an open-source web application framework focused on generating performant applications with a modern developer experience based on JSX. In this guide, you will create a new Solid application implemented via [SolidStart ↗](https://start.solidjs.com/getting-started/what-is-solidstart) (Solid's meta-framework) and deploy it using Cloudflare Pages.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

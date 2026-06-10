@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W81-001",
+      "category": "operations",
+      "title": "SVC-002 mini signoff document complete",
+      "sourceRefId": "ironcannon/knowledge-w81-svc002-signoff-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W81-002",
+      "category": "operations",
+      "title": "Per-flow-scope SD-07 profile in matrix",
+      "sourceRefId": "ironcannon/knowledge-w81-sd07-per-flow-scope",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W81-003",
+      "category": "operations",
+      "title": "Supabase-primary outbound bundle present and valid",
+      "sourceRefId": "ironcannon/knowledge-w81-supabase-primary-e2e-bundle",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W81-004",
+      "category": "security",
+      "title": "Billing tier RLS policies restrict client reads",
+      "sourceRefId": "supabase/knowledge-w81-rls-billing-profiles",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W81-005",
+      "category": "email",
+      "title": "Resend SMTP bridge documented for Supabase Auth",
+      "sourceRefId": "supabase/knowledge-w81-auth-email-resend-bridge",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W81-006",
+      "category": "operations",
+      "title": "Server Actions use server Supabase client only",
+      "sourceRefId": "nextjs/knowledge-w81-server-actions-supabase",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W81-007",
+      "category": "operations",
+      "title": "Imagination includes SD-07 and W07 harness rows",
+      "sourceRefId": "ironcannon/knowledge-w81-sd07-imagination-floor",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W81-008",
+      "category": "operations",
+      "title": "Adversarial SD-07 vs SD-08 scenarios pass",
+      "sourceRefId": "ironcannon/knowledge-w81-svc002-adversarial-depth",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W81-009",
+      "category": "privacy",
+      "title": "Auth email policy in terms when Resend SMTP used",
+      "sourceRefId": "legal/knowledge-w81-supabase-auth-email-policy",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W81-010",
+      "category": "operations",
+      "title": "SVC-003 deferred until SVC-002 witness approved",
+      "sourceRefId": "ironcannon/knowledge-w81-svc003-queue-blocked",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

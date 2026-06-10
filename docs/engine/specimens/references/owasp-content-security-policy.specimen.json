@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/content-security-policy",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Content Security Policy",
+  "excerpt": "Deploy CSP header to mitigate XSS. Start with report-only if needed. Restrict script-src; avoid unsafe-inline in production. nonce or hash for required inline scripts. Armor tier recommended patterns.",
+  "appliesTo": ["Armor", "owasp/http-headers"],
+  "tags": ["owasp", "csp", "headers"]
+}

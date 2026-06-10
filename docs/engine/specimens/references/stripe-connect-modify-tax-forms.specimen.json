@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-modify-tax-forms",
+  "sourceUrl": "https://docs.stripe.com/connect/modify-tax-forms.md",
+  "lastVerified": "2026-06-03",
+  "title": "Update and create 1099 tax forms",
+  "excerpt": "Update and create 1099 tax forms for connected accounts. This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [Tax form editor](https://docs.stripe.com/connect/modify-tax-forms.md?method=dashboard) - [CSV files](https://docs.stripe.com/connect/modify-tax-forms.md?method=csv)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@ironcannon/mcp-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "npm run build:worker-bundle --prefix ../..",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.14.0"
+  },
+  "dependencies": {
+    "@ironcannon/mcp-core": "file:../../packages/mcp-core",
+    "@ironcannon/compose": "file:../../packages/compose"
+  }
+}

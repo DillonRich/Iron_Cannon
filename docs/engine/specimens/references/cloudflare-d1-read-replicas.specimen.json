@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/d1-read-replicas",
+  "sourceUrl": "https://developers.cloudflare.com/d1/best-practices/read-replication/",
+  "lastVerified": "2026-05-31",
+  "title": "D1 read replication and Sessions API",
+  "excerpt": "Enable read replicas for global low-latency reads. Use db.withSession() and pass X-D1-Bookmark header for session consistency. Without sessions, replica lag can show stale subscription state after webhook write—critical for billing-race-shield.",
+  "appliesTo": ["billing-race-shield", "E03", "layer2/cloudflare"],
+  "tags": ["cloudflare", "d1", "consistency"]
+}

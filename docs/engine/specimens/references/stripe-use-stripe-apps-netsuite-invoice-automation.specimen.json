@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/use-stripe-apps-netsuite-invoice-automation",
+  "sourceUrl": "https://docs.stripe.com/use-stripe-apps/netsuite/invoice-automation.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe Billing and Invoicing automation",
+  "excerpt": "Use the connector to sync your Stripe invoices into NetSuite. To learn more and get a demo of the Stripe Connector for NetSuite, go to the [Stripe App Marketplace](https://marketplace.stripe.com/apps/netsuite-connector) and click **Install app**. The Stripe Connector for NetSuite automatically syncs the invoices that you create from Stripe Billing [subscriptions](https://docs.stripe.com/billing/subscriptions/overview.md) or [Stripe Invoicing](https://docs.stripe.com/invoicing/overview.md) into NetSuite.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-observability-logs-logpush-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/observability/logs/logpush/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Workers Logpush",
+  "excerpt": "description: Send Workers Trace Event Logs to a supported third party, such as a storage or logging provider. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. [Cloudflare Logpush](https://developers.cloudflare.com/logs/logpush/) supports the ability to send [Workers Trace Event Logs](https://developers.cloudflare.com/logs/logpush/logpush-job/datasets/account/workers%5Ftrace%5Fevents/) to a [supported destination](https://developers.cloudflare.com/logs/logpush/logpush-job/enable-destinations/).…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

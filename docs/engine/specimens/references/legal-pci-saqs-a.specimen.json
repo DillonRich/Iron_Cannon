@@ -1,0 +1,11 @@
+{
+  "refId": "legal/pci-saqs-a",
+  "sourceUrl": "https://www.pcisecuritystandards.org/document_library",
+  "lastVerified": "2026-06-03",
+  "title": "PCI SAQ A scope",
+  "excerpt": "Use hosted payment fields (Stripe Elements/Payment Element). Never store PAN/CVV on your servers.",
+  "tags": [
+    "legal",
+    "security"
+  ]
+}

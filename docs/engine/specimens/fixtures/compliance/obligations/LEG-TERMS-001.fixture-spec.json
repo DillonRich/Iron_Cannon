@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-TERMS-001",
+  "obligationId": "LEG-TERMS-001",
+  "detectType": "schema_column",
+  "detect": {
+    "type": "schema_column",
+    "table": "users",
+    "column": "terms_accepted_at"
+  },
+  "passSnippet": "ALTER TABLE users ADD terms_accepted_at TEXT",
+  "failSnippet": "gap LEG-TERMS-001",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

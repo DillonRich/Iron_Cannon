@@ -1,0 +1,65 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/tier-entitlement-matrix/v1",
+  "rulesetVersion": "2026.06.03",
+  "pattern": "stripe-github-openai-style",
+  "tiers": ["pro", "armor", "ironclad"],
+  "tierRank": { "pro": 1, "armor": 2, "ironclad": 3 },
+  "tools": [
+    { "name": "analyze_project_stack", "id": "T01", "tierMin": "pro", "location": "local", "layers": ["L1"] },
+    { "name": "validate_stack_completeness", "id": "T02", "tierMin": "pro", "location": "local", "layers": ["L1"] },
+    { "name": "generate_system_wiremap", "id": "T03", "tierMin": "pro", "location": "local", "layers": ["L1"] },
+    { "name": "get_module_directives", "id": "T04", "tierMin": "pro", "location": "remote", "layers": ["L1", "L2"], "composeRedaction": true },
+    { "name": "verify_module_compliance", "id": "T05", "tierMin": "pro", "location": "remote", "layers": ["L1", "L2"], "composeRedaction": true },
+    { "name": "run_continuous_diff_check", "id": "T06", "tierMin": "pro", "location": "local", "layers": ["L1"] },
+    { "name": "audit_failed_flow", "id": "T07", "tierMin": "pro", "location": "local", "layers": ["L1"] },
+    { "name": "rollback_to_module", "id": "T08", "tierMin": "pro", "location": "local", "layers": ["L1"] },
+    { "name": "map_vulnerability_surfaces", "id": "T09", "tierMin": "armor", "location": "remote", "layers": ["L3"] },
+    { "name": "get_security_directives", "id": "T10", "tierMin": "armor", "location": "remote", "layers": ["L3"] },
+    { "name": "audit_production_readiness", "id": "T11", "tierMin": "armor", "location": "remote", "layers": ["L3"] },
+    { "name": "map_compliance_obligations", "id": "T12", "tierMin": "ironclad", "location": "remote", "layers": ["L4"] },
+    { "name": "get_compliance_directives", "id": "T13", "tierMin": "ironclad", "location": "remote", "layers": ["L4"] },
+    { "name": "audit_legal_readiness", "id": "T14", "tierMin": "ironclad", "location": "remote", "layers": ["L4"] }
+  ],
+  "composeEntitlements": {
+    "pro": {
+      "allowedLayers": ["L1", "L2"],
+      "allowedRefIdPrefixes": ["stripe/", "cloudflare/", "resend/", "nextjs/", "owasp/"],
+      "forbiddenRefIdPrefixes": ["legal/"],
+      "includeEm3LegalTouchpoints": false,
+      "includeEm2SecurityControls": false,
+      "stripOutboundKeys": ["legalCompliance", "obligations", "marketBundle"],
+      "t04RagTopK": 5,
+      "t04MaxExplicitCards": 8
+    },
+    "armor": {
+      "allowedLayers": ["L1", "L2", "L3"],
+      "allowedRefIdPrefixes": ["stripe/", "cloudflare/", "resend/", "nextjs/", "owasp/", "cwe/"],
+      "forbiddenRefIdPrefixes": ["legal/"],
+      "includeEm3LegalTouchpoints": false,
+      "includeEm2SecurityControls": true,
+      "stripOutboundKeys": ["legalCompliance", "obligations", "marketBundle"],
+      "t04RagTopK": 5,
+      "t04MaxExplicitCards": 10
+    },
+    "ironclad": {
+      "allowedLayers": ["L1", "L2", "L3", "L4"],
+      "allowedRefIdPrefixes": ["*"],
+      "forbiddenRefIdPrefixes": [],
+      "includeEm3LegalTouchpoints": true,
+      "includeEm2SecurityControls": true,
+      "stripOutboundKeys": [],
+      "t04RagTopK": 8,
+      "t04MaxExplicitCards": 12
+    }
+  },
+  "rateLimits": {
+    "pro": { "perMinute": 120, "perDay": 2000 },
+    "armor": { "perMinute": 60, "perDay": 5000 },
+    "ironclad": { "perMinute": 60, "perDay": 5000 }
+  },
+  "deniedTests": [
+    { "tier": "pro", "tool": "map_vulnerability_surfaces", "code": "TIER_INSUFFICIENT" },
+    { "tier": "pro", "tool": "map_compliance_obligations", "code": "TIER_INSUFFICIENT" },
+    { "tier": "armor", "tool": "map_compliance_obligations", "code": "TIER_INSUFFICIENT" }
+  ]
+}

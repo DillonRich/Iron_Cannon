@@ -1,0 +1,15 @@
+{
+  "refId": "nextjs/dynamic-rendering",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/rendering",
+  "lastVerified": "2026-05-31",
+  "title": "Dynamic rendering",
+  "excerpt": "force-dynamic for authenticated billing routes.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "nextjs",
+    "dynamic-rendering"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer1/onboarding/d1-schema",
+  "layer": 1,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "onboarding",
+  "moduleId": "M30-onboarding-schema",
+  "adapterId": "cloudflare-d1",
+  "section": "onboarding-schema",
+  "content": {
+    "requirement": "Extend users table with onboarding profile fields and completion flag",
+    "requiredSteps": [
+      "Add display_name TEXT nullable",
+      "Add onboarding_completed_at INTEGER nullable",
+      "Add onboarding_skipped INTEGER DEFAULT 0",
+      "Migration must be additive — no breaking M01 columns"
+    ]
+  },
+  "references": ["cloudflare/d1-migrations", "owasp/mass-assignment"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "ONB-SC-001", "type": "required_string", "value": "onboarding_completed_at", "fileGlob": "**/*.sql", "tier": "pro" },
+      { "id": "ONB-SC-002", "type": "required_string", "value": "display_name", "fileGlob": "**/*.sql", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "onboarding-schema" }
+}

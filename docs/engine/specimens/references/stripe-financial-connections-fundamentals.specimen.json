@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/financial-connections-fundamentals",
+  "sourceUrl": "https://docs.stripe.com/financial-connections/fundamentals.md",
+  "lastVerified": "2026-06-03",
+  "title": "Financial Connections fundamentals",
+  "excerpt": "The Stripe Financial Connections product has two main components: end user bank account collection through the authentication flow, and data retrieval on the collected accounts. There are a [number of ways](https://docs.stripe.com/financial-connections/use-cases.md) to integrate Financial Connections. In the following example, we assume you’re using a [Financial Connections Session](https://docs.stripe.com/api/financial_connections/sessions.md). However, the overall concepts and flow diagrams function similarly with payments integrations such as Setup or Payment Intents. To initialize and complete the Financial Connections authentication flow: 1. Your user initiates the bank account linking process on your client. 1.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

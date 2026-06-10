@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/crypto-onramp-embedded-components",
+  "sourceUrl": "https://docs.stripe.com/crypto/onramp/embedded-components.md",
+  "lastVerified": "2026-06-03",
+  "title": "Embedded Components onramp",
+  "excerpt": "Learn about the Embedded Components onramp. Build an onramp flow native to your app or website with components that provide authentication and secure data collection, tailored to your design. [Get started](https://docs.stripe.com/crypto/onramp/embedded-components-integration-guide.md) 1. A customer visits your app or website and wants to convert fiat to crypto or purchase crypto. 1. Your app prompts them to onboard by signing up or logging in to [Link](https://docs.stripe.com/payments/link.md). 1. They sign up or log into Link without leaving your app or website.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

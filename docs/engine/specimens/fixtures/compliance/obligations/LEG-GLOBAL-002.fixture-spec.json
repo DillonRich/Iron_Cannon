@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-GLOBAL-002",
+  "obligationId": "LEG-GLOBAL-002",
+  "detectType": "route_exists",
+  "detect": {
+    "type": "route_exists",
+    "path": "/terms",
+    "public": true
+  },
+  "passSnippet": "export default function P(){return <main>/terms</main>}",
+  "failSnippet": "export default function P(){return null}",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

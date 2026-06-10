@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/data-export/api",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "data-export",
+  "moduleId": "M50-export-api",
+  "adapterId": "cloudflare-workers",
+  "section": "export-api",
+  "content": {
+    "requirement": "Authenticated export request queues GDPR portability job",
+    "routes": [{ "method": "POST", "path": "/api/account/export-request" }]
+  },
+  "references": ["legal/gdpr-data-subject-rights", "cloudflare/r2-bindings"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "EXP-API-001", "type": "required_string", "value": "export-request", "fileGlob": "**/*.{ts,js}", "tier": "pro" },
+      { "id": "EXP-API-002", "type": "required_string", "value": "export_ready", "fileGlob": "**/*.{ts,js}", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "data-export" }
+}

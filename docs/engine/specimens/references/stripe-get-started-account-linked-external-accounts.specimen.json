@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/get-started-account-linked-external-accounts",
+  "sourceUrl": "https://docs.stripe.com/get-started/account/linked-external-accounts.md",
+  "lastVerified": "2026-06-03",
+  "title": "Linked external accounts",
+  "excerpt": "Linking an external bank account gives Stripe read access to financial information about that account for things like credit reviews, product eligibility determinations, and risk assessments. To link an external bank account or to manage your linked accounts, go to [Linked external accounts](https://dashboard.stripe.com/settings/linked-accounts) in your Dashboard. > #### Linked external accounts vs. payout accounts > Linked accounts are different from payout accounts. Linking an account only gives Stripe access to information, while a payout account can receive funds from a Stripe account. You manage your payout account in [Payout settings](https://dashboard.stripe.com/settings/payouts). Different Stripe products use linked account data in different ways.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

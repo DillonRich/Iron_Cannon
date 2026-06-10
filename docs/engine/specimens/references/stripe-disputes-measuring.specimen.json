@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/disputes-measuring",
+  "sourceUrl": "https://docs.stripe.com/disputes/measuring.md",
+  "lastVerified": "2026-06-03",
+  "title": "Measuring disputes",
+  "excerpt": "Learn about the potential issues that occur from excessive disputes, and how to avoid them. The Stripe Dashboard displays two different calculations to measure your disputes: dispute activity and dispute rate. - **Dispute activity** represents the percentage of disputes on successful payments by *dispute* date. - **Dispute rate** represents the percentage of disputes on successful payments by *charge* date. The two calculations are best understood with an example. Let’s say you processed 1,000 payments in a given week. In that same week, you also received 10 disputes. Only 3 of those disputes were from the 1,000 payments processed that week. The other 7 disputes were from payments that were processed at an earlier date. (Because disputes take a while to come in, this delay is very common.)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

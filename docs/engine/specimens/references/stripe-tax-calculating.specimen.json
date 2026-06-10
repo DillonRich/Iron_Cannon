@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-calculating",
+  "sourceUrl": "https://docs.stripe.com/tax/calculating.md",
+  "lastVerified": "2026-06-03",
+  "title": "Calculate tax",
+  "excerpt": "Learn how to calculate tax with Stripe Tax. The most common forms of indirect taxes for your business are sales tax, *VAT* (A value-added tax (VAT), known in some countries as a goods and services tax (GST), is a type of tax levied on the price of a product or service at each stage of production, distribution, or sale to the end consumer. VAT and GST are also generally known as \"consumption\" taxes. The buyer pays the tax and the seller forwards it to the government), and *GST* (A goods and services tax (GST), known in some countries as a value added tax (VAT), is a type of tax levied on the price of a product or service at each stage of production, distribution, or sale to the end consumer. GST and VAT are also generally known as \"consumption\" taxes.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

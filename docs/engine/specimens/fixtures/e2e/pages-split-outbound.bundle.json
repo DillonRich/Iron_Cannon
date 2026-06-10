@@ -1,0 +1,538 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/golden-path-outbound-bundle/v1",
+  "chainId": "GP-PAGES-SPLIT-06",
+  "description": "SD-06 Pages+Worker split — M60→M61→M01–M16",
+  "rulesetVersion": "2026.05.31",
+  "stackId": "SD-06",
+  "moduleOrder": [
+    "M60-pages-wrangler-config",
+    "M61-pages-env-bridge",
+    "M01-auth-d1-schema",
+    "M02-auth-worker-routes",
+    "M03-auth-resend-emails",
+    "M04-auth-ui-routes",
+    "M05-auth-session-middleware",
+    "M10-billing-d1-schema",
+    "M11-stripe-checkout-route",
+    "M12-stripe-webhook",
+    "M13-provisioning-kv",
+    "M14-billing-success-ui",
+    "M15-billing-dashboard-ui",
+    "M16-billing-emails"
+  ],
+  "modules": {
+    "M01-auth-d1-schema": {
+      "fixtureId": "GP-M01-OUT",
+      "tool": "T04",
+      "moduleId": "M01-auth-d1-schema",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "auth-lifecycle",
+      "fragmentIds": [
+        "layer1/auth-lifecycle/d1-schema"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "AUTH-SC-001",
+          "AUTH-SC-002",
+          "AUTH-SC-003"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "cloudflare/d1-migrations",
+          "cloudflare/d1-overview",
+          "owasp/credential-storage"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M02-auth-worker-routes",
+        "verifyGateBlocksNext": true,
+        "prevModuleId": "M61-pages-env-bridge"
+      }
+    },
+    "M02-auth-worker-routes": {
+      "fixtureId": "GP-M02-OUT",
+      "tool": "T04",
+      "moduleId": "M02-auth-worker-routes",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "auth-lifecycle",
+      "fragmentIds": [
+        "layer1/auth-lifecycle/worker-routes"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "AUTH-RT-001",
+          "AUTH-RT-002",
+          "AUTH-RT-003"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "cloudflare/workers-routes",
+          "cloudflare/d1-bindings",
+          "owasp/authentication",
+          "owasp/rate-limiting",
+          "owasp/session-invalidation"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M03-auth-resend-emails",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M03-auth-resend-emails": {
+      "fixtureId": "GP-M03-OUT",
+      "tool": "T04",
+      "moduleId": "M03-auth-resend-emails",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "auth-lifecycle",
+      "fragmentIds": [
+        "layer1/auth-lifecycle/resend-emails"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "AUTH-EM-001",
+          "AUTH-EM-002",
+          "AUTH-EM-003"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "resend/send-api",
+          "resend/from-domain",
+          "resend/idempotency",
+          "resend/user-agent"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M04-auth-ui-routes",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M04-auth-ui-routes": {
+      "fixtureId": "GP-M04-OUT",
+      "tool": "T04",
+      "moduleId": "M04-auth-ui-routes",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "auth-lifecycle",
+      "fragmentIds": [
+        "layer1/auth-lifecycle/ui-routes"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "AUTH-UI-001",
+          "AUTH-UI-002",
+          "AUTH-UI-003"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "nextjs/server-actions",
+          "nextjs/loading-error-ui",
+          "legal/wcag-form-labels",
+          "legal/privacy-policy-link"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M05-auth-session-middleware",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M05-auth-session-middleware": {
+      "fixtureId": "GP-M05-OUT",
+      "tool": "T04",
+      "moduleId": "M05-auth-session-middleware",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "auth-lifecycle",
+      "fragmentIds": [
+        "layer1/auth-lifecycle/session-middleware"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "AUTH-MW-001",
+          "AUTH-MW-002",
+          "AUTH-MW-003"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "nextjs/middleware",
+          "nextjs/cookies-headers",
+          "owasp/session-httponly-secure"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M10-billing-d1-schema",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M10-billing-d1-schema": {
+      "fixtureId": "GP-M10-OUT",
+      "tool": "T04",
+      "moduleId": "M10-billing-d1-schema",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "billing-subscription",
+      "fragmentIds": [
+        "layer1/billing-subscription/d1-schema"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "BILL-SC-001",
+          "BILL-SC-002",
+          "BILL-SC-003"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "cloudflare/d1-migrations",
+          "stripe/subscriptions-overview"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M11-stripe-checkout-route",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M11-stripe-checkout-route": {
+      "fixtureId": "GP-M11-OUT",
+      "tool": "T04",
+      "moduleId": "M11-stripe-checkout-route",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "billing-subscription",
+      "fragmentIds": [
+        "layer1/billing-subscription/checkout-route"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "BILL-CK-001",
+          "BILL-CK-002",
+          "BILL-CK-003"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "stripe/checkout-subscription",
+          "stripe/checkout-success-page",
+          "stripe/customer-portal"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M12-stripe-webhook",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M12-stripe-webhook": {
+      "fixtureId": "GP-M12-OUT",
+      "tool": "T04",
+      "moduleId": "M12-stripe-webhook",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "billing-subscription",
+      "fragmentIds": [
+        "stripe/webhook-handler"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "STWH-001",
+          "STWH-002",
+          "STWH-003"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "stripe/webhook-signature",
+          "stripe/webhook-idempotency"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M13-provisioning-kv",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M13-provisioning-kv": {
+      "fixtureId": "GP-M13-OUT",
+      "tool": "T04",
+      "moduleId": "M13-provisioning-kv",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "billing-race-shield",
+      "fragmentIds": [
+        "layer1/billing-race-shield/provisioning-kv"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "BILL-KV-001",
+          "BILL-KV-002",
+          "BILL-KV-003"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "cloudflare/kv-ttl",
+          "cloudflare/kv-session-pattern"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M14-billing-success-ui",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M14-billing-success-ui": {
+      "fixtureId": "GP-M14-OUT",
+      "tool": "T04",
+      "moduleId": "M14-billing-success-ui",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "billing-race-shield",
+      "fragmentIds": [
+        "layer1/billing-race-shield/success-ui"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "BILL-UI-001",
+          "BILL-UI-002"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "nextjs/router-refresh",
+          "nextjs/loading-error-ui",
+          "stripe/checkout-success-page"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M15-billing-dashboard-ui",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M15-billing-dashboard-ui": {
+      "fixtureId": "GP-M15-OUT",
+      "tool": "T04",
+      "moduleId": "M15-billing-dashboard-ui",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "billing-subscription",
+      "fragmentIds": [
+        "layer1/billing-subscription/dashboard-ui"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "BILL-DH-001",
+          "BILL-DH-002"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "stripe/customer-portal",
+          "nextjs/loading-error-ui"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M16-billing-emails",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M16-billing-emails": {
+      "fixtureId": "GP-M16-OUT",
+      "tool": "T04",
+      "moduleId": "M16-billing-emails",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "email-lifecycle",
+      "fragmentIds": [
+        "layer1/email-lifecycle/billing-emails"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "BILL-EM-001",
+          "BILL-EM-002",
+          "BILL-EM-003"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "resend/send-api",
+          "resend/transactional-vs-broadcast",
+          "legal/transactional-vs-marketing"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": null,
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M60-pages-wrangler-config": {
+      "fixtureId": "GP-M60-OUT",
+      "tool": "T04",
+      "moduleId": "M60-pages-wrangler-config",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "auth-lifecycle",
+      "fragmentIds": [
+        "layer2/pages/wrangler-config"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "PAGES-CFG-001",
+          "PAGES-CFG-002"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "cloudflare/knowledge-w78-pages-build-output-dir",
+          "cloudflare/pages-functions-wrangler-configuration-index"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M61-pages-env-bridge",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M61-pages-env-bridge": {
+      "fixtureId": "GP-M61-OUT",
+      "tool": "T04",
+      "moduleId": "M61-pages-env-bridge",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "auth-lifecycle",
+      "fragmentIds": [
+        "layer2/pages/env-bridge"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "PAGES-ENV-001",
+          "PAGES-ENV-002"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "nextjs/knowledge-w78-public-api-url",
+          "ironcannon/knowledge-w78-middleware-pages-split"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M01-auth-d1-schema",
+        "verifyGateBlocksNext": true
+      }
+    }
+  }
+}

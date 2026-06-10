@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-testing-vitest-integration-debugging-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/testing/vitest-integration/debugging/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Debugging",
+  "excerpt": "description: Debug your Workers tests with Vitest. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. This guide shows you how to debug your Workers tests with Vitest. This is available with `@cloudflare/vitest-pool-workers` v0.7.5 or later. To start debugging, run Vitest with the following command and attach a debugger to port `9229`:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

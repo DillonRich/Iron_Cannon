@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-runtime-apis-response-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/runtime-apis/response/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Response",
+  "excerpt": "description: Interface that represents an HTTP response. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. The `Response` interface represents an HTTP response and is part of the Fetch API. let response = new Response(body, init);",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

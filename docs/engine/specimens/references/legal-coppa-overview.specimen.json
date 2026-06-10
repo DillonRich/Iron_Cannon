@@ -1,0 +1,15 @@
+{
+  "refId": "legal/coppa-overview",
+  "sourceUrl": "https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa",
+  "lastVerified": "2026-05-31",
+  "title": "COPPA overview",
+  "excerpt": "If service targets children under 13, parental consent required. Iron Cannon flags LEG-PRIV-010 as advisory manual check—not legal advice.",
+  "appliesTo": [
+    "layer4",
+    "legal/age-gate-minor"
+  ],
+  "tags": [
+    "legal",
+    "coppa"
+  ]
+}

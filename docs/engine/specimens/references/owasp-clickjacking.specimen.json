@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/clickjacking",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Clickjacking defense",
+  "excerpt": "Set X-Frame-Options DENY or SAMEORIGIN, or CSP frame-ancestors directive. Critical for auth and payment pages. Cloudflare _headers or middleware can apply globally.",
+  "appliesTo": ["owasp/http-headers", "Armor"],
+  "tags": ["owasp", "clickjacking", "headers"]
+}

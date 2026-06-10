@@ -1,0 +1,11 @@
+{
+  "refId": "legal/deletion-grace-period",
+  "sourceUrl": "https://gdpr.eu/right-to-be-forgotten/",
+  "lastVerified": "2026-06-03",
+  "title": "Deletion grace period",
+  "excerpt": "Account deletion flows should state retention period before purge, allow cancellation of deletion request during grace window, and log deletion_scheduled_at.",
+  "tags": [
+    "legal",
+    "data-rights"
+  ]
+}

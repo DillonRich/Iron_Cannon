@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-overview",
+  "sourceUrl": "https://docs.stripe.com/billing",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe Billing overview",
+  "excerpt": "Billing modes, flexible billing, and subscription lifecycle.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "stripe",
+    "billing-overview"
+  ]
+}

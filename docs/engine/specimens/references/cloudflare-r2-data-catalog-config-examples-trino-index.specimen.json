@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/r2-data-catalog-config-examples-trino-index",
+  "sourceUrl": "https://developers.cloudflare.com/r2/data-catalog/config-examples/trino/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Apache Trino",
+  "excerpt": "description: Connect Apache Trino to R2 Data Catalog using the Iceberg REST catalog connector. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/r2/llms.txt > Use this file to discover all available pages before exploring further. Below is an example of using [Apache Trino ↗](https://trino.io/) to connect to R2 Data Catalog. For more information on connecting to R2 Data Catalog with Trino, refer to [Trino documentation ↗](https://trino.io/docs/current/connector/iceberg.html). * Sign up for a [Cloudflare account ↗](https://dash.cloudflare.com/sign-up/workers-and-pages).",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

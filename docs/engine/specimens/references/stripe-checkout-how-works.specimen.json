@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/checkout-how-works",
+  "sourceUrl": "https://docs.stripe.com/payments/checkout/how-checkout-works.md",
+  "lastVerified": "2026-05-31",
+  "title": "How Stripe Checkout works",
+  "excerpt": "Checkout Session is created server-side; user redirects to Stripe-hosted page. On completion Stripe redirects to success_url while simultaneously sending checkout.session.completed webhook. Race: webhook may arrive after redirect—UI must handle pending/provisioning state until webhook confirms.",
+  "appliesTo": ["billing-race-shield", "billing-subscription"],
+  "tags": ["stripe", "checkout", "race"]
+}

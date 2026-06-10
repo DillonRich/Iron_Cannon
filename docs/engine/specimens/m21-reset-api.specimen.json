@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/password-reset/api",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "password-reset",
+  "moduleId": "M21-reset-api",
+  "adapterId": "cloudflare-workers",
+  "section": "reset-api",
+  "content": {
+    "requirement": "Forgot-password and reset-password API with enumeration-safe responses and session invalidation",
+    "routes": [
+      { "method": "POST", "path": "/api/auth/forgot-password", "state": "P00→P01→P02" },
+      { "method": "POST", "path": "/api/auth/reset-password", "state": "P03→P04" },
+      { "method": "GET", "path": "/api/auth/reset-password/validate", "state": "P02→P03|P05" }
+    ],
+    "requiredSteps": [
+      "Same response for unknown vs known email (timing-normalized)",
+      "Hash incoming token before D1 lookup",
+      "Mark token used_at on successful reset",
+      "Invalidate all sessions for user on P04 (PW-A01)",
+      "Rate limit forgot-password per IP/email (KV)"
+    ]
+  },
+  "references": ["owasp/authentication", "owasp/rate-limiting", "owasp/session-invalidation", "cloudflare/kv-session-pattern"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "PW-API-001", "type": "required_string", "value": "forgot-password", "fileGlob": "**/*.{ts,js}", "tier": "pro" },
+      { "id": "PW-API-002", "type": "required_string", "value": "reset-password", "fileGlob": "**/*.{ts,js}", "tier": "pro" },
+      { "id": "PW-A01", "type": "required_string", "value": "invalidateAllSessions", "fileGlob": "**/*.{ts,js}", "tier": "armor" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "password-reset-api" }
+}

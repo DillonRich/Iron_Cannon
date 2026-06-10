@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/terminal-features-receipts",
+  "sourceUrl": "https://docs.stripe.com/terminal/features/receipts.md",
+  "lastVerified": "2026-06-03",
+  "title": "Provide receipts",
+  "excerpt": "Use Stripe to provide your customers with receipts that meet card network rules. Receipts for payments created using your [test API keys](https://docs.stripe.com/keys.md#test-live-modes) aren’t sent automatically. Instead, you can view or manually send a receipt using the [Dashboard](https://dashboard.stripe.com/payments). Card network rules and local regulatory requirements are different for in-person payments. If you accept payments using Stripe Terminal, you must provide customers with the option to receive a physical or email receipt. Stripe provides everything you need to start offering receipts with your first transaction. Receipts must contain certain fields to comply with card network rules.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-EDGE-001",
+  "obligationId": "LEG-EDGE-001",
+  "detectType": "config",
+  "detect": {
+    "type": "config",
+    "key": "webhookIdempotencyKv"
+  },
+  "passSnippet": "verifiedDomain webhooks deliveryEvents",
+  "failSnippet": "gap LEG-EDGE-001",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

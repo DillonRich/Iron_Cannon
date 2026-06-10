@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/identity-before-going-live",
+  "sourceUrl": "https://docs.stripe.com/identity/before-going-live.md",
+  "lastVerified": "2026-06-03",
+  "title": "Before going live",
+  "excerpt": "Best practices to build a production-ready Stripe Identity integration. As you complete each item and check it off, the state of each checkbox is stored within your browser’s cache. You can refer back to this page at any time to see what you’ve completed so far. - [ ] Make sure your use case and business are supported Review the [supported use cases](https://docs.stripe.com/identity/use-cases.md) and [terms of service](https://stripe.com/identity/legal) to make sure that your business can use Stripe Identity. The verification experience shows your company name, logo, and color. Make sure to configure the [branding settings](https://dashboard.stripe.com/settings/branding?tab=identity) for your account before going live.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

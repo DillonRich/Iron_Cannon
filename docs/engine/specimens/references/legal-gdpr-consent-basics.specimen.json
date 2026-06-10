@@ -1,0 +1,9 @@
+{
+  "refId": "legal/gdpr-consent-basics",
+  "sourceUrl": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/consent/",
+  "lastVerified": "2026-05-31",
+  "title": "GDPR consent basics (ICO)",
+  "excerpt": "Consent must be freely given, specific, informed, unambiguous. Pre-ticked boxes invalid. Record consent timestamp where collected. Iron Cannon detects signup consent patterns—not legal basis determination.",
+  "appliesTo": ["LEG-PRIV-006", "privacy-gdpr-ccpa"],
+  "tags": ["legal", "gdpr", "consent", "advisory"]
+}

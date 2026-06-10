@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/customer-portal",
+  "sourceUrl": "https://docs.stripe.com/customer-management/portal.md",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe Customer Portal",
+  "excerpt": "Create billing portal session server-side with stripe.billingPortal.sessions.create({ customer, return_url }). Redirect user to session.url. Portal config in Dashboard controls cancel/payment method updates. Sync app state via customer.subscription.* webhooks after portal actions.",
+  "appliesTo": ["billing-portal", "billing-subscription"],
+  "tags": ["stripe", "portal", "manual-config"]
+}

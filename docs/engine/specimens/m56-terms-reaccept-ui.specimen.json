@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/terms-reaccept/ui",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "terms-reaccept",
+  "moduleId": "M56-terms-reaccept-ui",
+  "adapterId": "nextjs-app-router",
+  "section": "terms-reaccept-ui",
+  "content": {
+    "requirement": "Gate protected routes until terms reaccepted; /legal/reaccept page"
+  },
+  "references": ["legal/tos-acceptance-record", "nextjs/middleware"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "TR-UI-001", "type": "required_string", "value": "/legal/reaccept", "fileGlob": "**/app/**", "tier": "pro" },
+      { "id": "TR-UI-002", "type": "required_string", "value": "acceptedTerms", "fileGlob": "**/legal/**", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "terms-reaccept" }
+}

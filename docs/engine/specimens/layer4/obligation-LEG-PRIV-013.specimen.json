@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-priv-013",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-priv-013",
+  "content": {
+    "requirement": "Children under 13 not targeted without parental flow",
+    "obligations": [
+      "LEG-PRIV-013"
+    ],
+    "compareSteps": [
+      "Run detect.type=manual",
+      "Map result to obligation LEG-PRIV-013",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-PRIV-013: Children under 13 not targeted without parental flow"
+  },
+  "references": [
+    "legal/coppa-overview"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-PRIV-013",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "privacy",
+    "disclaimerRequired": true
+  }
+}

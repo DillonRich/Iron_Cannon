@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "type": "object",
+  "required": ["id", "layer", "rulesetVersion", "content", "compliancePatterns"],
+  "properties": {
+    "id": { "type": "string", "minLength": 3 },
+    "layer": { "type": "integer", "enum": [1, 2, 3, 4] },
+    "rulesetVersion": { "type": "string" },
+    "flowId": { "type": ["string", "null"] },
+    "moduleId": { "type": "string" },
+    "adapterId": { "type": ["string", "null"] },
+    "content": { "type": "object" },
+    "references": { "type": "array", "items": { "type": "string" } },
+    "compliancePatterns": { "type": "object" },
+    "metadata": { "type": "object" }
+  }
+}

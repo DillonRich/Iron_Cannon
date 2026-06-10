@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w90-001",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "AFFILIATES_SETUP_PREP published",
+    "obligations": [
+      "LEG-W90-001"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "AFFILIATES_SETUP_PREP published"
+  },
+  "references": [
+    "ironcannon/knowledge-w90-affiliates-setup-prep-doc"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W90-001",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "billing",
+    "disclaimerRequired": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-EMAIL-004",
+  "obligationId": "LEG-EMAIL-004",
+  "detectType": "template_scan",
+  "detect": {
+    "type": "template_scan",
+    "field": "promotionalContentInTransactional"
+  },
+  "passSnippet": "transactional receipt only",
+  "failSnippet": "buy now limited offer sale today",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

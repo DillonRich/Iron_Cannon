@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/vectorize-get-started-embeddings-index",
+  "sourceUrl": "https://developers.cloudflare.com/vectorize/get-started/embeddings/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Vectorize and Workers AI",
+  "excerpt": "description: Generate vector embeddings with Workers AI and store them in a Vectorize index. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/vectorize/llms.txt > Use this file to discover all available pages before exploring further. To report bugs or give feedback, go to the [#vectorize Discord channel ↗](https://discord.cloudflare.com). If you are having issues with Wrangler, report issues in the [Wrangler GitHub repository ↗](https://github.com/cloudflare/workers-sdk/issues/new/choose).…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

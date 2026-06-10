@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-framework-guides-deploy-a-qwik-site-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/framework-guides/deploy-a-qwik-site/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Qwik",
+  "excerpt": "description: Deploy a Qwik City application to Cloudflare Pages. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. [Qwik ↗](https://github.com/builderio/qwik) is an open-source, DOM-centric, resumable web application framework designed for best possible time to interactive by focusing on [resumability ↗](https://qwik.builder.io/docs/concepts/resumable/), server-side rendering of HTML and [fine-grained lazy-loading ↗](https://qwik.builder.io/docs/concepts/progressive/#lazy-loading) of code.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

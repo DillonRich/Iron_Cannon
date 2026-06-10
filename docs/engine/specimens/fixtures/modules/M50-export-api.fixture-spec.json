@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M50",
+  "moduleId": "M50-export-api",
+  "patternsUnderTest": [
+    "EXP-API-001",
+    "EXP-API-002",
+    "AUTH-P50-M50-",
+    "AUTH-P50-LIFECYCLE"
+  ],
+  "passSnippet": "export async function POST() { await queue.send({ jobType: 'gdpr_export' }); return Response.json({ state: 'export_ready' }); }",
+  "failSnippet": "export async function GET() { return Response.json({ ok: true }); }",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "EXP-API-001"
+  ]
+}

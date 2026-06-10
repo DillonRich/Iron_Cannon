@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w66-007",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Session cookies use HttpOnly Secure SameSite",
+    "obligations": [
+      "LEG-W66-007"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Session cookies use HttpOnly Secure SameSite"
+  },
+  "references": [
+    "owasp/cheatsheets-session-management-cheat-sheet-html"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W66-007",
+        "type": "pattern",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "security",
+    "disclaimerRequired": true
+  }
+}

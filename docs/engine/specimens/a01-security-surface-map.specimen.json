@@ -1,0 +1,58 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer3/security-surface-map",
+  "layer": 3,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "armor-overlay",
+  "moduleId": "A01-security-surface-map",
+  "adapterId": null,
+  "section": "surface-catalog",
+  "content": {
+    "requirement": "Map stack artifacts to Layer 3 vulnerability surfaces for T09 map_vulnerability_surfaces",
+    "surfaceCatalog": [
+      {
+        "surfaceId": "SURF-SESSION-001",
+        "type": "session_cookie",
+        "detectPaths": ["**/middleware.ts", "**/session.ts", "**/lib/session.ts"],
+        "riskLevel": "high",
+        "linkedModules": ["M05-auth-session-middleware", "M02-auth-worker-routes"]
+      },
+      {
+        "surfaceId": "SURF-WH-001",
+        "type": "webhook",
+        "detectPaths": ["**/api/webhooks/stripe/**", "**/webhooks/stripe/**"],
+        "riskLevel": "critical",
+        "linkedModules": ["M12-stripe-webhook"]
+      },
+      {
+        "surfaceId": "SURF-INPUT-001",
+        "type": "input_validation",
+        "detectPaths": ["**/api/**", "**/routes/**"],
+        "riskLevel": "medium",
+        "linkedModules": ["M02-auth-worker-routes", "M21-reset-api"]
+      },
+      {
+        "surfaceId": "SURF-HEADERS-001",
+        "type": "http_headers",
+        "detectPaths": ["**/middleware.ts", "**/next.config.*"],
+        "riskLevel": "medium",
+        "linkedModules": ["M05-auth-session-middleware"]
+      }
+    ],
+    "requiredSteps": [
+      "Agent calls T09 after GP-01 complete or attestation",
+      "Provide surfaceHints from wiremap file paths",
+      "Server enriches with L3 catalog + severity",
+      "Each surfaceId feeds T10 get_security_directives loop"
+    ]
+  },
+  "references": ["owasp/http-headers", "owasp/api-security", "owasp/authentication"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "SURF-MAP-001", "type": "required_string", "value": "SURF-SESSION", "fileGlob": "**/*.{ts,md}", "tier": "armor" },
+      { "id": "SURF-MAP-002", "type": "required_string", "value": "SURF-WH", "fileGlob": "**/*.{ts,md}", "tier": "armor" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "armor", "category": "surface-mapping", "mcpTool": "T09" }
+}

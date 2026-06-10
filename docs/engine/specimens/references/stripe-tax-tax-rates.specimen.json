@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-tax-rates",
+  "sourceUrl": "https://docs.stripe.com/tax/tax-rates.md",
+  "lastVerified": "2026-06-03",
+  "title": "Tax rates",
+  "excerpt": "Learn how to collect and report taxes with tax rate objects. Stripe allows you to define any number of tax rates and apply them to *invoices* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice), *subscriptions* (A Subscription represents the product details associated with the plan that your customer subscribes to. Allows you to charge the customer on a recurring basis), and one time payments when using Checkout. However, we won’t automatically set them on your behalf. If you’re looking for automated tax calculation where you don’t need to define the rates, use [Stripe Tax](https://docs.stripe.com/tax.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-send-with-customer-io-smtp",
+  "sourceUrl": "https://resend.com/docs/send-with-customer-io-smtp.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send emails using Customer.io with SMTP",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send emails using Customer.io with SMTP > Learn how to integrate Customer.io with Resend SMTP. ### Prerequisites To get the most out of this guide, you'll need to: * [Create an API key](https://resend.com/api-keys) * [Verify your domain](https://resend.com/domains) ## 1. Get the Resend SMTP credentials When configuring your SMTP integration, you'll need to use the following credentials: * **Host**: `smtp.resend.com` * **Port**: `465` * **Username**: `resend` * **Password**: `YOUR_API_KEY` ## 2.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

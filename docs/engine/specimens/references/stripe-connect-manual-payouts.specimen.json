@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-manual-payouts",
+  "sourceUrl": "https://docs.stripe.com/connect/manual-payouts.md",
+  "lastVerified": "2026-06-03",
+  "title": "Using manual payouts",
+  "excerpt": "Send manual payouts to your connected accounts. If you set the value of [payments.payouts.schedule.interval](https://docs.stripe.com/api/balance-settings/update.md#update_balance_settings-payments-payouts-schedule-interval) to `manual`, we hold funds in the account holder’s balance until you specify otherwise. You must pay out the funds within the time period specified below, based on the business’s country: | Country | Holding Period | | ------------------- | -------------- | | Thailand | 10 days | | United States | 2 years |",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-tutorials-add-an-html-form-with-formspree-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/tutorials/add-an-html-form-with-formspree/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Add an HTML form with Formspree",
+  "excerpt": "description: Learn how to add an HTML form with Formspree, a back-end service that handles form processing and storage. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. Almost every website, whether it is a simple HTML portfolio page or a complex JavaScript application, will need a form to collect user data. [Formspree ↗](https://formspree.io) is a back-end service that handles form processing and storage, allowing developers to include forms on their website without writing server-side code or functions.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

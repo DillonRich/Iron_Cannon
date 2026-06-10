@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/r2-platform-troubleshooting-index",
+  "sourceUrl": "https://developers.cloudflare.com/r2/platform/troubleshooting/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Troubleshooting",
+  "excerpt": "description: Troubleshoot common R2 issues including CORS errors, 403 responses, and cache behavior. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/r2/llms.txt > Use this file to discover all available pages before exploring further. If you are encountering a CORS error despite setting up everything correctly, you may follow this troubleshooting guide to help you. If you see a 401/403 error above the CORS error in your browser console, you are dealing with a different issue (not CORS related).",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

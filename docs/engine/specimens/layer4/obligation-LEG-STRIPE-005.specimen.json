@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-stripe-005",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "billing-subscription",
+  "section": "leg-stripe-005",
+  "content": {
+    "requirement": "Failed payment user messaging",
+    "obligations": [
+      "LEG-STRIPE-005"
+    ],
+    "compareSteps": [
+      "Run detect.type=template_scan",
+      "Map result to obligation LEG-STRIPE-005",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-STRIPE-005: Failed payment user messaging"
+  },
+  "references": [
+    "stripe/payment-failed-email"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-STRIPE-005",
+        "type": "template_scan",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "billing",
+    "disclaimerRequired": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "obligations": [
+    { "id": "LEG-W68-001", "category": "security", "title": "Auth flows documented with OWASP abuse-case catalog", "sourceRefId": "owasp/cheatsheets-abuse-case-cheat-sheet-html", "detect": { "type": "manual" } },
+    { "id": "LEG-W68-002", "category": "security", "title": "Clickjacking defenses on sensitive account actions", "sourceRefId": "owasp/cheatsheets-clickjacking-defense-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W68-003", "category": "security", "title": "AI-assisted code changes pass secure-coding review gate", "sourceRefId": "owasp/cheatsheets-secure-coding-with-ai-cheat-sheet-html", "detect": { "type": "manual" } },
+    { "id": "LEG-W68-004", "category": "security", "title": "LLM inputs sanitized against prompt injection before tools", "sourceRefId": "owasp/cheatsheets-llm-prompt-injection-prevention-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W68-005", "category": "security", "title": "Next.js authentication follows App Router session patterns", "sourceRefId": "nextjs/docs-app-guides-authentication", "detect": { "type": "config" } },
+    { "id": "LEG-W68-006", "category": "billing", "title": "Stripe Customer Portal enabled for self-service billing", "sourceRefId": "stripe/customer-portal", "detect": { "type": "config" } },
+    { "id": "LEG-W68-007", "category": "operations", "title": "Agent responses include agentGuidance block on every tool", "sourceRefId": "ironcannon/agent-guidance-block", "detect": { "type": "config" } },
+    { "id": "LEG-W68-008", "category": "operations", "title": "Adversarial agent harness passes before production release", "sourceRefId": "ironcannon/knowledge-w68-adversarial-agent-gate", "detect": { "type": "manual" } },
+    { "id": "LEG-W68-009", "category": "security", "title": "CSRF tokens on state-changing browser forms and APIs", "sourceRefId": "owasp/cheatsheets-cross-site-request-forgery-prevention-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W68-010", "category": "operations", "title": "MCP tool surface matches tier entitlement matrix", "sourceRefId": "ironcannon/knowledge-w68-tier-tool-parity", "detect": { "type": "config" } }
+  ]
+}

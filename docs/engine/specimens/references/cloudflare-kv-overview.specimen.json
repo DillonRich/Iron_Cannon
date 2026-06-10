@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/kv-overview",
+  "sourceUrl": "https://developers.cloudflare.com/kv/",
+  "lastVerified": "2026-05-31",
+  "title": "Workers KV overview",
+  "excerpt": "Global eventually-consistent key-value store. Optimized for high-read, low-latency access. Not for strong consistency or relational queries. Ideal for session tokens, idempotency keys (stripe_evt:), feature flags. Writes propagate globally within seconds.",
+  "appliesTo": ["webhook-idempotency", "auth-lifecycle", "layer2/cloudflare"],
+  "tags": ["cloudflare", "kv"]
+}

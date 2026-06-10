@@ -1,0 +1,16 @@
+{
+  "refId": "cloudflare/svc001-pages-pages-build-output-dir-030",
+  "sourceUrl": "https://ironcannon.dev/svc001/pages/pages-build-output-dir-30",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-001 pages-build-output-dir 30",
+  "provider": "cloudflare",
+  "excerpt": "Configure pages_build_output_dir in wrangler.pages.toml for static assets; keep Worker API in wrangler.toml with main entry.",
+  "embeddingHint": "cloudflare pages-build-output-dir svc001 pages worker split sd-06",
+  "tags": [
+    "svc001",
+    "pages",
+    "sd-06",
+    "cloudflare",
+    "pages-build-output-dir"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "refId": "legal/backup-retention",
+  "sourceUrl": "https://ironcannon.dev/planning/W65/ref/legal-backup-retention",
+  "lastVerified": "2026-06-06",
+  "title": "backup retention",
+  "provider": "legal",
+  "excerpt": "Define backup retention periods aligned with data minimization and legal hold requirements.",
+  "embeddingHint": "legal/backup-retention wave65 obligation-source legal",
+  "tags": [
+    "wave65",
+    "obligation-source",
+    "legal"
+  ]
+}

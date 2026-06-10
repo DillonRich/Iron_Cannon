@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-standalone-tax-api",
+  "sourceUrl": "https://docs.stripe.com/tax/standalone-tax-api.md",
+  "lastVerified": "2026-06-03",
+  "title": "Standalone Tax API",
+  "excerpt": "Use the Tax Calculations and Transactions APIs directly for shipping, tax-inclusive pricing, and more. The standalone Tax API lets you calculate tax, record transactions, and handle reversals directly. Use it with [PaymentIntents](https://docs.stripe.com/tax/payment-intent.md) or when processing payments [off-Stripe](https://docs.stripe.com/tax/off-stripe.md). The following features are available when using the Tax Calculations and Transactions APIs. To calculate tax on shipping costs, use the `shipping_cost` parameter: curl https://api.stripe.com/v1/tax/calculations \\ -d \"customer_details[address][line1]=920 5th Ave\" \\ -d \"customer_details[address][city]=Seattle\" \\",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

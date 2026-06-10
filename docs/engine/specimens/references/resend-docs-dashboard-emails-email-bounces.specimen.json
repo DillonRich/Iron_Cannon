@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-emails-email-bounces",
+  "sourceUrl": "https://resend.com/docs/dashboard/emails/email-bounces.md",
+  "lastVerified": "2026-06-03",
+  "title": "Email Bounces",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Email Bounces > Understanding and resolving delivery issues. ## Why does an email bounce? A bounce happens when an email cannot be delivered to the person it was meant for, and is returned to the sender. It essentially \"bounces\" back to the person who sent it. Some reasons include invalid email addresses, full mailboxes, technical issues with email servers, spam filters, message size restrictions, or blacklisting of the sender's email server. ## Bounce Types and Subtypes When an email bounces, Resend receives a message from the recipient's mail server.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

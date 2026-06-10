@@ -1,0 +1,14 @@
+{
+  "obligations": [
+    { "id": "LEG-W63-001", "category": "security", "title": "MCP tool calls require wiremap attestation on gated tools", "sourceRefId": "owasp/cheatsheets-mcp-security-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W63-002", "category": "security", "title": "LLM prompt inputs sanitized before tool argument pass-through", "sourceRefId": "owasp/cheatsheets-llm-prompt-injection-prevention-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W63-003", "category": "security", "title": "GraphQL introspection disabled in production", "sourceRefId": "owasp/cheatsheets-graphql-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W63-004", "category": "security", "title": "WebSocket origin validated on connect", "sourceRefId": "owasp/cheatsheets-websocket-security-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W63-005", "category": "privacy", "title": "User privacy notice before cross-border analytics", "sourceRefId": "owasp/cheatsheets-user-privacy-protection-cheat-sheet-html", "detect": { "type": "pattern", "pattern": "privacy" } },
+    { "id": "LEG-W63-006", "category": "billing", "title": "Third-party payment fields use hosted Elements only", "sourceRefId": "owasp/cheatsheets-third-party-payment-gateway-integration-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W63-007", "category": "security", "title": "SSRF blocked on outbound fetch from Workers", "sourceRefId": "owasp/cheatsheets-server-side-request-forgery-prevention-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W63-008", "category": "security", "title": "Secrets loaded from env bindings not inline in repo", "sourceRefId": "owasp/cheatsheets-secrets-management-cheat-sheet-html", "detect": { "type": "pattern", "pattern": "process.env" } },
+    { "id": "LEG-W63-009", "category": "email", "title": "Email validation rejects disposable domains at signup", "sourceRefId": "owasp/cheatsheets-email-validation-and-verification-cheat-sheet-html", "detect": { "type": "config" } },
+    { "id": "LEG-W63-010", "category": "security", "title": "OAuth state parameter required on social login", "sourceRefId": "owasp/cheatsheets-oauth2-cheat-sheet-html", "detect": { "type": "config" } }
+  ]
+}

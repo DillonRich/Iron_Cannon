@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-moving-money-out-of-debit-reversals",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/moving-money/out-of/debit-reversals.md",
+  "lastVerified": "2026-06-03",
+  "title": "Moving money using DebitReversal objects",
+  "excerpt": "Learn how you can retrieve funds taken out of a financial account from an external account holder. Returning the funds from a [ReceivedDebit](https://docs.stripe.com/api/treasury/received_debits.md) creates a [DebitReversal](https://docs.stripe.com/api/treasury/debit_reversals.md). You can get the funds back from a `ReceivedDebit` in only some scenarios (detailed in the following table). Whether you can return the funds of a `ReceivedDebit` depends on the network and source flow. The `reversal_details` sub-hash on the `ReceivedDebit` resource can have the following combination of values, which determines whether you can return the `ReceivedDebit` funds.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

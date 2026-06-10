@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-1099-k",
+  "sourceUrl": "https://docs.stripe.com/connect/1099-K.md",
+  "lastVerified": "2026-06-03",
+  "title": "1099-K form state requirements",
+  "excerpt": "View the state requirements for 1099-K forms. > Some participating State regulatory agencies haven’t fully finalized filing requirements and requirements remain subject to change for the 2025 tax season. Updates that occur to this page are automatically reflected in the form status badges and counts in the tax reporting Dashboard. For 1099-K forms, the IRS requires filing if, in a calendar year, the gross amount of total reportable payments exceeds $20,000 and there are more than 200 transactions. Filing requirements for some states might differ from federal requirements.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

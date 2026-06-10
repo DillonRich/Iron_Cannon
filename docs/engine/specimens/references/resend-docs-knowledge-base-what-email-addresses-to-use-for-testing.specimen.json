@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-what-email-addresses-to-use-for-testing",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/what-email-addresses-to-use-for-testing.md",
+  "lastVerified": "2026-06-03",
+  "title": "What email addresses to use for testing?",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # What email addresses to use for testing? > Learn what email addresses are safe to use for testing with Resend ## Safe email addresses for testing When testing email functionality, it's important to use designated test addresses to avoid unintended consequences like deliverability issues or spam complaints. Resend provides a set of safe email addresses specifically designed for testing, ensuring that you can simulate different email events without affecting your domain's reputation.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

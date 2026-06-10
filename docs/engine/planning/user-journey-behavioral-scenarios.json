@@ -1,0 +1,3761 @@
+{
+  "version": "1.0.0",
+  "minPassRate": 1,
+  "minChecksPerScenario": 1,
+  "description": "Real user journeys — invokeTool chains with outcome assertions (core MCP quality)",
+  "scenarios": [
+    {
+      "id": "UJ-001",
+      "persona": "solo_founder",
+      "story": "First-time founder with golden Next.js+Stripe+Resend stack runs discovery through M01 verify",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-01"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T03",
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.length",
+            "gte": 12
+          },
+          "capture": [
+            "wiremapAttestation"
+          ]
+        },
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M01-auth-d1-schema",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "agentGuidance.phase",
+            "eq": "IMPLEMENT"
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M01-auth-d1-schema",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-002",
+      "persona": "solo_founder",
+      "story": "Founder continues to session middleware after auth schema passes",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M05-auth-session-middleware",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema",
+              "M02-auth-worker-routes",
+              "M03-auth-resend-emails",
+              "M04-auth-ui-routes"
+            ]
+          },
+          "expect": {
+            "ok": true,
+            "path": "moduleId",
+            "eq": "M05-auth-session-middleware"
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M05-auth-session-middleware",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-003",
+      "persona": "billing_focused",
+      "story": "Founder verifies Stripe webhook handler module before launch",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M12-stripe-webhook",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "slice",
+            "exists": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M12-stripe-webhook",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-004",
+      "persona": "solo_founder",
+      "story": "Mini golden loop: auth signup API after schema",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M02-auth-worker-routes",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema"
+            ]
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M02-auth-worker-routes",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M03-auth-resend-emails",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema",
+              "M02-auth-worker-routes"
+            ]
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M03-auth-resend-emails",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-005",
+      "persona": "security_lead",
+      "story": "Armor tier maps vulnerability surfaces for webhooks",
+      "tier": "armor",
+      "steps": [
+        {
+          "tool": "T09",
+          "input": {
+            "surfaceHints": [
+              {
+                "type": "webhook"
+              },
+              {
+                "type": "session"
+              }
+            ]
+          },
+          "expect": {
+            "ok": true,
+            "path": "surfaces.length",
+            "gte": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-006",
+      "persona": "pro_user",
+      "story": "Pro tier cannot access armor surface mapper",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T09",
+          "input": {
+            "surfaceHints": [
+              {
+                "type": "webhook"
+              }
+            ]
+          },
+          "expect": {
+            "ok": false,
+            "error": "TIER_INSUFFICIENT"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-007",
+      "persona": "pro_user",
+      "story": "Pro tier cannot map ironclad obligations",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T12",
+          "input": {
+            "primaryMarkets": [
+              "us"
+            ]
+          },
+          "expect": {
+            "ok": false,
+            "error": "TIER_INSUFFICIENT"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-008",
+      "persona": "compliance_officer",
+      "story": "Ironclad tier maps obligations with legal disclaimer",
+      "tier": "ironclad",
+      "steps": [
+        {
+          "tool": "T12",
+          "input": {
+            "primaryMarkets": [
+              "us",
+              "eu"
+            ]
+          },
+          "expect": {
+            "ok": true,
+            "path": "obligationCount",
+            "gte": 10
+          },
+          "extraChecks": [
+            {
+              "path": "legalDisclaimer",
+              "exists": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UJ-009",
+      "persona": "compliance_officer",
+      "story": "Ironclad verifies accessible img alt obligation with user code paste",
+      "tier": "ironclad",
+      "steps": [
+        {
+          "tool": "T13",
+          "input": {
+            "obligationId": "LEG-A11Y-001",
+            "snippet": "<img alt=\"dashboard\" src=\"/logo.png\" />"
+          },
+          "expect": {
+            "ok": true,
+            "path": "verification.compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-010",
+      "persona": "compliance_officer",
+      "story": "Legal audit blocks until obligations confirmed",
+      "tier": "ironclad",
+      "steps": [
+        {
+          "tool": "T12",
+          "input": {
+            "primaryMarkets": [
+              "us"
+            ]
+          },
+          "expect": {
+            "ok": true
+          },
+          "capture": [
+            "obligations"
+          ]
+        },
+        {
+          "tool": "T14",
+          "input": {
+            "primaryMarkets": [
+              "us"
+            ],
+            "confirmedObligationIds": []
+          },
+          "expect": {
+            "ok": true,
+            "path": "ready",
+            "eq": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-011",
+      "persona": "founder_wrong_stack",
+      "story": "Firebase-primary project rejected at discovery",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-04"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-012",
+      "persona": "founder_incomplete",
+      "story": "Missing Stripe webhook secret flagged incomplete before modules",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-05"
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-013",
+      "persona": "founder_hybrid",
+      "story": "Hybrid Vercel+D1 stack detected with warnings but analyzable",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-02"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.warnings.length",
+            "gte": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-014",
+      "persona": "careless_agent",
+      "story": "Agent calls T04 without wiremap approval — blocked",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M01-auth-d1-schema"
+          },
+          "expect": {
+            "ok": false,
+            "error": "WIREMAP_NOT_APPROVED"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-015",
+      "persona": "careless_agent",
+      "story": "Agent submits failing M01 code snippet — verify rejects",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M01-auth-d1-schema",
+            "wiremapAttestation": "$wiremapAttestation",
+            "snippet": "CREATE TABLE users (id TEXT PRIMARY KEY);"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-016",
+      "persona": "security_lead",
+      "story": "Production audit blocked until armor checklist confirmed",
+      "tier": "armor",
+      "setup": {
+        "chain": "golden_att_full"
+      },
+      "steps": [
+        {
+          "tool": "T11",
+          "input": {
+            "wiremapAttestation": "$wiremapAttestation",
+            "wiremapContext": {
+              "completedModules": [
+                "M01-auth-d1-schema",
+                "M02-auth-worker-routes",
+                "M03-auth-resend-emails",
+                "M04-auth-ui-routes",
+                "M05-auth-session-middleware",
+                "M10-billing-d1-schema",
+                "M11-stripe-checkout-route",
+                "M12-stripe-webhook",
+                "M13-provisioning-kv",
+                "M14-billing-success-ui",
+                "M15-billing-dashboard-ui",
+                "M16-billing-emails"
+              ]
+            },
+            "autoConfirmInfra": false
+          },
+          "expect": {
+            "ok": true,
+            "path": "ready",
+            "eq": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-017",
+      "persona": "security_lead",
+      "story": "Production audit passes with armor modules + infra checklist",
+      "tier": "armor",
+      "setup": {
+        "chain": "golden_att_full"
+      },
+      "steps": [
+        {
+          "tool": "T11",
+          "input": {
+            "wiremapAttestation": "$wiremapAttestation",
+            "wiremapContext": {
+              "completedModules": [
+                "M01-auth-d1-schema",
+                "M02-auth-worker-routes",
+                "M03-auth-resend-emails",
+                "M04-auth-ui-routes",
+                "M05-auth-session-middleware",
+                "M10-billing-d1-schema",
+                "M11-stripe-checkout-route",
+                "M12-stripe-webhook",
+                "M13-provisioning-kv",
+                "M14-billing-success-ui",
+                "M15-billing-dashboard-ui",
+                "M16-billing-emails",
+                "A02-session-hardening-pass",
+                "A03-webhook-hardening-pass"
+              ],
+              "verifiedModules": [
+                "M01-auth-d1-schema",
+                "M05-auth-session-middleware",
+                "M12-stripe-webhook",
+                "A02-session-hardening-pass",
+                "A03-webhook-hardening-pass"
+              ]
+            },
+            "confirmedChecklistIds": [
+              "cache-rules-explicit",
+              "per-ip-limits",
+              "rps-budget",
+              "baseline-load-test"
+            ],
+            "verifiedInfraDomains": [
+              "INFRA-CACHE",
+              "INFRA-RATE-LIMIT",
+              "INFRA-CAPACITY",
+              "INFRA-STRESS"
+            ],
+            "autoConfirmInfra": true
+          },
+          "expect": {
+            "ok": true,
+            "path": "ready",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-018",
+      "persona": "security_lead",
+      "story": "Armor security directives for webhook surface",
+      "tier": "armor",
+      "steps": [
+        {
+          "tool": "T10",
+          "input": {
+            "surfaceId": "SURF-WH-001"
+          },
+          "expect": {
+            "ok": true,
+            "path": "directives",
+            "exists": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-019",
+      "persona": "maintainer",
+      "story": "Continuous diff finds no drift on clean session",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T06",
+          "input": {
+            "session": {
+              "validatedStackHash": "stack-golden-v1"
+            },
+            "stateLogMarkdown": "### M01-auth-d1-schema\n| status | verified |\n",
+            "diskFiles": {}
+          },
+          "expect": {
+            "ok": true,
+            "path": "driftDetected",
+            "eq": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-020",
+      "persona": "maintainer",
+      "story": "Failed Stripe webhook flow audited for recovery hints",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T07",
+          "input": {
+            "flowId": "billing-subscription",
+            "errorLog": "StripeSignature verification failed",
+            "symptoms": [
+              "webhook 400"
+            ]
+          },
+          "expect": {
+            "ok": true,
+            "path": "steps.length",
+            "gte": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-021",
+      "persona": "maintainer",
+      "story": "Rollback to earlier module after partial implementation",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T08",
+          "input": {
+            "moduleId": "M02-auth-worker-routes",
+            "stateLogMarkdown": "### M01-auth-d1-schema\n| status | verified |\n### M02-auth-worker-routes\n| status | verified |\n### M03-auth-resend-emails\n| status | started |\n"
+          },
+          "expect": {
+            "ok": true,
+            "path": "rollbackTo",
+            "eq": "M02-auth-worker-routes"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-022",
+      "persona": "maintainer",
+      "story": "Rollback to never-started module fails safely",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T08",
+          "input": {
+            "moduleId": "M99-fake",
+            "stateLogMarkdown": "# M01"
+          },
+          "expect": {
+            "ok": false,
+            "error": "ROLLBACK_SNAPSHOT_MISSING"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-023",
+      "persona": "runaway_agent",
+      "story": "Repeated T05 on same module triggers throttle guard",
+      "tier": "pro",
+      "env": {
+        "IRON_CANNON_SKIP_WIREMAP_GATE": "1"
+      },
+      "setup": {
+        "throttleReset": true
+      },
+      "type": "throttle_loop",
+      "throttle": {
+        "tool": "T05",
+        "moduleId": "M12-stripe-webhook",
+        "maxCalls": 12,
+        "expectError": "THROTTLE_LOOP_DETECTED"
+      },
+      "steps": []
+    },
+    {
+      "id": "UJ-024",
+      "persona": "solo_founder",
+      "story": "Wiremap generation includes agent guidance for user approval",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T03",
+          "expect": {
+            "ok": true,
+            "path": "agentGuidance.phase",
+            "eq": "AWAIT_USER_WIREMAP_APPROVAL"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-025",
+      "persona": "solo_founder",
+      "story": "Module directives include implement-phase agent guidance",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M04-auth-ui-routes",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema",
+              "M02-auth-worker-routes",
+              "M03-auth-resend-emails"
+            ]
+          },
+          "expect": {
+            "ok": true,
+            "path": "agentGuidance.instruction",
+            "includes": "T05"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-026",
+      "persona": "privacy_officer",
+      "story": "Optional account deletion module verifies on ironclad path",
+      "tier": "ironclad",
+      "setup": {
+        "chain": "golden_att",
+        "env": {
+          "IRON_CANNON_SKIP_WIREMAP_GATE": "1"
+        }
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M40-deletion-api",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-027",
+      "persona": "privacy_officer",
+      "story": "GDPR export optional module calibrates pass",
+      "tier": "ironclad",
+      "setup": {
+        "chain": "golden_att",
+        "env": {
+          "IRON_CANNON_SKIP_WIREMAP_GATE": "1"
+        }
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M50-export-api",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-028",
+      "persona": "legal_ops",
+      "story": "Terms re-accept UI optional module verifies",
+      "tier": "ironclad",
+      "setup": {
+        "chain": "golden_att",
+        "env": {
+          "IRON_CANNON_SKIP_WIREMAP_GATE": "1"
+        }
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M56-terms-reaccept-ui",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-029",
+      "persona": "security_lead",
+      "story": "Armor overlay session hardening module passes verify",
+      "tier": "armor",
+      "setup": {
+        "chain": "golden_att",
+        "env": {
+          "IRON_CANNON_SKIP_WIREMAP_GATE": "1"
+        }
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "A02-session-hardening-pass",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-030",
+      "persona": "security_lead",
+      "story": "Armor overlay webhook hardening module passes verify",
+      "tier": "armor",
+      "setup": {
+        "chain": "golden_att",
+        "env": {
+          "IRON_CANNON_SKIP_WIREMAP_GATE": "1"
+        }
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "A03-webhook-hardening-pass",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-031",
+      "persona": "compliance_officer",
+      "story": "Ironclad obligation verify fails on gap snippet",
+      "tier": "ironclad",
+      "steps": [
+        {
+          "tool": "T13",
+          "input": {
+            "obligationId": "LEG-A11Y-001",
+            "snippet": "<img src=\"/x.png\" />"
+          },
+          "expect": {
+            "ok": true,
+            "path": "verification.compliant",
+            "eq": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-032",
+      "persona": "compliance_officer",
+      "story": "Partial legal readiness after confirming a11y obligations",
+      "tier": "ironclad",
+      "steps": [
+        {
+          "tool": "T14",
+          "input": {
+            "primaryMarkets": [
+              "us"
+            ],
+            "confirmedObligationIds": [
+              "LEG-A11Y-001",
+              "LEG-A11Y-002"
+            ]
+          },
+          "expect": {
+            "ok": true,
+            "path": "ready",
+            "eq": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-033",
+      "persona": "founder_hybrid",
+      "story": "CF Pages hybrid external API stack still analyzable",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-03"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-034",
+      "persona": "founder_wrong_stack",
+      "story": "Unsupported stack stops before wiremap — no T03 success path",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-04"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": false
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-035",
+      "persona": "agent",
+      "story": "T02 without stack context returns insufficient context",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T02",
+          "input": {},
+          "expect": {
+            "ok": false,
+            "error": "CONTEXT_INSUFFICIENT"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-036",
+      "persona": "agent",
+      "story": "Unknown module returns MODULE_NOT_FOUND on verify",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att",
+        "env": {
+          "IRON_CANNON_SKIP_WIREMAP_GATE": "1"
+        }
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M99-nonexistent",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": false,
+            "error": "MODULE_NOT_FOUND"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-037",
+      "persona": "solo_founder",
+      "story": "Golden wiremap contains exactly 12 core modules",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T03",
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.length",
+            "eq": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-038",
+      "persona": "billing_focused",
+      "story": "Billing checkout API module directives compose successfully",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M11-stripe-checkout-route",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema",
+              "M02-auth-worker-routes",
+              "M03-auth-resend-emails",
+              "M04-auth-ui-routes",
+              "M05-auth-session-middleware",
+              "M10-billing-d1-schema"
+            ]
+          },
+          "expect": {
+            "ok": true,
+            "path": "moduleId",
+            "eq": "M11-stripe-checkout-route"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-039",
+      "persona": "billing_focused",
+      "story": "Billing checkout verify calibrates on fixture pass snippet",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M11-stripe-checkout-route",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-040",
+      "persona": "maintainer",
+      "story": "Recovery audit then rollback sequence after webhook failure",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T07",
+          "input": {
+            "flowId": "billing-subscription",
+            "errorLog": "500 internal",
+            "symptoms": [
+              "checkout failed"
+            ]
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T08",
+          "input": {
+            "moduleId": "M11-stripe-checkout-route",
+            "stateLogMarkdown": "### M11-stripe-checkout-route\n| status | failed |\n"
+          },
+          "expect": {
+            "ok": true,
+            "path": "rollbackTo",
+            "eq": "M11-stripe-checkout-route"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-041",
+      "persona": "security_lead",
+      "story": "Infrastructure security directives for cache domain at scale",
+      "tier": "armor",
+      "steps": [
+        {
+          "tool": "T10",
+          "input": {
+            "domainId": "INFRA-CACHE",
+            "expectedRps": 500
+          },
+          "expect": {
+            "ok": true,
+            "path": "checklist.length",
+            "gte": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-042",
+      "persona": "solo_founder",
+      "story": "Full golden pro path through all 12 modules verify calibration",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M01-auth-d1-schema",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": []
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M01-auth-d1-schema",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M02-auth-worker-routes",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema"
+            ]
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M02-auth-worker-routes",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M03-auth-resend-emails",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema",
+              "M02-auth-worker-routes"
+            ]
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M03-auth-resend-emails",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M04-auth-ui-routes",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema",
+              "M02-auth-worker-routes",
+              "M03-auth-resend-emails"
+            ]
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M04-auth-ui-routes",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M05-auth-session-middleware",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema",
+              "M02-auth-worker-routes",
+              "M03-auth-resend-emails",
+              "M04-auth-ui-routes"
+            ]
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M05-auth-session-middleware",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M10-billing-d1-schema",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema",
+              "M02-auth-worker-routes",
+              "M03-auth-resend-emails",
+              "M04-auth-ui-routes",
+              "M05-auth-session-middleware"
+            ]
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M10-billing-d1-schema",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M11-stripe-checkout-route",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema",
+              "M02-auth-worker-routes",
+              "M03-auth-resend-emails",
+              "M04-auth-ui-routes",
+              "M05-auth-session-middleware",
+              "M10-billing-d1-schema"
+            ]
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M11-stripe-checkout-route",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M12-stripe-webhook",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema",
+              "M02-auth-worker-routes",
+              "M03-auth-resend-emails",
+              "M04-auth-ui-routes",
+              "M05-auth-session-middleware",
+              "M10-billing-d1-schema",
+              "M11-stripe-checkout-route"
+            ]
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M12-stripe-webhook",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M13-provisioning-kv",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema",
+              "M02-auth-worker-routes",
+              "M03-auth-resend-emails",
+              "M04-auth-ui-routes",
+              "M05-auth-session-middleware",
+              "M10-billing-d1-schema",
+              "M11-stripe-checkout-route",
+              "M12-stripe-webhook"
+            ]
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M13-provisioning-kv",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M14-billing-success-ui",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema",
+              "M02-auth-worker-routes",
+              "M03-auth-resend-emails",
+              "M04-auth-ui-routes",
+              "M05-auth-session-middleware",
+              "M10-billing-d1-schema",
+              "M11-stripe-checkout-route",
+              "M12-stripe-webhook",
+              "M13-provisioning-kv"
+            ]
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M14-billing-success-ui",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M15-billing-dashboard-ui",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema",
+              "M02-auth-worker-routes",
+              "M03-auth-resend-emails",
+              "M04-auth-ui-routes",
+              "M05-auth-session-middleware",
+              "M10-billing-d1-schema",
+              "M11-stripe-checkout-route",
+              "M12-stripe-webhook",
+              "M13-provisioning-kv",
+              "M14-billing-success-ui"
+            ]
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M15-billing-dashboard-ui",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M16-billing-emails",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema",
+              "M02-auth-worker-routes",
+              "M03-auth-resend-emails",
+              "M04-auth-ui-routes",
+              "M05-auth-session-middleware",
+              "M10-billing-d1-schema",
+              "M11-stripe-checkout-route",
+              "M12-stripe-webhook",
+              "M13-provisioning-kv",
+              "M14-billing-success-ui",
+              "M15-billing-dashboard-ui"
+            ]
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M16-billing-emails",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-043",
+      "persona": "compliance_officer",
+      "story": "Ironclad T13 then T14 partial path with confirmed a11y set",
+      "tier": "ironclad",
+      "steps": [
+        {
+          "tool": "T12",
+          "input": {
+            "primaryMarkets": [
+              "us"
+            ]
+          },
+          "expect": {
+            "ok": true
+          },
+          "capture": [
+            "obligations"
+          ]
+        },
+        {
+          "tool": "T13",
+          "input": {
+            "obligationId": "LEG-A11Y-003",
+            "snippet": "<a href=\"/privacy\">Privacy</a>"
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T14",
+          "input": {
+            "primaryMarkets": [
+              "us"
+            ],
+            "confirmedObligationIds": [
+              "LEG-A11Y-001",
+              "LEG-A11Y-002",
+              "LEG-A11Y-003"
+            ]
+          },
+          "expect": {
+            "ok": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-044",
+      "persona": "pro_user",
+      "story": "Pro cannot run production readiness audit (armor tier tool)",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T11",
+          "input": {
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": false,
+            "error": "TIER_INSUFFICIENT"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-045",
+      "persona": "agent",
+      "story": "T05 failure returns agent guidance to fix before next module",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M02-auth-worker-routes",
+            "wiremapAttestation": "$wiremapAttestation",
+            "snippet": "// empty"
+          },
+          "expect": {
+            "ok": true,
+            "path": "agentGuidance.phase",
+            "eq": "VERIFY_FAIL"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-046",
+      "persona": "maintainer",
+      "story": "Continuous diff detects stack signal drift after firebase added",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T06",
+          "input": {
+            "session": {
+              "validatedStackHash": "stack-golden-v1"
+            },
+            "stackSignals": {
+              "frontend": "nextjs",
+              "deps": {
+                "firebase": "^10"
+              }
+            },
+            "stateLogMarkdown": "### M01-auth-d1-schema\n| status | complete |\n",
+            "diskFiles": {}
+          },
+          "expect": {
+            "ok": true,
+            "path": "driftDetected",
+            "eq": true
+          },
+          "extraChecks": [
+            {
+              "path": "code",
+              "eq": "DIFF_DRIFT_DETECTED"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UJ-047",
+      "persona": "maintainer",
+      "story": "Continuous diff catches webhook file changed since last verify hash",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T06",
+          "input": {
+            "session": {
+              "validatedStackHash": "stack-abc",
+              "wiremapHash": "wm-abc"
+            },
+            "stackSignals": {
+              "frontend": "nextjs"
+            },
+            "stateLogMarkdown": "### M12-stripe-webhook\n| status | complete |\n**fileHashes:**\n- src/app/api/webhooks/stripe/route.ts: sha256:deadbeef0000\n",
+            "diskFiles": {
+              "src/app/api/webhooks/stripe/route.ts": "new implementation without constructEvent"
+            }
+          },
+          "expect": {
+            "ok": true,
+            "path": "driftDetected",
+            "eq": true
+          },
+          "extraChecks": [
+            {
+              "path": "code",
+              "eq": "DIFF_DRIFT_DETECTED"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UJ-048",
+      "persona": "careless_agent",
+      "story": "Agent skips billing modules and hits sequence violation on webhook",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M12-stripe-webhook",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema"
+            ]
+          },
+          "expect": {
+            "ok": false,
+            "error": "MODULE_SEQUENCE_VIOLATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-049",
+      "persona": "careless_agent",
+      "story": "Optional privacy module not in approved wiremap is rejected",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M40-deletion-api",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": false,
+            "error": "WIREMAP_MODULE_MISMATCH"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-050",
+      "persona": "runaway_client",
+      "story": "Burst of tool calls exceeds pro per-minute rate limit",
+      "tier": "pro",
+      "setup": {
+        "rateLimitReset": true
+      },
+      "type": "rate_limit_loop",
+      "rateLimit": {
+        "tool": "T03",
+        "maxCalls": 125,
+        "expectError": "RATE_LIMIT_EXCEEDED"
+      },
+      "steps": []
+    },
+    {
+      "id": "UJ-051",
+      "persona": "security_lead",
+      "story": "Armor tier cannot access ironclad compliance directives",
+      "tier": "armor",
+      "steps": [
+        {
+          "tool": "T13",
+          "input": {
+            "obligationId": "LEG-A11Y-001"
+          },
+          "expect": {
+            "ok": false,
+            "error": "TIER_INSUFFICIENT"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-052",
+      "persona": "maintainer",
+      "story": "Password reset email failure maps to Resend recovery steps",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T07",
+          "input": {
+            "flowId": "password-reset",
+            "errorLog": "Resend 422 from address not verified",
+            "symptoms": [
+              "reset email failed"
+            ]
+          },
+          "expect": {
+            "ok": true,
+            "path": "steps.length",
+            "gte": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-053",
+      "persona": "maintainer",
+      "story": "Corrupt state_log triggers resume warning without crashing",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T06",
+          "input": {
+            "session": {},
+            "stackSignals": {},
+            "stateLogMarkdown": "# Not a valid module section\n\nrandom text with no module headers",
+            "diskFiles": {}
+          },
+          "expect": {
+            "ok": true,
+            "path": "code",
+            "eq": "RESUME_STATE_LOG_CORRUPT"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-054",
+      "persona": "compliance_officer",
+      "story": "Unknown obligation id rejected on ironclad verify",
+      "tier": "ironclad",
+      "steps": [
+        {
+          "tool": "T13",
+          "input": {
+            "obligationId": "LEG-FAKE-999"
+          },
+          "expect": {
+            "ok": false,
+            "error": "MODULE_NOT_FOUND"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-056",
+      "persona": "solo_founder",
+      "story": "Golden reference app detected as SD-01 via projectPath T01",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "projectPath": "C:/Users/Dillon/Downloads/Iron Cannon Workspace/examples/golden-reference-app"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-057",
+      "persona": "platform_engineer",
+      "story": "Pages + Worker split stack SD-06 detected complete (SVC-001)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-06"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-06"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.warnings",
+            "includes": "pages-worker-split"
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-058",
+      "persona": "platform_engineer",
+      "story": "SD-06 stack gets 14-module wiremap with M60/M61 prefix (SVC-001 wave78)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-06"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-06"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.length",
+            "eq": 14
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-059",
+      "persona": "maintainer",
+      "story": "M60 Pages wrangler config verifies on SD-06 path",
+      "tier": "pro",
+      "setup": {
+        "chain": "sd06_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M60-pages-wrangler-config",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-060",
+      "persona": "maintainer",
+      "story": "M61 Pages env bridge verifies after M60 on SD-06 path",
+      "tier": "pro",
+      "setup": {
+        "chain": "sd06_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M61-pages-env-bridge",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-061",
+      "persona": "solo_founder",
+      "story": "SD-03 external API incomplete vs SD-06 pages-worker-split supported",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-03"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.warnings",
+            "includes": "external-api-surface"
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": false
+          }
+        },
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-06",
+            "clientKey": "uj061-sd06"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-062",
+      "persona": "platform_engineer",
+      "story": "T04 composes M60 directives on approved SD-06 wiremap",
+      "tier": "pro",
+      "setup": {
+        "chain": "sd06_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M60-pages-wrangler-config",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "moduleId",
+            "eq": "M60-pages-wrangler-config"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-063",
+      "persona": "maintainer",
+      "story": "SD-06 wiremap attestation includes M60 and M61 before M01",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-06"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremapAttestation.moduleIds.0",
+            "eq": "M60-pages-wrangler-config"
+          }
+        },
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-06",
+            "clientKey": "uj063-b"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremapAttestation.moduleIds.1",
+            "eq": "M61-pages-env-bridge"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-064",
+      "persona": "solo_founder",
+      "story": "SD-06 golden core M01 still verifies after pages prefix modules",
+      "tier": "pro",
+      "setup": {
+        "chain": "sd06_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M01-auth-d1-schema",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-065",
+      "persona": "platform_engineer",
+      "story": "Supabase-primary stack SD-07 detected complete (SVC-002)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-07"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-07",
+            "clientKey": "uj065-warn"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.warnings",
+            "includes": "SUPABASE_PRIMARY"
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-066",
+      "persona": "platform_engineer",
+      "story": "SD-08 Supabase+D1 dual-database blocked vs SD-07 supported",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-08"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": false
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": false
+          }
+        },
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-07",
+            "clientKey": "uj066-sd07"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-067",
+      "persona": "maintainer",
+      "story": "SD-07 stack gets 8-module wiremap with M70/M71 prefix (SVC-002)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-07"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-07"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.length",
+            "eq": 8
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M70-supabase-auth-config",
+            "wiremapAttestation": "$wiremapAttestation",
+            "clientKey": "uj067-m70"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-068",
+      "persona": "maintainer",
+      "story": "M71 Supabase SSR middleware verifies on SD-07 path (SVC-002 wave80)",
+      "tier": "pro",
+      "setup": {
+        "chain": "sd07_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M71-supabase-middleware-ssr",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-069",
+      "persona": "platform_engineer",
+      "story": "T04 composes M70 directives on approved SD-07 wiremap",
+      "tier": "pro",
+      "setup": {
+        "chain": "sd07_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M70-supabase-auth-config",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "moduleId",
+            "eq": "M70-supabase-auth-config"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-070",
+      "persona": "maintainer",
+      "story": "SD-07 wiremap attestation includes M70 and M71 before M11",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-07"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremapAttestation.moduleIds.0",
+            "eq": "M70-supabase-auth-config"
+          }
+        },
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-07",
+            "clientKey": "uj070-b"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremapAttestation.moduleIds.1",
+            "eq": "M71-supabase-middleware-ssr"
+          }
+        },
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-07",
+            "clientKey": "uj070-c"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremapAttestation.moduleIds.2",
+            "eq": "M11-stripe-checkout-route"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-071",
+      "persona": "solo_founder",
+      "story": "SD-07 billing M11 verifies after Supabase auth prefix (no D1 auth)",
+      "tier": "pro",
+      "setup": {
+        "chain": "sd07_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M11-stripe-checkout-route",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-072",
+      "persona": "platform_engineer",
+      "story": "SD-01 D1 golden vs SD-07 Supabase wiremap module count differs",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-01"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.length",
+            "eq": 12
+          }
+        },
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-07",
+            "clientKey": "uj072-sd07"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.length",
+            "eq": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-073",
+      "persona": "maintainer",
+      "story": "T04 composes M71 on SD-07 then chains to M11 billing",
+      "tier": "pro",
+      "setup": {
+        "chain": "sd07_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M71-supabase-middleware-ssr",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "moduleId",
+            "eq": "M71-supabase-middleware-ssr"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-074",
+      "persona": "platform_engineer",
+      "story": "SD-08 dual-database warning includes dual-database signal",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-08"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.warnings",
+            "includes": "dual-database"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-075",
+      "persona": "solo_founder",
+      "story": "SD-07 and SD-06 stacks both supported with distinct wiremaps (SVC-002 signoff)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-07"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-06",
+            "clientKey": "uj075-sd06"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-07"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.0",
+            "eq": "M70-supabase-auth-config"
+          }
+        },
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-06",
+            "clientKey": "uj075-w06"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.0",
+            "eq": "M60-pages-wrangler-config"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-076",
+      "persona": "maintainer",
+      "story": "Reference app still yields 12-module golden wiremap after expansion (G-34)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "projectPath": "C:/Users/Dillon/Downloads/Iron Cannon Workspace/examples/golden-reference-app"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T03",
+          "input": {},
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.length",
+            "eq": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-077",
+      "persona": "maintainer",
+      "story": "Reference app M05 middleware verifies via session file mapping (G-34)",
+      "tier": "pro",
+      "setup": {
+        "chain": "ref_app_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M05-auth-session-middleware",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-078",
+      "persona": "platform_engineer",
+      "story": "SD-07 wiremap third module is M11 billing not M01 D1 auth (G-34)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-07"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.2",
+            "eq": "M11-stripe-checkout-route"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-079",
+      "persona": "maintainer",
+      "story": "Reference app M12 webhook verifies after session regression path (G-34)",
+      "tier": "pro",
+      "setup": {
+        "chain": "ref_app_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M12-stripe-webhook",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-080",
+      "persona": "solo_founder",
+      "story": "Reference app T04 composes M01 schema directives from session golden path (G-34)",
+      "tier": "pro",
+      "setup": {
+        "chain": "ref_app_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M01-auth-d1-schema",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "moduleId",
+            "eq": "M01-auth-d1-schema"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-081",
+      "persona": "platform_engineer",
+      "story": "SD-06 deploy target stack still complete after G-35 operator pack (G-37)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-06"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-082",
+      "persona": "platform_engineer",
+      "story": "SD-07 parallel stack still complete after G-35 operator pack (G-37)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-07"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-083",
+      "persona": "maintainer",
+      "story": "SD-06 wiremap unchanged at 14 modules for Worker deploy path (G-37)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-06"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.length",
+            "eq": 14
+          }
+        },
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-06"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.0",
+            "eq": "M60-pages-wrangler-config"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-084",
+      "persona": "maintainer",
+      "story": "SD-07 wiremap unchanged at 8 modules after operator readiness (G-37)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-07"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.length",
+            "eq": 8
+          }
+        },
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-07"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.0",
+            "eq": "M70-supabase-auth-config"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-085",
+      "persona": "solo_founder",
+      "story": "Reference app stack completeness holds for deploy-day golden regression (G-37)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "projectPath": "C:/Users/Dillon/Downloads/Iron Cannon Workspace/examples/golden-reference-app"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-086",
+      "persona": "maintainer",
+      "story": "SD-01 golden stack still complete after business infra wave 86 (G-42)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-01"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-087",
+      "persona": "solo_founder",
+      "story": "M11 Stripe checkout verifies on SD-07 path for G-40 subscription prep (G-42)",
+      "tier": "pro",
+      "setup": {
+        "chain": "sd07_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M11-stripe-checkout-route",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-088",
+      "persona": "platform_engineer",
+      "story": "M60 Pages wrangler verifies on SD-06 for cheap Cloudflare deploy path (G-42)",
+      "tier": "pro",
+      "setup": {
+        "chain": "sd06_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M60-pages-wrangler-config",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-089",
+      "persona": "maintainer",
+      "story": "SD-01 wiremap still 12 modules after pre-launch planning additions (G-42)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "SD-01"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.length",
+            "eq": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-090",
+      "persona": "platform_engineer",
+      "story": "SD-06 deploy and SD-07 Supabase stacks both supported post business SSOT (G-42)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-06"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-07",
+            "clientKey": "uj090-sd07"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-091",
+      "persona": "maintainer",
+      "story": "Monorepo root T01 returns meta stack not SD-01 supported (dogfood prep G-43)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "projectPath": "C:/Users/Dillon/Downloads/Iron Cannon Workspace"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-092",
+      "persona": "platform_engineer",
+      "story": "apps/mcp-worker T01 detects cloudflare_workers compute (dogfood prep G-43)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "projectPath": "C:/Users/Dillon/Downloads/Iron Cannon Workspace/apps/mcp-worker"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.compute",
+            "eq": "cloudflare_workers"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-093",
+      "persona": "maintainer",
+      "story": "Monorepo T02 honestly incomplete before dogfood session (G-43)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "projectPath": "C:/Users/Dillon/Downloads/Iron Cannon Workspace"
+          },
+          "expect": {
+            "ok": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-094",
+      "persona": "solo_founder",
+      "story": "Golden reference app still supported while monorepo is meta (dogfood contrast G-43)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "projectPath": "C:/Users/Dillon/Downloads/Iron Cannon Workspace/examples/golden-reference-app"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-095",
+      "persona": "platform_engineer",
+      "story": "Worker subpath T02 incomplete documents partial deploy surface (G-43)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "projectPath": "C:/Users/Dillon/Downloads/Iron Cannon Workspace/apps/mcp-worker"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.compute",
+            "eq": "cloudflare_workers"
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-096",
+      "persona": "solo_founder",
+      "story": "M11 Stripe checkout verifies on SD-01 golden path for G-40 prep (G-44)",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M11-stripe-checkout-route",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-097",
+      "persona": "maintainer",
+      "story": "M12 Stripe webhook verifies on SD-01 golden path for G-40 prep (G-44)",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M12-stripe-webhook",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-098",
+      "persona": "solo_founder",
+      "story": "T04 composes M11 checkout directives on approved wiremap (G-44)",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M11-stripe-checkout-route",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "moduleId",
+            "eq": "M11-stripe-checkout-route"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-099",
+      "persona": "maintainer",
+      "story": "T07 billing-subscription flow guides webhook signature failures (G-44)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T07",
+          "input": {
+            "flowId": "billing-subscription",
+            "errorLog": "StripeSignature verification failed",
+            "symptoms": [
+              "webhook 400"
+            ]
+          },
+          "expect": {
+            "ok": true,
+            "path": "relatedModules",
+            "exists": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-100",
+      "persona": "platform_engineer",
+      "story": "M12 webhook verifies on SD-07 Supabase stack for multi-host billing (G-44)",
+      "tier": "pro",
+      "setup": {
+        "chain": "sd07_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M12-stripe-webhook",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-101",
+      "persona": "solo_founder",
+      "story": "M13 provisioning verifies before affiliate tier grants (G-45)",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M13-provisioning-kv",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-102",
+      "persona": "maintainer",
+      "story": "T04 composes M13 provisioning directives on golden wiremap (G-45)",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M13-provisioning-kv",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "moduleId",
+            "eq": "M13-provisioning-kv"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-103",
+      "persona": "platform_engineer",
+      "story": "Full billing chain M11 then M12 verifies on SD-01 for affiliate revenue base (G-45)",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M11-stripe-checkout-route",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M12-stripe-webhook",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-104",
+      "persona": "maintainer",
+      "story": "Ironclad tier T05 on M12 webhook enforces billing security before payouts (G-45)",
+      "tier": "ironclad",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M12-stripe-webhook",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-105",
+      "persona": "solo_founder",
+      "story": "T07 billing flow guides checkout failures before referral attribution (G-45)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T07",
+          "input": {
+            "flowId": "billing-subscription",
+            "errorLog": "checkout session expired",
+            "symptoms": [
+              "checkout failed",
+              "no subscription created"
+            ]
+          },
+          "expect": {
+            "ok": true,
+            "path": "steps.length",
+            "gte": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-106",
+      "persona": "maintainer",
+      "story": "SD-01 golden stack complete at polish arc close (G-46)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-01"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-107",
+      "persona": "maintainer",
+      "story": "Reference app 12-module wiremap at session end (G-46)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "projectPath": "C:/Users/Dillon/Downloads/Iron Cannon Workspace/examples/golden-reference-app"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T03",
+          "input": {},
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.length",
+            "eq": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-108",
+      "persona": "platform_engineer",
+      "story": "Monorepo meta stack guard unchanged at arc close (G-46)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "projectPath": "C:/Users/Dillon/Downloads/Iron Cannon Workspace"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-109",
+      "persona": "platform_engineer",
+      "story": "SD-06 deploy path complete at polish arc close (G-46)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-06"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-110",
+      "persona": "platform_engineer",
+      "story": "SD-07 Supabase path complete at polish arc close (G-46)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "fixtureId": "SD-07"
+          },
+          "expect": {
+            "ok": true,
+            "path": "stack.supported",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T02",
+          "input": {
+            "stack": "$stack"
+          },
+          "expect": {
+            "ok": true,
+            "path": "complete",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-111",
+      "persona": "maintainer",
+      "story": "Dogfood live: M02 worker routes T04/T05 on golden wiremap (G-39)",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M02-auth-worker-routes",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema"
+            ]
+          },
+          "expect": {
+            "ok": true,
+            "path": "moduleId",
+            "eq": "M02-auth-worker-routes"
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M02-auth-worker-routes",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-112",
+      "persona": "platform_engineer",
+      "story": "Dogfood live: M12 platform webhook T04/T05 (G-39)",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M12-stripe-webhook",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": [
+              "M01-auth-d1-schema",
+              "M02-auth-worker-routes",
+              "M03-auth-resend-emails",
+              "M04-auth-ui-routes",
+              "M05-auth-session-middleware",
+              "M10-billing-d1-schema",
+              "M11-stripe-checkout-route"
+            ]
+          },
+          "expect": {
+            "ok": true,
+            "path": "moduleId",
+            "eq": "M12-stripe-webhook"
+          }
+        },
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M12-stripe-webhook",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-113",
+      "persona": "maintainer",
+      "story": "Dogfood live: packages/mcp-core T01 library path (G-39)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T01",
+          "input": {
+            "projectPath": "C:/Users/Dillon/Downloads/Iron Cannon Workspace/packages/mcp-core"
+          },
+          "expect": {
+            "ok": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-114",
+      "persona": "platform_engineer",
+      "story": "Dogfood live: T09 tier gate pro blocked armor allowed (G-39)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T09",
+          "input": {
+            "tier": "pro"
+          },
+          "expect": {
+            "ok": false,
+            "path": "error",
+            "eq": "TIER_INSUFFICIENT"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-115",
+      "persona": "maintainer",
+      "story": "Dogfood live: MODULE_SEQUENCE_VIOLATION without M01 (G-39)",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T04",
+          "input": {
+            "moduleId": "M02-auth-worker-routes",
+            "wiremapAttestation": "$wiremapAttestation",
+            "completedModules": []
+          },
+          "expect": {
+            "ok": false,
+            "path": "error",
+            "eq": "MODULE_SEQUENCE_VIOLATION"
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-116",
+      "persona": "platform_engineer",
+      "story": "T03 over worker returns LOCAL_CLI_REQUIRED; CLI attestation still works (G-47)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T03",
+          "input": {
+            "tier": "pro",
+            "clientKey": "uj116-cli"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremapAttestation.token",
+            "exists": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "UJ-117",
+      "persona": "careless_agent",
+      "story": "T05 without snippet returns notAudited — no silent calibration pass (G-48)",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M12-stripe-webhook",
+            "wiremapAttestation": "$wiremapAttestation"
+          },
+          "expect": {
+            "ok": true,
+            "path": "notAudited",
+            "eq": true
+          },
+          "extraChecks": [
+            {
+              "path": "compliant",
+              "eq": false
+            },
+            {
+              "path": "agentGuidance.phase",
+              "eq": "VERIFY_NOT_AUDITED"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UJ-120",
+      "persona": "compliance_officer",
+      "story": "T14 tiered readiness: productReady false until obligations confirmed (G-57)",
+      "tier": "ironclad",
+      "steps": [
+        {
+          "tool": "T14",
+          "input": {
+            "primaryMarkets": [
+              "us"
+            ],
+            "confirmedObligationIds": [],
+            "verifiedObligationIds": []
+          },
+          "expect": {
+            "ok": true,
+            "path": "counselReady",
+            "eq": false
+          },
+          "extraChecks": [
+            {
+              "path": "productReady",
+              "eq": false
+            },
+            {
+              "path": "operationsReady",
+              "eq": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UJ-121",
+      "persona": "platform_engineer",
+      "story": "Tauri desktop stackId yields M80 prefix wiremap (G-56)",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T03",
+          "input": {
+            "stackId": "tauri-desktop"
+          },
+          "expect": {
+            "ok": true,
+            "path": "wiremaps.0.moduleIds.0",
+            "eq": "M80-tauri-app-config"
+          },
+          "extraChecks": [
+            {
+              "path": "wiremaps.0.moduleIds.1",
+              "eq": "M81-tauri-updater-config"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UJ-119",
+      "persona": "platform_engineer",
+      "story": "Guardian-style HMAC webhook snippet passes M12 with equivalence registry (G-49)",
+      "tier": "pro",
+      "setup": {
+        "chain": "golden_att"
+      },
+      "steps": [
+        {
+          "tool": "T05",
+          "input": {
+            "moduleId": "M12-stripe-webhook",
+            "wiremapAttestation": "$wiremapAttestation",
+            "snippet": "async function verifyStripeSignature(body, sig, secret) { return crypto.subtle.verify(\"HMAC\", key, sigBytes, body); }\nasync function handleStripeWebhook(event) { switch (event.type) { case \"checkout.session.completed\": break; } }\nawait env.DB.prepare(\"INSERT INTO stripe_activation_email_deliveries (event_id)\").bind(event.id).run();"
+          },
+          "expect": {
+            "ok": true,
+            "path": "compliant",
+            "eq": true
+          },
+          "extraChecks": [
+            {
+              "path": "notAudited",
+              "eq": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UJ-118",
+      "persona": "security_lead",
+      "story": "T11 blocks when completedModules listed but verifiedModules empty (G-48)",
+      "tier": "armor",
+      "setup": {
+        "chain": "golden_att_full"
+      },
+      "steps": [
+        {
+          "tool": "T11",
+          "input": {
+            "wiremapAttestation": "$wiremapAttestation",
+            "wiremapContext": {
+              "completedModules": [
+                "M01-auth-d1-schema",
+                "M02-auth-worker-routes",
+                "M03-auth-resend-emails",
+                "M04-auth-ui-routes",
+                "M05-auth-session-middleware",
+                "M10-billing-d1-schema",
+                "M11-stripe-checkout-route",
+                "M12-stripe-webhook",
+                "M13-provisioning-kv",
+                "M14-billing-success-ui",
+                "M15-billing-dashboard-ui",
+                "M16-billing-emails",
+                "A02-session-hardening-pass",
+                "A03-webhook-hardening-pass"
+              ],
+              "verifiedModules": []
+            },
+            "confirmedChecklistIds": [
+              "cache-rules-explicit",
+              "per-ip-limits",
+              "rps-budget",
+              "baseline-load-test"
+            ],
+            "autoConfirmInfra": true
+          },
+          "expect": {
+            "ok": true,
+            "path": "ready",
+            "eq": false
+          },
+          "extraChecks": [
+            {
+              "path": "securityReady",
+              "eq": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UJ-055",
+      "persona": "maintainer",
+      "story": "Drift detected then recovery audit guides webhook fix before rollback",
+      "tier": "pro",
+      "steps": [
+        {
+          "tool": "T06",
+          "input": {
+            "session": {
+              "validatedStackHash": "stack-abc"
+            },
+            "stackSignals": {
+              "frontend": "nextjs"
+            },
+            "stateLogMarkdown": "### M12-stripe-webhook\n| status | complete |\n**fileHashes:**\n- src/app/api/webhooks/stripe/route.ts: sha256:deadbeef0000\n",
+            "diskFiles": {
+              "src/app/api/webhooks/stripe/route.ts": "broken handler"
+            }
+          },
+          "expect": {
+            "ok": true,
+            "path": "driftDetected",
+            "eq": true
+          }
+        },
+        {
+          "tool": "T07",
+          "input": {
+            "flowId": "billing-subscription",
+            "errorLog": "StripeSignature verification failed",
+            "symptoms": [
+              "webhook 400"
+            ]
+          },
+          "expect": {
+            "ok": true,
+            "path": "relatedModules",
+            "exists": true
+          }
+        },
+        {
+          "tool": "T08",
+          "input": {
+            "moduleId": "M12-stripe-webhook",
+            "stateLogMarkdown": "### M12-stripe-webhook\n| status | failed |\n"
+          },
+          "expect": {
+            "ok": true,
+            "path": "rollbackTo",
+            "eq": "M12-stripe-webhook"
+          }
+        }
+      ]
+    }
+  ]
+}

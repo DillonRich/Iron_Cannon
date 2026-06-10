@@ -1,0 +1,9 @@
+{
+  "refId": "legal/privacy-policy-link",
+  "sourceUrl": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/the-right-to-be-informed/",
+  "lastVerified": "2026-05-31",
+  "title": "Privacy policy link pattern",
+  "excerpt": "Privacy policy must be accessible at signup and in account settings. Link text should be clear ('Privacy Policy'). Route /privacy or external URL documented in config. Required for GDPR transparency hooks.",
+  "appliesTo": ["LEG-PRIV-001", "LEG-PRIV-002"],
+  "tags": ["legal", "privacy"]
+}

@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W53-019",
+  "obligationId": "LEG-W53-019",
+  "detectType": "route_exists",
+  "detect": {
+    "type": "route_exists",
+    "path": "/privacy/request"
+  },
+  "passSnippet": "export default function P(){return <main>/privacy/request</main>}",
+  "failSnippet": "<main>/missing</main>",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

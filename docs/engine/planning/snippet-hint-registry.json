@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/snippet-hint-registry/v1",
+  "version": "1.0.0",
+  "description": "T04 verify guidance — what agents should paste into T05 (Round 2 dogfood G-59).",
+  "hints": {
+    "M02-auth-worker-routes": {
+      "files": ["cloudflare-worker/src/index.ts", "src/index.ts"],
+      "symbols": ["handleRegister", "handleLogin", "getSessionUser"],
+      "why": "AUTH-RT-001 and AUTH-RT-002 are separate patterns — register-only snippets fail login (AUTH-RT-002)."
+    },
+    "M05-auth-session-middleware": {
+      "files": ["cloudflare-worker/src/index.ts"],
+      "symbols": ["browserPaths", "sessionCookie", "OPTIONS"],
+      "why": "Worker CORS preflight + origin-locked cookie satisfy AUTH-MW patterns (not only Next middleware)."
+    },
+    "M12-stripe-webhook": {
+      "files": ["cloudflare-worker/src/index.ts"],
+      "symbols": ["verifyStripeSignature", "handleStripeWebhook"],
+      "why": "STWH-002/003 idempotency and lifecycle signals live in the webhook handler, not the crypto helper alone."
+    },
+    "M04-auth-ui-routes": {
+      "files": ["website/register.html", "website/**/*.html"],
+      "symbols": [],
+      "why": "Include register/sign-in HTML with links to /legal#terms-of-service and /legal#privacy-policy."
+    },
+    "M11-stripe-checkout-route": {
+      "files": ["cloudflare-worker/src/index.ts"],
+      "symbols": ["checkout", "stripe.checkout.sessions.create"],
+      "why": "Paste the checkout session creation route handler, not only Stripe client init."
+    }
+  }
+}

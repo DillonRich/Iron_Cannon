@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-examples",
+  "sourceUrl": "https://resend.com/docs/examples.md",
+  "lastVerified": "2026-06-03",
+  "title": "Examples",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Examples > Explore sample apps for different use cases. ## Frameworks Full-stack Next.js app with TypeScript Full-stack Next.js app with JavaScript Express 5 examples (TypeScript and JavaScript) Hono examples (TypeScript and JavaScript) Bun examples (TypeScript and JavaScript) Remix examples (TypeScript and JavaScript) Nuxt 3 examples (TypeScript and JavaScript) SvelteKit examples (TypeScript and JavaScript) Astro examples (TypeScript and JavaScript) RedwoodJS examples (TypeScript and JavaScript) TanStack Start examples (TypeScript and JavaScript) PHP examples with Slim and Symfony Laravel 11 examples Python examp…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

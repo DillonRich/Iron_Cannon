@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/climate-orders-webhooks",
+  "sourceUrl": "https://docs.stripe.com/climate/orders/webhooks.md",
+  "lastVerified": "2026-06-03",
+  "title": "Webhooks for Climate Orders API",
+  "excerpt": "Learn about webhook events for products and orders. Stripe uses webhooks to notify your application when an event happens in your account. Set up a [webhook endpoint](https://docs.stripe.com/webhooks/quickstart.md) to listen for product availability and delivery updates. Stripe sends this event when Frontier adds a new product to the [carbon removal inventory](https://docs.stripe.com/climate/orders/carbon-removal-inventory.md). Use this event to keep your application up to date on the latest available products from Frontier. Stripe sends this event when the price changes for a product. We’ll notify you by email two weeks in advance, and then send this event when the price changes. Prices never change for confirmed orders.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

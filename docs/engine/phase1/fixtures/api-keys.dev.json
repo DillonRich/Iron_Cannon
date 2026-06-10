@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/api-keys-dev-registry/v1",
+  "warning": "DEV ONLY — never commit live keys. Production uses D1 api_keys.key_hash.",
+  "keys": [
+    {
+      "token": "ic_dev_pro_testkey12345678",
+      "tier": "pro",
+      "clientId": "dev-user-pro",
+      "label": "Local Cursor / CLI"
+    },
+    {
+      "token": "ic_dev_armor_armortest12345678",
+      "tier": "armor",
+      "clientId": "dev-user-armor",
+      "label": "Armor + infrastructure tools"
+    },
+    {
+      "token": "ic_dev_ironclad_legaltest12345678",
+      "tier": "ironclad",
+      "clientId": "dev-user-ironclad",
+      "label": "IronClad obligations"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-EDGE-002",
+  "obligationId": "LEG-EDGE-002",
+  "detectType": "ui_pattern",
+  "detect": {
+    "type": "ui_pattern",
+    "pattern": "payment failed|update payment"
+  },
+  "passSnippet": "/* payment failed|update payment */",
+  "failSnippet": "defaultChecked={true}",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

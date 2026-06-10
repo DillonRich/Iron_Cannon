@@ -1,0 +1,9 @@
+{
+  "refId": "legal/ada-title-iii-web",
+  "sourceUrl": "https://www.ada.gov/resources/web-guidance/",
+  "lastVerified": "2026-05-31",
+  "title": "ADA Title III web guidance (US advisory context)",
+  "excerpt": "DOJ guidance states website accessibility can be required for public accommodations under ADA. Iron Cannon provides WCAG-oriented technical checks only—not ADA legal analysis or litigation risk assessment. Optional /accessibility statement page for US markets.",
+  "appliesTo": ["LEG-GLOBAL-003", "accessibility-wcag"],
+  "tags": ["legal", "ada", "a11y", "advisory"]
+}

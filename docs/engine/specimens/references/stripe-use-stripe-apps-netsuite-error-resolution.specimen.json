@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/use-stripe-apps-netsuite-error-resolution",
+  "sourceUrl": "https://docs.stripe.com/use-stripe-apps/netsuite/error-resolution.md",
+  "lastVerified": "2026-06-03",
+  "title": "Troubleshoot the connector",
+  "excerpt": "Learn how to troubleshoot errors with the Stripe Connector for NetSuite. Use this guide to troubleshoot issues with the Stripe Connector for NetSuite, including identifying and resolving errors when syncing records or loading payment pages. For further assistance, contact your implementation partner or [Stripe support](https://support.stripe.com/contact/email?topic=stripe_apps&app=netsuite&subject=%5BStripe%20Connector%20for%20NetSuite%20\\(SCN\\)%5D). The following table describes data errors you might encounter when syncing records from Stripe to NetSuite. You can view all errors in the connector app’s sync records window.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

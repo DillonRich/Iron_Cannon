@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-chart-of-accounts",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/chart-of-accounts.md",
+  "lastVerified": "2026-06-03",
+  "title": "Map to your chart of accounts",
+  "excerpt": "Map transactions from the Stripe default accounts to the chart of accounts in your general ledger. You can customize Stripe Revenue Recognition reporting to use your General Ledger (GL) chart of accounts instead of using the default [Stripe accounts](https://docs.stripe.com/revenue-recognition/methodology.md). You can configure a rule to map transactions by product, shipping region, or invoice metadata to your GL account. Stripe applies your custom mappings to the [CSV reports](https://docs.stripe.com/revenue-recognition/reports.md#statements) you download and also when you [audit your revenue numbers](https://docs.stripe.com/revenue-recognition/reports/audit-numbers.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

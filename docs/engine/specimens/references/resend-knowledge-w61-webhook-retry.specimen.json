@@ -1,0 +1,14 @@
+{
+  "refId": "resend/knowledge-w61-webhook-retry",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w61/webhook-retry",
+  "lastVerified": "2026-06-06",
+  "title": "W61 webhook-retry",
+  "provider": "resend",
+  "excerpt": "Resend retries webhooks; handler must be idempotent on email.delivered and bounce events",
+  "embeddingHint": "resend webhook-retry wave61 knowledge",
+  "tags": [
+    "wave61",
+    "knowledge",
+    "resend"
+  ]
+}

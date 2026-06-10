@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/kv-index",
+  "sourceUrl": "https://developers.cloudflare.com/kv/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Cloudflare Workers KV",
+  "excerpt": "description: Workers KV is a global, low-latency, key-value data store for building dynamic and performant APIs and websites. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/kv/llms.txt > Use this file to discover all available pages before exploring further. Create a global, low-latency, key-value data storage. Workers KV is a data storage that allows you to store and retrieve data globally. With Workers KV, you can build dynamic and performant APIs and websites that support high read volumes with low latency.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

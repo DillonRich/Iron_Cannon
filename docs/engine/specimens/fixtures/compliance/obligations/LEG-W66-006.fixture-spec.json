@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W66-006",
+  "obligationId": "LEG-W66-006",
+  "detectType": "header",
+  "detect": {
+    "type": "header",
+    "name": "Strict-Transport-Security"
+  },
+  "passSnippet": "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
+  "failSnippet": "Subject: hello",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

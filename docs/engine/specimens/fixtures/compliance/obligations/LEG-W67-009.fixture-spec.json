@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W67-009",
+  "obligationId": "LEG-W67-009",
+  "detectType": "flow_ref",
+  "detect": {
+    "type": "flow_ref",
+    "flow": "security-audit"
+  },
+  "passSnippet": "flowRef security-audit",
+  "failSnippet": "flowRef unknown-flow",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

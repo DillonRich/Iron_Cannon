@@ -1,0 +1,8 @@
+{
+  "fixtureId": "DT-14",
+  "detectType": "flow_ref",
+  "passSnippet": "app/settings/delete-account/page.tsx",
+  "failSnippet": "settings page with billing tab only",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

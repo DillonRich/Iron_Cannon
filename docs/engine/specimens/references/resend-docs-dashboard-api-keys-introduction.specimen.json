@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-api-keys-introduction",
+  "sourceUrl": "https://resend.com/docs/dashboard/api-keys/introduction.md",
+  "lastVerified": "2026-06-03",
+  "title": "Introduction",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Introduction > Visualize all the API Keys on the Resend Dashboard. ## What is an API Key API Keys are secret tokens used to authenticate your requests. They are unique to your account and should be kept confidential. You can use multiple keys to isolate different application actions to different API Keys. This allows you to [view logs per key](#view-api-key-logs), detect possible abuse, and control any damage that may be done accidentally or maliciously. ## API key management You can view and manage your API keys from the [API Key Dashboard](https://resend.com/api-keys).…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

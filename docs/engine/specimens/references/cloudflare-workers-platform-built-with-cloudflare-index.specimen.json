@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-platform-built-with-cloudflare-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/platform/built-with-cloudflare/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Built with Cloudflare button",
+  "excerpt": "description: Set up a Built with Cloudflare button image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. If you're building an application or website on Cloudflare, you can embed a Built with Cloudflare button in your README, blog post, or documentation. ![Built with Cloudflare](https://workers.cloudflare.com/built-with-cloudflare.svg)",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

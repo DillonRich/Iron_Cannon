@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-integration-workflow-transitions",
+  "sourceUrl": "https://docs.stripe.com/invoicing/integration/workflow-transitions.md",
+  "lastVerified": "2026-06-03",
+  "title": "Status transitions and finalization",
+  "excerpt": "Learn about invoice status transitions and finalization. The following graphic shows the different ways that an invoice can transition from status to status: ![](https://b.stripecdn.com/docs-statics-srv/assets/invoice_states_diagram_simplified.6990197f2efb082ee5885ae3afb40fda.svg) The following table outlines the status transitions and their endpoints. It also lists the *webhooks* (A webhook is a real-time push notification sent to your application as a JSON payload through HTTPS requests) that are emitted by the endpoint, and the resulting status for each: | Status | API Endpoint | Emitted Webhook | End Status | | --------------- | ------------------------------------------------------------------------------------------------------ | ------------------------------ | --------------- |",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-payment-methods-integration-options",
+  "sourceUrl": "https://docs.stripe.com/payments/payment-methods/integration-options.md",
+  "lastVerified": "2026-06-03",
+  "title": "Integration Options",
+  "excerpt": "Learn about the different ways to integrate payment methods. You can add or remove payment methods directly from the [Stripe Dashboard](https://dashboard.stripe.com/settings/payment_methods) without writing any code. For example, you can turn on payment methods such as Apple Pay, Klarna, Affirm, iDEAL, and so on. See [Supported payment methods](https://docs.stripe.com/payments/payment-methods/overview.md) to learn more about all the payment methods your integration can support. The [payment methods](https://docs.stripe.com/payments/payment-methods/integration-options.md#payment-method-product-support) you can offer depend on the currency, country, and Stripe products you integrate with.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

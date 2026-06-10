@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api",
+  "sourceUrl": "https://docs.stripe.com/api.md",
+  "lastVerified": "2026-06-03",
+  "title": "API Reference",
+  "excerpt": "The Stripe API is organized around [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer). Our API has predictable resource-oriented URLs, accepts [form-encoded](https://en.wikipedia.org/wiki/POST_\\(HTTP\\)#Use_for_submitting_web_forms) request bodies, returns [JSON-encoded](http://www.json.org/) responses, and uses standard HTTP response codes, authentication, and verbs. You can use the Stripe API in [sandboxes](https://docs.stripe.com/sandboxes.md) without affecting your live data or interacting with banking networks. The API key that you use to [authenticate](https://docs.stripe.com/api/authentication.md) the request determines whether the request runs in live mode or in a sandbox. Sandboxes support all v2 APIs.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

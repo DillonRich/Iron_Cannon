@@ -1,0 +1,15 @@
+{
+  "refId": "nextjs/knowledge-w66-middleware-auth-guard",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w66/middleware-auth-guard",
+  "lastVerified": "2026-06-06",
+  "title": "W66 middleware-auth-guard",
+  "provider": "nextjs",
+  "excerpt": "Protect /app and /api routes with Next.js middleware session check",
+  "embeddingHint": "nextjs middleware-auth-guard wave66 tgs-v2",
+  "tags": [
+    "wave66",
+    "knowledge",
+    "nextjs",
+    "tgs-v2"
+  ]
+}

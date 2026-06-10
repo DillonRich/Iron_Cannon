@@ -1,0 +1,9 @@
+{
+  "fixtureId": "V02-L4-003",
+  "obligationId": "LEG-PRIV-001",
+  "detectType": "route_link",
+  "passSnippet": "<Link href=\"/privacy\">Privacy Policy</Link> on /signup",
+  "failSnippet": "Signup form with no privacy link",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

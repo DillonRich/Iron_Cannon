@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/webhook-signature",
+  "sourceUrl": "https://docs.stripe.com/webhooks/signatures",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe webhook signature verification",
+  "excerpt": "Use the raw request body (not parsed JSON) with Stripe-Signature header and endpoint secret via stripe.webhooks.constructEvent(). Reject with 400 if verification fails. Do not process events before verification.",
+  "appliesTo": ["billing-subscription", "layer2/stripe/webhook-handler"],
+  "tags": ["stripe", "security", "webhook"]
+}

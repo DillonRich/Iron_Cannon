@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W61-010",
+  "obligationId": "LEG-W61-010",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "pattern": "redact"
+  },
+  "passSnippet": "notice redact",
+  "failSnippet": "no match here",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

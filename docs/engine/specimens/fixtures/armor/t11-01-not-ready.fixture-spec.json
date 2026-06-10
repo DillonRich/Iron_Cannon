@@ -1,0 +1,9 @@
+{
+  "fixtureId": "T11-01",
+  "description": "Armor audit not ready when only M01 verified",
+  "input": {
+    "tier": "armor",
+    "wiremapContext": { "completedModules": ["M01-auth-d1-schema"] }
+  },
+  "expected": { "ok": true, "ready": false, "minUnmet": 2 }
+}

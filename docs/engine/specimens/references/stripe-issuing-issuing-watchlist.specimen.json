@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-issuing-watchlist",
+  "sourceUrl": "https://docs.stripe.com/issuing/issuing-watchlist.md",
+  "lastVerified": "2026-06-03",
+  "title": "Issuing watchlist",
+  "excerpt": "Learn about the Issuing watchlist process and best practices. Stripe automatically screens Issuing users against US and international sanctions lists. For Issuing, we screen all relevant data. Screening can occur based on events such as: If automated screening flags a user, Stripe opens a manual review for them. Our team reviews any flagged cardholders, and updates information about these cardholders within 24 hours. During the review, this process might impact your business, and all cards decline authorizations with the `cardholder_verification_required` reason. Make sure your integration listens to the [issuing_cardholder.updated](https://docs.stripe.com/api/events/types.md#event_types-issuing_cardholder.updated) [webhook](https://docs.stripe.com/webhooks.md) events.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

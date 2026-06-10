@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-functions-middleware-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/functions/middleware/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Middleware",
+  "excerpt": "description: Add reusable logic like error handling and authentication to Pages Functions with middleware. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. Middleware is reusable logic that can be run before your [onRequest](https://developers.cloudflare.com/pages/functions/api-reference/#onrequests) function. Middlewares are typically utility functions. Error handling, user authentication, and logging are typical candidates for middleware within an application.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

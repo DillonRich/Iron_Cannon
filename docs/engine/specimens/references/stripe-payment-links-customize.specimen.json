@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payment-links-customize",
+  "sourceUrl": "https://docs.stripe.com/payment-links/customize.md",
+  "lastVerified": "2026-06-03",
+  "title": "Customize checkout for Payment Links",
+  "excerpt": "Collect additional information, taxes, or update your branding. When you create a payment link, you can customize the look and feel of a Checkout Session for your user. You can also choose what type of customer information to collect and save for later. See [After a payment link payment](https://docs.stripe.com/payment-links/post-payment.md) for more information about customizing a session post-payment, such as redirecting the customer to a branded confirmation page or emailing a receipt. You can limit the number of times a payment link is paid for. For example, you can place a limit if you have limited inventory, or only want the links to be used once. When the payment link reaches the limit, it automatically deactivates and customers can’t use it to make a purchase.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

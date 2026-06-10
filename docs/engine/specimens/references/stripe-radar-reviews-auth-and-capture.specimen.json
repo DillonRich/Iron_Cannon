@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/radar-reviews-auth-and-capture",
+  "sourceUrl": "https://docs.stripe.com/radar/reviews/auth-and-capture.md",
+  "lastVerified": "2026-06-03",
+  "title": "Review uncaptured payments",
+  "excerpt": "Learn how to use reviews if your Stripe integration uses auth and capture. By default, you [create payments](https://docs.stripe.com/payments/accept-a-payment.md) in one step. You don’t need to do anything else to send funds to your bank account. Stripe also supports two-step payments, often called [auth and capture](https://docs.stripe.com/payments/place-a-hold-on-a-payment-method.md). If your integration uses this method, approving a review and capturing a payment are separate actions.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

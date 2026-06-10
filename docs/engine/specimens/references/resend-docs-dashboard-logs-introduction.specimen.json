@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-logs-introduction",
+  "sourceUrl": "https://resend.com/docs/dashboard/logs/introduction.md",
+  "lastVerified": "2026-06-03",
+  "title": "Introduction",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Introduction > Learn how to view and troubleshoot API logs. ## Overview Logs are a powerful tool for monitoring activity and troubleshooting issues. Access your logs from the [Logs page](https://resend.com/logs) in the dashboard. Each log entry shows: * **Endpoint** - The API endpoint called (e.g., `/domains`, `/api-keys`, `/contacts`) * **Status** - The HTTP response status code (200, 201, etc.) * **Method** - The HTTP method used (GET, POST, DELETE, etc.) * **Created** - When the request was made (displayed as relative time) ## Searching Logs Use the search bar to find specific logs.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

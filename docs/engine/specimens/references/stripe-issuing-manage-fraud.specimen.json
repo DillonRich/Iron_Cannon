@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-manage-fraud",
+  "sourceUrl": "https://docs.stripe.com/issuing/manage-fraud.md",
+  "lastVerified": "2026-06-03",
+  "title": "Manage fraud with Stripe Issuing controls and tools",
+  "excerpt": "Understand how transaction fraud can impact your Issuing program and the steps you can take to combat it. As a payment facilitation product, Issuing inherently incurs potential fraud risks and liabilities for both businesses and issuers. You need to understand what transaction fraud is, who’s liable when fraud occurs, and the best ways to monitor for and prevent fraud using the resources available from Stripe. By understanding your roles and responsibilities and effectively using Stripe’s resources, you can reduce these risks to levels that you deem appropriate for your business.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

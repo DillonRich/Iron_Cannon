@@ -1,0 +1,14 @@
+{
+  "refId": "owasp/knowledge-w62-session-fixation",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w62/session-fixation",
+  "lastVerified": "2026-06-06",
+  "title": "W62 session-fixation",
+  "provider": "owasp",
+  "excerpt": "Call session.regenerate() after login; invalidate old session id",
+  "embeddingHint": "owasp session-fixation wave62",
+  "tags": [
+    "wave62",
+    "knowledge",
+    "owasp"
+  ]
+}

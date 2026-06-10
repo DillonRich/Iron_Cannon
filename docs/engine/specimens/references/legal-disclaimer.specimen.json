@@ -1,0 +1,9 @@
+{
+  "refId": "legal/disclaimer",
+  "sourceUrl": "https://ironcannon.dev/legal/disclaimer",
+  "lastVerified": "2026-05-31",
+  "title": "Iron Cannon legal disclaimer",
+  "excerpt": "Iron Cannon provides technical compliance comparison and security guidance. It does not provide legal advice. Layer 4 outputs require legalDisclaimer field on every T12–T14 response. Users must consult qualified counsel for jurisdiction-specific obligations.",
+  "appliesTo": ["layer4", "ironclad"],
+  "tags": ["legal", "disclaimer", "ironclad"]
+}

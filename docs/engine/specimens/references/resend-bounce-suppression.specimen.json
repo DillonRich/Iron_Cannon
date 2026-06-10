@@ -1,0 +1,14 @@
+{
+  "refId": "resend/bounce-suppression",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/resend-bounce-suppression",
+  "lastVerified": "2026-06-04",
+  "title": "Bounce webhook updates suppression within one hour",
+  "provider": "resend",
+  "excerpt": "LEG-W53-013: Bounce webhook updates suppression within one hour",
+  "embeddingHint": "LEG-W53-013 email config",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

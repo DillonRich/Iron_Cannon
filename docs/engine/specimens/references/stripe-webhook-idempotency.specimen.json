@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/webhook-idempotency",
+  "sourceUrl": "https://docs.stripe.com/webhooks/best-practices",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe webhook idempotency",
+  "excerpt": "Stripe may deliver the same event more than once. Store processed event IDs (e.g. stripe_evt:{event.id}) before side effects. Return 2xx only after durable idempotency check. Handle out-of-order delivery by reconciling from Stripe API when state is ambiguous.",
+  "appliesTo": ["webhook-idempotency", "billing-subscription", "layer2/stripe/webhook-handler"],
+  "tags": ["stripe", "webhook", "idempotency"]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-supported-embedded-components-capital-financing",
+  "sourceUrl": "https://docs.stripe.com/connect/supported-embedded-components/capital-financing.md",
+  "lastVerified": "2026-06-03",
+  "title": "Capital financing component",
+  "excerpt": "Allow a connected account to view and manage their active Capital financing. The Capital financing embedded component allows connected accounts to view and manage their financing status after they accept an offer. Connected accounts can: - Make payments, if applicable to their [type of financing](https://docs.stripe.com/capital/how-capital-for-platforms-works.md#types-of-financing-offers) Note: The following is a preview/demo component that behaves differently than live mode usage with real connected accounts. The actual component has more functionality than what might appear in this demo component. For example, for connected accounts without Stripe dashboard access (custom accounts), no user authentication is required in production.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

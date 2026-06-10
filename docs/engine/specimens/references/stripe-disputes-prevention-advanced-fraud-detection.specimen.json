@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/disputes-prevention-advanced-fraud-detection",
+  "sourceUrl": "https://docs.stripe.com/disputes/prevention/advanced-fraud-detection.md",
+  "lastVerified": "2026-06-03",
+  "title": "Advanced fraud detection",
+  "excerpt": "Learn about tools developers can use to maximize Stripe's ability to prevent fraudulent payments. [Stripe.js](https://docs.stripe.com/js.md) is Stripe’s JavaScript library designed to enable businesses to securely collect sensitive payment information from the customer’s browser. The [Stripe In-App Payments](https://docs.stripe.com/payments/mobile.md) provides the native iOS and Android counterparts to Stripe.js. Stripe.js and the mobile SDKs provide advanced fraud detection by looking at risk factors about device characteristics and user activity that help distinguish between legitimate and fraudulent transactions.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

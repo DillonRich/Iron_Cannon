@@ -1,0 +1,16 @@
+{
+  "refId": "supabase/svc002-supabase-rls-enable-policies-002",
+  "sourceUrl": "https://ironcannon.dev/svc002/supabase/rls-enable-policies-2",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-002 rls-enable-policies 2",
+  "provider": "supabase",
+  "excerpt": "Enable row level security on auth-linked tables; policies scope rows to auth.uid().",
+  "embeddingHint": "supabase rls-enable-policies svc002 supabase sd-07 rls ssr",
+  "tags": [
+    "svc002",
+    "supabase",
+    "sd-07",
+    "supabase",
+    "rls-enable-policies"
+  ]
+}

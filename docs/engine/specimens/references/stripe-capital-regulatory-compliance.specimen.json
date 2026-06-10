@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/capital-regulatory-compliance",
+  "sourceUrl": "https://docs.stripe.com/capital/regulatory-compliance.md",
+  "lastVerified": "2026-06-03",
+  "title": "Regulatory compliance guidelines",
+  "excerpt": "Learn about the requirements and guidelines for regulatory compliance. > Capital for platforms is available in [public preview](https://docs.stripe.com/release-phases.md). Review the Capital regulatory guidelines for platforms in the United States (US) or United Kingdom (GB). To offer and promote Stripe Capital to your users, your platform’s marketing and user interfaces must adhere to the following regulatory compliance guidelines. These guidelines can help your platform and users (connected accounts) navigate the financial regulations applicable to Capital. Marketing Capital to your users is subject to regulatory compliance that can result in fines and reputational damage if you fail to adhere.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-mobile-migrating-to-mobile-payment-element-from-basic-integration",
+  "sourceUrl": "https://docs.stripe.com/payments/mobile/migrating-to-mobile-payment-element-from-basic-integration.md",
+  "lastVerified": "2026-06-03",
+  "title": "Migrate from the Basic Integration to the Payment Sheet",
+  "excerpt": "Upgrade your legacy mobile SDK integration before we remove it from the SDK. Effective November 4, 2024, Stripe’s [iOS SDK](https://github.com/stripe/stripe-ios), [Android SDK](https://github.com/stripe/stripe-android), and [React Native SDK](https://github.com/stripe/stripe-react-native) no longer support our legacy Basic Integration for collecting credit card and wallet payments. - To use SDK versions published after November 4, 2024, you must remove the Basic Integration code references in your app and upgrade to the Payment Sheet. - You can still process payments through older versions of the SDK, but you risk missing critical security enhancements and new features.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

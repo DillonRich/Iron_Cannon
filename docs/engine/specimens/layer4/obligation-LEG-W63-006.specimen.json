@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w63-006",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Third-party payment fields use hosted Elements only",
+    "obligations": [
+      "LEG-W63-006"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Third-party payment fields use hosted Elements only"
+  },
+  "references": [
+    "owasp/cheatsheets-third-party-payment-gateway-integration-cheat-sheet-html"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W63-006",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "billing",
+    "disclaimerRequired": true
+  }
+}

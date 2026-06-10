@@ -1,0 +1,16 @@
+{
+  "refId": "owasp/cheatsheets-java-security-cheat-sheet-html",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Java_Security_Cheat_Sheet.html",
+  "lastVerified": "2026-06-05",
+  "title": "Java Security Cheat Sheet",
+  "excerpt": "Java Security - OWASP Cheat Sheet Series Skip to content OWASP Cheat Sheet Series Java Security Initializing search OWASP/CheatSheetSeries OWASP Cheat Sheet Series OWASP/CheatSheetSeries Introduction Index Alphabetical Index ASVS Index MASVS Index Proactive Controls Index Top 10 Cheatsheets Cheatsheets AI Agent Security AJAX Security AML Sanctions AI Agent Payments Abuse Case Access Control Attack Surface Analysis Authentication Authorization Authorization Testing Automation Automotive Security Bean Validation Bot Management and Anti-Automation Browser Extension Vulnerabilities Business Logic Security C-Based Toolchain Hardening CI CD Security Choosing and Using Security Questions Clickjacking Defense Content Security Policy Cookie Theft Mitigation Credential Stuffing Prevention Cross-Site…",
+  "appliesTo": [
+    "security",
+    "auth",
+    "billing"
+  ],
+  "tags": [
+    "owasp",
+    "p0"
+  ]
+}

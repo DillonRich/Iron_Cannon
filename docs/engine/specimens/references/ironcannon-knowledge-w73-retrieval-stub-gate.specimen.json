@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w73-retrieval-stub-gate",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w73/retrieval-stub-gate",
+  "lastVerified": "2026-06-06",
+  "title": "W73 retrieval-stub-gate",
+  "provider": "ironcannon",
+  "excerpt": "Retrieval stub passes before RAG enablement",
+  "embeddingHint": "ironcannon retrieval-stub-gate wave73 armor-hardening",
+  "tags": [
+    "wave73",
+    "knowledge",
+    "ironcannon",
+    "armor-hardening"
+  ]
+}

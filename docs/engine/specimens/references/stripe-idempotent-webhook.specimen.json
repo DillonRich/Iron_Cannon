@@ -1,0 +1,11 @@
+{
+  "refId": "stripe/idempotent-webhook",
+  "sourceUrl": "https://stripe.com/docs/webhooks",
+  "lastVerified": "2026-06-03",
+  "title": "Webhook idempotency",
+  "excerpt": "Store processed event IDs; return 2xx only after side effects complete.",
+  "tags": [
+    "stripe",
+    "security"
+  ]
+}

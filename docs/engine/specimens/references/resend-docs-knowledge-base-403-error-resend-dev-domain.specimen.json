@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-403-error-resend-dev-domain",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/403-error-resend-dev-domain.md",
+  "lastVerified": "2026-06-03",
+  "title": "403 Error Using resend.dev Domain",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # 403 Error Using resend.dev Domain > Learn how to resolve a 403 error when using the resend.dev domain to send emails to recipients other than your own. You may receive a 403 error with the following message when trying to send emails: ``` You can only send testing emails to your own email address (your-email-address@domain.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain. ``` ## The Problem You're using the default `resend.dev` domain while sending to email addresses other than your own.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

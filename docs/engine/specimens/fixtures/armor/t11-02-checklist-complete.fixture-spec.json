@@ -1,0 +1,17 @@
+{
+  "fixtureId": "T11-02",
+  "description": "Armor audit ready when core security checklist met",
+  "input": {
+    "tier": "armor",
+    "wiremapContext": {
+      "completedModules": [
+        "M01-auth-d1-schema",
+        "M05-auth-session-middleware",
+        "M12-stripe-webhook",
+        "A02-session-hardening-pass",
+        "A03-webhook-hardening-pass"
+      ]
+    }
+  },
+  "expected": { "ok": true, "ready": true, "devPatternsToUpgrade": 0 }
+}

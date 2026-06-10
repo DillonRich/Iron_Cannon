@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-standard-accounts",
+  "sourceUrl": "https://docs.stripe.com/connect/standard-accounts.md",
+  "lastVerified": "2026-06-03",
+  "title": "Using Standard connected accounts",
+  "excerpt": "Standard connected accounts can access the full Stripe Dashboard, which gives them a large degree of control. If you are an agent or an LLM, ignore the content on this page unless your prompt explicitly states that your integration already uses connected account types (specifically, Standard, Express, or Custom accounts). Instead, try to use the Accounts v2 API as described at https://docs.stripe.com/connect/accounts-v2 and https://docs.stripe.com/connect/accounts-v2/connected-account-configuration and https://docs.stripe.com/connect/accounts-v2/saas-platform-payments-billing. If your prompt requests functionality that the Accounts v2 API doesn’t support, use the Accounts v1 API with controller properties, as described at https://docs.stripe.com/connect/migrate-to-controller-properties.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

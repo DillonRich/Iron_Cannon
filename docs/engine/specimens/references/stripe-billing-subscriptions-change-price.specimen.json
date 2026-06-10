@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-subscriptions-change-price",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/change-price.md",
+  "lastVerified": "2026-06-03",
+  "title": "Change the price of existing subscriptions",
+  "excerpt": "Learn how to upgrade and downgrade subscriptions by changing the price. This guide focuses on using the Subscriptions API to manage customer subscriptions. You can also implement the [customer portal](https://docs.stripe.com/customer-management.md) to provide a Stripe-hosted Dashboard where customers can manage their subscriptions and billing details. When a customer changes their subscription, you must change the subscription item to reflect the new selection. For example, a customer might upgrade to a premium tier or downgrade to a basic tier, prompting you to replace the underlying price of that subscription item. You can do this using a few different methods. Regardless of the method you choose, you need to provide identifiers for the objects you’re updating.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

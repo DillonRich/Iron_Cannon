@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-how-do-i-avoid-icloud-spam-folder",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/how-do-i-avoid-icloud-spam-folder.md",
+  "lastVerified": "2026-06-07",
+  "title": "How do I avoid iCloud's spam folder?",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # How do I avoid iCloud's spam folder? > Learn how to improve inbox placement in iCloud Mail. This guide is adapted from Apple's article on [bulk email sending best practices for iCloud Mail](https://support.apple.com/en-us/HT204137). Many of these recommendations also apply to Gmail and Outlook, so be sure to read [How do I avoid Gmail's spam folder?](/knowledge-base/how-do-i-avoid-gmails-spam-folder) and [How do I avoid Outlook's spam folder?](/knowledge-base/how-do-i-avoid-outlooks-spam-folder). Apple does not offer allowlists or feedback loops for iCloud Mail.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

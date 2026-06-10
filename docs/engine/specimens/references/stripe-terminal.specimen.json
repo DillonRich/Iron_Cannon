@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/terminal",
+  "sourceUrl": "https://docs.stripe.com/terminal.md#features",
+  "lastVerified": "2026-06-03",
+  "title": "features",
+  "excerpt": "Use Stripe Terminal to accept in-person payments. Stripe Terminal allows businesses to accept in-person payments. You can manage both in-person payments and online payments in a unified system in the [Dashboard](https://dashboard.stripe.com/terminal). You can also integrate Terminal with your [Connect platform](https://docs.stripe.com/terminal.md#platforms). Learn more about Terminal’s [features](https://docs.stripe.com/terminal.md#features) and [availability by country](https://docs.stripe.com/terminal/payments/collect-card-payment/supported-card-brands.md). Use Stripe Terminal to unify online and in-person payments.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

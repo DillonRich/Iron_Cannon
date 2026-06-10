@@ -1,0 +1,14 @@
+{
+  "refId": "legal/billing-grace-ui",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/legal-billing-grace-ui",
+  "lastVerified": "2026-06-04",
+  "title": "Failed payment retry shows grace period in UI",
+  "provider": "legal",
+  "excerpt": "LEG-W53-005: Failed payment retry shows grace period in UI",
+  "embeddingHint": "LEG-W53-005 billing ui_pattern",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

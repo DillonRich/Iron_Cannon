@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w80-svc002-harvest-gate",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w80/svc002-harvest-gate",
+  "lastVerified": "2026-06-06",
+  "title": "W80 svc002-harvest-gate",
+  "provider": "ironcannon",
+  "excerpt": "SVC-002 Phase B harvest before wave 81 signoff",
+  "embeddingHint": "ironcannon svc002-harvest-gate wave80 svc-002-supabase-harvest",
+  "tags": [
+    "wave80",
+    "knowledge",
+    "ironcannon",
+    "svc-002-supabase-harvest"
+  ]
+}

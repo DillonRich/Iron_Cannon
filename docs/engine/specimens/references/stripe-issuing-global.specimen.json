@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-global",
+  "sourceUrl": "https://docs.stripe.com/issuing/global.md",
+  "lastVerified": "2026-06-03",
+  "title": "Use Stripe Issuing in different countries",
+  "excerpt": "Learn how different integration options vary by country. Stripe Issuing offers solutions for platforms to provide cards to businesses across multiple geographies. This guide explains the different integration options available for issuing cards globally, including local issuing and cross-border issuing through programs for multinational companies and stablecoin-backed cards. - Apply for early access to expand your card program internationally using a cross-border issuing integration that allows you to: - Serve multinational companies with subsidiaries in multiple countries. - Issue stablecoin-backed cards in more than 30 countries across Latin America, the Caribbean, and Africa.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

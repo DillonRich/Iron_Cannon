@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-languages-python-ffi-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/languages/python/ffi/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Foreign Function Interface (FFI)",
+  "excerpt": "description: Call JavaScript APIs, bindings, and globals from Python Workers using the Pyodide FFI. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Via [Pyodide ↗](https://pyodide.org/en/stable/), Python Workers provide a [Foreign Function Interface (FFI) ↗](https://en.wikipedia.org/wiki/Foreign%5Ffunction%5Finterface) to JavaScript.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

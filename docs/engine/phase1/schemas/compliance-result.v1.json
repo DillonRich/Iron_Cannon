@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ironcannon.dev/schemas/compliance-result/v1",
+  "type": "object",
+  "required": ["passed", "moduleId", "missingRequirements"],
+  "additionalProperties": true,
+  "properties": {
+    "passed": { "type": "boolean" },
+    "moduleId": { "type": "string" },
+    "missingRequirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["patternId", "message"],
+        "properties": {
+          "patternId": { "type": "string" },
+          "message": { "type": "string" },
+          "fileGlob": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "falseComplianceDetected": { "type": "boolean" }
+  }
+}

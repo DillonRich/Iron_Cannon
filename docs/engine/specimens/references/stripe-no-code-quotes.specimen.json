@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/no-code-quotes",
+  "sourceUrl": "https://docs.stripe.com/no-code/quotes.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send quotes",
+  "excerpt": "Send a quote and convert it to a payment or subscription. - **Compatible with:** Subscriptions, invoices - **Good for:** Online sellers, individual creators, solo entrepreneurs, early-stage startups - **Pricing:** [Pay-as-you-go](https://stripe.com/pricing), [Stripe Billing pricing](https://stripe.com/billing/pricing) for recurring payments, [Invoicing pricing](https://stripe.com/invoicing/pricing) for advanced invoicing features With quotes, provide price estimates to your customers that you can convert into *invoices* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "refId": "stripe/payment-methods",
+  "sourceUrl": "https://docs.stripe.com/payments/payment-methods",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe Payment methods",
+  "excerpt": "Attach payment methods to Customer for off-session billing. Checkout creates default payment method on subscription mode sessions.",
+  "appliesTo": [
+    "billing-subscription"
+  ],
+  "tags": [
+    "stripe"
+  ]
+}

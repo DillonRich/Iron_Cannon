@@ -1,0 +1,14 @@
+{
+  "refId": "owasp/knowledge-w62-csrf-double-submit",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w62/csrf-double-submit",
+  "lastVerified": "2026-06-06",
+  "title": "W62 csrf-double-submit",
+  "provider": "owasp",
+  "excerpt": "Use synchronizer token pattern; validate Origin/Referer on state-changing requests",
+  "embeddingHint": "owasp csrf-double-submit wave62",
+  "tags": [
+    "wave62",
+    "knowledge",
+    "owasp"
+  ]
+}

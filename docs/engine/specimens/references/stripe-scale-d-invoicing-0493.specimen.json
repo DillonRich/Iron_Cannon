@@ -1,0 +1,13 @@
+{
+  "refId": "stripe/scale-d-invoicing-0493",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/stripe/scale-d-invoicing-0493",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-D invoicing 493",
+  "excerpt": "Invoice PDF retention and tax line item disclosure. Scale-D planning reference for Iron Cannon MCP agents at 10k corpus depth.",
+  "tags": [
+    "stripe",
+    "invoicing",
+    "scale-d"
+  ],
+  "embeddingHint": "stripe invoicing Invoice PDF retention and tax line item disclosure scale-d compliance security"
+}

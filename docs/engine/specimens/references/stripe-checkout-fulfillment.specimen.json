@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/checkout-fulfillment",
+  "sourceUrl": "https://docs.stripe.com/checkout/fulfillment.md",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe Checkout fulfillment",
+  "excerpt": "Fulfill orders/subscriptions in webhook handler, not only on success page. Retrieve session with stripe.checkout.sessions.retrieve if needed. Grant product access idempotently using event.id. success_url should show provisional UI until backend confirms subscription active.",
+  "appliesTo": ["billing-race-shield", "E03", "M12-stripe-webhook"],
+  "tags": ["stripe", "checkout", "webhook"]
+}

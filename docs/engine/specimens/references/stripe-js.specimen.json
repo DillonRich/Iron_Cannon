@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/js",
+  "sourceUrl": "https://docs.stripe.com/js",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe.js",
+  "excerpt": "This reference documents every object and method available in Stripe’s browser-side JavaScript library, Stripe.js. Use our [React Stripe.js reference](https://docs.stripe.com/stripe-js/react.md) if you want to add Elements to your React based app. You can use Stripe.js’ APIs to tokenize customer information, collect sensitive payment details using customizable [Stripe Elements](https://docs.stripe.com/payments/elements.md), and accept payments with [browser payment APIs](https://docs.stripe.com/stripe-js/elements/payment-request-button.md) like Apple Pay and the Payment Request API.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

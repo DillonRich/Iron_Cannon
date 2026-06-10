@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-money-movement-timelines",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/money-movement/timelines.md",
+  "lastVerified": "2026-06-03",
+  "title": "Money movement timelines",
+  "excerpt": "Learn about the timelines for various types of money movement with Treasury for platforms. Stripe Treasury for platforms integrates with banking partners and payment networks, which have varying processing and cutoff times. | Network | Behavior | | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

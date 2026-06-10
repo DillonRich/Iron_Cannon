@@ -1,0 +1,16 @@
+{
+  "refId": "owasp/cheatsheets-bot-management-and-anti-automation-cheat-sheet-html",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Bot_Management_and_Anti-Automation_Cheat_Sheet.html",
+  "lastVerified": "2026-06-05",
+  "title": "Bot Management and Anti-Automation Cheat Sheet",
+  "excerpt": "Bot Management and Anti-Automation - OWASP Cheat Sheet Series Skip to content OWASP Cheat Sheet Series Bot Management and Anti-Automation Initializing search OWASP/CheatSheetSeries OWASP Cheat Sheet Series OWASP/CheatSheetSeries Introduction Index Alphabetical Index ASVS Index MASVS Index Proactive Controls Index Top 10 Cheatsheets Cheatsheets AI Agent Security AJAX Security AML Sanctions AI Agent Payments Abuse Case Access Control Attack Surface Analysis Authentication Authorization Authorization Testing Automation Automotive Security Bean Validation Bot Management and Anti-Automation Bot Management and Anti-Automation Table of contents Introduction Common Threats and Risks Threat Modeling Before Controls Layered Defense Architecture Rate Limiting and Quotas Device and Network Fingerprint…",
+  "appliesTo": [
+    "security",
+    "auth",
+    "billing"
+  ],
+  "tags": [
+    "owasp",
+    "p0"
+  ]
+}

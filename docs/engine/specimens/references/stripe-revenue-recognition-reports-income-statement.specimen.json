@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-reports-income-statement",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/reports/income-statement.md",
+  "lastVerified": "2026-06-03",
+  "title": "Income statement",
+  "excerpt": "Analyze revenue, expenses, and net income with the income statement report. The [income statement](https://dashboard.stripe.com/revenue-recognition/statements?tab=income_statement) provides details about your company’s financial performance for a specified period. It calculates net revenue by subtracting total contra revenue from total revenue, and determines net income by adding gains and subtracting expenses and losses from net revenue. This analysis lets you assess financial health and understand the impacts of contra revenue, expenses, and gains.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

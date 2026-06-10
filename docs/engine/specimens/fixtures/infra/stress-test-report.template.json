@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/stress-test-report/v1",
+  "reportId": "stress-YYYY-MM-DD",
+  "environment": "staging",
+  "targets": {
+    "expectedPeakRps": 500,
+    "expectedUsers": 1000000,
+    "durationMinutes": 30
+  },
+  "scenarios": [
+    {
+      "id": "auth-signup-ramp",
+      "tool": "k6",
+      "path": "/api/auth/signup",
+      "result": "pass",
+      "p95Ms": null,
+      "errorRatePct": null
+    },
+    {
+      "id": "stripe-webhook-burst",
+      "tool": "manual-replay",
+      "path": "/api/webhooks/stripe",
+      "result": "pending",
+      "notes": "Parallel constructEvent delivery with idempotency KV"
+    }
+  ],
+  "infraDomainsVerified": [
+    "INFRA-CACHE",
+    "INFRA-RATE-LIMIT",
+    "INFRA-CAPACITY",
+    "INFRA-STRESS"
+  ],
+  "agentNote": "Attach this artifact when passing confirmedChecklistIds to audit_production_readiness (T11)."
+}

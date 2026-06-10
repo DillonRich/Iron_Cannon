@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-account-quotas-and-limits",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/account-quotas-and-limits.md",
+  "lastVerified": "2026-06-03",
+  "title": "What are Resend account quotas and limits?",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # What are Resend account quotas and limits? > Learn what quotas and limits apply to accounts. Resend regulates email volume in three ways: 1. email volume (quota) - for [Transactional Email](/knowledge-base/what-sending-feature-to-use#what-is-a-transactional-email) 2. number of contacts - for [Marketing Email](/knowledge-base/what-sending-feature-to-use#what-is-a-marketing-email) 3. sending rate These limits help improve your deliverability and likelihood of reaching your recipient's inbox. Both **sent emails** and **received emails** (inbound) count towards your account's email quota.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

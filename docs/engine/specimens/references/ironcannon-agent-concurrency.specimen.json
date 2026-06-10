@@ -1,0 +1,10 @@
+{
+  "refId": "ironcannon/agent-concurrency",
+  "sourceUrl": "https://ironcannon.dev/patterns/agent-concurrency",
+  "lastVerified": "2026-05-31",
+  "title": "IC single-agent concurrency limit",
+  "excerpt": "One active agent per repo. CONCURRENT_AGENT_SUSPECTED if session writer mismatch. Run T06 before T05 after agent switch.",
+  "appliesTo": ["SESSION_RESUME_PROTOCOL", "T06"],
+  "tags": ["ironcannon", "pattern"],
+  "authorship": "iron-cannon-pattern"
+}

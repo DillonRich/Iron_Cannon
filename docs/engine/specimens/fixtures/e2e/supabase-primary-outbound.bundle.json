@@ -1,0 +1,307 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/golden-path-outbound-bundle/v1",
+  "chainId": "GP-SUPABASE-PRIMARY-07",
+  "description": "SD-07 Supabase-primary — M70→M71→M11–M16",
+  "rulesetVersion": "2026.05.31",
+  "stackId": "SD-07",
+  "moduleOrder": [
+    "M70-supabase-auth-config",
+    "M71-supabase-middleware-ssr",
+    "M11-stripe-checkout-route",
+    "M12-stripe-webhook",
+    "M13-provisioning-kv",
+    "M14-billing-success-ui",
+    "M15-billing-dashboard-ui",
+    "M16-billing-emails"
+  ],
+  "modules": {
+    "M11-stripe-checkout-route": {
+      "fixtureId": "GP-M11-OUT",
+      "tool": "T04",
+      "moduleId": "M11-stripe-checkout-route",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "billing-subscription",
+      "fragmentIds": [
+        "layer1/billing-subscription/checkout-route"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "BILL-CK-001",
+          "BILL-CK-002",
+          "BILL-CK-003"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "stripe/checkout-subscription",
+          "stripe/checkout-success-page",
+          "stripe/customer-portal"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M12-stripe-webhook",
+        "verifyGateBlocksNext": true,
+        "prevModuleId": "M71-supabase-middleware-ssr"
+      }
+    },
+    "M12-stripe-webhook": {
+      "fixtureId": "GP-M12-OUT",
+      "tool": "T04",
+      "moduleId": "M12-stripe-webhook",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "billing-subscription",
+      "fragmentIds": [
+        "stripe/webhook-handler"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "STWH-001",
+          "STWH-002",
+          "STWH-003"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "stripe/webhook-signature",
+          "stripe/webhook-idempotency"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M13-provisioning-kv",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M13-provisioning-kv": {
+      "fixtureId": "GP-M13-OUT",
+      "tool": "T04",
+      "moduleId": "M13-provisioning-kv",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "billing-race-shield",
+      "fragmentIds": [
+        "layer1/billing-race-shield/provisioning-kv"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "BILL-KV-001",
+          "BILL-KV-002",
+          "BILL-KV-003"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "cloudflare/kv-ttl",
+          "cloudflare/kv-session-pattern"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M14-billing-success-ui",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M14-billing-success-ui": {
+      "fixtureId": "GP-M14-OUT",
+      "tool": "T04",
+      "moduleId": "M14-billing-success-ui",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "billing-race-shield",
+      "fragmentIds": [
+        "layer1/billing-race-shield/success-ui"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "BILL-UI-001",
+          "BILL-UI-002"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "nextjs/router-refresh",
+          "nextjs/loading-error-ui",
+          "stripe/checkout-success-page"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M15-billing-dashboard-ui",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M15-billing-dashboard-ui": {
+      "fixtureId": "GP-M15-OUT",
+      "tool": "T04",
+      "moduleId": "M15-billing-dashboard-ui",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "billing-subscription",
+      "fragmentIds": [
+        "layer1/billing-subscription/dashboard-ui"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "BILL-DH-001",
+          "BILL-DH-002"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "stripe/customer-portal",
+          "nextjs/loading-error-ui"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M16-billing-emails",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M16-billing-emails": {
+      "fixtureId": "GP-M16-OUT",
+      "tool": "T04",
+      "moduleId": "M16-billing-emails",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "email-lifecycle",
+      "fragmentIds": [
+        "layer1/email-lifecycle/billing-emails"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "BILL-EM-001",
+          "BILL-EM-002",
+          "BILL-EM-003"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "resend/send-api",
+          "resend/transactional-vs-broadcast",
+          "legal/transactional-vs-marketing"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": null,
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M70-supabase-auth-config": {
+      "fixtureId": "GP-M70-OUT",
+      "tool": "T04",
+      "moduleId": "M70-supabase-auth-config",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "auth-lifecycle",
+      "fragmentIds": [
+        "layer2/supabase/auth-config"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "SUPA-CFG-001",
+          "SUPA-CFG-002"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "supabase/knowledge-w80-anon-client-browser",
+          "supabase/knowledge-w80-rls-enable-policies"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M71-supabase-middleware-ssr",
+        "verifyGateBlocksNext": true
+      }
+    },
+    "M71-supabase-middleware-ssr": {
+      "fixtureId": "GP-M71-OUT",
+      "tool": "T04",
+      "moduleId": "M71-supabase-middleware-ssr",
+      "tier": "pro",
+      "rulesetVersion": "2026.05.31",
+      "flowId": "auth-lifecycle",
+      "fragmentIds": [
+        "layer2/supabase/middleware-ssr"
+      ],
+      "expected": {
+        "ok": true,
+        "requiredResponseKeys": [
+          "moduleId",
+          "directives",
+          "meta",
+          "agentGuidance",
+          "verifyBeforeProceed"
+        ],
+        "requiredPatternIds": [
+          "SUPA-MW-001",
+          "SUPA-MW-002"
+        ],
+        "minRuleFragments": 1,
+        "minMapNodes": 0,
+        "requiredRefIds": [
+          "supabase/knowledge-w80-ssr-middleware-session",
+          "nextjs/knowledge-w80-middleware-cookie-bridge"
+        ],
+        "maxOutboundTokens": 16000,
+        "sliceProfile": "module_directive",
+        "nextModuleId": "M11-stripe-checkout-route",
+        "verifyGateBlocksNext": true
+      }
+    }
+  }
+}

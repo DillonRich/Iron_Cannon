@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/d1-index",
+  "sourceUrl": "https://developers.cloudflare.com/d1/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Cloudflare D1",
+  "excerpt": "description: Build serverless SQL databases on Cloudflare's global network and query them from Workers and Pages projects. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/d1/llms.txt > Use this file to discover all available pages before exploring further. Create new serverless SQL databases to query from your Workers and Pages projects. D1 is Cloudflare's managed, serverless database with SQLite's SQL semantics, built-in disaster recovery, and Worker and HTTP API access.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

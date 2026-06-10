@@ -1,0 +1,532 @@
+{
+  "runs": [
+    {
+      "timestamp": "2026-06-04T04:46:20.222Z",
+      "pass": false,
+      "failures": [
+        "obligations"
+      ],
+      "metrics": {
+        "em1": 2225,
+        "em0Config": 500,
+        "cards": 10400,
+        "obligations": 100
+      }
+    },
+    {
+      "timestamp": "2026-06-04T04:46:48.734Z",
+      "pass": false,
+      "failures": [
+        "regression",
+        "obligations"
+      ],
+      "metrics": {
+        "em1": 2225,
+        "em0Config": 500,
+        "cards": 10400,
+        "obligations": 100
+      }
+    },
+    {
+      "timestamp": "2026-06-04T04:47:12.564Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2225,
+        "em0Config": 500,
+        "cards": 10400,
+        "obligations": 100
+      }
+    },
+    {
+      "timestamp": "2026-06-04T05:16:05.065Z",
+      "pass": false,
+      "failures": [
+        "regression"
+      ],
+      "metrics": {
+        "em1": 2225,
+        "em0Config": 500,
+        "cards": 10400,
+        "obligations": 100
+      }
+    },
+    {
+      "timestamp": "2026-06-04T05:17:04.246Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2225,
+        "em0Config": 500,
+        "cards": 10400,
+        "obligations": 100
+      }
+    },
+    {
+      "timestamp": "2026-06-05T03:18:09.704Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2225,
+        "em0Config": 500,
+        "cards": 10421,
+        "obligations": 100
+      }
+    },
+    {
+      "timestamp": "2026-06-05T03:24:11.461Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2225,
+        "em0Config": 500,
+        "cards": 10421,
+        "obligations": 100
+      }
+    },
+    {
+      "timestamp": "2026-06-05T03:42:20.233Z",
+      "pass": false,
+      "failures": [
+        "obligations"
+      ],
+      "metrics": {
+        "em1": 2225,
+        "em0Config": 500,
+        "cards": 10691,
+        "obligations": 120
+      }
+    },
+    {
+      "timestamp": "2026-06-05T03:42:38.163Z",
+      "pass": false,
+      "failures": [
+        "obligations"
+      ],
+      "metrics": {
+        "em1": 2225,
+        "em0Config": 500,
+        "cards": 10691,
+        "obligations": 120
+      }
+    },
+    {
+      "timestamp": "2026-06-05T03:43:00.761Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2225,
+        "em0Config": 500,
+        "cards": 10691,
+        "obligations": 120
+      }
+    },
+    {
+      "timestamp": "2026-06-05T03:48:32.158Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2225,
+        "em0Config": 500,
+        "cards": 10825,
+        "obligations": 130
+      }
+    },
+    {
+      "timestamp": "2026-06-05T03:53:04.392Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2240,
+        "em0Config": 500,
+        "cards": 10835,
+        "obligations": 140
+      }
+    },
+    {
+      "timestamp": "2026-06-05T03:56:48.582Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2252,
+        "em0Config": 500,
+        "cards": 10845,
+        "obligations": 150
+      }
+    },
+    {
+      "timestamp": "2026-06-05T03:59:47.385Z",
+      "pass": false,
+      "failures": [
+        "obligations"
+      ],
+      "metrics": {
+        "em1": 2264,
+        "em0Config": 500,
+        "cards": 10879,
+        "obligations": 160
+      }
+    },
+    {
+      "timestamp": "2026-06-05T04:00:27.782Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2264,
+        "em0Config": 500,
+        "cards": 10879,
+        "obligations": 160
+      }
+    },
+    {
+      "timestamp": "2026-06-05T04:03:56.185Z",
+      "pass": false,
+      "failures": [
+        "obligations"
+      ],
+      "metrics": {
+        "em1": 2276,
+        "em0Config": 500,
+        "cards": 10890,
+        "obligations": 170
+      }
+    },
+    {
+      "timestamp": "2026-06-05T04:04:27.476Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2276,
+        "em0Config": 500,
+        "cards": 10890,
+        "obligations": 170
+      }
+    },
+    {
+      "timestamp": "2026-06-05T04:08:33.653Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2288,
+        "em0Config": 500,
+        "cards": 10900,
+        "obligations": 180
+      }
+    },
+    {
+      "timestamp": "2026-06-05T04:11:42.535Z",
+      "pass": false,
+      "failures": [
+        "regression"
+      ],
+      "metrics": {
+        "em1": 2300,
+        "em0Config": 500,
+        "cards": 10910,
+        "obligations": 190
+      }
+    },
+    {
+      "timestamp": "2026-06-05T04:13:00.782Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2300,
+        "em0Config": 500,
+        "cards": 10910,
+        "obligations": 190
+      }
+    },
+    {
+      "timestamp": "2026-06-05T04:17:10.675Z",
+      "pass": false,
+      "failures": [
+        "obligations"
+      ],
+      "metrics": {
+        "em1": 2383,
+        "em0Config": 500,
+        "cards": 10983,
+        "obligations": 260
+      }
+    },
+    {
+      "timestamp": "2026-06-05T04:17:40.975Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2383,
+        "em0Config": 500,
+        "cards": 10983,
+        "obligations": 260
+      }
+    },
+    {
+      "timestamp": "2026-06-05T04:23:14.988Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2383,
+        "em0Config": 500,
+        "cards": 10983,
+        "obligations": 260
+      }
+    },
+    {
+      "timestamp": "2026-06-05T04:36:57.679Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2383,
+        "em0Config": 500,
+        "cards": 10983,
+        "obligations": 260
+      }
+    },
+    {
+      "timestamp": "2026-06-07T02:56:30.719Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2383,
+        "em0Config": 500,
+        "cards": 10983,
+        "obligations": 260
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:05:29.566Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2383,
+        "em0Config": 500,
+        "cards": 10983,
+        "obligations": 260
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:06:54.365Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2383,
+        "em0Config": 500,
+        "cards": 10983,
+        "obligations": 260
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:09:12.684Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2383,
+        "em0Config": 500,
+        "cards": 10983,
+        "obligations": 260
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:14:16.838Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2395,
+        "em0Config": 500,
+        "cards": 11054,
+        "obligations": 270
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:18:08.272Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2407,
+        "em0Config": 500,
+        "cards": 11064,
+        "obligations": 280
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:22:14.256Z",
+      "pass": false,
+      "failures": [
+        "postCoreRoadmap",
+        "svc001Spike"
+      ],
+      "metrics": {
+        "em1": 2407,
+        "em0Config": 500,
+        "cards": 11064,
+        "obligations": 280
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:22:34.702Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2407,
+        "em0Config": 500,
+        "cards": 11064,
+        "obligations": 280
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:25:42.259Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2429,
+        "em0Config": 500,
+        "cards": 11134,
+        "obligations": 300
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:27:51.253Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2441,
+        "em0Config": 500,
+        "cards": 11144,
+        "obligations": 310
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:30:20.629Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2453,
+        "em0Config": 500,
+        "cards": 11154,
+        "obligations": 320
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:32:37.675Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2464,
+        "em0Config": 500,
+        "cards": 11164,
+        "obligations": 330
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:34:27.170Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2476,
+        "em0Config": 500,
+        "cards": 11174,
+        "obligations": 340
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:42:19.225Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2488,
+        "em0Config": 500,
+        "cards": 11184,
+        "obligations": 350
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:46:14.136Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2499,
+        "em0Config": 500,
+        "cards": 11194,
+        "obligations": 360
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:48:27.561Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2511,
+        "em0Config": 500,
+        "cards": 11204,
+        "obligations": 370
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:50:37.859Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2522,
+        "em0Config": 500,
+        "cards": 11214,
+        "obligations": 380
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:53:15.474Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2533,
+        "em0Config": 500,
+        "cards": 11224,
+        "obligations": 390
+      }
+    },
+    {
+      "timestamp": "2026-06-07T03:55:39.411Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2545,
+        "em0Config": 500,
+        "cards": 11234,
+        "obligations": 400
+      }
+    },
+    {
+      "timestamp": "2026-06-08T02:51:40.120Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2545,
+        "em0Config": 500,
+        "cards": 11234,
+        "obligations": 400
+      }
+    },
+    {
+      "timestamp": "2026-06-08T02:52:19.271Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2545,
+        "em0Config": 500,
+        "cards": 11234,
+        "obligations": 400
+      }
+    },
+    {
+      "timestamp": "2026-06-08T03:21:26.666Z",
+      "pass": true,
+      "failures": [],
+      "metrics": {
+        "em1": 2545,
+        "em0Config": 500,
+        "cards": 11234,
+        "obligations": 400
+      }
+    }
+  ]
+}

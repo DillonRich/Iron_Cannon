@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/knowledge-w66-rest-api-rate-limit",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w66/rest-api-rate-limit",
+  "lastVerified": "2026-06-06",
+  "title": "W66 rest-api-rate-limit",
+  "provider": "owasp",
+  "excerpt": "Rate limit REST endpoints per authenticated user or API key",
+  "embeddingHint": "owasp rest-api-rate-limit wave66 tgs-v2",
+  "tags": [
+    "wave66",
+    "knowledge",
+    "owasp",
+    "tgs-v2"
+  ]
+}

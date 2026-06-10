@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-subscriptions-update",
+  "sourceUrl": "https://docs.stripe.com/tax/subscriptions/update.md",
+  "lastVerified": "2026-06-03",
+  "title": "Update existing subscriptions",
+  "excerpt": "Learn how to update existing subscriptions to Stripe Tax. [Stripe Tax](https://docs.stripe.com/tax.md) allows you to calculate the tax to collect on your transactions. It computes the taxes and adds them to the payment automatically, based on the product and the customer location. When you integrate with Stripe Tax, you need to update existing subscriptions to make sure that tax is automatically calculated going forward. Stripe provides tooling to help you update your subscriptions. You can also manually update subscriptions where you want more control over certain options. First, you need to activate Stripe Tax. To learn how, read the [setup guide](https://docs.stripe.com/tax/set-up.md). 1. Go to the [Dashboard](https://dashboard.stripe.com/tax/migrations). 1.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

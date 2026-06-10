@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-EDGE-006",
+  "obligationId": "LEG-EDGE-006",
+  "detectType": "flow_ref",
+  "detect": {
+    "type": "flow_ref",
+    "flowId": "billing-race-shield"
+  },
+  "passSnippet": "flowId:billing-race-shield delete-account data-export",
+  "failSnippet": "unrelated flow",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

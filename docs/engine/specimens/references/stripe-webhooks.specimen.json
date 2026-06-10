@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/webhooks",
+  "sourceUrl": "https://docs.stripe.com/webhooks.md",
+  "lastVerified": "2026-06-03",
+  "title": "Receive Stripe events in your webhook endpoint",
+  "excerpt": "Listen for events from Stripe on your webhook endpoint so your integration can automatically trigger reactions. Stripe recommends using official skills to integrate with the API using best practices. Follow the instructions below to learn how. **Tip: Use curl instead of Fetch tools.** Skills are detailed 10–20 KB markdown files. Fetch tools summarize them. `curl -sL` guarantees the full content. **Using `npx skills`**: Check if `npx` is installed on the system. If `npx` is available, run `npx skills add https://docs.stripe.com --list` to list available skills, then run `npx skills add https://docs.stripe.com --yes --skill <skill-name> <--skill other-skills>` to install individual skills.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

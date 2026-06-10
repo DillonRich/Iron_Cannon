@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer1/auth-lifecycle/ui-routes",
+  "layer": 1,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "moduleId": "M04-auth-ui-routes",
+  "adapterId": "nextjs-app-router",
+  "section": "ui-routes",
+  "content": {
+    "requirement": "Login, signup, and verify UI with four-state components and Iron Clad hooks",
+    "routes": ["/login", "/signup", "/auth/verify"],
+    "uxRequirements": [
+      "Four states: loading, success, error, empty where applicable",
+      "Signup: links to /terms and /privacy (Iron Clad)",
+      "Form labels associated (LEG-A11Y-002)",
+      "Explicit terms checkbox — not pre-checked (LEG-TERMS-004)"
+    ],
+    "uxFindingTemplate": {
+      "category": "auth_ux",
+      "systemRequirement": "Clear feedback on signup/signin failure without leaking enumeration",
+      "designOwnership": "agent"
+    }
+  },
+  "references": ["nextjs/server-actions", "nextjs/loading-error-ui", "legal/wcag-form-labels", "legal/privacy-policy-link"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "AUTH-UI-001", "type": "required_file", "value": "signup", "fileGlob": "**/app/**", "tier": "pro" },
+      { "id": "AUTH-UI-002", "type": "required_string", "value": "privacy", "fileGlob": "**/signup/**", "tier": "ironclad" },
+      { "id": "AUTH-UI-003", "type": "required_string", "value": "terms", "fileGlob": "**/signup/**", "tier": "ironclad" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "auth-ui" }
+}

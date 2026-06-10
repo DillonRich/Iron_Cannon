@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-tutorials-build-a-qr-code-generator-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/tutorials/build-a-qr-code-generator/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Build a QR code generator",
+  "excerpt": "description: This tutorial shows you how to build and publish a Worker application that generates QR codes. The final version of the codebase is available on GitHub. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. In this tutorial, you will build and publish a Worker application that generates QR codes. If you would like to review the code for this tutorial, the final version of the codebase is [available on GitHub ↗](https://github.com/kristianfreeman/workers-qr-code-generator). You can take the code provided in the example repository, customize it, and deploy it for use in your own projects.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

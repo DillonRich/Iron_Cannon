@@ -1,0 +1,9 @@
+{
+  "refId": "resend/domains-verify",
+  "sourceUrl": "https://resend.com/docs/api-reference/domains/verify-domain",
+  "lastVerified": "2026-05-31",
+  "title": "Resend domain verification",
+  "excerpt": "Add domain via API or Dashboard; configure DNS records (SPF, DKIM) at registrar. Call verify endpoint after DNS propagation. manualConfigStep: user must add DNS—agent must not invent records. Unverified domains block production sends.",
+  "appliesTo": ["email-lifecycle", "manualConfigSteps"],
+  "tags": ["resend", "dns", "manual-config"]
+}

@@ -1,0 +1,11 @@
+{
+  "refId": "stripe/pricing-display",
+  "sourceUrl": "https://stripe.com/docs/payments/checkout",
+  "lastVerified": "2026-06-03",
+  "title": "Display pricing",
+  "excerpt": "Show currency, interval, and trial terms on checkout surface before payment.",
+  "tags": [
+    "stripe",
+    "billing"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "refId": "legal/list-unsubscribe-rfc",
+  "sourceUrl": "https://www.rfc-editor.org/rfc/rfc2369",
+  "lastVerified": "2026-05-31",
+  "title": "List-Unsubscribe header (RFC 2369)",
+  "excerpt": "Marketing emails should include List-Unsubscribe and List-Unsubscribe-Post headers for one-click unsubscribe in mail clients. Complements body footer link. Resend supports header configuration on send API.",
+  "appliesTo": ["LEG-EMAIL-003", "resend/list-unsubscribe"],
+  "tags": ["legal", "email", "headers"]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/subscriptions-cancel",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/cancel",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe Cancel subscriptions",
+  "excerpt": "Cancel via API subscriptions.cancel or Customer Portal. App must revoke entitlements on customer.subscription.deleted webhook. Account deletion flow (M41) calls cancel before purge.",
+  "appliesTo": [
+    "billing-subscription",
+    "account-deletion"
+  ],
+  "tags": [
+    "stripe",
+    "cancel"
+  ]
+}

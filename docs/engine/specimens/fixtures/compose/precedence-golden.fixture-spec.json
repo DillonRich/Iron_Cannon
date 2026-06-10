@@ -1,0 +1,45 @@
+{
+  "fixtureId": "CP-01",
+  "description": "Rules beat map beat explicit cards beat RAG on same directive keys",
+  "input": {
+    "sources": [
+      {
+        "type": "rag",
+        "items": [
+          { "key": "webhook.verify", "value": "optional-signature" },
+          { "key": "session.ttl", "value": "rag-7d" },
+          { "key": "signup.privacy", "value": "rag-footer-ok" }
+        ]
+      },
+      {
+        "type": "explicit_card",
+        "items": [
+          { "key": "webhook.verify", "value": "card-verify-recommended" },
+          { "key": "session.ttl", "value": "card-30d" }
+        ]
+      },
+      {
+        "type": "map",
+        "items": [
+          { "key": "webhook.verify", "value": "map-signature-required" },
+          { "key": "signup.privacy", "value": "map-leg-priv-001" }
+        ]
+      },
+      {
+        "type": "rule",
+        "items": [
+          { "key": "webhook.verify", "value": "rule-must-constructEvent" },
+          { "key": "session.ttl", "value": "rule-kv-ttl-match" },
+          { "key": "signup.privacy", "value": "rule-route-link-privacy" }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "wins": [
+      { "key": "webhook.verify", "type": "rule", "value": "rule-must-constructEvent" },
+      { "key": "session.ttl", "type": "rule", "value": "rule-kv-ttl-match" },
+      { "key": "signup.privacy", "type": "rule", "value": "rule-route-link-privacy" }
+    ]
+  }
+}

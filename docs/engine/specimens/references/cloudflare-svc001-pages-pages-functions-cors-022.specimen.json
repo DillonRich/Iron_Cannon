@@ -1,0 +1,16 @@
+{
+  "refId": "cloudflare/svc001-pages-pages-functions-cors-022",
+  "sourceUrl": "https://ironcannon.dev/svc001/pages/pages-functions-cors-22",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-001 pages-functions-cors 22",
+  "provider": "cloudflare",
+  "excerpt": "When UI is on Pages and API on Workers, configure Access-Control-Allow-Origin for the Pages subdomain on API routes.",
+  "embeddingHint": "cloudflare pages-functions-cors svc001 pages worker split sd-06",
+  "tags": [
+    "svc001",
+    "pages",
+    "sd-06",
+    "cloudflare",
+    "pages-functions-cors"
+  ]
+}

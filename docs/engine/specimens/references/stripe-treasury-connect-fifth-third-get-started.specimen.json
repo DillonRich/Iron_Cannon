@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-fifth-third-get-started",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/fifth-third-get-started.md",
+  "lastVerified": "2026-06-03",
+  "title": "Build a new Treasury for platforms integration with Fifth Third Bank",
+  "excerpt": "Get started with Treasury for platforms. This guide describes how to get started with Stripe Treasury for platforms using Fifth Third Bank. You can enable Treasury for platforms on *sandbox* (A sandbox is an isolated test environment that allows you to test Stripe functionality in your account without affecting your live integration. Use sandboxes to safely experiment with new features and changes) environments immediately. Test environments operate independently of any specific bank partner. Before you create financial accounts in live mode for your Treasury for platforms integration, we recommend that you create test financial accounts in sandboxes.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

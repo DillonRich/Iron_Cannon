@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-testing-miniflare-storage-kv-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/testing/miniflare/storage/kv/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "KV",
+  "excerpt": "description: Specify KV namespaces to add to your environment as follows: image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. * [KV Reference](https://developers.cloudflare.com/kv/api/) Specify KV namespaces to add to your environment as follows:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

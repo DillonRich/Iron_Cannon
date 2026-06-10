@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/accessibility/alt-text",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": null,
+  "section": "alt-text",
+  "content": {
+    "requirement": "Informative images on auth and marketing routes must have alt text",
+    "obligations": ["LEG-A11Y-001"],
+    "compareSteps": [
+      "Scan JSX/TSX on /signup, /login, / landing for img elements",
+      "Flag missing alt or empty alt on non-decorative images",
+      "Allow alt=\"\" only when image is decorative (role=presentation or aria-hidden)"
+    ],
+    "remediationDirective": "Add descriptive alt text to informative images; mark decorative images with alt=\"\" and aria-hidden."
+  },
+  "references": ["legal/wcag-alt-text", "legal/wcag-overview"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "LEG-A11Y-001", "type": "required_attribute", "selector": "img", "attr": "alt", "tier": "ironclad" }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "accessibility", "disclaimerRequired": true }
+}

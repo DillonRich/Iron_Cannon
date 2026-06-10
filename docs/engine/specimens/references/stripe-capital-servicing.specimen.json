@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/capital-servicing",
+  "sourceUrl": "https://docs.stripe.com/capital/servicing.md",
+  "lastVerified": "2026-06-03",
+  "title": "Managing customer support",
+  "excerpt": "Support your Capital customers using Stripe-approved messaging. > Capital for platforms is available in [public preview](https://docs.stripe.com/release-phases.md). Stripe Capital for platforms works differently by country. Capital for platforms is only available in the United States (US) and United Kingdom (GB). Select your country to learn how to provide servicing to your connected accounts: Stripe handles all servicing cases and is the first line of support for your users’ inquiries. In every outreach we send to users, we include a support email ([capital+support@stripe.com](mailto:capital+support@stripe.com)) they can contact if they have questions. All Stripe interfaces also include this support email. The servicing functions that Stripe handles include:",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

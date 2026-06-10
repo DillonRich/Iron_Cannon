@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/identity-explaining-identity",
+  "sourceUrl": "https://docs.stripe.com/identity/explaining-identity.md",
+  "lastVerified": "2026-06-03",
+  "title": "Explain Identity to your customers",
+  "excerpt": "Answer customer questions about ID verification and Stripe Identity. If you use Stripe Identity for ID verification, copy and customize these questions and answers to create Frequently Asked Questions (FAQs) around ID verification. To obtain Stripe logos, badges, and buttons for your site, visit the **Media assets** section on [stripe.com](https://stripe.com/newsroom/information). In your Stripe Identity FAQ, address the following questions by using the provided pre-approved copy: PLATFORM works with [Stripe](https://stripe.com/) to conduct identity verification online. Stripe builds technology that’s used by millions of companies around the world such as Amazon, Google, and Zoom.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

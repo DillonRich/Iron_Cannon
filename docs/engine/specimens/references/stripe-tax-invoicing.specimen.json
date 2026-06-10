@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-invoicing",
+  "sourceUrl": "https://docs.stripe.com/tax/invoicing.md",
+  "lastVerified": "2026-06-03",
+  "title": "Automatically collect tax on invoices",
+  "excerpt": "Learn how to automatically calculate tax on your invoices. > [Log in](https://dashboard.stripe.com/settings/tax) or [sign up](https://dashboard.stripe.com/register) for Stripe to enable Stripe Tax. On an *invoice* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice), Stripe Tax calculates sales tax, VAT, and GST. To calculate these for each line item, Stripe uses: - Your [tax settings](https://dashboard.stripe.com/settings/tax) - The customer’s tax settings and location - The product tax code and price tax behavior",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@ironcannon/schemas",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Iron Cannon JSON schemas (G-1)",
+  "type": "module",
+  "exports": {
+    "./*": "./*.json"
+  }
+}

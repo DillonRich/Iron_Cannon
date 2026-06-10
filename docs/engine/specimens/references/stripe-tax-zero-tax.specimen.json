@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-zero-tax",
+  "sourceUrl": "https://docs.stripe.com/tax/zero-tax.md",
+  "lastVerified": "2026-06-03",
+  "title": "Zero tax amounts and reverse charges",
+  "excerpt": "Learn about cases when Stripe Tax calculates zero tax. > [Log in](https://dashboard.stripe.com/settings/tax) or [sign up](https://dashboard.stripe.com/register) for Stripe to enable Stripe Tax. Stripe Tax returns a tax calculation result on every request. However, tax isn’t collected on a transaction in some situations, and the resulting tax amount is zero. For example, if you’re expanding `tax_amounts` on an *invoice* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

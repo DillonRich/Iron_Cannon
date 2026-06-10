@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/rate-limiting",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Rate limiting / DoS",
+  "excerpt": "Rate limit login, signup, password reset, and webhook endpoints. Use Cloudflare WAF or KV-backed counters in Workers. Return 429 with Retry-After. Protect Resend send from abuse loops.",
+  "appliesTo": ["layer3", "auth-lifecycle"],
+  "tags": ["owasp", "rate-limit", "dos"]
+}

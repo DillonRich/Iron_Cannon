@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-analytics",
+  "sourceUrl": "https://docs.stripe.com/payments/analytics.md",
+  "lastVerified": "2026-06-03",
+  "title": "Payments analytics",
+  "excerpt": "Learn about the performance of your payments using key metrics and reports. The [Payments analytics](https://dashboard.stripe.com/acceptance) page in the Stripe Dashboard helps you track and analyze your payment performance. You can find reports on authentication, disputes, and card acceptance. You can also apply advanced filters and compare different time periods for your payments data to evaluate your payments history. ![Payments analytics page](https://b.stripecdn.com/docs-statics-srv/assets/overview.61ec7a7cfe8a8bc7a503c00c82d59509.png) The Payments analytics page in the Dashboard. Certain analytics (such as [authentication](https://docs.stripe.com/payments/analytics/authentication.md)) require [3D Secure](https://docs.stripe.com/payments/3d-secure.md) enablement.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

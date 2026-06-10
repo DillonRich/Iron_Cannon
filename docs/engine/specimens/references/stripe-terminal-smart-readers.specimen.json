@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/terminal-smart-readers",
+  "sourceUrl": "https://docs.stripe.com/terminal/smart-readers.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe Terminal smart readers",
+  "excerpt": "Learn about Stripe's pre-certified in-person payment readers. In the Dashboard, [browse and purchase available readers and accessories](https://dashboard.stripe.com/terminal/shop). Terminal’s smart readers are compatible with the JavaScript, iOS, Android, and React Native SDKs. In addition to the Terminal SDKs, the BBPOS WisePOS, the Stripe Reader S700/S710, and Verifone readers are compatible with a server-driven integration. Smart readers communicate with the SDKs and Stripe API over the internet.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

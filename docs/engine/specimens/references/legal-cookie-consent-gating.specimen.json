@@ -1,0 +1,11 @@
+{
+  "refId": "legal/cookie-consent-gating",
+  "sourceUrl": "https://gdpr.eu/cookies/",
+  "lastVerified": "2026-06-03",
+  "title": "Consent-gated analytics",
+  "excerpt": "Non-essential cookies and tracking scripts must not execute until affirmative consent. Reject must be as prominent as accept.",
+  "tags": [
+    "legal",
+    "cookies"
+  ]
+}

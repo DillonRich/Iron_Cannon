@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w88-006",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "planning:dogfood-prep npm script",
+    "obligations": [
+      "LEG-W88-006"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "planning:dogfood-prep npm script"
+  },
+  "references": [
+    "ironcannon/knowledge-w88-planning-dogfood-prep-npm"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W88-006",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

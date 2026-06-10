@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-send-with-go",
+  "sourceUrl": "https://resend.com/docs/send-with-go.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send emails with Go",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send emails with Go > Learn how to send your first email using the Resend Go SDK. ## Prerequisites To get the most out of this guide, you'll need to: * [Create an API key](https://resend.com/api-keys) * [Verify your domain](https://resend.com/domains) ## 1. Install Get the Resend Go SDK. ```bash bash theme={\"theme\":{\"light\":\"github-light\",\"dark\":\"vesper\"}} go get github.com/resend/resend-go/v3 ``` ## 2. Send email using HTML The easiest way to send an email is by using the `html` parameter.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/terminal-readers-bbpos-wisepad3",
+  "sourceUrl": "https://docs.stripe.com/terminal/readers/bbpos-wisepad3.md",
+  "lastVerified": "2026-06-03",
+  "title": "BBPOS WisePad 3",
+  "excerpt": "Available in: CA, GB, IE, SG, AU, NZ, FR, DE, NL, BE, AT, ES, DK, SE, NO, CH, IT, LU, PT, FI, MY, CZ, PL, JP![](https://b.stripecdn.com/docs-statics-srv/assets/wisepad-floating-thumb.d6e3015116e0b4295b0106e770b9843e.png) The [BBPOS WisePad 3](https://docs.stripe.com/terminal/payments/setup-reader/bbpos-wisepad3.md) is a handheld reader for use with mobile applications. It uses [Bluetooth Low Energy (LE)](https://docs.stripe.com/terminal/payments/connect-reader.md?reader-type=bluetooth) or [USB](https://docs.stripe.com/terminal/payments/connect-reader.md?terminal-sdk-platform=android&reader-type=usb) (Android only) to connect to the Stripe Terminal SDK on a mobile device.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

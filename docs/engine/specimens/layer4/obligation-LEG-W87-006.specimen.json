@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w87-006",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "SD-01 golden unchanged UJ-086",
+    "obligations": [
+      "LEG-W87-006"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "SD-01 golden unchanged UJ-086"
+  },
+  "references": [
+    "ironcannon/knowledge-w87-sd01-golden-unchanged-uj086"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W87-006",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

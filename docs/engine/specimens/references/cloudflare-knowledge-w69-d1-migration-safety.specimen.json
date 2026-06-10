@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/knowledge-w69-d1-migration-safety",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w69/d1-migration-safety",
+  "lastVerified": "2026-06-06",
+  "title": "W69 d1-migration-safety",
+  "provider": "cloudflare",
+  "excerpt": "D1 migrations run in preview before production apply",
+  "embeddingHint": "cloudflare d1-migration-safety wave69 deploy-readiness",
+  "tags": [
+    "wave69",
+    "knowledge",
+    "cloudflare",
+    "deploy-readiness"
+  ]
+}

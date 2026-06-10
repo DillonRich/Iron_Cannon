@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-link-express-checkout-element-link",
+  "sourceUrl": "https://docs.stripe.com/payments/link/express-checkout-element-link.md",
+  "lastVerified": "2026-06-03",
+  "title": "Link in the Express Checkout Element",
+  "excerpt": "Let customers check out faster with Link and the Express Checkout Element. The Express Checkout Element is an integration for accepting payments through one-click payment method buttons. Supported payment methods include [Link](https://docs.stripe.com/payments/link.md), [Apple Pay](https://docs.stripe.com/apple-pay.md), [Google Pay](https://docs.stripe.com/google-pay.md), [PayPal](https://docs.stripe.com/payments/paypal.md), [Klarna](https://docs.stripe.com/payments/klarna.md), and [Amazon Pay](https://docs.stripe.com/payments/amazon-pay.md). - Dynamically sort payment buttons based on a customer’s location. - Add payment buttons without any frontend changes. - Integrate Elements seamlessly by reusing an existing Elements instance to save time.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

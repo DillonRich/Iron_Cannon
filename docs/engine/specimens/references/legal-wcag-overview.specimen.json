@@ -1,0 +1,9 @@
+{
+  "refId": "legal/wcag-overview",
+  "sourceUrl": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+  "lastVerified": "2026-05-31",
+  "title": "WCAG overview",
+  "excerpt": "Web Content Accessibility Guidelines define perceivable, operable, understandable, robust criteria. Iron Cannon checks detectable P0 patterns only—not full WCAG audit or certification. WCAG 2.1 Level AA is common SaaS target (advisory context).",
+  "appliesTo": ["layer4", "accessibility-wcag"],
+  "tags": ["legal", "wcag", "a11y", "advisory"]
+}

@@ -1,0 +1,2259 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/edge-case-registry/v1",
+  "rulesetVersion": "2026.06.03",
+  "edgeCaseCount": 215,
+  "targetSuccessLift": "optional flows, hybrid stacks, billing failures, tier resume",
+  "edgeCases": [
+    {
+      "id": "EC-001",
+      "category": "hybrid-stack",
+      "signal": "HYBRID_STACK_DETECTED",
+      "tools": [
+        "T02",
+        "T03"
+      ],
+      "mitigation": "CH-001 resolution + agent must pick SSOT",
+      "imaginationRef": "IMG-002",
+      "protocolIds": [
+        "hybrid/webhook-on-worker-not-next"
+      ]
+    },
+    {
+      "id": "EC-002",
+      "category": "stripe",
+      "signal": "STRIPE_WEBHOOK_SECRET missing",
+      "tools": [
+        "T02"
+      ],
+      "mitigation": "SD-05 stack incomplete guidance",
+      "imaginationRef": "IMG-005",
+      "protocolIds": [
+        "stripe/webhook-signing"
+      ]
+    },
+    {
+      "id": "EC-003",
+      "category": "webhook",
+      "signal": "duplicate event id",
+      "tools": [
+        "T05",
+        "T07"
+      ],
+      "mitigation": "LEG-EDGE-001 idempotency KV",
+      "obligationIds": [
+        "LEG-EDGE-001"
+      ],
+      "protocolIds": [
+        "cwe/webhook-replay",
+        "stripe/idempotency-keys"
+      ]
+    },
+    {
+      "id": "EC-004",
+      "category": "billing",
+      "signal": "invoice.payment_failed",
+      "tools": [
+        "T04",
+        "T12"
+      ],
+      "mitigation": "LEG-STRIPE-005 + past_due UX",
+      "obligationIds": [
+        "LEG-STRIPE-005",
+        "LEG-EDGE-002"
+      ]
+    },
+    {
+      "id": "EC-005",
+      "category": "auth",
+      "signal": "rate limit exceeded",
+      "tools": [
+        "T05"
+      ],
+      "mitigation": "LEG-EDGE-003 generic error",
+      "obligationIds": [
+        "LEG-EDGE-003"
+      ]
+    },
+    {
+      "id": "EC-006",
+      "category": "auth",
+      "signal": "password reset replay",
+      "tools": [
+        "T05"
+      ],
+      "mitigation": "LEG-EDGE-004 single-use token",
+      "obligationIds": [
+        "LEG-EDGE-004"
+      ],
+      "flowId": "password-reset"
+    },
+    {
+      "id": "EC-007",
+      "category": "auth",
+      "signal": "unverified email checkout",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "LEG-EDGE-005 gate",
+      "obligationIds": [
+        "LEG-EDGE-005"
+      ]
+    },
+    {
+      "id": "EC-008",
+      "category": "billing",
+      "signal": "checkout race",
+      "tools": [
+        "T04",
+        "T05"
+      ],
+      "mitigation": "LEG-EDGE-006 server verify session",
+      "obligationIds": [
+        "LEG-EDGE-006"
+      ],
+      "flowId": "billing-race-shield"
+    },
+    {
+      "id": "EC-009",
+      "category": "deploy",
+      "signal": "live key in preview",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "LEG-EDGE-008 sk_test_ only",
+      "obligationIds": [
+        "LEG-EDGE-008"
+      ]
+    },
+    {
+      "id": "EC-010",
+      "category": "tier",
+      "signal": "RESUME_TIER_CHANGED",
+      "tools": [
+        "T04",
+        "T12"
+      ],
+      "mitigation": "CH-010 re-auth",
+      "imaginationRef": "IMG-054",
+      "protocolIds": [
+        "generic/rbac-admin"
+      ]
+    },
+    {
+      "id": "EC-011",
+      "category": "tier",
+      "signal": "TIER_INSUFFICIENT Pro T09",
+      "tools": [
+        "T09"
+      ],
+      "mitigation": "upgrade hint Armor",
+      "imaginationRef": "IMG-023"
+    },
+    {
+      "id": "EC-012",
+      "category": "tier",
+      "signal": "TIER_INSUFFICIENT Pro T12",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "upgrade Iron Clad",
+      "imaginationRef": "IMG-028"
+    },
+    {
+      "id": "EC-013",
+      "category": "compose",
+      "signal": "legal leaked to Pro T04",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "compose redaction strip legalCompliance",
+      "protocolIds": [
+        "ironcannon/tier-compose-redaction"
+      ],
+      "imaginationRef": "IMG-023"
+    },
+    {
+      "id": "EC-014",
+      "category": "email",
+      "signal": "marketing without unsubscribe",
+      "tools": [
+        "T05",
+        "T13"
+      ],
+      "mitigation": "LEG-EMAIL-003",
+      "obligationIds": [
+        "LEG-EMAIL-003"
+      ]
+    },
+    {
+      "id": "EC-015",
+      "category": "email",
+      "signal": "bounce not handled",
+      "tools": [
+        "T05"
+      ],
+      "mitigation": "LEG-EMAIL-010 resend webhook",
+      "obligationIds": [
+        "LEG-EMAIL-010"
+      ]
+    },
+    {
+      "id": "EC-016",
+      "category": "privacy",
+      "signal": "CPRA do-not-sell missing",
+      "tools": [
+        "T13"
+      ],
+      "mitigation": "LEG-PRIV-011",
+      "obligationIds": [
+        "LEG-PRIV-011"
+      ],
+      "markets": [
+        "us"
+      ]
+    },
+    {
+      "id": "EC-017",
+      "category": "cookies",
+      "signal": "analytics before consent",
+      "tools": [
+        "T13"
+      ],
+      "mitigation": "LEG-COOKIE-007",
+      "obligationIds": [
+        "LEG-COOKIE-007"
+      ],
+      "markets": [
+        "eu"
+      ]
+    },
+    {
+      "id": "EC-018",
+      "category": "deletion",
+      "signal": "stripe customer orphaned",
+      "tools": [
+        "T05"
+      ],
+      "mitigation": "LEG-DATA-005",
+      "obligationIds": [
+        "LEG-DATA-005"
+      ],
+      "flowId": "account-deletion"
+    },
+    {
+      "id": "EC-019",
+      "category": "deletion",
+      "signal": "no grace disclosure",
+      "tools": [
+        "T13"
+      ],
+      "mitigation": "LEG-DATA-003",
+      "obligationIds": [
+        "LEG-DATA-003"
+      ],
+      "flowId": "account-deletion"
+    },
+    {
+      "id": "EC-020",
+      "category": "export",
+      "signal": "export link never expires",
+      "tools": [
+        "T05"
+      ],
+      "mitigation": "LEG-DATA-004",
+      "obligationIds": [
+        "LEG-DATA-004"
+      ],
+      "flowId": "data-export"
+    },
+    {
+      "id": "EC-021",
+      "category": "remote",
+      "signal": "REMOTE_UNAVAILABLE",
+      "tools": [
+        "T02",
+        "T04"
+      ],
+      "mitigation": "CH-009 retry once",
+      "imaginationRef": "IMG-046"
+    },
+    {
+      "id": "EC-022",
+      "category": "diff",
+      "signal": "DIFF_DRIFT_DETECTED",
+      "tools": [
+        "T06"
+      ],
+      "mitigation": "re-wiremap or ack",
+      "imaginationRef": "IMG-015"
+    },
+    {
+      "id": "EC-023",
+      "category": "throttle",
+      "signal": "THROTTLE_LOOP_DETECTED",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "C05 local guard",
+      "imaginationRef": "IMG-050"
+    },
+    {
+      "id": "EC-024",
+      "category": "stripe",
+      "signal": "mode-mismatch test/live",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "CH-008 align keys",
+      "protocolIds": [
+        "stripe/test-live-separation"
+      ]
+    },
+    {
+      "id": "EC-025",
+      "category": "email-provider",
+      "signal": "gmail-smtp + resend",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "CH-006 Resend SSOT",
+      "protocolIds": [
+        "resend/domain-verification"
+      ]
+    },
+    {
+      "id": "EC-026",
+      "category": "database",
+      "signal": "supabase + d1",
+      "tools": [
+        "T03"
+      ],
+      "mitigation": "CH-005 single DB",
+      "errorCode": "SSOT_CONFLICT",
+      "imaginationRef": "IMG-002"
+    },
+    {
+      "id": "EC-027",
+      "category": "nextjs",
+      "signal": "pages-router-legacy",
+      "tools": [
+        "T02"
+      ],
+      "mitigation": "CH-007 app router",
+      "protocolIds": [
+        "nextjs/middleware-auth"
+      ]
+    },
+    {
+      "id": "EC-028",
+      "category": "optional-flow",
+      "signal": "password-reset without M20",
+      "tools": [
+        "T03",
+        "T04"
+      ],
+      "mitigation": "WIREMAP APPEND_SPLIT M20-M23",
+      "flowId": "password-reset",
+      "imaginationRef": "IMG-008"
+    },
+    {
+      "id": "EC-029",
+      "category": "optional-flow",
+      "signal": "deletion without M40",
+      "tools": [
+        "T03"
+      ],
+      "mitigation": "W04 wiremap profile",
+      "flowId": "account-deletion",
+      "imaginationRef": "IMG-010"
+    },
+    {
+      "id": "EC-030",
+      "category": "a11y",
+      "signal": "form error not linked",
+      "tools": [
+        "T05",
+        "T13"
+      ],
+      "mitigation": "LEG-A11Y-009",
+      "obligationIds": [
+        "LEG-A11Y-009"
+      ]
+    },
+    {
+      "id": "EC-031",
+      "category": "billing",
+      "signal": "trial without disclosure",
+      "tools": [
+        "T13"
+      ],
+      "mitigation": "LEG-STRIPE-006",
+      "obligationIds": [
+        "LEG-STRIPE-006"
+      ]
+    },
+    {
+      "id": "EC-032",
+      "category": "legal",
+      "signal": "compliance tool no disclaimer",
+      "tools": [
+        "T12",
+        "T13",
+        "T14"
+      ],
+      "mitigation": "LEG-EDGE-010 header",
+      "obligationIds": [
+        "LEG-EDGE-010"
+      ]
+    },
+    {
+      "id": "EC-033",
+      "category": "corpus",
+      "signal": "RETRIEVAL_MISS_LARGE_CORPUS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "Expand retrieval-baseline queries; Vectorize reindex after Scale-C",
+      "protocolIds": [
+        "ironcannon/retrieval-baseline"
+      ],
+      "imaginationRef": "IMG-224"
+    },
+    {
+      "id": "EC-034",
+      "category": "harvest",
+      "signal": "PROVIDER_DOMINANCE_STRIPE",
+      "tools": [
+        "T02"
+      ],
+      "mitigation": "harvest:scale-c uses build-queue-balance for resend/cloudflare first",
+      "protocolIds": [],
+      "imaginationRef": "IMG-225"
+    },
+    {
+      "id": "EC-035",
+      "category": "scale",
+      "signal": "SCALE_C_GAP_REMAINING",
+      "tools": [
+        "T01"
+      ],
+      "mitigation": "Repeat harvest:scale-c until corpus-coverage scaleC.gap === 0",
+      "imaginationRef": "IMG-226"
+    },
+    {
+      "id": "EC-036",
+      "category": "vectorize",
+      "signal": "VECTORIZE_STALE_AFTER_HARVEST",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "Run vectorize-reindex.mjs after each Scale-C batch when CF creds set",
+      "protocolIds": [
+        "ironcannon/retrieval-baseline"
+      ],
+      "imaginationRef": "IMG-230"
+    },
+    {
+      "id": "EC-037",
+      "category": "corpus",
+      "signal": "CORPUS_PROVIDER_SKEW_CLOUDFLARE",
+      "tools": [
+        "T02"
+      ],
+      "mitigation": "Alternate harvest:scale-c with stripe-owasp-boost queue merge",
+      "imaginationRef": "IMG-231"
+    },
+    {
+      "id": "EC-038",
+      "category": "legal",
+      "signal": "MULTI_MARKET_COMPOSE_OVERLAP",
+      "tools": [
+        "T12",
+        "T13"
+      ],
+      "mitigation": "Filter EM-3 market/* touchpoints by T01 projectMarkets only",
+      "obligationIds": [
+        "LEG-PRIV-001"
+      ],
+      "markets": [
+        "eu",
+        "us"
+      ]
+    },
+    {
+      "id": "EC-039",
+      "category": "harvest",
+      "signal": "HARVEST_EXCERPT_TOO_SHORT",
+      "tools": [
+        "T02"
+      ],
+      "mitigation": "publish-drafts skips excerpt < 80 chars; re-fetch page",
+      "imaginationRef": "IMG-232"
+    },
+    {
+      "id": "EC-040",
+      "category": "planning",
+      "signal": "PSYCHO_WEIGHTED_BELOW_95",
+      "tools": [
+        "T01"
+      ],
+      "mitigation": "Run planning:regression + lint:all after each wave; fix retrieval calibration",
+      "imaginationRef": "IMG-233"
+    },
+    {
+      "id": "EC-041",
+      "category": "corpus",
+      "signal": "SCALE_C_TARGET_MET",
+      "tools": [
+        "T02",
+        "T04"
+      ],
+      "mitigation": "validate-corpus-scale --tier=c passes; re-run calibrate-retrieval-baseline",
+      "imaginationRef": "IMG-246"
+    },
+    {
+      "id": "EC-042",
+      "category": "harvest",
+      "signal": "HARVEST_QUEUE_EXHAUSTED_VENDOR",
+      "tools": [
+        "T02"
+      ],
+      "mitigation": "Use planning bootstrap cards; refresh llms.txt sync monthly",
+      "imaginationRef": "IMG-247"
+    },
+    {
+      "id": "EC-043",
+      "category": "compose",
+      "signal": "COMPOSE_SLICE_DOMINANCE_PLANNING_CARDS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "Balance scale-c4 topics across providers; validate-corpus-balance",
+      "imaginationRef": "IMG-248"
+    },
+    {
+      "id": "EC-044",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_CALIBRATION_REQUIRED_POST_SCALE_C",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "Run calibrate-retrieval-baseline.mjs after every index rebuild",
+      "protocolIds": [
+        "ironcannon/retrieval-baseline"
+      ],
+      "imaginationRef": "IMG-249"
+    },
+    {
+      "id": "EC-045",
+      "category": "planning",
+      "signal": "TIER_C_LINT_NOT_PROMOTED",
+      "tools": [
+        "T01"
+      ],
+      "mitigation": "Add validate-corpus-scale --tier=c to lint:planning when count ≥ 3000",
+      "imaginationRef": "IMG-250"
+    },
+    {
+      "id": "EC-046",
+      "category": "corpus",
+      "signal": "SCALE_D_TARGET_MET",
+      "tools": [
+        "T02",
+        "T04"
+      ],
+      "mitigation": "validate-corpus-scale --tier=d; vectorize manifest refresh",
+      "imaginationRef": "IMG-253"
+    },
+    {
+      "id": "EC-047",
+      "category": "extreme-map",
+      "signal": "EM1_LATTICE_UNDER_800",
+      "tools": [
+        "T03"
+      ],
+      "mitigation": "expand-em1-lattice-800.mjs after build-em1",
+      "imaginationRef": "IMG-254"
+    },
+    {
+      "id": "EC-048",
+      "category": "em4",
+      "signal": "EM4_CONFLICTS_UNDER_50",
+      "tools": [
+        "T01"
+      ],
+      "mitigation": "append-em4-conflicts-wave46.mjs",
+      "imaginationRef": "IMG-255"
+    },
+    {
+      "id": "EC-049",
+      "category": "vectorize",
+      "signal": "VECTORIZE_MANIFEST_CARD_COUNT_DRIFT",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "harvest:vectorize-manifest after planning:build-index",
+      "imaginationRef": "IMG-256"
+    },
+    {
+      "id": "EC-050",
+      "category": "compose",
+      "signal": "COMPOSE_TRUNCATION_AT_10K",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "C14 slicer + precedence; tier-aware slice budget",
+      "imaginationRef": "IMG-257"
+    },
+    {
+      "id": "EC-051",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_BASELINE_40_QUERIES",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-retrieval-baseline-wave49 + calibrate top-3",
+      "imaginationRef": "IMG-266"
+    },
+    {
+      "id": "EC-052",
+      "category": "security",
+      "signal": "SECURITY_PROTOCOL_UNDER_300",
+      "tools": [
+        "T10"
+      ],
+      "mitigation": "expand-security-protocol-registry-wave49 + activate-security-protocols",
+      "imaginationRef": "IMG-267"
+    },
+    {
+      "id": "EC-053",
+      "category": "agent",
+      "signal": "AGENT_DIRECTIVE_TEMPLATE_GAP",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-agent-directive-templates-wave49",
+      "imaginationRef": "IMG-268"
+    },
+    {
+      "id": "EC-054",
+      "category": "cloudflare",
+      "signal": "VECTORIZE_DEFERRED_PLANNING_ONLY",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "harvest-data/vectorize-manifest.json export only; no CF API until creds",
+      "imaginationRef": "IMG-269"
+    },
+    {
+      "id": "EC-055",
+      "category": "quality",
+      "signal": "PLANNING_QUALITY_GATE_STALE",
+      "tools": [
+        "T01"
+      ],
+      "mitigation": "npm run planning:regression && npm run lint:all each session",
+      "imaginationRef": "IMG-270"
+    },
+    {
+      "id": "EC-056",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_BASELINE_50_QUERIES",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-retrieval-baseline-wave50 + calibrate-retrieval-baseline",
+      "imaginationRef": "IMG-275"
+    },
+    {
+      "id": "EC-057",
+      "category": "security",
+      "signal": "SECURITY_PROTOCOL_UNDER_350",
+      "tools": [
+        "T10"
+      ],
+      "mitigation": "expand-security-protocol-registry-wave50 + activate-security-protocols",
+      "imaginationRef": "IMG-276"
+    },
+    {
+      "id": "EC-058",
+      "category": "imagination",
+      "signal": "IMAGINATION_EXTENDED_UNDER_280",
+      "tools": [
+        "T01"
+      ],
+      "mitigation": "build-imagination-phase-n harness scenarios",
+      "imaginationRef": "IMG-277"
+    },
+    {
+      "id": "EC-059",
+      "category": "harvest",
+      "signal": "VENDOR_HARVEST_STALE_NO_NEW_CARDS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "planning bootstrap cards; harvest:balance when vendor URLs refresh",
+      "imaginationRef": "IMG-278"
+    },
+    {
+      "id": "EC-060",
+      "category": "matrix",
+      "signal": "MATRIX_PROTOCOL_ID_DRIFT",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "expand-per-flow-scope-wave50 reads registry before enriching matrix",
+      "imaginationRef": "IMG-279"
+    },
+    {
+      "id": "EC-061",
+      "category": "em1",
+      "signal": "EM1_LATTICE_UNDER_1500",
+      "tools": [
+        "T05"
+      ],
+      "mitigation": "expand-em1-lattice-1500 + build-em2 + build-em3",
+      "imaginationRef": "IMG-285"
+    },
+    {
+      "id": "EC-062",
+      "category": "legal",
+      "signal": "JURISDICTION_MARKET_UNDER_35",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-jurisdiction-bundles-wave51",
+      "imaginationRef": "IMG-286"
+    },
+    {
+      "id": "EC-063",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_BASELINE_55_QUERIES",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-retrieval-baseline-wave51 + calibrate-retrieval-baseline",
+      "imaginationRef": "IMG-287"
+    },
+    {
+      "id": "EC-064",
+      "category": "security",
+      "signal": "SECURITY_PROTOCOL_UNDER_400",
+      "tools": [
+        "T10"
+      ],
+      "mitigation": "expand-security-protocol-registry-wave51 + activate-security-protocols",
+      "imaginationRef": "IMG-288"
+    },
+    {
+      "id": "EC-065",
+      "category": "cloudflare",
+      "signal": "VECTORIZE_MANIFEST_STALE_POST_W51_CARDS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "npm run harvest:vectorize-manifest (export only; CF API on hold)",
+      "imaginationRef": "IMG-289"
+    },
+    {
+      "id": "EC-066",
+      "category": "em1",
+      "signal": "EM1_LATTICE_UNDER_1800",
+      "tools": [
+        "T05"
+      ],
+      "mitigation": "expand-em1-lattice-1800 + build-em2 + build-em3",
+      "imaginationRef": "IMG-296"
+    },
+    {
+      "id": "EC-067",
+      "category": "legal",
+      "signal": "JURISDICTION_MARKET_UNDER_40",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-jurisdiction-bundles-wave52",
+      "imaginationRef": "IMG-297"
+    },
+    {
+      "id": "EC-068",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_BASELINE_60_QUERIES",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-retrieval-baseline-wave52 + calibrate-retrieval-baseline",
+      "imaginationRef": "IMG-298"
+    },
+    {
+      "id": "EC-069",
+      "category": "security",
+      "signal": "EM2_CONTROLS_STALE_AFTER_EM1_EXPAND",
+      "tools": [
+        "T10"
+      ],
+      "mitigation": "planning:build-em2 after every EM-1 lattice expansion",
+      "imaginationRef": "IMG-299"
+    },
+    {
+      "id": "EC-070",
+      "category": "armor",
+      "signal": "ARMOR_PATTERN_MISSING_ON_A01_A03",
+      "tools": [
+        "T09"
+      ],
+      "mitigation": "expand-compliance-patterns-wave52 on A01-A03 fixtures",
+      "imaginationRef": "IMG-300"
+    },
+    {
+      "id": "EC-071",
+      "category": "em1",
+      "signal": "EM1_2000_EM0_500_STRETCH",
+      "tools": [
+        "T05"
+      ],
+      "mitigation": "expand-em1-lattice-2000 + expand-em0-config-wave53",
+      "imaginationRef": "IMG-308"
+    },
+    {
+      "id": "EC-072",
+      "category": "legal",
+      "signal": "OBLIGATION_COUNT_UNDER_100",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "bootstrap-obligations-wave53",
+      "imaginationRef": "IMG-309"
+    },
+    {
+      "id": "EC-073",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_BASELINE_65",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-retrieval-baseline-wave53 + calibrate",
+      "imaginationRef": "IMG-310"
+    },
+    {
+      "id": "EC-074",
+      "category": "security",
+      "signal": "SECURITY_PROTOCOL_UNDER_500",
+      "tools": [
+        "T10"
+      ],
+      "mitigation": "expand-security-protocol-registry-wave53",
+      "imaginationRef": "IMG-311"
+    },
+    {
+      "id": "EC-075",
+      "category": "legal",
+      "signal": "JURISDICTION_MARKET_UNDER_45",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-jurisdiction-bundles-wave53",
+      "imaginationRef": "IMG-312"
+    },
+    {
+      "id": "EC-076",
+      "category": "em1",
+      "signal": "EM1_2200_MARKET_LATTICE",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-em1-lattice-2200",
+      "imaginationRef": "IMG-318"
+    },
+    {
+      "id": "EC-077",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_BASELINE_75",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-retrieval-baseline-wave54",
+      "imaginationRef": "IMG-319"
+    },
+    {
+      "id": "EC-078",
+      "category": "security",
+      "signal": "SECURITY_PROTOCOL_UNDER_550",
+      "tools": [
+        "T10"
+      ],
+      "mitigation": "expand-security-protocol-registry-wave54",
+      "imaginationRef": "IMG-320"
+    },
+    {
+      "id": "EC-079",
+      "category": "legal",
+      "signal": "JURISDICTION_MARKET_UNDER_50",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-jurisdiction-bundles-wave54",
+      "imaginationRef": "IMG-321"
+    },
+    {
+      "id": "EC-080",
+      "category": "quality",
+      "signal": "STRETCH_SUITE_NOT_RUN",
+      "tools": [
+        "T01"
+      ],
+      "mitigation": "npm run planning:stretch-test",
+      "imaginationRef": "IMG-322"
+    },
+    {
+      "id": "EC-081",
+      "category": "owasp",
+      "signal": "OWASP_CHEATSHEET_UNLINKED",
+      "tools": [
+        "T10"
+      ],
+      "mitigation": "expand-em1-owasp-links-wave63",
+      "imaginationRef": "IMG-1101"
+    },
+    {
+      "id": "EC-082",
+      "category": "obligation",
+      "signal": "OBLIGATION_SOURCE_REF_MISSING",
+      "tools": [
+        "T13"
+      ],
+      "mitigation": "bootstrap-obligation-source-ref-cards-wave63",
+      "imaginationRef": "IMG-1102"
+    },
+    {
+      "id": "EC-083",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_BASELINE_UNDER_110",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-retrieval-baseline-wave63",
+      "imaginationRef": "IMG-1103"
+    },
+    {
+      "id": "EC-084",
+      "category": "corpus",
+      "signal": "CORPUS_UNDER_10800",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "harvest:owasp-cheatsheets",
+      "imaginationRef": "IMG-1104"
+    },
+    {
+      "id": "EC-085",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_140",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "bootstrap-obligations-wave63",
+      "imaginationRef": "IMG-1105"
+    },
+    {
+      "id": "EC-086",
+      "category": "stripe",
+      "signal": "STRIPE_WEBHOOK_UNSIGNED",
+      "tools": [
+        "T05"
+      ],
+      "mitigation": "expand-em1-stripe-cf-links-wave64",
+      "imaginationRef": "IMG-1151"
+    },
+    {
+      "id": "EC-087",
+      "category": "cloudflare",
+      "signal": "TURNSTILE_MISSING_ON_AUTH",
+      "tools": [
+        "T10"
+      ],
+      "mitigation": "bootstrap-corpus-knowledge-wave64",
+      "imaginationRef": "IMG-1152"
+    },
+    {
+      "id": "EC-088",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_BASELINE_UNDER_120",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-retrieval-baseline-wave64",
+      "imaginationRef": "IMG-1153"
+    },
+    {
+      "id": "EC-089",
+      "category": "legal",
+      "signal": "GDPR_PORTABILITY_ROUTE_MISSING",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "bootstrap-obligations-wave64",
+      "imaginationRef": "IMG-1154"
+    },
+    {
+      "id": "EC-090",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_150",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "bootstrap-obligations-wave64",
+      "imaginationRef": "IMG-1155"
+    },
+    {
+      "id": "EC-091",
+      "category": "legal",
+      "signal": "COOKIE_CONSENT_MISSING",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "bootstrap-obligations-wave65",
+      "imaginationRef": "IMG-1201"
+    },
+    {
+      "id": "EC-092",
+      "category": "legal",
+      "signal": "AI_DISCLOSURE_MISSING",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "bootstrap-missing-obligation-refs-wave65",
+      "imaginationRef": "IMG-1202"
+    },
+    {
+      "id": "EC-093",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_BASELINE_UNDER_130",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-retrieval-baseline-wave65",
+      "imaginationRef": "IMG-1203"
+    },
+    {
+      "id": "EC-094",
+      "category": "email",
+      "signal": "RESEND_DOMAIN_UNVERIFIED",
+      "tools": [
+        "T05"
+      ],
+      "mitigation": "bootstrap-corpus-knowledge-wave65",
+      "imaginationRef": "IMG-1204"
+    },
+    {
+      "id": "EC-095",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_160",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "bootstrap-obligations-wave65",
+      "imaginationRef": "IMG-1205"
+    },
+    {
+      "id": "EC-096",
+      "category": "nextjs",
+      "signal": "MIDDLEWARE_AUTH_BYPASS",
+      "tools": [
+        "T05"
+      ],
+      "mitigation": "expand-em1-nextjs-owasp-links-wave66",
+      "imaginationRef": "IMG-1251"
+    },
+    {
+      "id": "EC-097",
+      "category": "owasp",
+      "signal": "XSS_UNENCODED_OUTPUT",
+      "tools": [
+        "T10"
+      ],
+      "mitigation": "bootstrap-obligations-wave66",
+      "imaginationRef": "IMG-1252"
+    },
+    {
+      "id": "EC-098",
+      "category": "tgs",
+      "signal": "TGS_V2_OBLIGATION_TRIGGER",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "record-tgs-v2-rebaseline-wave66",
+      "imaginationRef": "IMG-1253"
+    },
+    {
+      "id": "EC-099",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_BASELINE_UNDER_140",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-retrieval-baseline-wave66",
+      "imaginationRef": "IMG-1254"
+    },
+    {
+      "id": "EC-100",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_170",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "bootstrap-obligations-wave66",
+      "imaginationRef": "IMG-1255"
+    },
+    {
+      "id": "EC-101",
+      "category": "mcp",
+      "signal": "MCP_TOOL_UNAUTHORIZED",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-em1-production-links-wave67",
+      "imaginationRef": "IMG-1301"
+    },
+    {
+      "id": "EC-102",
+      "category": "rag",
+      "signal": "RAG_CHUNK_UNVALIDATED",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "bootstrap-obligations-wave67",
+      "imaginationRef": "IMG-1302"
+    },
+    {
+      "id": "EC-103",
+      "category": "production",
+      "signal": "PC_HARNESS_NOT_RUN",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "expand-production-confidence-wave67",
+      "imaginationRef": "IMG-1303"
+    },
+    {
+      "id": "EC-104",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_BASELINE_UNDER_150",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-retrieval-baseline-wave67",
+      "imaginationRef": "IMG-1304"
+    },
+    {
+      "id": "EC-105",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_180",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "bootstrap-obligations-wave67",
+      "imaginationRef": "IMG-1305"
+    },
+    {
+      "id": "EC-106",
+      "category": "agent",
+      "signal": "AGENT_WIREMAP_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "simulate-adversarial-agent",
+      "imaginationRef": "IMG-1351"
+    },
+    {
+      "id": "EC-107",
+      "category": "agent",
+      "signal": "AGENT_TIER_BYPASS",
+      "tools": [
+        "T10"
+      ],
+      "mitigation": "expand-em1-adversarial-links-wave68",
+      "imaginationRef": "IMG-1352"
+    },
+    {
+      "id": "EC-108",
+      "category": "agent",
+      "signal": "ADVERSARIAL_HARNESS_NOT_RUN",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-1353"
+    },
+    {
+      "id": "EC-109",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_BASELINE_UNDER_160",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "expand-retrieval-baseline-wave68",
+      "imaginationRef": "IMG-1354"
+    },
+    {
+      "id": "EC-110",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_190",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "bootstrap-obligations-wave68",
+      "imaginationRef": "IMG-1355"
+    },
+    {
+      "id": "EC-115",
+      "category": "agent",
+      "signal": "WAVE69_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-69",
+      "imaginationRef": "IMG-1400"
+    },
+    {
+      "id": "EC-111",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_170",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-69",
+      "imaginationRef": "IMG-1401"
+    },
+    {
+      "id": "EC-112",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_200",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-69",
+      "imaginationRef": "IMG-1402"
+    },
+    {
+      "id": "EC-113",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_12",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-1403"
+    },
+    {
+      "id": "EC-114",
+      "category": "production",
+      "signal": "PC_UNDER_80",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-1404"
+    },
+    {
+      "id": "EC-120",
+      "category": "agent",
+      "signal": "WAVE70_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-70",
+      "imaginationRef": "IMG-1450"
+    },
+    {
+      "id": "EC-116",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_180",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-70",
+      "imaginationRef": "IMG-1451"
+    },
+    {
+      "id": "EC-117",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_210",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-70",
+      "imaginationRef": "IMG-1452"
+    },
+    {
+      "id": "EC-118",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_14",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-1453"
+    },
+    {
+      "id": "EC-119",
+      "category": "production",
+      "signal": "PC_UNDER_90",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-1454"
+    },
+    {
+      "id": "EC-125",
+      "category": "agent",
+      "signal": "WAVE71_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-71",
+      "imaginationRef": "IMG-1500"
+    },
+    {
+      "id": "EC-121",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_190",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-71",
+      "imaginationRef": "IMG-1501"
+    },
+    {
+      "id": "EC-122",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_220",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-71",
+      "imaginationRef": "IMG-1502"
+    },
+    {
+      "id": "EC-123",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_16",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-1503"
+    },
+    {
+      "id": "EC-124",
+      "category": "production",
+      "signal": "PC_UNDER_100",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-1504"
+    },
+    {
+      "id": "EC-130",
+      "category": "agent",
+      "signal": "WAVE72_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-72",
+      "imaginationRef": "IMG-1550"
+    },
+    {
+      "id": "EC-126",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_200",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-72",
+      "imaginationRef": "IMG-1551"
+    },
+    {
+      "id": "EC-127",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_230",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-72",
+      "imaginationRef": "IMG-1552"
+    },
+    {
+      "id": "EC-128",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_18",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-1553"
+    },
+    {
+      "id": "EC-129",
+      "category": "production",
+      "signal": "PC_UNDER_110",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-1554"
+    },
+    {
+      "id": "EC-135",
+      "category": "agent",
+      "signal": "WAVE73_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-73",
+      "imaginationRef": "IMG-1600"
+    },
+    {
+      "id": "EC-131",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_210",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-73",
+      "imaginationRef": "IMG-1601"
+    },
+    {
+      "id": "EC-132",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_240",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-73",
+      "imaginationRef": "IMG-1602"
+    },
+    {
+      "id": "EC-133",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_20",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-1603"
+    },
+    {
+      "id": "EC-134",
+      "category": "production",
+      "signal": "PC_UNDER_120",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-1604"
+    },
+    {
+      "id": "EC-140",
+      "category": "agent",
+      "signal": "WAVE74_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-74",
+      "imaginationRef": "IMG-1650"
+    },
+    {
+      "id": "EC-136",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_220",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-74",
+      "imaginationRef": "IMG-1651"
+    },
+    {
+      "id": "EC-137",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_250",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-74",
+      "imaginationRef": "IMG-1652"
+    },
+    {
+      "id": "EC-138",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_22",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-1653"
+    },
+    {
+      "id": "EC-139",
+      "category": "production",
+      "signal": "PC_UNDER_130",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-1654"
+    },
+    {
+      "id": "EC-145",
+      "category": "agent",
+      "signal": "WAVE75_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-75",
+      "imaginationRef": "IMG-1700"
+    },
+    {
+      "id": "EC-141",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_230",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-75",
+      "imaginationRef": "IMG-1701"
+    },
+    {
+      "id": "EC-142",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_260",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-75",
+      "imaginationRef": "IMG-1702"
+    },
+    {
+      "id": "EC-143",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_24",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-1703"
+    },
+    {
+      "id": "EC-144",
+      "category": "production",
+      "signal": "PC_UNDER_140",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-1704"
+    },
+    {
+      "id": "EC-160",
+      "category": "agent",
+      "signal": "WAVE78_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-78",
+      "imaginationRef": "IMG-1850"
+    },
+    {
+      "id": "EC-156",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_260",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-78",
+      "imaginationRef": "IMG-1851"
+    },
+    {
+      "id": "EC-157",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_290",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-78",
+      "imaginationRef": "IMG-1852"
+    },
+    {
+      "id": "EC-158",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_30",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-1853"
+    },
+    {
+      "id": "EC-159",
+      "category": "production",
+      "signal": "PC_UNDER_170",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-1854"
+    },
+    {
+      "id": "EC-165",
+      "category": "agent",
+      "signal": "WAVE79_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-79",
+      "imaginationRef": "IMG-1900"
+    },
+    {
+      "id": "EC-161",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_270",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-79",
+      "imaginationRef": "IMG-1901"
+    },
+    {
+      "id": "EC-162",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_300",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-79",
+      "imaginationRef": "IMG-1902"
+    },
+    {
+      "id": "EC-163",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_32",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-1903"
+    },
+    {
+      "id": "EC-164",
+      "category": "production",
+      "signal": "PC_UNDER_180",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-1904"
+    },
+    {
+      "id": "EC-170",
+      "category": "agent",
+      "signal": "WAVE80_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-80",
+      "imaginationRef": "IMG-1950"
+    },
+    {
+      "id": "EC-166",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_280",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-80",
+      "imaginationRef": "IMG-1951"
+    },
+    {
+      "id": "EC-167",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_310",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-80",
+      "imaginationRef": "IMG-1952"
+    },
+    {
+      "id": "EC-168",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_34",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-1953"
+    },
+    {
+      "id": "EC-169",
+      "category": "production",
+      "signal": "PC_UNDER_190",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-1954"
+    },
+    {
+      "id": "EC-175",
+      "category": "agent",
+      "signal": "WAVE81_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-81",
+      "imaginationRef": "IMG-2000"
+    },
+    {
+      "id": "EC-171",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_290",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-81",
+      "imaginationRef": "IMG-2001"
+    },
+    {
+      "id": "EC-172",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_320",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-81",
+      "imaginationRef": "IMG-2002"
+    },
+    {
+      "id": "EC-173",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_36",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-2003"
+    },
+    {
+      "id": "EC-174",
+      "category": "production",
+      "signal": "PC_UNDER_200",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-2004"
+    },
+    {
+      "id": "EC-180",
+      "category": "agent",
+      "signal": "WAVE82_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-82",
+      "imaginationRef": "IMG-2050"
+    },
+    {
+      "id": "EC-176",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_300",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-82",
+      "imaginationRef": "IMG-2051"
+    },
+    {
+      "id": "EC-177",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_330",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-82",
+      "imaginationRef": "IMG-2052"
+    },
+    {
+      "id": "EC-178",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_38",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-2053"
+    },
+    {
+      "id": "EC-179",
+      "category": "production",
+      "signal": "PC_UNDER_210",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-2054"
+    },
+    {
+      "id": "EC-185",
+      "category": "agent",
+      "signal": "WAVE83_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-83",
+      "imaginationRef": "IMG-2100"
+    },
+    {
+      "id": "EC-181",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_310",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-83",
+      "imaginationRef": "IMG-2101"
+    },
+    {
+      "id": "EC-182",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_340",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-83",
+      "imaginationRef": "IMG-2102"
+    },
+    {
+      "id": "EC-183",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_40",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-2103"
+    },
+    {
+      "id": "EC-184",
+      "category": "production",
+      "signal": "PC_UNDER_220",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-2104"
+    },
+    {
+      "id": "EC-190",
+      "category": "agent",
+      "signal": "WAVE84_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-84",
+      "imaginationRef": "IMG-2150"
+    },
+    {
+      "id": "EC-186",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_320",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-84",
+      "imaginationRef": "IMG-2151"
+    },
+    {
+      "id": "EC-187",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_350",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-84",
+      "imaginationRef": "IMG-2152"
+    },
+    {
+      "id": "EC-188",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_42",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-2153"
+    },
+    {
+      "id": "EC-189",
+      "category": "production",
+      "signal": "PC_UNDER_230",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-2154"
+    },
+    {
+      "id": "EC-195",
+      "category": "agent",
+      "signal": "WAVE85_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-85",
+      "imaginationRef": "IMG-2200"
+    },
+    {
+      "id": "EC-191",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_330",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-85",
+      "imaginationRef": "IMG-2201"
+    },
+    {
+      "id": "EC-192",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_360",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-85",
+      "imaginationRef": "IMG-2202"
+    },
+    {
+      "id": "EC-193",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_44",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-2203"
+    },
+    {
+      "id": "EC-194",
+      "category": "production",
+      "signal": "PC_UNDER_240",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-2204"
+    },
+    {
+      "id": "EC-200",
+      "category": "agent",
+      "signal": "WAVE86_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-86",
+      "imaginationRef": "IMG-2250"
+    },
+    {
+      "id": "EC-196",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_340",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-86",
+      "imaginationRef": "IMG-2251"
+    },
+    {
+      "id": "EC-197",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_370",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-86",
+      "imaginationRef": "IMG-2252"
+    },
+    {
+      "id": "EC-198",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_46",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-2253"
+    },
+    {
+      "id": "EC-199",
+      "category": "production",
+      "signal": "PC_UNDER_250",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-2254"
+    },
+    {
+      "id": "EC-205",
+      "category": "agent",
+      "signal": "WAVE87_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-87",
+      "imaginationRef": "IMG-2300"
+    },
+    {
+      "id": "EC-201",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_350",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-87",
+      "imaginationRef": "IMG-2301"
+    },
+    {
+      "id": "EC-202",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_380",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-87",
+      "imaginationRef": "IMG-2302"
+    },
+    {
+      "id": "EC-203",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_48",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-2303"
+    },
+    {
+      "id": "EC-204",
+      "category": "production",
+      "signal": "PC_UNDER_260",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-2304"
+    },
+    {
+      "id": "EC-210",
+      "category": "agent",
+      "signal": "WAVE88_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-88",
+      "imaginationRef": "IMG-2350"
+    },
+    {
+      "id": "EC-206",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_360",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-88",
+      "imaginationRef": "IMG-2351"
+    },
+    {
+      "id": "EC-207",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_390",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-88",
+      "imaginationRef": "IMG-2352"
+    },
+    {
+      "id": "EC-208",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_50",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-2353"
+    },
+    {
+      "id": "EC-209",
+      "category": "production",
+      "signal": "PC_UNDER_270",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-2354"
+    },
+    {
+      "id": "EC-215",
+      "category": "agent",
+      "signal": "WAVE89_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-89",
+      "imaginationRef": "IMG-2400"
+    },
+    {
+      "id": "EC-211",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_370",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-89",
+      "imaginationRef": "IMG-2401"
+    },
+    {
+      "id": "EC-212",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_400",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-89",
+      "imaginationRef": "IMG-2402"
+    },
+    {
+      "id": "EC-213",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_52",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-2403"
+    },
+    {
+      "id": "EC-214",
+      "category": "production",
+      "signal": "PC_UNDER_280",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-2404"
+    },
+    {
+      "id": "EC-220",
+      "category": "agent",
+      "signal": "WAVE90_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-90",
+      "imaginationRef": "IMG-2450"
+    },
+    {
+      "id": "EC-216",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_380",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-90",
+      "imaginationRef": "IMG-2451"
+    },
+    {
+      "id": "EC-217",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_410",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-90",
+      "imaginationRef": "IMG-2452"
+    },
+    {
+      "id": "EC-218",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_54",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-2453"
+    },
+    {
+      "id": "EC-219",
+      "category": "production",
+      "signal": "PC_UNDER_290",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-2454"
+    },
+    {
+      "id": "EC-225",
+      "category": "agent",
+      "signal": "WAVE91_AGENT_BYPASS",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-91",
+      "imaginationRef": "IMG-2500"
+    },
+    {
+      "id": "EC-221",
+      "category": "retrieval",
+      "signal": "RETRIEVAL_UNDER_390",
+      "tools": [
+        "T04"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-91",
+      "imaginationRef": "IMG-2501"
+    },
+    {
+      "id": "EC-222",
+      "category": "ironclad",
+      "signal": "OBLIGATION_UNDER_420",
+      "tools": [
+        "T12"
+      ],
+      "mitigation": "run-knowledge-wave.mjs-91",
+      "imaginationRef": "IMG-2502"
+    },
+    {
+      "id": "EC-223",
+      "category": "agent",
+      "signal": "ADVERSARIAL_UNDER_56",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-adversarial-agent",
+      "imaginationRef": "IMG-2503"
+    },
+    {
+      "id": "EC-224",
+      "category": "production",
+      "signal": "PC_UNDER_300",
+      "tools": [
+        "T11"
+      ],
+      "mitigation": "g2-production-confidence",
+      "imaginationRef": "IMG-2504"
+    }
+  ]
+}

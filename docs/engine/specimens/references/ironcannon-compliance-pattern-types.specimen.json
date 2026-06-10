@@ -1,0 +1,16 @@
+{
+  "refId": "ironcannon/compliance-pattern-types",
+  "sourceUrl": "https://ironcannon.dev/patterns/compliance-patterns",
+  "lastVerified": "2026-05-31",
+  "title": "IC compliance pattern types",
+  "excerpt": "required_string, forbidden_string, required_file, required_regex, ui_state_reference. Pro tier skips armor-only patterns. C16 remote verify authoritative.",
+  "appliesTo": [
+    "T05",
+    "C16"
+  ],
+  "tags": [
+    "ironcannon",
+    "pattern"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

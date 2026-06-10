@@ -1,0 +1,16 @@
+{
+  "fixtureId": "LEG-EMAIL-001",
+  "obligationId": "LEG-EMAIL-001",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "patterns": [
+      "unsubscribe",
+      "List-Unsubscribe"
+    ]
+  },
+  "passSnippet": "unsubscribe List-Unsubscribe",
+  "failSnippet": "gap LEG-EMAIL-001",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

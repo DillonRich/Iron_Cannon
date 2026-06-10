@@ -1,0 +1,14 @@
+{
+  "refId": "legal/export-reauth",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/legal-export-reauth",
+  "lastVerified": "2026-06-04",
+  "title": "Export download requires re-authentication within 15 minutes",
+  "provider": "legal",
+  "excerpt": "LEG-W53-007: Export download requires re-authentication within 15 minutes",
+  "embeddingHint": "LEG-W53-007 data flow_ref",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

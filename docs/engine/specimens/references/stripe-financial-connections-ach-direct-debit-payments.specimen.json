@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/financial-connections-ach-direct-debit-payments",
+  "sourceUrl": "https://docs.stripe.com/financial-connections/ach-direct-debit-payments.md",
+  "lastVerified": "2026-06-03",
+  "title": "Collect a bank account to use ACH Direct Debit payments with account data",
+  "excerpt": "Use account data such as balances with your payments integration. Not sure about which Financial Connections integration to use? See our [overview of integration options](https://docs.stripe.com/financial-connections/use-cases.md). Stripe offers a number of ways to accept ACH Direct Debit payments from your users. All of these methods require that you [verify](https://docs.stripe.com/payments/ach-direct-debit.md#verification) the user’s account before you can debit their account. You can use Financial Connections to perform instant bank account verification along with features such as balance or ownership checks.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

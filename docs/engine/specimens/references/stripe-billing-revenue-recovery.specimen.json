@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-revenue-recovery",
+  "sourceUrl": "https://docs.stripe.com/billing/revenue-recovery.md",
+  "lastVerified": "2026-06-03",
+  "title": "Revenue recovery",
+  "excerpt": "Learn about automated recovery features that reduce and recover failed subscription payments. Prevent lost revenue and reduce churn with Stripe’s revenue recovery features. These automated tools make sure you don’t lose revenue to failed payments or missed trial conversions. None of the features require you to write code, so you can start recovering revenue today. > This page describes recovery features for *subscriptions* (A Subscription represents the product details associated with the plan that your customer subscribes to. Allows you to charge the customer on a recurring basis) and other recurring revenue.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

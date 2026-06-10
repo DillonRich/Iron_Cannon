@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-integrations",
+  "sourceUrl": "https://resend.com/docs/integrations.md",
+  "lastVerified": "2026-06-03",
+  "title": "Integrations",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Integrations > Integrate Resend with the tools you already use. export const Auth0Icon = props => Auth0 ; export const BrinIcon = props => Brin ; export const PulseticIcon = props => Pulsetic ; export const KindeIcon = props => Kinde ; export const CourrierIcon = props => Courrier ; export const CoolifyIcon = props => Coolify ; export const TinybirdIcon = props => Tinybird ; export const InvopopIcon = props => Invopop ; export const OpenMeterIcon = props => OpenMeter ; export const MedusaIcon = props => Medusa ; export const FastgenIcon = props => Fastgen ; export const InfisicalIcon = props => Infisical ; export…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

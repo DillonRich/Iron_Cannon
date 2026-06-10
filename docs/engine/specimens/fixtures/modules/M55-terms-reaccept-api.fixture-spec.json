@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M55",
+  "moduleId": "M55-terms-reaccept-api",
+  "patternsUnderTest": [
+    "TR-API-001",
+    "TR-API-002",
+    "AUTH-P50-M55-",
+    "AUTH-P50-LIFECYCLE"
+  ],
+  "passSnippet": "POST /api/legal/reaccept-terms; terms_version = env.CURRENT_TERMS_VERSION",
+  "failSnippet": "GET /api/me only",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "TR-API-001"
+  ]
+}

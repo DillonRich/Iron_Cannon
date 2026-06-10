@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-runtime-apis-streams-readablestreamdefaultreader-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/runtime-apis/streams/readablestreamdefaultreader/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "ReadableStream DefaultReader",
+  "excerpt": "description: Use ReadableStreamDefaultReader in Workers to read chunks from a ReadableStream. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. A reader is used when you want to read from a [ReadableStream](https://developers.cloudflare.com/workers/runtime-apis/streams/readablestream/), rather than piping its output to a [WritableStream](https://developers.cloudflare.com/workers/runtime-apis/streams/writablestream/). A `ReadableStreamDefaultReader` is not instantiated via its constructor.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

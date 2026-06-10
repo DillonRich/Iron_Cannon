@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/d1-worker-api-d1-database-index",
+  "sourceUrl": "https://developers.cloudflare.com/d1/worker-api/d1-database/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "D1 Database",
+  "excerpt": "description: Use the D1Database binding to prepare statements, execute queries, batch operations, and dump a D1 database from a Worker. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/d1/llms.txt > Use this file to discover all available pages before exploring further. To interact with your D1 database from your Worker, you need to access it through the environment bindings provided to the Worker (`env`). // D1 database is 'env.DB', where \"DB\" is the binding name from the Wrangler configuration file.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "refId": "legal/wcag-focus-visible",
+  "sourceUrl": "https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html",
+  "lastVerified": "2026-05-31",
+  "title": "WCAG focus visible",
+  "excerpt": "Keyboard users must see which element has focus. Do not remove outline without custom focus ring. Modals must trap focus and restore on close. Detect via CSS :focus-visible patterns where possible.",
+  "appliesTo": ["LEG-A11Y-004", "layer4"],
+  "tags": ["legal", "wcag", "focus"]
+}

@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-emails-tags",
+  "sourceUrl": "https://resend.com/docs/dashboard/emails/tags.md",
+  "lastVerified": "2026-06-03",
+  "title": "Managing Tags",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Managing Tags > Add unique identifiers to emails sent. Tags are unique identifiers you can add to your emails. They help associate emails with your application. They are passed in key/value pairs. After the email is sent, the tag is included in the webhook event. Tags can include ASCII letters, numbers, underscores, or dashes. You can add up to 75 tags per email.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

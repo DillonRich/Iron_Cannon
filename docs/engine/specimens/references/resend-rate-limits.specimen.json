@@ -1,0 +1,9 @@
+{
+  "refId": "resend/rate-limits",
+  "sourceUrl": "https://resend.com/docs/api-reference/introduction",
+  "lastVerified": "2026-05-31",
+  "title": "Resend rate limits",
+  "excerpt": "Default 5 requests per second per team. 429 response on exceed—implement exponential backoff in Worker email queue. Batch API for bulk sends. Monitor Usage page in Dashboard.",
+  "appliesTo": ["email-lifecycle"],
+  "tags": ["resend", "rate-limit"]
+}

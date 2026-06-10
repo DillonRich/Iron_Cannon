@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-observability-logs-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/observability/logs/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Logs",
+  "excerpt": "description: Access, filter, and export logs from Cloudflare Workers for troubleshooting. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Logs are an important component of a developer's toolkit to troubleshoot and diagnose application issues and maintaining system health. The Cloudflare Developer Platform offers many tools to help developers manage their application's logs. Automatically ingest, filter, and analyze logs emitted from Cloudflare Workers in the Cloudflare dashboard.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

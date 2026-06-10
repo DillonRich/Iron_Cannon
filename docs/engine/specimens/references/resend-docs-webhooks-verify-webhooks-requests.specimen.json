@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-webhooks-verify-webhooks-requests",
+  "sourceUrl": "https://resend.com/docs/webhooks/verify-webhooks-requests.md",
+  "lastVerified": "2026-06-03",
+  "title": "Verify Webhooks Requests",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Verify Webhooks Requests > Learn how to use the signing secret to verify your webhooks. Webhook signing secrets are used to validate the payload data sent to your application from Resend. You can find the signing secret on the webhook details page. Calls to [create](/api-reference/webhooks/create-webhook), [retrieve](/api-reference/webhooks/get-webhook), or [list](/api-reference/webhooks/list-webhooks) webhooks will also return the signing secret in the response body. To verify the webhook request, you can use the Resend SDK, as in the example below.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

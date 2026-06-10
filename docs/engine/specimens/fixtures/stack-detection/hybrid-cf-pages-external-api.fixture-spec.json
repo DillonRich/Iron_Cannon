@@ -1,0 +1,11 @@
+{
+  "fixtureId": "SD-03",
+  "description": "CF Pages frontend + external Node API — partial glue risk",
+  "projectFiles": [
+    { "path": "package.json", "content": "{\"dependencies\":{\"next\":\"14\"}}" },
+    { "path": "wrangler.toml", "content": "pages_build_output_dir = \"out\"\n" },
+    { "path": "server/index.js", "content": "require('express')().listen(3001)" }
+  ],
+  "expectedT01": { "supported": true, "warnings": ["HYBRID_STACK_DETECTED", "external-api-surface"], "stack": ["nextjs", "cloudflare-pages"] },
+  "expectedT02": { "complete": false, "missingConfig": ["worker-routes-or-pages-functions"], "meta": { "hybridWarning": true } }
+}

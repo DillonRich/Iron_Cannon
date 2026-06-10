@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w61-014",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "Radar rules enabled for high-risk signup velocity",
+    "obligations": [
+      "LEG-W61-014"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Radar rules enabled for high-risk signup velocity"
+  },
+  "references": [
+    "stripe/radar-rules"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W61-014",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "stripe",
+    "disclaimerRequired": true
+  }
+}

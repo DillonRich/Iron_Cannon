@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-runtime-apis-performance-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/runtime-apis/performance/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Performance and timers",
+  "excerpt": "description: Measure timing, performance, and timing of subrequests and other operations. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. The Workers runtime supports a subset of the [Performance API ↗](https://developer.mozilla.org/en-US/docs/Web/API/Performance), used to measure timing and performance, as well as timing of subrequests and other operations. The [performance.now() method ↗](https://developer.mozilla.org/en-US/docs/Web/API/Performance/now) returns timestamp in milliseconds, representing the time elapsed since `performance.timeOrigin`.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

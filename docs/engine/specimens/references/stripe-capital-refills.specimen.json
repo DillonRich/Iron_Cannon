@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/capital-refills",
+  "sourceUrl": "https://docs.stripe.com/capital/refills.md",
+  "lastVerified": "2026-06-03",
+  "title": "Refills",
+  "excerpt": "Learn how to enable refills for your Capital program. > Capital for platforms is available in [public preview](https://docs.stripe.com/release-phases.md). Refills are additional financing offers sent to connected accounts who’ve made substantial repayment progress towards their in-progress financing offer balance. If approved, refill offers pay down the remaining balance on the in-progress balance. - This guide assumes you completed an [API integration](https://docs.stripe.com/capital/api-integration.md). - Refills aren’t enabled by default. After you update your integration to support refills, you must submit details about your integration and API use to Stripe for compliance review using the [Change Request Form](https://form.asana.com/?k=8K51UWmWhttehNFD5qBLdg&d=974470123217835). 1.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

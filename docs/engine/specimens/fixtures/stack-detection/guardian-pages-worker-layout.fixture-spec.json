@@ -1,0 +1,36 @@
+{
+  "fixtureId": "SD-06G",
+  "description": "Guardian-style cloudflare-worker + website layout (G-52)",
+  "projectFiles": [
+    {
+      "path": "cloudflare-worker/wrangler.toml",
+      "content": "name = \"guardian-api\"\nmain = \"src/index.ts\"\n[[d1_databases]]\nbinding = \"DB\"\n"
+    },
+    {
+      "path": "cloudflare-worker/package.json",
+      "content": "{\"dependencies\":{\"stripe\":\"^16.0.0\",\"resend\":\"^3.0.0\"}}"
+    },
+    {
+      "path": "cloudflare-worker/src/index.ts",
+      "content": "import Stripe from 'stripe';\nexport default { fetch() { return new Response('ok'); } };"
+    },
+    {
+      "path": "website/register.html",
+      "content": "<html><body><a href=\"/legal#terms-of-service\">Terms</a></body></html>"
+    },
+    {
+      "path": ".env.example",
+      "content": "STRIPE_SECRET_KEY=\nSTRIPE_WEBHOOK_SECRET=\nRESEND_API_KEY="
+    }
+  ],
+  "expectedT01": {
+    "supported": true,
+    "stackId": "SD-06",
+    "compute": "cloudflare_workers",
+    "services": ["stripe", "resend"],
+    "warnings": ["HYBRID_STACK_DETECTED", "pages-worker-split"]
+  },
+  "expectedT02": {
+    "complete": true
+  }
+}

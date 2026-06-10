@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/terminal-readers-product-sheets",
+  "sourceUrl": "https://docs.stripe.com/terminal/readers/product-sheets.md",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe Terminal reader product sheets",
+  "excerpt": "Learn about Stripe Terminal hardware specifications. In the Dashboard, [browse and purchase available readers and accessories](https://dashboard.stripe.com/terminal/shop). These product sheets contain important device specifications, operating information and instructions, and disclosures and warnings provided by the manufacturer. - [Stripe Reader S710](https://stripe.com/s710/manual) - [Stripe Reader S700](https://stripe.com/s700/manual) - [Stripe S700/S710 Case](https://stripe.com/s700-s710-case)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

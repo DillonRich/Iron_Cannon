@@ -1,0 +1,16 @@
+{
+  "refId": "cloudflare/svc001-pages-pages-custom-domains-045",
+  "sourceUrl": "https://ironcannon.dev/svc001/pages/pages-custom-domains-45",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-001 pages-custom-domains 45",
+  "provider": "cloudflare",
+  "excerpt": "Attach custom domains to Pages project separately from Worker API routes; document DNS CNAME targets in deploy runbook.",
+  "embeddingHint": "cloudflare pages-custom-domains svc001 pages worker split sd-06",
+  "tags": [
+    "svc001",
+    "pages",
+    "sd-06",
+    "cloudflare",
+    "pages-custom-domains"
+  ]
+}

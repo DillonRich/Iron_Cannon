@@ -1,0 +1,16 @@
+{
+  "refId": "ironcannon/tier-gating",
+  "sourceUrl": "https://ironcannon.dev/patterns/tier-gating",
+  "lastVerified": "2026-05-31",
+  "title": "IC tier gating",
+  "excerpt": "Pro: T01-T08. Armor adds T09-T11. Iron Clad adds T12-T14. TIER_INSUFFICIENT if wrong tier. L3 patterns stripped on Pro responses.",
+  "appliesTo": [
+    "TIER_MATRIX",
+    "C11"
+  ],
+  "tags": [
+    "ironcannon",
+    "pattern"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

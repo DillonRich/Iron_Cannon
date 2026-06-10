@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/capital-api-integration",
+  "sourceUrl": "https://docs.stripe.com/capital/api-integration.md",
+  "lastVerified": "2026-06-03",
+  "title": "Build a custom Capital program",
+  "excerpt": "Integrate with our API to build a custom Capital program. > Capital for platforms is available in [public preview](https://docs.stripe.com/release-phases.md). [Stripe Capital](https://docs.stripe.com/capital/how-capital-for-platforms-works.md) enables your platform to retrieve prequalified financing offers for your connected accounts, expose a compliant financing offer application, and provide ongoing reporting for in-progress financing. This guide describes how [Connect](https://docs.stripe.com/connect.md) platforms can integrate with the [Capital API](https://docs.stripe.com/api/capital/financing_offers.md). To launch the program, your platform must support the three phases of the Capital lifecycle: - Marketing financing offers to eligible users.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

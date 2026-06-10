@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/checkout-limit-subscriptions",
+  "sourceUrl": "https://docs.stripe.com/payments/checkout/limit-subscriptions.md",
+  "lastVerified": "2026-05-31",
+  "title": "Limit customers to one subscription",
+  "excerpt": "Before creating Checkout Session, check existing active subscription for customer. Redirect to Customer Portal instead of new Checkout if one exists. Prevents duplicate subs (SC-V02). Requires customer ID lookup in D1 before session create.",
+  "appliesTo": ["SC-V02", "billing-subscription"],
+  "tags": ["stripe", "checkout", "subscription"]
+}

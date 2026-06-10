@@ -1,0 +1,16 @@
+{
+  "refId": "owasp/cheatsheets-user-privacy-protection-cheat-sheet-html",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/User_Privacy_Protection_Cheat_Sheet.html",
+  "lastVerified": "2026-06-05",
+  "title": "User Privacy Protection Cheat Sheet",
+  "excerpt": "User Privacy Protection - OWASP Cheat Sheet Series Skip to content OWASP Cheat Sheet Series User Privacy Protection Initializing search OWASP/CheatSheetSeries OWASP Cheat Sheet Series OWASP/CheatSheetSeries Introduction Index Alphabetical Index ASVS Index MASVS Index Proactive Controls Index Top 10 Cheatsheets Cheatsheets AI Agent Security AJAX Security AML Sanctions AI Agent Payments Abuse Case Access Control Attack Surface Analysis Authentication Authorization Authorization Testing Automation Automotive Security Bean Validation Bot Management and Anti-Automation Browser Extension Vulnerabilities Business Logic Security C-Based Toolchain Hardening CI CD Security Choosing and Using Security Questions Clickjacking Defense Content Security Policy Cookie Theft Mitigation Credential Stuffing P…",
+  "appliesTo": [
+    "security",
+    "auth",
+    "billing"
+  ],
+  "tags": [
+    "owasp",
+    "p0"
+  ]
+}

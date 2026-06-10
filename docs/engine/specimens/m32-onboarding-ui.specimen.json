@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/onboarding/ui",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "onboarding",
+  "moduleId": "M32-onboarding-ui",
+  "adapterId": "nextjs-app-router",
+  "section": "onboarding-ui",
+  "content": {
+    "requirement": "Onboarding wizard at /onboarding; redirect incomplete users from /dashboard",
+    "requiredSteps": [
+      "Route /onboarding protected by M05",
+      "Redirect to /dashboard when O02 or O03",
+      "M05 middleware or layout checks onboarding_completed_at",
+      "After complete: router.refresh() per E06 multi-surface nav",
+      "Optional skip button when product flag enabled"
+    ]
+  },
+  "references": ["nextjs/server-actions", "nextjs/router-refresh", "nextjs/middleware", "nextjs/loading-error-ui"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "ONB-UI-001", "type": "required_file", "value": "app/onboarding/page.tsx", "fileGlob": "**/*", "tier": "pro" },
+      { "id": "ONB-UI-002", "type": "required_string", "value": "/onboarding", "fileGlob": "**/middleware.ts", "tier": "pro" },
+      { "id": "ONB-UI-003", "type": "required_string", "value": "router.refresh", "fileGlob": "**/onboarding/**", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "onboarding-ui" }
+}

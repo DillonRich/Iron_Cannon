@@ -1,0 +1,16 @@
+{
+  "refId": "ironcannon/imagination-50",
+  "sourceUrl": "https://ironcannon.dev/patterns/imagination-50",
+  "lastVerified": "2026-05-31",
+  "title": "Imagination 50 scenarios",
+  "excerpt": "Golden production imagination registry with >=90% per-scenario behavioral pass.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "ironcannon",
+    "imagination-50"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

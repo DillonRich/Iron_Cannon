@@ -1,0 +1,9 @@
+{
+  "refId": "legal/ccpa-do-not-sell",
+  "sourceUrl": "https://oag.ca.gov/privacy/ccpa",
+  "lastVerified": "2026-05-31",
+  "title": "CCPA Do Not Sell link",
+  "excerpt": "California consumers may opt out of sale/sharing of personal information. If primaryMarkets includes us-ca and business sells/shares data, provide 'Do Not Sell or Share My Personal Information' link. Iron Cannon pattern-scans only—user declares applicability.",
+  "appliesTo": ["LEG-PRIV-005", "privacy-gdpr-ccpa"],
+  "tags": ["legal", "ccpa", "privacy", "advisory"]
+}

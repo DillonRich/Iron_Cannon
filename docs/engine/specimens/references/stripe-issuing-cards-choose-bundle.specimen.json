@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-cards-choose-bundle",
+  "sourceUrl": "https://docs.stripe.com/issuing/cards/choose-bundle.md",
+  "lastVerified": "2026-06-03",
+  "title": "Choose your physical bundle",
+  "excerpt": "Set up a standard or custom physical bundle. Stripe helps you set up your physical bundle, which consists of a card, a carrier (the letter sent to cardholders on which the card is affixed), and an envelope. You have different options for both the standard and custom bundles. For [bulk orders](https://docs.stripe.com/issuing/cards/physical/ship-cards.md#bulk-issuance) of multiple cards shipped to a single destination, we don’t include carriers. To get started, go directly to the [Designs](https://dashboard.stripe.com/issuing/personalization-designs) tab in the Issuing Dashboard. We prompt you to create a design by uploading your logo and adding your carrier text. The standard bundle includes the following: - **Card:** A plastic black or white card with your logo (company logo).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

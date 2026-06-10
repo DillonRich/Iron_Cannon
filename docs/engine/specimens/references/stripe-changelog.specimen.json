@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/changelog",
+  "sourceUrl": "https://docs.stripe.com/changelog.md",
+  "lastVerified": "2026-06-03",
+  "title": "Changelog",
+  "excerpt": "Keep track of changes and upgrades to the Stripe API. [Learn what's changing in Dahlia](https://docs.stripe.com/changelog/dahlia.md) | Title | Affected Products | Breaking change? | Category | | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ---------------- | -------- | | [Adds discount eligibility options for add-on invoice items on Subscriptions and Preview Invoice APIs](https://docs.stripe.com/changelog/dahlia/2026-05-27/invoice-items-discount-eligibility.md) | Billing | Non-breaking | api | | [Adds amount paid off Stripe property to Invoice object](https://docs.stripe.com/changelog/dahlia/2026-05-27/invoice-object-amou…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

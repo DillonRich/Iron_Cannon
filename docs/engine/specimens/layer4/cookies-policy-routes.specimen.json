@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/cookies/policy-routes",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": null,
+  "section": "cookie-policy",
+  "content": {
+    "requirement": "Cookie documentation and dedicated policy routes for EU markets",
+    "obligations": ["LEG-COOKIE-003", "LEG-COOKIE-004"],
+    "compareSteps": [
+      "Scan privacy/cookie pages for essential cookies language",
+      "Verify /cookies route exists when EU market selected"
+    ],
+    "remediationDirective": "Document essential auth cookies; add /cookies page for EU/UK primaryMarkets."
+  },
+  "references": ["legal/cookie-consent-eu"],
+  "compliancePatterns": {
+    "advisory": [
+      { "id": "LEG-COOKIE-003", "type": "pattern", "patterns": ["essential cookies", "strictly necessary"], "tier": "ironclad" },
+      { "id": "LEG-COOKIE-004", "type": "route_exists", "path": "/cookies", "tier": "ironclad" }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "cookies", "disclaimerRequired": true }
+}

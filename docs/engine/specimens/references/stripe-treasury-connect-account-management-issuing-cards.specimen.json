@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-account-management-issuing-cards",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/account-management/issuing-cards.md",
+  "lastVerified": "2026-06-03",
+  "title": "Working with Stripe Issuing cards",
+  "excerpt": "Learn how to integrate Stripe Issuing with Treasury for platforms. > The Accounts v2 API doesn’t support Issuing workflows. If you have accounts created with Accounts v2, you can use Accounts v1 to manage the `treasury` and `card_issuing` capabilities. For details, see [Use Accounts as customers](https://docs.stripe.com/accounts-v2/use-accounts-as-customers.md). [Stripe Issuing](https://docs.stripe.com/issuing.md) lets you create physical and virtual cards using a financial account as the source of funds. Request the `card_issuing` [account capability](https://docs.stripe.com/connect/account-capabilities.md) for the connected accounts on your platform and provide the [required information](https://docs.stripe.com/issuing/connect.md#required-verification-information) for onboarding.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

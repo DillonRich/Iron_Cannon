@@ -1,0 +1,17 @@
+{
+  "refId": "ironcannon/edge-e06-multi-surface",
+  "sourceUrl": "https://ironcannon.dev/patterns/edge-e06",
+  "lastVerified": "2026-05-31",
+  "title": "IC edge E06 multi-surface sync",
+  "excerpt": "After auth or billing mutation affecting nav, call router.refresh() or revalidatePath so client RSC cache matches server session.",
+  "appliesTo": [
+    "E06",
+    "M14",
+    "M32"
+  ],
+  "tags": [
+    "ironcannon",
+    "edge"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

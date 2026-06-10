@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-invoice-rendering-template",
+  "sourceUrl": "https://docs.stripe.com/invoicing/invoice-rendering-template.md",
+  "lastVerified": "2026-06-03",
+  "title": "Invoice rendering templates",
+  "excerpt": "Use invoice rendering templates to personalize your invoice appearance for different customers You can tailor content on your invoices for specific groups of customers. Examples might include: - Displaying specific text in your invoice’s footer field for customers from a particular country - Displaying a specific memo note for customers with a particular revenue channel - Grouping line items in a certain manner for customers with complex transactions This guide describes how you can use invoice rendering templates to:",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

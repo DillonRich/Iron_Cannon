@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-edge-004",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-edge-004",
+  "content": {
+    "requirement": "Password reset token single-use",
+    "obligations": [
+      "LEG-EDGE-004"
+    ],
+    "compareSteps": [
+      "Run detect.type=schema_column",
+      "Map result to obligation LEG-EDGE-004",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-EDGE-004: Password reset token single-use"
+  },
+  "references": [
+    "owasp/reset-token"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-EDGE-004",
+        "type": "schema_column",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "edge",
+    "disclaimerRequired": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-sdks",
+  "sourceUrl": "https://resend.com/docs/sdks.md",
+  "lastVerified": "2026-06-03",
+  "title": "Official SDKs",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Official SDKs > Open source client libraries for your favorite platforms. ## Official SDKs github.com/resend/resend-node github.com/resend/resend-php github.com/resend/resend-laravel github.com/resend/resend-python github.com/resend/resend-ruby github.com/resend/resend-go github.com/resend/resend-java github.com/resend/resend-rust github.com/resend/resend-dotnet github.com/resend/resend-chat-sdk ## Community SDKs github.com/elixir-saas/resend-elixir github.com/jiangtaste/nestjs-resend github.com/coderaveHQ/dart\\_resend ## OpenAPI github.com/resend/resend-openapi",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

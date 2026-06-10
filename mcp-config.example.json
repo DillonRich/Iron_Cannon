@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "iron-cannon-local": {
+      "comment": "Pro tier — stack, wiremap, module directives (T01–T08). Start server: npm run ironcannon:serve",
+      "url": "http://127.0.0.1:8787/mcp",
+      "headers": {
+        "x-ironcannon-tier": "pro",
+        "x-ironcannon-client": "cursor-dev"
+      }
+    },
+    "iron-cannon-armor": {
+      "comment": "Armor tier — security surfaces + infrastructure checklists (T09–T11)",
+      "url": "http://127.0.0.1:8787/mcp",
+      "headers": {
+        "x-ironcannon-tier": "armor",
+        "x-ironcannon-client": "cursor-armor"
+      }
+    },
+    "iron-cannon-ironclad": {
+      "comment": "IronClad tier — legal obligation map + spot checks (T12–T14)",
+      "url": "http://127.0.0.1:8787/mcp",
+      "headers": {
+        "x-ironcannon-tier": "ironclad",
+        "x-ironcannon-client": "cursor-ironclad"
+      }
+    }
+  }
+}

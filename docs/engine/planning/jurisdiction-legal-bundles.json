@@ -1,0 +1,1297 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/jurisdiction-legal-bundles/v1",
+  "rulesetVersion": "2026.06.03",
+  "disclaimerRef": "legal/disclaimer",
+  "markets": [
+    {
+      "marketId": "us",
+      "label": "United States",
+      "regions": [
+        "US"
+      ],
+      "obligationPatterns": [
+        "LEG-EMAIL-*",
+        "LEG-A11Y-*",
+        "LEG-TERMS-*",
+        "LEG-PRIV-001",
+        "LEG-PRIV-005"
+      ],
+      "microStipulations": [
+        {
+          "id": "US-CAN-SPAM-PHYS",
+          "summary": "Marketing email includes valid physical postal address",
+          "detectRef": "LEG-EMAIL-001"
+        },
+        {
+          "id": "US-CAN-SPAM-UNSUB",
+          "summary": "Marketing includes one-click unsubscribe honored within 10 days",
+          "detectRef": "LEG-EMAIL-003"
+        },
+        {
+          "id": "US-CCPA-NOTICE",
+          "summary": "California users: privacy policy discloses sale/share and opt-out",
+          "detectRef": "LEG-PRIV-005",
+          "states": [
+            "CA"
+          ]
+        }
+      ]
+    },
+    {
+      "marketId": "eu",
+      "label": "European Union / EEA",
+      "regions": [
+        "EU",
+        "EEA"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*",
+        "LEG-A11Y-*",
+        "LEG-TERMS-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "EU-GDPR-CONSENT",
+          "summary": "Cookie consent reject equal to accept; no pre-ticked non-essential",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "EU-GDPR-DPA",
+          "summary": "Document processor relationships for email/analytics vendors",
+          "detectRef": "LEG-PRIV-010"
+        },
+        {
+          "id": "EU-GDPR-DSR",
+          "summary": "Export/delete user data workflow documented",
+          "detectRef": "LEG-PRIV-008"
+        }
+      ]
+    },
+    {
+      "marketId": "uk",
+      "label": "United Kingdom",
+      "regions": [
+        "UK"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*",
+        "LEG-A11Y-*",
+        "LEG-TERMS-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "UK-GDPR-PECR",
+          "summary": "PECR cookie rules align with consent banner",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "UK-ICO-TRANSPARENCY",
+          "summary": "Privacy policy names lawful basis per processing purpose",
+          "detectRef": "LEG-PRIV-002"
+        }
+      ]
+    },
+    {
+      "marketId": "ca",
+      "label": "Canada",
+      "regions": [
+        "CA"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-A11Y-*",
+        "LEG-TERMS-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "CA-PIPEDA-CONSENT",
+          "summary": "Meaningful consent for collection; accessible privacy policy",
+          "detectRef": "LEG-PRIV-001"
+        }
+      ]
+    },
+    {
+      "marketId": "au",
+      "label": "Australia",
+      "regions": [
+        "AU"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-A11Y-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "AU-APP-POLICY",
+          "summary": "APP-compliant privacy policy linked from signup",
+          "detectRef": "LEG-PRIV-001"
+        }
+      ]
+    },
+    {
+      "marketId": "br",
+      "label": "Brazil",
+      "regions": [
+        "BR"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-TERMS-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "BR-LGPD-BASIS",
+          "summary": "Document legal basis and DPO contact where required",
+          "detectRef": "LEG-PRIV-002"
+        }
+      ]
+    },
+    {
+      "marketId": "in",
+      "label": "India",
+      "regions": [
+        "IN"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "IN-DPDP-NOTICE",
+          "summary": "Notice and purpose limitation on signup",
+          "detectRef": "LEG-PRIV-001"
+        }
+      ]
+    },
+    {
+      "marketId": "sg",
+      "label": "Singapore",
+      "regions": [
+        "SG"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "SG-PDPA-NOTIFY",
+          "summary": "Notify purposes and retention in policy",
+          "detectRef": "LEG-PRIV-001"
+        }
+      ]
+    },
+    {
+      "marketId": "jp",
+      "label": "Japan",
+      "regions": [
+        "JP"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "JP-APPI-PURPOSE",
+          "summary": "Specify purpose of use at collection",
+          "detectRef": "LEG-PRIV-001"
+        }
+      ]
+    },
+    {
+      "marketId": "global",
+      "label": "Global baseline",
+      "regions": [
+        "*"
+      ],
+      "obligationPatterns": [
+        "LEG-A11Y-*",
+        "LEG-PRIV-001",
+        "LEG-TERMS-003"
+      ],
+      "microStipulations": [
+        {
+          "id": "GLOBAL-A11Y",
+          "summary": "WCAG-oriented baseline on auth and settings routes",
+          "detectRef": "LEG-A11Y-001"
+        },
+        {
+          "id": "GLOBAL-TERMS-LINK",
+          "summary": "Terms of service linked before account creation charge",
+          "detectRef": "LEG-TERMS-003"
+        }
+      ]
+    },
+    {
+      "marketId": "mx",
+      "label": "Mexico",
+      "regions": [
+        "MX"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-TERMS-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "MX-PRIV-NOTICE",
+          "summary": "Privacy notice meets Mexico baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "MX-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "MX-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "kr",
+      "label": "South Korea",
+      "regions": [
+        "KR"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-EMAIL-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "KR-PRIV-NOTICE",
+          "summary": "Privacy notice meets South Korea baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "KR-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "KR-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "ch",
+      "label": "Switzerland",
+      "regions": [
+        "CH"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "CH-PRIV-NOTICE",
+          "summary": "Privacy notice meets Switzerland baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "CH-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "CH-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "nz",
+      "label": "New Zealand",
+      "regions": [
+        "NZ"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-A11Y-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "NZ-PRIV-NOTICE",
+          "summary": "Privacy notice meets New Zealand baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "NZ-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "NZ-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "za",
+      "label": "South Africa",
+      "regions": [
+        "ZA"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-RECORD-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "ZA-PRIV-NOTICE",
+          "summary": "Privacy notice meets South Africa baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "ZA-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "ZA-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "ae",
+      "label": "United Arab Emirates",
+      "regions": [
+        "AE"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-TERMS-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "AE-PRIV-NOTICE",
+          "summary": "Privacy notice meets United Arab Emirates baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "AE-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "AE-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "il",
+      "label": "Israel",
+      "regions": [
+        "IL"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-EMAIL-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "IL-PRIV-NOTICE",
+          "summary": "Privacy notice meets Israel baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "IL-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "IL-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "tr",
+      "label": "Turkey",
+      "regions": [
+        "TR"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "TR-PRIV-NOTICE",
+          "summary": "Privacy notice meets Turkey baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "TR-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "TR-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "pl",
+      "label": "Poland",
+      "regions": [
+        "PL"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "PL-PRIV-NOTICE",
+          "summary": "Privacy notice meets Poland baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "PL-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "PL-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "nl",
+      "label": "Netherlands",
+      "regions": [
+        "NL"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "NL-PRIV-NOTICE",
+          "summary": "Privacy notice meets Netherlands baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "NL-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "NL-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "de",
+      "label": "Germany",
+      "regions": [
+        "DE"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*",
+        "LEG-RECORD-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "DE-PRIV-NOTICE",
+          "summary": "Privacy notice meets Germany baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "DE-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "DE-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "fr",
+      "label": "France",
+      "regions": [
+        "FR"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "FR-PRIV-NOTICE",
+          "summary": "Privacy notice meets France baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "FR-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "FR-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "es",
+      "label": "Spain",
+      "regions": [
+        "ES"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "ES-PRIV-NOTICE",
+          "summary": "Privacy notice meets Spain baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "ES-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "ES-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "it",
+      "label": "Italy",
+      "regions": [
+        "IT"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "IT-PRIV-NOTICE",
+          "summary": "Privacy notice meets Italy baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "IT-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "IT-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "se",
+      "label": "Sweden",
+      "regions": [
+        "SE"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "SE-PRIV-NOTICE",
+          "summary": "Privacy notice meets Sweden baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "SE-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "SE-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "no",
+      "label": "Norway",
+      "regions": [
+        "NO"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "NO-PRIV-NOTICE",
+          "summary": "Privacy notice meets Norway baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "NO-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "NO-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "ie",
+      "label": "Ireland",
+      "regions": [
+        "IE"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "IE-PRIV-NOTICE",
+          "summary": "Privacy notice meets Ireland baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "IE-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "IE-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "hk",
+      "label": "Hong Kong",
+      "regions": [
+        "HK"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-TERMS-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "HK-PRIV-NOTICE",
+          "summary": "Privacy notice meets Hong Kong baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "HK-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "HK-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "tw",
+      "label": "Taiwan",
+      "regions": [
+        "TW"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-EMAIL-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "TW-PRIV-NOTICE",
+          "summary": "Privacy notice meets Taiwan baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "TW-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "TW-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "ph",
+      "label": "Philippines",
+      "regions": [
+        "PH"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-A11Y-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "PH-PRIV-NOTICE",
+          "summary": "Privacy notice meets Philippines baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "PH-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "PH-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "at",
+      "label": "Austria",
+      "regions": [
+        "AT"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "AT-PRIV-NOTICE",
+          "summary": "Privacy notice meets Austria baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "AT-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "AT-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "be",
+      "label": "Belgium",
+      "regions": [
+        "BE"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "BE-PRIV-NOTICE",
+          "summary": "Privacy notice meets Belgium baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "BE-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "BE-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "fi",
+      "label": "Finland",
+      "regions": [
+        "FI"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "FI-PRIV-NOTICE",
+          "summary": "Privacy notice meets Finland baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "FI-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "FI-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "dk",
+      "label": "Denmark",
+      "regions": [
+        "DK"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "DK-PRIV-NOTICE",
+          "summary": "Privacy notice meets Denmark baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "DK-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "DK-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "pt",
+      "label": "Portugal",
+      "regions": [
+        "PT"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "PT-PRIV-NOTICE",
+          "summary": "Privacy notice meets Portugal baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "PT-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "PT-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "gr",
+      "label": "Greece",
+      "regions": [
+        "GR"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "GR-PRIV-NOTICE",
+          "summary": "Privacy notice meets Greece baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "GR-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "GR-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "cz",
+      "label": "Czech Republic",
+      "regions": [
+        "CZ"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "CZ-PRIV-NOTICE",
+          "summary": "Privacy notice meets Czech Republic baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "CZ-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "CZ-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "ro",
+      "label": "Romania",
+      "regions": [
+        "RO"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-TERMS-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "RO-PRIV-NOTICE",
+          "summary": "Privacy notice meets Romania baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "RO-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "RO-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "hu",
+      "label": "Hungary",
+      "regions": [
+        "HU"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "HU-PRIV-NOTICE",
+          "summary": "Privacy notice meets Hungary baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "HU-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "HU-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "lt",
+      "label": "Lithuania",
+      "regions": [
+        "LT"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-EMAIL-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "LT-PRIV-NOTICE",
+          "summary": "Privacy notice meets Lithuania baseline before charge",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "LT-COOKIE-CONSENT",
+          "summary": "Cookie consent aligned with regional ePrivacy expectations",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "LT-EMAIL-TRANSACTIONAL",
+          "summary": "Transactional email only on verified domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "sk",
+      "label": "Slovakia",
+      "regions": [
+        "SK"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "SK-PRIV-NOTICE",
+          "summary": "Privacy notice meets Slovakia baseline",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "SK-COOKIE-CONSENT",
+          "summary": "Cookie consent per ePrivacy",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "SK-EMAIL-TRANSACTIONAL",
+          "summary": "Verified sender domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "si",
+      "label": "Slovenia",
+      "regions": [
+        "SI"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "SI-PRIV-NOTICE",
+          "summary": "Privacy notice meets Slovenia baseline",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "SI-COOKIE-CONSENT",
+          "summary": "Cookie consent per ePrivacy",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "SI-EMAIL-TRANSACTIONAL",
+          "summary": "Verified sender domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "bg",
+      "label": "Bulgaria",
+      "regions": [
+        "BG"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-TERMS-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "BG-PRIV-NOTICE",
+          "summary": "Privacy notice meets Bulgaria baseline",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "BG-COOKIE-CONSENT",
+          "summary": "Cookie consent per ePrivacy",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "BG-EMAIL-TRANSACTIONAL",
+          "summary": "Verified sender domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "hr",
+      "label": "Croatia",
+      "regions": [
+        "HR"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-EMAIL-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "HR-PRIV-NOTICE",
+          "summary": "Privacy notice meets Croatia baseline",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "HR-COOKIE-CONSENT",
+          "summary": "Cookie consent per ePrivacy",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "HR-EMAIL-TRANSACTIONAL",
+          "summary": "Verified sender domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "ee",
+      "label": "Estonia",
+      "regions": [
+        "EE"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "EE-PRIV-NOTICE",
+          "summary": "Privacy notice meets Estonia baseline",
+          "detectRef": "LEG-PRIV-001"
+        },
+        {
+          "id": "EE-COOKIE-CONSENT",
+          "summary": "Cookie consent per ePrivacy",
+          "detectRef": "LEG-COOKIE-001"
+        },
+        {
+          "id": "EE-EMAIL-TRANSACTIONAL",
+          "summary": "Verified sender domain",
+          "detectRef": "LEG-EMAIL-001"
+        }
+      ]
+    },
+    {
+      "marketId": "lv",
+      "label": "Latvia",
+      "regions": [
+        "LV"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "LV-PRIV",
+          "summary": "Latvia privacy baseline",
+          "detectRef": "LEG-PRIV-001"
+        }
+      ]
+    },
+    {
+      "marketId": "lu",
+      "label": "Luxembourg",
+      "regions": [
+        "LU"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-COOKIE-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "LU-PRIV",
+          "summary": "Luxembourg privacy baseline",
+          "detectRef": "LEG-PRIV-001"
+        }
+      ]
+    },
+    {
+      "marketId": "mt",
+      "label": "Malta",
+      "regions": [
+        "MT"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "MT-PRIV",
+          "summary": "Malta privacy baseline",
+          "detectRef": "LEG-PRIV-001"
+        }
+      ]
+    },
+    {
+      "marketId": "cy",
+      "label": "Cyprus",
+      "regions": [
+        "CY"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "CY-PRIV",
+          "summary": "Cyprus privacy baseline",
+          "detectRef": "LEG-PRIV-001"
+        }
+      ]
+    },
+    {
+      "marketId": "is",
+      "label": "Iceland",
+      "regions": [
+        "IS"
+      ],
+      "obligationPatterns": [
+        "LEG-PRIV-*",
+        "LEG-EMAIL-*"
+      ],
+      "microStipulations": [
+        {
+          "id": "IS-PRIV",
+          "summary": "Iceland privacy baseline",
+          "detectRef": "LEG-PRIV-001"
+        }
+      ]
+    }
+  ],
+  "marketCount": 50,
+  "targetPhaseC": 30
+}

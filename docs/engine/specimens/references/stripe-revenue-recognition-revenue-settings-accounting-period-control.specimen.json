@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-revenue-settings-accounting-period-control",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/revenue-settings/accounting-period-control.md",
+  "lastVerified": "2026-06-03",
+  "title": "Revenue Recognition accounting period control",
+  "excerpt": "Learn how to configure accounting periods for Stripe Revenue Recognition. Accounting period control allows you to manage and customize your accounting calendar. By default, your accounting calendar and accounting periods follow calendar months. You can switch to the 4-4-5 calendar for custom accounting periods with a specified start date. You can also control how to close accounting periods. You can either manually close the books after reviewing your data and completing any adjustments each month, or you can let Stripe automate closing the books. You can also reopen past accounting periods using accounting period control.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

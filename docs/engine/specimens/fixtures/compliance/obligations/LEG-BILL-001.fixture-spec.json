@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-BILL-001",
+  "obligationId": "LEG-BILL-001",
+  "detectType": "config",
+  "detect": {
+    "type": "config",
+    "key": "automatic_tax"
+  },
+  "passSnippet": "verifiedDomain webhooks deliveryEvents",
+  "failSnippet": "gap LEG-BILL-001",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

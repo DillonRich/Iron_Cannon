@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w81-supabase-primary-e2e-bundle",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w81/supabase-primary-e2e-bundle",
+  "lastVerified": "2026-06-06",
+  "title": "W81 supabase-primary-e2e-bundle",
+  "provider": "ironcannon",
+  "excerpt": "supabase-primary-outbound.bundle.json validates 8-module T04 chain",
+  "embeddingHint": "ironcannon supabase-primary-e2e-bundle wave81 svc-002-exit",
+  "tags": [
+    "wave81",
+    "knowledge",
+    "ironcannon",
+    "svc-002-exit"
+  ]
+}

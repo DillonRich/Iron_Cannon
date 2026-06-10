@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W61-017",
+  "obligationId": "LEG-W61-017",
+  "detectType": "ui_pattern",
+  "detect": {
+    "type": "ui_pattern",
+    "pattern": "refund"
+  },
+  "passSnippet": "/* shows refund */",
+  "failSnippet": "defaultChecked=true",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

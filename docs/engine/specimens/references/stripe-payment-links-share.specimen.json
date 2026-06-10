@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payment-links-share",
+  "sourceUrl": "https://docs.stripe.com/payment-links/share.md",
+  "lastVerified": "2026-06-03",
+  "title": "Share a payment link",
+  "excerpt": "Share payment links across social media, emails, or your website. After you create a [payment link](https://docs.stripe.com/payment-links.md), share it with your customers to accept payments without a digital storefront. Use the Dashboard to copy your payment link, and share it online. Click the copy icon next to an existing link on the [Payment Links](https://dashboard.stripe.com/payment-links) page, or go to the payment link’s details page. You can share your payment link multiple times and anywhere online, including: Each payment link contains a [url](https://docs.stripe.com/api/payment_links/payment_links/object.md#payment_link_object-url) that you can share with your customers through email, on social media, with a website link, in an app, or through other channels.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

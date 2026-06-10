@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ironcannon.dev/schemas/wiremap-payload/v1",
+  "type": "object",
+  "required": ["wiremapId", "flowIds", "modules", "stateLogMarkdown"],
+  "properties": {
+    "wiremapId": { "type": "string" },
+    "wiremapVersion": { "type": "integer", "minimum": 1 },
+    "flowIds": { "type": "array", "items": { "type": "string" } },
+    "modules": { "type": "array", "maxItems": 12 },
+    "stateLogMarkdown": { "type": "string" }
+  }
+}

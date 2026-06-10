@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ironcannon.dev/schemas/diff-result/v1",
+  "type": "object",
+  "required": ["driftDetected", "changedPaths", "recommendation"],
+  "additionalProperties": true,
+  "properties": {
+    "driftDetected": { "type": "boolean" },
+    "changedPaths": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "reason"],
+        "properties": {
+          "path": { "type": "string" },
+          "reason": {
+            "type": "string",
+            "enum": [
+              "file_hash_mismatch",
+              "file_missing",
+              "file_added",
+              "stack_signal_changed",
+              "wiremap_hash_mismatch",
+              "state_log_manual_edit",
+              "git_branch_changed"
+            ]
+          },
+          "moduleId": { "type": "string" },
+          "expectedHash": { "type": "string" },
+          "actualHash": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "recommendation": { "type": "string" },
+    "code": { "type": "string" },
+    "stackDrift": { "type": "boolean" },
+    "wiremapDrift": { "type": "boolean" },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "agentGuidance": { "type": "object", "additionalProperties": true }
+  }
+}

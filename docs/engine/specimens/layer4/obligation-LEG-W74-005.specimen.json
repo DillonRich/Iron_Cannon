@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w74-005",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "DKIM keys rotated on documented schedule",
+    "obligations": [
+      "LEG-W74-005"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "DKIM keys rotated on documented schedule"
+  },
+  "references": [
+    "resend/dkim-rotation"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W74-005",
+        "type": "config",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "email",
+    "disclaimerRequired": true
+  }
+}

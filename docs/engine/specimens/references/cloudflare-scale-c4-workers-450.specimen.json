@@ -1,0 +1,14 @@
+{
+  "refId": "cloudflare/scale-c4-workers-450",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/cloudflare/scale-c4-workers-450",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-C4 workers 450",
+  "excerpt": "Isolate secrets in Workers; never log raw API keys. Final Scale-C planning reference for Iron Cannon MCP compose and compliance agents.",
+  "tags": [
+    "cloudflare",
+    "workers",
+    "scale-c4",
+    "scale-c"
+  ],
+  "embeddingHint": "cloudflare workers Isolate secrets in Workers; never log raw API keys iron cannon scale-c compliance"
+}

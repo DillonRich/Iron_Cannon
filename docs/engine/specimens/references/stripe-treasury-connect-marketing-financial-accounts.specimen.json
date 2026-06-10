@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-marketing-financial-accounts",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/marketing-financial-accounts.md",
+  "lastVerified": "2026-06-03",
+  "title": "Marketing Treasury for platforms",
+  "excerpt": "Create precise messaging for your users that complies with regulations. Many states have statutory prohibitions on references to “banking,\" “banks,\" and “bank accounts” when the entities making these references aren’t state- or federally-chartered banks or credit unions. Imprecise terminology of Stripe Treasury for platforms might draw scrutiny from regulators. For your platform to efficiently use Treasury for platforms, you need to brand and communicate the nature of the product while being mindful of regulations. Refer to the following list of recommended terms to use in your messaging when building out your implementation of the product.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

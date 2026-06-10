@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-performance-obligations-api",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/performance-obligations-api.md",
+  "lastVerified": "2026-06-03",
+  "title": "Revenue Recognition Performance Obligations API",
+  "excerpt": "Learn how to model performance obligation fulfillment in Stripe Revenue Recognition. Performance obligation fulfillment is an important part of revenue recognition in accounting and finance. It refers to the completion of a transaction in which the seller has delivered the goods or services promised to the customer, and can recognize revenue for the sale. There are several scenarios where fulfillment occurs and revenue can be recognized, including but not limited to: - **Delivery of tangible goods**: Fulfillment occurs when the physical goods have been shipped to the customer and they’ve taken possession of the goods. The delivery of the goods confirms that the customer has received the promised benefit, and therefore you can recognize the revenue from the sale.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

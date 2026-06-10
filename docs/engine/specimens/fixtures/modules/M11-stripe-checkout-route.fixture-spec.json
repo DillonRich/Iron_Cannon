@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M11",
+  "moduleId": "M11-stripe-checkout-route",
+  "patternsUnderTest": [
+    "CHECK-001",
+    "CHECK-002",
+    "BILL-P49-M11-",
+    "STWH-P49-VERIFY"
+  ],
+  "passSnippet": "const session = await stripe.checkout.sessions.create({ mode: 'subscription', line_items: [{ price: priceId, quantity: 1 }] });",
+  "failSnippet": "const session = await stripe.checkout.sessions.create({ mode: 'payment' });",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "CHECK-002"
+  ]
+}

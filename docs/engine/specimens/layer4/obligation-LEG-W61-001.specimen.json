@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w61-001",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "AI feature disclosure in privacy policy when user data sent to models",
+    "obligations": [
+      "LEG-W61-001"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "AI feature disclosure in privacy policy when user data sent to models"
+  },
+  "references": [
+    "legal/ai-disclosure"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W61-001",
+        "type": "pattern",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "privacy",
+    "disclaimerRequired": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W53-017",
+  "obligationId": "LEG-W53-017",
+  "detectType": "flow_ref",
+  "detect": {
+    "type": "flow_ref",
+    "flow": "account-deletion"
+  },
+  "passSnippet": "flowRef account-deletion",
+  "failSnippet": "flowRef unknown-flow",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

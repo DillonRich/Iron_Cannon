@@ -1,0 +1,16 @@
+{
+  "fixtureId": "M70",
+  "moduleId": "M70-supabase-auth-config",
+  "patternsUnderTest": [
+    "SUPA-CFG-001",
+    "SUPA-CFG-002",
+    "BILL-P49-M70-"
+  ],
+  "passSnippet": "createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!)\nenable row level security",
+  "failSnippet": "SUPABASE_SERVICE_ROLE_KEY exposed in client bundle",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "SUPA-CFG-001"
+  ]
+}

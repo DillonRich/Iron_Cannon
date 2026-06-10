@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/r2-tutorials-postman-index",
+  "sourceUrl": "https://developers.cloudflare.com/r2/tutorials/postman/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Postman",
+  "excerpt": "description: Learn how to configure Postman to interact with R2. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/r2/llms.txt > Use this file to discover all available pages before exploring further. Learn how to configure Postman to interact with R2. Postman is an API platform that makes interacting with APIs easier. This guide will explain how to use Postman to make authenticated R2 requests to create a bucket, upload a new object, and then retrieve the object.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

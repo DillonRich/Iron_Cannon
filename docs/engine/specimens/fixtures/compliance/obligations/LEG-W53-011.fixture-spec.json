@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W53-011",
+  "obligationId": "LEG-W53-011",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "pattern": "data protection officer"
+  },
+  "passSnippet": "notice data protection officer",
+  "failSnippet": "no match here",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

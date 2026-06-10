@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W53-015",
+  "obligationId": "LEG-W53-015",
+  "detectType": "ui_pattern",
+  "detect": {
+    "type": "ui_pattern",
+    "pattern": "16"
+  },
+  "passSnippet": "/* shows 16 */",
+  "failSnippet": "defaultChecked=true",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

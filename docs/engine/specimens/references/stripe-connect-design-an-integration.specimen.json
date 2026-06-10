@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-design-an-integration",
+  "sourceUrl": "https://docs.stripe.com/connect/design-an-integration.md",
+  "lastVerified": "2026-06-03",
+  "title": "follow the integration guide",
+  "excerpt": "Learn about alternative configuration combinations for a Connect integration based on the Accounts v1 API. > This guide only applies to existing Connect platforms that use the Accounts v1 API. If you’re a new Connect user, use the Accounts v2 API instead. See the [Interactive platform guide](https://docs.stripe.com/connect/interactive-platform-guide.md) for information about how to configure a Connect platform using the Accounts v2 API. Use this guide to explore different Connect integrations and create a list of personalized integration steps. Before starting your integration in a *sandbox* (A sandbox is an isolated test environment that allows you to test Stripe functionality in your account without affecting your live integration.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

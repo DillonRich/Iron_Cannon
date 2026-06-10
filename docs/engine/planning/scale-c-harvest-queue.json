@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/scale-c-harvest-queue/v1",
+  "rulesetVersion": "2026.06.03",
+  "currentCardCount": 1510,
+  "targetCardCount": 3000,
+  "deltaRequired": 1490,
+  "lastBatchPublished": 500,
+  "status": "in-progress",
+  "strategy": "Repeat npm run harvest:scale-c until scaleC.gap === 0; balance queue favors resend/cloudflare/nextjs",
+  "batchDefaults": {
+    "fetchLimit": 500,
+    "publishMax": 500
+  },
+  "providerTargets": {
+    "cloudflare": 400,
+    "resend": 400,
+    "stripe": 500,
+    "owasp": 120,
+    "legal": 80,
+    "nextjs": 100
+  },
+  "procedure": [
+    "npm run harvest:scale-c",
+    "npm run planning:build-index",
+    "node scripts/planning-lint/expand-retrieval-baseline-wave41.mjs",
+    "npm run planning:regression",
+    "npm run lint:all"
+  ],
+  "gateTierC": "validate-corpus-scale.mjs --tier=c"
+}

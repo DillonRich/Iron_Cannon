@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-billing-apis",
+  "sourceUrl": "https://docs.stripe.com/billing/billing-apis.md",
+  "lastVerified": "2026-06-03",
+  "title": "About the Billing APIs",
+  "excerpt": "Understand how the Billing API objects work together. We recommend using the [Checkout Sessions API to create subscriptions](https://docs.stripe.com/billing/quickstart.md). A Checkout Session gives your customer a payment page where they enter their payment details. Stripe then creates the customer, activates the subscription, and handles the payment process. A *subscription* (A Subscription represents the product details associated with the plan that your customer subscribes to. Allows you to charge the customer on a recurring basis) has: - A *Product* (Products represent what your business sells—whether that's a good or a service) to model what’s being sold. - A *Price* (Prices define how much and how often to charge for products.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

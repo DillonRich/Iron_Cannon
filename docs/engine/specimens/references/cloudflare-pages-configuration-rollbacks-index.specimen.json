@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-configuration-rollbacks-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/configuration/rollbacks/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Rollbacks",
+  "excerpt": "description: Instantly revert your Cloudflare Pages project to a previous production deployment. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. Rollbacks allow you to instantly revert your project to a previous production deployment. Any production deployment that has been successfully built is a valid rollback target. When your project has rolled back to a previous deployment, you may still rollback to deployments that are newer than your current version. Note that preview deployments are not valid rollback targets.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

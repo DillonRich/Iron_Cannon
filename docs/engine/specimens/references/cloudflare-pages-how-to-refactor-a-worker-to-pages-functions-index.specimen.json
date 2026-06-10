@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-how-to-refactor-a-worker-to-pages-functions-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/how-to/refactor-a-worker-to-pages-functions/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Refactor a Worker to a Pages Function",
+  "excerpt": "title: Refactor a Worker to a Pages Function description: Migrate an existing Cloudflare Worker into a Pages Function for your Pages project. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. In this guide, you will learn how to refactor a Worker made to intake form submissions to a Pages Function that can be hosted on your Cloudflare Pages application. [Pages Functions](https://developers.cloudflare.com/pages/functions/) is a serverless function that lives within the same project directory as your application and is deployed with Cloudflare Pages.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

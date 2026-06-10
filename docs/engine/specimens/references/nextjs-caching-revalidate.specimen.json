@@ -1,0 +1,9 @@
+{
+  "refId": "nextjs/caching-revalidate",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/caching",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js Caching and revalidation",
+  "excerpt": "After billing webhook updates entitlement, revalidatePath('/dashboard') or tag-based revalidate so UI reflects subscription state. Do not cache authenticated pages as static unless explicitly safe.",
+  "appliesTo": ["billing-subscription", "M15-billing-dashboard-ui"],
+  "tags": ["nextjs", "cache", "revalidate"]
+}

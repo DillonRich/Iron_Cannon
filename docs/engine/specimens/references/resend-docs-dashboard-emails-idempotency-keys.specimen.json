@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-emails-idempotency-keys",
+  "sourceUrl": "https://resend.com/docs/dashboard/emails/idempotency-keys.md",
+  "lastVerified": "2026-06-03",
+  "title": "Idempotency Keys",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Idempotency Keys > Use idempotency keys to ensure that emails are sent only once. Include an idempotency key in any email requests to ensure that the same email request is processed only once, even if it's sent multiple times. Idempotency keys are currently supported on the `POST /emails` and the `POST /emails/batch` endpoints on the Resend API. ## How does it work? When you send an email with an idempotency key, we check if an email with the same idempotency key has already been sent in the last 24 hours. **This is an optional feature** that simplifies managing retries on your side.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

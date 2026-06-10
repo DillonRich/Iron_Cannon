@@ -1,0 +1,14 @@
+{
+  "refId": "legal/list-unsubscribe-header",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/legal-list-unsubscribe-header",
+  "lastVerified": "2026-06-04",
+  "title": "Marketing email includes List-Unsubscribe header",
+  "provider": "legal",
+  "excerpt": "LEG-W53-004: Marketing email includes List-Unsubscribe header",
+  "embeddingHint": "LEG-W53-004 email header",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/waf-overview",
+  "sourceUrl": "https://developers.cloudflare.com/waf/",
+  "lastVerified": "2026-05-31",
+  "title": "Cloudflare WAF overview",
+  "excerpt": "Managed rulesets block common attacks at edge. Enable OWASP core ruleset on production zone. Custom rules for rate limiting webhook endpoints. WAF complements app-layer validation—not a substitute for input validation in Workers.",
+  "appliesTo": ["layer3", "Armor"],
+  "tags": ["cloudflare", "waf", "security"]
+}

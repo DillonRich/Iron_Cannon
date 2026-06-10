@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W89-001",
+      "category": "billing",
+      "title": "STRIPE_SETUP_PREP published",
+      "sourceRefId": "ironcannon/knowledge-w89-stripe-setup-prep-doc",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W89-002",
+      "category": "operations",
+      "title": "simulate-stripe-prep.mjs green",
+      "sourceRefId": "ironcannon/knowledge-w89-stripe-prep-sim",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W89-003",
+      "category": "billing",
+      "title": "Stripe prep journeys UJ-096–100",
+      "sourceRefId": "ironcannon/knowledge-w89-uj-096-100-stripe",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W89-004",
+      "category": "operations",
+      "title": "G-44 validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w89-g44-validator-stretch",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W89-005",
+      "category": "operations",
+      "title": "planning:stripe-prep npm script",
+      "sourceRefId": "ironcannon/knowledge-w89-planning-stripe-prep-npm",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W89-006",
+      "category": "billing",
+      "title": "Platform webhook route documented",
+      "sourceRefId": "ironcannon/knowledge-w89-platform-webhook-route",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W89-007",
+      "category": "billing",
+      "title": "G-40 planned until transcript",
+      "sourceRefId": "ironcannon/knowledge-w89-g40-still-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W89-008",
+      "category": "billing",
+      "title": "G-41 after G-40 sequencing",
+      "sourceRefId": "ironcannon/knowledge-w89-g41-after-g40",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W89-009",
+      "category": "billing",
+      "title": "D1 stripe_customer_id columns",
+      "sourceRefId": "stripe/knowledge-w89-d1-stripe-columns",
+      "detect": {
+        "type": "config"
+      }
+    },
+    {
+      "id": "LEG-W89-010",
+      "category": "privacy",
+      "title": "No Stripe keys in repo for G-44",
+      "sourceRefId": "legal/knowledge-w89-prep-not-live-keys",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

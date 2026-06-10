@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-subscriptions-usage-based-implementation-guide",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/usage-based/implementation-guide.md",
+  "lastVerified": "2026-06-03",
+  "title": "Set up a pay-as-you-go pricing model",
+  "excerpt": "Charge customers based on their usage of your product or service. [Pay-as-you-go pricing](https://docs.stripe.com/subscriptions/pricing-models/usage-based-pricing.md#pay-as-you-go) is a flexible, scalable model that lets you charge customers in arrears for the usage they accrue. AI businesses, SaaS platforms, and cloud services often use this pricing model. This guide describes how to implement pay-as-you-go pricing on Stripe for a fictional company called Hypernian. Hypernian charges their customers the following rates for their LLM models: To implement this pricing model, you create a meter, set up pricing and billing, and send meter events to record customer usage using [Products](https://docs.stripe.com/api/products.md) and [Prices](https://docs.stripe.com/api/prices.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

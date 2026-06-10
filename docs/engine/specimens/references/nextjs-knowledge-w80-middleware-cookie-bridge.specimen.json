@@ -1,0 +1,15 @@
+{
+  "refId": "nextjs/knowledge-w80-middleware-cookie-bridge",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w80/middleware-cookie-bridge",
+  "lastVerified": "2026-06-06",
+  "title": "W80 middleware-cookie-bridge",
+  "provider": "nextjs",
+  "excerpt": "Session in HTTP-only cookies via middleware — no localStorage supabase.session",
+  "embeddingHint": "nextjs middleware-cookie-bridge wave80 svc-002-supabase-harvest",
+  "tags": [
+    "wave80",
+    "knowledge",
+    "nextjs",
+    "svc-002-supabase-harvest"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "refId": "nextjs/server-actions",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js Server Actions",
+  "excerpt": "'use server' functions for form mutations (signup, login). Validate input server-side. Check session inside action—never trust client. Use redirect() after auth state change.",
+  "appliesTo": ["auth-lifecycle"],
+  "tags": ["nextjs", "server-actions"]
+}

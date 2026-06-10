@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-interactive-platform-guide",
+  "sourceUrl": "https://docs.stripe.com/connect/interactive-platform-guide.md",
+  "lastVerified": "2026-06-03",
+  "title": "Interactive platform guide",
+  "excerpt": "Create a personalized platform integration guide for your business. > **Integration guides available:**We've generated integration guides for you. View the quickstart guide or copy integration details for use with an LLM assistant. Select the configuration options below to get personalized guidance for your Connect integration, including best practices like the use of the Accounts v2 API. You’ll get a custom integration guide and a custom LLM prompt that you can copy to use with an AI coding assistant. Your business model determines the appropriate flow of funds for your integration. - **Platform:**Sellers collect payments directly and pay fees to Stripe. For example, an eCommerce platform that processes payments under the hood for independent sellers.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

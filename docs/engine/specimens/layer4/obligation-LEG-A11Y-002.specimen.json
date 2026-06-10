@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-a11y-002",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "section": "leg-a11y-002",
+  "content": {
+    "requirement": "Form inputs have associated labels",
+    "obligations": [
+      "LEG-A11Y-002"
+    ],
+    "compareSteps": [
+      "Run detect.type=label_association per COMPARE_DETECT_TYPES",
+      "Map result to obligation LEG-A11Y-002 only",
+      "Attach legalDisclaimer on every T12–T14 response"
+    ],
+    "remediationDirective": "Remediate LEG-A11Y-002: Form inputs have associated labels"
+  },
+  "references": [
+    "legal/wcag-form-labels"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-A11Y-002",
+        "type": "label_association",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "accessibility",
+    "disclaimerRequired": true
+  }
+}

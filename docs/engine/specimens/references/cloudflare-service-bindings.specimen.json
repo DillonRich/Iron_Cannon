@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/service-bindings",
+  "sourceUrl": "https://developers.cloudflare.com/workers/runtime-apis/bindings/service-bindings/",
+  "lastVerified": "2026-05-31",
+  "title": "Service bindings",
+  "excerpt": "Private Worker-to-Worker RPC without public HTTP.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "cloudflare",
+    "service-bindings"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "legal/pipeda-overview",
+  "sourceUrl": "https://www.priv.gc.ca/en/privacy-topics/",
+  "lastVerified": "2026-05-31",
+  "title": "PIPEDA Canada",
+  "excerpt": "Canadian privacy principles for market bundle ca.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "legal",
+    "pipeda-overview"
+  ]
+}

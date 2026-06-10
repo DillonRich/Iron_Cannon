@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-framework-guides-deploy-a-vite3-project-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/framework-guides/deploy-a-vite3-project/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Vite 3",
+  "excerpt": "description: Deploy a Vite 3 front-end project to Cloudflare Pages. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. [Vite ↗](https://vitejs.dev) is a next-generation build tool for front-end developers. With [the release of Vite 3 ↗](https://vitejs.dev/blog/announcing-vite3.html), developers can make use of new command line (CLI) improvements, starter templates, and [more ↗](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md#300-2022-07-13) to help build their front-end applications. Cloudflare Pages has native support for Vite 3 projects.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

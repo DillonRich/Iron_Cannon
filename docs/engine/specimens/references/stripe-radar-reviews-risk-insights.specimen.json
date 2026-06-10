@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/radar-reviews-risk-insights",
+  "sourceUrl": "https://docs.stripe.com/radar/reviews/risk-insights.md",
+  "lastVerified": "2026-06-03",
+  "title": "Risk insights",
+  "excerpt": "Understand risk factors and details about a particular payment. Stripe Radar’s [AI model](https://stripe.com/radar/guide) determines the risk score and risk level for a payment and uses them to decide when to block or mark payments for review. The system evaluates hundreds of risk factors about each payment, using data from Stripe’s network across millions of businesses. The risk insights feature, available with Stripe Radar for Fraud Teams, provides a sneak peek into some of the risk factors that power Radar’s AI model. ![](https://b.stripecdn.com/docs-statics-srv/assets/risk-insights-card.ef788006b7b5d6acbb4d237386a3c4ed.png) > We store risk insights data for up to 6 months. If a transaction is older than this, you won’t be able to access the risk insights interface.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

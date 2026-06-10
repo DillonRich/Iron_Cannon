@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w53-015",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Children under 16 blocked at signup",
+    "obligations": [
+      "LEG-W53-015"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Children under 16 blocked at signup"
+  },
+  "references": [
+    "legal/children-block"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W53-015",
+        "type": "ui_pattern",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "global",
+    "disclaimerRequired": true
+  }
+}

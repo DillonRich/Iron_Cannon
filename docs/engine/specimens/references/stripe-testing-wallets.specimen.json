@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/testing-wallets",
+  "sourceUrl": "https://docs.stripe.com/testing/wallets.md",
+  "lastVerified": "2026-06-03",
+  "title": "Test Apple and Google wallet rendering",
+  "excerpt": "Compare your integration against working demo integrations to identify possible rendering issues. This article has multiple variants. Fetch one of the following URLs to view specific content for your use case: - [Payment Element](https://docs.stripe.com/testing/wallets.md?ui=payment-element) - [Express Checkout Element](https://docs.stripe.com/testing/wallets.md?ui=express-checkout-element) - [Checkout Sessions](https://docs.stripe.com/testing/wallets.md?ui=embedded-page) - [Payment Request Button](https://docs.stripe.com/testing/wallets.md?ui=payment-request-button-element)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

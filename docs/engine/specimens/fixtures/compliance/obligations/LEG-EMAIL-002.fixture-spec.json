@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-EMAIL-002",
+  "obligationId": "LEG-EMAIL-002",
+  "detectType": "template_scan",
+  "detect": {
+    "type": "template_scan",
+    "field": "physicalAddress"
+  },
+  "passSnippet": "physicalAddress 123 Main St",
+  "failSnippet": "empty template",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

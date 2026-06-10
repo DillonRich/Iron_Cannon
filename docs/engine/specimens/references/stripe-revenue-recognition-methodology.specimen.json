@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-methodology",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/methodology.md",
+  "lastVerified": "2026-06-03",
+  "title": "How Revenue Recognition works",
+  "excerpt": "Understand how Stripe Revenue Recognition calculates, defers, and reports your revenue. Recognizing revenue is a fundamental part of accrual accounting. Generally accepted accounting principles (GAAP) state that you recognize revenue when you realize and earn it, which might be earlier or later than when you actually receive payments. You must correctly recognize and defer revenue to have the most accurate insights into your business profitability and financial health. Stripe Revenue Recognition helps you simplify the process of recognizing revenue.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-observability-traces-known-limitations-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/observability/traces/known-limitations/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Known limitations",
+  "excerpt": "description: Workers tracing is currently in open beta. This page documents current limitations and any upcoming features on our roadmap. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Workers tracing is currently in open beta. This page documents current limitations and any upcoming features on our roadmap. To provide more feedback and send feature requests, head to the [Workers tracing GitHub discussion ↗](https://github.com/cloudflare/workers-sdk/discussions/11062).",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-emails-deliverability-insights",
+  "sourceUrl": "https://resend.com/docs/dashboard/emails/deliverability-insights.md",
+  "lastVerified": "2026-06-03",
+  "title": "Deliverability Insights",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Deliverability Insights > Improve your deliverability with tailored insights based on your sending. When you view your email within Resend, there is a \"Insights\" option. When selected, this will run deliverability best practice checks on your email and recommend possible changes to improve deliverability. If a check passes, you'll get a nice green check. Resend will provide advice if it fails. We break these into two categories: Attention and Improvements. ## Attention Insights Changes to your email that can improve deliverability.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

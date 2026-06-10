@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/subscriptions-trials",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/trials",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe Subscription trials",
+  "excerpt": "Trials via trial_period_days on Price or subscription. Handle trialing status in D1; do not grant paid features after trial ends without active status.",
+  "appliesTo": [
+    "billing-subscription",
+    "SC-V07"
+  ],
+  "tags": [
+    "stripe",
+    "trials"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "fixtureId": "DT-10",
+  "detectType": "config",
+  "passSnippet": "{ \"resend\": { \"verifiedDomain\": \"mail.example.com\" } }",
+  "failSnippet": "{ \"resend\": {} }",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

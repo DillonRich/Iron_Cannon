@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-automatic-charging",
+  "sourceUrl": "https://docs.stripe.com/invoicing/automatic-charging.md",
+  "lastVerified": "2026-06-03",
+  "title": "Automatic charging",
+  "excerpt": "Have Stripe automatically charge a customer's stored payment method. Stripe can automatically attempt to pay an *invoice* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice) if the customer has a payment method on file. You can automatically charge a customer when you’re [creating an invoice](https://dashboard.stripe.com/invoices/create) or through the [API](https://docs.stripe.com/api/invoices.md). When you automatically charge a payment method on file, Stripe doesn’t notify the customer about the invoice.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

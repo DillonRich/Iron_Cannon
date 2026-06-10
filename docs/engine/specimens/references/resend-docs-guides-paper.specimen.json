@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-guides-paper",
+  "sourceUrl": "https://resend.com/docs/guides/paper.md",
+  "lastVerified": "2026-06-05",
+  "title": "Turn Paper designs into Resend emails",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Turn Paper designs into Resend emails > Learn how to combine the Paper MCP server and the Resend MCP server so your agent can turn a Paper design into a template or broadcast in your Resend account. [Paper](https://paper.design) is a design tool built for AI agents. Its MCP server lets agents read your canvas, including layout, styles, copy, and screenshots. Combined with the [Resend MCP server](/mcp-server), your agent can take a design straight from Paper and turn it into a ready-to-send [Template](/dashboard/templates/introduction) or [Broadcast](/dashboard/broadcasts/introduction) in your Resend account.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

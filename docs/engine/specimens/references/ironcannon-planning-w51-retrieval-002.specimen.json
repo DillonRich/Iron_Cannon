@@ -1,0 +1,14 @@
+{
+  "refId": "ironcannon/planning-w51-retrieval-002",
+  "sourceUrl": "https://ironcannon.dev/planning/w51/ironcannon-planning-w51-retrieval-002",
+  "lastVerified": "2026-06-03",
+  "title": "Wave51 retrieval 2",
+  "provider": "ironcannon",
+  "excerpt": "Retrieval baseline RB-55 calibrate top-3 token overlap",
+  "embeddingHint": "Retrieval baseline RB-55 calibrate top-3 token overlap",
+  "tags": [
+    "planning",
+    "wave51",
+    "retrieval"
+  ]
+}

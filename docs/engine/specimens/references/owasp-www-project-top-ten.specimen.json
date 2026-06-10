@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/www-project-top-ten",
+  "sourceUrl": "https://owasp.org/www-project-top-ten/",
+  "lastVerified": "2026-06-03",
+  "title": "top10",
+  "excerpt": "OWASP Top Ten Web Application Security Risks | OWASP Foundation For full functionality of this site it is necessary to enable JavaScript. Here are the instructions how to enable JavaScript in your web browser . Store Donate Join This website uses cookies to analyze our traffic and only share that information with our analytics partners. Accept x Store Donate Join Main Translation Efforts Sponsors Data 2025 OWASP Top Ten Web Application Security Risks The most current released version is the OWASP Top Ten 2025 . Previous versions are available at OWASP Top Ten 2021 and OWASP Top 10 2017 (PDF) . Older versiona are available in the Github repo . The OWASP Top 10 is a standard awareness document for developers and web application security.…",
+  "appliesTo": [
+    "security",
+    "compliance"
+  ],
+  "tags": [
+    "owasp",
+    "p0"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "refId": "owasp-logging-monitoring",
+  "sourceUrl": "https://owasp.org/Top10/",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP logging failures",
+  "excerpt": "Security logging expectations for webhook and auth failures.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "owasp-logging-monitoring"
+  ]
+}

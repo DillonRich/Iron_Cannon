@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-configuration-deploy-hooks-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/configuration/deploy-hooks/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Deploy Hooks",
+  "excerpt": "description: Trigger Cloudflare Pages deployments from external event sources using unique webhook URLs. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. With Deploy Hooks, you can trigger deployments using event sources beyond commits in your source repository. Each event source may obtain its own unique URL, which will receive HTTP POST requests in order to initiate new deployments. This feature allows you to integrate Pages with new or existing workflows. For example, you may: * Automatically deploy new builds whenever content in a Headless CMS changes",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

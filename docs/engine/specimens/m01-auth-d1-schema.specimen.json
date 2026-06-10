@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer1/auth-lifecycle/d1-schema",
+  "layer": 1,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "moduleId": "M01-auth-d1-schema",
+  "adapterId": "cloudflare",
+  "section": "d1-schema",
+  "content": {
+    "requirement": "Users and sessions tables with auth lifecycle columns",
+    "steps": [
+      "Create users table: id, email, password_hash (nullable if magic-link only), status, created_at",
+      "Create sessions table: id, user_id, expires_at, last_activity, revoked_at nullable",
+      "Add indexes on sessions.user_id and sessions.expires_at",
+      "Use D1 migrations — never mutate schema only in production console"
+    ],
+    "schemaMinimum": {
+      "users": ["id", "email", "status", "created_at"],
+      "sessions": ["id", "user_id", "expires_at"]
+    }
+  },
+  "references": ["cloudflare/d1-migrations", "cloudflare/d1-overview", "owasp/credential-storage"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "AUTH-SC-001", "type": "required_string", "value": "CREATE TABLE users", "fileGlob": "**/migrations/**", "tier": "pro" },
+      { "id": "AUTH-SC-002", "type": "required_string", "value": "CREATE TABLE sessions", "fileGlob": "**/migrations/**", "tier": "pro" },
+      { "id": "AUTH-SC-003", "type": "required_string", "value": "expires_at", "fileGlob": "**/migrations/**", "tier": "pro" }
+    ],
+    "forbidden": [
+      { "id": "AUTH-SC-F01", "type": "forbidden_string", "value": "password TEXT", "fileGlob": "**/migrations/**", "tier": "pro" }
+    ]
+  },
+  "metadata": { "minTier": "pro", "category": "auth-schema" }
+}

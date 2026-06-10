@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/radar-analytics-fraud-insights",
+  "sourceUrl": "https://docs.stripe.com/radar/analytics/fraud-insights.md",
+  "lastVerified": "2026-06-03",
+  "title": "Fraud insights",
+  "excerpt": "Review fraud trends specific to your business so you can tailor your strategy. Building an effective fraud fighting strategy requires understanding the specific drivers of fraud for your business. If you use *Radar for Fraud Teams* (Radar for Fraud Teams helps you fine-tune how Radar operates, get fraud insights on suspicious charges, and assess your fraud management performance from a unified dashboard), you can access the [Insights](https://dashboard.stripe.com/radar/insights) tab of the Radar page in your Dashboard to: - **Visualize trends** in transaction volume and fraud rates over time. - **Identify combinations of Radar attributes** that have material impact on your fraud rates. - **Inspect high-level patterns** to verify your findings in individual transactions.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

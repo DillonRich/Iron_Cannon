@@ -1,0 +1,8 @@
+{
+  "provider": "nextjs",
+  "priority": "P0",
+  "includePatterns": ["/routing", "/middleware", "/server-actions", "/data-fetching", "/rendering", "/authentication", "/forms", "/caching", "/metadata", "/loading", "/error"],
+  "excludePatterns": ["/archive/", "/blog/"],
+  "maxPerRun": 50,
+  "appliesToDefault": ["nextjs-app-router", "layer2/nextjs"]
+}

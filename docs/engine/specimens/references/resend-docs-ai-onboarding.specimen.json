@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-ai-onboarding",
+  "sourceUrl": "https://resend.com/docs/ai-onboarding.md",
+  "lastVerified": "2026-06-03",
+  "title": "AI Onboarding",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # AI Onboarding > Everything you need to onboard your AI agent to Resend. export const PicaIcon = props => {'Pica'} ; export const ParsleyIcon = props => Parsley ; export const LeapNewIcon = props => {'Leap.new'} ; export const Base44Icon = props => {'Base44'} ; export const RocketIcon = props => {'Rocket'} ; export const McpRunIcon = props => {'mcp.run'} ; export const WildcardIcon = props => {'Wildcard'} ; export const AnythingIcon = props => {'Anything'} ; export const LovableIcon = props => {'Lovable'} ; If you're developing with AI, Resend offers several resources to improve your experience.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

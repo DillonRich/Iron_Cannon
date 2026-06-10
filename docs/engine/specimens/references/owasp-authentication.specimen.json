@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/authentication",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Authentication",
+  "excerpt": "Enforce strong password policy or passkeys. Rate-limit login attempts. Use secure session management post-auth. Never store plaintext passwords. Multi-factor for sensitive accounts. Generic error messages on failed login (no user enumeration).",
+  "appliesTo": ["auth-lifecycle", "layer3"],
+  "tags": ["owasp", "authentication"]
+}

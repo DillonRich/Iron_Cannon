@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-subscriptions-cancel",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/cancel.md",
+  "lastVerified": "2026-06-03",
+  "title": "Cancel subscriptions",
+  "excerpt": "Learn how to cancel existing subscriptions. Customers can also manage their subscriptions, invoices, and billing information through the Stripe-hosted [customer portal cancellation page](https://docs.stripe.com/customer-management/cancellation-page.md). This guide describes how to use the [Subscription API](https://docs.stripe.com/api.md#cancel_subscription) or the [Dashboard](https://dashboard.stripe.com/test/subscriptions) to manage customer subscriptions. If you want to keep a subscription active but temporarily stop collecting payment, you can [pause payment collection](https://docs.stripe.com/billing/subscriptions/pause-payment.md).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "refId": "stripe/usage-based-billing",
+  "sourceUrl": "https://ironcannon.dev/planning/W65/ref/stripe-usage-based-billing",
+  "lastVerified": "2026-06-06",
+  "title": "usage based billing",
+  "provider": "stripe",
+  "excerpt": "Metered usage billing requires clear unit definition and invoice line items.",
+  "embeddingHint": "stripe/usage-based-billing wave65 obligation-source legal",
+  "tags": [
+    "wave65",
+    "obligation-source",
+    "stripe"
+  ]
+}

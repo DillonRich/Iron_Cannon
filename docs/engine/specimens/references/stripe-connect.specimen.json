@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect",
+  "sourceUrl": "https://docs.stripe.com/connect.md",
+  "lastVerified": "2026-06-03",
+  "title": "Platforms and marketplaces with Stripe Connect",
+  "excerpt": "Build a SaaS platform or marketplace with Connect. Use Connect to build a platform, marketplace, or other business that manages payments and moves money between multiple parties. [Design your Connect integration](https://docs.stripe.com/connect/interactive-platform-guide.md) [Build a SaaS platform](https://docs.stripe.com/connect/saas.md): Provide platform services to businesses that collect payments from their own customers. [Build a marketplace](https://docs.stripe.com/connect/marketplace.md): Collect payments from customers and automatically pay out a portion to sellers or service providers on your marketplace.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

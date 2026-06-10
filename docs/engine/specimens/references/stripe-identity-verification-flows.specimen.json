@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/identity-verification-flows",
+  "sourceUrl": "https://docs.stripe.com/identity/verification-flows.md",
+  "lastVerified": "2026-06-03",
+  "title": "Verification flows",
+  "excerpt": "Apply a reusable configuration across your integration. Flows provide a way to save and reuse the same configuration across all of your integration interfaces. You can use each flow to create verification sessions through the API, in the Dashboard, or through the flow’s static link. Flows support the management of different verification use cases and can help ensure consistency across your integration. To set up your Identity integration, first create a flow to store your desired configuration: 1. Visit the [Verification flows](https://dashboard.stripe.com/identity/verification-sessions) page in your Dashboard. 1. Configure the verification behavior you want. The [Verification flows](https://dashboard.stripe.com/identity/verification-flows) page displays all of your flows.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

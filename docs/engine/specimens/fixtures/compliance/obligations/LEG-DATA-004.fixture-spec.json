@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-DATA-004",
+  "obligationId": "LEG-DATA-004",
+  "detectType": "config",
+  "detect": {
+    "type": "config",
+    "key": "exportTtlHours"
+  },
+  "passSnippet": "verifiedDomain webhooks deliveryEvents",
+  "failSnippet": "gap LEG-DATA-004",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

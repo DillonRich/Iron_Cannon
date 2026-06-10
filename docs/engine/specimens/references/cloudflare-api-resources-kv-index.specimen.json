@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/api-resources-kv-index",
+  "sourceUrl": "https://developers.cloudflare.com/api/resources/kv/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "KV REST API",
+  "excerpt": "**get** `/accounts/{account_id}/storage/kv/namespaces` Returns the namespaces owned by an account. A human-readable string name for a Namespace. - `supports_url_encoding: optional boolean` True if keys written on the URL will be URL-decoded before storing. For example, if set to \"true\", a key written on the URL as \"%3F\" will be stored as \"?\". - `result_info: optional object { count, page, per_page, total_count }`",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

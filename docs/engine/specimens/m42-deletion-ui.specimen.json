@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/account-deletion/ui",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "account-deletion",
+  "moduleId": "M42-deletion-ui",
+  "adapterId": "nextjs-app-router",
+  "section": "deletion-ui",
+  "content": {
+    "requirement": "Danger zone UI at /settings/danger with confirm modal and email typing",
+    "requiredSteps": [
+      "Require authenticated session (M05)",
+      "Modal: type email to confirm deletion",
+      "Show active subscription warning with link to billing cancel",
+      "Grace period banner component on login when D02",
+      "Restore account CTA during grace"
+    ]
+  },
+  "references": ["nextjs/server-actions", "nextjs/loading-error-ui", "owasp/error-handling"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "DEL-UI-001", "type": "required_string", "value": "/settings/danger", "fileGlob": "**/app/**", "tier": "pro" },
+      { "id": "DEL-UI-002", "type": "required_string", "value": "type=\"email\"", "fileGlob": "**/settings/**", "tier": "pro" },
+      { "id": "DEL-UI-003", "type": "ui_state_reference", "value": "grace_period", "fileGlob": "**/*.{tsx,jsx}", "tier": "pro" }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "account-deletion-ui" }
+}

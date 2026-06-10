@@ -1,0 +1,14 @@
+{
+  "refId": "stripe/proration-disclosure",
+  "sourceUrl": "https://ironcannon.dev/planning/w53/stripe-proration-disclosure",
+  "lastVerified": "2026-06-04",
+  "title": "Proration disclosure on plan upgrade checkout",
+  "provider": "stripe",
+  "excerpt": "LEG-W53-014: Proration disclosure on plan upgrade checkout",
+  "embeddingHint": "LEG-W53-014 billing ui_pattern",
+  "tags": [
+    "planning",
+    "wave53",
+    "obligation-source"
+  ]
+}

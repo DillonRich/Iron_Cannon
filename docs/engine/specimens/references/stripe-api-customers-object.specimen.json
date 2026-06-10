@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-customers-object",
+  "sourceUrl": "https://docs.stripe.com/api/customers/object.md",
+  "lastVerified": "2026-06-03",
+  "title": "The Customer object",
+  "excerpt": "String representing the object’s type. Objects of the same type share the same value. City, district, suburb, town, or village. Two-letter country code ([ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)). Address line 1, such as the street, PO Box, or company name. Address line 2, such as the apartment, suite, unit, or building. - `address.postal_code` (string, nullable)",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

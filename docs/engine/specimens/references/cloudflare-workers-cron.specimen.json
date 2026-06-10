@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/workers-cron",
+  "sourceUrl": "https://developers.cloudflare.com/workers/configuration/cron-triggers/",
+  "lastVerified": "2026-05-31",
+  "title": "Workers cron triggers",
+  "excerpt": "Schedule Worker invocations via crons in wrangler.toml. Use for email retry queue drain, subscription reconciliation, stale session cleanup. Cron handlers must be idempotent. Do not rely on cron for user-facing latency-critical paths.",
+  "appliesTo": ["email-lifecycle", "billing-subscription"],
+  "tags": ["cloudflare", "workers", "cron"]
+}

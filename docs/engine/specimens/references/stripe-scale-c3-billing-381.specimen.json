@@ -1,0 +1,13 @@
+{
+  "refId": "stripe/scale-c3-billing-381",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/stripe/scale-c3-billing-381",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-C3 billing 381",
+  "excerpt": "Map invoice.payment_failed to grace period and user email. Planning reference for compose agents and obligation cross-links (EM-3).",
+  "tags": [
+    "stripe",
+    "billing",
+    "scale-c3"
+  ],
+  "embeddingHint": "stripe billing Map invoice.payment_failed to grace period and user email compliance security legal stripe resend owasp"
+}

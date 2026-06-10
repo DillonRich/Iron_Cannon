@@ -1,0 +1,14 @@
+{
+  "refId": "stripe/connect-scope",
+  "sourceUrl": "https://ironcannon.dev/planning/out-of-scope/connect",
+  "lastVerified": "2026-06-06",
+  "title": "Stripe Connect (out of TGS v1 scope)",
+  "provider": "stripe",
+  "excerpt": "Stripe Connect platform flows are Phase 4 / out of TGS v1. Golden path uses direct Stripe billing on SD-01.",
+  "embeddingHint": "stripe connect out of scope tgs v1 phase4",
+  "tags": [
+    "wave66",
+    "out-of-scope",
+    "stripe"
+  ]
+}

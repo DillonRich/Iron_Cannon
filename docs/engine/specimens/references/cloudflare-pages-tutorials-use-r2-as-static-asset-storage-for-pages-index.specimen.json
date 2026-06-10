@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-tutorials-use-r2-as-static-asset-storage-for-pages-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/tutorials/use-r2-as-static-asset-storage-for-pages/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Use R2 as static asset storage with Cloudflare Pages",
+  "excerpt": "title: Use R2 as static asset storage with Cloudflare Pages description: This tutorial will teach you how to use R2 as a static asset storage bucket for your Pages app. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. This tutorial will teach you how to use [R2](https://developers.cloudflare.com/r2/) as a static asset storage bucket for your [Pages](https://developers.cloudflare.com/pages/) app.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

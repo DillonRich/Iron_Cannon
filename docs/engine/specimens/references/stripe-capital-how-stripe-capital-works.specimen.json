@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/capital-how-stripe-capital-works",
+  "sourceUrl": "https://docs.stripe.com/capital/how-stripe-capital-works.md",
+  "lastVerified": "2026-06-03",
+  "title": "How Stripe Capital works",
+  "excerpt": "Learn how Stripe Capital provides financing for eligible businesses. If you’re a *Connect* (Connect is Stripe's solution for multi-party businesses, such as marketplace or software platforms, to route payments between sellers, customers, and other recipients) platform and you want to provide financing to your connected accounts, see [How Capital for platforms works](https://docs.stripe.com/capital/how-capital-for-platforms-works.md) instead. Stripe Capital varies by country. Select your country to learn how Capital works: Stripe Capital offers financing for eligible users processing payments through Stripe. Under the Stripe Capital program, business financing doesn’t have late fees, early payment fees, or origination fees.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

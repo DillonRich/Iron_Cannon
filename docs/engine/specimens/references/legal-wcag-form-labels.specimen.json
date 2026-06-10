@@ -1,0 +1,9 @@
+{
+  "refId": "legal/wcag-form-labels",
+  "sourceUrl": "https://www.w3.org/WAI/tutorials/forms/labels/",
+  "lastVerified": "2026-05-31",
+  "title": "WCAG form labels",
+  "excerpt": "Every form input needs programmatically associated label (htmlFor/id or aria-labelledby). Placeholder is not a label. Required fields indicated accessibly. Applies to signup, login, checkout forms.",
+  "appliesTo": ["LEG-A11Y-002", "auth-lifecycle"],
+  "tags": ["legal", "wcag", "forms"]
+}

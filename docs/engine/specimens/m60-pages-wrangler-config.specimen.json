@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/pages/wrangler-config",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "moduleId": "M60-pages-wrangler-config",
+  "adapterId": "cloudflare-pages",
+  "section": "pages-wrangler-config",
+  "content": {
+    "requirement": "Dual wrangler: Worker API (main) + Pages static (pages_build_output_dir) with nodejs_compat"
+  },
+  "references": ["cloudflare/pages-migrations", "cloudflare/workers-configuration"],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "PAGES-CFG-001",
+        "type": "required_string",
+        "value": "pages_build_output_dir",
+        "fileGlob": "**/wrangler*.toml",
+        "tier": "pro"
+      },
+      {
+        "id": "PAGES-CFG-002",
+        "type": "required_string",
+        "value": "nodejs_compat",
+        "fileGlob": "**/wrangler*.toml",
+        "tier": "pro"
+      }
+    ],
+    "forbidden": []
+  },
+  "metadata": { "minTier": "pro", "category": "pages-deploy" }
+}

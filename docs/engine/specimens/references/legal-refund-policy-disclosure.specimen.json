@@ -1,0 +1,11 @@
+{
+  "refId": "legal/refund-policy-disclosure",
+  "sourceUrl": "https://stripe.com/legal",
+  "lastVerified": "2026-06-03",
+  "title": "Refund policy near checkout",
+  "excerpt": "Link refund and cancellation policy on billing settings and pre-checkout surfaces when selling subscriptions.",
+  "tags": [
+    "legal",
+    "billing"
+  ]
+}

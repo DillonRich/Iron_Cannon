@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w69-api-key-rotation",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w69/api-key-rotation",
+  "lastVerified": "2026-06-06",
+  "title": "W69 api-key-rotation",
+  "provider": "ironcannon",
+  "excerpt": "API keys rotatable without downtime via dual-key window",
+  "embeddingHint": "ironcannon api-key-rotation wave69 deploy-readiness",
+  "tags": [
+    "wave69",
+    "knowledge",
+    "ironcannon",
+    "deploy-readiness"
+  ]
+}

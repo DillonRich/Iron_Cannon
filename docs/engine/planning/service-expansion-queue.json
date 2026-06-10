@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-05-31",
+  "policy": "One service per cycle after STARTER_SCOPE_SIGNOFF. Default queue complete — see SERVICE_EXPANSION_CYCLE_SIGNOFF.md.",
+  "gateDoc": "SERVICE_EXPANSION_CYCLE_SIGNOFF.md",
+  "cycleStatus": "complete",
+  "services": [
+    {
+      "id": "SVC-001",
+      "slug": "vercel-adjacent",
+      "name": "Vercel-adjacent / Pages hosting",
+      "status": "complete",
+      "priority": 1,
+      "primaryHost": false,
+      "rationale": "SD-06 pages-worker-split complete; M60/M61, W06, 64 journeys, SVC-001_SIGNOFF",
+      "signoffDoc": "SVC-001_SIGNOFF.md",
+      "estimatedNewModules": 2,
+      "estimatedCorpusCards": 400,
+      "estimatedObligations": 15,
+      "em4ConflictRisk": "medium",
+      "witness": { "reviewer": "agent", "date": "2026-05-31", "approved": true }
+    },
+    {
+      "id": "SVC-002",
+      "slug": "supabase",
+      "name": "Supabase-primary stack",
+      "status": "complete",
+      "priority": 2,
+      "primaryHost": true,
+      "rationale": "SD-07/08 complete; M70/M71, W07, supabase-primary bundle, 75 journeys, SVC-002_SIGNOFF",
+      "signoffDoc": "SVC-002_SIGNOFF.md",
+      "estimatedNewModules": 12,
+      "estimatedCorpusCards": 1200,
+      "estimatedObligations": 40,
+      "em4ConflictRisk": "high",
+      "witness": { "reviewer": "agent", "date": "2026-05-31", "approved": true }
+    },
+    {
+      "id": "SVC-003",
+      "slug": "paddle-billing",
+      "name": "Paddle billing (non-Stripe)",
+      "status": "deferred",
+      "priority": 99,
+      "primaryHost": false,
+      "rationale": "Customer demand only; not in golden wiremaps",
+      "estimatedNewModules": 8,
+      "estimatedCorpusCards": 600,
+      "estimatedObligations": 20,
+      "em4ConflictRisk": "high",
+      "witness": { "reviewer": null, "date": null, "approved": false }
+    }
+  ]
+}

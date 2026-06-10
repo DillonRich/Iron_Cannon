@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/disputes-prevention-card-testing",
+  "sourceUrl": "https://docs.stripe.com/disputes/prevention/card-testing.md",
+  "lastVerified": "2026-06-03",
+  "title": "Protect yourself from card testing",
+  "excerpt": "Learn about this fraudulent activity and how to protect yourself against it. Card testing is a type of fraudulent activity where someone tries to determine whether stolen card information is valid so that they can use it to make purchases. A fraudster might do this by purchasing stolen credit card information, and then attempting to validate or make purchases with those cards to determine which cards are still valid. Other common terms for card testing are “carding”, “account testing”, “enumeration”, and “card checking.” Fraudulent activity such as card testing is an unavoidable part of online commerce. Card testing, however, has consequences for the entire payments ecosystem, so merchants, card networks, and Stripe share responsibility to prevent it.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

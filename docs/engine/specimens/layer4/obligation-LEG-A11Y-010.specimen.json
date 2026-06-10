@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-a11y-010",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "section": "leg-a11y-010",
+  "content": {
+    "requirement": "Video captions for hosted media",
+    "obligations": [
+      "LEG-A11Y-010"
+    ],
+    "compareSteps": [
+      "Run detect.type=manual per COMPARE_DETECT_TYPES",
+      "Map result to obligation LEG-A11Y-010 only",
+      "Attach legalDisclaimer on every T12–T14 response"
+    ],
+    "remediationDirective": "Remediate LEG-A11Y-010: Video captions for hosted media"
+  },
+  "references": [
+    "legal/wcag-overview"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-A11Y-010",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "accessibility",
+    "disclaimerRequired": true
+  }
+}

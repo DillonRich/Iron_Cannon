@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-priv-012",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-priv-012",
+  "content": {
+    "requirement": "Data retention period stated",
+    "obligations": [
+      "LEG-PRIV-012"
+    ],
+    "compareSteps": [
+      "Run detect.type=pattern",
+      "Map result to obligation LEG-PRIV-012",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-PRIV-012: Data retention period stated"
+  },
+  "references": [
+    "legal/privacy-retention"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-PRIV-012",
+        "type": "pattern",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "privacy",
+    "disclaimerRequired": true
+  }
+}

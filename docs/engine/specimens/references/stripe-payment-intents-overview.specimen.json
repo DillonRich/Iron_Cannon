@@ -1,0 +1,14 @@
+{
+  "refId": "stripe/payment-intents-overview",
+  "sourceUrl": "https://docs.stripe.com/payments/payment-intents",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe PaymentIntents",
+  "excerpt": "Low-level payment API. Checkout Sessions preferred for subscriptions. PaymentIntents for one-time charges or custom flows.",
+  "appliesTo": [
+    "billing-subscription",
+    "P1"
+  ],
+  "tags": [
+    "stripe"
+  ]
+}

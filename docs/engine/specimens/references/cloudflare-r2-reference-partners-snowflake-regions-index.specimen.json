@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/r2-reference-partners-snowflake-regions-index",
+  "sourceUrl": "https://developers.cloudflare.com/r2/reference/partners/snowflake-regions/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Snowflake",
+  "excerpt": "description: Recommended R2 data locations and jurisdictions for each Snowflake region. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/r2/llms.txt > Use this file to discover all available pages before exploring further. This page details which R2 location or jurisdiction is recommended based on your Snowflake region. You have the following inputs to control the physical location where objects in your R2 buckets are stored (for more information refer to [data location](https://developers.cloudflare.com/r2/reference/data-location/)):",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

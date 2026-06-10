@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/radar-rules",
+  "sourceUrl": "https://docs.stripe.com/radar/rules.md",
+  "lastVerified": "2026-06-03",
+  "title": "Fraud prevention rules",
+  "excerpt": "Use fraud prevention rules to help protect your business. Stripe Radar provides built-in rules to help detect and guard against fraud risk across all [supported payment methods](https://docs.stripe.com/radar/supported-payment-methods.md). All transactions are screened using Radar’s default rules. Radar for Fraud Teams and [Radar for Platforms](https://docs.stripe.com/radar/radar-for-platforms.md) let you use the [Dashboard](https://dashboard.stripe.com/test/radar/rules) to create [custom rules](https://docs.stripe.com/radar/supported-payment-methods.md#custom-risk-settings) based on your business logic.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

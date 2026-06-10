@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-rules",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/rules.md",
+  "lastVerified": "2026-06-03",
+  "title": "Revenue Recognition rules",
+  "excerpt": "Customize rules to handle revenue treatments to your business. Configure [Revenue Recognition rules](https://dashboard.stripe.com/revenue-recognition/rules) to define revenue treatments specific to your business. Stripe Revenue Recognition allows you to configure custom rules to handle revenue treatments specific to your business needs. For example, you can configure a rule to: - Categorize an *invoice* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice) line item as a tax or fee. - Book a transaction amount or invoice line item as a passthrough fee. - Exclude transactions from specific customers or test invoices.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

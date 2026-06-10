@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-moving-money-into-credit-reversals",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/moving-money/into/credit-reversals.md",
+  "lastVerified": "2026-06-03",
+  "title": "Moving money using CreditReversal objects",
+  "excerpt": "Learn how you can return funds from received credits that add money to your financial account. Reversing a [ReceivedCredit](https://docs.stripe.com/api/treasury/received_credits.md) creates a [CreditReversal](https://docs.stripe.com/api/treasury/credit_reversals.md). You can reverse `ReceivedCredits` only in some scenarios (detailed in the following table). Whether you can reverse a `ReceivedCredit` depends on the network and source flow. The `reversal_details` sub-hash on the `ReceivedCredit` object can have the following combination of values, which determines if you can reverse the `ReceivedCredit`.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

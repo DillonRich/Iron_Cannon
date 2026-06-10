@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-a11y-001",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "section": "leg-a11y-001",
+  "content": {
+    "requirement": "Images have alt text on key routes",
+    "obligations": [
+      "LEG-A11Y-001"
+    ],
+    "compareSteps": [
+      "Run detect.type=required_attribute per COMPARE_DETECT_TYPES",
+      "Map result to obligation LEG-A11Y-001 only",
+      "Attach legalDisclaimer on every T12–T14 response"
+    ],
+    "remediationDirective": "Remediate LEG-A11Y-001: Images have alt text on key routes"
+  },
+  "references": [
+    "legal/wcag-alt-text"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-A11Y-001",
+        "type": "required_attribute",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "accessibility",
+    "disclaimerRequired": true
+  }
+}

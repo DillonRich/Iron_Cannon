@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-06-06",
+  "policy": "Operator reviews weekly; re-harvest watch refIds on cadence; log deltas in PLANNING_UPDATE_PIPELINE.md",
+  "cadenceDaysDefault": 7,
+  "watches": [
+    {
+      "provider": "stripe",
+      "refId": "stripe/changelog",
+      "sourceUrl": "https://docs.stripe.com/changelog.md",
+      "rssUrl": "https://docs.stripe.com/changelog/feed.xml",
+      "watchType": "changelog",
+      "lastChecked": "2026-06-06",
+      "cadenceDays": 7,
+      "modulesAffected": ["M12-stripe-webhook", "M08-billing-checkout"]
+    },
+    {
+      "provider": "cloudflare",
+      "refId": "cloudflare/workers-platform-changelog-index",
+      "sourceUrl": "https://developers.cloudflare.com/workers/platform/changelog/index.md",
+      "rssUrl": "https://developers.cloudflare.com/workers/platform/changelog/index.xml",
+      "watchType": "changelog",
+      "lastChecked": "2026-06-06",
+      "cadenceDays": 7,
+      "modulesAffected": ["M01-auth-d1-schema", "M14-worker-routes"]
+    },
+    {
+      "provider": "cloudflare",
+      "refId": "cloudflare/vectorize-platform-changelog-index",
+      "sourceUrl": "https://developers.cloudflare.com/vectorize/platform/changelog/index.md",
+      "rssUrl": "https://developers.cloudflare.com/vectorize/platform/changelog/index.xml",
+      "watchType": "changelog",
+      "lastChecked": "2026-06-06",
+      "cadenceDays": 14,
+      "modulesAffected": ["M04-vectorize-rag"]
+    },
+    {
+      "provider": "resend",
+      "refId": "resend/docs-webhooks-introduction",
+      "sourceUrl": "https://resend.com/docs/webhooks/introduction.md",
+      "watchType": "api-surface",
+      "note": "Resend has no public changelog RSS; watch webhook + send API refs for contract drift",
+      "lastChecked": "2026-06-06",
+      "cadenceDays": 14,
+      "modulesAffected": ["M10-email-transactional"]
+    }
+  ]
+}

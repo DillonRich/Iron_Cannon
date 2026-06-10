@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/climate-orders-how-it-works",
+  "sourceUrl": "https://docs.stripe.com/climate/orders/how-it-works.md",
+  "lastVerified": "2026-06-03",
+  "title": "How Climate Orders work",
+  "excerpt": "Learn how to create, monitor, and manage your carbon removal orders. Climate Orders enables companies to buy permanent carbon removal from the [Frontier offtake portfolio and its individual suppliers](https://frontierclimate.com/portfolio?track=offtake). When you purchase carbon removal, your company can help contribute to the world’s net zero carbon goals and help fund emerging carbon removal technologies. To help you incorporate carbon removal into your climate offering, Frontier does the following for you: - **Procures supply**: This requires establishing purchasing criteria, sourcing promising projects, and negotiating contracts. - **Monitors supplier progress**: This includes monitoring supplier performance against key milestones.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

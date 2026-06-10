@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-payment-methods-payment-method-support",
+  "sourceUrl": "https://docs.stripe.com/payments/payment-methods/payment-method-support.md#product-support",
+  "lastVerified": "2026-06-03",
+  "title": "more than 20 payment methods",
+  "excerpt": "Learn how your integration choices affect payment method support. [Link](https://docs.stripe.com/payments/link.md) is a payment method network. With Link, users save their payment details one time, and can use them for future purchases at any business on the Link network. Payment methods support certain currencies, countries, products, and API options. Make sure your chosen payment methods work for your scenario before choosing an [integration option](https://docs.stripe.com/payments/payment-methods/integration-options.md) by viewing these tables: - [Country and currency support](https://docs.stripe.com/payments/payment-methods/payment-method-support.md#country-currency-support) - [Product support](https://docs.stripe.com/payments/payment-methods/payment-method-support.md#product-support)…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-guides-devin",
+  "sourceUrl": "https://resend.com/docs/guides/devin.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send emails with Devin and Resend",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send emails with Devin and Resend > Learn how to install the Resend MCP server in Devin.ai so your agent can send emails, manage contacts, and run broadcasts. [Devin](https://devin.ai) is an autonomous AI software engineer that can connect to external services through MCP (Model Context Protocol) servers. Adding Resend's MCP server gives Devin native access to send emails, manage contacts and broadcasts, verify domains, and more. For the full list of capabilities, see the [MCP Server overview](/mcp-server).…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

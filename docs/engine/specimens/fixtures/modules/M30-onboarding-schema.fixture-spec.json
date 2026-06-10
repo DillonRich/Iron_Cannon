@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M30",
+  "moduleId": "M30-onboarding-schema",
+  "patternsUnderTest": [
+    "ONB-SC-001",
+    "ONB-SC-002",
+    "AUTH-P50-M30-",
+    "AUTH-P50-LIFECYCLE"
+  ],
+  "passSnippet": "ALTER TABLE users ADD COLUMN onboarding_completed_at INTEGER; ALTER TABLE users ADD COLUMN display_name TEXT;",
+  "failSnippet": "ALTER TABLE users ADD COLUMN bio TEXT;",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "ONB-SC-001"
+  ]
+}

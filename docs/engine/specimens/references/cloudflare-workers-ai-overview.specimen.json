@@ -1,0 +1,14 @@
+{
+  "refId": "cloudflare/workers-ai-overview",
+  "sourceUrl": "https://developers.cloudflare.com/workers-ai/",
+  "lastVerified": "2026-05-31",
+  "title": "Cloudflare Workers AI",
+  "excerpt": "Run models on Workers AI. Not used by Iron Cannon MCP runtime—rules compose server-side. Optional for user app AI features.",
+  "appliesTo": [
+    "P2"
+  ],
+  "tags": [
+    "cloudflare",
+    "ai"
+  ]
+}

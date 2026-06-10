@@ -1,0 +1,132 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/pattern-equivalence-registry/v1",
+  "version": "1.0.0",
+  "description": "Canonical + equivalent signals for T05 pattern matching (Guardian dogfood G-49).",
+  "contributorWorkflow": [
+    "1. Propose pattern + regex in a PR to this file.",
+    "2. Add guardian-style snippet case in docs/engine/specimens/fixtures/guardian-equivalence/guardian-style-snippets.json.",
+    "3. Run npm run planning:guardian-retest — must stay green.",
+    "4. Reference module in snippet-hint-registry.json when agents need paste guidance."
+  ],
+  "patterns": {
+    "STWH-001": {
+      "title": "Stripe webhook signature verification",
+      "match": "constructevent|webhooks\\.construct|verifystripesignature|stripe-signature|crypto\\.subtle\\.(verify|importkey)|hmac.*sha256"
+    },
+    "STWH-002": {
+      "title": "Webhook idempotency / event dedupe",
+      "match": "kv\\.put|idempotency|stripe_evt|stripe_events|stripe_activation|event\\.id|duplicate.*event|event_id"
+    },
+    "STWH-003": {
+      "title": "Stripe lifecycle event handling",
+      "match": "checkout\\.session\\.completed|handlestripewebhook|switch\\s*\\(.*event\\.type|customer\\.subscription\\."
+    },
+    "AUTH-RT-001": {
+      "title": "Signup / register route",
+      "match": "/api/auth/(signup|register)|/signup|/register|register\\.html|handleregister"
+    },
+    "AUTH-RT-002": {
+      "title": "Signin / login route",
+      "match": "/api/auth/(signin|login)|/signin|/login|login\\.html|signin\\.html|handlelogin"
+    },
+    "AUTH-RT-003": {
+      "title": "Session / me route",
+      "match": "/api/auth/me|/api/me|getsession|currentuser"
+    },
+    "AUTH-MW-001": {
+      "title": "Session protection (Next middleware or Worker CORS+cookie)",
+      "match": "middleware|nextresponse|sessioncookie|samesite|httponly|browserpaths|access-control-allow-origin|cors"
+    },
+    "AUTH-MW-002": {
+      "title": "Auth redirect to login",
+      "match": "redirect|/login|/dashboard"
+    },
+    "AUTH-MW-003": {
+      "title": "Protected path prefix",
+      "match": "pathname|startswith|browserpaths|protected"
+    },
+    "PROV-001": {
+      "title": "Provisioning / rate limit enforcement",
+      "match": "kv\\.put|consumeipratelimit|rate.?limit|429|retry-after"
+    },
+    "PROV-002": {
+      "title": "Rate limit read policy",
+      "match": "kv\\.get|ratelimit|getauthratelimitpolicy|rate_limit"
+    },
+    "AUTH-UI-001": {
+      "title": "Terms / privacy links on signup UI",
+      "match": "/terms|/privacy|terms|privacy|/legal|#terms|#privacy"
+    },
+    "AUTH-UI-002": {
+      "title": "Accessible email label",
+      "match": "htmlfor|label.*email|for=\"email\""
+    },
+    "AUTH-SC-001": {
+      "title": "Users table schema",
+      "match": "create table\\s+users|\\busers\\b.*create table"
+    },
+    "AUTH-SC-002": {
+      "title": "Sessions table schema",
+      "match": "create table\\s+sessions|\\bsessions\\b"
+    },
+    "AUTH-SC-003": {
+      "title": "Unique / primary key constraints",
+      "match": "unique|primary key"
+    },
+    "CHECK-001": {
+      "title": "Stripe checkout session create",
+      "match": "checkout\\.sessions\\.create"
+    },
+    "CHECK-002": {
+      "title": "Subscription checkout mode",
+      "match": "subscription|mode:\\s*['\"]subscription"
+    },
+    "BILL-SC-001": {
+      "title": "Subscriptions billing table",
+      "match": "subscriptions.*create table|create table.*subscriptions"
+    },
+    "BILL-SC-002": {
+      "title": "Stripe subscription id column",
+      "match": "stripe_subscription_id"
+    },
+    "BILL-UI-001": {
+      "title": "Billing success page",
+      "match": "success|billing"
+    },
+    "BILL-UI-002": {
+      "title": "Router refresh after checkout",
+      "match": "router\\.refresh|refresh\\(\\)"
+    },
+    "AUTH-RT-F01": {
+      "title": "Weak token anti-pattern",
+      "match": "math\\.random|weak.*token"
+    }
+  },
+  "prefixPatterns": [
+    { "prefix": "AUTH-P49-M02-", "match": "route|/api/|register|login" },
+    { "prefix": "AUTH-P49-M04-", "match": "terms|privacy|register|html" },
+    { "prefix": "AUTH-P49-M05-", "match": "session|cookie|middleware|cors" },
+    { "prefix": "AUTH-P49-SESSION", "match": "session|cookie|token" },
+    { "prefix": "BILL-P49-M12-", "match": "stripe|webhook|constructevent|verify" },
+    { "prefix": "STWH-P49-VERIFY", "match": "verify|signature|constructevent|subtle" },
+    { "prefix": "BILL-", "match": "stripe|subscription|billing" },
+    { "prefix": "STRIPE-", "match": "stripe" },
+    { "prefix": "RESEND-", "match": "resend|email" },
+    { "prefix": "SESSION-", "match": "session|cookie|middleware" },
+    { "prefix": "KV-", "match": "\\bkv\\b|binding" },
+    { "prefix": "PROV-", "match": "provision|subscription|tier|rate" },
+    { "prefix": "UI-", "match": "page|component|route|\\.html" },
+    { "prefix": "EMAIL-", "match": "email|resend|template" },
+    { "prefix": "AUTH-RT-", "match": "route|/api/|register|login|signup|signin" },
+    { "prefix": "AUTH-EM-", "match": "resend|idempotency|template" },
+    { "prefix": "CHECK-", "match": "checkout|stripe|subscription" },
+    { "prefix": "ARM-WH-", "match": "constructevent|stripe_evt|stale|event" },
+    { "prefix": "ARM-SES-", "match": "csp|csrf|httponly|secure|cookie" },
+    { "prefix": "SURF-MAP-", "match": "surface|overlay" },
+    { "prefix": "PAGES-", "match": "pages_build|wrangler|next_public" },
+    { "prefix": "SUPA-", "match": "supabase|createclient|middleware|rls" },
+    { "prefix": "TAURI-CFG-", "match": "tauri|productname|identifier|csp|security" },
+    { "prefix": "TAURI-UPD-", "match": "updater|pubkey|endpoints|verifysignature" },
+    { "prefix": "TAURI-", "match": "tauri|updater|desktop" }
+  ]
+}

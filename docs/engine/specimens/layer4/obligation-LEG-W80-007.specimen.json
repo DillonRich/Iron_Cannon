@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w80-007",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "SD-07 wiremap order documented in W07 fixture",
+    "obligations": [
+      "LEG-W80-007"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "SD-07 wiremap order documented in W07 fixture"
+  },
+  "references": [
+    "supabase/knowledge-w80-sd07-wiremap-order"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W80-007",
+        "type": "manual",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

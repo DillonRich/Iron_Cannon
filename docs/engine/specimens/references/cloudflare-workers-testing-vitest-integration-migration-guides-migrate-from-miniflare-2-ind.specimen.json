@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-testing-vitest-integration-migration-guides-migrate-from-miniflare-2-ind",
+  "sourceUrl": "https://developers.cloudflare.com/workers/testing/vitest-integration/migration-guides/migrate-from-miniflare-2/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Migrate from Miniflare 2's test environments",
+  "excerpt": "title: Migrate from Miniflare 2's test environments description: Migrate from [Miniflare 2](https://github.com/cloudflare/miniflare?tab=readme-ov-file) to the Workers Vitest integration. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. [Miniflare 2 ↗](https://github.com/cloudflare/miniflare?tab=readme-ov-file) provided custom environments for Jest and Vitest in the `jest-environment-miniflare` and `vitest-environment-miniflare` packages respectively.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W83-001",
+      "category": "operations",
+      "title": "Session index maintained in sessions/README.md",
+      "sourceRefId": "ironcannon/knowledge-w83-session-index-readme",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-002",
+      "category": "operations",
+      "title": "ref_app_att chain available in user journey harness",
+      "sourceRefId": "ironcannon/knowledge-w83-ref-app-att-chain",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-003",
+      "category": "operations",
+      "title": "Multi-stack regression session documented",
+      "sourceRefId": "ironcannon/knowledge-w83-multi-stack-regression-session",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-004",
+      "category": "operations",
+      "title": "G-34 harvest journeys UJ-076–080 present",
+      "sourceRefId": "ironcannon/knowledge-w83-uj-076-080-harvest",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-005",
+      "category": "operations",
+      "title": "G-34 validator in stretch suite",
+      "sourceRefId": "ironcannon/knowledge-w83-g34-validator-stretch",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-006",
+      "category": "operations",
+      "title": "starter:golden-path unchanged after expansion",
+      "sourceRefId": "ironcannon/knowledge-w83-starter-golden-path-unchanged",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-007",
+      "category": "operations",
+      "title": "Service expansion session log published",
+      "sourceRefId": "ironcannon/knowledge-w83-session-expansion-cycle-log",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-008",
+      "category": "operations",
+      "title": "G-35 operator deploy planned not blocking",
+      "sourceRefId": "ironcannon/knowledge-w83-operator-deploy-g35-planned",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-009",
+      "category": "privacy",
+      "title": "Session logs redact secrets and API keys",
+      "sourceRefId": "legal/knowledge-w83-session-pii-redaction",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W83-010",
+      "category": "operations",
+      "title": "Behavioral journey count ≥80 after G-34",
+      "sourceRefId": "ironcannon/knowledge-w83-continuous-improvement-80uj",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

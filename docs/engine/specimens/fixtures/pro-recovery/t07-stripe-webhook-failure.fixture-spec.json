@@ -1,0 +1,16 @@
+{
+  "fixtureId": "T07-01",
+  "description": "Stripe webhook signature failure maps to E02 + M12",
+  "input": {
+    "flowId": "billing-subscription",
+    "symptoms": "Subscription never activates after checkout",
+    "errorLog": "StripeSignatureVerificationError: No signatures found matching the expected signature",
+    "adapterIds": ["stripe", "cloudflare-golden-stack"]
+  },
+  "expected": {
+    "matchedEdgeCaseId": "E02",
+    "relatedModules": ["M12-stripe-webhook"],
+    "stepsMin": 3,
+    "diagnosisContains": "webhook"
+  }
+}

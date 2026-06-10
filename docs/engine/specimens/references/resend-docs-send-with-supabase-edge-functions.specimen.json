@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-send-with-supabase-edge-functions",
+  "sourceUrl": "https://resend.com/docs/send-with-supabase-edge-functions.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send emails with Supabase Edge Functions",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send emails with Supabase Edge Functions > Learn how to send your first email using Supabase Edge Functions. ## Prerequisites To get the most out of this guide, you'll need to: * [Create an API key](https://resend.com/api-keys) * [Verify your domain](https://resend.com/domains) Make sure you have the latest version of the [Supabase CLI](https://supabase.com/docs/guides/cli#installation) installed. ## 1. Create Supabase function Create a new function locally: ```bash theme={\"theme\":{\"light\":\"github-light\",\"dark\":\"vesper\"}} supabase functions new resend ``` ## 2.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

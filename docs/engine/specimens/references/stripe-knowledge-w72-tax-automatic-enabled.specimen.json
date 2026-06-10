@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/knowledge-w72-tax-automatic-enabled",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w72/tax-automatic-enabled",
+  "lastVerified": "2026-06-06",
+  "title": "W72 tax-automatic-enabled",
+  "provider": "stripe",
+  "excerpt": "Stripe Tax automatic calculation where required",
+  "embeddingHint": "stripe tax-automatic-enabled wave72 legal-markets",
+  "tags": [
+    "wave72",
+    "knowledge",
+    "stripe",
+    "legal-markets"
+  ]
+}

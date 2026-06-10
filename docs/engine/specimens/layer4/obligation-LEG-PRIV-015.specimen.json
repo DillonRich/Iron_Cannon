@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-priv-015",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-priv-015",
+  "content": {
+    "requirement": "Subprocessor list published",
+    "obligations": [
+      "LEG-PRIV-015"
+    ],
+    "compareSteps": [
+      "Run detect.type=route_exists",
+      "Map result to obligation LEG-PRIV-015",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-PRIV-015: Subprocessor list published"
+  },
+  "references": [
+    "legal/gdpr-subprocessors"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-PRIV-015",
+        "type": "route_exists",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "privacy",
+    "disclaimerRequired": true
+  }
+}

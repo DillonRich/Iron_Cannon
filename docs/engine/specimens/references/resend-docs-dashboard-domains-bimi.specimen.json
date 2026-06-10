@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-domains-bimi",
+  "sourceUrl": "https://resend.com/docs/dashboard/domains/bimi.md",
+  "lastVerified": "2026-06-03",
+  "title": "Implementing BIMI",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Implementing BIMI > Set up BIMI to gain brand recognition by displaying your logo in the inbox. ## Prerequisites To get the most out of this guide, you will need to: * Establish verifiable use of your logo * Obtain a registered trademark for your logo * Or, use your logo for over one year * [Add a DMARC record on your domain](/dashboard/domains/dmarc) ## What is BIMI? BIMI ([Brand Indicators for Message Identification](https://bimigroup.org/)) is a standard that allows you to specify a logo (and sometimes a checkmark) to display next to your email in the inbox.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

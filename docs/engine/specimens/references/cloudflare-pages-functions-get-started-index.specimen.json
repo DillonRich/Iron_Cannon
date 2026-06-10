@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-functions-get-started-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/functions/get-started/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Get started",
+  "excerpt": "description: Create and deploy your first Pages Function on Cloudflare Pages. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. This guide will instruct you on creating and deploying a Pages Function. You must have a Pages project set up on your local machine or deployed on the Cloudflare dashboard. To create a Pages project, refer to [Get started](https://developers.cloudflare.com/pages/get-started/).",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

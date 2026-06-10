@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/pages-env",
+  "sourceUrl": "https://developers.cloudflare.com/pages/configuration/build-configuration/",
+  "lastVerified": "2026-05-31",
+  "title": "Pages environment variables",
+  "excerpt": "Set production/preview env in Pages dashboard or wrangler. NEXT_PUBLIC_* exposed to browser—never put secrets there. Server-only secrets in Pages Functions bindings or Workers secrets. Match env names across local .dev.vars and production.",
+  "appliesTo": ["layer2/cloudflare", "nextjs-app-router"],
+  "tags": ["cloudflare", "pages", "env"]
+}

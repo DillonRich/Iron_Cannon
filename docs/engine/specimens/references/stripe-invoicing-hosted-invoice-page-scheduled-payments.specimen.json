@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-hosted-invoice-page-scheduled-payments",
+  "sourceUrl": "https://docs.stripe.com/invoicing/hosted-invoice-page/scheduled-payments.md",
+  "lastVerified": "2026-06-03",
+  "title": "Scheduled payments",
+  "excerpt": "Let your customers schedule their payments through the Hosted Invoice Page. Stripe offers flexibility by enabling your customers to schedule payments for a future date through the [Hosted Invoice Page](https://docs.stripe.com/invoicing/hosted-invoice-page.md). The scheduled payments feature lets your customers take action immediately so that they won’t forget to pay. Your customers can also go back to the Hosted Invoice Page at any time and update their payment method and or scheduled date. > The scheduled payments feature is currently only available in the US.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

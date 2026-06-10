@@ -1,0 +1,643 @@
+{
+  "rulesetVersion": "2026.05.31",
+  "nodeCount": 30,
+  "nodes": [
+    {
+      "nodeId": "step/M01-auth-d1-schema/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/internal/migrations",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M01-auth-d1-schema"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "securityEffects": [],
+      "legalEffects": [],
+      "agentGuidance": "Create users/sessions tables",
+      "referenceRefIds": [
+        "cloudflare/d1-migrations"
+      ]
+    },
+    {
+      "nodeId": "step/M02-auth-worker-routes/build",
+      "type": "flow_step",
+      "host": "cloudflare",
+      "route": "/api/auth/login",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "securityEffects": [
+        "rate_limit"
+      ],
+      "legalEffects": [],
+      "agentGuidance": "Login route + rate limit",
+      "referenceRefIds": [
+        "owasp/authentication"
+      ]
+    },
+    {
+      "nodeId": "step/M02-auth-worker-routes/build",
+      "type": "flow_step",
+      "host": "cloudflare",
+      "route": "/api/auth/register",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M02-auth-worker-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "securityEffects": [
+        "rate_limit",
+        "csrf"
+      ],
+      "legalEffects": [],
+      "agentGuidance": "Register route",
+      "referenceRefIds": [
+        "owasp/authentication"
+      ]
+    },
+    {
+      "nodeId": "step/M03-auth-resend-emails/build",
+      "type": "flow_step",
+      "host": "cloudflare",
+      "route": "/api/auth/magic-link",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M03-auth-resend-emails"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "securityEffects": [
+        "idempotency"
+      ],
+      "legalEffects": [
+        "LEG-EMAIL-001"
+      ],
+      "agentGuidance": "Send magic link",
+      "referenceRefIds": [
+        "resend/api-keys"
+      ]
+    },
+    {
+      "nodeId": "step/M04-auth-ui-routes/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/signup",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M04-auth-ui-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "securityEffects": [
+        "csrf_token"
+      ],
+      "legalEffects": [
+        "LEG-PRIV-001",
+        "LEG-TERMS-004"
+      ],
+      "agentGuidance": "Signup UI legal links",
+      "referenceRefIds": [
+        "legal/privacy-policy-template"
+      ]
+    },
+    {
+      "nodeId": "step/M04-auth-ui-routes/verify",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/signup",
+      "phase": "VERIFY",
+      "moduleIds": [
+        "M04-auth-ui-routes"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-PRIV-001"
+      ],
+      "agentGuidance": "T05 privacy route_link",
+      "referenceRefIds": [
+        "legal/privacy-policy-template"
+      ]
+    },
+    {
+      "nodeId": "step/M05-auth-session-middleware/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/dashboard",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M05-auth-session-middleware"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "securityEffects": [
+        "session_gate"
+      ],
+      "legalEffects": [],
+      "agentGuidance": "Middleware session gate",
+      "referenceRefIds": [
+        "nextjs/middleware-auth"
+      ]
+    },
+    {
+      "nodeId": "step/M10-billing-d1-schema/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/internal/migrations",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M10-billing-d1-schema"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "securityEffects": [],
+      "legalEffects": [],
+      "agentGuidance": "subscriptions table",
+      "referenceRefIds": [
+        "cloudflare/d1-overview"
+      ]
+    },
+    {
+      "nodeId": "step/M11-stripe-checkout-route/build",
+      "type": "flow_step",
+      "host": "cloudflare",
+      "route": "/api/billing/checkout",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M11-stripe-checkout-route"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "securityEffects": [
+        "csrf"
+      ],
+      "legalEffects": [
+        "LEG-TERMS-004"
+      ],
+      "agentGuidance": "Create Checkout Session",
+      "referenceRefIds": [
+        "stripe/checkout-sessions"
+      ]
+    },
+    {
+      "nodeId": "step/M12-stripe-webhook/build",
+      "type": "flow_step",
+      "host": "cloudflare",
+      "route": "/api/webhooks/stripe",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "securityEffects": [
+        "signature_verify",
+        "idempotency"
+      ],
+      "legalEffects": [],
+      "agentGuidance": "Verify signature first",
+      "referenceRefIds": [
+        "stripe/webhook-signature"
+      ]
+    },
+    {
+      "nodeId": "step/M12-stripe-webhook/verify",
+      "type": "flow_step",
+      "host": "cloudflare",
+      "route": "/api/webhooks/stripe",
+      "phase": "VERIFY",
+      "moduleIds": [
+        "M12-stripe-webhook"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "securityEffects": [
+        "signature_verify"
+      ],
+      "legalEffects": [],
+      "agentGuidance": "constructEvent before switch",
+      "referenceRefIds": [
+        "stripe/webhook-signature"
+      ]
+    },
+    {
+      "nodeId": "step/M13-provisioning-kv/build",
+      "type": "flow_step",
+      "host": "cloudflare",
+      "route": "/api/webhooks/stripe",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M13-provisioning-kv"
+      ],
+      "requiredForFlows": [
+        "auth-lifecycle"
+      ],
+      "securityEffects": [
+        "race_shield"
+      ],
+      "legalEffects": [],
+      "agentGuidance": "KV race shield",
+      "referenceRefIds": [
+        "ironcannon/provisioning-kv-pattern"
+      ]
+    },
+    {
+      "nodeId": "step/M14-billing-success-ui/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/billing/success",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M14-billing-success-ui"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "securityEffects": [
+        "open_redirect"
+      ],
+      "legalEffects": [],
+      "agentGuidance": "Success page no open redirect",
+      "referenceRefIds": [
+        "stripe/checkout-sessions"
+      ]
+    },
+    {
+      "nodeId": "step/M15-billing-dashboard-ui/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/dashboard/billing",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M15-billing-dashboard-ui"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-TERMS-003"
+      ],
+      "agentGuidance": "Portal + pricing disclosure",
+      "referenceRefIds": [
+        "stripe/billing-portal-deep"
+      ]
+    },
+    {
+      "nodeId": "step/M16-billing-emails/build",
+      "type": "flow_step",
+      "host": "cloudflare",
+      "route": "/api/billing/notify",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M16-billing-emails"
+      ],
+      "requiredForFlows": [
+        "billing-subscription"
+      ],
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-EMAIL-002"
+      ],
+      "agentGuidance": "Transactional invoice email",
+      "referenceRefIds": [
+        "resend/sender-identity"
+      ]
+    },
+    {
+      "nodeId": "step/M20-reset-token-schema/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/internal/migrations",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M20-reset-token-schema"
+      ],
+      "requiredForFlows": [
+        "password-reset"
+      ],
+      "securityEffects": [],
+      "legalEffects": [],
+      "agentGuidance": "reset tokens table",
+      "referenceRefIds": [
+        "cloudflare/d1-migrations"
+      ]
+    },
+    {
+      "nodeId": "step/M21-reset-api/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/api/auth/reset-request",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M21-reset-api"
+      ],
+      "requiredForFlows": [
+        "password-reset"
+      ],
+      "securityEffects": [
+        "rate_limit"
+      ],
+      "legalEffects": [],
+      "agentGuidance": "Request reset",
+      "referenceRefIds": [
+        "owasp/authentication"
+      ]
+    },
+    {
+      "nodeId": "step/M22-reset-ui/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/reset-password",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M22-reset-ui"
+      ],
+      "requiredForFlows": [
+        "password-reset"
+      ],
+      "securityEffects": [
+        "csrf_token"
+      ],
+      "legalEffects": [],
+      "agentGuidance": "Reset form",
+      "referenceRefIds": [
+        "nextjs/app-router"
+      ]
+    },
+    {
+      "nodeId": "step/M23-reset-email/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/api/auth/reset-request",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M23-reset-email"
+      ],
+      "requiredForFlows": [
+        "password-reset"
+      ],
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-EMAIL-001"
+      ],
+      "agentGuidance": "Send reset email",
+      "referenceRefIds": [
+        "resend/templates-api"
+      ]
+    },
+    {
+      "nodeId": "step/M30-onboarding-schema/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/internal/migrations",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M30-onboarding-schema"
+      ],
+      "requiredForFlows": [
+        "onboarding"
+      ],
+      "securityEffects": [],
+      "legalEffects": [],
+      "agentGuidance": "onboarding fields",
+      "referenceRefIds": [
+        "cloudflare/d1-migrations"
+      ]
+    },
+    {
+      "nodeId": "step/M31-onboarding-api/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/api/onboarding",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M31-onboarding-api"
+      ],
+      "requiredForFlows": [
+        "onboarding"
+      ],
+      "securityEffects": [
+        "csrf"
+      ],
+      "legalEffects": [],
+      "agentGuidance": "Complete onboarding",
+      "referenceRefIds": [
+        "nextjs/server-actions-security"
+      ]
+    },
+    {
+      "nodeId": "step/M32-onboarding-ui/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/onboarding",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M32-onboarding-ui"
+      ],
+      "requiredForFlows": [
+        "onboarding"
+      ],
+      "securityEffects": [],
+      "legalEffects": [],
+      "agentGuidance": "Compact onboarding wiremap",
+      "referenceRefIds": [
+        "ironcannon/wiremap-split-approval"
+      ]
+    },
+    {
+      "nodeId": "step/M40-deletion-api/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/api/account/delete",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M40-deletion-api"
+      ],
+      "requiredForFlows": [
+        "account-deletion"
+      ],
+      "securityEffects": [
+        "auth_required"
+      ],
+      "legalEffects": [
+        "LEG-GDPR-002"
+      ],
+      "agentGuidance": "Deletion request",
+      "referenceRefIds": [
+        "legal/gdpr-erasure"
+      ]
+    },
+    {
+      "nodeId": "step/M41-deletion-scheduler/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/cron/deletion",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M41-deletion-scheduler"
+      ],
+      "requiredForFlows": [
+        "account-deletion"
+      ],
+      "securityEffects": [
+        "cron_auth"
+      ],
+      "legalEffects": [
+        "LEG-GDPR-002"
+      ],
+      "agentGuidance": "Scheduled purge",
+      "referenceRefIds": [
+        "cloudflare/cron-triggers"
+      ]
+    },
+    {
+      "nodeId": "step/M42-deletion-ui/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/settings/delete",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M42-deletion-ui"
+      ],
+      "requiredForFlows": [
+        "account-deletion"
+      ],
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-GDPR-002"
+      ],
+      "agentGuidance": "Confirm deletion UI",
+      "referenceRefIds": [
+        "legal/gdpr-erasure"
+      ]
+    },
+    {
+      "nodeId": "step/M50-export-api/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/api/export",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M50-export-api"
+      ],
+      "requiredForFlows": [
+        "data-export"
+      ],
+      "securityEffects": [
+        "auth_required"
+      ],
+      "legalEffects": [
+        "LEG-GDPR-003"
+      ],
+      "agentGuidance": "Export request",
+      "referenceRefIds": [
+        "legal/gdpr-access"
+      ]
+    },
+    {
+      "nodeId": "step/M51-export-worker/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/worker/export",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M51-export-worker"
+      ],
+      "requiredForFlows": [
+        "data-export"
+      ],
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-GDPR-003"
+      ],
+      "agentGuidance": "Generate export archive",
+      "referenceRefIds": [
+        "cloudflare/r2-object-lifecycle"
+      ]
+    },
+    {
+      "nodeId": "step/M52-export-ui/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/settings/export",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M52-export-ui"
+      ],
+      "requiredForFlows": [
+        "data-export"
+      ],
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-GDPR-003"
+      ],
+      "agentGuidance": "Download export UI",
+      "referenceRefIds": [
+        "legal/gdpr-access"
+      ]
+    },
+    {
+      "nodeId": "step/M55-terms-reaccept-api/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/api/terms/reaccept",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M55-terms-reaccept-api"
+      ],
+      "requiredForFlows": [
+        "terms-reaccept"
+      ],
+      "securityEffects": [
+        "csrf"
+      ],
+      "legalEffects": [
+        "LEG-TERMS-004"
+      ],
+      "agentGuidance": "Record reacceptance",
+      "referenceRefIds": [
+        "legal/terms-checkbox"
+      ]
+    },
+    {
+      "nodeId": "step/M56-terms-reaccept-ui/build",
+      "type": "flow_step",
+      "host": "nextjs",
+      "route": "/terms/updated",
+      "phase": "BUILD",
+      "moduleIds": [
+        "M56-terms-reaccept-ui"
+      ],
+      "requiredForFlows": [
+        "terms-reaccept"
+      ],
+      "securityEffects": [],
+      "legalEffects": [
+        "LEG-TERMS-004"
+      ],
+      "agentGuidance": "Reaccept modal",
+      "referenceRefIds": [
+        "legal/terms-of-service-template"
+      ]
+    }
+  ]
+}

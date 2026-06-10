@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/secure-product-design",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Secure product design",
+  "excerpt": "Threat model early: identify assets, trust boundaries, and abuse cases. Iron Cannon wiremaps encode trust boundaries (MCP agent vs user app vs Stripe webhooks). Defense in depth: validate at API, middleware, and webhook layers.",
+  "appliesTo": ["architecture", "layer3"],
+  "tags": ["owasp", "design", "threat-model"]
+}

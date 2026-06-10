@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/vectorize-platform-pricing-index",
+  "sourceUrl": "https://developers.cloudflare.com/vectorize/platform/pricing/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Pricing",
+  "excerpt": "description: Vectorize pricing based on queried and stored vector dimensions. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/vectorize/llms.txt > Use this file to discover all available pages before exploring further. To report bugs or give feedback, go to the [#vectorize Discord channel ↗](https://discord.cloudflare.com). If you are having issues with Wrangler, report issues in the [Wrangler GitHub repository ↗](https://github.com/cloudflare/workers-sdk/issues/new/choose). * **Queried Vector Dimensions**: The total number of vector dimensions queried.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

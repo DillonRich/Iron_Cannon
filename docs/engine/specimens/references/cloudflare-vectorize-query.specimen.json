@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/vectorize-query",
+  "sourceUrl": "https://developers.cloudflare.com/vectorize/",
+  "lastVerified": "2026-05-31",
+  "title": "Cloudflare Vectorize for IC RAG",
+  "excerpt": "Vectorize stores embeddings for similarity search. Iron Cannon indexes Tier 1+2 corpus chunks at publish. Query at compose-time with topK and metadata filter (refId, rulesetVersion). Never index user code. Supplement deterministic compose only.",
+  "appliesTo": ["KNOWLEDGE_CORPUS", "C13-composer"],
+  "tags": ["cloudflare", "vectorize", "rag"]
+}

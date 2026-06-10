@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w84-production-readiness-v12",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w84/production-readiness-v12",
+  "lastVerified": "2026-06-06",
+  "title": "W84 production-readiness-v12",
+  "provider": "ironcannon",
+  "excerpt": "PRODUCTION_READINESS_SIGNOFF updated with 80 journeys and G-35",
+  "embeddingHint": "ironcannon production-readiness-v12 wave84 operator-deploy-readiness-g35",
+  "tags": [
+    "wave84",
+    "knowledge",
+    "ironcannon",
+    "operator-deploy-readiness-g35"
+  ]
+}

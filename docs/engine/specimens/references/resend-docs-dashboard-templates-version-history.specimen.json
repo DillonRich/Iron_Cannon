@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-templates-version-history",
+  "sourceUrl": "https://resend.com/docs/dashboard/templates/version-history.md",
+  "lastVerified": "2026-06-03",
+  "title": "Version History",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Version History > Best practices for using templates in production environments. Templates in production require a workflow that lets you make changes safely without disrupting active emails. As you build your Template, your entire team can collaborate on the content and design in real-time with full version history. ## Draft vs Published Templates start in a **draft** state and must be published before they can be used to send emails.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

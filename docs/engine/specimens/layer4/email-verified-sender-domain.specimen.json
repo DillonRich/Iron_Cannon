@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/email/verified-sender-domain",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "email-lifecycle",
+  "adapterId": "resend",
+  "section": "verified-sender",
+  "content": {
+    "requirement": "Outbound email From domain must match Resend verified domain",
+    "obligations": ["LEG-EMAIL-005", "LEG-EMAIL-006"],
+    "compareSteps": [
+      "Compare RESEND_FROM / from field against resend.verifiedDomain config",
+      "Advisory: resend webhooks for bounces/complaints configured"
+    ],
+    "remediationDirective": "Verify domain in Resend dashboard; use verified domain in all send calls; configure delivery webhooks."
+  },
+  "references": ["resend/from-domain", "resend/webhooks"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "LEG-EMAIL-005", "type": "verified_sender_domain", "configField": "resend.verifiedDomain", "tier": "ironclad" }
+    ],
+    "advisory": [
+      { "id": "LEG-EMAIL-006", "type": "config", "field": "resend.webhooks.deliveryEvents", "tier": "ironclad" }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "email", "disclaimerRequired": true }
+}

@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M10",
+  "moduleId": "M10-billing-d1-schema",
+  "patternsUnderTest": [
+    "BILL-SC-001",
+    "BILL-SC-002",
+    "BILL-P49-M10-",
+    "STWH-P49-VERIFY"
+  ],
+  "passSnippet": "CREATE TABLE subscriptions (id TEXT PRIMARY KEY, user_id TEXT NOT NULL, status TEXT NOT NULL, stripe_subscription_id TEXT);",
+  "failSnippet": "CREATE TABLE subscriptions (id TEXT PRIMARY KEY, user_id TEXT NOT NULL);",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "BILL-SC-002"
+  ]
+}

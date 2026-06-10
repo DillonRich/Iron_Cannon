@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-tax-ids-object",
+  "sourceUrl": "https://docs.stripe.com/api/tax_ids/object.md",
+  "lastVerified": "2026-06-03",
+  "title": "The Tax ID object",
+  "excerpt": "String representing the object’s type. Objects of the same type share the same value. Two-letter ISO code representing the country of the tax ID. Time at which the object was created. Measured in seconds since the Unix epoch. - `customer` (string, nullable, expandable (can be expanded into an object with the `expand` request parameter)) ID of the Account representing the customer. If the object exists in live mode, the value is `true`. If the object exists in test mode, the value is `false`.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

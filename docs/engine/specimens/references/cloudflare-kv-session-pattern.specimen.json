@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/kv-session-pattern",
+  "sourceUrl": "https://developers.cloudflare.com/workers/platform/storage-options/",
+  "lastVerified": "2026-05-31",
+  "title": "KV for session storage pattern",
+  "excerpt": "Store session ID in HttpOnly cookie; session payload in KV keyed by sessionId. Invalidate by deleting KV key on logout. Pair with D1 for user record if needed. Do not store session only in client localStorage.",
+  "appliesTo": ["auth-lifecycle", "layer3/session-hardening"],
+  "tags": ["cloudflare", "kv", "session"]
+}

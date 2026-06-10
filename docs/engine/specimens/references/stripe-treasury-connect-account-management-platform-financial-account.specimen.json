@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/treasury-connect-account-management-platform-financial-account",
+  "sourceUrl": "https://docs.stripe.com/treasury/connect/account-management/platform-financial-account.md",
+  "lastVerified": "2026-06-03",
+  "title": "Platform financial accounts",
+  "excerpt": "Learn about the financial account for your platform. After you’ve [gained API access](https://docs.stripe.com/treasury/connect/access.md) to Stripe Treasury for platforms, we automatically provision your platform with a financial account. For *sandbox* (A sandbox is an isolated test environment that allows you to test Stripe functionality in your account without affecting your live integration. Use sandboxes to safely experiment with new features and changes) environments, it’s a test platform financial account. The test platform financial account on your sandbox environment enables you to set up and test your integration without actually affecting your live account’s platform financial account.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

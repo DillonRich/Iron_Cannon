@@ -1,0 +1,14 @@
+{
+  "refId": "resend/knowledge-w61-sandbox-domain",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w61/sandbox-domain",
+  "lastVerified": "2026-06-06",
+  "title": "W61 sandbox-domain",
+  "provider": "resend",
+  "excerpt": "Use onboarding@resend.dev only in development; production requires verified domain",
+  "embeddingHint": "resend sandbox-domain wave61 knowledge",
+  "tags": [
+    "wave61",
+    "knowledge",
+    "resend"
+  ]
+}

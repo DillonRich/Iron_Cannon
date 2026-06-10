@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/xss-prevention",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP XSS prevention",
+  "excerpt": "Context-aware output encoding. Prefer React/JSX auto-escape. Avoid dangerouslySetInnerHTML. Sanitize rich text if required. CSP as defense-in-depth. Validate and encode on output—not input alone.",
+  "appliesTo": ["layer3", "nextjs-app-router"],
+  "tags": ["owasp", "xss"]
+}

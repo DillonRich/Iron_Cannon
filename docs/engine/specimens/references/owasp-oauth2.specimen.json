@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/oauth2",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/OAuth2_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP OAuth2",
+  "excerpt": "Use authorization code with PKCE for public clients. Validate state parameter. Store refresh tokens securely. Scope tokens minimally. Iron Cannon V1 uses email magic link—not full OAuth unless user adds adapter.",
+  "appliesTo": [
+    "auth-lifecycle",
+    "P1"
+  ],
+  "tags": [
+    "owasp",
+    "oauth"
+  ]
+}

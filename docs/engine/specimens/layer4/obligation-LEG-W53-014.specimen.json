@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w53-014",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "content": {
+    "requirement": "Proration disclosure on plan upgrade checkout",
+    "obligations": [
+      "LEG-W53-014"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "Proration disclosure on plan upgrade checkout"
+  },
+  "references": [
+    "stripe/proration-disclosure"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W53-014",
+        "type": "ui_pattern",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "billing",
+    "disclaimerRequired": true
+  }
+}

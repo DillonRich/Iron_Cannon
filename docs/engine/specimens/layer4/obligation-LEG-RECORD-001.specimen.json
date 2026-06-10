@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-record-001",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "section": "leg-record-001",
+  "content": {
+    "requirement": "Consent audit log exists",
+    "obligations": [
+      "LEG-RECORD-001"
+    ],
+    "compareSteps": [
+      "Run detect.type=schema_table per COMPARE_DETECT_TYPES",
+      "Map result to obligation LEG-RECORD-001 only",
+      "Attach legalDisclaimer on every T12–T14 response"
+    ],
+    "remediationDirective": "Remediate LEG-RECORD-001: Consent audit log exists"
+  },
+  "references": [
+    "legal/consent-audit-log"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-RECORD-001",
+        "type": "schema_table",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "records",
+    "disclaimerRequired": true
+  }
+}

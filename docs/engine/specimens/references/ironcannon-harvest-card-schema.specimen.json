@@ -1,0 +1,16 @@
+{
+  "refId": "ironcannon/harvest-card-schema",
+  "sourceUrl": "https://ironcannon.dev/patterns/reference-card",
+  "lastVerified": "2026-05-31",
+  "title": "IC reference card schema",
+  "excerpt": "refId, sourceUrl, lastVerified, title, excerpt max ~800 chars, appliesTo[], tags[]. IC patterns use authorship iron-cannon-pattern.",
+  "appliesTo": [
+    "corpus",
+    "HARVEST_PIPELINE"
+  ],
+  "tags": [
+    "ironcannon",
+    "corpus"
+  ],
+  "authorship": "iron-cannon-pattern"
+}

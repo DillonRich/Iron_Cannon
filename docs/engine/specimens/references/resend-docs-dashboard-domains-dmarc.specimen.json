@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-domains-dmarc",
+  "sourceUrl": "https://resend.com/docs/dashboard/domains/dmarc.md",
+  "lastVerified": "2026-06-03",
+  "title": "Implementing DMARC",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Implementing DMARC > Implement DMARC to build trust in your domain and protect against email spoofing and unauthorized use of your domain in email messages. ## Prerequisites Since DMARC relies on DKIM and SPF, first ensure your existing emails are passing SPF and DKIM. * DKIM verifies the email wasn't altered in transit using cryptographic authentication. * SPF authorizes IP addresses to send email for a domain. If you have a [verified](/dashboard/domains/introduction) domain with Resend, it means you are already passing SPF and DKIM.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

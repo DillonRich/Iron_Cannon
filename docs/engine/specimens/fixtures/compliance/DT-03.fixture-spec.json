@@ -1,0 +1,8 @@
+{
+  "fixtureId": "DT-03",
+  "detectType": "label_association",
+  "passSnippet": "<label htmlFor=\"email\">Email</label><input id=\"email\" />",
+  "failSnippet": "<input placeholder=\"Email\" />",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

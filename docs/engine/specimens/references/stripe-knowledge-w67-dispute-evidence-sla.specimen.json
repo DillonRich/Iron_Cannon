@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/knowledge-w67-dispute-evidence-sla",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w67/dispute-evidence-sla",
+  "lastVerified": "2026-06-06",
+  "title": "W67 dispute-evidence-sla",
+  "provider": "stripe",
+  "excerpt": "Submit Stripe dispute evidence within card network deadline windows",
+  "embeddingHint": "stripe dispute-evidence-sla wave67 phase3 production",
+  "tags": [
+    "wave67",
+    "knowledge",
+    "stripe",
+    "phase3"
+  ]
+}

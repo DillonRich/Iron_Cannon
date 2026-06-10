@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w79-svc001-signoff-gate",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w79/svc001-signoff-gate",
+  "lastVerified": "2026-06-06",
+  "title": "W79 svc001-signoff-gate",
+  "provider": "ironcannon",
+  "excerpt": "SVC-001 mini signoff requires stretch + g2 + 64 user journeys",
+  "embeddingHint": "ironcannon svc001-signoff-gate wave79 svc-001-exit",
+  "tags": [
+    "wave79",
+    "knowledge",
+    "ironcannon",
+    "svc-001-exit"
+  ]
+}

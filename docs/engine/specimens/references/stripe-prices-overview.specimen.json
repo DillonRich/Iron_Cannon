@@ -1,0 +1,14 @@
+{
+  "refId": "stripe/prices-overview",
+  "sourceUrl": "https://docs.stripe.com/products-prices/overview",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe Products and Prices",
+  "excerpt": "Use Price IDs in Checkout line_items. Never hardcode amounts in app—read from env or config. One Product per plan tier typical for SaaS.",
+  "appliesTo": [
+    "billing-subscription",
+    "M11-stripe-checkout-route"
+  ],
+  "tags": [
+    "stripe"
+  ]
+}

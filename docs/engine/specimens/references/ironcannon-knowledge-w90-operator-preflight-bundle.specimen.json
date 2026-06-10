@@ -1,0 +1,15 @@
+{
+  "refId": "ironcannon/knowledge-w90-operator-preflight-bundle",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w90/operator-preflight-bundle",
+  "lastVerified": "2026-06-06",
+  "title": "W90 operator-preflight-bundle",
+  "provider": "ironcannon",
+  "excerpt": "planning:preflight runs all four prep scripts",
+  "embeddingHint": "ironcannon operator-preflight-bundle wave90 affiliates-prep-g45",
+  "tags": [
+    "wave90",
+    "knowledge",
+    "ironcannon",
+    "affiliates-prep-g45"
+  ]
+}

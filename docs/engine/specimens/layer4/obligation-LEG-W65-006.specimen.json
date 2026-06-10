@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w65-006",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "AI-assisted features disclose automated decisioning",
+    "obligations": [
+      "LEG-W65-006"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "AI-assisted features disclose automated decisioning"
+  },
+  "references": [
+    "legal/ai-disclosure"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W65-006",
+        "type": "pattern",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "privacy",
+    "disclaimerRequired": true
+  }
+}

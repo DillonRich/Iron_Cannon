@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-send-with-encore-go",
+  "sourceUrl": "https://resend.com/docs/send-with-encore-go.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send emails with Encore",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send emails with Encore > Learn how to send your first email using Encore and the Resend Go SDK. [Encore](https://encore.dev) is an open-source Go framework that provisions infrastructure directly from your application code, with built-in observability and cloud deployment. # Send Email with Resend and Encore Go **Purpose:** Enforce only the **current** and **correct** instructions for sending emails using [Resend](https://resend.com/) with the [Encore Go](https://encore.dev) backend framework.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

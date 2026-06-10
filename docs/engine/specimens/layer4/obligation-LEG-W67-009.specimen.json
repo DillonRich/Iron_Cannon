@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-w67-009",
+  "layer": 4,
+  "rulesetVersion": "2026.06.06",
+  "content": {
+    "requirement": "T10 security directives run before T11 production audit",
+    "obligations": [
+      "LEG-W67-009"
+    ],
+    "compareSteps": [
+      "Detect",
+      "Map",
+      "Disclaimer"
+    ],
+    "remediationDirective": "T10 security directives run before T11 production audit"
+  },
+  "references": [
+    "ironcannon/knowledge-w63-t10-before-t11"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-W67-009",
+        "type": "flow_ref",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "operations",
+    "disclaimerRequired": true
+  }
+}

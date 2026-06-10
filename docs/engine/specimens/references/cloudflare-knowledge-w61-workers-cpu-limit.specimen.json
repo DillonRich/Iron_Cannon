@@ -1,0 +1,14 @@
+{
+  "refId": "cloudflare/knowledge-w61-workers-cpu-limit",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w61/workers-cpu-limit",
+  "lastVerified": "2026-06-06",
+  "title": "W61 workers-cpu-limit",
+  "provider": "cloudflare",
+  "excerpt": "Long CPU work must use queues or Durable Objects; avoid sync crypto on hot path",
+  "embeddingHint": "cloudflare workers-cpu-limit wave61 knowledge",
+  "tags": [
+    "wave61",
+    "knowledge",
+    "cloudflare"
+  ]
+}

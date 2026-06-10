@@ -1,0 +1,14 @@
+{
+  "fixtureId": "LEG-PRIV-007",
+  "obligationId": "LEG-PRIV-007",
+  "detectType": "route_link",
+  "detect": {
+    "type": "route_link",
+    "path": "/privacy",
+    "hrefContains": "cookie"
+  },
+  "passSnippet": "<a href=\"cookie\">ok</a>",
+  "failSnippet": "<form></form>",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

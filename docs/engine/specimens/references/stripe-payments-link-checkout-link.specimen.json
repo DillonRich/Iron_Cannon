@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-link-checkout-link",
+  "sourceUrl": "https://docs.stripe.com/payments/link/checkout-link.md",
+  "lastVerified": "2026-06-03",
+  "title": "Link with Checkout",
+  "excerpt": "Use Link with Stripe's prebuilt checkout page. You can also use Link with [Payment Links](https://docs.stripe.com/payment-links.md). Checkout is a [prebuilt payment form](https://docs.stripe.com/payments/checkout.md) that you can embed on your site or use as a Stripe-hosted payment page. Use Link with Checkout to allow your customers to securely save and reuse their payment information. For logged-in customers already using Link, it autofills this information regardless of whether they initially saved it on a different business’s checkout page. Checkout supports Link with no additional fees, and the same [pricing](https://stripe.com/pricing) applies as for other card payments.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

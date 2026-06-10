@@ -1,0 +1,8 @@
+{
+  "fixtureId": "DT-13",
+  "detectType": "ui_pattern",
+  "passSnippet": "<input type=\"checkbox\" name=\"terms\" />",
+  "failSnippet": "<input type=\"checkbox\" defaultChecked={true} name=\"terms\" />",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

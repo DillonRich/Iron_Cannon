@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-invoicing-tax-ids",
+  "sourceUrl": "https://docs.stripe.com/tax/invoicing/tax-ids.md",
+  "lastVerified": "2026-06-03",
+  "title": "Account and customer tax IDs with Invoicing",
+  "excerpt": "Learn about storing, validating, and rendering tax ID numbers for Invoicing. > [Log in](https://dashboard.stripe.com/settings/tax) or [sign up](https://dashboard.stripe.com/register) for Stripe to enable Stripe Tax. With Stripe, you can manage tax IDs ​​for both yourself and your customers. Both the account and customer tax IDs display in the header of *invoice* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice) and credit note PDFs. Displaying your tax IDs on invoice documents is a common regulatory requirement. With Stripe, you can add up to 100 tax IDs to your account.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

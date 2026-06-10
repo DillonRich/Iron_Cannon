@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-subscriptions-pause-payment",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/pause-payment.md",
+  "lastVerified": "2026-06-03",
+  "title": "Pause payment collection",
+  "excerpt": "Learn how to pause payment collection on subscriptions. Pausing payment collection is often used to temporarily offer your services for free. This is sometimes referred to as a “grace period” if a customer needs additional time to pay or can’t pay for one or more billing periods. Pausing payment collection keeps the subscription `active`, invoices still generate, and only collection pauses. Your customers keep access to the service while you pause collection. [Pausing a subscription](https://docs.stripe.com/billing/subscriptions/pause.md) is different, because it stops both service and billing. The subscription moves to `paused` status, Stripe stops generating invoices, and your customer loses access to the subscription’s service for the duration of the pause.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

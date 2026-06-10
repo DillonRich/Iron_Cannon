@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-edge-002",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-edge-002",
+  "content": {
+    "requirement": "past_due subscription UX messaging",
+    "obligations": [
+      "LEG-EDGE-002"
+    ],
+    "compareSteps": [
+      "Run detect.type=ui_pattern",
+      "Map result to obligation LEG-EDGE-002",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-EDGE-002: past_due subscription UX messaging"
+  },
+  "references": [
+    "stripe/past-due-billing"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-EDGE-002",
+        "type": "ui_pattern",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "edge",
+    "disclaimerRequired": true
+  }
+}

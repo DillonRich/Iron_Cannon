@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/cloudflare-for-platforms-workers-for-platforms-index",
+  "sourceUrl": "https://developers.cloudflare.com/cloudflare-for-platforms/workers-for-platforms/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Workers for Platforms",
+  "excerpt": "description: Run untrusted code from your customers or AI in secure, isolated sandboxes on Cloudflare's global network. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/cloudflare-for-platforms/llms.txt > Use this file to discover all available pages before exploring further. Build a multi-tenant platform that runs untrusted code in secure, isolated sandboxes. Workers for Platforms lets you run untrusted code written by your customers, or by AI, in a secure hosted sandbox. Each customer runs code in their own Worker, a secure and isolated environment.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p1"
+  ]
+}

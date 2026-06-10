@@ -1,0 +1,16 @@
+{
+  "refId": "owasp/cheatsheets-ajax-security-cheat-sheet-html",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/AJAX_Security_Cheat_Sheet.html",
+  "lastVerified": "2026-06-05",
+  "title": "AJAX Security Cheat Sheet",
+  "excerpt": "AJAX Security - OWASP Cheat Sheet Series Skip to content OWASP Cheat Sheet Series AJAX Security Initializing search OWASP/CheatSheetSeries OWASP Cheat Sheet Series OWASP/CheatSheetSeries Introduction Index Alphabetical Index ASVS Index MASVS Index Proactive Controls Index Top 10 Cheatsheets Cheatsheets AI Agent Security AJAX Security AJAX Security Table of contents Introduction Client-Side (JavaScript) Use innerHTML with extreme caution What is innerHTML? Why does innerHTML require extreme caution? Vulnerable Example When is innerHTML acceptable? Alternatives Use of textContent or innerText for DOM updates (for text-only content) What is textContent? What is innerText? When to Use textContent vs.…",
+  "appliesTo": [
+    "security",
+    "auth",
+    "billing"
+  ],
+  "tags": [
+    "owasp",
+    "p0"
+  ]
+}

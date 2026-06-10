@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer3/session-hardening/logout",
+  "layer": 3,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": null,
+  "section": "logout",
+  "content": {
+    "requirement": "Server-side session invalidation on sign-out",
+    "steps": [
+      "Delete session row from D1/KV store",
+      "Clear session cookie with Max-Age=0, HttpOnly, Secure, SameSite=Lax",
+      "Redirect to public route",
+      "Do not rely on client-only state clearing"
+    ],
+    "uxFindingTemplate": {
+      "category": "security_friction",
+      "systemRequirement": "User must receive clear confirmation that sign-out succeeded; no stale authenticated UI",
+      "designOwnership": "agent"
+    }
+  },
+  "references": ["owasp/session-invalidation", "owasp/session-httponly-secure"],
+  "compliancePatterns": {
+    "required": [
+      { "id": "LOGOUT-001", "type": "required_string", "value": "Max-Age=0", "tier": "armor" }
+    ],
+    "forbidden": [
+      { "id": "LOGOUT-F01", "type": "forbidden_string", "value": "localStorage.clear() as sole logout", "tier": "armor" }
+    ]
+  },
+  "metadata": { "minTier": "armor", "category": "session-hardening" }
+}

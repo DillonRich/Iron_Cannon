@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/get-started-data-migrations-pan-import",
+  "sourceUrl": "https://docs.stripe.com/get-started/data-migrations/pan-import.md",
+  "lastVerified": "2026-06-03",
+  "title": "the migration process",
+  "excerpt": "Securely import sensitive payments data. Stripe enables you to retain your existing customer and payment data when you migrate to Stripe. We work with your team and current payment provider, as needed, to securely migrate your information. This process allows you to accept and charge new customers on Stripe and continue charging your existing customers with your current processor until the migration is complete. Your customers incur no downtime. After the migration process completes, you can process all payments on Stripe. This guide describes how to migrate to Stripe from another payment processor or a custom payment solution. You’ll also build a Stripe integration that you can test in a sandbox before you accept real payments.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

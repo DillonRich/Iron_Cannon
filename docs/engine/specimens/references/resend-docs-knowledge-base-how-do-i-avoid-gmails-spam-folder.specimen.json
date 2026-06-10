@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-knowledge-base-how-do-i-avoid-gmails-spam-folder",
+  "sourceUrl": "https://resend.com/docs/knowledge-base/how-do-i-avoid-gmails-spam-folder.md",
+  "lastVerified": "2026-06-03",
+  "title": "How do I avoid Gmail's spam folder?",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # How do I avoid Gmail's spam folder? > Learn how to improve inbox placement in Gmail. This guide is adapted from Google's article to [Prevent mail from being blocked or sent to spam](https://support.google.com/mail/answer/81126?hl=en\\&vid=1-635789122382665739-3305764358\\&sjid=4594872399309427672-NA#thirdparty) ## Authenticate Your Email All communication is built on trust, and email is no different. When you send an email, you want to be sure that the recipient (and Gmail) knows who you are and that you are a legitimate sender. Email authentication is a way to prove that an email is from you.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

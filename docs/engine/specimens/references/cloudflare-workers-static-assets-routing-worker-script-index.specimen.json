@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-static-assets-routing-worker-script-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/static-assets/routing/worker-script/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Worker script",
+  "excerpt": "description: How the presence of a Worker script influences static asset routing and the related configuration options. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. If you have both static assets and a Worker script configured, Cloudflare will first attempt to serve static assets if one matches the incoming request. You can read more about how we match assets in the [HTML handling docs](https://developers.cloudflare.com/workers/static-assets/routing/advanced/html-handling/). If an appropriate static asset if not found, Cloudflare will invoke your Worker script.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

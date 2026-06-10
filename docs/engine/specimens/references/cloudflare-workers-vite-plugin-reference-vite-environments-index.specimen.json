@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-vite-plugin-reference-vite-environments-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/vite-plugin/reference/vite-environments/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Vite Environments",
+  "excerpt": "description: Vite environments and the Vite plugin image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. The [Vite Environment API ↗](https://vite.dev/guide/api-environment), released in Vite 6, is the key feature that enables the Cloudflare Vite plugin to integrate Vite directly with the Workers runtime. It is not necessary to understand all the intricacies of the Environment API as an end user, but it is useful to have a high-level understanding. Vite creates two environments by default: `client` and `ssr`.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

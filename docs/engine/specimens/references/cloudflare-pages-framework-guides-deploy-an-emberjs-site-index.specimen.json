@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-framework-guides-deploy-an-emberjs-site-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/framework-guides/deploy-an-emberjs-site/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Ember",
+  "excerpt": "description: Deploy an Ember.js application to Cloudflare Pages. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. [Ember.js ↗](https://emberjs.com) is a productive, battle-tested JavaScript framework for building modern web applications. It includes everything you need to build rich UIs that work on any device. Use the `ember new` command to create a new application:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

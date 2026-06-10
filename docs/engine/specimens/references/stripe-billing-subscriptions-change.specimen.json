@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/billing-subscriptions-change",
+  "sourceUrl": "https://docs.stripe.com/billing/subscriptions/change.md",
+  "lastVerified": "2026-06-03",
+  "title": "Modify subscriptions",
+  "excerpt": "Change existing subscriptions to cancel, pause, apply prorated charges and credits, and more. You can change existing subscriptions without having to cancel and recreate them. Set up the [customer portal](https://docs.stripe.com/customer-management.md) to let your customers manage their own subscriptions and billing details through a Stripe-hosted page. For changes that automatically create a new [subscription invoice](https://docs.stripe.com/billing/invoices/subscription.md), use [pending updates](https://docs.stripe.com/billing/subscriptions/pending-updates.md) so that the updates are only applied if the new invoice is successfully paid. Not all subscription changes affect billing or generate prorations: - *Billing-related updates* create prorations and can generate invoices.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

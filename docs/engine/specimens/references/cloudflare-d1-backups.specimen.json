@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/d1-backups",
+  "sourceUrl": "https://developers.cloudflare.com/d1/",
+  "lastVerified": "2026-05-31",
+  "title": "D1 backups",
+  "excerpt": "D1 backup and restore for compliance export flows.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "cloudflare",
+    "d1-backups"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/dns",
+  "sourceUrl": "https://developers.cloudflare.com/dns/",
+  "lastVerified": "2026-05-31",
+  "title": "Cloudflare DNS",
+  "excerpt": "DNS records for custom app domains.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "cloudflare",
+    "dns"
+  ]
+}

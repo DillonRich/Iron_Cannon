@@ -1,0 +1,11 @@
+{
+  "refId": "ironcannon/resume-tier",
+  "sourceUrl": "https://ironcannon.dev/planning/resume",
+  "lastVerified": "2026-06-03",
+  "title": "Resume tier changed",
+  "excerpt": "If API key tier differs from session, return RESUME_TIER_CHANGED and require re-auth.",
+  "tags": [
+    "ironcannon",
+    "tier"
+  ]
+}

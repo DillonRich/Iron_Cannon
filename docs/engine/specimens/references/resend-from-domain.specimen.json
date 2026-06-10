@@ -1,0 +1,9 @@
+{
+  "refId": "resend/from-domain",
+  "sourceUrl": "https://resend.com/docs/dashboard/domains/introduction",
+  "lastVerified": "2026-05-31",
+  "title": "Resend sender domain rules",
+  "excerpt": "From address must use verified domain (e.g. noreply@mail.yourdomain.com). Do not send from @gmail.com or unverified domains—deliverability and CAN-SPAM identity requirements fail. SPF/DKIM/DMARC via Resend DNS records required before production send.",
+  "appliesTo": ["email-lifecycle", "LEG-EMAIL-005"],
+  "tags": ["resend", "domains", "email"]
+}

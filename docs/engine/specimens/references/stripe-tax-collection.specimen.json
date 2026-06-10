@@ -1,0 +1,11 @@
+{
+  "refId": "stripe/tax-collection",
+  "sourceUrl": "https://stripe.com/docs/tax",
+  "lastVerified": "2026-06-03",
+  "title": "Stripe Tax",
+  "excerpt": "Enable automatic_tax when selling across regions; disclose tax behavior in UI.",
+  "tags": [
+    "stripe",
+    "billing"
+  ]
+}

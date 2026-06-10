@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/issuing-elements",
+  "sourceUrl": "https://docs.stripe.com/issuing/elements.md",
+  "lastVerified": "2026-06-03",
+  "title": "Using Issuing Elements",
+  "excerpt": "Learn how to display card details in your web application in a PCI-compliant way. [Stripe.js](https://docs.stripe.com/js.md) includes a browser-side JavaScript library you can use to display the sensitive data of your Issuing cards on the web in compliance with PCI requirements. The sensitive data renders inside Stripe-hosted iframes and never touches your servers. Stripe.js also collects extra data to protect your users. Learn more about how Stripe collects data for [advanced fraud detection](https://docs.stripe.com/disputes/prevention/advanced-fraud-detection.md). Stripe.js uses ephemeral keys to securely retrieve Card information from the Stripe API without publicly exposing your secret keys. You need to do some of the ephemeral key exchange on the server-side to set this up.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

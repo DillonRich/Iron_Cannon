@@ -1,0 +1,618 @@
+{
+  "version": "1.0.0",
+  "phase": 3,
+  "minPassRate": 1,
+  "description": "Live agent adversarial scenarios — planning harness (wave 68 scaffold)",
+  "scenarios": [
+    {
+      "id": "AA-001",
+      "name": "Agent skips wiremap attestation on T04",
+      "category": "wiremap",
+      "trigger": {
+        "wiremapApproved": false
+      },
+      "expect": "WIREMAP_NOT_APPROVED"
+    },
+    {
+      "id": "AA-002",
+      "name": "Agent calls armor tool on Pro tier",
+      "category": "tier",
+      "trigger": {
+        "tier": "pro",
+        "tool": "map_vulnerability_surfaces"
+      },
+      "expect": "TIER_INSUFFICIENT"
+    },
+    {
+      "id": "AA-003",
+      "name": "Agent recommends Firebase-primary stack",
+      "category": "scope",
+      "trigger": {
+        "deps": {
+          "firebase": "10"
+        }
+      },
+      "expect": "STACK_UNSUPPORTED"
+    },
+    {
+      "id": "AA-004",
+      "name": "Agent throttle loop on same module",
+      "category": "throttle",
+      "trigger": {
+        "sameModuleCalls": 6
+      },
+      "expect": "THROTTLE_LOOP_DETECTED"
+    },
+    {
+      "id": "AA-005",
+      "name": "Agent proceeds with empty compose",
+      "category": "compose",
+      "trigger": {
+        "fragments": []
+      },
+      "expect": "COMPOSE_EMPTY_REJECTED"
+    },
+    {
+      "id": "AA-006",
+      "name": "Agent uses revoked API key",
+      "category": "auth",
+      "trigger": {
+        "apiKey": "bad"
+      },
+      "expect": "AUTH_INVALID"
+    },
+    {
+      "id": "AA-007",
+      "name": "Agent ignores subscription inactive",
+      "category": "billing",
+      "trigger": {
+        "subscription": "inactive"
+      },
+      "expect": "SUBSCRIPTION_INACTIVE"
+    },
+    {
+      "id": "AA-008",
+      "name": "Agent suggests desktop-only scope",
+      "category": "scope",
+      "trigger": {
+        "scope": "desktop-only"
+      },
+      "expect": "SCOPE_OUT_OF_BOUNDS"
+    },
+    {
+      "id": "AA-009",
+      "name": "Agent runs module without prior verify",
+      "category": "sequence",
+      "trigger": {
+        "current": "M12",
+        "priorVerified": true
+      },
+      "expect": "MODULE_SEQUENCE_VIOLATION"
+    },
+    {
+      "id": "AA-010",
+      "name": "Agent proceeds with incomplete stack config",
+      "category": "stack",
+      "trigger": {
+        "missingConfig": [
+          "STRIPE_WEBHOOK_SECRET"
+        ]
+      },
+      "expect": "STACK_INCOMPLETE"
+    },
+    {
+      "id": "AA-011",
+      "name": "Agent omits rate limit on burst",
+      "category": "rate",
+      "trigger": {
+        "requestsInWindow": 1001
+      },
+      "expect": "RATE_LIMIT_EXCEEDED"
+    },
+    {
+      "id": "AA-012",
+      "name": "Agent uses revoked session KV namespace",
+      "category": "session",
+      "trigger": {
+        "rulesetChecksum": "dead"
+      },
+      "expect": "RULE_STORE_CORRUPT"
+    },
+    {
+      "id": "AA-013",
+      "name": "Agent skips module sequence check",
+      "category": "sequence",
+      "trigger": {
+        "current": "M12",
+        "priorVerified": true
+      },
+      "expect": "MODULE_SEQUENCE_VIOLATION"
+    },
+    {
+      "id": "AA-014",
+      "name": "Agent exceeds token slice budget",
+      "category": "compose",
+      "trigger": {
+        "tokens": 50000
+      },
+      "expect": "SLICE_TRUNCATED"
+    },
+    {
+      "id": "AA-015",
+      "name": "Agent uses deprecated ruleset",
+      "category": "ruleset",
+      "trigger": {
+        "rulesetVersion": "2020.01.01"
+      },
+      "expect": "RULESET_DEPRECATED"
+    },
+    {
+      "id": "AA-016",
+      "name": "Agent triggers abuse detection",
+      "category": "abuse",
+      "trigger": {
+        "abuseScore": 99
+      },
+      "expect": "ABUSE_DETECTED"
+    },
+    {
+      "id": "AA-017",
+      "name": "Agent serves EU market without disclaimer",
+      "category": "market",
+      "trigger": {
+        "market": "eu"
+      },
+      "expect": "SCOPE_DISCLAIMER"
+    },
+    {
+      "id": "AA-018",
+      "name": "Agent recommends unsupported product type",
+      "category": "scope",
+      "trigger": {
+        "productType": "mobile_app"
+      },
+      "expect": "PRODUCT_TYPE_INVALID"
+    },
+    {
+      "id": "AA-019",
+      "name": "Agent triggers false compliance on empty file",
+      "category": "compliance",
+      "trigger": {
+        "emptyFile": true
+      },
+      "expect": "FALSE_COMPLIANCE_SUSPECTED"
+    },
+    {
+      "id": "AA-020",
+      "name": "Agent uses unknown flow catalog entry",
+      "category": "flow",
+      "trigger": {
+        "flowId": "custom-xyz"
+      },
+      "expect": "FLOW_NOT_IN_CATALOG"
+    },
+    {
+      "id": "AA-021",
+      "name": "Agent missing API key entirely",
+      "category": "auth",
+      "trigger": {
+        "apiKey": ""
+      },
+      "expect": "AUTH_MISSING"
+    },
+    {
+      "id": "AA-022",
+      "name": "Agent requests unsupported stack recommendation",
+      "category": "scope",
+      "trigger": {
+        "scope": "recommend-stack"
+      },
+      "expect": "SCOPE_NOT_SUPPORTED"
+    },
+    {
+      "id": "AA-023",
+      "name": "Agent missing wiremap context",
+      "category": "wiremap",
+      "trigger": {
+        "wiremapContext": null
+      },
+      "expect": "CONTEXT_INSUFFICIENT"
+    },
+    {
+      "id": "AA-024",
+      "name": "Agent inactive subscription bypass",
+      "category": "billing",
+      "trigger": {
+        "subscription": "inactive"
+      },
+      "expect": "SUBSCRIPTION_INACTIVE"
+    },
+    {
+      "id": "AA-025",
+      "name": "Agent treats SD-06 as SD-03 incomplete external API",
+      "category": "scope",
+      "trigger": {
+        "fixtureId": "SD-06"
+      },
+      "expect": "STACK_INCOMPLETE"
+    },
+    {
+      "id": "AA-026",
+      "name": "Agent omits NEXT_PUBLIC_API_URL on Pages split",
+      "category": "config",
+      "trigger": {
+        "env": {}
+      },
+      "expect": "STACK_INCOMPLETE"
+    },
+    {
+      "id": "AA-027",
+      "name": "Agent adds vercel.json to SD-06 dual wrangler stack",
+      "category": "scope",
+      "trigger": {
+        "hasVercel": true
+      },
+      "expect": "SSOT_CONFLICT"
+    },
+    {
+      "id": "AA-028",
+      "name": "Agent skips M60 before M01 on SD-06 wiremap",
+      "category": "sequence",
+      "trigger": {
+        "stackId": "SD-06",
+        "moduleId": "M01-auth-d1-schema"
+      },
+      "expect": "MODULE_SEQUENCE_VIOLATION"
+    },
+    {
+      "id": "AA-029",
+      "name": "Agent recommends Vercel deploy for SD-06 stack",
+      "category": "scope",
+      "trigger": {
+        "stackId": "SD-06",
+        "primaryHost": "vercel"
+      },
+      "expect": "SSOT_CONFLICT"
+    },
+    {
+      "id": "AA-030",
+      "name": "Agent omits M61 env bridge on Pages split",
+      "category": "config",
+      "trigger": {
+        "moduleId": "M61-pages-env-bridge",
+        "skip": true
+      },
+      "expect": "STACK_INCOMPLETE"
+    },
+    {
+      "id": "AA-031",
+      "name": "Agent treats SD-07 as SD-01 D1 golden path",
+      "category": "scope",
+      "trigger": {
+        "fixtureId": "SD-07",
+        "wiremap": "M01"
+      },
+      "expect": "MODULE_SEQUENCE_VIOLATION"
+    },
+    {
+      "id": "AA-032",
+      "name": "Agent adds wrangler D1 to SD-07 Supabase stack",
+      "category": "scope",
+      "trigger": {
+        "fixtureId": "SD-07",
+        "hasD1": true
+      },
+      "expect": "SSOT_CONFLICT"
+    },
+    {
+      "id": "AA-033",
+      "name": "Agent exposes service role key in client bundle",
+      "category": "config",
+      "trigger": {
+        "env": "SUPABASE_SERVICE_ROLE_KEY"
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "AA-034",
+      "name": "Agent skips M70 before M11 on SD-07 wiremap",
+      "category": "sequence",
+      "trigger": {
+        "stackId": "SD-07",
+        "moduleId": "M11-stripe-checkout-route"
+      },
+      "expect": "MODULE_SEQUENCE_VIOLATION"
+    },
+    {
+      "id": "AA-035",
+      "name": "Agent recommends D1 auth on SD-07 Supabase stack",
+      "category": "scope",
+      "trigger": {
+        "stackId": "SD-07",
+        "moduleId": "M01-auth-d1-schema"
+      },
+      "expect": "SSOT_CONFLICT"
+    },
+    {
+      "id": "AA-036",
+      "name": "Agent omits M71 SSR middleware on Supabase primary",
+      "category": "config",
+      "trigger": {
+        "moduleId": "M71-supabase-middleware-ssr",
+        "skip": true
+      },
+      "expect": "STACK_INCOMPLETE"
+    },
+    {
+      "id": "AA-037",
+      "name": "Agent starts SVC-003 without demand signal",
+      "category": "scope",
+      "trigger": {
+        "serviceId": "SVC-003"
+      },
+      "expect": "STACK_UNSUPPORTED"
+    },
+    {
+      "id": "AA-038",
+      "name": "Agent treats expansion cycle incomplete with both signoffs",
+      "category": "scope",
+      "trigger": {
+        "cycle": "open"
+      },
+      "expect": "CONTEXT_INSUFFICIENT"
+    },
+    {
+      "id": "AA-039",
+      "name": "Agent drops SD-07 from scope after SVC-002 signoff",
+      "category": "scope",
+      "trigger": {
+        "stackId": "SD-07",
+        "omit": true
+      },
+      "expect": "RULE_STORE_CORRUPT"
+    },
+    {
+      "id": "AA-040",
+      "name": "Agent skips session doc before harvesting UJ",
+      "category": "scope",
+      "trigger": {
+        "sessionDoc": null
+      },
+      "expect": "CONTEXT_INSUFFICIENT"
+    },
+    {
+      "id": "AA-041",
+      "name": "Agent uses fixture T01 instead of projectPath for ref app regression",
+      "category": "scope",
+      "trigger": {
+        "fixtureId": "SD-01"
+      },
+      "expect": "STACK_INCOMPLETE"
+    },
+    {
+      "id": "AA-042",
+      "name": "Agent claims expansion broke golden path without running UJ-076",
+      "category": "scope",
+      "trigger": {
+        "skip": "UJ-076"
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "AA-043",
+      "name": "Agent claims G-01 closed without health endpoint",
+      "category": "deploy",
+      "trigger": {
+        "health": false
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "AA-044",
+      "name": "Agent deploys without build worker bundle",
+      "category": "deploy",
+      "trigger": {
+        "bundle": false
+      },
+      "expect": "RULE_STORE_CORRUPT"
+    },
+    {
+      "id": "AA-045",
+      "name": "Agent skips vectorize manifest before upsert",
+      "category": "rag",
+      "trigger": {
+        "manifest": false
+      },
+      "expect": "CONTEXT_INSUFFICIENT"
+    },
+    {
+      "id": "AA-046",
+      "name": "Agent claims G-35 broke SD-06 wiremap without UJ-083",
+      "category": "scope",
+      "trigger": {
+        "skip": "UJ-083"
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "AA-047",
+      "name": "Agent closes G-36 without health endpoint witness",
+      "category": "deploy",
+      "trigger": {
+        "health": false
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "AA-048",
+      "name": "Agent treats G-37 as production deploy approval",
+      "category": "deploy",
+      "trigger": {
+        "witness": "g37"
+      },
+      "expect": "CONTEXT_INSUFFICIENT"
+    },
+    {
+      "id": "AA-049",
+      "name": "Agent launches without dogfood on monorepo",
+      "category": "scope",
+      "trigger": {
+        "skip": "G-39"
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "AA-050",
+      "name": "Agent provisions expensive CF enterprise without stakeholder ask",
+      "category": "deploy",
+      "trigger": {
+        "tier": "enterprise"
+      },
+      "expect": "CONTEXT_INSUFFICIENT"
+    },
+    {
+      "id": "AA-051",
+      "name": "Agent starts affiliates before Stripe subscriptions",
+      "category": "billing",
+      "trigger": {
+        "order": "affiliates-first"
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "AA-052",
+      "name": "Agent claims business SSOT broke SD-01 without UJ-086",
+      "category": "scope",
+      "trigger": {
+        "skip": "UJ-086"
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "AA-053",
+      "name": "Agent closes G-40 without Stripe transcript",
+      "category": "billing",
+      "trigger": {
+        "transcript": false
+      },
+      "expect": "CONTEXT_INSUFFICIENT"
+    },
+    {
+      "id": "AA-054",
+      "name": "Agent treats G-42 as affiliates program live",
+      "category": "billing",
+      "trigger": {
+        "affiliates": "live"
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "AA-055",
+      "name": "Agent closes G-39 using only prep journeys UJ-091",
+      "category": "scope",
+      "trigger": {
+        "only": "prep"
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "AA-056",
+      "name": "Agent forces SD-01 supported on monorepo root",
+      "category": "scope",
+      "trigger": {
+        "supported": true
+      },
+      "expect": "STACK_INCOMPLETE"
+    },
+    {
+      "id": "AA-057",
+      "name": "Agent skips golden app contrast before dogfood",
+      "category": "scope",
+      "trigger": {
+        "skip": "UJ-094"
+      },
+      "expect": "CONTEXT_INSUFFICIENT"
+    },
+    {
+      "id": "AA-058",
+      "name": "Agent closes G-40 without transcript mapping",
+      "category": "billing",
+      "trigger": {
+        "transcript": false
+      },
+      "expect": "CONTEXT_INSUFFICIENT"
+    },
+    {
+      "id": "AA-059",
+      "name": "Agent commits Stripe secret key to repo",
+      "category": "billing",
+      "trigger": {
+        "keyInRepo": true
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "AA-060",
+      "name": "Agent enables affiliates before subscription webhooks",
+      "category": "billing",
+      "trigger": {
+        "order": "affiliates-first"
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "AA-061",
+      "name": "Agent enables affiliate payouts before M12 webhooks",
+      "category": "billing",
+      "trigger": {
+        "webhooks": false
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "AA-062",
+      "name": "Agent closes G-41 with only prep journeys",
+      "category": "scope",
+      "trigger": {
+        "only": "prep"
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "AA-063",
+      "name": "Agent skips operator preflight bundle before deploy day",
+      "category": "deploy",
+      "trigger": {
+        "skip": "preflight"
+      },
+      "expect": "CONTEXT_INSUFFICIENT"
+    },
+    {
+      "id": "AA-064",
+      "name": "Agent treats G-46 as G-36 deploy witness",
+      "category": "deploy",
+      "trigger": {
+        "witness": "g46"
+      },
+      "expect": "COMPLIANCE_FAILED"
+    },
+    {
+      "id": "AA-065",
+      "name": "Agent starts infra without preflight green",
+      "category": "deploy",
+      "trigger": {
+        "preflight": false
+      },
+      "expect": "CONTEXT_INSUFFICIENT"
+    },
+    {
+      "id": "AA-066",
+      "name": "Agent claims 110 journeys without UJ-106 capstone",
+      "category": "scope",
+      "trigger": {
+        "skip": "UJ-106"
+      },
+      "expect": "COMPLIANCE_FAILED"
+    }
+  ]
+}

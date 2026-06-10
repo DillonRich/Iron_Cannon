@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-saas-quickstart",
+  "sourceUrl": "https://docs.stripe.com/connect/saas/quickstart.md",
+  "lastVerified": "2026-06-03",
+  "title": "SaaS platform quickstart",
+  "excerpt": "> You can customize this guide by selecting integration options in the [Interactive platform guide](https://docs.stripe.com/connect/interactive-platform-guide.md). Use this working code sample to integrate Stripe Hosted Checkout for payments with Stripe Connect. With this approach, Stripe hosts the checkout page for you and payments go directly to your connected accounts. const SuccessDisplay = ({ sessionId }) => { <h3>Subscription to Starter Plan successful!</h3> <form action=\"/api/create-portal-session\" method=\"POST\"> <button id=\"checkout-and-portal-button\" className=\"button\" type=\"submit\">",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

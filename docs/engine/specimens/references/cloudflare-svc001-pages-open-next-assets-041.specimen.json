@@ -1,0 +1,16 @@
+{
+  "refId": "cloudflare/svc001-pages-open-next-assets-041",
+  "sourceUrl": "https://ironcannon.dev/svc001/pages/open-next-assets-41",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-001 open-next-assets 41",
+  "provider": "cloudflare",
+  "excerpt": "OpenNext on Cloudflare deploys .open-next/assets as Pages static output and routes dynamic traffic to the Worker handler.",
+  "embeddingHint": "cloudflare open-next-assets svc001 pages worker split sd-06",
+  "tags": [
+    "svc001",
+    "pages",
+    "sd-06",
+    "cloudflare",
+    "open-next-assets"
+  ]
+}

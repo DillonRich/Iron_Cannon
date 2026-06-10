@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M16",
+  "moduleId": "M16-billing-emails",
+  "patternsUnderTest": [
+    "BILL-EM-001",
+    "BILL-EM-002",
+    "BILL-P49-M16-",
+    "STWH-P49-VERIFY"
+  ],
+  "passSnippet": "await send({ template_id: 'billing.subscription_active', headers: { 'Idempotency-Key': 'bill:1' } });",
+  "failSnippet": "await send({ subject: 'You are subscribed' });",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "BILL-EM-001"
+  ]
+}

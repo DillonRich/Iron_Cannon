@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/d1-migrations",
+  "sourceUrl": "https://developers.cloudflare.com/d1/reference/migrations/",
+  "lastVerified": "2026-05-31",
+  "title": "D1 migrations",
+  "excerpt": "Store SQL migrations in migrations/ folder. Apply with wrangler d1 migrations apply DB_NAME. Version schema in repo. Module directives reference migration files for users/subscriptions tables. Never mutate production schema without migration file.",
+  "appliesTo": ["layer2/cloudflare", "billing-subscription"],
+  "tags": ["cloudflare", "d1", "migrations"]
+}

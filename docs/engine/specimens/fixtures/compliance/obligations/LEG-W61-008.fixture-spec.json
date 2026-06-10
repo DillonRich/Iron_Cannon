@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W61-008",
+  "obligationId": "LEG-W61-008",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "pattern": "backup"
+  },
+  "passSnippet": "notice backup",
+  "failSnippet": "no match here",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

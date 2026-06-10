@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-send-with-php",
+  "sourceUrl": "https://resend.com/docs/send-with-php.md",
+  "lastVerified": "2026-06-03",
+  "title": "Send emails with PHP",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Send emails with PHP > Learn how to send your first email using the Resend PHP SDK. export const YouTube = ({id}) => { return ; }; ## Prerequisites To get the most out of this guide, you will need to: * [Create an API key](https://resend.com/api-keys) * [Verify your domain](https://resend.com/domains) Prefer watching a video? Check out this video walkthrough below. ## 1. Install Get the Resend PHP SDK. ```bash Composer theme={\"theme\":{\"light\":\"github-light\",\"dark\":\"vesper\"}} composer require resend/resend-php ``` ## 2. Send email using HTML The easiest way to send an email is by using the `html` parameter.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

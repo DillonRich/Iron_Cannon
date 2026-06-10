@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-dashboard",
+  "sourceUrl": "https://docs.stripe.com/connect/dashboard.md",
+  "lastVerified": "2026-06-03",
+  "title": "Manage connected accounts with the Dashboard",
+  "excerpt": "Learn about using the Stripe Dashboard to find and manage connected accounts. You can use the Dashboard to inspect, support, and better understand your platform’s connected accounts. The Connected accounts page [displays a list of your connected accounts](https://docs.stripe.com/connect/dashboard/viewing-all-accounts.md) with basic information such as each account’s status and payment balance. You can filter and sort the list to do things such as: - View accounts that are restricted or have other issues that you can help resolve. - [Review compliance information to take action on requirement updates](https://docs.stripe.com/connect/dashboard/review-compliance-information.md#requirement-updates).…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/vectorize-platform-limits-index",
+  "sourceUrl": "https://developers.cloudflare.com/vectorize/platform/limits/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Limits",
+  "excerpt": "description: Account, index, and vector limits for Vectorize on Free and Paid plans. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/vectorize/llms.txt > Use this file to discover all available pages before exploring further. The following limits apply to accounts, indexes, and vectors: To request an adjustment to a limit, complete the [Limit Increase Request Form ↗](https://forms.gle/nyamy2SM9zwWTXKE6). If the limit can be increased, Cloudflare will contact you with next steps.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

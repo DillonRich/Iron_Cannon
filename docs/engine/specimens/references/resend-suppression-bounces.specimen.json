@@ -1,0 +1,14 @@
+{
+  "refId": "resend/suppression-bounces",
+  "sourceUrl": "https://resend.com/docs/dashboard/emails/introduction",
+  "lastVerified": "2026-05-31",
+  "title": "Resend Bounces and suppressions",
+  "excerpt": "Handle delivery.failed and bounce webhooks. Suppress bad addresses to protect sender reputation. Configure resend.webhooks for delivery events (LEG-EMAIL-006).",
+  "appliesTo": [
+    "email-lifecycle",
+    "LEG-EMAIL-006"
+  ],
+  "tags": [
+    "resend"
+  ]
+}

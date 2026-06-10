@@ -1,0 +1,16 @@
+{
+  "fixtureId": "LEG-PRIV-005",
+  "obligationId": "LEG-PRIV-005",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "patterns": [
+      "do not sell",
+      "Do Not Sell"
+    ]
+  },
+  "passSnippet": "do not sell Do Not Sell",
+  "failSnippet": "gap LEG-PRIV-005",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

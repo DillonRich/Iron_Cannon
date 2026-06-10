@@ -1,0 +1,18 @@
+{
+  "fixtureId": "LEG-EDGE-003",
+  "obligationId": "LEG-EDGE-003",
+  "detectType": "pattern",
+  "detect": {
+    "type": "pattern",
+    "patterns": [
+      "Too many attempts"
+    ],
+    "forbidden": [
+      "stack trace"
+    ]
+  },
+  "passSnippet": "Too many attempts",
+  "failSnippet": "stack trace",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

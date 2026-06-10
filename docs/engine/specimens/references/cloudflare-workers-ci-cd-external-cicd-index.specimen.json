@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-ci-cd-external-cicd-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/ci-cd/external-cicd/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "External CI/CD",
+  "excerpt": "description: Integrate Workers development into your existing continuous integration and continuous development workflows, such as GitHub Actions or GitLab Pipelines. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Deploying Cloudflare Workers with CI/CD ensures reliable, automated deployments for every code change. If you prefer to use your existing CI/CD provider instead of [Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/), this section offers guides for popular providers:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

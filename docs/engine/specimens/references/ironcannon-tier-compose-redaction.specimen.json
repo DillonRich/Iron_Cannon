@@ -1,0 +1,11 @@
+{
+  "refId": "ironcannon/tier-compose-redaction",
+  "sourceUrl": "https://ironcannon.dev/planning/tier-redaction",
+  "lastVerified": "2026-06-03",
+  "title": "Tier compose redaction",
+  "excerpt": "Pro tier T04 strips L4 rules, legal/* cards, and legalCompliance outbound keys server-side.",
+  "tags": [
+    "ironcannon",
+    "tier"
+  ]
+}

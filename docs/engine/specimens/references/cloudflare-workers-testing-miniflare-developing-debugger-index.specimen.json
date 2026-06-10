@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-testing-miniflare-developing-debugger-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/testing/miniflare/developing/debugger/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Attaching a Debugger",
+  "excerpt": "description: Attach a Node.js debugger to Miniflare for setting breakpoints and inspecting Cloudflare Workers code. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. This documentation describes breakpoint debugging when using Miniflare directly, which is only relevant for advanced use cases. Instead, most users should refer to the [Workers Observability documentation for how to set this up when using Wrangler](https://developers.cloudflare.com/workers/observability/dev-tools/breakpoints/). You can use regular Node.js tools to debug your Workers.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

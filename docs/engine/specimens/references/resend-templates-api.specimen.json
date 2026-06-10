@@ -1,0 +1,14 @@
+{
+  "refId": "resend/templates-api",
+  "sourceUrl": "https://resend.com/docs/api-reference/templates",
+  "lastVerified": "2026-05-31",
+  "title": "Resend Templates API",
+  "excerpt": "Store reusable email templates in Resend. Iron Cannon modules reference template_id strings (auth.verify_email). Sync template IDs in env.",
+  "appliesTo": [
+    "email-lifecycle",
+    "M03-auth-resend-emails"
+  ],
+  "tags": [
+    "resend"
+  ]
+}

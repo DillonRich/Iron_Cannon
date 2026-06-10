@@ -1,0 +1,94 @@
+{
+  "obligations": [
+    {
+      "id": "LEG-W82-001",
+      "category": "operations",
+      "title": "Service expansion cycle signoff document complete",
+      "sourceRefId": "ironcannon/knowledge-w82-expansion-cycle-signoff",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-002",
+      "category": "operations",
+      "title": "Gap register stage continuous-improvement after expansion",
+      "sourceRefId": "ironcannon/knowledge-w82-continuous-improvement-stage",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-003",
+      "category": "operations",
+      "title": "Stack surface SD-01..08 documented in scope boundaries",
+      "sourceRefId": "ironcannon/knowledge-w82-stack-surface-sd01-08",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-004",
+      "category": "operations",
+      "title": "Dual outbound bundles merged in T04 compose",
+      "sourceRefId": "ironcannon/knowledge-w82-dual-outbound-bundles",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-005",
+      "category": "operations",
+      "title": "Imagination-50 includes SD-07 and W07 scenarios",
+      "sourceRefId": "ironcannon/knowledge-w82-imagination-sd07-w07",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-006",
+      "category": "operations",
+      "title": "SVC-003 deferred until demand signal",
+      "sourceRefId": "ironcannon/knowledge-w82-svc003-demand-gate",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-007",
+      "category": "operations",
+      "title": "Operator deploy gaps remain deferred not blocking",
+      "sourceRefId": "ironcannon/knowledge-w82-operator-deploy-deferred",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-008",
+      "category": "operations",
+      "title": "Stretch suite includes expansion cycle validator",
+      "sourceRefId": "ironcannon/knowledge-w82-stretch-suite-30",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-009",
+      "category": "privacy",
+      "title": "Multi-stack privacy notice when Supabase selected",
+      "sourceRefId": "legal/knowledge-w82-multi-stack-privacy",
+      "detect": {
+        "type": "manual"
+      }
+    },
+    {
+      "id": "LEG-W82-010",
+      "category": "operations",
+      "title": "PLANNING_AZ_SIGNOFF updated for expansion complete",
+      "sourceRefId": "ironcannon/knowledge-w82-az-signoff-v7",
+      "detect": {
+        "type": "manual"
+      }
+    }
+  ]
+}

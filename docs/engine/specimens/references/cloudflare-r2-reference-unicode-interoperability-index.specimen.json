@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/r2-reference-unicode-interoperability-index",
+  "sourceUrl": "https://developers.cloudflare.com/r2/reference/unicode-interoperability/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Unicode interoperability",
+  "excerpt": "description: R2 NFC-normalizes object key names by default to ensure cross-platform Unicode consistency. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/r2/llms.txt > Use this file to discover all available pages before exploring further. R2 is built on top of Workers and supports Unicode natively. One nuance of Unicode that is often overlooked is the issue of [filename interoperability ↗](https://en.wikipedia.org/wiki/Filename#Encoding%5Findication%5Finteroperability) due to [Unicode equivalence ↗](https://en.wikipedia.org/wiki/Unicode%5Fequivalence). Based on feedback from our users, we have chosen to NFC-normalize key names before storing by default.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-reports-sigma-and-sdp",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/reports/sigma-and-sdp.md",
+  "lastVerified": "2026-06-03",
+  "title": "Revenue Recognition reports in Sigma and SDP",
+  "excerpt": "Run prebuilt Revenue Recognition reports or build custom queries in Sigma. Revenue Recognition provides prebuilt report templates in [Sigma](https://docs.stripe.com/data/how-sigma-works.md) that you can run directly or use as a starting point for custom queries. These templates are available for both Sigma and Sigma for Organizations. To run a prebuilt Revenue Recognition report, navigate to [Sigma](https://dashboard.stripe.com/sigma/queries) in the Stripe Dashboard and search for the template by name. The following report templates are available: - **Period summary**: Revenue, deferred revenue, and future scheduled billings activity for a given month. - **Income statement**: Detailed revenue and contra revenue breakdown grouped by account.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

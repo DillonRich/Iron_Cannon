@@ -1,0 +1,14 @@
+{
+  "refId": "legal/ai-disclosure",
+  "sourceUrl": "https://ironcannon.dev/planning/W65/ref/legal-ai-disclosure",
+  "lastVerified": "2026-06-06",
+  "title": "ai disclosure",
+  "provider": "legal",
+  "excerpt": "Disclose when AI or automated systems assist users or make decisions affecting them.",
+  "embeddingHint": "legal/ai-disclosure wave65 obligation-source legal",
+  "tags": [
+    "wave65",
+    "obligation-source",
+    "legal"
+  ]
+}

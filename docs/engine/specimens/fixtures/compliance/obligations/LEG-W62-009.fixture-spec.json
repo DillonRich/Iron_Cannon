@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-W62-009",
+  "obligationId": "LEG-W62-009",
+  "detectType": "route_exists",
+  "detect": {
+    "type": "route_exists",
+    "path": "/.well-known/security.txt"
+  },
+  "passSnippet": "export default function P(){return <main>/.well-known/security.txt</main>}",
+  "failSnippet": "<main>/missing</main>",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

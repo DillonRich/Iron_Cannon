@@ -1,0 +1,14 @@
+{
+  "refId": "resend/scale-c4-webhooks-574",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/resend/scale-c4-webhooks-574",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-C4 webhooks 574",
+  "excerpt": "Verify Resend webhook signatures on bounce and delivery events. Final Scale-C planning reference for Iron Cannon MCP compose and compliance agents.",
+  "tags": [
+    "resend",
+    "webhooks",
+    "scale-c4",
+    "scale-c"
+  ],
+  "embeddingHint": "resend webhooks Verify Resend webhook signatures on bounce and delivery events iron cannon scale-c compliance"
+}

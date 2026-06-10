@@ -1,0 +1,15 @@
+{
+  "refId": "legal/gdpr-erasure",
+  "sourceUrl": "https://gdpr.eu/right-to-be-forgotten/",
+  "lastVerified": "2026-05-31",
+  "title": "GDPR erasure",
+  "excerpt": "Right to erasure for account deletion flows.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "legal",
+    "gdpr-erasure"
+  ]
+}

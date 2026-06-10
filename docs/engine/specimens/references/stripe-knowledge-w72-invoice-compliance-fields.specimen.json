@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/knowledge-w72-invoice-compliance-fields",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w72/invoice-compliance-fields",
+  "lastVerified": "2026-06-06",
+  "title": "W72 invoice-compliance-fields",
+  "provider": "stripe",
+  "excerpt": "Invoices include statutory business identifiers",
+  "embeddingHint": "stripe invoice-compliance-fields wave72 legal-markets",
+  "tags": [
+    "wave72",
+    "knowledge",
+    "stripe",
+    "legal-markets"
+  ]
+}

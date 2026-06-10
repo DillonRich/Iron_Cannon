@@ -1,0 +1,10 @@
+{
+  "refId": "legal/can-spam-unsubscribe",
+  "sourceUrl": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business",
+  "lastVerified": "2026-05-31",
+  "title": "CAN-SPAM unsubscribe requirement",
+  "excerpt": "Commercial emails must include clear explanation of how to opt out and a working unsubscribe mechanism. Honor opt-out within 10 business days. Link must work for at least 30 days after send. Cannot charge fee or require login beyond email address to unsubscribe.",
+  "appliesTo": ["layer4/email", "LEG-EMAIL-001"],
+  "tags": ["legal", "can-spam", "email"],
+  "disclaimerRef": "legal/disclaimer"
+}

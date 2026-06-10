@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-bank-redirects",
+  "sourceUrl": "https://docs.stripe.com/payments/bank-redirects.md",
+  "lastVerified": "2026-06-03",
+  "title": "Bank redirects",
+  "excerpt": "Bank redirects let customers pay online using their bank account. They drive more than half of online commerce in Germany, the Netherlands, and Malaysia. Bank redirects are often used by: - Retailers that want to improve conversion and reduce fraud with consumers in Europe and Asia Pacific. - Software or service businesses collecting one-time payments from other businesses. Bank redirects might not be a good fit for your business if you sell *subscriptions* (A Subscription represents the product details associated with the plan that your customer subscribes to. Allows you to charge the customer on a recurring basis). Some bank redirects don’t support recurring payments.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

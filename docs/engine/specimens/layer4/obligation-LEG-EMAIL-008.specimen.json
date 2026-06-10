@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-email-008",
+  "layer": 4,
+  "rulesetVersion": "2026.06.03",
+  "flowId": "auth-lifecycle",
+  "section": "leg-email-008",
+  "content": {
+    "requirement": "BCC avoided on marketing sends",
+    "obligations": [
+      "LEG-EMAIL-008"
+    ],
+    "compareSteps": [
+      "Run detect.type=template_scan",
+      "Map result to obligation LEG-EMAIL-008",
+      "Attach legalDisclaimer on T12–T14"
+    ],
+    "remediationDirective": "Remediate LEG-EMAIL-008: BCC avoided on marketing sends"
+  },
+  "references": [
+    "legal/can-spam-recipient"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-EMAIL-008",
+        "type": "template_scan",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "email",
+    "disclaimerRequired": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "description": "Golden T09 surface map output — pass fixture for A01",
+  "surfaces": [
+    {
+      "surfaceId": "SURF-SESSION-001",
+      "type": "session_cookie",
+      "path": "middleware.ts",
+      "riskLevel": "high",
+      "overlayModuleId": "A02-session-hardening-pass"
+    },
+    {
+      "surfaceId": "SURF-WH-001",
+      "type": "webhook",
+      "path": "app/api/webhooks/stripe/route.ts",
+      "riskLevel": "critical",
+      "overlayModuleId": "A03-webhook-hardening-pass"
+    }
+  ]
+}

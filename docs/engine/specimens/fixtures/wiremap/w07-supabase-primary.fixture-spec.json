@@ -1,0 +1,20 @@
+{
+  "fixtureId": "W07",
+  "description": "SD-07 Supabase-primary — M70/M71 + billing core without D1 auth (SVC-002)",
+  "input": {
+    "stackId": "SD-07",
+    "flowIds": ["auth-lifecycle", "billing-subscription"]
+  },
+  "expected": {
+    "split": false,
+    "wiremapCount": 1,
+    "moduleCount": 8,
+    "firstModuleIds": [
+      "M70-supabase-auth-config",
+      "M71-supabase-middleware-ssr",
+      "M11-stripe-checkout-route"
+    ],
+    "warnings": ["supabase-primary-wiremap"],
+    "phaseGate": "AWAIT_USER_WIREMAP_APPROVAL"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "refId": "cloudflare/workers-limits",
+  "sourceUrl": "https://developers.cloudflare.com/workers/platform/limits/",
+  "lastVerified": "2026-05-31",
+  "title": "Cloudflare Workers limits",
+  "excerpt": "CPU time per request capped (10ms free / 30s paid burst). Max 128MB memory. Subrequest limit per invocation. Request body size limits apply. Batch long work via Queues or chunked processing—never assume unlimited CPU for webhook handlers.",
+  "appliesTo": ["layer2/cloudflare", "webhook-idempotency"],
+  "tags": ["cloudflare", "workers", "limits"]
+}

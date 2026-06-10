@@ -1,0 +1,9 @@
+{
+  "refId": "resend/attachments",
+  "sourceUrl": "https://resend.com/docs/dashboard/emails/attachments",
+  "lastVerified": "2026-05-31",
+  "title": "Resend email attachments",
+  "excerpt": "Attach files via base64 content or path in send API. Max attachment size per Resend limits. Scan uploads server-side before attaching—never attach user-uploaded files without virus/type validation. Do not attach PII in logs when debugging.",
+  "appliesTo": ["email-lifecycle"],
+  "tags": ["resend", "attachments"]
+}

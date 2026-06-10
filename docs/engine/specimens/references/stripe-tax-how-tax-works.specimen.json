@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/tax-how-tax-works",
+  "sourceUrl": "https://docs.stripe.com/tax/how-tax-works.md",
+  "lastVerified": "2026-06-03",
+  "title": "How Stripe Tax works",
+  "excerpt": "Learn how Stripe helps you automate tax compliance. 1. Understand which locations require you to collect tax. 1. Report, file, and remit the tax you collected. The tax compliance cycle (See full diagram at https://docs.stripe.com/tax/how-tax-works) Each country handles tax on sold products and services differently, often calling it by a different name. In the US, businesses deal with [sales tax](https://stripe.com/guides/introduction-to-us-sales-tax-and-economic-nexus). Throughout Europe, it’s called value-added tax (*VAT* (A value-added tax (VAT), known in some countries as a goods and services tax (GST), is a type of tax levied on the price of a product or service at each stage of production, distribution, or sale to the end consumer.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

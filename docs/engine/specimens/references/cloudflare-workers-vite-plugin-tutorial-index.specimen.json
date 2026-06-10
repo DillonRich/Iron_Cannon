@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-vite-plugin-tutorial-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/vite-plugin/tutorial/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Tutorial - React SPA with an API",
+  "excerpt": "description: Create a React SPA with an API Worker using the Vite plugin image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. This tutorial takes you through the steps needed to adapt a Vite project to use the Cloudflare Vite plugin. Much of the content can also be applied to adapting existing Vite projects and to front-end frameworks other than React. If you want to start a new app with a template already set up with Vite, React and the Cloudflare Vite plugin, refer to the [React framework guide](https://developers.cloudflare.com/workers/framework-guides/web-apps/react/).…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M31",
+  "moduleId": "M31-onboarding-api",
+  "patternsUnderTest": [
+    "ONB-API-001",
+    "ONB-API-002",
+    "AUTH-P50-M31-",
+    "AUTH-P50-LIFECYCLE"
+  ],
+  "passSnippet": "export async function completeOnboarding(body) { if (body.acceptedTerms !== true) throw 400; return fetch('/api/onboarding/complete'); }",
+  "failSnippet": "export async function completeOnboarding(body) { return { ok: true }; }",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "ONB-API-002"
+  ]
+}

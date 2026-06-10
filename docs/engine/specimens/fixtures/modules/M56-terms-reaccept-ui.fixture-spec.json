@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M56",
+  "moduleId": "M56-terms-reaccept-ui",
+  "patternsUnderTest": [
+    "TR-UI-001",
+    "TR-UI-002",
+    "AUTH-P50-M56-",
+    "AUTH-P50-LIFECYCLE"
+  ],
+  "passSnippet": "app/legal/reaccept/page.tsx; input name=\"acceptedTerms\" type=\"checkbox\"",
+  "failSnippet": "no /legal/reaccept route",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "TR-UI-001"
+  ]
+}

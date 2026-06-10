@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/email-routing-email-workers-runtime-api-index",
+  "sourceUrl": "https://developers.cloudflare.com/email-routing/email-workers/runtime-api/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Email Handler",
+  "excerpt": "description: Email Workers Runtime API reference for handling, forwarding, rejecting, and replying to incoming emails. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/email-routing/llms.txt > Use this file to discover all available pages before exploring further. An `EmailEvent` is the event type to programmatically process your emails with a Worker. You can reject, forward, or drop emails according to the logic you construct in your Worker. `EmailEvent` can be handled in Workers functions written using the [ES modules format](https://developers.cloudflare.com/workers/reference/migrate-to-module-workers/) by adding an `email` function to your module's exported handlers:",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p1"
+  ]
+}

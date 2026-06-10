@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/knowledge-w73-xxe-parser-disabled",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w73/xxe-parser-disabled",
+  "lastVerified": "2026-06-06",
+  "title": "W73 xxe-parser-disabled",
+  "provider": "owasp",
+  "excerpt": "XML parsers disable external entities",
+  "embeddingHint": "owasp xxe-parser-disabled wave73 armor-hardening",
+  "tags": [
+    "wave73",
+    "knowledge",
+    "owasp",
+    "armor-hardening"
+  ]
+}

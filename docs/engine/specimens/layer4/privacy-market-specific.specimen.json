@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/privacy/market-specific",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "adapterId": null,
+  "section": "market-privacy",
+  "content": {
+    "requirement": "Market-specific privacy patterns (CCPA, EU consent, policy content)",
+    "obligations": ["LEG-PRIV-005", "LEG-PRIV-006", "LEG-PRIV-007", "LEG-PRIV-009"],
+    "compareSteps": [
+      "US-CA: scan for do-not-sell link text",
+      "EU/UK: consent_at column on users (or terms_accepted_at equivalent)",
+      "EU/UK: cookie policy link from /privacy",
+      "Advisory: privacy contact email in policy content"
+    ],
+    "remediationDirective": "Add market-appropriate links and schema fields; agent drafts policy copy — not legal advice."
+  },
+  "references": ["legal/ccpa-do-not-sell", "legal/gdpr-consent-basics", "legal/cookie-consent-eu", "legal/gdpr-privacy-notice"],
+  "compliancePatterns": {
+    "advisory": [
+      { "id": "LEG-PRIV-005", "type": "pattern", "patterns": ["Do Not Sell", "do not sell"], "tier": "ironclad" },
+      { "id": "LEG-PRIV-006", "type": "schema_column", "table": "users", "column": "terms_accepted_at", "tier": "ironclad" },
+      { "id": "LEG-PRIV-007", "type": "route_link", "path": "/privacy", "hrefContains": "cookie", "tier": "ironclad" },
+      { "id": "LEG-PRIV-009", "type": "pattern", "patterns": ["privacy@", "data protection"], "tier": "ironclad" }
+    ]
+  },
+  "metadata": { "minTier": "ironclad", "category": "privacy", "disclaimerRequired": true }
+}

@@ -1,0 +1,14 @@
+{
+  "refId": "stripe/knowledge-w63-payment-intent-3ds",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w63/payment-intent-3ds",
+  "lastVerified": "2026-06-06",
+  "title": "W63 payment-intent-3ds",
+  "provider": "stripe",
+  "excerpt": "Enable 3DS when Radar recommends for high-risk PaymentIntents",
+  "embeddingHint": "stripe payment-intent-3ds wave63 legal security",
+  "tags": [
+    "wave63",
+    "knowledge",
+    "stripe"
+  ]
+}

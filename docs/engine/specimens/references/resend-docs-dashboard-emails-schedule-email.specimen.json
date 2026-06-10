@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-emails-schedule-email",
+  "sourceUrl": "https://resend.com/docs/dashboard/emails/schedule-email.md",
+  "lastVerified": "2026-06-03",
+  "title": "Schedule Email",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Schedule Email > Send emails at a specific time without additional complexity. While some emails need to be delivered as soon as possible, like password resets or magic links, others can be scheduled for a specific time. Here are some examples of when you might want to schedule an email: * Send welcome email **5 minutes after** signup * Trigger a reminder email **24 hours before** an event * Schedule a weekly digest email for the **next day at 9am PST** Before, you had to use external services to handle the scheduling logic, but now you can use the new Resend API to schedule emails.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p1"
+  ]
+}

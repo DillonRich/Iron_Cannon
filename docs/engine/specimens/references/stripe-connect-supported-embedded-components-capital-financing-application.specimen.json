@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-supported-embedded-components-capital-financing-application",
+  "sourceUrl": "https://docs.stripe.com/connect/supported-embedded-components/capital-financing-application.md",
+  "lastVerified": "2026-06-03",
+  "title": "Capital application component",
+  "excerpt": "Show an end-to-end application flow for Capital financing. The Capital application component allows your eligible connected accounts to complete a financing application in your platform’s website or application. They can select their offer amount and terms, view contractual details, and submit their application. Note: The following is a preview/demo component that behaves differently than live mode usage with real connected accounts. The actual component has more functionality than what might appear in this demo component. For example, for connected accounts without Stripe dashboard access (custom accounts), no user authentication is required in production.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

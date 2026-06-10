@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-subscriptions-create",
+  "sourceUrl": "https://docs.stripe.com/api/subscriptions/create.md",
+  "lastVerified": "2026-06-03",
+  "title": "Create a subscription",
+  "excerpt": "Creates a new subscription on an existing customer. Each customer can have up to 500 active or scheduled subscriptions. When you create a subscription with `collection_method=charge_automatically`, the first invoice is finalized as part of the request. The `payment_behavior` parameter determines the exact behavior of the initial payment. To start subscriptions where the first invoice always begins in a `draft` status, use [subscription schedules](https://docs.stripe.com/docs/billing/subscriptions/subscription-schedules.md#managing) instead. Schedules provide the flexibility to model more complex billing configurations that change over time. The newly created `Subscription` object, if the call succeeded. If the attempted charge fails, the subscription is created in an `incomplete` status.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

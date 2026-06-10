@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-runtime-apis-html-rewriter-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/runtime-apis/html-rewriter/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "HTMLRewriter",
+  "excerpt": "description: Build comprehensive and expressive HTML parsers inside of a Worker application. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. The `HTMLRewriter` class allows developers to build comprehensive and expressive HTML parsers inside of a Cloudflare Workers application. It can be thought of as a jQuery-like experience directly inside of your Workers application. Leaning on a powerful JavaScript API to parse and transform HTML, `HTMLRewriter` allows developers to build deeply functional applications.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

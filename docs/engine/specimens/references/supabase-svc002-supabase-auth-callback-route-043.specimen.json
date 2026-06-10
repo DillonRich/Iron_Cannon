@@ -1,0 +1,16 @@
+{
+  "refId": "supabase/svc002-supabase-auth-callback-route-043",
+  "sourceUrl": "https://ironcannon.dev/svc002/supabase/auth-callback-route-43",
+  "lastVerified": "2026-05-31",
+  "title": "SVC-002 auth-callback-route 43",
+  "provider": "supabase",
+  "excerpt": "OAuth/magic-link callback route exchanges code for session via supabase.auth.exchangeCodeForSession.",
+  "embeddingHint": "supabase auth-callback-route svc002 supabase sd-07 rls ssr",
+  "tags": [
+    "svc002",
+    "supabase",
+    "sd-07",
+    "supabase",
+    "auth-callback-route"
+  ]
+}

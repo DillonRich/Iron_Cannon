@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/terminal-example-applications",
+  "sourceUrl": "https://docs.stripe.com/terminal/example-applications.md",
+  "lastVerified": "2026-06-03",
+  "title": "Example applications",
+  "excerpt": "Try Stripe Terminal by using the example applications and simulated reader. > For a more immersive guide including details on [server driven integration](https://support.stripe.com/questions/terminal-server-driven-integration) using only the Stripe API, check out the [sample integration](https://docs.stripe.com/terminal/quickstart.md). A Stripe Terminal integration starts with your point-of-sale application running at a physical location. Your point-of-sale application communicates with a reader through the Terminal SDK to collect in-person payments from your customers. Your backend works with your point-of-sale application to authenticate the Terminal SDK and finalize payments.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "refId": "nextjs/route-handlers-raw-body",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/routing/route-handlers",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js route handlers — raw body for webhooks",
+  "excerpt": "For Stripe webhook signature verification, read the raw request body before JSON parsing. In App Router route handlers use request.text() or equivalent; do not use parsed body for constructEvent. Disable default body parsing if middleware transforms the payload.",
+  "appliesTo": ["layer2/stripe/webhook-handler", "nextjs-app-router"],
+  "tags": ["nextjs", "webhook", "stripe"]
+}

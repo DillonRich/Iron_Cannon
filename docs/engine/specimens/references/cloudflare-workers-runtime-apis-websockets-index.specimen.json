@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-runtime-apis-websockets-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/runtime-apis/websockets/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "WebSockets",
+  "excerpt": "description: Communicate in real time with your Cloudflare Workers. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. WebSockets allow you to communicate in real time with your Cloudflare Workers serverless functions. For a complete example, refer to [Using the WebSockets API](https://developers.cloudflare.com/workers/examples/websockets/). If your application needs to coordinate among multiple WebSocket connections, such as a chat room or game match, you will need clients to send messages to a single-point-of-coordination.…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

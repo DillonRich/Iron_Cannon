@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer4/obligation/leg-a11y-003",
+  "layer": 4,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "section": "leg-a11y-003",
+  "content": {
+    "requirement": "Icon-only buttons have aria-label",
+    "obligations": [
+      "LEG-A11Y-003"
+    ],
+    "compareSteps": [
+      "Run detect.type=required_attribute per COMPARE_DETECT_TYPES",
+      "Map result to obligation LEG-A11Y-003 only",
+      "Attach legalDisclaimer on every T12–T14 response"
+    ],
+    "remediationDirective": "Remediate LEG-A11Y-003: Icon-only buttons have aria-label"
+  },
+  "references": [
+    "legal/wcag-aria-basics"
+  ],
+  "compliancePatterns": {
+    "required": [
+      {
+        "id": "LEG-A11Y-003",
+        "type": "required_attribute",
+        "tier": "ironclad"
+      }
+    ]
+  },
+  "metadata": {
+    "minTier": "ironclad",
+    "category": "accessibility",
+    "disclaimerRequired": true
+  }
+}

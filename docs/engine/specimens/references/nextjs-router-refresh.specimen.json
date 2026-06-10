@@ -1,0 +1,9 @@
+{
+  "refId": "nextjs/router-refresh",
+  "sourceUrl": "https://nextjs.org/docs/app/api-reference/functions/use-router",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js router.refresh",
+  "excerpt": "Call router.refresh() after auth or billing state changes to re-fetch Server Components without full navigation. Use on billing success when webhook completes (B02→B03) and after login/logout.",
+  "appliesTo": ["M14-billing-success-ui", "auth-lifecycle"],
+  "tags": ["nextjs", "router", "refresh"]
+}

@@ -1,0 +1,1356 @@
+{
+  "rulesetVersion": "2026.05.31",
+  "count": 225,
+  "entries": [
+    {
+      "obligationId": "LEG-A11Y-001",
+      "detectType": "required_attribute",
+      "passSnippet": "<img alt=\"x\" src=\"/a.png\" />",
+      "failSnippet": "<img src=\"/a.png\" />"
+    },
+    {
+      "obligationId": "LEG-A11Y-002",
+      "detectType": "label_association",
+      "passSnippet": "<label htmlFor=\"email\">Email</label><input id=\"email\" />",
+      "failSnippet": "<input name=\"email\" />"
+    },
+    {
+      "obligationId": "LEG-A11Y-003",
+      "detectType": "required_attribute",
+      "passSnippet": "<button aria-label=\"close\">X</button>",
+      "failSnippet": "<button>X</button>"
+    },
+    {
+      "obligationId": "LEG-A11Y-004",
+      "detectType": "component_scan",
+      "passSnippet": "focus-trap FocusTrap",
+      "failSnippet": "no banner here"
+    },
+    {
+      "obligationId": "LEG-A11Y-005",
+      "detectType": "pattern",
+      "passSnippet": "skip to content skip-nav #main",
+      "failSnippet": "gap LEG-A11Y-005"
+    },
+    {
+      "obligationId": "LEG-A11Y-007",
+      "detectType": "required_attribute",
+      "passSnippet": "<html lang=\"en\">",
+      "failSnippet": "<html>"
+    },
+    {
+      "obligationId": "LEG-A11Y-008",
+      "detectType": "pattern",
+      "passSnippet": "<title> metadata.title",
+      "failSnippet": "gap LEG-A11Y-008"
+    },
+    {
+      "obligationId": "LEG-A11Y-009",
+      "detectType": "pattern",
+      "passSnippet": "aria-describedby aria-invalid",
+      "failSnippet": "gap LEG-A11Y-009"
+    },
+    {
+      "obligationId": "LEG-EMAIL-001",
+      "detectType": "pattern",
+      "passSnippet": "unsubscribe List-Unsubscribe",
+      "failSnippet": "gap LEG-EMAIL-001"
+    },
+    {
+      "obligationId": "LEG-EMAIL-002",
+      "detectType": "template_scan",
+      "passSnippet": "physicalAddress 123 Main St",
+      "failSnippet": "empty template"
+    },
+    {
+      "obligationId": "LEG-EMAIL-003",
+      "detectType": "header",
+      "passSnippet": "List-Unsubscribe: ok",
+      "failSnippet": "gap LEG-EMAIL-003"
+    },
+    {
+      "obligationId": "LEG-EMAIL-004",
+      "detectType": "template_scan",
+      "passSnippet": "transactional receipt only",
+      "failSnippet": "buy now limited offer sale today"
+    },
+    {
+      "obligationId": "LEG-EMAIL-005",
+      "detectType": "verified_sender_domain",
+      "passSnippet": "verifiedDomain mail.example.com resend",
+      "failSnippet": "gap LEG-EMAIL-005"
+    },
+    {
+      "obligationId": "LEG-EMAIL-006",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks deliveryEvents",
+      "failSnippet": "gap LEG-EMAIL-006"
+    },
+    {
+      "obligationId": "LEG-PRIV-001",
+      "detectType": "route_link",
+      "passSnippet": "<a href=\"privacy\">ok</a>",
+      "failSnippet": "<form></form>"
+    },
+    {
+      "obligationId": "LEG-PRIV-002",
+      "detectType": "route_link",
+      "passSnippet": "<a href=\"privacy\">ok</a>",
+      "failSnippet": "<form></form>"
+    },
+    {
+      "obligationId": "LEG-PRIV-003",
+      "detectType": "flow_ref",
+      "passSnippet": "flowId:data-export delete-account data-export",
+      "failSnippet": "unrelated flow"
+    },
+    {
+      "obligationId": "LEG-PRIV-004",
+      "detectType": "flow_ref",
+      "passSnippet": "flowId:account-deletion delete-account data-export",
+      "failSnippet": "unrelated flow"
+    },
+    {
+      "obligationId": "LEG-PRIV-005",
+      "detectType": "pattern",
+      "passSnippet": "do not sell Do Not Sell",
+      "failSnippet": "gap LEG-PRIV-005"
+    },
+    {
+      "obligationId": "LEG-PRIV-006",
+      "detectType": "schema_column",
+      "passSnippet": "ALTER TABLE users ADD consent_at TEXT",
+      "failSnippet": "gap LEG-PRIV-006"
+    },
+    {
+      "obligationId": "LEG-PRIV-007",
+      "detectType": "route_link",
+      "passSnippet": "<a href=\"cookie\">ok</a>",
+      "failSnippet": "<form></form>"
+    },
+    {
+      "obligationId": "LEG-PRIV-009",
+      "detectType": "pattern",
+      "passSnippet": "privacy@ dpo@ data protection",
+      "failSnippet": "gap LEG-PRIV-009"
+    },
+    {
+      "obligationId": "LEG-COOKIE-001",
+      "detectType": "script_before_consent",
+      "passSnippet": "CookieConsent before analytics",
+      "failSnippet": "analytics.load() without consent"
+    },
+    {
+      "obligationId": "LEG-COOKIE-002",
+      "detectType": "component_scan",
+      "passSnippet": "pass LEG-COOKIE-002",
+      "failSnippet": "no banner here"
+    },
+    {
+      "obligationId": "LEG-COOKIE-003",
+      "detectType": "pattern",
+      "passSnippet": "essential cookies strictly necessary",
+      "failSnippet": "gap LEG-COOKIE-003"
+    },
+    {
+      "obligationId": "LEG-COOKIE-004",
+      "detectType": "route_exists",
+      "passSnippet": "export default function P(){return <main>/cookies</main>}",
+      "failSnippet": "export default function P(){return null}"
+    },
+    {
+      "obligationId": "LEG-TERMS-001",
+      "detectType": "schema_column",
+      "passSnippet": "ALTER TABLE users ADD terms_accepted_at TEXT",
+      "failSnippet": "gap LEG-TERMS-001"
+    },
+    {
+      "obligationId": "LEG-TERMS-002",
+      "detectType": "schema_column",
+      "passSnippet": "ALTER TABLE users ADD terms_version TEXT",
+      "failSnippet": "gap LEG-TERMS-002"
+    },
+    {
+      "obligationId": "LEG-TERMS-003",
+      "detectType": "route_link",
+      "passSnippet": "<a href=\"terms\">ok</a>",
+      "failSnippet": "<form></form>"
+    },
+    {
+      "obligationId": "LEG-TERMS-004",
+      "detectType": "ui_pattern",
+      "passSnippet": "/* terms checkbox default unchecked */",
+      "failSnippet": "defaultChecked={true}"
+    },
+    {
+      "obligationId": "LEG-TERMS-005",
+      "detectType": "flow_ref",
+      "passSnippet": "flowId:terms-reaccept delete-account data-export",
+      "failSnippet": "unrelated flow"
+    },
+    {
+      "obligationId": "LEG-RECORD-001",
+      "detectType": "schema_table",
+      "passSnippet": "CREATE TABLE consent_audit_log (id INT)",
+      "failSnippet": "gap LEG-RECORD-001"
+    },
+    {
+      "obligationId": "LEG-RECORD-002",
+      "detectType": "schema_table",
+      "passSnippet": "CREATE TABLE email_unsubscribe_log (id INT)",
+      "failSnippet": "gap LEG-RECORD-002"
+    },
+    {
+      "obligationId": "LEG-GLOBAL-001",
+      "detectType": "route_exists",
+      "passSnippet": "export default function P(){return <main>/privacy</main>}",
+      "failSnippet": "export default function P(){return null}"
+    },
+    {
+      "obligationId": "LEG-GLOBAL-002",
+      "detectType": "route_exists",
+      "passSnippet": "export default function P(){return <main>/terms</main>}",
+      "failSnippet": "export default function P(){return null}"
+    },
+    {
+      "obligationId": "LEG-GLOBAL-003",
+      "detectType": "route_exists",
+      "passSnippet": "export default function P(){return <main>/accessibility</main>}",
+      "failSnippet": "export default function P(){return null}"
+    },
+    {
+      "obligationId": "LEG-EMAIL-007",
+      "detectType": "template_scan",
+      "passSnippet": "preheader: honest product summary",
+      "failSnippet": "preheader: FREE!!! act now"
+    },
+    {
+      "obligationId": "LEG-EMAIL-008",
+      "detectType": "template_scan",
+      "passSnippet": "To: user@example.com\nSubject: Newsletter",
+      "failSnippet": "bcc: everyone@list.com"
+    },
+    {
+      "obligationId": "LEG-EMAIL-009",
+      "detectType": "template_scan",
+      "passSnippet": "templateId=txn_welcome",
+      "failSnippet": "empty template"
+    },
+    {
+      "obligationId": "LEG-EMAIL-010",
+      "detectType": "route_exists",
+      "passSnippet": "export default function P(){return <main>/api/webhooks/resend</main>}",
+      "failSnippet": "<main>/missing-route</main>"
+    },
+    {
+      "obligationId": "LEG-PRIV-011",
+      "detectType": "route_link",
+      "passSnippet": "<a href=\"do-not-sell\">ok</a>",
+      "failSnippet": "<form></form>"
+    },
+    {
+      "obligationId": "LEG-PRIV-012",
+      "detectType": "pattern",
+      "passSnippet": "retention delete after",
+      "failSnippet": "gap LEG-PRIV-012"
+    },
+    {
+      "obligationId": "LEG-PRIV-014",
+      "detectType": "route_link",
+      "passSnippet": "<a href=\"dpa\">ok</a>",
+      "failSnippet": "<form></form>"
+    },
+    {
+      "obligationId": "LEG-PRIV-015",
+      "detectType": "route_exists",
+      "passSnippet": "export default function P(){return <main>/privacy/subprocessors</main>}",
+      "failSnippet": "export default function P(){return null}"
+    },
+    {
+      "obligationId": "LEG-COOKIE-006",
+      "detectType": "route_link",
+      "passSnippet": "<a href=\"/privacy#cookies\">ok</a>",
+      "failSnippet": "<form></form>"
+    },
+    {
+      "obligationId": "LEG-COOKIE-007",
+      "detectType": "script_before_consent",
+      "passSnippet": "CookieConsent before analytics",
+      "failSnippet": "analytics.load() without consent"
+    },
+    {
+      "obligationId": "LEG-COOKIE-008",
+      "detectType": "ui_pattern",
+      "passSnippet": "/* cookie settings reopen */",
+      "failSnippet": "defaultChecked={true}"
+    },
+    {
+      "obligationId": "LEG-STRIPE-001",
+      "detectType": "route_link",
+      "passSnippet": "<a href=\"refund\">ok</a>",
+      "failSnippet": "<form></form>"
+    },
+    {
+      "obligationId": "LEG-STRIPE-002",
+      "detectType": "ui_pattern",
+      "passSnippet": "/* cancel subscription */",
+      "failSnippet": "defaultChecked={true}"
+    },
+    {
+      "obligationId": "LEG-STRIPE-003",
+      "detectType": "ui_pattern",
+      "passSnippet": "/* per month|per year */",
+      "failSnippet": "defaultChecked={true}"
+    },
+    {
+      "obligationId": "LEG-STRIPE-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks deliveryEvents",
+      "failSnippet": "gap LEG-STRIPE-004"
+    },
+    {
+      "obligationId": "LEG-STRIPE-005",
+      "detectType": "template_scan",
+      "passSnippet": "invoice.payment_failed template txn_ok physicalAddress",
+      "failSnippet": "empty template"
+    },
+    {
+      "obligationId": "LEG-STRIPE-006",
+      "detectType": "ui_pattern",
+      "passSnippet": "/* trial ends */",
+      "failSnippet": "defaultChecked={true}"
+    },
+    {
+      "obligationId": "LEG-STRIPE-007",
+      "detectType": "route_link",
+      "passSnippet": "<a href=\"portal\">ok</a>",
+      "failSnippet": "<form></form>"
+    },
+    {
+      "obligationId": "LEG-STRIPE-008",
+      "detectType": "pattern",
+      "passSnippet": "StripeElements PaymentElement",
+      "failSnippet": "card number input"
+    },
+    {
+      "obligationId": "LEG-DATA-001",
+      "detectType": "ui_pattern",
+      "passSnippet": "/* permanently delete */",
+      "failSnippet": "defaultChecked={true}"
+    },
+    {
+      "obligationId": "LEG-DATA-002",
+      "detectType": "route_exists",
+      "passSnippet": "export default function P(){return <main>/api/account/export</main>}",
+      "failSnippet": "<main>/missing-route</main>"
+    },
+    {
+      "obligationId": "LEG-DATA-003",
+      "detectType": "ui_pattern",
+      "passSnippet": "/* days until deletion */",
+      "failSnippet": "defaultChecked={true}"
+    },
+    {
+      "obligationId": "LEG-DATA-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks deliveryEvents",
+      "failSnippet": "gap LEG-DATA-004"
+    },
+    {
+      "obligationId": "LEG-DATA-005",
+      "detectType": "flow_ref",
+      "passSnippet": "flowId:account-deletion delete-account data-export",
+      "failSnippet": "unrelated flow"
+    },
+    {
+      "obligationId": "LEG-DATA-006",
+      "detectType": "flow_ref",
+      "passSnippet": "flowId:account-deletion delete-account data-export",
+      "failSnippet": "unrelated flow"
+    },
+    {
+      "obligationId": "LEG-EDGE-001",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks deliveryEvents",
+      "failSnippet": "gap LEG-EDGE-001"
+    },
+    {
+      "obligationId": "LEG-EDGE-002",
+      "detectType": "ui_pattern",
+      "passSnippet": "/* payment failed|update payment */",
+      "failSnippet": "defaultChecked={true}"
+    },
+    {
+      "obligationId": "LEG-EDGE-003",
+      "detectType": "pattern",
+      "passSnippet": "Too many attempts",
+      "failSnippet": "stack trace"
+    },
+    {
+      "obligationId": "LEG-EDGE-004",
+      "detectType": "schema_column",
+      "passSnippet": "ALTER TABLE reset_tokens ADD used_at TEXT",
+      "failSnippet": "gap LEG-EDGE-004"
+    },
+    {
+      "obligationId": "LEG-EDGE-005",
+      "detectType": "schema_column",
+      "passSnippet": "ALTER TABLE users ADD email_verified_at TEXT",
+      "failSnippet": "gap LEG-EDGE-005"
+    },
+    {
+      "obligationId": "LEG-EDGE-006",
+      "detectType": "flow_ref",
+      "passSnippet": "flowId:billing-race-shield delete-account data-export",
+      "failSnippet": "unrelated flow"
+    },
+    {
+      "obligationId": "LEG-EDGE-008",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks deliveryEvents",
+      "failSnippet": "gap LEG-EDGE-008"
+    },
+    {
+      "obligationId": "LEG-EDGE-010",
+      "detectType": "header",
+      "passSnippet": "X-Iron-Cannon-Legal-Disclaimer: ok",
+      "failSnippet": "gap LEG-EDGE-010"
+    },
+    {
+      "obligationId": "LEG-SEC-001",
+      "detectType": "route_exists",
+      "passSnippet": "export default function P(){return <main>/.well-known/security.txt</main>}",
+      "failSnippet": "<main>/missing-route</main>"
+    },
+    {
+      "obligationId": "LEG-BILL-001",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks deliveryEvents",
+      "failSnippet": "gap LEG-BILL-001"
+    },
+    {
+      "obligationId": "LEG-BILL-002",
+      "detectType": "ui_pattern",
+      "passSnippet": "/* invoice history */",
+      "failSnippet": "defaultChecked={true}"
+    },
+    {
+      "obligationId": "LEG-W53-002",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W53-003",
+      "detectType": "script_before_consent",
+      "passSnippet": "consentGate blocks analytics until accept",
+      "failSnippet": "analytics.js loads before banner"
+    },
+    {
+      "obligationId": "LEG-W53-004",
+      "detectType": "header",
+      "passSnippet": "List-Unsubscribe: <mailto:unsub@example.com>",
+      "failSnippet": "Subject: hello"
+    },
+    {
+      "obligationId": "LEG-W53-005",
+      "detectType": "ui_pattern",
+      "passSnippet": "/* shows grace period */",
+      "failSnippet": "defaultChecked=true"
+    },
+    {
+      "obligationId": "LEG-W53-006",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W53-007",
+      "detectType": "flow_ref",
+      "passSnippet": "flowRef data-export",
+      "failSnippet": "flowRef unknown-flow"
+    },
+    {
+      "obligationId": "LEG-W53-008",
+      "detectType": "route_exists",
+      "passSnippet": "export default function P(){return <main>/legal/reaccept</main>}",
+      "failSnippet": "<main>/missing</main>"
+    },
+    {
+      "obligationId": "LEG-W53-009",
+      "detectType": "required_attribute",
+      "passSnippet": "className=focus-visible",
+      "failSnippet": "className=none"
+    },
+    {
+      "obligationId": "LEG-W53-010",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W53-011",
+      "detectType": "pattern",
+      "passSnippet": "notice data protection officer",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W53-012",
+      "detectType": "schema_table",
+      "passSnippet": "table cookie_categories",
+      "failSnippet": "table other"
+    },
+    {
+      "obligationId": "LEG-W53-013",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W53-014",
+      "detectType": "ui_pattern",
+      "passSnippet": "/* shows prorat */",
+      "failSnippet": "defaultChecked=true"
+    },
+    {
+      "obligationId": "LEG-W53-015",
+      "detectType": "ui_pattern",
+      "passSnippet": "/* shows 16 */",
+      "failSnippet": "defaultChecked=true"
+    },
+    {
+      "obligationId": "LEG-W53-016",
+      "detectType": "schema_column",
+      "passSnippet": "column consent_version",
+      "failSnippet": "column other"
+    },
+    {
+      "obligationId": "LEG-W53-017",
+      "detectType": "flow_ref",
+      "passSnippet": "flowRef account-deletion",
+      "failSnippet": "flowRef unknown-flow"
+    },
+    {
+      "obligationId": "LEG-W53-018",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W53-019",
+      "detectType": "route_exists",
+      "passSnippet": "export default function P(){return <main>/privacy/request</main>}",
+      "failSnippet": "<main>/missing</main>"
+    },
+    {
+      "obligationId": "LEG-W61-001",
+      "detectType": "pattern",
+      "passSnippet": "notice artificial intelligence",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W61-002",
+      "detectType": "ui_pattern",
+      "passSnippet": "/* shows usage */",
+      "failSnippet": "defaultChecked=true"
+    },
+    {
+      "obligationId": "LEG-W61-003",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W61-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W61-005",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W61-006",
+      "detectType": "required_attribute",
+      "passSnippet": "aria-live=polite",
+      "failSnippet": "aria-live=none"
+    },
+    {
+      "obligationId": "LEG-W61-008",
+      "detectType": "pattern",
+      "passSnippet": "notice backup",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W61-010",
+      "detectType": "pattern",
+      "passSnippet": "notice redact",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W61-012",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W61-013",
+      "detectType": "pattern",
+      "passSnippet": "notice Standard Contractual Clauses",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W61-014",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W61-015",
+      "detectType": "route_exists",
+      "passSnippet": "export default function P(){return <main>/status</main>}",
+      "failSnippet": "<main>/missing</main>"
+    },
+    {
+      "obligationId": "LEG-W61-016",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W61-017",
+      "detectType": "ui_pattern",
+      "passSnippet": "/* shows refund */",
+      "failSnippet": "defaultChecked=true"
+    },
+    {
+      "obligationId": "LEG-W61-018",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W61-020",
+      "detectType": "ui_pattern",
+      "passSnippet": "/* shows skip to */",
+      "failSnippet": "defaultChecked=true"
+    },
+    {
+      "obligationId": "LEG-W62-001",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W62-002",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W62-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W62-005",
+      "detectType": "header",
+      "passSnippet": "List-Unsubscribe: <mailto:unsub@example.com>",
+      "failSnippet": "Subject: hello"
+    },
+    {
+      "obligationId": "LEG-W62-007",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W62-009",
+      "detectType": "route_exists",
+      "passSnippet": "export default function P(){return <main>/.well-known/security.txt</main>}",
+      "failSnippet": "<main>/missing</main>"
+    },
+    {
+      "obligationId": "LEG-W62-010",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W63-001",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W63-002",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W63-003",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W63-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W63-005",
+      "detectType": "pattern",
+      "passSnippet": "notice privacy",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W63-006",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W63-007",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W63-008",
+      "detectType": "pattern",
+      "passSnippet": "notice process.env",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W63-009",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W63-010",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W64-001",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W64-002",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W64-003",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W64-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W64-005",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W64-006",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W64-007",
+      "detectType": "pattern",
+      "passSnippet": "notice redact",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W64-008",
+      "detectType": "route_exists",
+      "passSnippet": "export default function P(){return <main>/account/export</main>}",
+      "failSnippet": "<main>/missing</main>"
+    },
+    {
+      "obligationId": "LEG-W64-009",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W64-010",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W65-001",
+      "detectType": "script_before_consent",
+      "passSnippet": "consentGate blocks analytics until accept",
+      "failSnippet": "analytics.js loads before banner"
+    },
+    {
+      "obligationId": "LEG-W65-002",
+      "detectType": "pattern",
+      "passSnippet": "notice privacy",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W65-003",
+      "detectType": "header",
+      "passSnippet": "List-Unsubscribe: <mailto:unsub@example.com>",
+      "failSnippet": "Subject: hello"
+    },
+    {
+      "obligationId": "LEG-W65-004",
+      "detectType": "pattern",
+      "passSnippet": "notice California",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W65-005",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W65-006",
+      "detectType": "pattern",
+      "passSnippet": "notice AI",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W65-008",
+      "detectType": "pattern",
+      "passSnippet": "notice status",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W65-009",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W65-010",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W66-001",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W66-002",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W66-003",
+      "detectType": "pattern",
+      "passSnippet": "notice encode",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W66-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W66-005",
+      "detectType": "flow_ref",
+      "passSnippet": "flowRef module-loop",
+      "failSnippet": "flowRef unknown-flow"
+    },
+    {
+      "obligationId": "LEG-W66-006",
+      "detectType": "header",
+      "passSnippet": "List-Unsubscribe: ok",
+      "failSnippet": "From: noreply@example.com"
+    },
+    {
+      "obligationId": "LEG-W66-007",
+      "detectType": "pattern",
+      "passSnippet": "notice HttpOnly",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W66-008",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W66-009",
+      "detectType": "pattern",
+      "passSnippet": "notice generic",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W67-001",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W67-002",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W67-003",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W67-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W67-006",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W67-007",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "incomplete"
+    },
+    {
+      "obligationId": "LEG-W67-008",
+      "detectType": "pattern",
+      "passSnippet": "notice refund",
+      "failSnippet": "no match here"
+    },
+    {
+      "obligationId": "LEG-W67-009",
+      "detectType": "flow_ref",
+      "passSnippet": "flowRef security-audit",
+      "failSnippet": "flowRef unknown-flow"
+    },
+    {
+      "obligationId": "LEG-W68-002",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W68-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W68-005",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W68-006",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W68-007",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W68-009",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W68-010",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain webhooks automatic_tax configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W69-001",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W69-002",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W69-006",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W69-007",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W69-008",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W69-009",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W70-001",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W70-003",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W70-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W70-005",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W70-009",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W70-010",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W71-006",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W71-009",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W72-002",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W72-003",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W72-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W72-006",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W72-007",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W72-008",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W72-009",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W72-010",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W73-001",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W73-002",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W73-003",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W73-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W73-005",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W73-006",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W73-007",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W73-009",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W74-002",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W74-003",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W74-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W74-005",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W74-006",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W74-008",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W74-009",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W78-001",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W78-002",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W78-003",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W78-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W78-005",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W78-006",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W79-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W79-005",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W79-006",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W80-001",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W80-002",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W80-003",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W80-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W80-005",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W80-008",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W81-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W81-005",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W81-006",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W84-004",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W84-008",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W89-006",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    },
+    {
+      "obligationId": "LEG-W89-009",
+      "detectType": "config",
+      "passSnippet": "verifiedDomain configured",
+      "failSnippet": "gap"
+    }
+  ]
+}

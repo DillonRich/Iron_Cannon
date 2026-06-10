@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-wrangler-install-and-update-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/wrangler/install-and-update/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Install/Update Wrangler",
+  "excerpt": "description: Get started by installing Wrangler, and update to newer versions by following this guide. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Wrangler is a command-line tool for building with Cloudflare developer products. To install [Wrangler ↗](https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler), ensure you have [Node.js ↗](https://nodejs.org/en/) and [npm ↗](https://docs.npmjs.com/getting-started) installed, preferably using a Node version manager like [Volta ↗](https://volta.sh/) or [nvm ↗](https://github.com/nvm-sh/nvm).…",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

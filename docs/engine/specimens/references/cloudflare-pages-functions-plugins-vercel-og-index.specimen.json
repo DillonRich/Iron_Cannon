@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/pages-functions-plugins-vercel-og-index",
+  "sourceUrl": "https://developers.cloudflare.com/pages/functions/plugins/vercel-og/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "vercel/og",
+  "excerpt": "description: Generate social images in Pages Functions using the @vercel/og Pages Plugin. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/pages/llms.txt > Use this file to discover all available pages before exploring further. The `@vercel/og` Pages Plugin is a middleware which renders social images for webpages. It also includes an API to create arbitrary images. As the name suggests, it is powered by [@vercel/og ↗](https://vercel.com/docs/concepts/functions/edge-functions/og-image-generation). This plugin and its underlying [Satori ↗](https://github.com/vercel/satori) library was created by the Vercel team.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

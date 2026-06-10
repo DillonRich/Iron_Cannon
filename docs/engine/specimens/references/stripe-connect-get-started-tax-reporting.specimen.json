@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-get-started-tax-reporting",
+  "sourceUrl": "https://docs.stripe.com/connect/get-started-tax-reporting.md",
+  "lastVerified": "2026-06-03",
+  "title": "Get started with tax reporting",
+  "excerpt": "Use the Stripe 1099 tax reporting product to create, modify, file, and deliver tax forms for your connected accounts. Stripe provides [capabilities](https://docs.stripe.com/connect/account-capabilities.md?accounts-namespace=v1#tax-reporting) and a tax reporting dashboard to help platforms meet their [tax reporting obligations](https://support.stripe.com/questions/1099-tax-reporting-and-filing-for-platforms-and-marketplaces). Log in to your Stripe account and use the [Tax reporting](https://dashboard.stripe.com/connect/taxes/forms) view in the Dashboard to create, modify, file, and deliver 1099 tax forms for your connected accounts.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

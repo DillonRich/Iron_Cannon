@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/dashboard-search",
+  "sourceUrl": "https://docs.stripe.com/dashboard/search.md",
+  "lastVerified": "2026-06-03",
+  "title": "Perform searches in the Dashboard",
+  "excerpt": "Use the Dashboard to search for payments, customers, and more. [Stripe Sigma](https://docs.stripe.com/data.md) makes all of your business data available as an interactive SQL environment in the Dashboard. You can use it to perform highly advanced searches and generate customized reports. Use Dashboard’s search to find important resources, and navigate across different Stripe resources, like *connected accounts* (A person or business accepting payments or receiving payouts on a Connect platform), *customers* (Customer objects represent customers of your business. They let you reuse payment methods and give you the ability to track multiple payments), *invoices* (Invoices are statements of amounts owed by a customer.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

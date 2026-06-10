@@ -1,0 +1,9 @@
+{
+  "refId": "stripe/declines",
+  "sourceUrl": "https://docs.stripe.com/declines.md",
+  "lastVerified": "2026-05-31",
+  "title": "Stripe payment declines",
+  "excerpt": "Declines return error codes on PaymentIntent/Checkout. UI must show actionable message—not generic failure. Soft declines may retry; hard declines need new payment method. Map decline_code to user-facing copy. Log declines server-side without exposing card details.",
+  "appliesTo": ["billing-subscription", "unhappy-paths"],
+  "tags": ["stripe", "declines", "ux-system"]
+}

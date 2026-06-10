@@ -1,0 +1,14 @@
+{
+  "refId": "owasp/knowledge-w61-hsts-preload",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w61/hsts-preload",
+  "lastVerified": "2026-06-06",
+  "title": "W61 hsts-preload",
+  "provider": "owasp",
+  "excerpt": "HSTS includeSubDomains only when all subdomains serve HTTPS",
+  "embeddingHint": "owasp hsts-preload wave61 knowledge",
+  "tags": [
+    "wave61",
+    "knowledge",
+    "owasp"
+  ]
+}

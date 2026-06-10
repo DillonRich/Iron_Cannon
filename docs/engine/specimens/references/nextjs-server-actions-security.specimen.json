@@ -1,0 +1,9 @@
+{
+  "refId": "nextjs/server-actions-security",
+  "sourceUrl": "https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions#authentication-and-authorization",
+  "lastVerified": "2026-05-31",
+  "title": "Next.js Server Actions — security",
+  "excerpt": "Server Actions are public HTTP endpoints. Always verify session server-side before mutations. Do not trust client-supplied userId. Use allowedOrigins in next.config for CSRF mitigation in production.",
+  "appliesTo": ["auth-lifecycle", "layer3", "A02-session-hardening-pass"],
+  "tags": ["nextjs", "server-actions", "security"]
+}

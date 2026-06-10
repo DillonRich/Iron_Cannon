@@ -1,0 +1,12 @@
+{
+  "fixtureId": "LEG-W61-007",
+  "obligationId": "LEG-W61-007",
+  "detectType": "manual",
+  "detect": {
+    "type": "manual"
+  },
+  "passSnippet": "manualReviewCompleted=true",
+  "failSnippet": "gap",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

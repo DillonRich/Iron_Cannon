@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/connect-1099-nec",
+  "sourceUrl": "https://docs.stripe.com/connect/1099-NEC.md",
+  "lastVerified": "2026-06-03",
+  "title": "1099-NEC form state requirements",
+  "excerpt": "View the state requirements for 1099-NEC forms. > Some participating State regulatory agencies haven’t fully finalized filing requirements and requirements remain subject to change for the 2025 tax season. Updates that occur to this page are automatically reflected in the form status badges and counts in the tax reporting Dashboard. For 1099-NEC forms, the IRS requires filing if the amount of total reportable payments is $600 or more. Filing requirements for some states might differ from federal requirements.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "fixtureId": "M71",
+  "moduleId": "M71-supabase-middleware-ssr",
+  "patternsUnderTest": [
+    "SUPA-MW-001",
+    "SUPA-MW-002",
+    "BILL-P49-M71-"
+  ],
+  "passSnippet": "import { createServerClient } from '@supabase/ssr'\nexport async function middleware(request)",
+  "failSnippet": "localStorage.setItem('supabase.session')",
+  "expectedPass": true,
+  "expectedFail": false,
+  "missingOnFail": [
+    "SUPA-MW-001"
+  ]
+}

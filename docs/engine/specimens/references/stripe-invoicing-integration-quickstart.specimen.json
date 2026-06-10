@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-integration-quickstart",
+  "sourceUrl": "https://docs.stripe.com/invoicing/integration/quickstart.md",
+  "lastVerified": "2026-06-03",
+  "title": "Create and send an invoice",
+  "excerpt": "Build a full, working invoicing integration using Stripe Invoicing. Learn how to look up a customer, get a price from an object that represents a database, and create and send an invoice. java -cp target/sample-jar-with-dependencies.jar com.stripe.sample.Server stripe listen --forward-to localhost:4242/webhook.php stripe listen --forward-to localhost:4242/webhook Install the package and import it in your code. Alternatively, if you’re starting from scratch and need a package.json file, download the project files using the Download link in the code editor. Or download the stripe-node library source code directly [from GitHub](https://github.com/stripe/stripe-node).",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

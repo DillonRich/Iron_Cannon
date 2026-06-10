@@ -1,0 +1,14 @@
+{
+  "refId": "resend/knowledge-w63-suppression-list-sync",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w63/suppression-list-sync",
+  "lastVerified": "2026-06-06",
+  "title": "W63 suppression-list-sync",
+  "provider": "resend",
+  "excerpt": "Sync Resend suppression with app DB on bounce and complaint webhooks",
+  "embeddingHint": "resend suppression-list-sync wave63 legal security",
+  "tags": [
+    "wave63",
+    "knowledge",
+    "resend"
+  ]
+}

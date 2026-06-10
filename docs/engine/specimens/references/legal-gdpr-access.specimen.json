@@ -1,0 +1,15 @@
+{
+  "refId": "legal/gdpr-access",
+  "sourceUrl": "https://gdpr.eu/right-to-access/",
+  "lastVerified": "2026-05-31",
+  "title": "GDPR access",
+  "excerpt": "Data export and subject access requests.",
+  "appliesTo": [
+    "layer4",
+    "planning"
+  ],
+  "tags": [
+    "legal",
+    "gdpr-access"
+  ]
+}

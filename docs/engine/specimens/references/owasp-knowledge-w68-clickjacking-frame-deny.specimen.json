@@ -1,0 +1,15 @@
+{
+  "refId": "owasp/knowledge-w68-clickjacking-frame-deny",
+  "sourceUrl": "https://ironcannon.dev/knowledge/w68/clickjacking-frame-deny",
+  "lastVerified": "2026-06-06",
+  "title": "W68 clickjacking-frame-deny",
+  "provider": "owasp",
+  "excerpt": "Use X-Frame-Options or CSP frame-ancestors on account pages",
+  "embeddingHint": "owasp clickjacking-frame-deny wave68 adversarial",
+  "tags": [
+    "wave68",
+    "knowledge",
+    "owasp",
+    "adversarial"
+  ]
+}

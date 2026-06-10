@@ -1,0 +1,14 @@
+{
+  "refId": "nextjs/scale-c4-auth-405",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/nextjs/scale-c4-auth-405",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-C4 auth 405",
+  "excerpt": "Protect Server Actions with session check and CSRF where applicable. Final Scale-C planning reference for Iron Cannon MCP compose and compliance agents.",
+  "tags": [
+    "nextjs",
+    "auth",
+    "scale-c4",
+    "scale-c"
+  ],
+  "embeddingHint": "nextjs auth Protect Server Actions with session check and CSRF where applicable iron cannon scale-c compliance"
+}

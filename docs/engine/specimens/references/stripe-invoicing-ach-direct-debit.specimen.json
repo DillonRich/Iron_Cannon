@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-ach-direct-debit",
+  "sourceUrl": "https://docs.stripe.com/invoicing/ach-direct-debit.md",
+  "lastVerified": "2026-06-03",
+  "title": "Invoicing and ACH Direct Debit",
+  "excerpt": "Configure, create, and process invoices using ACH Direct Debit. To reduce costs, many businesses make card payment methods unavailable above a certain *invoice* (Invoices are statements of amounts owed by a customer. They track the status of payments from draft through paid or otherwise finalized. Subscriptions automatically generate invoices, or you can manually create a one-off invoice) total amount, and prefer payment from bank methods like ACH Direct Debit. This guide provides step-by-step instructions on how to configure, create, and process invoices to use the [ACH Direct Debit](https://docs.stripe.com/payments/ach-direct-debit.md) payment method.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

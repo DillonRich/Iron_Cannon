@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/api-balance-balance-object",
+  "sourceUrl": "https://docs.stripe.com/api/balance/balance_object.md",
+  "lastVerified": "2026-06-03",
+  "title": "The Balance object",
+  "excerpt": "String representing the object’s type. Objects of the same type share the same value. Available funds that you can transfer or pay out automatically by Stripe or explicitly through the [Transfers API](https://docs.stripe.com/api/balance/balance_object.md#transfers) or [Payouts API](https://docs.stripe.com/api/balance/balance_object.md#payouts). You can find the available balance for each currency and payment type in the `source_types` property. Three-letter [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html), in lowercase. Must be a [supported currency](https://stripe.com/docs/currencies). - `available.source_types` (object, nullable) Breakdown of balance by source types. Funds coming from certain source / payment method types must be shown separately.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

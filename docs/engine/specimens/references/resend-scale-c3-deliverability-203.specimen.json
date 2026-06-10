@@ -1,0 +1,13 @@
+{
+  "refId": "resend/scale-c3-deliverability-203",
+  "sourceUrl": "https://ironcannon.dev/planning/corpus/resend/scale-c3-deliverability-203",
+  "lastVerified": "2026-06-03",
+  "title": "Scale-C3 deliverability 203",
+  "excerpt": "SPF/DKIM/DMARC alignment before high-volume campaigns. Planning reference for compose agents and obligation cross-links (EM-3).",
+  "tags": [
+    "resend",
+    "deliverability",
+    "scale-c3"
+  ],
+  "embeddingHint": "resend deliverability SPF/DKIM/DMARC alignment before high-volume campaigns compliance security legal stripe resend owasp"
+}

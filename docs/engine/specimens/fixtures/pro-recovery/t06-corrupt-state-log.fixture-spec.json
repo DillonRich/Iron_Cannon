@@ -1,0 +1,15 @@
+{
+  "fixtureId": "T06-04",
+  "description": "Malformed state_log — parser warning, not crash",
+  "input": {
+    "session": {},
+    "stackSignals": {},
+    "stateLogMarkdown": "# Not a valid module section\n\nrandom text with no module headers at all",
+    "diskFiles": {}
+  },
+  "expected": {
+    "driftDetected": true,
+    "warnings": ["STATE_LOG_PARSE_PARTIAL"],
+    "code": "RESUME_STATE_LOG_CORRUPT"
+  }
+}

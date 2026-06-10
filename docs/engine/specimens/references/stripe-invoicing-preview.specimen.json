@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/invoicing-preview",
+  "sourceUrl": "https://docs.stripe.com/invoicing/preview.md",
+  "lastVerified": "2026-06-03",
+  "title": "Preview an invoice",
+  "excerpt": "Learn how to create a preview of an invoice. You can create a preview of an invoice for your customer while they’re considering a purchase. [Create a preview](https://docs.stripe.com/api/invoices/create_preview.md) to calculate the total invoice amount, retrieve each invoice line, and include any relevant taxes or discounts. Creating a preview allows you to show the total payment amount to your customer without the need to create an invoice. For example, if you operate a company that provides repair services to businesses, you might present your customers with multiple items that each have different prices and billing schedules: Customers might want to know how much different combinations of your goods and services cost.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

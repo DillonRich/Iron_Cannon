@@ -1,0 +1,13 @@
+{
+  "fixtureId": "LEG-DATA-001",
+  "obligationId": "LEG-DATA-001",
+  "detectType": "ui_pattern",
+  "detect": {
+    "type": "ui_pattern",
+    "pattern": "permanently delete"
+  },
+  "passSnippet": "/* permanently delete */",
+  "failSnippet": "defaultChecked={true}",
+  "expectedPass": "met",
+  "expectedFail": "gap"
+}

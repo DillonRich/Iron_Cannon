@@ -1,0 +1,9 @@
+{
+  "refId": "owasp/webhook",
+  "sourceUrl": "https://cheatsheetseries.owasp.org/cheatsheets/Webhook_Security_Cheat_Sheet.html",
+  "lastVerified": "2026-05-31",
+  "title": "OWASP Webhook security",
+  "excerpt": "Verify HMAC signature on raw body. Reject replay via timestamp tolerance. Idempotency store for event IDs. HTTPS only. Do not process webhooks on GET routes. Return 2xx only after durable processing or queue enqueue.",
+  "appliesTo": ["M12-stripe-webhook", "webhook-security"],
+  "tags": ["owasp", "webhook"]
+}

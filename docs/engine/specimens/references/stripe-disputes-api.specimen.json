@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/disputes-api",
+  "sourceUrl": "https://docs.stripe.com/disputes/api.md",
+  "lastVerified": "2026-06-03",
+  "title": "Use the API to respond to disputes",
+  "excerpt": "Learn how to manage disputes programmatically. You can programmatically manage disputes using the API. With the API, you can upload evidence, respond to disputes, and receive dispute events using webhooks. If you want to manage disputes using the Dashboard instead of using the API, see [Respond to disputes](https://docs.stripe.com/disputes/responding.md). For details about a dispute, [retrieve](https://docs.stripe.com/api/disputes/retrieve.md) a `Dispute` object: curl https://api.stripe.com/v1/disputes/{{DISPUTE_ID}} \\ The response contains information about the dispute and any response or evidence that’s already been provided.",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

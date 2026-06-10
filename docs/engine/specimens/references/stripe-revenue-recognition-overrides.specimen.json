@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/revenue-recognition-overrides",
+  "sourceUrl": "https://docs.stripe.com/revenue-recognition/overrides.md",
+  "lastVerified": "2026-06-03",
+  "title": "Revenue Recognition transaction overrides",
+  "excerpt": "Learn how to make manual corrections to your revenue recognition reports. > Stripe will soon deprecate the transaction override feature. Use the [data import feature](https://docs.stripe.com/revenue-recognition/data-import.md) instead. It’s possible for the information on a transaction to become inaccurate for revenue recognition purposes. This can happen for a number of reasons, such as human error or evolving terms of a sale. The transaction override feature allows you to make corrections, regardless of when you created the transaction. You can find the transaction overrides section at the bottom of the Revenue Recognition page.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/e2e-golden-path/v1",
+  "chainId": "GP-GOLDEN-01",
+  "rulesetVersion": "2026.05.31",
+  "description": "Planning-phase golden agent loop — fixture IDs for simulate-mcp-e2e-golden.mjs",
+  "steps": [
+    { "order": 1, "tool": "T01", "fixtureId": "SD-01", "fixtureDir": "stack-detection", "expected": { "supported": true } },
+    { "order": 2, "tool": "T02", "dependsOn": "T01", "expected": { "complete": true } },
+    { "order": 3, "tool": "T03", "fixtureId": "W01", "fixtureDir": "wiremap", "expected": { "moduleCount": 12, "phaseGate": "AWAIT_USER_WIREMAP_APPROVAL" } },
+    { "order": 4, "tool": "T04", "bundle": "golden-path-outbound.bundle.json", "moduleOrder": "M01→M16" },
+    { "order": 5, "tool": "T05", "perModule": true, "fixtureDir": "modules", "expectedPassRate": 1.0 },
+    { "order": 6, "tool": "T06", "fixtureId": "T06-01", "fixtureDir": "pro-recovery", "optionalAfter": "M01" },
+    { "order": 7, "tool": "T11", "fixtureId": "T11-02", "fixtureDir": "armor", "tier": "armor", "afterModules": 12 }
+  ],
+  "errorCatalogFixtures": [
+    { "code": "AUTH_MISSING", "fixture": "simulate-error-codes" },
+    { "code": "TIER_INSUFFICIENT", "fixture": "armor/t10-02-pro-tier-denied" },
+    { "code": "MODULE_SEQUENCE_VIOLATION", "trigger": "T04 before T05 on prior module" }
+  ],
+  "numericTargets": {
+    "toolsWithGoldenSpecimens": 14,
+    "goldenModules": 12,
+    "imagination50PassRate": 1.0,
+    "obligationFixturePassRate": 1.0,
+    "outboundTokenBudgetT04": 16000
+  }
+}

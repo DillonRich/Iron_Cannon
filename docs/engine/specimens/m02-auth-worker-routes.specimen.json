@@ -1,0 +1,47 @@
+{
+  "$schema": "https://ironcannon.dev/schemas/rule-fragment/v1",
+  "id": "layer2/cloudflare/auth-routes",
+  "layer": 2,
+  "rulesetVersion": "2026.05.31",
+  "flowId": "auth-lifecycle",
+  "moduleId": "M02-auth-worker-routes",
+  "adapterId": "cloudflare-golden-stack",
+  "section": "auth-routes",
+  "content": {
+    "requirement": "Auth API routes on Worker with server-side session create/destroy",
+    "routes": [
+      { "method": "POST", "path": "/api/auth/signup", "transition": "S00→S01" },
+      { "method": "POST", "path": "/api/auth/signin", "transition": "S00→S02" },
+      { "method": "POST", "path": "/api/auth/logout", "transition": "S02→S00" },
+      { "method": "GET", "path": "/api/auth/verify", "transition": "S01→S02" },
+      { "method": "GET", "path": "/api/me", "guard": "session required" }
+    ],
+    "requiredSteps": [
+      "Hash session token before D1 insert — never store plaintext",
+      "Set HttpOnly Secure SameSite cookie on signin",
+      "Rate limit signup/signin by IP (KV or in-memory fallback)",
+      "Generic error messages — no user enumeration",
+      "Logout: delete session row + Max-Age=0 cookie"
+    ],
+    "manualConfigSteps": []
+  },
+  "references": [
+    "cloudflare/workers-routes",
+    "cloudflare/d1-bindings",
+    "owasp/authentication",
+    "owasp/rate-limiting",
+    "owasp/session-invalidation"
+  ],
+  "compliancePatterns": {
+    "required": [
+      { "id": "AUTH-RT-001", "type": "required_string", "value": "/api/auth/signup", "fileGlob": "**/*.{ts,js}", "tier": "pro" },
+      { "id": "AUTH-RT-002", "type": "required_string", "value": "/api/auth/logout", "fileGlob": "**/*.{ts,js}", "tier": "pro" },
+      { "id": "AUTH-RT-003", "type": "required_string", "value": "httpOnly", "fileGlob": "**/*.{ts,js}", "tier": "pro" }
+    ],
+    "forbidden": [
+      { "id": "AUTH-RT-F01", "type": "forbidden_string", "value": "Math.random()", "fileGlob": "**/api/auth/**", "tier": "pro" },
+      { "id": "AUTH-RT-F02", "type": "forbidden_string", "value": "email already exists", "fileGlob": "**/api/auth/**", "tier": "pro" }
+    ]
+  },
+  "metadata": { "minTier": "pro", "category": "auth-api" }
+}

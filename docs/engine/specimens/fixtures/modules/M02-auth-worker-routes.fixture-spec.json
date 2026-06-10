@@ -1,0 +1,17 @@
+{
+  "fixtureId": "M02",
+  "moduleId": "M02-auth-worker-routes",
+  "patternsUnderTest": [
+    "AUTH-RT-001",
+    "AUTH-RT-002",
+    "AUTH-P49-M02-",
+    "AUTH-P49-SESSION"
+  ],
+  "passSnippet": "export async function POST() { return Response.json({ ok: true }); }\n// routes: /api/auth/signup /api/auth/signin /api/me",
+  "failSnippet": "const token = Math.random().toString(); export async function POST() { return Response.json({ token }); }",
+  "expectedPass": true,
+  "expectedFail": false,
+  "forbiddenOnFail": [
+    "AUTH-RT-F01"
+  ]
+}

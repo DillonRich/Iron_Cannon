@@ -1,0 +1,11 @@
+{
+  "refId": "stripe/payment-failed-email",
+  "sourceUrl": "https://stripe.com/docs/billing/revenue-recovery",
+  "lastVerified": "2026-06-03",
+  "title": "Payment failed emails",
+  "excerpt": "Send transactional email on invoice.payment_failed with portal link; not marketing template.",
+  "tags": [
+    "stripe",
+    "email"
+  ]
+}

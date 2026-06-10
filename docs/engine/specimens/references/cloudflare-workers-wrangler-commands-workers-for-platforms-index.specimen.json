@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/workers-wrangler-commands-workers-for-platforms-index",
+  "sourceUrl": "https://developers.cloudflare.com/workers/wrangler/commands/workers-for-platforms/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Workers for Platforms",
+  "excerpt": "description: Wrangler commands for managing Workers for Platforms dispatch namespaces. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/workers/llms.txt > Use this file to discover all available pages before exploring further. Wrangler commands for managing Workers for Platforms [dispatch namespace](https://developers.cloudflare.com/cloudflare-for-platforms/workers-for-platforms/how-workers-for-platforms-works/#dispatch-namespace) using Wrangler. Run as if Wrangler was started in the specified directory instead of the current working directory",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/disputes-prevention-verification",
+  "sourceUrl": "https://docs.stripe.com/disputes/prevention/verification.md",
+  "lastVerified": "2026-06-03",
+  "title": "Card verification checks",
+  "excerpt": "Learn how to make use of card verification checks to protect against disputes and fraud. When a card payment is submitted to a *card network* (A network that processes the transactions of a particular card brand. It might be an intermediary in front of an issuing bank as with Visa or Mastercard, or a standalone entity as with American Express) for authorization, Stripe provides the CVC, postal code, and billing street address for them to verify (if you collected these from the customer in your checkout flow). The card issuer checks this against the information they have on file for the cardholder. If the provided information doesn’t match, the verification check fails.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p1"
+  ]
+}

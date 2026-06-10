@@ -1,0 +1,15 @@
+{
+  "refId": "stripe/payments-mobile-embedded",
+  "sourceUrl": "https://docs.stripe.com/payments/mobile/embedded.md",
+  "lastVerified": "2026-06-03",
+  "title": "Payment Element",
+  "excerpt": "Embed payment methods directly in your app. The Payment Element is a customizable drop-in component that [embeds a list of payment methods](https://docs.stripe.com/payments/mobile/accept-payment-embedded.md) on any screen in your app. When a customer selects a payment method from the list, a sheet below it collects payment details. You can customize it to match the look and feel of your app. The In-app Payment Element is available in our [iOS](https://github.com/stripe/stripe-ios), [Android](https://github.com/stripe/stripe-android), and [React Native](https://github.com/stripe/stripe-react-native) SDKs. See our [accept in-app payments](https://docs.stripe.com/payments/mobile/accept-payment-embedded.md) guide to get started.…",
+  "appliesTo": [
+    "billing-subscription",
+    "layer2/stripe"
+  ],
+  "tags": [
+    "stripe",
+    "p0"
+  ]
+}

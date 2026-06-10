@@ -1,0 +1,16 @@
+{
+  "refId": "resend/docs-dashboard-emails-batch-sending",
+  "sourceUrl": "https://resend.com/docs/dashboard/emails/batch-sending.md",
+  "lastVerified": "2026-06-03",
+  "title": "Batch Sending",
+  "excerpt": "> ## Documentation Index > Fetch the complete documentation index at: https://resend.com/docs/llms.txt > Use this file to discover all available pages before exploring further. # Batch Sending > Send up to 100 emails in a single API call. Batch sending allows you to send multiple emails at once (up to 100) instead of making individual API requests for each email. ## When to use batch sending Use batch sending when you need to: * Send multiple transactional emails (e.g., order confirmations and notifications) * Trigger emails to different recipients with unique content * Reduce the number of API calls to improve performance For marketing campaigns, [use our no-code editor, Broadcasts](/dashboard/broadcasts/introduction), instead.…",
+  "appliesTo": [
+    "auth-lifecycle",
+    "email-lifecycle",
+    "resend"
+  ],
+  "tags": [
+    "resend",
+    "p0"
+  ]
+}

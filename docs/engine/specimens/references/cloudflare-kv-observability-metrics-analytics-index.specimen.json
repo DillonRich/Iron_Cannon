@@ -1,0 +1,15 @@
+{
+  "refId": "cloudflare/kv-observability-metrics-analytics-index",
+  "sourceUrl": "https://developers.cloudflare.com/kv/observability/metrics-analytics/index.md",
+  "lastVerified": "2026-06-03",
+  "title": "Metrics and analytics",
+  "excerpt": "description: Query Workers KV operations and storage metrics via the dashboard or the GraphQL Analytics API. image: https://developers.cloudflare.com/dev-products-preview.png > Fetch the complete documentation index at: https://developers.cloudflare.com/kv/llms.txt > Use this file to discover all available pages before exploring further. KV exposes analytics that allow you to inspect requests and storage across all namespaces in your account. The metrics displayed in the [Cloudflare dashboard ↗](https://dash.cloudflare.com/) charts are queried from Cloudflare’s [GraphQL Analytics API](https://developers.cloudflare.com/analytics/graphql-api/). You can access the metrics [programmatically](#query-via-the-graphql-api) via GraphQL or HTTP client.",
+  "appliesTo": [
+    "cloudflare-golden-stack",
+    "layer2/cloudflare"
+  ],
+  "tags": [
+    "cloudflare",
+    "p0"
+  ]
+}
